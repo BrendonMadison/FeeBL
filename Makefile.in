@@ -1,0 +1,68 @@
+# PIPESTATUS is a bash builtin; make otherwise runs recipes under
+# /bin/sh (dash on Ubuntu), where ${PIPESTATUS[0]} is a syntax error.
+SHELL = /bin/bash
+
+# FEEBL Makefile
+
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+bindir = @bindir@
+libdir = @libdir@
+CXX = @CXX@
+abs_top_srcdir = @abs_top_srcdir@
+
+all: @make_all@
+
+feebl_nofftw:
+	$(MAKE) -C src feebl_nofftw 2>&1 | tee log.feebl-nofftw.$$$$; \
+	exit $${PIPESTATUS[0]}
+
+feebl:
+	$(MAKE) -C src feebl 2>&1 | tee log.feebl.$$$$; \
+	exit $${PIPESTATUS[0]}
+
+feeblroot: 
+	$(MAKE) -C src feeblroot 2>&1 | tee log.feebl-root.$$$$; \
+	exit $${PIPESTATUS[0]}
+
+# Explicit Autotools gates for the opt-in production electron-luminosity path.
+# The oracle builds strict optimized and sanitizer-only test binaries in /tmp;
+# neither target changes the flags or objects used by an ordinary FeeBL build.
+check-electron-lumi-precompute-oracle:
+	CXX="$(CXX)" \
+		bash "$(abs_top_srcdir)/examples/legacy_electron_lumi_precompute/run.sh"
+
+check-electron-lumi-precompute: feebl check-electron-lumi-precompute-oracle
+	bash "$(abs_top_srcdir)/examples/legacy_electron_lumi_production/run_e2e.sh" \
+		"$(CURDIR)/src/feebl"
+
+# Mode 2 has its own independent blocked-kernel oracle.  The production E2E
+# runner then compares modes 0, 1, and 2 plus their saved RNG states.
+check-electron-lumi-blocked-oracle:
+	CXX="$(CXX)" \
+		bash "$(abs_top_srcdir)/examples/legacy_electron_lumi_blocked/run.sh"
+
+check-electron-lumi-blocked: feebl check-electron-lumi-blocked-oracle
+	bash "$(abs_top_srcdir)/examples/legacy_electron_lumi_production/run_e2e.sh" \
+		"$(CURDIR)/src/feebl"
+
+# Explicit Autotools gates for the opt-in production photon-luminosity path.
+# The oracle is isolated in /tmp; the aggregate target also exercises the
+# configured production executable and its exact fail-closed exit contract.
+check-photon-lumi-factorized-oracle:
+	CXX="$(CXX)" \
+		bash "$(abs_top_srcdir)/examples/legacy_photon_lumi_fast/run.sh"
+
+check-photon-lumi-factorized: feebl check-photon-lumi-factorized-oracle
+	bash "$(abs_top_srcdir)/examples/legacy_photon_lumi_fast/run_e2e.sh" \
+		"$(CURDIR)/src/feebl"
+
+install: all
+	test -d $(bindir) || mkdir -p $(bindir)
+	cd src && cp @make_all@ $(bindir) && cd ..
+clean: 
+	rm -f log.*
+	$(MAKE) -C src clean
+
+distclean: clean
+	rm -f config.log config.status Makefile src/Makefile src/config.h src/stamp-h

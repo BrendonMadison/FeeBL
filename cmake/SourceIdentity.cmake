@@ -1,0 +1,18 @@
+# Export identities distinguish a Git commit from a content-manifest digest.
+# Malformed text must never be inserted into a generated C string.
+function(feebl_validate_source_identity candidate output)
+  set(identity "unknown")
+  if(candidate MATCHES "^sha256:[0-9a-fA-F]+$")
+    string(LENGTH "${candidate}" length)
+    if(length EQUAL 71)
+      set(identity "${candidate}")
+    endif()
+  else()
+    string(REGEX REPLACE "-dirty$" "" hexadecimal "${candidate}")
+    string(LENGTH "${hexadecimal}" length)
+    if(length EQUAL 40 AND hexadecimal MATCHES "^[0-9a-fA-F]+$")
+      set(identity "${candidate}")
+    endif()
+  endif()
+  set(${output} "${identity}" PARENT_SCOPE)
+endfunction()

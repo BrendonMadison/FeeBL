@@ -1,0 +1,109 @@
+FeeBL output files
+
+Outputs depend on the selected processes and storage switches. Retain acc.dat,
+the complete stdout/stderr log, and the actual executable with each run.
+out.dat (or the third positional argument) contains evaluated input settings
+and integrated results. The benchmark runner additionally writes execution.json,
+stdout.txt, stderr.txt and their combined log.txt. The following legacy files
+retain GUINEA-PIG++ conventions except where extensions are stated.
+
+1) photon.dat:
+   
+   It contains the photons after the interaction.
+
+   Photon Energy [GeV] |  angle x [rad] |  angle y [rad] 
+
+   If the energy is negative the photon is from the second beam.	
+
+2) beam1(2).dat
+   
+   Particles of the first and second beam respectively.
+
+   Particle Energy [GeV] | x [um] | y [um] | z [um] | x' [urad] | y' [urad]
+
+3) coh1(2).dat 
+   
+   Coherent Pairs of the first and second beam respectively.
+   
+   Particle Energy [GeV] | x [um] | y [um] | z [um] | x' [mrad] | y' [mrad]
+
+4) pairs.dat 
+  
+   Incoherent Pairs after beam-beam interaction.
+   
+   Signed Energy [GeV] | Beta_x | Beta_y | Beta_z | x [nm] | y [nm] | z [nm] | process (*) | source slice 1 | source slice 2
+
+   (*) 'process' can be:
+       	'0' : Breit-Wheeler
+	'1' : Bethe-Heitler
+	'2' : Landau-Lifschitz
+
+   Column 8 is the process code, not a statistical weight. Positive energy
+   identifies an electron and negative energy a positron. The records depend
+   on generation thresholds, tracking and storage thinning. Their row count
+   is not generally the physical number of produced pairs. Imported-event
+   identities are carried by the separate trajectory/spin outputs below.
+
+5) hadron.dat
+
+   Colliding photons that produced a hadronic event. 
+   Since the number of these events is small per bunch crossing the number
+   will be enhanced by a factor hadron_ratio.
+  
+   Photon Energy beam1 [GeV] | Photon Energy beam2 [GeV] | z of collision [um]
+
+6) lumi.ee.out
+
+   Colliding particles infos. do_lumi=1 e-e collision.
+   energy of the colliding particles 
+   position of the collision within the bunch 
+   value of "time counter" of the collision
+   normalized velocities of the colliding particles
+   polarization vector of colliding particles (px1(2),py1(2),pz1(2))
+   label 
+
+   Energy beam1 [GeV] | Energy beam2 [GeV] | x [nm] | y [nm] | z [um] | Px1/E1 | Py1/E1 | Px2/E2 | Py2/E2 | px1 | py1 | pz1 | px2 | py2 | pz2 | label
+
+7) Self-describing luminosity output (store_native=1):
+
+   lumi.ee.out.fne contains stored collision records with schema metadata.
+   lumi.ee.out.dLdW.fne contains weighted native collision-energy bins and
+   helicity moments. Its header specifies columns, units and the uncertainty
+   convention; encounter-based effective counts are not independent-run errors.
+   lumi.ee.out.design_axis_dLdW.fne is the optional design-axis diagnostic.
+   It transforms collision momenta without changing the existing weights and
+   is not a replacement finite-angle collision or flux calculation.
+
+8) Native viewer output (--make_gui_files):
+
+   gui_b1.N and gui_b2.N contain deterministic sampled beam states at frame N.
+   gui_manifest.raw.json binds frame identities, evaluated parameters and RNG
+   checkpoint provenance. gui_diagnostics.json stores native moments and
+   optional field-evaluation, photon and pair histograms. gui_fields.json
+   stores sampled field layers; gui_mesh_coverage.json records domain coverage.
+   gui_secondary_frames.json stores interval/final secondary distributions.
+   gui_imported_trajectories.json stores identified imported-track histories.
+   These files are conditional on supported output paths. A missing process
+   is distinct from a computed population with zero entries.
+
+   tools/finalize_gui_dataset.py validates the native files and produces
+   gui_manifest.json plus derived viewer datasets, with source/binary hashes,
+   normalization provenance and fit status. The manifest lists every served
+   file. A finalized dataset is not evidence of numerical convergence.
+   See docs/COLLIDER_GUI.md for frame weighting, display units and exports.
+
+9) imported_spin.json (imported_spin_mode=1):
+
+   Initial/final phase space, spin and helicity for explicitly identified
+   imported electron/positron tracks, including field-sampling diagnostics.
+   This radiation-off BMT mode is described in docs/IMPORTED_SPIN.md. It is
+   independent of the smaller GUI trajectory-sampling limit.
+
+10) rndm.save (rndm_save=1):
+
+   Versioned, checksummed complete random-number state, including the Gaussian
+   cache. An explicit rndm_load=1 restores it in preference to rndm_seed.
+   Both switches default to zero. Failed or incompatible loads stop the run;
+   see docs/RNG_CHECKPOINTS.md for transactional and portability guarantees.
+
+ 

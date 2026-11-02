@@ -1,0 +1,2 @@
+# Optional arbitrary-precision equation checks; ordinary paper replay does not use it.
+mpmath>=1.3,<2

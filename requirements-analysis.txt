@@ -1,0 +1,4 @@
+# Analysis and plotting; the C++ executable has no Python dependency.
+numpy>=1.24,<3
+scipy>=1.10,<2
+matplotlib>=3.7,<4

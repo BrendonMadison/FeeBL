@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 21,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "release-base",
+      "hidden": true,
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "FFTW3": "ON"
+      }
+    },
+    {
+      "name": "serial-release",
+      "displayName": "Release: serial and persistent C++ pool",
+      "description": "CPU-only build; historical serial execution remains the runtime default",
+      "inherits": "release-base",
+      "cacheVariables": {
+        "FEEBL_ENABLE_OPENMP": "OFF",
+        "FEEBL_ENABLE_CUDA": "OFF"
+      }
+    },
+    {
+      "name": "openmp-release",
+      "displayName": "Release: serial, C++ pool, and OpenMP candidate",
+      "description": "Adds the optional omp_atomic comparison kernel",
+      "inherits": "release-base",
+      "cacheVariables": {
+        "FEEBL_ENABLE_OPENMP": "ON",
+        "FEEBL_ENABLE_CUDA": "OFF"
+      }
+    },
+    {
+      "name": "cuda-release",
+      "displayName": "Release: optional CUDA CIC prototype",
+      "description": "Requires a CUDA compiler and a real NVIDIA GPU for runtime tests",
+      "inherits": "release-base",
+      "cacheVariables": {
+        "FEEBL_ENABLE_OPENMP": "OFF",
+        "FEEBL_ENABLE_CUDA": "ON",
+        "FEEBL_CUDA_ARCHITECTURES": "native",
+        "FEEBL_CUDA_ALLOW_UNSUPPORTED_COMPILER": "OFF"
+      }
+    },
+    {
+      "name": "cuda-openmp-release",
+      "displayName": "Release: CUDA mode 1/2 plus OpenMP host tasks",
+      "description": "Combined CUDA+OpenMP build for GPU2 host orchestration; serial remains the runtime default",
+      "inherits": "release-base",
+      "cacheVariables": {
+        "FEEBL_ENABLE_OPENMP": "ON",
+        "FEEBL_ENABLE_CUDA": "ON",
+        "FEEBL_CUDA_ARCHITECTURES": "native",
+        "FEEBL_CUDA_ALLOW_UNSUPPORTED_COMPILER": "OFF"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "serial-release",
+      "configurePreset": "serial-release"
+    },
+    {
+      "name": "openmp-release",
+      "configurePreset": "openmp-release"
+    },
+    {
+      "name": "cuda-release",
+      "configurePreset": "cuda-release"
+    },
+    {
+      "name": "cuda-openmp-release",
+      "configurePreset": "cuda-openmp-release"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "serial-release",
+      "configurePreset": "serial-release",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "openmp-release",
+      "configurePreset": "openmp-release",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "cuda-release",
+      "configurePreset": "cuda-release",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "cuda-openmp-release",
+      "configurePreset": "cuda-openmp-release",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}
