@@ -106,3 +106,13 @@ results. The [input reference](docs/INPUT_REFERENCE.md) lists all native keys.
 ## AI Disclosure
 
 This work was done with a combination of agentic AI and human labor. No generative AI was used in any part.
+
+## Acknowledgements
+
+We thank Wolfram Research for providing a complimentary 
+Mathematica license that was used in the research published here. We thank Daniel Schulte
+for discussions and existing work on Guinea-Pig. The author acknowledges
+support from Deutsches Elektronen-Synchrotron (DESY), a member of the Helmholtz Association
+(HGF). This research utilized computational resources provided by the Maxwell high-performance
+computing cluster and the German National Analysis Facility (NAF), both operated at DESY,
+Hamburg, Germany.
