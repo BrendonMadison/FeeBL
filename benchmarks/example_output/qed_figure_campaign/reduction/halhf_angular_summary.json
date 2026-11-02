@@ -1,0 +1,776 @@
+{
+  "models": {
+    "model1": {
+      "runs": [
+        {
+          "seed": 73051001,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4889,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 60,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1865,
+            "forward_positron": 1621,
+            "backward_electron": 586,
+            "backward_positron": 817
+          }
+        },
+        {
+          "seed": 73051002,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4748,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 67,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1810,
+            "forward_positron": 1567,
+            "backward_electron": 577,
+            "backward_positron": 794
+          }
+        },
+        {
+          "seed": 73051003,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 5050,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 63,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1915,
+            "forward_positron": 1607,
+            "backward_electron": 661,
+            "backward_positron": 867
+          }
+        },
+        {
+          "seed": 73051004,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4856,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 52,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 1,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1802,
+            "forward_positron": 1624,
+            "backward_electron": 605,
+            "backward_positron": 825
+          }
+        },
+        {
+          "seed": 73051005,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4797,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 68,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 1,
+            "backward_electron": 0,
+            "backward_positron": 1
+          },
+          "selected": {
+            "forward_electron": 1793,
+            "forward_positron": 1639,
+            "backward_electron": 566,
+            "backward_positron": 799
+          }
+        },
+        {
+          "seed": 73051006,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4892,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 71,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1778,
+            "forward_positron": 1605,
+            "backward_electron": 657,
+            "backward_positron": 852
+          }
+        },
+        {
+          "seed": 73051007,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4805,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 61,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1802,
+            "forward_positron": 1555,
+            "backward_electron": 603,
+            "backward_positron": 845
+          }
+        },
+        {
+          "seed": 73051008,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4821,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 53,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1862,
+            "forward_positron": 1563,
+            "backward_electron": 607,
+            "backward_positron": 789
+          }
+        },
+        {
+          "seed": 73051009,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 5044,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 61,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1842,
+            "forward_positron": 1695,
+            "backward_electron": 632,
+            "backward_positron": 875
+          }
+        },
+        {
+          "seed": 73051010,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4690,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 48,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1757,
+            "forward_positron": 1556,
+            "backward_electron": 570,
+            "backward_positron": 807
+          }
+        },
+        {
+          "seed": 73051011,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4980,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 61,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 1,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1891,
+            "forward_positron": 1620,
+            "backward_electron": 623,
+            "backward_positron": 846
+          }
+        },
+        {
+          "seed": 73051012,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4790,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 61,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1761,
+            "forward_positron": 1565,
+            "backward_electron": 619,
+            "backward_positron": 845
+          }
+        }
+      ],
+      "support_metrics": {
+        "forward_electron": {
+          "occupied_support_jaccard": 0.7703379224030038,
+          "reference_support_coverage": 0.8374149659863945,
+          "simulated_count_fraction_in_reference_support": 0.9916346681294569,
+          "interpretation": "Descriptive support comparison; raster occupancy is not event count or probability"
+        },
+        "forward_positron": {
+          "occupied_support_jaccard": 0.7510121457489879,
+          "reference_support_coverage": 0.8548387096774194,
+          "simulated_count_fraction_in_reference_support": 0.9908930058284764,
+          "interpretation": "Descriptive support comparison; raster occupancy is not event count or probability"
+        },
+        "backward_electron": {
+          "occupied_support_jaccard": 0.6350877192982456,
+          "reference_support_coverage": 0.7377717391304348,
+          "simulated_count_fraction_in_reference_support": 0.9786447638603696,
+          "interpretation": "Descriptive support comparison; raster occupancy is not event count or probability"
+        },
+        "backward_positron": {
+          "occupied_support_jaccard": 0.7007943512797882,
+          "reference_support_coverage": 0.7963891675025075,
+          "simulated_count_fraction_in_reference_support": 0.9800120530333466,
+          "interpretation": "Descriptive support comparison; raster occupancy is not event count or probability"
+        }
+      },
+      "support_yield_seed_diagnostics": {
+        "columns": [
+          "forward_electron",
+          "forward_positron",
+          "backward_electron",
+          "backward_positron"
+        ],
+        "minimum_seed_value": [
+          17570.0,
+          15550.0,
+          5660.0,
+          7890.0
+        ],
+        "maximum_seed_value": [
+          19150.0,
+          16950.0,
+          6610.0,
+          8750.0
+        ],
+        "leave_one_out_mean_min": [
+          18147.272727272728,
+          15928.181818181818,
+          6040.0,
+          8259.09090909091
+        ],
+        "leave_one_out_mean_max": [
+          18290.909090909092,
+          16055.454545454546,
+          6126.363636363636,
+          8337.272727272728
+        ],
+        "leave_one_out_sem_min": [
+          133.34228620080052,
+          95.40171698300709,
+          84.43394405741633,
+          80.33401346259419
+        ],
+        "leave_one_out_sem_max": [
+          161.21183640895327,
+          133.37575082859294,
+          99.16427642557709,
+          91.85327862078974
+        ],
+        "full_sample_sem": [
+          147.64545131134008,
+          121.80046607198815,
+          90.53816372618284,
+          83.97330022998472
+        ],
+        "first_half": {
+          "n": 6,
+          "mean": [
+            18271.666666666668,
+            16103.333333333334,
+            6085.0,
+            8255.0
+          ],
+          "sem": [
+            213.3762977569075,
+            99.72183534434394,
+            167.6653412803811,
+            118.96077784995637
+          ]
+        },
+        "second_half": {
+          "n": 6,
+          "mean": [
+            18190.0,
+            15923.333333333334,
+            6090.0,
+            8345.0
+          ],
+          "sem": [
+            222.97981971469977,
+            228.23477191504173,
+            89.1814629468105,
+            126.74778104566565
+          ]
+        },
+        "maximum_leave_one_out_shift_in_full_sem": [
+          0.5659544897485522,
+          0.6991066446427925,
+          0.5246406382136887,
+          0.48716783545542364
+        ],
+        "approximate_relative_sem_estimation_error_if_gaussian": 0.21320071635561041,
+        "qualification": "All seeds retained; Gaussian SEM-estimation estimate is descriptive and may fail for heavy weights"
+      }
+    },
+    "model2": {
+      "runs": [
+        {
+          "seed": 73052001,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 5039,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 61,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1855,
+            "forward_positron": 1664,
+            "backward_electron": 668,
+            "backward_positron": 852
+          }
+        },
+        {
+          "seed": 73052002,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4873,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 62,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1797,
+            "forward_positron": 1632,
+            "backward_electron": 597,
+            "backward_positron": 847
+          }
+        },
+        {
+          "seed": 73052003,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 5022,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 69,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1890,
+            "forward_positron": 1634,
+            "backward_electron": 678,
+            "backward_positron": 820
+          }
+        },
+        {
+          "seed": 73052004,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4825,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 58,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 1,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1764,
+            "forward_positron": 1576,
+            "backward_electron": 636,
+            "backward_positron": 849
+          }
+        },
+        {
+          "seed": 73052005,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4852,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 62,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1801,
+            "forward_positron": 1598,
+            "backward_electron": 613,
+            "backward_positron": 840
+          }
+        },
+        {
+          "seed": 73052006,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4899,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 59,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1832,
+            "forward_positron": 1600,
+            "backward_electron": 644,
+            "backward_positron": 823
+          }
+        },
+        {
+          "seed": 73052007,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 5096,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 69,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1930,
+            "forward_positron": 1723,
+            "backward_electron": 641,
+            "backward_positron": 802
+          }
+        },
+        {
+          "seed": 73052008,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4924,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 61,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1908,
+            "forward_positron": 1631,
+            "backward_electron": 575,
+            "backward_positron": 810
+          }
+        },
+        {
+          "seed": 73052009,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4861,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 57,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1784,
+            "forward_positron": 1649,
+            "backward_electron": 613,
+            "backward_positron": 815
+          }
+        },
+        {
+          "seed": 73052010,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 5081,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 57,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1918,
+            "forward_positron": 1676,
+            "backward_electron": 656,
+            "backward_positron": 831
+          }
+        },
+        {
+          "seed": 73052011,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4931,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 64,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1827,
+            "forward_positron": 1667,
+            "backward_electron": 600,
+            "backward_positron": 837
+          }
+        },
+        {
+          "seed": 73052012,
+          "pair_ratio": 0.1,
+          "per_row_crossing_weight": 10.0,
+          "rows": 4825,
+          "z_zero": 0,
+          "pz_zero": 0,
+          "position_momentum_sign_disagree": 62,
+          "zero_theta_or_pt": 0,
+          "under_or_overflow": {
+            "forward_electron": 0,
+            "forward_positron": 0,
+            "backward_electron": 0,
+            "backward_positron": 0
+          },
+          "selected": {
+            "forward_electron": 1798,
+            "forward_positron": 1541,
+            "backward_electron": 631,
+            "backward_positron": 855
+          }
+        }
+      ],
+      "support_metrics": {
+        "forward_electron": {
+          "occupied_support_jaccard": 0.7658385093167702,
+          "reference_support_coverage": 0.8387755102040816,
+          "simulated_count_fraction_in_reference_support": 0.9906343317346846,
+          "interpretation": "Descriptive support comparison; raster occupancy is not event count or probability"
+        },
+        "forward_positron": {
+          "occupied_support_jaccard": 0.7527527527527528,
+          "reference_support_coverage": 0.8663594470046083,
+          "simulated_count_fraction_in_reference_support": 0.9903016691337859,
+          "interpretation": "Descriptive support comparison; raster occupancy is not event count or probability"
+        },
+        "backward_electron": {
+          "occupied_support_jaccard": 0.6366822429906542,
+          "reference_support_coverage": 0.7404891304347826,
+          "simulated_count_fraction_in_reference_support": 0.9782838983050847,
+          "interpretation": "Descriptive support comparison; raster occupancy is not event count or probability"
+        },
+        "backward_positron": {
+          "occupied_support_jaccard": 0.7221727515583259,
+          "reference_support_coverage": 0.8134403209628887,
+          "simulated_count_fraction_in_reference_support": 0.9816559743384125,
+          "interpretation": "Descriptive support comparison; raster occupancy is not event count or probability"
+        }
+      },
+      "support_yield_seed_diagnostics": {
+        "columns": [
+          "forward_electron",
+          "forward_positron",
+          "backward_electron",
+          "backward_positron"
+        ],
+        "minimum_seed_value": [
+          17630.0,
+          15410.0,
+          5750.0,
+          8020.0
+        ],
+        "maximum_seed_value": [
+          19300.0,
+          17230.0,
+          6780.0,
+          8550.0
+        ],
+        "leave_one_out_mean_min": [
+          18339.090909090908,
+          16243.636363636364,
+          6249.090909090909,
+          8296.363636363636
+        ],
+        "leave_one_out_mean_max": [
+          18490.909090909092,
+          16409.090909090908,
+          6342.727272727273,
+          8344.545454545454
+        ],
+        "leave_one_out_sem_min": [
+          157.9899567892877,
+          125.05602050466346,
+          80.58976823270837,
+          47.3356224953765
+        ],
+        "leave_one_out_sem_max": [
+          180.43794290467133,
+          154.78003587069048,
+          97.05498143571819,
+          55.8377223717929
+        ],
+        "full_sample_sem": [
+          164.96307361517503,
+          141.29519032182523,
+          88.61162565950475,
+          50.97719335569822
+        ],
+        "first_half": {
+          "n": 6,
+          "mean": [
+            18230.0,
+            16173.333333333334,
+            6393.333333333333,
+            8385.0
+          ],
+          "sem": [
+            185.7776448697026,
+            129.78614889287857,
+            126.95581033484753,
+            56.25833271614081
+          ]
+        },
+        "second_half": {
+          "n": 6,
+          "mean": [
+            18608.333333333332,
+            16478.333333333332,
+            6193.333333333333,
+            8250.0
+          ],
+          "sem": [
+            266.288273201139,
+            248.387018805555,
+            120.12955968915855,
+            80.2911369122811
+          ]
+        },
+        "maximum_leave_one_out_shift_in_full_sem": [
+          0.4854162560195749,
+          0.5892456464225005,
+          0.5574205306168175,
+          0.530540282136402
+        ],
+        "approximate_relative_sem_estimation_error_if_gaussian": 0.21320071635561041,
+        "qualification": "All seeds retained; Gaussian SEM-estimation estimate is descriptive and may fail for heavy weights"
+      }
+    }
+  },
+  "hemisphere": "Final position z>0/z<0; position-versus-momentum sign disagreements retained",
+  "angle": "atan2(hypot(beta_x,beta_y),abs(beta_z)); nearest-beam folding is a declared reconstruction",
+  "transverse_momentum": "abs(E_GeV)*hypot(beta_x,beta_y); beta is p/E, not a unit direction",
+  "covariance": "Per-bin covariance of complete-collision mean = factor.T@factor; no independent-copy Poisson term",
+  "normalization": "Average per-seed counts divided by declared pair_ratio; not unit normalized. Occupancy frequencies describe the stored sample, so remain statistics dependent",
+  "reference": "Published occupied pixels only; no artificial count uncertainty or density pull map",
+  "masking": "Reference cells without valid image pixels are excluded from overlap metrics",
+  "selection": "Pure incoherent daughters; 0.5 MeV native birth admission; no final-energy recut"
+}

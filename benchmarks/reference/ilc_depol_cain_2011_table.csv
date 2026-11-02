@@ -1,0 +1,4 @@
+sample,initial_polarisation,BMT_loss_percentage_points,ST_loss_percentage_points,incoherent_percentage_points,coherent_percentage_points,total_loss_percentage_points,source_quoted_absolute_stat_uncertainty_percentage_points,source
+ILC_RDR_500,1.0,0.17,0.05,0.0,0.0,0.22,0.1,Bailey2011 Table 2
+CLIC_G_3000,1.0,0.1,3.4,0.06,1.3,4.8,0.1,Bailey2011 Table 2
+CLIC_2010_3000,1.0,0.09,3.81,0.0,1.51,5.53,0.1,Bailey2011 Table 2

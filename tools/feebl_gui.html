@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FeeBL Beam Viewer</title>
+<style>
+  [hidden]{display:none!important}
+  :root{
+    --bg:#f7f7f4; --panel:#ffffff; --ink:#14181a; --mid:#5d666b;
+    --line:#dfe2dd; --accent:#1f5c8b; --active-ink:#ffffff;
+    --e1:#0072b2; --e2:#d55e00; --warn:#8c2f39;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  }
+  :root:not([data-theme="light"]){ }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#14171a; --panel:#1c2024; --ink:#e8eae7; --mid:#98a1a6;
+      --line:#2b3138; --accent:#6aa9d8; --active-ink:#14181a;
+      --e1:#56b4e9; --e2:#e69f00; --warn:#e0808a;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#14171a; --panel:#1c2024; --ink:#e8eae7; --mid:#98a1a6;
+    --line:#2b3138; --accent:#6aa9d8; --active-ink:#14181a;
+    --e1:#56b4e9; --e2:#e69f00; --warn:#e0808a;
+  }
+  *{box-sizing:border-box}
+  main>*{min-width:0}
+  header,.sub,.hint,#status,td{overflow-wrap:anywhere}
+  aside,section,.grp,.row{min-width:0;max-width:100%}
+  select,input[type=file],button{max-width:100%;min-width:0}
+  select,input[type=file]{width:100%}
+  table{table-layout:fixed}
+  details{max-width:100%;font-size:12px}
+  summary{cursor:pointer;color:var(--accent)}
+  pre{max-width:100%;max-height:220px;overflow:auto;white-space:pre-wrap;
+      overflow-wrap:anywhere;font:11px/1.5 var(--mono)}
+  .grp p{margin:0}
+  #fieldControls{padding:10px 12px;margin:0 0 12px;border:1px solid var(--line);border-radius:4px;background:var(--panel)}
+  #fieldControls .panel-controls{margin:4px 0;gap:8px}
+  #fieldControls .field-control-group{display:inline-flex;align-items:center;gap:6px;min-width:0;max-width:100%}
+  #fieldControls .field-control-group label{white-space:nowrap;flex-shrink:0}
+  #fieldControls details{margin-top:6px}
+  #fieldDetails{margin:6px 0 0}
+  #fieldControls input[type=range]{width:110px;max-width:100%}
+  #fieldLegend{width:100%;max-width:460px;height:auto;border:0;background:transparent}
+  #fieldBothLegends{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:760px}
+  #fieldBothLegends[hidden]{display:none}
+  @media(max-width:640px){#fieldBothLegends{grid-template-columns:minmax(0,1fr);max-width:460px}}
+  #fieldBothLegends span{font-size:12px;font-weight:600}
+  #fieldBothLegends canvas{display:block;width:100%;height:auto;border:0;background:transparent}
+  #fieldNote{margin:6px 0 0;font-size:12px;min-height:36px}
+  #c{min-height:240px}
+  body{padding-bottom:132px}
+  #playback{position:fixed;inset:auto 0 0;z-index:50;border-top:1px solid var(--line);
+    background:var(--panel);padding:10px 20px max(10px,env(safe-area-inset-bottom));box-shadow:0 -3px 12px #0001}
+  #playback .play-row{display:grid;grid-template-columns:auto minmax(80px,1fr) auto;gap:14px;align-items:center}
+  #playback .hint{margin:4px 0 0}
+  #playback button{min-width:70px}
+  #frlab{white-space:nowrap;font-size:12px}
+  .panel-controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:10px 0}
+  .panel-controls select{width:auto;max-width:100%}
+  .secondary-control{display:inline-flex;align-items:center;gap:6px;min-width:0;max-width:100%}
+  .event-deflection-plot .plot-statistics{top:auto;bottom:58px;width:224px}
+  .secondary-control label{white-space:nowrap}.secondary-control select{min-width:0}
+  .unavailable{padding:12px;border:1px solid var(--line);border-radius:4px;color:var(--mid)}
+  .projection-bar{padding:10px 12px;margin:0 0 10px;border:1px solid var(--line);border-radius:4px;background:var(--panel)}
+  .projection-bar .panel-controls{margin:0 0 4px}
+  #projectionContext{margin:0;font-size:12px}
+  .statistics-plot{position:relative;min-width:0;margin:0 0 10px;--plot-left:105px}
+  .statistics-plot.distribution-plot{--plot-left:92px}
+  .statistics-plot canvas{height:320px}
+  .plot-statistics{position:absolute;left:calc(var(--plot-left) + 6px);top:51px;z-index:1;
+    width:224px;max-width:calc(100% - var(--plot-left) - 26px);padding:7px 9px;
+    background:var(--panel);background:color-mix(in srgb,var(--panel) 94%,transparent);
+    border:1px solid var(--line);border-radius:4px;font:11px/1.35 var(--sans);pointer-events:none}
+  #secondaryHeatmapPlot{--plot-left:92px}
+  #secondaryHeatmap{height:460px}
+  #secondaryHeatmapStats{width:390px;font-size:10px;top:auto;bottom:60px}
+  #secondaryHeatmapStats table{width:100%;table-layout:fixed;border-collapse:collapse}
+  #secondaryHeatmapStats th,#secondaryHeatmapStats td{padding:2px 3px;font-size:10px;text-align:right}
+  #secondaryHeatmapStats th:first-child,#secondaryHeatmapStats td:first-child{text-align:left}
+  .plot-statistics strong{display:block;margin-bottom:4px;font-size:11px}
+  .plot-statistics dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 8px;margin:0}
+  .plot-statistics dt{color:var(--mid)}
+  .plot-statistics dd{margin:0;text-align:right;font-family:var(--mono);overflow-wrap:anywhere}
+  .plot-statistics p{margin:5px 0 0;color:var(--mid);font-size:10px;line-height:1.3}
+  @media(max-width:1200px){.distribution-grid{grid-template-columns:1fr!important}}
+  .distribution-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  h2{font-size:15px}h3{font-size:13px;margin:8px 0}
+  @media(max-width:650px){.distribution-grid{grid-template-columns:1fr}
+    #playback{padding:8px 10px}#playback .play-row{grid-template-columns:auto minmax(80px,1fr);gap:8px}
+    #frlab{grid-column:1/-1;white-space:normal}body{padding-bottom:160px}}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+       font-size:14px;line-height:1.5}
+  header{padding:14px 20px;border-bottom:1px solid var(--line);
+         display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+  h1{font-size:15px;margin:0;font-weight:600;letter-spacing:.01em}
+  .sub{color:var(--mid);font-size:12.5px;font-family:var(--mono)}
+  main{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:0;
+       align-items:start}
+  @media (max-width:900px){ main{grid-template-columns:1fr} }
+  #stage{padding:16px 20px}
+  canvas{width:100%;height:auto;display:block;background:var(--panel);
+         border:1px solid var(--line);border-radius:4px}
+  aside{padding:16px 20px;border-left:1px solid var(--line);
+        display:flex;flex-direction:column;gap:14px}
+  @media (max-width:900px){ aside{border-left:none;border-top:1px solid var(--line)} }
+  .grp{display:flex;flex-direction:column;gap:6px}
+  .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.07em;
+       color:var(--mid);font-weight:600}
+  select,input[type=file],button{font:inherit;background:var(--panel);
+       color:var(--ink);border:1px solid var(--line);border-radius:4px;
+       padding:5px 8px}
+  button{cursor:pointer}
+  button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  .scope-badge{font:11px var(--sans);color:var(--mid);border:1px solid var(--line);padding:2px 5px;border-radius:3px}
+  .beam-key{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;margin:6px 0}
+  button:hover{border-color:var(--accent)}
+  button.on{background:var(--accent);color:var(--active-ink);border-color:var(--accent)}
+  input[type=range]{width:100%}
+  .row{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+  .presets button{font-size:12px;padding:4px 7px}
+  table{border-collapse:collapse;width:100%;font-family:var(--mono);font-size:12px}
+  td{padding:2px 0;border-bottom:1px solid var(--line)}
+  td:last-child{text-align:right}
+  .k{color:var(--mid)}
+  .b1{color:var(--e1);font-weight:600}
+  .b2{color:var(--e2);font-weight:600}
+  .ok{color:var(--e1);font-weight:600;letter-spacing:.03em}
+  .warn{color:var(--warn);font-weight:600;letter-spacing:.03em}
+  #optics td:last-child{text-align:right;max-width:190px}
+  .hint{color:var(--mid);font-size:12px}
+  .big{font-family:var(--mono);font-size:19px;font-weight:600}
+  #drop{margin:20px;padding:34px;border:1.5px dashed var(--line);
+        border-radius:6px;text-align:center;color:var(--mid)}
+  code{font-family:var(--mono);font-size:12px;background:var(--bg);
+       padding:1px 4px;border-radius:3px}
+.shape-mismatch{border-left:3px solid #d55e00;padding-left:.6rem;font-weight:600}
+</style>
+
+<header>
+  <h1>FeeBL Beam Viewer</h1>
+  <span class="sub" id="runinfo">no run loaded</span>
+  <button id="openAnother">Open another run</button>
+</header>
+
+<div role="status" aria-live="polite" id="status" style="padding:12px 20px">Select an authenticated collider dataset.</div>
+<div id="drop">
+  <p><strong>Open a run directory</strong> — one containing
+     <code>gui_manifest.json</code> and the <code>gui_b1.*</code> / <code>gui_b2.*</code> snapshots.</p>
+  <p>After simulation, run <code>tools/finalize_gui_dataset.py</code> to bind hashes and provenance.</p>
+  <p><input aria-label="Open collider dataset folder" type="file" id="dir" webkitdirectory directory multiple></p>
+  <p class="hint">Produce one with <code>feebl --make_gui_files &hellip;</code>.
+     Nothing is uploaded; the files are read in the browser.</p>
+</div>
+
+<div class="panel-controls" style="padding:0 20px">
+  <label for="globalScope">All diagnostic panels</label>
+  <select id="globalScope"><option value="frame">Current frame</option><option value="total" selected>Total collision / final records</option></select>
+  <label><input id="scopeOverrides" type="checkbox"> Per-panel overrides</label>
+  <span class="hint">Frame means the current interval; beam moments use the stored state. Total uses each panel's stated weighting.</span>
+</div>
+<main hidden id="app">
+  <div id="stage">
+    <section id="fieldControls" aria-label="Native field overlay">
+      <div class="panel-controls">
+        <span class="field-control-group"><label for="fieldMode">Field overlay</label><select id="fieldMode" disabled><option value="off">Off</option><option value="on">On</option></select></span>
+        <span class="field-control-group"><label for="fieldData">Field data</label><select id="fieldData" disabled><option value="snapshot">Full bunch snapshot</option><option value="encounter">Active encounters</option></select></span>
+        <span class="field-control-group"><label for="fieldSource">Source</label><select id="fieldSource" disabled></select></span>
+        <span class="field-control-group"><label for="fieldOpacity">Layer opacity</label><input id="fieldOpacity" type="range" min="0" max="1" step="0.05" value="0.65" disabled><output id="fieldOpacityValue" for="fieldOpacity">65%</output></span>
+        <span class="field-control-group"><label for="fieldScale">Color scale</label><select id="fieldScale" disabled><option value="run">Fixed across run</option><option value="frame">Auto for frame</option></select></span>
+        <button id="fieldPlane" hidden>Use z–x view</button>
+      </div>
+      <canvas id="fieldLegend" width="460" height="50" hidden aria-label="Cividis-derived field magnitude legend"></canvas>
+      <p class="hint">Native electric-equivalent |E⊥| [GV/m]; this is not the Lorentz force or the vector sum of both layers.</p>
+      <div id="fieldBothLegends" hidden>
+        <div><span>Beam 1 · blue</span><canvas id="fieldLegendBeam1" width="360" height="38" aria-label="Beam 1 field layer legend"></canvas></div>
+        <div><span>Beam 2 · orange</span><canvas id="fieldLegendBeam2" width="360" height="38" aria-label="Beam 2 field layer legend"></canvas></div>
+      </div>
+      <p id="fieldNote" class="hint">Field overlay unavailable until an authenticated field export is loaded.</p>
+      <details id="fieldDetailsDisclosure"><summary>Field sampling details</summary><p id="fieldDetails" class="hint"></p></details>
+    </section>
+    <section class="projection-bar" aria-label="Particle projection">
+      <div class="panel-controls"><strong>Particle view</strong>
+        <button id="collisionOverview">Collision overview</button>
+        <button id="fieldZX">Field z–x</button><button id="fieldZY">Field z–y</button><button id="fitField" disabled>Fit field window</button></div>
+      <div class="row presets"><button data-x="z" data-y="d">Chirp z–δ</button><button data-x="d" data-y="x">Dispersion δ–x</button><button data-x="x" data-y="y">Transverse x–y</button></div><p id="projectionContext">z–x and z–y show longitudinal approach and source-slice field cross-sections. x–y hides longitudinal separation.</p>
+    </section>
+    <div class="beam-key"><span class="b1">■ Beam 1 · displayed motion toward −z ←</span><span class="b2">◆ Beam 2 · displayed motion toward +z →</span></div>
+      <p class="hint">Native display z; arrows describe centroid motion in this saved coordinate convention, not the nominal helicity reference axis.</p>
+      <canvas id="c" width="1180" height="660" aria-label="Two bunches in selected physical projection"></canvas>
+    <section id="playback" aria-label="Persistent collision playback">
+      <div class="play-row"><button id="play">Play</button>
+        <input aria-label="Collision frame" type="range" id="fr" min="0" max="0" value="0">
+        <span class="sub" id="frlab">0 / 0</span></div>
+      <p class="hint">Frame 0 follows collision diagonal 0; no pre-collision frame. Histograms in frame mode cover the stated interval between snapshots.</p>
+    </section>
+    <p id="sampling" class="hint"></p>
+    <section id="spectrumPanel" hidden aria-label="Native electron positron luminosity spectra">
+      <h2 style="font-size:15px">e+e− luminosity spectra</h2>
+      <div class="panel-controls"><label for="spectrumScope">Spectrum view</label>
+      <select id="spectrumScope"><option value="total">Total collision</option><option value="frame">Frame interval</option></select>
+      <label for="spectrumUnits">Normalization</label>
+      <select id="spectrumUnits"><option value="native">Absolute per crossing</option><option value="persecond">Absolute per second</option><option value="shape">Shape, including flow weights</option></select>
+      <button id="analysisDownload">Download shared analysis JSON</button></div>
+      <p id="spectrumContext" class="hint"></p>
+      <p id="spectrumUnavailable" class="unavailable" hidden></p>
+      <div id="spectrumFullPlot" class="statistics-plot"><canvas id="spectrumFull" width="1100" height="330" aria-label="Full native electron positron spectrum with logarithmic vertical axis"></canvas><div id="spectrumFullStats" class="plot-statistics" role="group" hidden></div></div><details id="spectrumFullStatsDetails" hidden><summary>Statistics scope and weights</summary><p id="spectrumFullStatsNotes" class="hint"></p></details>
+      <p id="spectrumPeakResolution" class="hint" hidden></p><p id="spectrumPeakFitNote" class="hint" hidden></p>
+      <div id="spectrumPeakPlot" class="statistics-plot"><canvas id="spectrumPeak" width="1100" height="330" aria-label="Native electron positron spectrum above 0.98 design nominal W with linear vertical axis"></canvas><div id="spectrumPeakStats" class="plot-statistics" role="group" hidden></div></div><details id="spectrumPeakStatsDetails" hidden><summary>Statistics scope and weights</summary><p id="spectrumPeakStatsNotes" class="hint"></p></details>
+      <p id="spectrumSummary" class="hint"></p>
+      <p id="spectrumLimits" class="hint"></p>
+    </section>
+    <section id="distributionsPanel" aria-label="Computed radiation and pair distributions">
+      <h2>Radiation and pair distributions</h2>
+      <div class="panel-controls"><label for="distributionScope">Distribution view</label>
+        <label for="distributionRange">Distribution extent</label><select id="distributionRange"><option value="occupied">Occupied bins</option><option value="full">Full native range</option></select>
+      <select id="distributionScope"><option value="frame">Frame interval</option><option value="total">Total collision</option></select></div>
+      <p id="distributionContext" class="hint"></p>
+      <div class="distribution-grid">
+        <section id="chiCombinedPanel"><h3>Combined primary χe (both beams)</h3><div id="chiECanvasPlot" class="statistics-plot distribution-plot"><canvas id="chiECanvas" width="760" height="320" aria-label="Combined primary chi e from both beams" hidden></canvas><div id="chiECanvasStats" class="plot-statistics" role="group" hidden></div></div><details id="chiECanvasStatsDetails" hidden><summary>Statistics scope and weights</summary><p id="chiECanvasStatsNotes" class="hint"></p></details><p id="chiENote" class="unavailable"></p></section>
+        <section id="chiElectronPanel" hidden><h3>Primary electrons χe (beam 1)</h3><div id="chiElectronCanvasPlot" class="statistics-plot distribution-plot"><canvas id="chiElectronCanvas" width="760" height="320" aria-label="Primary electrons chi e, beam 1" hidden></canvas><div id="chiElectronCanvasStats" class="plot-statistics" role="group" hidden></div></div><details id="chiElectronCanvasStatsDetails" hidden><summary>Statistics scope and weights</summary><p id="chiElectronCanvasStatsNotes" class="hint"></p></details><p id="chiElectronNote" class="unavailable"></p></section>
+        <section id="chiPositronPanel" hidden><h3>Primary positrons χe (beam 2)</h3><div id="chiPositronCanvasPlot" class="statistics-plot distribution-plot"><canvas id="chiPositronCanvas" width="760" height="320" aria-label="Primary positrons chi e, beam 2" hidden></canvas><div id="chiPositronCanvasStats" class="plot-statistics" role="group" hidden></div></div><details id="chiPositronCanvasStatsDetails" hidden><summary>Statistics scope and weights</summary><p id="chiPositronCanvasStatsNotes" class="hint"></p></details><p id="chiPositronNote" class="unavailable"></p></section>
+        <section><h3>Photon strong-field parameter χγ</h3><div id="chiGammaCanvasPlot" class="statistics-plot distribution-plot"><canvas id="chiGammaCanvas" width="760" height="320" hidden></canvas><div id="chiGammaCanvasStats" class="plot-statistics" role="group" hidden></div></div><details id="chiGammaCanvasStatsDetails" hidden><summary>Statistics scope and weights</summary><p id="chiGammaCanvasStatsNotes" class="hint"></p></details><p id="chiGammaNote" class="unavailable"></p></section>
+        <section><h3>Photon energy</h3><div id="photonCanvasPlot" class="statistics-plot distribution-plot"><canvas id="photonCanvas" width="760" height="320" hidden></canvas><div id="photonCanvasStats" class="plot-statistics" role="group" hidden></div></div><details id="photonCanvasStatsDetails" hidden><summary>Statistics scope and weights</summary><p id="photonCanvasStatsNotes" class="hint"></p></details><p id="photonNote" class="unavailable"></p></section>
+        <section><h3>Produced-pair energy</h3><div id="pairCanvasPlot" class="statistics-plot distribution-plot"><canvas id="pairCanvas" width="760" height="320" hidden></canvas><div id="pairCanvasStats" class="plot-statistics" role="group" hidden></div></div><details id="pairCanvasStatsDetails" hidden><summary>Statistics scope and weights</summary><p id="pairCanvasStatsNotes" class="hint"></p></details><p id="pairNote" class="unavailable"></p></section>
+      </div>
+    </section>
+    <section id="secondaryPanel" aria-label="Particle angle and transverse momentum">
+      <h2>Particle kinematics and event deflections</h2>
+      <div class="panel-controls">
+        <span class="secondary-control"><label for="secondaryScope">Scope</label><select id="secondaryScope"><option value="frame">Current frame</option><option value="total" selected>Total (final records)</option></select></span>
+        <span class="secondary-control"><label for="secondaryPopulation">Population</label><select id="secondaryPopulation"><option value="pairs">Produced pairs</option><option value="deflected">Deflected particles</option><option value="combined">Mixed stored population</option></select></span>
+        <span id="secondaryZControl" class="secondary-control"><label for="secondaryZ">Stored z position</label><select id="secondaryZ"><option value="all">All</option><option value="positive">z &gt; 0</option><option value="negative">z &lt; 0</option></select></span>
+        <span id="secondaryAngleControl" class="secondary-control"><label for="secondaryAngle">Polar angle</label><select id="secondaryAngle"><option value="global">Common +z axis (0–π)</option><option value="folded">Nearest ±z axis (0–π/2)</option></select></span>
+        <span id="secondaryColorControl" class="secondary-control"><label for="secondaryColor">Count color scale</label><select id="secondaryColor"><option value="log">Log(1 + count)</option><option value="linear">Linear counts</option></select></span>
+        <button id="secondaryDownload" disabled>Download particle analysis JSON</button>
+      </div>
+      <p id="secondaryContext" class="hint"></p><p id="secondaryUnavailable" class="unavailable"></p>
+      <div id="eventDeflectionPlots" class="distribution-grid" hidden></div>
+      <div id="secondaryHeatmapPlot" class="statistics-plot" hidden><canvas id="secondaryHeatmap" width="1100" height="460" aria-label="Joint logarithmic polar-angle and transverse-momentum histogram"></canvas><div id="secondaryHeatmapStats" class="plot-statistics" role="group" hidden></div></div>
+      <details id="secondaryStatsDetails" hidden><summary>Statistics and record selection</summary><p id="secondaryStatsNotes" class="hint"></p></details>
+      <div class="panel-controls"><label for="diagnosticRawSource">Native diagnostic source</label><select id="diagnosticRawSource" disabled></select><button id="diagnosticRawDownload" disabled>Download native source</button></div>
+    </section>
+    <section aria-label="Scientific observable availability">
+      <h2 style="font-size:15px">Scientific observables</h2>
+      <p id="available"></p>
+      <p class="hint">Snapshots are unweighted display samples. This animation does not establish 1% equivalence or uncertainty. Any spectrum-model shape estimate is derived separately from native luminosity weights.
+      Native luminosity spectra, when available, are authenticated separately from the display snapshots. Central view crops are visual only.</p>
+    </section>
+  </div>
+  <aside>
+
+    <div class="grp">
+      <span class="lbl">Dataset and validation</span>
+      <p id="datasetIdentity" class="hint"></p>
+      <p id="receipt" class="hint"></p>
+      <details><summary>Full runtime backend receipt</summary><pre id="runtimeReceipt"></pre></details>
+      <button id="manifestDownload">Download manifest</button>
+      <button id="frameDownload">Download current display CSV</button>
+    </div>
+    <div class="grp">
+      <label for="view">View extent</label>
+      <select id="view"><option value="full">Complete sampled bunches / all frames</option><option value="central">Central ±3σ crop / current frame</option><option value="field">Field sampling window / fixed across run</option></select>
+      <label for="speed">Playback speed</label>
+      <select id="speed"><option value="250">4 frames/s</option><option value="110" selected>9 frames/s</option><option value="50">20 frames/s</option></select>
+      <button id="reset">Reset overview and first frame</button>
+    </div>
+    <div class="grp">
+      <span class="lbl">Input controls (unqualified maps)</span>
+      <table id="optics"></table>
+      <span class="hint" id="narrow"></span>
+      <table id="monoInput"></table><p id="monoInputNote" class="hint"></p>
+      <details><summary>Ideal-factor definition</summary><p id="monoDefinition" class="hint"></p></details>
+      <button id="monoDownload" disabled>Download factor analysis JSON</button>
+    </div>
+
+    <div class="grp">
+      <span class="lbl">Polarization</span>
+      <label for="polMode">Polarization weighting</label>
+      <select id="polMode"><option value="nominal">Nominal incoming</option><option value="lumi">Luminosity weighted</option></select>
+      <label for="polScope">Luminosity interval</label>
+      <select id="polScope"><option value="frame">Frame interval</option><option value="total">Total collision</option></select>
+      <table id="pol"></table><span class="hint" id="polNote"></span>
+    </div>
+
+
+
+    <div class="grp">
+      <span class="lbl">Axes</span>
+      <div class="row">
+        <select aria-label="Horizontal projection axis" id="ax"></select><span class="hint">horizontal</span>
+      </div>
+      <div class="row">
+        <select aria-label="Vertical projection axis" id="ay"></select><span class="hint">vertical</span>
+      </div>
+    </div>
+
+    <div class="grp">
+      <span class="lbl">Beams</span>
+      <div class="row">
+        <button id="t1" class="on">e&minus; beam 1</button>
+        <button id="t2" class="on">e+ beam 2</button>
+      </div>
+      <div class="row">
+        <button id="fit" class="on">chirp fit</button>
+        <button id="lock" hidden class="on">lock axes</button>
+      </div>
+    </div>
+
+    <div class="grp">
+      <span class="lbl">Diagnostics</span>
+      <label for="diagScope">Diagnostic weighting</label>
+      <select id="diagScope"><option value="frame">Frame interval</option><option value="total">Total luminosity weighted</option></select>
+      <table id="diag"></table><p class="hint" id="diagPeakNote"></p><details><summary>Peak selection and response model</summary><p class="hint" id="diagPeakDetails"></p></details><span class="hint" id="diagNote"></span>
+      <details><summary>Polarization conventions</summary><p class="hint" id="diagPolNote"></p></details>
+    </div>
+
+    <div class="grp">
+      <span class="lbl">Beam moments</span>
+      <label for="momentScope">Moment weighting</label>
+      <select id="momentScope"><option value="frame">Current stored native state</option><option value="total">Total luminosity weighted</option></select>
+      <table id="stats"></table><span class="hint" id="momentNote"></span>
+      <details><summary>Unweighted display-sample moments</summary><table id="sampleStats"></table>
+      <p class="hint">These sampled particles are for display. Their moments are never used for luminosity weighting.</p></details>
+    </div>
+
+    <div class="grp">
+      <span class="lbl">Correlated fraction r</span>
+      <div class="row">
+        <span class="big b1" id="r1">&mdash;</span>
+        <span class="big b2" id="r2">&mdash;</span>
+      </div>
+      <span class="hint">r = h&sup2;&sigma;<sub>z</sub>&sup2;/&sigma;<sub>&delta;</sub>&sup2;,
+        fitted per beam per frame. A chirp shows as a tilted band in z&ndash;&delta;.</span>
+    </div>
+  </aside>
+</main>
+
+<script src="collider_viewer_ui.js"></script>
+<script src="collider_contract.js"></script>
+<script src="collider_fields.js"></script>
+<script src="collider_statistics.js"></script>
+<script src="collider_beta_gaussian.js"></script>
+<script src="collider_monochromatization.js"></script>
+<script src="collider_secondary_kinematics.js"></script>
+<script src="collider_event_deflections.js"></script>
+<script src="collider_viewer.js"></script>
+<script src="collider_viewer_science.js"></script>
+<script src="collider_viewer_fields.js"></script>
+
+
+</html>
+

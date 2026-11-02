@@ -1,0 +1,149 @@
+Internal ctest changing into directory: /data/dust/user/bmadison/feebl-publication-20261029/builds/qed-validation-25502093
+Test project /data/dust/user/bmadison/feebl-publication-20261029/builds/qed-validation-25502093
+    Start 12: feebl-adaptive-v3-stage4-strict-physics-qualification
+1/1 Test #12: feebl-adaptive-v3-stage4-strict-physics-qualification ...***Failed    1.84 sec
+METRIC case=deliberate_failure_modes name=fail_closed_cases value=11
+METRIC case=tangential_linear_interface name=maximum_spurious_normal_gradient value=0
+METRIC case=tangential_linear_interface name=rms_spurious_normal_gradient value=0
+METRIC case=tangential_linear_interface name=maximum_parent_cancellation_defect value=0
+METRIC case=tangential_linear_interface name=maximum_one_sided_gradient_defect value=0
+METRIC case=tangential_linear_interface name=maximum_structural_two_sided_defect value=0
+METRIC case=smooth_n8 name=potential_exact_relative_l2 value=0.019988963208218372
+METRIC case=smooth_n8 name=potential_exact_absolute_linf value=0.017499188000945964
+METRIC case=smooth_n8 name=field_exact_relative_l2 value=0.058648928831771412
+METRIC case=smooth_n8 name=field_exact_absolute_linf value=0.035470248418001171
+METRIC case=smooth_n8 name=potential_uniform_relative_l2 value=0.022128754545921722
+METRIC case=smooth_n8 name=field_uniform_relative_l2 value=0.0014594796534623262
+METRIC case=smooth_n8 name=residual_relative_l2 value=2.670476213155165e-15
+METRIC case=smooth_n8 name=gauss_relative value=2.5826898591158828e-16
+METRIC case=smooth_n8 name=interface_flux_two_sided_max value=0
+METRIC case=smooth_n16 name=potential_exact_relative_l2 value=0.005734767587728765
+METRIC case=smooth_n16 name=potential_exact_absolute_linf value=0.0064428944612745509
+METRIC case=smooth_n16 name=field_exact_relative_l2 value=0.019900777198030482
+METRIC case=smooth_n16 name=field_exact_absolute_linf value=0.011794719416474697
+METRIC case=smooth_n16 name=potential_uniform_relative_l2 value=0.0063904633001716166
+METRIC case=smooth_n16 name=field_uniform_relative_l2 value=0.00010463488266933835
+METRIC case=smooth_n16 name=residual_relative_l2 value=1.8329778478302157e-13
+METRIC case=smooth_n16 name=gauss_relative value=9.2151082761244178e-16
+METRIC case=smooth_n16 name=interface_flux_two_sided_max value=0
+METRIC case=smooth_n32 name=potential_exact_relative_l2 value=0.0015341080886139831
+METRIC case=smooth_n32 name=potential_exact_absolute_linf value=0.0031648531085913811
+METRIC case=smooth_n32 name=field_exact_relative_l2 value=0.0009554723178405145
+METRIC case=smooth_n32 name=field_exact_absolute_linf value=0.00054709739891223297
+METRIC case=smooth_n32 name=potential_uniform_relative_l2 value=0.0017124198089772378
+METRIC case=smooth_n32 name=field_uniform_relative_l2 value=4.414180710297592e-05
+METRIC case=smooth_n32 name=residual_relative_l2 value=1.7062363831928808e-13
+METRIC case=smooth_n32 name=gauss_relative value=4.2576469203791579e-15
+METRIC case=smooth_n32 name=interface_flux_two_sided_max value=0
+METRIC case=smooth_n64 name=potential_exact_relative_l2 value=0.00039814081200444389
+METRIC case=smooth_n64 name=potential_exact_absolute_linf value=0.0015484078118628286
+METRIC case=smooth_n64 name=field_exact_relative_l2 value=0.00041300633118529175
+METRIC case=smooth_n64 name=field_exact_absolute_linf value=0.00023861875765285312
+METRIC case=smooth_n64 name=potential_uniform_relative_l2 value=0.00044436920483062632
+METRIC case=smooth_n64 name=field_uniform_relative_l2 value=2.248596359064528e-05
+METRIC case=smooth_n64 name=residual_relative_l2 value=3.3122630883211742e-13
+METRIC case=smooth_n64 name=gauss_relative value=3.0712259553795867e-14
+METRIC case=smooth_n64 name=interface_flux_two_sided_max value=0
+METRIC case=smooth_8_to_16 name=potential_observed_order value=1.8013967194095986
+METRIC case=smooth_8_to_16 name=field_observed_order value=1.5592799846296017
+METRIC case=smooth_16_to_32 name=potential_observed_order value=1.9023348851394768
+METRIC case=smooth_16_to_32 name=field_observed_order value=4.380466888432065
+METRIC case=smooth_32_to_64 name=potential_observed_order value=1.9460494646684385
+METRIC case=smooth_32_to_64 name=field_observed_order value=1.2100501780976942
+METRIC case=round_gaussian name=potential_direct_relative_l2 value=0.0012926616082810365
+METRIC case=round_gaussian name=potential_uniform_relative_l2 value=0.00064306075291670889
+METRIC case=round_gaussian name=uniform_potential_direct_relative_l2 value=0.00084049383320169751
+METRIC case=round_gaussian name=field_direct_relative_l2 value=0.051418612375184948
+METRIC case=round_gaussian name=field_uniform_relative_l2 value=1.1252173435977528e-05
+METRIC case=round_gaussian name=uniform_field_direct_relative_l2 value=0.051418910569164804
+METRIC case=round_gaussian name=field_direct_absolute_linf value=0.0045272638878170596
+METRIC case=round_gaussian name=field_direct_mixed_linf value=16132.550911080338
+METRIC case=round_gaussian name=gauss_absolute value=6.6613381477509392e-14
+METRIC case=localized_buffer0 name=potential_uniform_relative_l2 value=0.0043737099396883566
+METRIC case=localized_buffer0 name=field_uniform_relative_l2 value=0.00083669666650278032
+METRIC case=localized_buffer0 name=field_uniform_mixed_linf value=0.19743630330249418
+METRIC case=localized_buffer0 name=gauss_absolute value=9.3702823278363212e-14
+METRIC case=localized_buffer0 name=crossing_sources value=0
+METRIC case=localized_buffer2 name=potential_uniform_relative_l2 value=0.0057562758793242878
+METRIC case=localized_buffer2 name=field_uniform_relative_l2 value=8.6172007619770226e-05
+METRIC case=localized_buffer2 name=field_uniform_mixed_linf value=0.011891789038169788
+METRIC case=localized_buffer2 name=gauss_absolute value=2.55351295663786e-14
+METRIC case=localized_buffer2 name=crossing_sources value=0
+METRIC case=localized_buffer4 name=potential_uniform_relative_l2 value=0.006213676991842644
+METRIC case=localized_buffer4 name=field_uniform_relative_l2 value=0.00013571886591570394
+METRIC case=localized_buffer4 name=field_uniform_mixed_linf value=0.021297634264065671
+METRIC case=localized_buffer4 name=gauss_absolute value=1.6164847238542279e-13
+METRIC case=localized_buffer4 name=crossing_sources value=0
+METRIC case=localized_buffer8 name=potential_uniform_relative_l2 value=0.0065719912215004596
+METRIC case=localized_buffer8 name=field_uniform_relative_l2 value=0.00016437691413287442
+METRIC case=localized_buffer8 name=field_uniform_mixed_linf value=0.026508551278297817
+METRIC case=localized_buffer8 name=gauss_absolute value=1.3411494137471891e-13
+METRIC case=localized_buffer8 name=crossing_sources value=0
+METRIC case=patch_translation_minus4 name=field_uniform_relative_l2 value=0.00013547064460546075
+METRIC case=patch_translation_minus4 name=field_uniform_mixed_linf value=0.021690320136975791
+METRIC case=patch_translation_minus2 name=field_uniform_relative_l2 value=0.00014562648887611328
+METRIC case=patch_translation_minus2 name=field_uniform_mixed_linf value=0.024664604191420511
+METRIC case=patch_translation_plus0 name=field_uniform_relative_l2 value=0.00015845458001531958
+METRIC case=patch_translation_plus0 name=field_uniform_mixed_linf value=0.025877198579143834
+METRIC case=patch_translation_plus2 name=field_uniform_relative_l2 value=0.00017065783335453024
+METRIC case=patch_translation_plus2 name=field_uniform_mixed_linf value=0.025697290898303596
+METRIC case=patch_translation_plus4 name=field_uniform_relative_l2 value=0.00019029903733875758
+METRIC case=patch_translation_plus4 name=field_uniform_mixed_linf value=0.024930253859059663
+METRIC case=patch_translation_sweep name=maximum_pair_relative_l2 value=0.00020393787609384261
+METRIC case=patch_translation_sweep name=maximum_uniform_relative_l2 value=0.00019029903733875758
+METRIC case=deterministic_replay name=bitwise_equal value=1
+METRIC case=source_interface_phase0 name=field_uniform_relative_l2 value=0.0085553146910598305
+METRIC case=source_interface_phase0 name=potential_uniform_relative_l2 value=0.020933700414106114
+METRIC case=source_interface_phase0 name=crossing_source value=0
+METRIC case=source_interface_phase1 name=field_uniform_relative_l2 value=0.0054681058613540732
+METRIC case=source_interface_phase1 name=potential_uniform_relative_l2 value=0.018186457065609882
+METRIC case=source_interface_phase1 name=crossing_source value=0
+METRIC case=source_interface_phase2 name=complete_shape_rejected value=1
+METRIC case=source_interface_phase3 name=complete_shape_rejected value=1
+METRIC case=source_interface_phase4 name=complete_shape_rejected value=1
+METRIC case=source_interface_phase5 name=complete_shape_rejected value=1
+METRIC case=source_interface_phase6 name=complete_shape_rejected value=1
+METRIC case=source_interface_phase7 name=complete_shape_rejected value=1
+METRIC case=source_interface_phase8 name=complete_shape_rejected value=1
+METRIC case=source_interface_phase9 name=complete_shape_rejected value=1
+METRIC case=source_interface_phase10 name=complete_shape_rejected value=1
+METRIC case=source_interface_phase11 name=field_uniform_relative_l2 value=0.0026192506880897384
+METRIC case=source_interface_phase11 name=potential_uniform_relative_l2 value=0.01303965772606935
+METRIC case=source_interface_phase11 name=crossing_source value=0
+METRIC case=source_interface_phase12 name=field_uniform_relative_l2 value=0.0023328704545136298
+METRIC case=source_interface_phase12 name=potential_uniform_relative_l2 value=0.01252789495749246
+METRIC case=source_interface_phase12 name=crossing_source value=0
+METRIC case=source_interface_sweep name=rejected_crossing_phases value=9
+METRIC case=source_interface_sweep name=accepted_complete_shape_phases value=4
+METRIC case=source_interface_sweep name=worst_field_relative_l2 value=0.0085553146910598305
+METRIC case=source_interface_sweep name=worst_potential_relative_l2 value=0.020933700414106114
+METRIC case=source_interface_sweep name=maximum_adjacent_relative_step value=0.062283983171620462
+METRIC case=source_interface_sweep name=maximum_adjacent_numerical_error_step value=0.0029401099059930581
+GATE name=smooth_potential_one_percent pass=1
+GATE name=smooth_field_one_percent pass=1
+GATE name=smooth_order_plausible pass=0
+GATE name=localized_uniform_one_percent pass=1
+GATE name=interface_one_percent pass=0
+GATE name=gaussian_one_percent pass=0
+GATE name=algebraic_closure pass=1
+GATE name=standalone_stage4_candidate pass=0
+physics_qualification_claim=0
+master_stage4_pass=0
+
+
+0% tests passed, 1 tests failed out of 1
+
+Label Time Summary:
+adaptive-grid            =   1.84 sec*proc (1 test)
+mode4                    =   1.84 sec*proc (1 test)
+physics-qualification    =   1.84 sec*proc (1 test)
+release                  =   1.84 sec*proc (1 test)
+stage4                   =   1.84 sec*proc (1 test)
+strict                   =   1.84 sec*proc (1 test)
+v3                       =   1.84 sec*proc (1 test)
+
+Total Test time (real) =   1.85 sec
+
+The following tests FAILED:
+	 12 - feebl-adaptive-v3-stage4-strict-physics-qualification (Failed) adaptive-grid mode4 physics-qualification release stage4 strict v3
+Errors while running CTest

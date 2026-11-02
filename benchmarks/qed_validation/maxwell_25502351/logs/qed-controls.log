@@ -1,0 +1,40 @@
+Internal ctest changing into directory: /data/dust/user/bmadison/feebl-publication-20261029/builds/qed-validation-25502093
+Test project /data/dust/user/bmadison/feebl-publication-20261029/builds/qed-validation-25502093
+      Start  96: feebl-qed-integration-reference
+      Start  97: feebl-qed-photon-domain-reference
+      Start  98: feebl-qed-integration-production
+      Start  99: feebl-qed-photon-domain-production
+ 1/11 Test  #96: feebl-qed-integration-reference ........   Passed    0.01 sec
+ 2/11 Test  #97: feebl-qed-photon-domain-reference ......   Passed    0.01 sec
+      Start 100: feebl-qed-tree-oracle
+      Start 101: feebl-qed-bh-bw-oracle
+ 3/11 Test  #98: feebl-qed-integration-production .......   Passed    0.01 sec
+ 4/11 Test  #99: feebl-qed-photon-domain-production .....   Passed    0.01 sec
+      Start 102: feebl-qed-input-contracts
+      Start 103: feebl-secondary-transport-reference
+ 5/11 Test #103: feebl-secondary-transport-reference ....   Passed    0.01 sec
+      Start 104: feebl-secondary-momentum-reference
+ 6/11 Test #104: feebl-secondary-momentum-reference .....   Passed    0.00 sec
+      Start 105: feebl-secondary-transport-production
+ 7/11 Test #105: feebl-secondary-transport-production ...   Passed    0.01 sec
+      Start 106: feebl-secondary-momentum-production
+ 8/11 Test #106: feebl-secondary-momentum-production ....   Passed    0.01 sec
+ 9/11 Test #101: feebl-qed-bh-bw-oracle .................   Passed    0.03 sec
+10/11 Test #100: feebl-qed-tree-oracle ..................   Passed    0.04 sec
+11/11 Test #102: feebl-qed-input-contracts ..............   Passed    0.32 sec
+
+100% tests passed, 0 tests failed out of 11
+
+Label Time Summary:
+binary128     =   0.07 sec*proc (2 tests)
+input         =   0.32 sec*proc (1 test)
+oracle        =   0.07 sec*proc (2 tests)
+pairs         =   0.44 sec*proc (11 tests)
+physics       =   0.12 sec*proc (10 tests)
+production    =   0.35 sec*proc (5 tests)
+qed           =   0.42 sec*proc (7 tests)
+reference     =   0.02 sec*proc (4 tests)
+transport     =   0.02 sec*proc (4 tests)
+unit          =   0.05 sec*proc (8 tests)
+
+Total Test time (real) =   0.35 sec

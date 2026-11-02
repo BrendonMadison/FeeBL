@@ -1,0 +1,3 @@
+W_low_GeV,W_high_GeV,dL_dW_m2_per_crossing_GeV,weight_m2_per_crossing,dL_dW_cm2_s_GeV,shape_density_per_GeV
+499.95,500.0,1.32379e+35,6.61896e+33,1.8665439000000002e+35,14.169487098797543
+500.0,500.05,5.44715e+34,2.72358e+33,7.6804815e+34,5.8304807900207

@@ -1,0 +1,29 @@
+$ACCELERATOR:: ilcz
+{energy=45.6;particles=2.0;
+beta_x=4;beta_y=0.39;
+emitt_x=6.2;emitt_y=0.0485;
+sigma_z=410.0;espread.1=0.0030;espread.2=0.0030;
+which_espread.1=3;which_espread.2=3;dist_z=0;
+f_rep=3.7;n_b=1312;waist_y=0;
+angle_x.1=0.00700000;angle_x.2=0.00700000;
+angle_phi.1=0.0;angle_phi.2=0.0;}
+
+$PARAMETERS:: p_ilcz
+{n_x=512;n_y=256;n_z=64;
+n_t=1;n_m=200000;
+cut_x=15320.0;cut_y=873.5;cut_z=3.0*sigma_z.1;
+force_symmetric=0;electron_ratio=1.0;
+do_photons=1;store_photons=0;photon_ratio=1.0;
+ecm_min=1.98*energy.1;
+do_hadrons=0;store_hadrons=0;do_coherent=0;do_trident=0;
+do_pairs=0;track_pairs=0;store_pairs=0;do_compt=0;do_muons=0;
+grids=1;rndm_load=0;rndm_save=0;rndm_seed=1;
+load_beam=0;charge_sign=-1.0;
+do_espread=1;
+crab_mode=1;crab_full_crossing_angle=0.014;
+crab_longitudinal_sign.1=1;crab_longitudinal_sign.2=-1;
+waist_symplecticity_tolerance=1e-9;
+store_native=1;do_lumi=1;num_lumi=200000;
+ip_dispersion.1=0.0003287493;ip_dispersion.2=-0.0003287493;
+spectrum_w_min=89.0;spectrum_w_max=93.0;spectrum_w_bins=8000;
+hist_ee_bins=1010;hist_ee_max=2.02*energy.1;}

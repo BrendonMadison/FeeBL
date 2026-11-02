@@ -1,0 +1,33 @@
+$ACCELERATOR:: tiny
+{energy=45.6;particles=1.0;
+beta_x=13.0;beta_y=0.41;
+emitt_x=5.0;emitt_y=0.035;
+sigma_z=120.0;espread=0.001;dist_z=0;
+f_rep=1.0;n_b=1;waist_y=0;
+angle_x.1=0.0;angle_x.2=0.0;
+angle_phi.1=0.0;angle_phi.2=0.0;}
+
+$PARAMETERS:: spatial
+{n_x=64;n_y=64;n_z=4;n_t=1;n_m=256;
+cut_x=4000.0;cut_y=800.0;cut_z=3.0*sigma_z.1;
+force_symmetric=0;electron_ratio=1.0;
+do_eloss=0;do_photons=0;store_photons=0;photon_ratio=1.0;
+ecm_min=90.0;ecm_min_gg=1.0;
+do_hadrons=0;store_hadrons=0;do_coherent=0;do_trident=0;
+do_pairs=0;track_pairs=0;store_pairs=0;
+do_compt=0;do_compt_phot=0;do_muons=0;
+do_jets=0;do_cross=0;do_bhabhas=0;do_prod=0;do_tertphot=0;
+grids=1;rndm_seed=314159;rndm_load=0;rndm_save=1;
+load_beam=0;load_photons=0;load_events=0;charge_sign=0.0;
+do_lumi=0;do_photon_lumi=0;store_native=1;
+electron_lumi_precompute=0;electron_lumi_sampling=0;
+electron_lumi_spatial_kernel=1;
+electron_lumi_spatial_nx=129;electron_lumi_spatial_ny=129;
+electron_lumi_spatial_x_min=-10000.0;
+electron_lumi_spatial_x_max=10000.0;
+electron_lumi_spatial_y_min=-2000.0;
+electron_lumi_spatial_y_max=2000.0;
+electron_lumi_spatial_max_pairs=1000000;
+electron_lumi_spatial_closure_tolerance=1e-12;
+spectrum_w_min=88.0;spectrum_w_max=94.0;spectrum_w_bins=120;
+num_lumi=1000;hist_ee_bins=100;hist_ee_max=92.2;}

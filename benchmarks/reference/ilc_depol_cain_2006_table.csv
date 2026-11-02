@@ -1,0 +1,6 @@
+sample,sqrt_s_GeV,initial_polarisation,BMT_loss_percentage_points,ST_loss_percentage_points,total_loss_percentage_points,source
+Nominal,500,1.0,0.08,0.02,0.1,MoortgatPick2006 Table 2
+Low Q,500,1.0,0.04,0.02,0.06,MoortgatPick2006 Table 2
+Large Y,500,1.0,0.17,0.02,0.19,MoortgatPick2006 Table 2
+Low P,500,1.0,0.15,0.09,0.24,MoortgatPick2006 Table 2
+TESLA,500,1.0,0.11,0.03,0.14,MoortgatPick2006 Table 2

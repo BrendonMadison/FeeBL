@@ -1,0 +1,24 @@
+{
+  "source_csv_sha256": "9395a1b30f069384662346aca5332f7627c686c8785e33704f477de3a5356675",
+  "source_covariance_sha256": "1e8b7757c0d6d61851d475214ced60631cca896e985c19e760420bca7b47dc5e",
+  "source_bins": 54,
+  "display_bins": 40,
+  "view_limits_GeV": null,
+  "exclude_first_coarse_bin": false,
+  "display_upper_limit_GeV": null,
+  "method": "Linear bin-overlap transfer A; C_display=A C_source A^T; pulls recomputed from transferred central values and covariance.",
+  "normalization": "Original panel normalization retained; display clipping does not renormalize.",
+  "support": "Connected input support only; gaps preserved; no reference extrapolation.",
+  "source_simulation_method": "Primary-macroparticle effective-count Dirichlet proxy; conditional retained-support shape",
+  "display_pull_rms": 0.4630595330868356,
+  "source_mass_sums": {
+    "simulation": 1.0,
+    "reference": 1.0000000000000002
+  },
+  "display_retained_mass_sums": {
+    "simulation": 1.0000000000000002,
+    "reference": 1.0
+  },
+  "source_bins_without_display_overlap": 0,
+  "source_bins_with_fractional_display_overlap": 0
+}

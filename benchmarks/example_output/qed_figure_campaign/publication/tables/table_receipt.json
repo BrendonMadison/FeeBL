@@ -1,0 +1,19 @@
+{
+  "status": "EXPORTED_FROM_VERIFIED_REDUCTION",
+  "analysis_receipt_sha256": "e42d6907c82efe82c50508b0cce7616c346e7e5d26235ab222c4ecda81ce5635",
+  "source_native_identity": "sha256:238eda4954de06bada9c27a56436281d0ddac7137712e8e4bf07be37358f2598",
+  "producer_sha256": {
+    "check_prepared_inputs.py": "a4e0d9b450c3ebac9684532c6dd835abfcf59ea561968763590325381449bc61",
+    "lep_support.py": "739e6ff3fc80f0f2bf95af0ed86d460dd4d36d763a4cbbd271283068ac4e487f",
+    "reduce_figures.py": "dbb9c1c2d31a5a7ff75f85b337b2527a01fe5f25544b0ab10cf68b2e19f0ea64",
+    "render_figures.py": "cbf54f8d7530ae0f69b589578501a0e3a81ce315b8abddc9fe1c88de1a9394ac",
+    "render_tables.py": "77ac3cf73b5cafa4239acf37a9e384079bfd401d9d2633821850e29b0d4f3dd5",
+    "test_analysis.py": "79c12ecafcfab1fae518af8f7c8ed1b8704017363e2b802fa491e011dc04005e"
+  },
+  "table_exporter_sha256": "77ac3cf73b5cafa4239acf37a9e384079bfd401d9d2633821850e29b0d4f3dd5",
+  "output_sha256": {
+    "ilc_pair_ensemble.tex": "6cc38ab1dcd05febafffddc305a2e8e91604b90383ca17ac9962795b8937ef2e",
+    "lep_focusing_ensemble.tex": "9e3a04970ab414aa4643fc4f94b2d22dae73d43d94fb8e0e49b217bcbf9c707a",
+    "table_values.json": "e0e2fc4361486b293827d9f88ae89d902cef1554751f06725e17b1cdd55ca92c"
+  }
+}

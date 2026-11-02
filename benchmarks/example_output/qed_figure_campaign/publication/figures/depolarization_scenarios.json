@@ -1,0 +1,12 @@
+{
+  "sources": {
+    "binned_energy_cuts.csv": "521fed85999db93b88837fc89766df011ae5c4afba22d87d3a8108bbcd765738",
+    "intercode_comparison.csv": "02dd3392a1109f010d5d522f3bd1135db65074ed331ec84fb0a6ee3dd9f2b85b"
+  },
+  "producer_sha256": "6f9863ff66ca7f7699ebf0ffe90db0d5f459e0801396db4c7fc6f4458ceb4842",
+  "coverage": {
+    "ILC": "Historical recorded scenarios",
+    "HALHF": "No qualified per-beam ensemble in retained dataset"
+  },
+  "uncertainty": "Left: three-seed SEM, numerical and binned-output rounding errors excluded. Right: no fabricated seed or reference errors. Values from distinct polarization definitions are on separate axes."
+}

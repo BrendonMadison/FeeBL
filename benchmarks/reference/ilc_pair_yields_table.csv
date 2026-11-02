@@ -1,0 +1,9 @@
+code,process,effective_cross_section_mb,secondary_electrons_plus_positrons_per_BX,luminosity_per_BX_inverse_microbarn,parameter_set,source
+GUINEA_PIG,all,58.0,105500,1.82,USSC_2006_500GeV,Rimbault2006 Table II
+GUINEA_PIG,Breit_Wheeler,1.05,1900,1.82,USSC_2006_500GeV,Rimbault2006 Table II
+GUINEA_PIG,Bethe_Heitler,37.7,68600,1.82,USSC_2006_500GeV,Rimbault2006 Table II
+GUINEA_PIG,Landau_Lifshitz,19.2,35000,1.82,USSC_2006_500GeV,Rimbault2006 Table II
+CAIN,all,50.7,92300,1.82,USSC_2006_500GeV,Rimbault2006 Table II
+CAIN,Breit_Wheeler,1.04,1900,1.82,USSC_2006_500GeV,Rimbault2006 Table II
+CAIN,Bethe_Heitler,34.5,62800,1.82,USSC_2006_500GeV,Rimbault2006 Table II
+CAIN,Landau_Lifshitz,15.2,27700,1.82,USSC_2006_500GeV,Rimbault2006 Table II

@@ -1,0 +1,340 @@
+{
+  "schema": "feebl.upstream-source-audit/1",
+  "inspection_date": "2026-10-30",
+  "scope": "Pair-model implementation defects, ambiguous spectator/daughter bookkeeping, and secondary float transport; static source and scalar checks, not a fresh upstream collider simulation.",
+  "guineapig": {
+    "repository": "https://gitlab.cern.ch/clic-software/guinea-pig.git",
+    "archive_name": "guinea-pig-master.zip",
+    "archive_sha256": "35b982c220a779ae3d3b3b429d9d392c0e443424f581d5791f38ea42bd8deab8",
+    "revision_recorded_in_zip_comment": "6702c99f9182eca0e94ff8cb893bab73d454e157",
+    "local_import_commit": "9eeb18572e12e84e4c05b0eb34b924481927fdd5",
+    "revision_caveat": "The import commit is a local source-import identifier, not upstream history. The upstream revision is recorded in the ZIP comment; this inspection did not authenticate a fresh remote checkout. All inspected files were checked byte-for-byte against the archive.",
+    "files": [
+      {
+        "path": "src/physconst.h",
+        "sha256": "426510da948ef75faeadedc58e40c62930105c34460fb89141432b5e7b54f083",
+        "bytes": 5601,
+        "matches_import_commit_bytes": true,
+        "anchors": [
+          {
+            "first_line": 4,
+            "last_line": 7,
+            "text": "#define EMASS 0.51099906e-3 /* GeV */\n#define EMASSeV 0.51099906e+6 /* eV */\n#define EMASSMeV 0.51099906 /* MeV */\n#define MUMASS 105.658389e-3 /* GeV */",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/physconst.h#L4-7"
+          },
+          {
+            "first_line": 16,
+            "last_line": 16,
+            "text": "#define RE 2.81794092e-15 /* m */",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/physconst.h#L16-16"
+          }
+        ]
+      },
+      {
+        "path": "src/pairsCPP.cc",
+        "sha256": "b908b1003e1cbc9a2da861fbc084ec347d658dee1d60b60d452e970465994a47",
+        "bytes": 13800,
+        "matches_import_commit_bytes": true,
+        "anchors": [
+          {
+            "first_line": 153,
+            "last_line": 160,
+            "text": "  ecm2 = eph1 * eph2;\n  if (ecm2 < emass_2) return;\n  gam2i = emass_2 / ecm2;\n  beta = sqrt(one - gam2i);\n  // formula Thesis, p. 39\n  sigma = gam2i * 1.23088e-29 * flum * ((gam2i * 2. + 2. - gam2i * gam2i) *\n\t  log((one + beta) / (one - beta)) - (gam2i * 2. * gam2i / \n          (one - beta * beta) + 2.) * beta);",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/pairsCPP.cc#L153-160"
+          },
+          {
+            "first_line": 224,
+            "last_line": 233,
+            "text": "      if (switches.get_beam_pair())\n\t{\n\t  if (eorg1>0.0)\n\t    {\n\t      book_keeping_p(mesh, index_of_process, eorg1-eph1,sigmap,cellx, celly,min_z,switches, rndm_generator );\n\t    }\n\t  if (eorg2>0.0)\n\t    {\n\t      book_keeping_p(mesh,index_of_process, -(eorg2-eph2),sigmap,cellx, celly,min_z,switches,rndm_generator );\n\t    }",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/pairsCPP.cc#L224-233"
+          },
+          {
+            "first_line": 251,
+            "last_line": 251,
+            "text": "  const double fact=1.23088e-29*EMASS*EMASS/MUMASS/MUMASS;",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/pairsCPP.cc#L251-251"
+          }
+        ]
+      },
+      {
+        "path": "src/mathematicalTools.h",
+        "sha256": "c923eeb7701e2983eab3d8bdd81ca39fd9c8048b36a721b0e56e57cf01d7a0ed",
+        "bytes": 2182,
+        "matches_import_commit_bytes": true,
+        "anchors": [
+          {
+            "first_line": 68,
+            "last_line": 92,
+            "text": "  inline static void equal_newton(double (*fint)(double, double),double (*fdiff)(double, double), double xmin,double xmax,double y, double scdgam2i, double& x)\n    {\n      //    double eps=1e-6,tiny=1e-20;\n      double eps=1e-6;\n      //    double ytry,xtry,dfdx;\n      double ytry,xtry;\n      int i=0;\n      xtry = x;\n      ytry=(*fint)(xtry, scdgam2i);\n      while (fabs(ytry-y)>(fabs(ytry)+fabs(y))*eps\n\t     && (xmax-xmin)>eps) {\n\ti++;\n\txtry-=(ytry-y)/(*fdiff)(xtry, scdgam2i);\n\tif ((xtry>=xmax)||(xtry<=xmin)) {\n\t  xtry=0.5*(xmax+xmin);\n\t}\n\tytry=(*fint)(xtry, scdgam2i);\n\tif(ytry<y) {\n\t  xmin=xtry;\n\t}\n\telse {\n\t  xmax=xtry;\n\t}\n      }\n      x = xtry;",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/mathematicalTools.h#L68-92"
+          }
+        ]
+      },
+      {
+        "path": "src/physicalTools.cc",
+        "sha256": "e9601fc0de620331b66d082523c227d0633ece1ae9e3b81c6c2c30052f55ac70",
+        "bytes": 15211,
+        "matches_import_commit_bytes": true,
+        "anchors": [
+          {
+            "first_line": 7,
+            "last_line": 25,
+            "text": "void PHYSTOOLS::mkit(double gam2i,double& c, RNDM& rndm_generator)\n{\n   JET_FLOAT x,sigma0,beta,y;\n    beta=sqrt((double)1.0-gam2i);\n    //   scdgam2i_ = gam2i;\n    sigma0= pair_ang_i(beta, gam2i);\n    y=(2.0*rndm_generator.rndm_pairs()-1.0)*sigma0;\n    if (y<=0.0)\n      {\n\tx=-0.5*beta;\n\tTOOLS::equal_newton(&PHYSTOOLS::pair_ang_i,&PHYSTOOLS::pair_ang_d,-beta,0.0,y,gam2i, x);\n\n      }\n    else\n      {\n\tx=0.5*beta;\n\tTOOLS::equal_newton(&PHYSTOOLS::pair_ang_i,&PHYSTOOLS::pair_ang_d,0.0,beta,y,gam2i, x);\n      }\n    c= x/beta;",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/physicalTools.cc#L7-25"
+          }
+        ]
+      },
+      {
+        "path": "src/physicalTools.h",
+        "sha256": "2637a4e95c60aba7e69baecdeb7d1932c51080666d7912db9bcacebcdec5843e",
+        "bytes": 15682,
+        "matches_import_commit_bytes": true,
+        "anchors": [
+          {
+            "first_line": 80,
+            "last_line": 90,
+            "text": "  inline static  JET_FLOAT pair_ang_d(JET_FLOAT x, double scdgam2i)\n    {\n      JET_FLOAT t,u;\n      t=-(1.0-x);\n      u=-(1.0+x);\n      return t/u+u/t-2.0*scdgam2i*(1.0/t+1.0/u)-scdgam2i*scdgam2i*(1.0/t+1.0/u)*(1.0/t+1.0/u);\n    }\n  \n  inline static  JET_FLOAT pair_ang_i(JET_FLOAT x, double scdgam2i)\n    {\n      return 2.0*((1.0+scdgam2i*(1.0-0.5*scdgam2i))*log((1.0+x)/(1.0-x))- (1.0+scdgam2i*scdgam2i/(1.0-x*x))*x);",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/physicalTools.h#L80-90"
+          }
+        ]
+      },
+      {
+        "path": "src/guineapigCPP.cc",
+        "sha256": "c864dd598b0cab7c043fd59d1680f3b4125da4ab5d3b8aa0bb0b0ae76f9ca58a",
+        "bytes": 39977,
+        "matches_import_commit_bytes": true,
+        "anchors": [
+          {
+            "first_line": 687,
+            "last_line": 687,
+            "text": "  grid_.all_distribute(i1, i2, switches,ppar.get_s4(), ppar.get_lns4());",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/guineapigCPP.cc#L687-687"
+          },
+          {
+            "first_line": 719,
+            "last_line": 731,
+            "text": "  if ( switches.get_do_photons(1) || switches.get_do_photons(2) || switches.get_load_photon())\n    {\n      grid_.distribute_photons(i1,i2, switches.get_photon_ratio(),generator_ );    \n      grid_.photon_lumi(min_z,switches,secondaries_, muons_, generator_);\n\n      if(switches.get_do_pairs()||switches.get_do_hadrons()||switches.get_do_compt() || switches.get_do_muons())\n\t\t{\n\t\t  // here the pairs are generated\n\t\t  grid_.photon_lumi_2(min_z,switches, secondaries_, muons_, generator_);\n\t\t}\n      if (switches.get_do_compt()) \n\t\t{\n\t\t  grid_.photon_lumi_3(min_z,switches, secondaries_, generator_);",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/guineapigCPP.cc#L719-731"
+          },
+          {
+            "first_line": 744,
+            "last_line": 744,
+            "text": "    } // end if (store photons)",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/guineapigCPP.cc#L744-744"
+          }
+        ]
+      },
+      {
+        "path": "src/gridCPP.h",
+        "sha256": "6ee3bf99574abd089305a06959459a56559a1956feb6012d41c1818a1f9cdf6b",
+        "bytes": 44011,
+        "matches_import_commit_bytes": true,
+        "anchors": [
+          {
+            "first_line": 1110,
+            "last_line": 1122,
+            "text": "  inline void all_distribute(int i1, int i2, SWITCHES& switches,double s4, double lns4)\n  {\n    // distribute the particle (electrons...) charges over the grid\n    distribute_particles(i1, i2, switches.get_electron_distribution_rho(), switches.get_force_symmetric());\n  \n    // Distributes the particles for background calculation \n    distribute_particles_for_background(i1, i2, switches.get_electron_ratio());\n  \n    if (switches.get_do_pairs()||switches.get_do_hadrons()||switches.get_do_compt() || switches.get_do_muons())\n      {\n\tdistribute_virtual_photons(i1, i2, &switches,s4, lns4);\n      }\n  }",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/gridCPP.h#L1110-1122"
+          }
+        ]
+      },
+      {
+        "path": "src/gridCPP.cc",
+        "sha256": "8c96d3ab15368aae9a5e9d0cc9259da2083aa64eb4f0a1f17766c975fc7a5aa0",
+        "bytes": 80556,
+        "matches_import_commit_bytes": true,
+        "anchors": [
+          {
+            "first_line": 1680,
+            "last_line": 1754,
+            "text": "void GRID::photon_lumi_2(float min_z,SWITCHES& switches, PAIR_BEAM& secondaries, PAIR_BEAM& muons, RNDM& rndm_generator)\n{\n  int i1,i2,j,n_x,n_y;\n  std::vector<BEAM_PHOTON_POINTER>::iterator photon_pointer;\n  //double beta_x,beta_y,e1,e2;\n  n_x = n_cell_x_;\n  n_y = n_cell_y_;\n  for (i1=0;i1<n_x;i1++)\n    {\n      for (i2=0;i2<n_y;i2++)\n\t{\n\t  j=i1*n_y+i2;\n\n\t  double returnCrossSectionToAdd[3];\n\t  double tempor[3];\n\t  int k;\n\t  for (k=0; k<3;k++) {\n\t    tempor[k]=0.0;\n\t    returnCrossSectionToAdd[k]=0.0;\n\t  }\n\n\n\t  std::vector<EXTRA_PHOTON_POINTER>::const_iterator extr_phot;\n\t  //float extr_phot_e, extr_phot_weight, extr_phot_q2, extr_phot_eorg;\n\t  for (photon_pointer=grid_photon1_[j].begin(); photon_pointer != grid_photon1_[j].end(); photon_pointer++)\n\t    {\n\t      const std::vector<EXTRA_PHOTON_POINTER>& extr_phot_list = extra_photon_pointer2_[j];\n\t      \n\t      for (extr_phot = extr_phot_list.begin() ; extr_phot!=extr_phot_list.end(); extr_phot++)\n\t\t{\n\n\t\t  collide_gg_XX(1, i1,i2,min_z, *photon_pointer, *extr_phot,switches, secondaries, muons, rndm_generator, returnCrossSectionToAdd);\n\t\t  for (k=0; k<3;k++) tempor[k] += returnCrossSectionToAdd[k];\n\t\t}\n\t    }\n\n\t  results_. cumulate_hadrons_ge(tempor);\n\t  for (k=0; k<3;k++) {\n\t    tempor[k]=0.0;\n\t    returnCrossSectionToAdd[k]=0.0;\n\t  }\n\t  for( photon_pointer=grid_photon2_[j].begin(); photon_pointer!= grid_photon2_[j].end(); photon_pointer++)\n\t    {\n\t      const std::vector<EXTRA_PHOTON_POINTER>& extr_phot_list = extra_photon_pointer1_[j];\n\t      for ( extr_phot = extr_phot_list.begin(); extr_phot != extr_phot_list.end(); extr_phot++)\n\t\t{\n\t\t  collide_gg_XX(1,i1, i2,min_z,  *extr_phot, *photon_pointer,switches,secondaries, muons, rndm_generator, returnCrossSectionToAdd);\n\t\t  for (k=0; k<3;k++) tempor[k] += returnCrossSectionToAdd[k];\n\t\t}\n\t    }\n\t  results_. cumulate_hadrons_eg(tempor);\n\t  for (k=0; k<3;k++) {\n\t    tempor[k]=0.0;\n\t    returnCrossSectionToAdd[k]=0.0;\n\t  }\n\n\t  const std::vector<EXTRA_PHOTON_POINTER>& extr_phot1_list = extra_photon_pointer1_[j];\n\t  std::vector<EXTRA_PHOTON_POINTER>::const_iterator extr_phot1;\n\t  std::vector<EXTRA_PHOTON_POINTER>::const_iterator extr_phot2;\n\t  for( extr_phot1 = extr_phot1_list.begin(); extr_phot1!=extr_phot1_list.end(); extr_phot1++)\n\t    {\n\n\t      const std::vector<EXTRA_PHOTON_POINTER>& extr_phot2_list = extra_photon_pointer2_[j];\n\n\t      for ( extr_phot2 = extr_phot2_list.begin(); extr_phot2!=extr_phot2_list.end(); extr_phot2++)\n\t\t{\n\n\t\t  collide_gg_XX(2, i1, i2,min_z, *extr_phot1, *extr_phot2, switches,secondaries, muons, rndm_generator, returnCrossSectionToAdd);\n\t\t  for (k=0; k<3;k++) tempor[k] += returnCrossSectionToAdd[k];\n\t\t}\n\t    }\n\t  results_. cumulate_hadrons_ee(tempor);\n\t}\n    }\n}",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/gridCPP.cc#L1680-1754"
+          }
+        ]
+      },
+      {
+        "path": "src/pairsCPP.h",
+        "sha256": "e26613588c404e023674dc2b4508bf90a89268d889f6209c16f6a2db025a307e",
+        "bytes": 11397,
+        "matches_import_commit_bytes": true,
+        "anchors": [
+          {
+            "first_line": 245,
+            "last_line": 254,
+            "text": "  void book_keeping_p(const MESH& mesh,int index_of_process, double e,double wgt,int cellx, int celly,float min_z,SWITCHES& switches,RNDM& rndm_generator )\n    {\n      bool lucky = true;\n      if (wgt<rndm_generator.rndm()) lucky = false;\n      pairs_results_.storep_(index_of_process, e,wgt, lucky);\n      if (lucky)\n\t{\n\t  new_pair(mesh, cellx, celly, min_z,index_of_process, (float)(e),0.0,0.0,(float)(e), switches.get_pair_ratio(), switches.get_track_pairs(), switches.get_store_pairs(), rndm_generator);\n\t}\n    }",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/pairsCPP.h#L245-254"
+          }
+        ]
+      },
+      {
+        "path": "src/resultsCPP.h",
+        "sha256": "faf8fbb1fbe59d6a62c02ecf11ef875f4dfbd6770231327d2167ee80c87cdd47",
+        "bytes": 11878,
+        "matches_import_commit_bytes": true,
+        "anchors": [
+          {
+            "first_line": 242,
+            "last_line": 252,
+            "text": " inline void storep_(int index_of_process, double e,double wgt, bool lucky)\n   {\n     update_contribution(e,0.0,0.0,e, wgt);\n     eproc_[index_of_process]+= fabs(e) * wgt;\n     nproc_[index_of_process]+= wgt;\n     if (lucky)\n       {\n\t number_++;\n\t energy_ += fabs(e);\n       }\n   } /* storep_ */",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/resultsCPP.h#L242-252"
+          }
+        ]
+      },
+      {
+        "path": "src/resultsCPP.cc",
+        "sha256": "527ab74075e60b2b98ea56b992ade2b0bbfa2d9f07c2cd863caa0397daf46eb3",
+        "bytes": 23153,
+        "matches_import_commit_bytes": true,
+        "anchors": [
+          {
+            "first_line": 346,
+            "last_line": 374,
+            "text": "  nproc_[1]=0.0;\n  nproc_[2]=0.0;\n  \n  n1_=0.0;\n  b1_=0.0;\n  n2_=0.0;\n  b2_=0.0;\n  \n  highptsum_ = 0.0;\n  highpteng_ = 0.0;\n  name_=\"\";\n}\n\n// 'index_of_process' is old 'scdn1+scdn2'\nvoid PAIRS_RESULTS::store_full_pair(int index_of_process, double e1,double px1,double py1,double pz1,double e2,double px2,double py2,double pz2, double wgt, bool luckyPair )\n{\n  update_contribution(e1,px1,py1,pz1,wgt);\n  update_contribution(e2,px2,py2,pz2,wgt);\n  eproc_[index_of_process]+= (fabs(e1)+fabs(e2)) * wgt;\n  nproc_[index_of_process]+= 2.0*wgt;\n  if (luckyPair)\n    {\n      number_++;\n      energy_ += fabs(e1);\n      number_++;\n      energy_ += fabs(e2);\n      ;\n    }\n} /* store_full_pair */",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/resultsCPP.cc#L346-374"
+          }
+        ]
+      },
+      {
+        "path": "src/particlesCPP.cc",
+        "sha256": "1706cda1d519ee20d1ec53e3f6b091568e87280e8142ee9496f9f309ca2c5ceb",
+        "bytes": 11150,
+        "matches_import_commit_bytes": true,
+        "anchors": [
+          {
+            "first_line": 157,
+            "last_line": 168,
+            "text": "float  PAIR_PARTICLE::scale_pair(float vold2, double mass)\n{\n#ifdef SCALE_ENERGY\n  float scal;\n  scal=sqrt( (vold2*energy_*energy_ + mass*mass)/(velocity_q()*energy_*energy_ + mass*mass)   );\n  vx_ *= scal;\n  vy_ *= scal;\n  velocityz_ *= scal;\n  energy_ /= scal;\n  e_inv_ *=  scal;\n  return scal;\n#endif",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/particlesCPP.cc#L157-168"
+          },
+          {
+            "first_line": 360,
+            "last_line": 376,
+            "text": "void PAIR_PARTICLE::update_energy(double mass)\n{\n  float scal;\n  last_rescaling_ok_ = true;\n#ifdef SCALE_ENERGY\n  scal=sqrt( (energy_*energy_-mass*mass)/(  (energy_*energy_)* velocity_q()   ));\n  if (fabs(scal-1.0)>0.01)\n    {\n      last_rescaling_ok_ = false;\n      std::cerr << \" PAIR_PARTICLE::scale_energy : scale should be 1 : \" << std::endl;\n      std::cerr << \" unsigned_energy_ \" << energy_  <<  \" module of velocity \" << sqrt( velocity_q() ) << \" scale \" << scal << std::endl;\n    }\n  vx_ *= scal;\n  vy_ *= scal;\n  velocityz_ *= scal;\n#endif\n}",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/particlesCPP.cc#L360-376"
+          }
+        ]
+      },
+      {
+        "path": "src/particlesCPP.h",
+        "sha256": "01cf95c167e984f227727a76752bce547750fc9b45d28f75556bfbbb61e51ccc",
+        "bytes": 16415,
+        "matches_import_commit_bytes": true,
+        "anchors": [
+          {
+            "first_line": 338,
+            "last_line": 346,
+            "text": "  \n  float velocityz_;\n  \n  int process_;\n  int label_;\n\n  int icharge_;\n  float e_inv_;\n  bool last_rescaling_ok_;",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/particlesCPP.h#L338-346"
+          },
+          {
+            "first_line": 451,
+            "last_line": 454,
+            "text": "  inline float velocity_q() const \n    {\n      return vx_*vx_ + vy_*vy_ + velocityz_*velocityz_;\n    }",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/particlesCPP.h#L451-454"
+          }
+        ]
+      },
+      {
+        "path": "src/abstractParticle.h",
+        "sha256": "725ec03fe91e6778ce965e3ff806a6240e98f48c4aa17f0c977e65e0e7c483ad",
+        "bytes": 6785,
+        "matches_import_commit_bytes": true,
+        "anchors": [
+          {
+            "first_line": 30,
+            "last_line": 39,
+            "text": "  // unit of xpos_, ypos_ : nm \n  float xpos_, ypos_;\n  \n  float zpos_;\n  \n  // unit of velocity : radian (?)\n  float vx_,vy_;\n\n  // energy in GeV\n  float energy_;",
+            "source_url": "https://gitlab.cern.ch/clic-software/guinea-pig/-/blob/6702c99f9182eca0e94ff8cb893bab73d454e157/src/abstractParticle.h#L30-39"
+          }
+        ]
+      }
+    ]
+  },
+  "feebl_comparison": {
+    "import_commit": "17a893cefda84e3128f5e22233d38781ef6e670e",
+    "recorded_upstream_fork_point": "3f79200f4a6b7dcbc08718157c85f378cc688995",
+    "fork_point_verification": "Recorded in ORIGIN.md; not independently rechecked against that historical upstream checkout here.",
+    "role": "Derivative baseline used to establish persistence of the float rescaling implementation; not treated as pristine upstream.",
+    "files": [
+      {
+        "path": "src/particlesCPP.cc",
+        "sha256": "9d5cbffadd9101f1f6af521c42a06ea71fa52598d8b6b30f5a839c7f2bf6f197",
+        "first_line": 138,
+        "last_line": 149,
+        "text": "float  PAIR_PARTICLE::scale_pair(float vold2, double mass)\n{\n#ifdef SCALE_ENERGY\n  float scal;\n  scal=sqrt( (vold2*energy_*energy_ + mass*mass)/(velocity_q()*energy_*energy_ + mass*mass)   );\n  vx_ *= scal;\n  vy_ *= scal;\n  velocityz_ *= scal;\n  energy_ /= scal;\n  e_inv_ *=  scal;\n  return scal;\n#endif"
+      },
+      {
+        "path": "src/particlesCPP.h",
+        "sha256": "bafd5f62f543578d9e12ff7b8e0ebe3624f643aec032548a0a8706d87c24239f",
+        "first_line": 490,
+        "last_line": 493,
+        "text": "  inline float velocity_q() const \n    {\n      return vx_*vx_ + vy_*vy_ + velocityz_*velocityz_;\n    }"
+      }
+    ]
+  },
+  "born_prefactor_check": {
+    "legacy_m2": 1.23088e-29,
+    "source_classical_electron_radius_m": 2.81794092e-15,
+    "reference_formula": "pi * RE**2 / 2",
+    "reference_m2": 1.2473365379587158e-29,
+    "legacy_over_reference": 0.9868066576598107,
+    "deficit_percent": 1.3193342340189318,
+    "paper_rounding_percent": 1.319
+  },
+  "findings": [
+    {
+      "id": "born-normalization",
+      "evidence": [
+        "src/pairsCPP.cc:158-160",
+        "src/pairsCPP.cc:251",
+        "src/physconst.h:16"
+      ],
+      "scope": "Verified in the named GP archive. Current FeeBL corrects this in every pair_model."
+    },
+    {
+      "id": "forward-angle-inversion",
+      "evidence": [
+        "src/mathematicalTools.h:68-92",
+        "src/physicalTools.cc:7-25",
+        "src/physicalTools.h:80-90"
+      ],
+      "scope": "Verified absolute 1e-6 bracket stopping criterion; forward-tail underresolution. New angle sampler is selected for pair_model>=1."
+    },
+    {
+      "id": "virtual-pair-dispatch",
+      "evidence": [
+        "src/guineapigCPP.cc:687",
+        "src/guineapigCPP.cc:719-744",
+        "src/gridCPP.h:1110-1122",
+        "src/gridCPP.cc:1680-1754"
+      ],
+      "scope": "With both real-photon generation and loading disabled, the real-photon-off path bypasses virtual-virtual collisions. FeeBL independent dispatch requires pair_model>=1 and enabled pairs or muons."
+    },
+    {
+      "id": "spectator-counts",
+      "evidence": [
+        "src/pairsCPP.cc:224-233",
+        "src/pairsCPP.h:245-254",
+        "src/resultsCPP.h:242-252",
+        "src/resultsCPP.cc:346-374"
+      ],
+      "scope": "With beam_pair=1, spectator storage is intentional and its records update the same counters as produced daughters. Interpreting those combined counters as produced-daughter yields increases the BH and LL expectations by 3/2 and 2. This is a population-definition/bookkeeping ambiguity; source inspection does not establish unintended spectator inclusion. Finite realized stored counts fluctuate. FeeBL separates daughter accounting for pair_model>=1."
+    },
+    {
+      "id": "secondary-float-transport",
+      "evidence": [
+        "src/particlesCPP.cc:157-168",
+        "src/particlesCPP.cc:360-376",
+        "src/particlesCPP.h:338-346",
+        "src/particlesCPP.h:451-454",
+        "src/abstractParticle.h:30-39"
+      ],
+      "scope": "Float velocity/energy rescaling is inherited in the named GP archive and FeeBL snapshot. This does not establish an identical HALHF failure in a pristine upstream run."
+    }
+  ],
+  "integration_specific_distinction": [
+    "Exact-kernel proposal-density boundary handling and exact-kernel/host mass consistency were corrected in the imported QED extension, not attributed to pristine GP.",
+    "The later FeeBL transport exception exposed invalid states; the diagnostic itself is not an upstream defect.",
+    "No statement is made that every GP release or published collider prediction has these defects."
+  ]
+}

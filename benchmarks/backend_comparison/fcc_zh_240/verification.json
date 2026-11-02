@@ -1,0 +1,13 @@
+{
+  "status": "PASS_PORTABLE_NUMERICAL_REDUCTION",
+  "measurement_pairs": 8,
+  "statistical_regression_tests": 10,
+  "unchanged_result_fields": [
+    "comparisons",
+    "flows",
+    "timing_comparisons"
+  ],
+  "unchanged_native_spectra_and_stderr": true,
+  "original_summary_sha256": "b4417104667619481e6d51323496507327c48f8feaa63f02b273e8c846ef0128",
+  "public_summary_sha256": "bed653f42bf50497988922053d7849c6714f5899e5999d9f4c4e283e46c960a1"
+}

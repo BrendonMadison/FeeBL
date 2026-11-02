@@ -1,0 +1,20 @@
+% Requires booktabs; insert in place of the existing table environment.
+\begin{table}[htbp]
+\centering\small
+\caption{FCC-ee radiation-on finite-angle crab-waist scan at $W_0=125\,\mathrm{GeV}$ before ISR. Luminosity is per IP. Points below $100\,\mathrm{mm}$ use one seed, 10\,000 macroparticles per beam, $512\times4096$ transverse cells and 32 slices. Points from $100\,\mathrm{mm}$ use three seeds, 80\,000 macroparticles per beam, $2048\times4096$ cells, 128 slices and larger spatial domains. Quoted uncertainties are seed SEMs. Observed FWHMs use $6.4\,\mathrm{MeV}$ bins. The final column spans all bin alignments at 6.4 and $12.8\,\mathrm{MeV}$, recomputing the ensemble mean for each choice where three seeds are available; it is not a statistical interval. Both settings use two encounter subdivisions. The finite crossing angle and crab waist are retained throughout.}
+\label{tab:fcc-luminosity}
+\begin{tabular}{@{}rrrr@{}}
+\toprule
+$|D|$ [mm] & $\mathcal L$ [$10^{34}$ cm$^{-2}$ s$^{-1}$] & FWHM [MeV] & Resolution range [MeV]\\
+\midrule
+0 & 20.099 & 130.93 & [130.00, 132.93]\\
+25 & 18.453 & 128.56 & [127.22, 130.90]\\
+50 & 15.052 & 109.84 & [108.32, 111.93]\\
+75 & 12.004 & 94.28 & [93.41, 97.08]\\
+100 & $9.803\pm0.018$ & $81.14\pm0.24$ & [81.03, 82.89]\\
+125 & $7.986\pm0.021$ & $71.22\pm0.15$ & [71.09, 73.46]\\
+150 & $6.625\pm0.017$ & $63.29\pm0.17$ & [63.07, 65.49]\\
+175 & $5.566\pm0.015$ & $56.985\pm0.028$ & [56.88, 59.42]\\
+\bottomrule
+\end{tabular}
+\end{table}

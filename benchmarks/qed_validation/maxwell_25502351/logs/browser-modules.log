@@ -1,0 +1,21 @@
+{"status":"PASS_FOR_STATED_TARGET","checks":578,"scope":"JS contract and viewer syntax; no browser QA"}
+{"status":"PASS_FOR_STATED_TARGET","checks":62,"scope":"Beta/delta-convolution fixtures, independent Gaussian integrals and nonnegative amplitude profiling, corruption rejection, core diagnostics and exact-bin overlay; legacy Gaussian retained"}
+{"status":"PASS_FOR_STATED_TARGET","checks":578,"scope":"JS contract and viewer syntax; no browser QA"}
+{"status":"PASS_FOR_STATED_TARGET","checks":65,"scope":"Synthetic formula, admission, provenance and integer joint/marginal closure tests; no browser or physics validation"}
+{"status":"PASS_FOR_STATED_TARGET","checks":578,"scope":"JS contract and viewer syntax; no browser QA"}
+{"status":"PASS_FOR_STATED_TARGET","checks":14,"scope":"Real renderer with delayed mocked frame read; queued final-frame drain after pause; no browser or native rerun"}
+{"status":"PASS_FOR_STATED_TARGET","checks":578,"scope":"JS contract and viewer syntax; no browser QA"}
+{"status":"PASS_FOR_STATED_TARGET","checks":53,"scope":"Explicit identity/raw input joins, signed angular histograms, counts/moments, fixed axes, current/final controls, empty/legacy behavior; synthetic fixtures only"}
+{"status":"PASS_FOR_STATED_TARGET","checks":87,"pixel_cases":490,"maximum_order_difference_8bit":1,"scope":"Blend equations and actual drawPlane/legend calls with quantized reference pixels; no browser rasterization claim"}
+{"status":"PASS_FOR_STATED_TARGET","checks":19,"scope":"Stable sampling window, both sources and views; unavailable values remain absent; no data rescaling or mutation"}
+{"status":"PASS_FOR_STATED_TARGET","checks":56,"scope":"Field schema, source layers, orientation, domain clipping, zero/unavailable cases and monotone Cividis luminance; synthetic fixtures, authenticated-field tamper rejection, no physics/browser QA"}
+{"status":"PASS_FOR_STATED_TARGET","checks":58,"scope":"Synthetic longitudinal geometry, coverage, gaps, source mapping and hash rejection; no physics or browser QA"}
+{"status":"PASS_FOR_STATED_TARGET","checks":578,"scope":"JS contract and viewer syntax; no browser QA"}
+{"status":"PASS_FOR_STATED_TARGET","checks":88,"scope":"Native peak serializer forms, Gaussian fixture binding/corruptions, qualified candidate display and normalization; no browser QA"}
+{"status":"PASS_FOR_STATED_TARGET","checks":578,"scope":"JS contract and viewer syntax; no browser QA"}
+{"status":"PASS_FOR_STATED_TARGET","checks":145,"scope":"Actual native z-position serializer fixture; sparse/count/geometry validation, zero records, direction distinction, migration, legacy fallback and selected-scope DOM rendering; no browser QA"}
+{"status":"PASS_FOR_STATED_TARGET","checks":52,"scope":"Synthetic frame timing/count/weight provenance, empty and unavailable snapshots, backward compatibility and fixed padded axis union"}
+{"status":"PASS_FOR_STATED_TARGET","checks":85,"scope":"Synthetic snapshot schema, source-slice motion/coverage, exact count receipts, fixed viewport, separate modes and file bounds; no browser or physics claim"}
+{"status":"PASS_FOR_STATED_TARGET","checks":176,"scope":"Binned and native histogram statistics, unequal-width modes/ties, flow/window exclusions, stable moments, invalid/empty handling, no physics rerun"}
+PASS: round ticks, field display units and focused-control shortcuts
+Passed syntax checks for 12 scripts and 15 test suites.

@@ -1,0 +1,62 @@
+{
+  "status": "FROZEN_FOR_APPROVED_EXECUTION",
+  "approval_recorded": true,
+  "source_native_identity": "sha256:238eda4954de06bada9c27a56436281d0ddac7137712e8e4bf07be37358f2598",
+  "binary_sha256": "cf872ffbfb2d91dfd8286c9f0282329040de8b0899e1cd7133e4c2fd27924d8b",
+  "build_job_id": 25502093,
+  "qualification_job_id": 25502351,
+  "source_content_sha256": "318a6bd99c00343d82b66be73a3de6b933c88028bd772c3ffec428184698ee1f",
+  "source_checker_sha256": "b6c6080ea30189ef3b4142701699956b9a4e71632c817764560db1f0c551b584",
+  "qualification_passed": true,
+  "qualification_scope": "Fixed-grid scalar only; adaptive strict qualification failed",
+  "qualification_artifacts": [
+    {
+      "path": "qualification/collision_pilots.csv",
+      "sha256": "6e31412ad186a50a9adeb68e32bd68608b1f882fac0207f5f201f8af78492481"
+    },
+    {
+      "path": "qualification/identities.json",
+      "sha256": "3d8e005591bbe7819bac876aa6628cd1534ab7117aa1b81a108416ce3be9cd89"
+    },
+    {
+      "path": "qualification/native_tests.csv",
+      "sha256": "ceac8a628721786feca9dc0d7d007c0efa8cbebd697bda1c402991d532f7f84c"
+    },
+    {
+      "path": "qualification/README.md",
+      "sha256": "51db27251fe7c846f68b1d31d8343c19f1a1065ad504b6fe3869c21a927a1c5a"
+    },
+    {
+      "path": "qualification/required_qed_transport_tests.csv",
+      "sha256": "621e13aae81331c7af55dd1dce8e5ca9052d521b55ab6c47aa9c2873b1657a7e"
+    },
+    {
+      "path": "qualification/SOURCE_CONTENT.json",
+      "sha256": "318a6bd99c00343d82b66be73a3de6b933c88028bd772c3ffec428184698ee1f"
+    },
+    {
+      "path": "qualification/stamp_source_export.py",
+      "sha256": "b6c6080ea30189ef3b4142701699956b9a4e71632c817764560db1f0c551b584"
+    },
+    {
+      "path": "qualification/validation_evidence.json",
+      "sha256": "5e55528023dd9f68a6f3e7a465ef92a47f685753d779bc3cee5d2e32f63f4fd7"
+    }
+  ],
+  "input_manifest_sha256": "9db659f8ae67384fbd121f3e6be0a760ab6ccd5f5da2bb583c6f469b4eadadc8",
+  "limits": {
+    "workers": 12,
+    "allocation_seconds": 3420,
+    "admission_margin_seconds": 120,
+    "case_timeout_seconds": {
+      "ordinary": 900,
+      "expanded_domain": 1200
+    },
+    "address_space_MiB": {
+      "ordinary": 4096,
+      "expanded_domain": 8192
+    },
+    "concurrent_memory_budget_MiB": 65536
+  },
+  "approval_sha256": "27dfa8f149e0c5b80b0fbe76c16927f2064bab56dad8b7ac9d3b99e2187b8818"
+}

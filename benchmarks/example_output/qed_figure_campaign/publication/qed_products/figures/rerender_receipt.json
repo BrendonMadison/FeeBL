@@ -1,0 +1,58 @@
+{
+  "status": "RENDERED_FROM_VERIFIED_REDUCTION",
+  "analysis_receipt_sha256": "e42d6907c82efe82c50508b0cce7616c346e7e5d26235ab222c4ecda81ce5635",
+  "input_artifact_sha256": {
+    "exact_kernel_weight_diagnostics.csv": "98e622fa32aaecb10a3d1566afd2ad7beb01d48e8c41754bf115e1457bae60a6",
+    "exact_kernel_weight_summary.json": "cbd08a32d6f219d7092dc7aa9174d2f69d0f63be3ed6cdde18608984eb3766cd",
+    "halhf_angular_ensemble.npz": "59618a35772e42e143c75d55cc0d1d3bc620668bec3e417c6ab8c30434230506",
+    "halhf_angular_summary.json": "1baca49b6eefffcd81f03bdef3de29d7e6226e39e5eaa8a5145d14dc4a5a625c",
+    "ilc_model1_cain_covariance.npz": "47e33abde0157851e392ea31a5649208fc67ded6be688e16cf18f8b30a5153aa",
+    "ilc_model1_cain_pull.csv": "2284ff77cb84e883d4ce0e170610f963c122f0c4ccb58abdb58fd8f24af326c4",
+    "ilc_model1_collision_luminosity.csv": "b97448f56c5f7cd395c0d35486a5ca2e4151700b86ef9bb2127ce7e63a620252",
+    "ilc_model1_gp_covariance.npz": "73a7711fbb3b08b33ac665648d48fb7748266a6265ea56906d05e08f7108c7ad",
+    "ilc_model1_gp_pull.csv": "44b21a57bebcaecf0fc77435d0ff4f277ec8831e2c4bd07384c495108195ae09",
+    "ilc_model1_joint_yield_luminosity.npz": "fb76c8ac591cfe9e63fd51b2f80a7c0289273476afc256bb627beed9993f2648",
+    "ilc_model1_seed_vectors.npz": "b7bbc0454c3835085979612dc2dbf94e1ed7fba955a2960078b0320e879961fb",
+    "ilc_model2_cain_covariance.npz": "9d1f4bcecfb13f3e2b25cf40747734437ae9a1bb52b846338e1b4264fb6d527a",
+    "ilc_model2_cain_pull.csv": "6f9236e23a05dad45dedcefc8dfdded850c822ac330f9bb28e11e539f09fd3a6",
+    "ilc_model2_collision_luminosity.csv": "91884052d43e16a324027346787dd3fda74d9c004eda840ca39e64e60465e0d9",
+    "ilc_model2_gp_covariance.npz": "dd7427926c6603595c7e04e774563f42bf549cf1aa35a5fafada807c96e04a70",
+    "ilc_model2_gp_pull.csv": "71552bcdbb4374c535903706760b50075ca47b6de386a3450ec27e3041ce877f",
+    "ilc_model2_joint_yield_luminosity.npz": "4720c715b7533dd456435f3d7e1d1feb8b579151640d8cdcea4f46516661eda3",
+    "ilc_model2_seed_vectors.npz": "9e277cb282cf55249756a48c08a8dfd502401b792b0af148ac4dc7d25933a216",
+    "ilc_pair_summary.json": "184ca76d5f1bffc392f8cedda4a5f434027c0f6c64874b4c3919a71c7cbc2ea6",
+    "lep_boundary_scalars.csv": "0ff11dac05a2ab7b1f80cafda09310253a3033f7c35ae5988c0f268f9651567e",
+    "lep_field_covariance.npz": "83e270fd55653a66c112aca548c15fd17deb85b5be76b16a410b5050a22176a6",
+    "lep_final_focusing_numerical_vs_phi_pull.csv": "c9844390ac21f26007cf1d12ec72e1731f217c8efe4a0d4e507f69ab64cff99f",
+    "lep_final_focusing_numerical_vs_phi_pull_covariance.npz": "2737d3c0afa3eaf7d78f02344c757ae43c84c453e6b2ce8123b1ad2bd4dcb970",
+    "lep_final_focusing_vs_phi_pull.csv": "d2d763b3bc775cbcd80de5626a19df6e88f6d4fc1d7dea202f6bb651dd443b69",
+    "lep_final_focusing_vs_phi_pull_covariance.npz": "612aa6f9997c28dc3e90e49206cdd1546e6e15028c5be8a22a50652e6aff6cf7",
+    "lep_focusing_distribution_pull.csv": "014fae9b28fadd43738f806be12703a4238950d7a38daecc16feee3cc472f2d7",
+    "lep_focusing_distribution_pull_covariance.npz": "e24a934e4404937f9599d946c4604aa31c9f7e09642e8d26260539e17dc56f9a",
+    "lep_summary.json": "e2049672df77323186585e6cec541b5b0c930d1e87c297e40d60506e4ace3e75"
+  },
+  "reused_analysis_sha256": {
+    "comparison_statistics.py": "f5cdd2d46dc0317a4f6bbf938d57bcfa691b325a597cdd7e6caf4dadfbcca6db",
+    "reference_uncertainty.py": "cce182b67c5d9179684611cb5e64f3aeb8c623fce70f403ffda194b9e7b0e246",
+    "regenerate_paper.py": "33808163cba85009c4f5cc35d72510df18b900963ddac2c9ef97c32d57cba45d",
+    "qed_publication.py": "69bebdd1a2b8269a6deb67929d16ccf74f419ecde13e6747bf1dad1e94358e1b",
+    "paper_tables.py": "20b23a62593a25104efc22f2428e90509c3249c0c5b0fa9cfcbfeecf5291b211",
+    "render_selected_figures.py": "247259fa581792de071be0cfece6e7817093eb370c1c9fad93f66e3dec472ed0"
+  },
+  "producer_sha256": {
+    "check_prepared_inputs.py": "a4e0d9b450c3ebac9684532c6dd835abfcf59ea561968763590325381449bc61",
+    "lep_support.py": "739e6ff3fc80f0f2bf95af0ed86d460dd4d36d763a4cbbd271283068ac4e487f",
+    "reduce_figures.py": "dbb9c1c2d31a5a7ff75f85b337b2527a01fe5f25544b0ab10cf68b2e19f0ea64",
+    "render_figures.py": "cbf54f8d7530ae0f69b589578501a0e3a81ce315b8abddc9fe1c88de1a9394ac",
+    "render_tables.py": "77ac3cf73b5cafa4239acf37a9e384079bfd401d9d2633821850e29b0d4f3dd5",
+    "test_analysis.py": "79c12ecafcfab1fae518af8f7c8ed1b8704017363e2b802fa491e011dc04005e"
+  },
+  "output_sha256": {
+    "figure2_lep_focusing.pdf": "d8a722c1573c3cdb6cf0a4416721ae4216705a13933d6dcdbc1144df07216c07",
+    "figure2_lep_focusing.png": "4df0b78c5c4fa21ab3a489dbbf9b8e31ccdde648c9c27f7b8412b7af55f09bd8",
+    "figure3_ilc_pair_yields.pdf": "57972f08fa3c5e71dcf9e289e1d57ff42a0e3b6d28f379c49a18b4466faaf987",
+    "figure3_ilc_pair_yields.png": "571589ec340c5c941a8f767380ec0fda10ba301d4d4185cb4652c111597e5ad7",
+    "figure6_halhf_angular_support.pdf": "0ac7274687da61aa3b3489d469f5132004934f47cd35cbcc0f5c5000ddd6e66c",
+    "figure6_halhf_angular_support.png": "5b63d9f6e35ada1058e290957ec3c92a582d8b36d08c76ceb83b2b04bc4ba7cc"
+  }
+}

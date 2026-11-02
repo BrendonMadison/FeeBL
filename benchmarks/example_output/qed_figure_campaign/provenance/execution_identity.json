@@ -1,0 +1,37 @@
+{
+  "schema": "feebl.campaign-execution-identity/1",
+  "job_id": 25503758,
+  "original_execution_binding_sha256": "e73c308c209845c1716c9e0ebb00a13612d41a6daacabb092d6587bf39fc2627",
+  "input_manifest_sha256": "68ba57903d849d7533ba60f293a724e7bd8f7bf4783b672c45656c1952519278",
+  "source_native_identity": "sha256:238eda4954de06bada9c27a56436281d0ddac7137712e8e4bf07be37358f2598",
+  "binary_sha256": "cf872ffbfb2d91dfd8286c9f0282329040de8b0899e1cd7133e4c2fd27924d8b",
+  "source_archive_sha256": "d1877b79978cad2559465ac078fe7a46845f3c5b13134ee26d8f158158914988",
+  "qualification_job_id": 25502351,
+  "binary_build_job_id": 25502093,
+  "qualification_scope": "Fixed-grid scalar execution and output consistency; not collider accuracy or domain convergence",
+  "qualification_results": {
+    "scope": "Fixed-grid scalar legacy collision cards",
+    "required_native_controls": 11,
+    "native_non_strict_tests": 105,
+    "python_tests": 297,
+    "benchmark_statistics_tests": 34,
+    "browser_contract_scripts": 12,
+    "browser_contract_suites": 15,
+    "collision_regressions": 7,
+    "adaptive_strict_exit": 8,
+    "adaptive_mode4_qualified": false,
+    "browser_visual_QA_claimed": false
+  },
+  "limits": {
+    "workers": 12,
+    "allocation_seconds": 6900,
+    "admission_margin_seconds": 180,
+    "address_space_MiB": 4096,
+    "case_timeout_seconds": {
+      "lep": 900,
+      "ilc": 900,
+      "halhf": 900
+    }
+  },
+  "scientific_scope": "Fixed-grid scalar execution and output consistency. Adaptive mode 4 strict qualification and field-domain convergence remain unresolved."
+}

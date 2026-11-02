@@ -1,0 +1,665 @@
+{
+  "schema": "feebl.monochromatization-inputs/1",
+  "cases": [
+    {
+      "name": "ilc_fwhm1_fine_s1",
+      "machine": "ilc",
+      "card": "cases/monochromatization_125/ilc_fwhm1_fine_s1.dat",
+      "sha256": "605cb57e2d4f434be340add1dc1a71dcab71e5f61d16a3636f9ea08db96da0f8",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "scan_point",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "ilc_fwhm1_fine_s2",
+      "machine": "ilc",
+      "card": "cases/monochromatization_125/ilc_fwhm1_fine_s2.dat",
+      "sha256": "0e99a198b4e6ac4b9f5570f671b61cd618e072d61a957b0839d9636c24fdaf44",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610310102,
+      "role": "scan_point",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "ilc_fwhm1_fine_s3",
+      "machine": "ilc",
+      "card": "cases/monochromatization_125/ilc_fwhm1_fine_s3.dat",
+      "sha256": "dd1577b92f1b277cdda98a85692a9725a4b35e3a2cc72d79cb300cd0aa742c77",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610310103,
+      "role": "scan_point",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "ilc_fwhm1_particles160k",
+      "machine": "ilc",
+      "card": "cases/monochromatization_125/ilc_fwhm1_particles160k.dat",
+      "sha256": "ac1b515618bbdbc8bfffc427ac6cdc401befb4e077dba6fe04317b4d66f510c7",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "particle_control",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "ilc_fwhm05_fine_s1",
+      "machine": "ilc",
+      "card": "cases/monochromatization_125/ilc_fwhm05_fine_s1.dat",
+      "sha256": "deeaa140e8c280c6b1c2a3dc00f2bda9a4b1f6211d2ae27974617264ec5f13d3",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "scan_point",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "ilc_fwhm05_fine_s2",
+      "machine": "ilc",
+      "card": "cases/monochromatization_125/ilc_fwhm05_fine_s2.dat",
+      "sha256": "b29dba4e54b3714120f2372dc38ea7a7fd565f3ee230a714d91b464070ac5644",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610310102,
+      "role": "scan_point",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "ilc_fwhm05_fine_s3",
+      "machine": "ilc",
+      "card": "cases/monochromatization_125/ilc_fwhm05_fine_s3.dat",
+      "sha256": "a6bfdef31b6d03df70acdd16864d6608d3db4e8b6cad5415c22b41f37c0f0915",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610310103,
+      "role": "scan_point",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "ilc_fwhm05_coarse_s1",
+      "machine": "ilc",
+      "card": "cases/monochromatization_125/ilc_fwhm05_coarse_s1.dat",
+      "sha256": "9b9ce620f90ee6020b670a7bb54985480dfec7f2998512c57aaac8a77360f3fc",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "mesh_control",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "ilc_fwhm05_particles80k",
+      "machine": "ilc",
+      "card": "cases/monochromatization_125/ilc_fwhm05_particles80k.dat",
+      "sha256": "101ae868077eff0579564b88615777f340b4170a3a8c73f4904e2496a6f07514",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "particle_control",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "ilc_fwhm1_expanded_support",
+      "machine": "ilc",
+      "card": "cases/monochromatization_125/ilc_fwhm1_expanded_support.dat",
+      "sha256": "95b539171adf760202a6ca8fa0b6df9f11f0a8d1b09cf98e8db2e0f0cf4f6ec9",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "support_control",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "ilc_fwhm1_cpu16",
+      "machine": "ilc",
+      "card": "cases/monochromatization_125/ilc_fwhm1_cpu16.dat",
+      "sha256": "01dddb0cd627756a92320652d8db53d408eeb2afbeb1310da8cc02eb590a08cc",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "backend_control",
+      "expected_host_workers": 16,
+      "expected_gpus": 0
+    },
+    {
+      "name": "halhf_fwhm1_fine_s1",
+      "machine": "halhf",
+      "card": "cases/monochromatization_125/halhf_fwhm1_fine_s1.dat",
+      "sha256": "939d29e9a5dd2a263a9ee500a37b3df2779ba9c5a9a199ab3edeb3536db62d78",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "scan_point",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "halhf_fwhm1_fine_s2",
+      "machine": "halhf",
+      "card": "cases/monochromatization_125/halhf_fwhm1_fine_s2.dat",
+      "sha256": "68fed98c98f64dcc1204a71dd73b0dd374348d83b974d6bc1f8c671828af7dd9",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610310102,
+      "role": "scan_point",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "halhf_fwhm1_fine_s3",
+      "machine": "halhf",
+      "card": "cases/monochromatization_125/halhf_fwhm1_fine_s3.dat",
+      "sha256": "75eb20e52162bbe0d8edca2d96ae0853b622c180079daef2d3d8c8f367c0beac",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610310103,
+      "role": "scan_point",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "halhf_fwhm1_particles160k",
+      "machine": "halhf",
+      "card": "cases/monochromatization_125/halhf_fwhm1_particles160k.dat",
+      "sha256": "147b7b15ac5bc2a244c9953a82784904e1be0ab100a1cb8e017d36055c78be34",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "particle_control",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "halhf_fwhm05_fine_s1",
+      "machine": "halhf",
+      "card": "cases/monochromatization_125/halhf_fwhm05_fine_s1.dat",
+      "sha256": "b6c5d1bbf35abeddb6c141d912aa6fff906620c363fcf64d3c39cb1ac7526a13",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "scan_point",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "halhf_fwhm05_fine_s2",
+      "machine": "halhf",
+      "card": "cases/monochromatization_125/halhf_fwhm05_fine_s2.dat",
+      "sha256": "82ffb369455ae8beb2d8754bbd43233b38e455c1777d1db96ee68a64737f6c27",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610310102,
+      "role": "scan_point",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "halhf_fwhm05_fine_s3",
+      "machine": "halhf",
+      "card": "cases/monochromatization_125/halhf_fwhm05_fine_s3.dat",
+      "sha256": "0a57d584fc94f58a90877a455eba267d18e63f6c7e928700b7dd6b6521eafa65",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610310103,
+      "role": "scan_point",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "halhf_fwhm05_coarse_s1",
+      "machine": "halhf",
+      "card": "cases/monochromatization_125/halhf_fwhm05_coarse_s1.dat",
+      "sha256": "49032050a730af2e9a7b00b842af173ec5efe36a0c1df7c262f8dddd008dfdf3",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "mesh_control",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "halhf_fwhm05_particles80k",
+      "machine": "halhf",
+      "card": "cases/monochromatization_125/halhf_fwhm05_particles80k.dat",
+      "sha256": "9c3873ff5771d69446097ed6c98248e64abdbbf314dd9896e4ed542144f2a45f",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "particle_control",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "halhf_fwhm1_expanded_support",
+      "machine": "halhf",
+      "card": "cases/monochromatization_125/halhf_fwhm1_expanded_support.dat",
+      "sha256": "77b038e8c32b8cf483c70b8854d9d92290e2332a19803037e79e816cb08d3204",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "support_control",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "halhf_fwhm1_cpu16",
+      "machine": "halhf",
+      "card": "cases/monochromatization_125/halhf_fwhm1_cpu16.dat",
+      "sha256": "186feb4deb204fa3e89e0b76849d9be33bf6cd1a5393cdfdb58b3be0848e4be5",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "backend_control",
+      "expected_host_workers": 16,
+      "expected_gpus": 0
+    },
+    {
+      "name": "ilc_bridge_gpu16",
+      "machine": "ilc",
+      "card": "cases/monochromatization_125/ilc_bridge_gpu16.dat",
+      "sha256": "97c93d76f8163879e7b9dfd58b890db4f8d20e7370db7bcbb5843ea7f9a9a1cf",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "support_control",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "ilc_old_endpoint_refined_gpu16",
+      "machine": "ilc",
+      "card": "cases/monochromatization_125/ilc_old_endpoint_refined_gpu16.dat",
+      "sha256": "42948a5b75ecf7a631185d2e8540c0237296942574723618ef4d0897df8c27bc",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "support_control",
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "halhf_fwhm1_serial1_factorized",
+      "machine": "halhf",
+      "card": "cases/monochromatization_125/halhf_fwhm1_serial1_factorized.dat",
+      "sha256": "1b4f1e9c898c5f04424fae89f78103d723c050fb52c6abad516195db6f071681",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610280101,
+      "role": "backend_control",
+      "expected_host_workers": 1,
+      "expected_gpus": 0
+    },
+    {
+      "name": "fcc_cw_d100_legacygrid_bridge",
+      "machine": "fcc",
+      "card": "cases/monochromatization_125/fcc_cw_d100_legacygrid_bridge.dat",
+      "sha256": "ca55d65a92bc4e1cb66585bd16ea4d69b8037aa2d28a99903667ff967a89fdf8",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 61028101,
+      "role": "historical_bridge",
+      "dispersion_mm": 100,
+      "grid": [
+        512,
+        4096,
+        32
+      ],
+      "macroparticles_per_beam": 10000,
+      "half_domain_m": [
+        0.0009521237834412798,
+        1.553976955138624e-05,
+        0.028440250350515554
+      ],
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "fcc_cw_d100_highres_s1",
+      "machine": "fcc",
+      "card": "cases/monochromatization_125/fcc_cw_d100_highres_s1.dat",
+      "sha256": "fb115100d9cb3e10910f724f8cfb967e32bf49bcd106c0aa800cbbc7d28e8baf",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 61028101,
+      "role": "scan",
+      "dispersion_mm": 100,
+      "grid": [
+        2048,
+        4096,
+        128
+      ],
+      "macroparticles_per_beam": 80000,
+      "half_domain_m": [
+        0.0013341314353741028,
+        2.2555247497692537e-05,
+        0.035550312938144445
+      ],
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "fcc_cw_d100_highres_s2",
+      "machine": "fcc",
+      "card": "cases/monochromatization_125/fcc_cw_d100_highres_s2.dat",
+      "sha256": "a0ff224f67a3820a7f89cd6c4a842536ed1aeda4bcc175bf04d06b8ae7045728",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610310201,
+      "role": "scan",
+      "dispersion_mm": 100,
+      "grid": [
+        2048,
+        4096,
+        128
+      ],
+      "macroparticles_per_beam": 80000,
+      "half_domain_m": [
+        0.0013341314353741028,
+        2.2555247497692537e-05,
+        0.035550312938144445
+      ],
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "fcc_cw_d100_highres_s3",
+      "machine": "fcc",
+      "card": "cases/monochromatization_125/fcc_cw_d100_highres_s3.dat",
+      "sha256": "f54f5079b72b1811e2d879debd6be3d79ef550227e73aef1c1904b871c5ca4db",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610310202,
+      "role": "scan",
+      "dispersion_mm": 100,
+      "grid": [
+        2048,
+        4096,
+        128
+      ],
+      "macroparticles_per_beam": 80000,
+      "half_domain_m": [
+        0.0013341314353741028,
+        2.2555247497692537e-05,
+        0.035550312938144445
+      ],
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "fcc_cw_d125_highres_s1",
+      "machine": "fcc",
+      "card": "cases/monochromatization_125/fcc_cw_d125_highres_s1.dat",
+      "sha256": "598bec3684695195ea09882d12c0287b4d7b0e8ca4ed2c0d6c83a8402ce92da0",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 61028101,
+      "role": "scan",
+      "dispersion_mm": 125,
+      "grid": [
+        2048,
+        4096,
+        128
+      ],
+      "macroparticles_per_beam": 80000,
+      "half_domain_m": [
+        0.0014541349998596078,
+        2.381813057052353e-05,
+        0.03555048896464014
+      ],
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "fcc_cw_d125_highres_s2",
+      "machine": "fcc",
+      "card": "cases/monochromatization_125/fcc_cw_d125_highres_s2.dat",
+      "sha256": "54ca16705677bcbde3b8af1df6eedc6ce6d7eef70fbbbf63f669d38f27ecaee8",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610310201,
+      "role": "scan",
+      "dispersion_mm": 125,
+      "grid": [
+        2048,
+        4096,
+        128
+      ],
+      "macroparticles_per_beam": 80000,
+      "half_domain_m": [
+        0.0014541349998596078,
+        2.381813057052353e-05,
+        0.03555048896464014
+      ],
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "fcc_cw_d125_highres_s3",
+      "machine": "fcc",
+      "card": "cases/monochromatization_125/fcc_cw_d125_highres_s3.dat",
+      "sha256": "f93226c78bc2720dc9b49671b6ca33573cc7c4d64abfbcc371cef9253e0f5b6f",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610310202,
+      "role": "scan",
+      "dispersion_mm": 125,
+      "grid": [
+        2048,
+        4096,
+        128
+      ],
+      "macroparticles_per_beam": 80000,
+      "half_domain_m": [
+        0.0014541349998596078,
+        2.381813057052353e-05,
+        0.03555048896464014
+      ],
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "fcc_cw_d150_highres_s1",
+      "machine": "fcc",
+      "card": "cases/monochromatization_125/fcc_cw_d150_highres_s1.dat",
+      "sha256": "38c91b83da088aa9b25bf95410e02c323658b497f2eb9620eb59c39b8c99e9e6",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 61028101,
+      "role": "scan",
+      "dispersion_mm": 150,
+      "grid": [
+        2048,
+        4096,
+        128
+      ],
+      "macroparticles_per_beam": 80000,
+      "half_domain_m": [
+        0.0015741393564290343,
+        2.5081030865910525e-05,
+        0.03555070410695125
+      ],
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "fcc_cw_d150_highres_s2",
+      "machine": "fcc",
+      "card": "cases/monochromatization_125/fcc_cw_d150_highres_s2.dat",
+      "sha256": "5c9a94de522d78aaf3ded600bee25dd3daa506409b3e1b460ff1e94dc8566dde",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610310201,
+      "role": "scan",
+      "dispersion_mm": 150,
+      "grid": [
+        2048,
+        4096,
+        128
+      ],
+      "macroparticles_per_beam": 80000,
+      "half_domain_m": [
+        0.0015741393564290343,
+        2.5081030865910525e-05,
+        0.03555070410695125
+      ],
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "fcc_cw_d150_highres_s3",
+      "machine": "fcc",
+      "card": "cases/monochromatization_125/fcc_cw_d150_highres_s3.dat",
+      "sha256": "e1e7920a351a06893ef28c9b33f1c3cd930d55f7446b473d2c48ffec42c380cd",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610310202,
+      "role": "scan",
+      "dispersion_mm": 150,
+      "grid": [
+        2048,
+        4096,
+        128
+      ],
+      "macroparticles_per_beam": 80000,
+      "half_domain_m": [
+        0.0015741393564290343,
+        2.5081030865910525e-05,
+        0.03555070410695125
+      ],
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "fcc_cw_d175_highres_s1",
+      "machine": "fcc",
+      "card": "cases/monochromatization_125/fcc_cw_d175_highres_s1.dat",
+      "sha256": "49ca919a46cdcd5d98980370779ef118d4e6e003add9a51b7bda513b620e5ccd",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 61028101,
+      "role": "scan",
+      "dispersion_mm": 175,
+      "grid": [
+        2048,
+        4096,
+        128
+      ],
+      "macroparticles_per_beam": 80000,
+      "half_domain_m": [
+        0.001694144505068002,
+        2.634394838354083e-05,
+        0.03555095836436762
+      ],
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "fcc_cw_d175_highres_s2",
+      "machine": "fcc",
+      "card": "cases/monochromatization_125/fcc_cw_d175_highres_s2.dat",
+      "sha256": "99465d4bf864f54627b67ce00b8a101fe021cb1521d84ab7c375d8a5b0837855",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610310201,
+      "role": "scan",
+      "dispersion_mm": 175,
+      "grid": [
+        2048,
+        4096,
+        128
+      ],
+      "macroparticles_per_beam": 80000,
+      "half_domain_m": [
+        0.001694144505068002,
+        2.634394838354083e-05,
+        0.03555095836436762
+      ],
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "fcc_cw_d175_highres_s3",
+      "machine": "fcc",
+      "card": "cases/monochromatization_125/fcc_cw_d175_highres_s3.dat",
+      "sha256": "c04705e2a21ae8d5cffe4048c7be40f77affc1c7f43b74c0bc5eeb7c449f29e1",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 610310202,
+      "role": "scan",
+      "dispersion_mm": 175,
+      "grid": [
+        2048,
+        4096,
+        128
+      ],
+      "macroparticles_per_beam": 80000,
+      "half_domain_m": [
+        0.001694144505068002,
+        2.634394838354083e-05,
+        0.03555095836436762
+      ],
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "fcc_cw_d175_nx1024_s1",
+      "machine": "fcc",
+      "card": "cases/monochromatization_125/fcc_cw_d175_nx1024_s1.dat",
+      "sha256": "8ba636334c1afac4cc68c355240b27f428f5adaac583856c71d90826926cdde7",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 61028101,
+      "role": "numerical_control",
+      "dispersion_mm": 175,
+      "grid": [
+        1024,
+        4096,
+        128
+      ],
+      "macroparticles_per_beam": 80000,
+      "half_domain_m": [
+        0.001694144505068002,
+        2.634394838354083e-05,
+        0.03555095836436762
+      ],
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    },
+    {
+      "name": "fcc_cw_d175_nz256_s1",
+      "machine": "fcc",
+      "card": "cases/monochromatization_125/fcc_cw_d175_nz256_s1.dat",
+      "sha256": "4ac136973d6e8955029d3f92dff4a38399d31b63662acf161a532ffcac524a28",
+      "accelerator": "mono125",
+      "parameters": "diagnostic",
+      "seed": 61028101,
+      "role": "numerical_control",
+      "dispersion_mm": 175,
+      "grid": [
+        2048,
+        4096,
+        256
+      ],
+      "macroparticles_per_beam": 80000,
+      "half_domain_m": [
+        0.001694144505068002,
+        2.634394838354083e-05,
+        0.03555095836436762
+      ],
+      "expected_host_workers": 16,
+      "expected_gpus": 1
+    }
+  ]
+}

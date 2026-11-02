@@ -1,0 +1,23 @@
+$ACCELERATOR:: tiny
+{energy=125.0;particles=2.0;
+beta_x=13.0;beta_y=0.41;
+emitt_x=5.0;emitt_y=0.035;
+sigma_z=300.0;espread=0.00188;dist_z=0;
+f_rep=5.0;n_b=1312;waist_y=0;
+angle_x.1=0.0;angle_x.2=0.0;angle_phi.1=0.0;angle_phi.2=0.0;}
+
+$PARAMETERS:: bench
+{n_x=64;n_y=64;n_z=8;n_t=4;n_m=300000;
+cut_x=3092.9;cut_y=459.55;cut_z=3.0*sigma_z.1;
+force_symmetric=0;electron_ratio=0.0;
+do_eloss=0;ST_spin_flip=0;bmt_precession=0;
+do_photons=0;store_photons=0;do_photon_lumi=0;photon_ratio=1.0;
+do_lumi=0;num_lumi=1000;do_isr=0;do_cross=0;do_bhabhas=0;
+do_hadrons=0;store_hadrons=0;do_jets=0;
+do_pairs=0;track_pairs=0;store_pairs=0;
+do_compt=0;do_compt_phot=0;do_muons=0;
+do_coherent=0;do_trident=0;do_prod=0;do_tertphot=0;
+grids=1;integration_method=2;rndm_seed=424242;rndm_load=0;rndm_save=0;
+load_beam=0;load_photons=0;store_beam=0;charge_sign=-1.0;
+hist_ee_bins=100;hist_ee_max=2.02*energy.1;
+cpu_primary_move=0;}

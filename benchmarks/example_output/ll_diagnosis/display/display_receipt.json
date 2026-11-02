@@ -1,0 +1,184 @@
+{
+  "schema": "feebl.ll-control-display/1",
+  "status": "VERIFIED_CENTRAL_VALUE_DISPLAY",
+  "input_reduction": {
+    "analysis_receipt.json": "4a1a9e61ee73e2ab3ca712395a1ad3d6e7cfc5fde764f7c4dcf4d4e1a405dc60",
+    "control_summary.json": "6b627e4ad6d599ec4366dfea12471bb9f973f714e55e77638841685b04494e31"
+  },
+  "producer_sha256": {
+    "render.py": "cbf6261d5c5186d9a1f1274b25e43176152c693294abf318d677c61914b51294",
+    "reference_annotations.json": "85aba06db02ab2b563dc7ced55c2b53da008b301e01fa3768bfa43ff8bd55db0"
+  },
+  "output_sha256": {
+    "pair_process_controls.pdf": "97e5d005e906f0cfc6b6d4481015228d4c6953dc20478c0747e9b8453769b372",
+    "pair_process_controls.png": "873127bdaefc49f1837cf7ec7e767c78f1b336fccdf6492620fcbe0bfd9a39da"
+  },
+  "records": [
+    {
+      "arm": "exact_no_beam_size",
+      "channel": "BW",
+      "cross_section_mb": 1.1580440842593165,
+      "sem_mb": 0.03663554896124879
+    },
+    {
+      "arm": "exact_no_beam_size",
+      "channel": "BH",
+      "cross_section_mb": 66.60575207140583,
+      "sem_mb": 0.27508975970057165
+    },
+    {
+      "arm": "exact_no_beam_size",
+      "channel": "LL",
+      "cross_section_mb": 31.501799576217312,
+      "sem_mb": 0.10848315454233037
+    },
+    {
+      "arm": "exact_profile",
+      "channel": "BW",
+      "cross_section_mb": 1.153828033652604,
+      "sem_mb": 0.02897878430748891
+    },
+    {
+      "arm": "exact_profile",
+      "channel": "BH",
+      "cross_section_mb": 39.04198866159089,
+      "sem_mb": 0.35513898917216763
+    },
+    {
+      "arm": "exact_profile",
+      "channel": "LL",
+      "cross_section_mb": 18.919953001708897,
+      "sem_mb": 0.031472108321282645
+    },
+    {
+      "arm": "exact_profile_expanded_domain",
+      "channel": "BW",
+      "cross_section_mb": 1.163342151725872,
+      "sem_mb": 0.03362380877985534
+    },
+    {
+      "arm": "exact_profile_expanded_domain",
+      "channel": "BH",
+      "cross_section_mb": 38.98538965676836,
+      "sem_mb": 0.32040294329821056
+    },
+    {
+      "arm": "exact_profile_expanded_domain",
+      "channel": "LL",
+      "cross_section_mb": 18.796746527400824,
+      "sem_mb": 0.07418214363274986
+    },
+    {
+      "arm": "exact_ring",
+      "channel": "BW",
+      "cross_section_mb": 1.0818474647903413,
+      "sem_mb": 0.05160029904972162
+    },
+    {
+      "arm": "exact_ring",
+      "channel": "BH",
+      "cross_section_mb": 39.2826139102425,
+      "sem_mb": 0.1963020759524668
+    },
+    {
+      "arm": "exact_ring",
+      "channel": "LL",
+      "cross_section_mb": 19.087176031160404,
+      "sem_mb": 0.10310662624238026
+    },
+    {
+      "arm": "finite_mass_epa_cain_qmax",
+      "channel": "BW",
+      "cross_section_mb": 1.0938674271540874,
+      "sem_mb": 0.02392355250116493
+    },
+    {
+      "arm": "finite_mass_epa_cain_qmax",
+      "channel": "BH",
+      "cross_section_mb": 35.59441178907905,
+      "sem_mb": 0.23749662317318207
+    },
+    {
+      "arm": "finite_mass_epa_cain_qmax",
+      "channel": "LL",
+      "cross_section_mb": 14.45588096619241,
+      "sem_mb": 0.1252927673521445
+    },
+    {
+      "arm": "finite_mass_epa_no_beam_size",
+      "channel": "BW",
+      "cross_section_mb": 1.1715386779103922,
+      "sem_mb": 0.02396324679144754
+    },
+    {
+      "arm": "finite_mass_epa_no_beam_size",
+      "channel": "BH",
+      "cross_section_mb": 66.3720566964751,
+      "sem_mb": 0.278780074598768
+    },
+    {
+      "arm": "finite_mass_epa_no_beam_size",
+      "channel": "LL",
+      "cross_section_mb": 30.315223149204485,
+      "sem_mb": 0.1164782287558626
+    },
+    {
+      "arm": "finite_mass_epa_profile",
+      "channel": "BW",
+      "cross_section_mb": 1.1664693271555833,
+      "sem_mb": 0.025312594543139263
+    },
+    {
+      "arm": "finite_mass_epa_profile",
+      "channel": "BH",
+      "cross_section_mb": 38.022158203920036,
+      "sem_mb": 0.25994227350868643
+    },
+    {
+      "arm": "finite_mass_epa_profile",
+      "channel": "LL",
+      "cross_section_mb": 18.068205676807874,
+      "sem_mb": 0.03562687775681344
+    },
+    {
+      "arm": "finite_mass_epa_ring",
+      "channel": "BW",
+      "cross_section_mb": 1.1606313172044929,
+      "sem_mb": 0.03876555682687627
+    },
+    {
+      "arm": "finite_mass_epa_ring",
+      "channel": "BH",
+      "cross_section_mb": 38.50937883171774,
+      "sem_mb": 0.29919707752792263
+    },
+    {
+      "arm": "finite_mass_epa_ring",
+      "channel": "LL",
+      "cross_section_mb": 18.51842864422675,
+      "sem_mb": 0.09606034499874289
+    },
+    {
+      "arm": "legacy_epa_ring",
+      "channel": "BW",
+      "cross_section_mb": 1.170238904729525,
+      "sem_mb": 0.06901515869648825
+    },
+    {
+      "arm": "legacy_epa_ring",
+      "channel": "BH",
+      "cross_section_mb": 38.38146474141035,
+      "sem_mb": 0.19168461438608128
+    },
+    {
+      "arm": "legacy_epa_ring",
+      "channel": "LL",
+      "cross_section_mb": 19.839492134600327,
+      "sem_mb": 0.053744182161823376
+    }
+  ],
+  "four_collision_runs_per_configuration": 4,
+  "statistical_error_bars_drawn": false,
+  "particle_records_discarded": 0,
+  "scope": "Presentation only. All central values, SEMs, covariances and native records remain unchanged. Symbols describe antecedents of named options, not identical full configurations."
+}

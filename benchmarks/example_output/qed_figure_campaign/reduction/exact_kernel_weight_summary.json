@@ -1,0 +1,210 @@
+{
+  "groups": {
+    "ilc_pairs": {
+      "1": {
+        "max_kernel_contribution": 0.9061099798007397,
+        "max_single_contribution_fraction": 2.4703209496212472e-05,
+        "expectation_seed_stability": {
+          "minimum_seed_value": [
+            73359.6968393654
+          ],
+          "maximum_seed_value": [
+            78933.27282456907
+          ],
+          "leave_one_out_mean_min": [
+            75739.61261473739
+          ],
+          "leave_one_out_mean_max": [
+            76246.30134066498
+          ],
+          "leave_one_out_sem_min": [
+            402.76185353926644
+          ],
+          "leave_one_out_sem_max": [
+            497.1615883048694
+          ],
+          "full_sample_sem": [
+            453.88384784230976
+          ],
+          "first_half": {
+            "n": 6,
+            "mean": [
+              75846.49564735321
+            ],
+            "sem": [
+              718.8411810566994
+            ]
+          },
+          "second_half": {
+            "n": 6,
+            "mean": [
+              76165.00628376022
+            ],
+            "sem": [
+              616.0916020592966
+            ]
+          },
+          "maximum_leave_one_out_shift_in_full_sem": [
+            0.5863578360069187
+          ],
+          "approximate_relative_sem_estimation_error_if_gaussian": 0.21320071635561041,
+          "qualification": "All seeds retained; Gaussian SEM-estimation estimate is descriptive and may fail for heavy weights"
+        }
+      },
+      "2": {
+        "max_kernel_contribution": 5.986113998243036,
+        "max_single_contribution_fraction": 0.00024799581452252954,
+        "expectation_seed_stability": {
+          "minimum_seed_value": [
+            47454.17694263399
+          ],
+          "maximum_seed_value": [
+            49733.62445268464
+          ],
+          "leave_one_out_mean_min": [
+            48667.60975724371
+          ],
+          "leave_one_out_mean_max": [
+            48874.8322581574
+          ],
+          "leave_one_out_sem_min": [
+            187.95652873318633
+          ],
+          "leave_one_out_sem_max": [
+            228.34969725100126
+          ],
+          "full_sample_sem": [
+            208.4596338612309
+          ],
+          "first_half": {
+            "n": 6,
+            "mean": [
+              48706.227381232406
+            ],
+            "sem": [
+              344.3836053140661
+            ]
+          },
+          "second_half": {
+            "n": 6,
+            "mean": [
+              48806.661249161836
+            ],
+            "sem": [
+              267.57256882239676
+            ]
+          },
+          "maximum_leave_one_out_shift_in_full_sem": [
+            0.5679178302648825
+          ],
+          "approximate_relative_sem_estimation_error_if_gaussian": 0.21320071635561041,
+          "qualification": "All seeds retained; Gaussian SEM-estimation estimate is descriptive and may fail for heavy weights"
+        }
+      }
+    },
+    "halhf_pairs": {
+      "1": {
+        "max_kernel_contribution": 1.944715312489445,
+        "max_single_contribution_fraction": 0.00012849769751364156,
+        "expectation_seed_stability": {
+          "minimum_seed_value": [
+            28772.168328607473
+          ],
+          "maximum_seed_value": [
+            30955.951653083295
+          ],
+          "leave_one_out_mean_min": [
+            29813.4825122209
+          ],
+          "leave_one_out_mean_max": [
+            30012.00826899143
+          ],
+          "leave_one_out_sem_min": [
+            188.59524530248018
+          ],
+          "leave_one_out_sem_max": [
+            219.94431962334147
+          ],
+          "full_sample_sem": [
+            200.78635453054056
+          ],
+          "first_half": {
+            "n": 6,
+            "mean": [
+              29565.624571210446
+            ],
+            "sem": [
+              236.53547072663855
+            ]
+          },
+          "second_half": {
+            "n": 6,
+            "mean": [
+              30251.751976708405
+            ],
+            "sem": [
+              272.6913899621924
+            ]
+          },
+          "maximum_leave_one_out_shift_in_full_sem": [
+            0.5145767762633602
+          ],
+          "approximate_relative_sem_estimation_error_if_gaussian": 0.21320071635561041,
+          "qualification": "All seeds retained; Gaussian SEM-estimation estimate is descriptive and may fail for heavy weights"
+        }
+      },
+      "2": {
+        "max_kernel_contribution": 4.303156462078474,
+        "max_single_contribution_fraction": 0.0004733095268524625,
+        "expectation_seed_stability": {
+          "minimum_seed_value": [
+            18083.178084809228
+          ],
+          "maximum_seed_value": [
+            18928.148495565343
+          ],
+          "leave_one_out_mean_min": [
+            18528.87675263127
+          ],
+          "leave_one_out_mean_max": [
+            18605.692244518188
+          ],
+          "leave_one_out_sem_min": [
+            72.36024267408999
+          ],
+          "leave_one_out_sem_max": [
+            86.66443905242735
+          ],
+          "full_sample_sem": [
+            79.11584392692183
+          ],
+          "first_half": {
+            "n": 6,
+            "mean": [
+              18428.068219332312
+            ],
+            "sem": [
+              104.54957841765612
+            ]
+          },
+          "second_half": {
+            "n": 6,
+            "mean": [
+              18696.23057641924
+            ],
+            "sem": [
+              97.05294648815403
+            ]
+          },
+          "maximum_leave_one_out_shift_in_full_sem": [
+            0.5503682256443182
+          ],
+          "approximate_relative_sem_estimation_error_if_gaussian": 0.21320071635561041,
+          "qualification": "All seeds retained; Gaussian SEM-estimation estimate is descriptive and may fail for heavy weights"
+        }
+      }
+    }
+  },
+  "observable": "Uncut production-kernel contributions; separate from admitted daughter yields",
+  "qualification": "Kernel evaluations and split chunks are correlated diagnostics, not independent collision samples; no effective-count significance inferred"
+}

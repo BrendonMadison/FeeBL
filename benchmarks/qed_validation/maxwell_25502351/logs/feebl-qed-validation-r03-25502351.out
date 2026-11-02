@@ -1,0 +1,9 @@
+UTC 2026-10-30T11:51:21Z
+HOST max-wn084.desy.de
+JOB 25502351
+Currently Loaded Modulefiles:
+ 1) maxwell   2) gcc/12.2   3) python/3.12(default)   4) cmake/3.31.6  
+
+Key:
+(symbolic-version)  
+COMPLETE UTC=2026-10-30T12:26:09Z strict_exit=8

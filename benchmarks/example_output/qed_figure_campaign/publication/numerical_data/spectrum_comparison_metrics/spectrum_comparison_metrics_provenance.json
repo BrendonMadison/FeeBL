@@ -1,0 +1,16 @@
+{
+  "producer_sha256": "3d966a795eb015fa5fd0ea6b648fcaf962a5b0de68023b4d16d1423d294375ff",
+  "input_comparison_sha256": {
+    "halhf_250_full_pull.csv": "9395a1b30f069384662346aca5332f7627c686c8785e33704f477de3a5356675",
+    "halhf_250_peak_pull.csv": "810396c76291b98a07f71e6a14212758ea3fdcba828d6e149e54afa7af8193e6",
+    "halhf_380_full_pull.csv": "de5c95537f1d5a811ef33470341a803d0472e82e77f8d5bee520647e71695ef8",
+    "halhf_380_peak_pull.csv": "6793941c9ba38bb73a634b7b56dc6aecdebfcfc6d311dab7f447e239ed8e0753",
+    "halhf_550_full_pull.csv": "64b1e18bd5e986f25b24de889fde7a95e3ede81547e8222ced314c3af0f80e44",
+    "halhf_550_peak_pull.csv": "6b37ff5b33af0f561aec3d1608c9b16c861f5a35723f942c76e3afe48c8e04c1",
+    "ilc_1000_full_pull.csv": "1bf52b964009725c8f34c1c806c00533a54d1075071561c672b91cb3384820e9",
+    "ilc_1000_peak_pull.csv": "c37f6f44654e9b85962fcd3c1558f0fc49430d8bb3b09cf303ee3cee937b73fa"
+  },
+  "normalization": "Both distributions condition on the same retained bin support; missing intervals remain gaps.",
+  "wasserstein_rule": "Exact absolute linear-CDF integral within each constant-density bin and constant-CDF integral across support gaps.",
+  "qualification": "Descriptive shape distances; no global significance or uncertainty from reference authors is inferred."
+}

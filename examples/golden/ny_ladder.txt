@@ -1,0 +1,25 @@
+Vertical-resolution convergence, ILC 500 (s12).
+Everything except n_y held at the original hand-tuned values.
+
+    n_y    delta_y/sigma_y    L (m^-2 s^-1)    vs n_y=256
+    128    0.938              1.1694e+38       -18.2%
+    256    0.469              1.42885e+38       0.0%   <- old golden value
+    512    0.234              1.50945e+38       +5.6%
+   1024    0.117              1.52823e+38       +7.0%
+
+Increments 22% -> 5.6% -> 1.2%: converging to ~1.53e38. The old golden value
+sat at delta_y = 0.469 sigma_y and was therefore ~6.5% low. Grid escape was
+ZERO in every row, so nothing was being lost -- the mesh was simply too coarse
+to resolve the pinched core.
+
+Regenerating the whole benchmark at delta_y <= 0.117 sigma_y moved:
+
+    LEP x3            +0.11 to +0.13%   (already converged)
+    FCC-ee x5         +0.12 to +0.38%   (already converged)
+    ILC / LCF x8      +4.4  to +12.4%   (badly under-converged)
+
+Note the remaining n_y = 512 -> 1024 step is still +1.2%, so the converged set
+may itself be ~1% low. It is not extrapolated; it is what the code produced.
+
+This error was found by the optimize_grids heuristic disagreeing with the
+hand-tuned decks, not the other way round.

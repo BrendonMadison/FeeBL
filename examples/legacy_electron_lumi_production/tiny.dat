@@ -1,0 +1,100 @@
+$ACCELERATOR:: tiny
+{energy=125.0;particles=2.0000;
+beta_x=13.0;beta_y=0.41;
+emitt_x=5.0;emitt_y=0.035;
+sigma_z=300.0;espread=0.00188;dist_z=0;
+f_rep=5.0;n_b=1312;waist_y=0;
+angle_x.1=0.0;angle_x.2=0.0;angle_phi.1=0.0;angle_phi.2=0.0;}
+
+$PARAMETERS:: cartesian
+{n_x=32;n_y=32;n_z=8;n_t=1;n_m=4000;
+cut_x=3092.9;cut_y=459.55;cut_z=3.0*sigma_z.1;
+force_symmetric=0;electron_ratio=1.0;
+do_eloss=0;do_photons=0;store_photons=0;photon_ratio=1.0;
+ecm_min=1.98*energy.1;ecm_min_gg=1.0;
+do_hadrons=0;store_hadrons=0;do_coherent=0;do_trident=0;
+do_pairs=0;track_pairs=0;store_pairs=0;do_compt=0;do_compt_phot=0;
+do_muons=0;do_jets=0;do_cross=0;do_bhabhas=0;do_prod=0;do_tertphot=0;
+grids=1;rndm_seed=424242;rndm_load=0;rndm_save=1;
+load_beam=0;load_photons=0;charge_sign=-1.0;
+do_lumi=0;do_photon_lumi=0;
+num_lumi=1000;hist_ee_bins=100;hist_ee_max=2.02*energy.1;}
+
+$PARAMETERS:: precomputed
+{n_x=32;n_y=32;n_z=8;n_t=1;n_m=4000;
+cut_x=3092.9;cut_y=459.55;cut_z=3.0*sigma_z.1;
+force_symmetric=0;electron_ratio=1.0;
+do_eloss=0;do_photons=0;store_photons=0;photon_ratio=1.0;
+ecm_min=1.98*energy.1;ecm_min_gg=1.0;
+do_hadrons=0;store_hadrons=0;do_coherent=0;do_trident=0;
+do_pairs=0;track_pairs=0;store_pairs=0;do_compt=0;do_compt_phot=0;
+do_muons=0;do_jets=0;do_cross=0;do_bhabhas=0;do_prod=0;do_tertphot=0;
+grids=1;rndm_seed=424242;rndm_load=0;rndm_save=1;
+load_beam=0;load_photons=0;charge_sign=-1.0;
+do_lumi=0;do_photon_lumi=0;electron_lumi_precompute=1;
+num_lumi=1000;hist_ee_bins=100;hist_ee_max=2.02*energy.1;}
+
+$PARAMETERS:: blocked
+{n_x=32;n_y=32;n_z=8;n_t=1;n_m=4000;
+cut_x=3092.9;cut_y=459.55;cut_z=3.0*sigma_z.1;
+force_symmetric=0;electron_ratio=1.0;
+do_eloss=0;do_photons=0;store_photons=0;photon_ratio=1.0;
+ecm_min=1.98*energy.1;ecm_min_gg=1.0;
+do_hadrons=0;store_hadrons=0;do_coherent=0;do_trident=0;
+do_pairs=0;track_pairs=0;store_pairs=0;do_compt=0;do_compt_phot=0;
+do_muons=0;do_jets=0;do_cross=0;do_bhabhas=0;do_prod=0;do_tertphot=0;
+grids=1;rndm_seed=424242;rndm_load=0;rndm_save=1;
+load_beam=0;load_photons=0;charge_sign=-1.0;
+do_lumi=0;do_photon_lumi=0;electron_lumi_precompute=2;
+num_lumi=1000;hist_ee_bins=100;hist_ee_max=2.02*energy.1;}
+
+$PARAMETERS:: rejected_isr
+{electron_lumi_precompute=1;do_isr=1;}
+
+$PARAMETERS:: rejected_heap
+{electron_lumi_precompute=1;do_lumi=1;}
+
+$PARAMETERS:: rejected_cross
+{electron_lumi_precompute=1;do_cross=1;}
+
+$PARAMETERS:: rejected_bhabhas
+{electron_lumi_precompute=1;do_bhabhas=1;}
+
+$PARAMETERS:: rejected_jets
+{electron_lumi_precompute=1;do_jets=1;}
+
+$PARAMETERS:: rejected_prod
+{electron_lumi_precompute=1;do_prod=1;}
+
+$PARAMETERS:: rejected_bmt
+{electron_lumi_precompute=1;bmt_precession=1;}
+
+$PARAMETERS:: rejected_invalid
+{electron_lumi_precompute=4;}
+
+$PARAMETERS:: blocked_rejected_isr
+{electron_lumi_precompute=2;do_isr=1;}
+
+$PARAMETERS:: blocked_rejected_heap
+{electron_lumi_precompute=2;do_lumi=1;}
+
+$PARAMETERS:: blocked_rejected_cross
+{electron_lumi_precompute=2;do_cross=1;}
+
+$PARAMETERS:: blocked_rejected_bhabhas
+{electron_lumi_precompute=2;do_bhabhas=1;}
+
+$PARAMETERS:: blocked_rejected_jets
+{electron_lumi_precompute=2;do_jets=1;}
+
+$PARAMETERS:: blocked_rejected_prod
+{electron_lumi_precompute=2;do_prod=1;}
+
+$PARAMETERS:: blocked_rejected_bmt
+{electron_lumi_precompute=2;bmt_precession=1;}
+
+$PARAMETERS:: blocked_rejected_st
+{electron_lumi_precompute=2;ST_spin_flip=1;}
+
+$PARAMETERS:: blocked_rejected_bds_spin
+{electron_lumi_precompute=2;do_bds_spin_rotation=1;}

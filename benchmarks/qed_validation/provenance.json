@@ -1,0 +1,107 @@
+{
+  "schema": "feebl.qed-oracle-provenance/1",
+  "handoff_sha256": "a56d62082dc29a7c9c94ad3531b8bd17ced3fef36423a9a71c5450968e73da92",
+  "handoff_git_commit": "abd368a",
+  "oracle_repository_commit": "8e7513e",
+  "validation_status": "Imported source and fixed-point records; not rerun during this integration",
+  "files": [
+    {
+      "path": "theory/mathematica/amp_eeee_feynman.m",
+      "source_path_in_handoff": "guineapig-precision-qed/theory/mathematica/amp_eeee_feynman.m",
+      "sha256": "1c3caf8456d8b25c0231ca4b48ea32cf6df58e6288d91cf3673247be9cd78a96",
+      "bytes": 26421,
+      "modifications": "none"
+    },
+    {
+      "path": "theory/mathematica/amp_eeee_xi.m",
+      "source_path_in_handoff": "guineapig-precision-qed/theory/mathematica/amp_eeee_xi.m",
+      "sha256": "cbd2f6fb0aba01bb45f91870f1071372ed0e199a5080cd1551b85c89cc616a6f",
+      "bytes": 80523,
+      "modifications": "none"
+    },
+    {
+      "path": "theory/mathematica/amp_eemm_feynman.m",
+      "source_path_in_handoff": "guineapig-precision-qed/theory/mathematica/amp_eemm_feynman.m",
+      "sha256": "3b6a2d27d84b29053b044f608bde42e7282958acda429fdc3bd8348334bd76f5",
+      "bytes": 8834,
+      "modifications": "none"
+    },
+    {
+      "path": "theory/mathematica/amp_eemm_xi.m",
+      "source_path_in_handoff": "guineapig-precision-qed/theory/mathematica/amp_eemm_xi.m",
+      "sha256": "c0e9c68d56cf2d3f4633d9d13f05ad39b697bc23da5e9d655672219ee25da477",
+      "bytes": 26863,
+      "modifications": "none"
+    },
+    {
+      "path": "theory/mathematica/check_reference.wl",
+      "source_path_in_handoff": "guineapig-precision-qed/theory/mathematica/check_reference.wl",
+      "sha256": "a57c8e90caa37d9a9ae2afdf1abe8a6674bbf9a41a48a6fb94148478a10acf62",
+      "bytes": 4439,
+      "modifications": "none"
+    },
+    {
+      "path": "theory/mathematica/gen_amplitudes.wl",
+      "source_path_in_handoff": "guineapig-precision-qed/theory/mathematica/gen_amplitudes.wl",
+      "sha256": "e0119766911c5be089cec836c485476de3958d1466c280fcc10c8e3b332c014a",
+      "bytes": 1781,
+      "modifications": "none"
+    },
+    {
+      "path": "theory/mathematica/me_reference.wl",
+      "source_path_in_handoff": "guineapig-precision-qed/theory/mathematica/me_reference.wl",
+      "sha256": "f9d909c80f49869e9f98ac6fabc810c8f8eb66525ad1074b919ce1297eaddbeb",
+      "bytes": 5742,
+      "modifications": "none"
+    },
+    {
+      "path": "tests/numerical/compare_oracle.wl",
+      "source_path_in_handoff": "guineapig-precision-qed/tests/numerical/compare_oracle.wl",
+      "sha256": "79eb808ae79af1d35a44ff02df9a8be4773f1866de9ad8b142aa4c4b43c6ee4c",
+      "bytes": 2705,
+      "modifications": "none"
+    },
+    {
+      "path": "tests/numerical/compare_oracle_bh.wl",
+      "source_path_in_handoff": "guineapig-precision-qed/tests/numerical/compare_oracle_bh.wl",
+      "sha256": "7047d73505952aa5386bcd6fedd88ff72f1a9ab49c0a93ca3133ba4b101a0934",
+      "bytes": 2830,
+      "modifications": "none"
+    },
+    {
+      "path": "tests/numerical/oracle_points.txt",
+      "source_path_in_handoff": "guineapig-precision-qed/tests/numerical/oracle_points.txt",
+      "sha256": "2036aada821d9fe6b207cc750e52e146694bb0a689c8bd5aba0961afb19007b8",
+      "bytes": 25560,
+      "modifications": "none"
+    },
+    {
+      "path": "tests/numerical/oracle_extreme_points.txt",
+      "source_path_in_handoff": "guineapig-precision-qed/tests/numerical/oracle_extreme_points.txt",
+      "sha256": "5cfa6ec85da455a4fd2619599231ae4d3421f62ea3a95f950675fd0af0d6af7c",
+      "bytes": 21296,
+      "modifications": "none"
+    },
+    {
+      "path": "tests/numerical/oracle_bh_points.txt",
+      "source_path_in_handoff": "guineapig-precision-qed/tests/numerical/oracle_bh_points.txt",
+      "sha256": "49851005982df1341cf65a7451654815e9bd0b841773f4f7b1d77695c2f5aad8",
+      "bytes": 14289,
+      "modifications": "none"
+    }
+  ],
+  "native_tests": [
+    {
+      "path": "tests/qed/test_tree_engine.cc",
+      "original_sha256": "5c6d1d1af3c3039e351a65243626ad5bea157b0ea23934cbb7b84e81ff52647d",
+      "packaged_sha256": "d7e55072636ef19d10be79c7d6532f8a956faf807ac9b9eb204e9cb85160352c",
+      "modifications": "Portable usage comments only; equations, fixtures and thresholds unchanged"
+    },
+    {
+      "path": "tests/qed/test_bh_bw_engine.cc",
+      "original_sha256": "f68101319f59170905f197da0ff8186fcf0a67b29da2f30c459601fc55335f94",
+      "packaged_sha256": "fed9b557848ffe0754477a5d5d3c097a9d2afd7862ecf21a3a9d018132646cce",
+      "modifications": "Portable usage comments only; equations, fixtures and thresholds unchanged"
+    }
+  ]
+}

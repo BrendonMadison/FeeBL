@@ -1,0 +1,170 @@
+{
+  "schema_version": "feebl.collider.analysis/1",
+  "created_utc": "2026-10-28T20:45:05.966013+00:00",
+  "observable": "e+e- luminosity spectrum",
+  "validation_status": "UNVALIDATED_PHYSICS",
+  "definition": {
+    "native_W": "Massive invariant mass of simulated incoming directions; no design crossing rotation in native header",
+    "design_W": "sqrt(2*m_e^2 + 2*(E1*E2 + p1*p2*cos(full_crossing_angle)))",
+    "nominal_W_GeV": 500.0,
+    "energy_GeV": [
+      250,
+      250
+    ],
+    "full_crossing_angle_rad": 0.0,
+    "angle_receipt_matches_design": true,
+    "finite_angle_approximation": false,
+    "native_frame": "lab",
+    "native_momenta_carry_crossing_angle": "no"
+  },
+  "normalization": {
+    "crossing_frequency_hz": 14100.0,
+    "conversion_m2_to_cm2_s": 1.4100000000000001,
+    "allocation_scope": "per_ip",
+    "scope": "per IP; explicitly supplied per-IP collision frequency",
+    "bin_sum_m2_per_crossing": 9.34254e+33,
+    "underflow_m2_per_crossing": 0.0,
+    "overflow_m2_per_crossing": 0.0,
+    "total_spectrum_m2_per_crossing": 9.34254e+33,
+    "total_summary_m2_per_crossing": 9.34253e+33,
+    "total_L_cm2_s": 1.3172967300000003e+34,
+    "comparison_status": "MATCH_WITHIN_NATIVE_TEXT_ROUNDING",
+    "relative_spectrum_minus_summary": 1.0703738709036736e-06
+  },
+  "native_statistics": {
+    "mean_W_GeV": 500.0,
+    "weighted_record_mean_error_GeV": 0.0,
+    "full_RMS_W_GeV": 0.0,
+    "weighted_record_n_eff": 24612.0,
+    "gaussian_core_fit": null
+  },
+  "high_energy_integral_bounds": {
+    "0.98": {
+      "threshold_GeV": 490.0,
+      "weight_m2_per_crossing_bounds": [
+        9.34254e+33,
+        9.34254e+33
+      ],
+      "fraction_of_total_bounds": [
+        1.0,
+        1.0
+      ],
+      "definition": "Bounds from whole/cut-straddling native bins and unresolved flow locations, including high side; not a statistical confidence interval"
+    },
+    "0.99": {
+      "threshold_GeV": 495.0,
+      "weight_m2_per_crossing_bounds": [
+        9.34254e+33,
+        9.34254e+33
+      ],
+      "fraction_of_total_bounds": [
+        1.0,
+        1.0
+      ],
+      "definition": "Bounds from whole/cut-straddling native bins and unresolved flow locations, including high side; not a statistical confidence interval"
+    }
+  },
+  "missing_record_gaps": [],
+  "bins": [
+    {
+      "W_low_GeV": 499.95,
+      "W_high_GeV": 500.0,
+      "dL_dW_m2_per_crossing_GeV": 1.32379e+35,
+      "weight_m2_per_crossing": 6.61896e+33,
+      "dL_dW_cm2_s_GeV": 1.8665439000000002e+35,
+      "shape_density_per_GeV": 14.169487098797543,
+      "uncertainty": null,
+      "native_columns": [
+        499.95,
+        500.0,
+        1.32379e+35,
+        6.61896e+33,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "W_low_GeV": 500.0,
+      "W_high_GeV": 500.05,
+      "dL_dW_m2_per_crossing_GeV": 5.44715e+34,
+      "weight_m2_per_crossing": 2.72358e+33,
+      "dL_dW_cm2_s_GeV": 7.6804815e+34,
+      "shape_density_per_GeV": 5.8304807900207,
+      "uncertainty": null,
+      "native_columns": [
+        500.0,
+        500.05,
+        5.44715e+34,
+        2.72358e+33,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "plot": {
+    "full": {
+      "x_min_GeV": 0,
+      "y_scale": "log"
+    },
+    "peak": {
+      "x_min_GeV": 490.0,
+      "y_scale": "linear"
+    },
+    "x_max_GeV": 502.49999999999994,
+    "crop_renormalization": false
+  },
+  "limitations": [
+    "No seed-ensemble or reference uncertainty is inferred from the native weighted-record errors.",
+    "Missing bin records mean no sampled records; no zero-density bins or error bars are invented.",
+    "Shape normalization retains underflow and overflow in the denominator; display crops never renormalize.",
+    "No ISR is added by this adapter; upstream physics switches remain the source of the modeled spectrum.",
+    "Gaussian-core fit is unavailable; native full RMS is not a Gaussian-core width."
+  ],
+  "native_header": {
+    "feebl_version": "0.6.0-dev",
+    "rndm_seed": "6102721",
+    "length_unit": "nm",
+    "z_unit": "um",
+    "energy_unit": "GeV",
+    "angle_unit": "rad",
+    "frame": "lab",
+    "beam1_direction": "+z",
+    "beam2_direction": "-z",
+    "transverse_momenta_are": "slopes_vx_vy",
+    "vz_sign_convention": "beam1_positive_beam2_negative",
+    "half_crossing_angle_rad": 0.0,
+    "momenta_carry_crossing_angle": "no",
+    "spin_present": "no",
+    "BLOCK": "pair_spectrum",
+    "COLUMNS": "W_low W_high dL_dW weight h1 h1_err h2 h2_err h1h2 cov n_eff",
+    "underflow": 0.0,
+    "overflow": 0.0,
+    "mean_W": 500.0,
+    "rms_W": 0.0,
+    "n_eff_total": 24612.0,
+    "mean_W_error": 0.0
+  },
+  "sources": {
+    "spectrum": {
+      "path": "lumi.ee.out.dLdW.fne",
+      "sha256": "6eb1009f8392f33b15612620c0bc1985bdd48ae3cfb6351ee3ba26581a483bdd",
+      "bytes": 729
+    },
+    "summary": {
+      "path": "out.dat",
+      "sha256": "a6de54641da70ec0592a5fea56dd9e084d9fa8fe2aebc832261d08243c7ff2f8",
+      "bytes": 7766
+    }
+  },
+  "adapter_sha256": "3c8b5192e4ff262b0034c2e2ee6bfd4236e0940901c267ba4ce719fea1d29460"
+}

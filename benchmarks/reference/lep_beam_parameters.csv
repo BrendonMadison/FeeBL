@@ -1,0 +1,4 @@
+year,beam_energy_GeV,bunch_population,sigma_x_um,sigma_y_um_approx,sigma_z_mm,beta_x_m,beta_y_m
+1993,45.6,1.207e+11,213,4,10.3,2.5,0.05
+1994,45.6,1.28e+11,171,4,10,2,0.05
+1995,45.6,1.155e+11,206,4,10.5,2.5,0.05

@@ -1,0 +1,19 @@
+# LEP 1994 focusing with 45.6 GeV probes at 31.3 and 51.6 mrad; Voutsinas et al., PLB 800 (2020) 135068.
+$ACCELERATOR:: lep1994
+{energy=45.6;particles=12.8;charge_sign=-1;
+beta_x=2000;beta_y=50;emitt_x=0;emitt_y=0;sigma_x=171000;sigma_y=4000;sigma_z=10000;
+espread=0;which_espread=0;dist_x=0;dist_z=0;f_rep=1;n_b=1;
+waist_x=0;waist_y=0;offset_x=0;offset_y=0;offset_z=0;
+angle_x=0;angle_y=0;angle_phi=0;polar_x=0;polar_y=0;polar_z=0;}
+$PARAMETERS:: diagnostic
+{compute_backend="serial";allow_backend_fallback=0;collision_schedule="legacy";wavefront_field_solver="fft";
+n_x=128;n_y=256;n_z=64;n_t=2;n_m=40000;cut_x=513000;cut_y=24000;cut_z=30000;
+integration_method=2;force_symmetric=0;electron_ratio=1;
+rndm_seed=6102752;rndm_load=0;rndm_save=0;load_beam=0;store_beam=0;
+bmt_precession=0;ST_spin_flip=0;do_lumi=1;num_lumi=50000;lumi_p=1e-29;
+ecm_min=90.288;do_eloss=0;do_espread=0;do_isr=0;do_photons=0;store_photons=0;photon_ratio=1;
+do_pairs=0;load_events=1;beam_pair=0;do_bhabhas=0;store_pairs=1;pair_ratio=1;pair_q2=2;track_pairs=1;pair_ecut=0.0005;
+do_coherent=0;do_trident=0;do_compt=0;compt_emax=50;compt_x_min=0.01;
+do_hadrons=0;store_hadrons=0;do_jets=0;store_jets=0;do_muons=0;
+grids=7;beam_size=1;crab_mode=0;crab_full_crossing_angle=0;crab_longitudinal_sign.1=1;crab_longitudinal_sign.2=-1;waist_mode=0;
+store_native=1;spectrum_w_min=0;spectrum_w_max=93.024;spectrum_w_bins=9300;hist_ee_bins=930;hist_ee_max=93.024;}

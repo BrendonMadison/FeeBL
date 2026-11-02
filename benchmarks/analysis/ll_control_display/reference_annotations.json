@@ -1,0 +1,19 @@
+{
+  "scope": "Symbols identify documented antecedents of the named method or option, not identical complete configurations or claims of priority.",
+  "symbols": {"*": "GUINEA-PIG", "dagger": "CAIN"},
+  "arms": [
+    {"arm": "legacy_epa_ring", "label": "Legacy EPA, ring", "model": 0, "superscript": "*", "references": ["rimbault2006"], "basis": "Inherited GP EPA and ring-placement baseline; FeeBL has corrected the Born normalization."},
+    {"arm": "finite_mass_epa_ring", "label": "Finite-mass EPA, ring", "model": 1, "superscript": "", "references": [], "basis": "FeeBL finite-mass refinement; no complete-configuration equivalence asserted."},
+    {"arm": "finite_mass_epa_profile", "label": "Finite-mass EPA, profile", "model": 1, "superscript": "", "references": ["cain244"], "basis": "This profile is not identified with the full CAIN nonlocal construction. Nonlocal sampling itself already exists in CAIN."},
+    {"arm": "exact_ring", "label": "Full QED, ring", "model": 2, "superscript": "", "references": [], "basis": "FeeBL hard-process extension; inherited ring placement does not make the full treatment a GP configuration."},
+    {"arm": "exact_profile", "label": "Full QED, profile", "model": 2, "superscript": "", "references": [], "basis": "FeeBL hard-process extension with a separately qualified spatial prescription."},
+    {"arm": "finite_mass_epa_cain_qmax", "label": "EPA, electron-mass cutoff", "model": 1, "superscript": "*\\dagger", "references": ["rimbault2006", "cain244"], "basis": "GP Table V electron-mass cutoff control and CAIN electron-mass transverse-momentum scale; cutoff definitions and spatial sampling are not identical."},
+    {"arm": "finite_mass_epa_no_beam_size", "label": "EPA, no beam-size suppression", "model": 1, "superscript": "*\\dagger", "references": ["rimbault2006", "cain244"], "basis": "GP/CAIN no-beam-size control in Table III; CAIN LOCAL option."},
+    {"arm": "exact_no_beam_size", "label": "Full QED, no beam-size suppression", "model": 2, "superscript": "*\\dagger", "references": ["rimbault2006", "cain244"], "basis": "Symbols apply only to disabling beam-size suppression, not to the full-QED hard-process treatment."},
+    {"arm": "exact_profile_expanded_domain", "label": "Full QED, expanded domain", "model": 2, "superscript": "", "references": [], "basis": "Numerical domain control, not a claim of a new physical prescription."}
+  ],
+  "sources": {
+    "rimbault2006": {"url": "https://doi.org/10.1103/PhysRevSTAB.9.034402", "locations": "Incoherent-pair modelling discussion and Tables II, III and V"},
+    "cain244": {"url": "https://indico.cern.ch/event/1100734/contributions/4663580/attachments/2371403/4050070/Cain244manual.pdf", "locations": "Version 2.44 (2017), section 3.12 pp. 46-47 and sections 5.11.2-5.11.3 pp. 123-125"}
+  }
+}

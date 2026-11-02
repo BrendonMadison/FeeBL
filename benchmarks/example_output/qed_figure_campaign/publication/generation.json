@@ -1,0 +1,455 @@
+{
+  "producer": "regenerate_paper.py",
+  "figures": [
+    {
+      "file": "figures/common_finite_angle_extrapolations.pdf",
+      "sha256": "84660fca586cf0bc4b4fdf01968b36d42e73b4f9609c31effcd753141f3d33c9"
+    },
+    {
+      "file": "figures/depolarization_scenarios.pdf",
+      "sha256": "24011b3905ed243bd9630d6da5c50671187b17f6ee0ed05a7e9f6daef43e25be"
+    },
+    {
+      "file": "figures/fcc_peak_fragmentation.pdf",
+      "sha256": "646ec786d8f5a5fd0ef3a1aef5f6deb8c0c1cebe28dc04a7fbc0720f00359cd0"
+    },
+    {
+      "file": "figures/halhf_pair_populations.pdf",
+      "sha256": "0ac7274687da61aa3b3489d469f5132004934f47cd35cbcc0f5c5000ddd6e66c"
+    },
+    {
+      "file": "figures/halhf_spectra_250.pdf",
+      "sha256": "234ec9850a7e52d43b2f457cdac86d203b5ee6b35b3012579f0fb938671ac096"
+    },
+    {
+      "file": "figures/halhf_spectra_380.pdf",
+      "sha256": "36ee32cda51f9fcc2339e0ce6980e9a57dc574fe781e15d7ce2f7896d0423bae"
+    },
+    {
+      "file": "figures/halhf_spectra_550.pdf",
+      "sha256": "e8668cbe668aed3ef7e2ff740ac9a1c23f0713fcff32bc26620093aac0128efb"
+    },
+    {
+      "file": "figures/higgs_halhf_selected_vs_baseline_peak_spectrum.pdf",
+      "sha256": "4073fd49123449f1edd7ba8afd35e94a70d6042ccecd343ffbf06d5ba37de1c7"
+    },
+    {
+      "file": "figures/higgs_ilc_selected_vs_baseline_peak_spectrum.pdf",
+      "sha256": "7f7653bec6504fb2c88b5257384a35b04c898498d5a2fbcc87efd76fa43c151a"
+    },
+    {
+      "file": "figures/ilc_pair_yields.pdf",
+      "sha256": "57972f08fa3c5e71dcf9e289e1d57ff42a0e3b6d28f379c49a18b4466faaf987"
+    },
+    {
+      "file": "figures/ilc_spectrum.pdf",
+      "sha256": "06dd40dafb81904b38c6b297ed4df515432fc724ac01fc8d6a3f330a046f8a5f"
+    },
+    {
+      "file": "figures/lep_focusing.pdf",
+      "sha256": "d8a722c1573c3cdb6cf0a4416721ae4216705a13933d6dcdbc1144df07216c07"
+    },
+    {
+      "file": "figures/sampler_pulls.pdf",
+      "sha256": "cdcb5b8cb62b2a2fdf105c587deb375e047298a6fbd7518d2a7236464552c21f"
+    },
+    {
+      "file": "figures/three_collider_dispersion_summary.pdf",
+      "sha256": "8f608e803390b70be45ad8e43c460dea2ae62284f33248dfa66ed0a22018d4e3"
+    }
+  ],
+  "comparison_sources": [
+    {
+      "file": "comparison_coverage.json",
+      "sha256": "b73e70f4a7f0e223450b37adbb7b9e5a8d0d85e749802a2d1eaf271de2b9b807"
+    },
+    {
+      "file": "comparison_methods.json",
+      "sha256": "5221513544f0d6f6ff2f3811b862948f5a34454529da7eef8f7a7df7a8060b6b"
+    },
+    {
+      "file": "halhf_250_full_pull.csv",
+      "sha256": "9395a1b30f069384662346aca5332f7627c686c8785e33704f477de3a5356675"
+    },
+    {
+      "file": "halhf_250_full_pull_covariance.npz",
+      "sha256": "1e8b7757c0d6d61851d475214ced60631cca896e985c19e760420bca7b47dc5e"
+    },
+    {
+      "file": "halhf_250_peak_pull.csv",
+      "sha256": "810396c76291b98a07f71e6a14212758ea3fdcba828d6e149e54afa7af8193e6"
+    },
+    {
+      "file": "halhf_250_peak_pull_covariance.npz",
+      "sha256": "97cf5bd69449c4169c645a1eae0c79c110ec2c84612a7f3da1e5d73caf03e76a"
+    },
+    {
+      "file": "halhf_380_full_pull.csv",
+      "sha256": "de5c95537f1d5a811ef33470341a803d0472e82e77f8d5bee520647e71695ef8"
+    },
+    {
+      "file": "halhf_380_full_pull_covariance.npz",
+      "sha256": "06fba09ca2cd7d955d5cd9c066c0ee540b8715c696f0eb823ca52ca2f2ab7470"
+    },
+    {
+      "file": "halhf_380_peak_pull.csv",
+      "sha256": "6793941c9ba38bb73a634b7b56dc6aecdebfcfc6d311dab7f447e239ed8e0753"
+    },
+    {
+      "file": "halhf_380_peak_pull_covariance.npz",
+      "sha256": "f384e7f1600319ed9351043d473e9429fbc394813b3dc756dae9a9d61f7dc1bf"
+    },
+    {
+      "file": "halhf_550_full_pull.csv",
+      "sha256": "64b1e18bd5e986f25b24de889fde7a95e3ede81547e8222ced314c3af0f80e44"
+    },
+    {
+      "file": "halhf_550_full_pull_covariance.npz",
+      "sha256": "6245351caf6aef83eacd4864d4b52724bcceb709c8ddbb2823f3c25ea463bcae"
+    },
+    {
+      "file": "halhf_550_peak_pull.csv",
+      "sha256": "6b37ff5b33af0f561aec3d1608c9b16c861f5a35723f942c76e3afe48c8e04c1"
+    },
+    {
+      "file": "halhf_550_peak_pull_covariance.npz",
+      "sha256": "46a94ec16108902c91f876244e2794d76fb186e490f44edbce2e0ff5168796e4"
+    },
+    {
+      "file": "ilc_1000_full_pull.csv",
+      "sha256": "1bf52b964009725c8f34c1c806c00533a54d1075071561c672b91cb3384820e9"
+    },
+    {
+      "file": "ilc_1000_full_pull_covariance.npz",
+      "sha256": "ae9e17f12226292e8e89f614afa700da0262b518267543ae191a1f442d32a809"
+    },
+    {
+      "file": "ilc_1000_peak_pull.csv",
+      "sha256": "c37f6f44654e9b85962fcd3c1558f0fc49430d8bb3b09cf303ee3cee937b73fa"
+    },
+    {
+      "file": "ilc_1000_peak_pull_covariance.npz",
+      "sha256": "002236bdd5338d30708c44450a40e650d520c5f588e07664d4691d409938ae09"
+    },
+    {
+      "file": "ilc_pair_yields_cain_pull.csv",
+      "sha256": "74707f0f6deaabf84ecb2766d6f1e1fd11848c3d4b46b6337f070e8690168db4"
+    },
+    {
+      "file": "ilc_pair_yields_gp_pull.csv",
+      "sha256": "8bd7e4682bf430f424424d7cbb37137dbcada40b979122a528a16e410175685d"
+    },
+    {
+      "file": "lep_final_focusing_numerical_vs_phi_pull.csv",
+      "sha256": "4e15ee3c5a0dcf7ebd2f32bbf1b40be82588a8c0400e66ce35ff3f544ccf5b4c"
+    },
+    {
+      "file": "lep_final_focusing_numerical_vs_phi_pull_covariance.npz",
+      "sha256": "8604a56550dfdd7f9adffd6540a1208e8c6865429ed372032e9394afeb9abb9c"
+    },
+    {
+      "file": "lep_final_focusing_vs_phi_pull.csv",
+      "sha256": "f8429816b263d2395d14c5cf68bf69cc8c44db2646adbeebe731812c2ee59409"
+    },
+    {
+      "file": "lep_final_focusing_vs_phi_pull_covariance.npz",
+      "sha256": "84211a26f06b687221794ff9c0400d40679f4376636258481f8b6721f220b843"
+    },
+    {
+      "file": "lep_focusing_distribution_pull.csv",
+      "sha256": "0f581473a0cdb5848462666469fa5ddbbfae18867be602a452d15206ee812b5d"
+    },
+    {
+      "file": "lep_focusing_distribution_pull_covariance.npz",
+      "sha256": "2d32009488bff34eacbbf120b38894e4af505ec99a326bd9b2be49b6d5158cc2"
+    },
+    {
+      "file": "monochromatization_d0_pull.csv",
+      "sha256": "d234197f6a71ac0247a5a84dc3778e09f33b7b2f95437277b989c3f0a733d0cb"
+    },
+    {
+      "file": "monochromatization_d0_pull_covariance.npz",
+      "sha256": "b03697f252546d64c73191f4790bfc669f68b81653cb748d50363856c4b7ff91"
+    },
+    {
+      "file": "monochromatization_opposite_pull.csv",
+      "sha256": "ab0642357fcb00407d67d1788399ff4b4812a208e947ab218a9b0d2e1f93f9f0"
+    },
+    {
+      "file": "monochromatization_opposite_pull_covariance.npz",
+      "sha256": "369a725cef9ba43da2dd4b3582b5c92a0aa276a78d632bb063163ae9c87aa2ed"
+    },
+    {
+      "file": "monochromatization_same_pull.csv",
+      "sha256": "9225f1721eebc924e3345c9db805bc288b6d6bd87d4079f72bc780eb9b1dc501"
+    },
+    {
+      "file": "monochromatization_same_pull_covariance.npz",
+      "sha256": "32c7b70938b89c41cf673e049847cd5a0e50d165b9aebe7eb67739871b54f430"
+    },
+    {
+      "file": "provenance.json",
+      "sha256": "dac67ba18ec88f42fa02ccc502ebf8165540d64acab56ceb2a9dcb1e448cd08c"
+    }
+  ],
+  "display_reductions": [
+    {
+      "file": "figures/display_data/halhf_250_full_pull.csv",
+      "sha256": "8ac8dfd0b6e5ecfef4bd7dd427da42a3667eb7bc031d670d5dd30c366944bb33"
+    },
+    {
+      "file": "figures/display_data/halhf_250_full_pull_covariance.npz",
+      "sha256": "3a0782788c46a235629c05e175a81b6d0f004c9bd4641b4c2e9ff71cb9febe95"
+    },
+    {
+      "file": "figures/display_data/halhf_250_full_pull_display.json",
+      "sha256": "53ec09250928e9028bfc801aee1414f389887257f136c53fde10b5ef35265a1b"
+    },
+    {
+      "file": "figures/display_data/halhf_250_peak_pull.csv",
+      "sha256": "59ba4129cffccf9a785ed960f22ae05b7d9245184726d996f00c7526bdcaf8c3"
+    },
+    {
+      "file": "figures/display_data/halhf_250_peak_pull_covariance.npz",
+      "sha256": "63c628e3dddf7d46a80b184c6c0b5dc714d3d46cab231040d3df7346c0f69559"
+    },
+    {
+      "file": "figures/display_data/halhf_250_peak_pull_display.json",
+      "sha256": "46ab8740fdcd44a0d6f38066c94394e27a586ea9550531b5bc1bfb01c61e4a35"
+    },
+    {
+      "file": "figures/display_data/ilc_1000_full_pull.csv",
+      "sha256": "edc2e75eea98dc5e45493ad74a20fdff958492784bb940d53bca9f624a92a2f7"
+    },
+    {
+      "file": "figures/display_data/ilc_1000_full_pull_covariance.npz",
+      "sha256": "cdfa4efe9f30061f039ff952451ad99c4295ae2e5b1102c746168ca8dc0cd610"
+    },
+    {
+      "file": "figures/display_data/ilc_1000_full_pull_display.json",
+      "sha256": "71c92e14814a94224a99a697a77109e604ded66e89be2401f6954d4d84b05111"
+    },
+    {
+      "file": "figures/display_data/ilc_1000_peak_pull.csv",
+      "sha256": "1408cd9d16da8aad99302578ef8688c910edaa1e15698b886522d8e4f3dc655b"
+    },
+    {
+      "file": "figures/display_data/ilc_1000_peak_pull_covariance.npz",
+      "sha256": "a8d7b3e7670291191532d589d49987a1e881388224405bb4e938ed2a2f5f8569"
+    },
+    {
+      "file": "figures/display_data/ilc_1000_peak_pull_display.json",
+      "sha256": "7e3426f3841766e67aaaf4bdb084036d03fd0004e58e38c18837372758037f87"
+    }
+  ],
+  "tables": [
+    {
+      "file": "tables/collider_inputs.tex",
+      "sha256": "e9b347dd4718f46e8cb2969c82a03dccba7a0e6fe014a3ceca8f9f2e3f7fcc9f"
+    },
+    {
+      "file": "tables/confirmation.tex",
+      "sha256": "15ba7f386088ed9546ae176c295c16c9c0788abc524b8f5f8a778434354dc300"
+    },
+    {
+      "file": "tables/confirmation_intervals.tex",
+      "sha256": "e5b7e6b87f94bcf7ecba37d444593b62bf3f491b48849701224913973fb2e0bb"
+    },
+    {
+      "file": "tables/confirmation_statistics.csv",
+      "sha256": "49e222f833bffb196f7d14fa0a6556ffa4c11908ae92d11f3d788ff712f9b919"
+    },
+    {
+      "file": "tables/fcc_luminosity.tex",
+      "sha256": "1922451665c38b7a0128f93d490bc7ece1dd1dce6396fc2662cb42d683c28e9c"
+    },
+    {
+      "file": "tables/high_dispersion.tex",
+      "sha256": "6e1e91b0d59c712a04fcabe1f84ebb9068e4480336ad50cb47e7b74485a0f24d"
+    },
+    {
+      "file": "tables/ilc_pair_ensemble.tex",
+      "sha256": "6cc38ab1dcd05febafffddc305a2e8e91604b90383ca17ac9962795b8937ef2e"
+    },
+    {
+      "file": "tables/input_parameters.csv",
+      "sha256": "134cba8e49739cfde2a56503e65fec3aea9fe0f63fdaaca1feadbc42ad432e74"
+    },
+    {
+      "file": "tables/intercode_depolarization.tex",
+      "sha256": "82d85b88bc31ee74030b624bd2ca14f395144dc530a549127db17e08931b0277"
+    },
+    {
+      "file": "tables/lep_focusing_ensemble.tex",
+      "sha256": "9e3a04970ab414aa4643fc4f94b2d22dae73d43d94fb8e0e49b217bcbf9c707a"
+    },
+    {
+      "file": "tables/paper_traceability.json",
+      "sha256": "a9d6f3d79bfacc28cc0c5fab2ebc7f0c3fc3792e3b831de8aec9f5e1c23f94f4"
+    },
+    {
+      "file": "tables/polarization_inputs.csv",
+      "sha256": "8676bb5e8251162268ce1f18871ef1d1de64d9ec39cf623b0ef1538c85506d88"
+    },
+    {
+      "file": "tables/polarization_inputs.tex",
+      "sha256": "063d6c3e488c3d93ca3f8d8e32af2d6ec78effaa2bd4bd4b67607b5a458c675a"
+    },
+    {
+      "file": "tables/polarization_inputs_provenance.json",
+      "sha256": "8170526eb6604f138b667c41243d07301a758ec302ed2cf97be0451606445893"
+    },
+    {
+      "file": "tables/spectrum_comparison_metrics.csv",
+      "sha256": "0c04dd56de37e13c40599bfa843b53c812d1e45af59d5fd441a608101815c8e6"
+    },
+    {
+      "file": "tables/spectrum_comparison_metrics.tex",
+      "sha256": "a9d0cb0f2b7ead2462e6c970b75f403c5f4486506f501349967e39aca083f411"
+    },
+    {
+      "file": "tables/spectrum_comparison_metrics_provenance.json",
+      "sha256": "c657d6562908e1d843049ed05cf7a72d65ba2359be743168fafc836bd380c6cc"
+    },
+    {
+      "file": "tables/table_receipt.json",
+      "sha256": "96c5ce78ac2db35dafcd16dfd0066fb9087e772ee0574226f1d0f3ad8e35d63c"
+    },
+    {
+      "file": "tables/table_traceability.json",
+      "sha256": "9b928362c4633b31f61075928a9cc3a64cefd1c1169c78a266c4b1b263bf8d64"
+    },
+    {
+      "file": "tables/table_values.json",
+      "sha256": "e0e2fc4361486b293827d9f88ae89d902cef1554751f06725e17b1cdd55ca92c"
+    }
+  ],
+  "replay_scope": "Verified focusing/pair ensembles; historical HALHF luminosity spectra remain separate; retained response fits, Bessel quadrature and Gaussian overlap are reproduced without simulation",
+  "qed_ensemble": {
+    "analysis_receipt_sha256": "e42d6907c82efe82c50508b0cce7616c346e7e5d26235ab222c4ecda81ce5635",
+    "rerender_receipt_sha256": "392fc82f97c0bccbd9d920103e2c83b5c8117e7e96a3431643e197b59bb62439",
+    "aliases": {
+      "figure2_lep_focusing.pdf": {
+        "publication": "lep_focusing.pdf",
+        "sha256": "d8a722c1573c3cdb6cf0a4416721ae4216705a13933d6dcdbc1144df07216c07"
+      },
+      "figure2_lep_focusing.png": {
+        "publication": "lep_focusing.png",
+        "sha256": "4df0b78c5c4fa21ab3a489dbbf9b8e31ccdde648c9c27f7b8412b7af55f09bd8"
+      },
+      "figure3_ilc_pair_yields.pdf": {
+        "publication": "ilc_pair_yields.pdf",
+        "sha256": "57972f08fa3c5e71dcf9e289e1d57ff42a0e3b6d28f379c49a18b4466faaf987"
+      },
+      "figure3_ilc_pair_yields.png": {
+        "publication": "ilc_pair_yields.png",
+        "sha256": "571589ec340c5c941a8f767380ec0fda10ba301d4d4185cb4652c111597e5ad7"
+      },
+      "figure6_halhf_angular_support.pdf": {
+        "publication": "halhf_pair_populations.pdf",
+        "sha256": "0ac7274687da61aa3b3489d469f5132004934f47cd35cbcc0f5c5000ddd6e66c"
+      },
+      "figure6_halhf_angular_support.png": {
+        "publication": "halhf_pair_populations.png",
+        "sha256": "5b63d9f6e35ada1058e290957ec3c92a582d8b36d08c76ceb83b2b04bc4ba7cc"
+      }
+    },
+    "table_receipt_sha256": "96c5ce78ac2db35dafcd16dfd0066fb9087e772ee0574226f1d0f3ad8e35d63c"
+  },
+  "output_sha256": {
+    "figures/common_finite_angle_extrapolations.pdf": "84660fca586cf0bc4b4fdf01968b36d42e73b4f9609c31effcd753141f3d33c9",
+    "figures/common_finite_angle_extrapolations.png": "61aae55ae52e2b17e63ee4c8062187fbf6d9a57e4e9ba39aca49e4c323ac4611",
+    "figures/depolarization_scenarios.csv": "4924709bf89e43d1743280eed786cc7218343b2952df6a8591131c3f78511a0c",
+    "figures/depolarization_scenarios.json": "09aedd3b2fcffc852d8c9415d9059ad075517add34daaddfc233273ca261a73c",
+    "figures/depolarization_scenarios.pdf": "24011b3905ed243bd9630d6da5c50671187b17f6ee0ed05a7e9f6daef43e25be",
+    "figures/depolarization_scenarios.png": "35266b6e7b91b1e2fb6f591fc2c0dba8b309ae2f8d9303e6eb94acffac6dfc09",
+    "figures/display_data/halhf_250_full_pull.csv": "8ac8dfd0b6e5ecfef4bd7dd427da42a3667eb7bc031d670d5dd30c366944bb33",
+    "figures/display_data/halhf_250_full_pull_covariance.npz": "3a0782788c46a235629c05e175a81b6d0f004c9bd4641b4c2e9ff71cb9febe95",
+    "figures/display_data/halhf_250_full_pull_display.json": "53ec09250928e9028bfc801aee1414f389887257f136c53fde10b5ef35265a1b",
+    "figures/display_data/halhf_250_peak_pull.csv": "59ba4129cffccf9a785ed960f22ae05b7d9245184726d996f00c7526bdcaf8c3",
+    "figures/display_data/halhf_250_peak_pull_covariance.npz": "63c628e3dddf7d46a80b184c6c0b5dc714d3d46cab231040d3df7346c0f69559",
+    "figures/display_data/halhf_250_peak_pull_display.json": "46ab8740fdcd44a0d6f38066c94394e27a586ea9550531b5bc1bfb01c61e4a35",
+    "figures/display_data/ilc_1000_full_pull.csv": "edc2e75eea98dc5e45493ad74a20fdff958492784bb940d53bca9f624a92a2f7",
+    "figures/display_data/ilc_1000_full_pull_covariance.npz": "cdfa4efe9f30061f039ff952451ad99c4295ae2e5b1102c746168ca8dc0cd610",
+    "figures/display_data/ilc_1000_full_pull_display.json": "71c92e14814a94224a99a697a77109e604ded66e89be2401f6954d4d84b05111",
+    "figures/display_data/ilc_1000_peak_pull.csv": "1408cd9d16da8aad99302578ef8688c910edaa1e15698b886522d8e4f3dc655b",
+    "figures/display_data/ilc_1000_peak_pull_covariance.npz": "a8d7b3e7670291191532d589d49987a1e881388224405bb4e938ed2a2f5f8569",
+    "figures/display_data/ilc_1000_peak_pull_display.json": "7e3426f3841766e67aaaf4bdb084036d03fd0004e58e38c18837372758037f87",
+    "figures/fcc_peak_fragmentation.pdf": "646ec786d8f5a5fd0ef3a1aef5f6deb8c0c1cebe28dc04a7fbc0720f00359cd0",
+    "figures/fcc_peak_fragmentation.png": "15ad8413fcee56d556933639aecd093091770060b714c60c94a98318982f46a5",
+    "figures/halhf_pair_populations.pdf": "0ac7274687da61aa3b3489d469f5132004934f47cd35cbcc0f5c5000ddd6e66c",
+    "figures/halhf_pair_populations.png": "5b63d9f6e35ada1058e290957ec3c92a582d8b36d08c76ceb83b2b04bc4ba7cc",
+    "figures/halhf_spectra_250.pdf": "234ec9850a7e52d43b2f457cdac86d203b5ee6b35b3012579f0fb938671ac096",
+    "figures/halhf_spectra_250.png": "1b5eec5ccc1a678df65322ce8f9b71674d3af218fd769d55c3d3233fc1d7f3e1",
+    "figures/halhf_spectra_380.pdf": "36ee32cda51f9fcc2339e0ce6980e9a57dc574fe781e15d7ce2f7896d0423bae",
+    "figures/halhf_spectra_380.png": "fb41a0cd6bacfc00f5686c95b839e7a4b1737bfd711fe409f473e18fa5766057",
+    "figures/halhf_spectra_550.pdf": "e8668cbe668aed3ef7e2ff740ac9a1c23f0713fcff32bc26620093aac0128efb",
+    "figures/halhf_spectra_550.png": "b2311161a164a8b446c654cd1085469e1bc955a4ece6aa82fe38b50e39a32c81",
+    "figures/higgs_halhf_selected_vs_baseline_peak_spectrum.pdf": "4073fd49123449f1edd7ba8afd35e94a70d6042ccecd343ffbf06d5ba37de1c7",
+    "figures/higgs_halhf_selected_vs_baseline_peak_spectrum.png": "ab37a266c99ff9992ca84e50a3faff4ecaec64fa3bd36ccc7f65ae65d5334a7e",
+    "figures/higgs_ilc_selected_vs_baseline_peak_spectrum.pdf": "7f7653bec6504fb2c88b5257384a35b04c898498d5a2fbcc87efd76fa43c151a",
+    "figures/higgs_ilc_selected_vs_baseline_peak_spectrum.png": "7f0a8806f04da819f8681955b8b485bddb8970b920fb1701b16e37e4e48e44fe",
+    "figures/ilc_pair_yields.pdf": "57972f08fa3c5e71dcf9e289e1d57ff42a0e3b6d28f379c49a18b4466faaf987",
+    "figures/ilc_pair_yields.png": "571589ec340c5c941a8f767380ec0fda10ba301d4d4185cb4652c111597e5ad7",
+    "figures/ilc_spectrum.pdf": "06dd40dafb81904b38c6b297ed4df515432fc724ac01fc8d6a3f330a046f8a5f",
+    "figures/ilc_spectrum.png": "7631713bacdf59b6031f33289fe072754039a40821c26a3b87405799b10a4d53",
+    "figures/lep_focusing.pdf": "d8a722c1573c3cdb6cf0a4416721ae4216705a13933d6dcdbc1144df07216c07",
+    "figures/lep_focusing.png": "4df0b78c5c4fa21ab3a489dbbf9b8e31ccdde648c9c27f7b8412b7af55f09bd8",
+    "figures/sampler_pulls.pdf": "cdcb5b8cb62b2a2fdf105c587deb375e047298a6fbd7518d2a7236464552c21f",
+    "figures/sampler_pulls.png": "02d5db70d1643dd81d434ba4deb9a5bf5ef1c704ad111610015b5fbf9edb4ec8",
+    "figures/sampler_spin_subsets.csv": "8cb269e76b8caf833aa46d9c5546c5e024d330d0f06d1cff96e5691587462858",
+    "figures/three_collider_dispersion_summary.pdf": "8f608e803390b70be45ad8e43c460dea2ae62284f33248dfa66ed0a22018d4e3",
+    "figures/three_collider_dispersion_summary.png": "b0fcb722f4014dd56b6501d42a0881a677174c96d47c752b872a97dd944966e6",
+    "numerical_data/confirmation_metrics.csv": "49e222f833bffb196f7d14fa0a6556ffa4c11908ae92d11f3d788ff712f9b919",
+    "numerical_data/empirical_fwhm_records.json": "f0c97b5b6a93248308de7bd3cb93d8f12aa8021247e3f63a5ab60258d0e3c877",
+    "numerical_data/empirical_fwhm_summary.csv": "73e809d9a2f98fb79e6fd238a682ce15feda6a0012852141fb8e99666b057d49",
+    "numerical_data/fcc_resolution_summary.json": "d71b17be66470674223127710dac8f5ed07aafb3068a9de5373e8d2cbfac9930",
+    "numerical_data/gaussian_overlap_baselines.csv": "b0dd69a09c164782c7cebcf9fba4665ffb195f73c2d835c5f28cd9e7293d2178",
+    "numerical_data/halhf_selected_vs_baseline_peak_spectrum.csv": "56cb7a633473473dd5f90f9ef80be5cc8541ceec68999008d7a7f190739e4652",
+    "numerical_data/high_dispersion.csv": "408e3cc8042542e0e4e0cd7bc9ba5ccd6f74e9236d5467c8da34f51c9e574af2",
+    "numerical_data/ilc_selected_vs_baseline_peak_spectrum.csv": "303efb989d675b7e56894b6d7bc16692a4d080160e5b264fc20403ff05bbb263",
+    "numerical_data/peak_resolution_receipt.json": "927b8e175ae9edea9df45b909b93039da1981b31a98d5879c38b81d0aa37d38d",
+    "numerical_data/sampler_oracle.json": "0884b3b85edabad7dbb02b059908f1eb63f9aa8a79d6c3e5dda48d2ce138168b",
+    "numerical_data/spectrum_comparison_metrics/spectrum_comparison_metrics.csv": "0c04dd56de37e13c40599bfa843b53c812d1e45af59d5fd441a608101815c8e6",
+    "numerical_data/spectrum_comparison_metrics/spectrum_comparison_metrics.tex": "a9d0cb0f2b7ead2462e6c970b75f403c5f4486506f501349967e39aca083f411",
+    "numerical_data/spectrum_comparison_metrics/spectrum_comparison_metrics_provenance.json": "c657d6562908e1d843049ed05cf7a72d65ba2359be743168fafc836bd380c6cc",
+    "qed_products/figures/analysis_receipt.json": "e42d6907c82efe82c50508b0cce7616c346e7e5d26235ab222c4ecda81ce5635",
+    "qed_products/figures/figure2_lep_focusing.pdf": "d8a722c1573c3cdb6cf0a4416721ae4216705a13933d6dcdbc1144df07216c07",
+    "qed_products/figures/figure2_lep_focusing.png": "4df0b78c5c4fa21ab3a489dbbf9b8e31ccdde648c9c27f7b8412b7af55f09bd8",
+    "qed_products/figures/figure3_ilc_pair_yields.pdf": "57972f08fa3c5e71dcf9e289e1d57ff42a0e3b6d28f379c49a18b4466faaf987",
+    "qed_products/figures/figure3_ilc_pair_yields.png": "571589ec340c5c941a8f767380ec0fda10ba301d4d4185cb4652c111597e5ad7",
+    "qed_products/figures/figure6_halhf_angular_support.pdf": "0ac7274687da61aa3b3489d469f5132004934f47cd35cbcc0f5c5000ddd6e66c",
+    "qed_products/figures/figure6_halhf_angular_support.png": "5b63d9f6e35ada1058e290957ec3c92a582d8b36d08c76ceb83b2b04bc4ba7cc",
+    "qed_products/figures/rerender_receipt.json": "392fc82f97c0bccbd9d920103e2c83b5c8117e7e96a3431643e197b59bb62439",
+    "qed_products/tables/analysis_receipt.json": "e42d6907c82efe82c50508b0cce7616c346e7e5d26235ab222c4ecda81ce5635",
+    "qed_products/tables/ilc_pair_ensemble.tex": "6cc38ab1dcd05febafffddc305a2e8e91604b90383ca17ac9962795b8937ef2e",
+    "qed_products/tables/lep_focusing_ensemble.tex": "9e3a04970ab414aa4643fc4f94b2d22dae73d43d94fb8e0e49b217bcbf9c707a",
+    "qed_products/tables/table_receipt.json": "96c5ce78ac2db35dafcd16dfd0066fb9087e772ee0574226f1d0f3ad8e35d63c",
+    "qed_products/tables/table_values.json": "e0e2fc4361486b293827d9f88ae89d902cef1554751f06725e17b1cdd55ca92c",
+    "tables/collider_inputs.tex": "e9b347dd4718f46e8cb2969c82a03dccba7a0e6fe014a3ceca8f9f2e3f7fcc9f",
+    "tables/confirmation.tex": "15ba7f386088ed9546ae176c295c16c9c0788abc524b8f5f8a778434354dc300",
+    "tables/confirmation_intervals.tex": "e5b7e6b87f94bcf7ecba37d444593b62bf3f491b48849701224913973fb2e0bb",
+    "tables/confirmation_statistics.csv": "49e222f833bffb196f7d14fa0a6556ffa4c11908ae92d11f3d788ff712f9b919",
+    "tables/fcc_luminosity.tex": "1922451665c38b7a0128f93d490bc7ece1dd1dce6396fc2662cb42d683c28e9c",
+    "tables/high_dispersion.tex": "6e1e91b0d59c712a04fcabe1f84ebb9068e4480336ad50cb47e7b74485a0f24d",
+    "tables/ilc_pair_ensemble.tex": "6cc38ab1dcd05febafffddc305a2e8e91604b90383ca17ac9962795b8937ef2e",
+    "tables/input_parameters.csv": "134cba8e49739cfde2a56503e65fec3aea9fe0f63fdaaca1feadbc42ad432e74",
+    "tables/intercode_depolarization.tex": "82d85b88bc31ee74030b624bd2ca14f395144dc530a549127db17e08931b0277",
+    "tables/lep_focusing_ensemble.tex": "9e3a04970ab414aa4643fc4f94b2d22dae73d43d94fb8e0e49b217bcbf9c707a",
+    "tables/paper_traceability.json": "a9d6f3d79bfacc28cc0c5fab2ebc7f0c3fc3792e3b831de8aec9f5e1c23f94f4",
+    "tables/polarization_inputs.csv": "8676bb5e8251162268ce1f18871ef1d1de64d9ec39cf623b0ef1538c85506d88",
+    "tables/polarization_inputs.tex": "063d6c3e488c3d93ca3f8d8e32af2d6ec78effaa2bd4bd4b67607b5a458c675a",
+    "tables/polarization_inputs_provenance.json": "8170526eb6604f138b667c41243d07301a758ec302ed2cf97be0451606445893",
+    "tables/spectrum_comparison_metrics.csv": "0c04dd56de37e13c40599bfa843b53c812d1e45af59d5fd441a608101815c8e6",
+    "tables/spectrum_comparison_metrics.tex": "a9d0cb0f2b7ead2462e6c970b75f403c5f4486506f501349967e39aca083f411",
+    "tables/spectrum_comparison_metrics_provenance.json": "c657d6562908e1d843049ed05cf7a72d65ba2359be743168fafc836bd380c6cc",
+    "tables/table_receipt.json": "96c5ce78ac2db35dafcd16dfd0066fb9087e772ee0574226f1d0f3ad8e35d63c",
+    "tables/table_traceability.json": "9b928362c4633b31f61075928a9cc3a64cefd1c1169c78a266c4b1b263bf8d64",
+    "tables/table_values.json": "e0e2fc4361486b293827d9f88ae89d902cef1554751f06725e17b1cdd55ca92c"
+  },
+  "imported_spin_included": false,
+  "imported_spin_native_inputs": [],
+  "minimum_nominal_font_points": 6.5,
+  "figure_width_inches": 6.7,
+  "statistical_pull_bars": "+/-1 with endcaps; bands +/-1 and +/-2 are visual guides"
+}

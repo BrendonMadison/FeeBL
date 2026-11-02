@@ -1,0 +1,1448 @@
+{
+  "schema": "feebl.reference-numerics/1",
+  "sources": {
+    "Madison2025": {
+      "key": "Madison2025",
+      "title": "Integrated Luminosity with 100 ppm Precision...",
+      "url": "https://arxiv.org/abs/2510.18666v1",
+      "version": "v1, 21 October 2025",
+      "licence": "CC0 1.0",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_route": "Selected original figure PDFs from https://arxiv.org/src/2510.18666v1"
+    },
+    "Boscolo2025MDI": {
+      "key": "Boscolo2025MDI",
+      "title": "Status of the FCC-ee interaction region design",
+      "doi": "10.1140/epjti/s40485-025-00117-3",
+      "url": "https://link.springer.com/article/10.1140/epjti/s40485-025-00117-3",
+      "pdf_url": "https://inspirehep.net/files/5d66affccb0c83598ef0f618bb51d60d",
+      "version": "Published version, 1 August 2025",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "BoscoloCiarma2023": {
+      "key": "BoscoloCiarma2023",
+      "title": "Characterisation of the Beamstrahlung radiation at FCC-ee",
+      "url": "https://arxiv.org/abs/2307.15597v1",
+      "doi": "10.1103/PhysRevAccelBeams.26.111002",
+      "source_route": "Table I read from arXiv TeX archive, apssamp.tex; only numerical facts redistributed"
+    },
+    "LEPEnergy1999": {
+      "key": "LEPEnergy1999",
+      "title": "Calibration of centre-of-mass energies at LEP1 for precise measurements of Z properties",
+      "url": "https://cds.cern.ch/record/349385/files/CERN-SL-98-12.pdf",
+      "doi": "10.1007/s100529801030",
+      "source_route": "Primary CERN PDF indexed text, Table20 on report page47; full table returned by source-restricted web search 27 October 2026. Direct local PDF fetch blocked by repository bot challenge; no purported local paper included.",
+      "access_note": "Published article metadata and DOI independently checked at https://link.springer.com/article/10.1007/s100529801030"
+    },
+    "lepVoutsinas2020": {
+      "key": "lepVoutsinas2020",
+      "url": "https://arxiv.org/abs/1908.01704v4",
+      "source_route": "Table 2 beam parameters; see metadata/fcc_lep.json"
+    },
+    "FCCGenerationGuide": {
+      "key": "FCCGenerationGuide",
+      "url": "https://github.com/HEP-FCC/FCCeePhysicsStudies/blob/master/General/README.md",
+      "source_route": "Official project documentation, beam-energy-spread convention, accessed 27 October 2026"
+    },
+    "Beckmann2014": {
+      "title": "Spin Transport and Polarimetry in the Beam Delivery System of the International Linear Collider",
+      "version": "arXiv:1405.2156v1 (9 May 2014)",
+      "url": "https://arxiv.org/abs/1405.2156v1",
+      "doi": "10.1088/1748-0221/9/07/P07003",
+      "rights": "arXiv non-exclusive distribution licence; no general reuse licence inferred. Selected attributed figures only; third-party rights retained."
+    },
+    "Rimbault2006": {
+      "title": "Incoherent pair generation in a beam-beam interaction simulation",
+      "version": "Published PRSTAB 9,034402 (7 March 2006)",
+      "url": "https://doi.org/10.1103/PhysRevSTAB.9.034402",
+      "rights": "CC BY 3.0, as explicitly stated on the current APS article page (verified 27 October 2026). The original 2006 PDF prints copyright APS. Selected Fig. 4 is cropped and vector-digitised; retain authors, title, journal citation and DOI.",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+      "rights_evidence_url": "https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.9.034402"
+    },
+    "FCAL2014": {
+      "title": "ECFA Detector R&D Panel, Review Report",
+      "version": "arXiv:1411.4924v1 (18 November 2014)",
+      "url": "https://arxiv.org/abs/1411.4924v1",
+      "rights": "arXiv non-exclusive distribution licence; no general reuse licence inferred. Selected attributed figure assets only."
+    },
+    "MoortgatPick2006": {
+      "title": "Spin Tracking at the ILC",
+      "version": "EPAC2006 WEPLS032, Table 2",
+      "url": "https://proceedings.jacow.org/e06/PAPERS/WEPLS032.PDF",
+      "rights": "Only numerical table facts transcribed; source credited."
+    },
+    "Bailey2011": {
+      "title": "Depolarization and Beam-beam Effects at Future e+e- Colliders",
+      "version": "PAC2011 WEP134, Table 2",
+      "url": "https://proceedings.jacow.org/PAC2011/papers/wep134.pdf",
+      "rights": "CC BY 3.0 as printed in paper; only numerical table facts transcribed."
+    },
+    "Esberg2014": {
+      "title": "Strong field processes in beam-beam interactions at the Compact Linear Collider",
+      "version": "Published PRSTAB17,051003 (27 May 2014), Table I",
+      "url": "https://doi.org/10.1103/PhysRevSTAB.17.051003",
+      "rights": "CC BY 3.0, as printed in the published paper; only numerical table facts transcribed and source credited."
+    },
+    "BeckmannThesis2013": {
+      "title": "Spin Transport at the International Linear Collider and its Impact on the Measurement of Polarization",
+      "url": "https://www-library.desy.de/preparch/desy/thesis/desy-thesis-13-053.pdf",
+      "doi": "10.3204/DESY-THESIS-2013-053",
+      "use": "Verified chapter pointers: Chapter 4 pp27-37, Chapter 9 pp95-118."
+    },
+    "VormwaldThesis2014": {
+      "title": "From Neutrino Physics to Beam Polarisation - a High Precision Story at the ILC",
+      "url": "https://www-library.desy.de/preparch/desy/thesis/desy-thesis-14-006.pdf",
+      "use": "Verified chapter pointers: Chapter 8 pp131-148, Chapters 9-10 pp149-206."
+    },
+    "halhf2026preCDR": {
+      "key": "halhf2026preCDR",
+      "title": "HALHF interim progress report (Pre-CDR)",
+      "report_date": "September 2026",
+      "public_announcement": "2026-10-09",
+      "url": "https://indico.desy.de/event/55312/contributions/212416/attachments/106566/149673/PreCDR_final_LDG.pdf",
+      "sha256": "77e9656d37c4e66daf0705f86dd143f790768db5b0ad8420ebb8a2b308b724b4",
+      "pages": 77,
+      "licence": "No explicit reuse licence located in this PDF. Copyright remains with source authors. Selected figures attributed for scholarly reference; no licence to the original graphics is asserted."
+    },
+    "lcf2025": {
+      "key": "lcf2025",
+      "title": "The Linear Collider Facility (LCF) at CERN",
+      "version": "arXiv:2503.24049v2, 19 June 2025",
+      "url": "https://arxiv.org/abs/2503.24049v2",
+      "sha256": "4ee184f07f5c6237dd9f871f5c05b97656b564f2375db71d92981d7d8539cf09",
+      "licence": "arXiv nonexclusive-distrib/1.0; table facts transcribed; source graphics not redistributed."
+    }
+  },
+  "datasets": [
+    {
+      "rows": 1000,
+      "columns": [
+        "collider",
+        "sqrt_s_nominal_GeV",
+        "species",
+        "observable",
+        "angle_unit",
+        "bin_index",
+        "angle_low",
+        "angle_high",
+        "angle_centre",
+        "arbitrary_counts",
+        "data_kind",
+        "source_figure"
+      ],
+      "data_kind": "digitised_vector_histogram",
+      "source_key": "Madison2025",
+      "source_locator": "Fig4.7; printed p98; PDF p105",
+      "extraction_method": "Rotate original source PDF by its 90-degree page matrix. x frame [46.48822,250.58301] or [329.95300,534.04700] pt maps to [-1000,1000] microrad. y0=245.267105 pt; one 200-count tick interval is19.130905/18.695908 pt for e-/e+. Recover100 uniform bin-centre heights from coloured horizontal steps.",
+      "estimated_precision": "Approx0.1microrad axis calibration and1arbitrary count. Physical/model uncertainties not supplied by this digitisation.",
+      "limitations": "Native signed global theta. Do not silently convert positron sign or arbitrary counts to rates.",
+      "sha256": "b0bd7cf95b9a0df592959fa639c09bf0a83bcb4ba75e104285791b402a924f3e",
+      "file": "madison_ilc_delta_theta.csv"
+    },
+    {
+      "rows": 1000,
+      "columns": [
+        "collider",
+        "sqrt_s_nominal_GeV",
+        "species",
+        "observable",
+        "angle_unit",
+        "bin_index",
+        "angle_low",
+        "angle_high",
+        "angle_centre",
+        "arbitrary_counts",
+        "data_kind",
+        "source_figure"
+      ],
+      "data_kind": "digitised_vector_histogram",
+      "source_key": "Madison2025",
+      "source_locator": "Fig4.8; printed p99; PDF p106",
+      "extraction_method": "Same rotated x frame maps to[-pi,pi] rad. y0=245.267105 pt;500-count tick intervals33.798309/33.764908 pt. Recover100 uniform bins.",
+      "estimated_precision": "Approx1e-4rad axis calibration and1arbitrary count; source raw event definition is not recoverable.",
+      "limitations": "Native published azimuthal shape including broad tails, not independently validated as a matched-momentum kick. Right source x-axis typo says delta theta but title/caption identify phi.",
+      "sha256": "30ea9c60c57570526e32f27bccdd66dbf9ecea474e00cba160b94b9d81d82bfb",
+      "file": "madison_ilc_delta_phi.csv"
+    },
+    {
+      "rows": 9047,
+      "columns": [
+        "marker_id",
+        "log10_theta_rad",
+        "log10_pt_GeV",
+        "theta_rad",
+        "pt_GeV",
+        "pdf_x_pt",
+        "pdf_y_pt",
+        "approx_log_coordinate_halfwidth"
+      ],
+      "source_key": "Rimbault2006",
+      "source_locator": "Fig.4, p.034402-4",
+      "data_kind": "digitised_visible_scatter_markers",
+      "extraction_method": "PyMuPDF vector filled-circle path centres. Crop offset(+50,+45) restores published PDF coordinates. log10(theta/rad)=affine fit of PDF x at [121.858,201.461,281.184] to [-2,-1,0]; log10(pT/GeV)=affine fit of PDF y at [233.653,165.267,96.882] to [-3,-2,-1].",
+      "estimated_digitisation_precision": "Conservative half-width 0.005 dex for each coordinate. Extra CSV decimals are computational, not accuracy.",
+      "limitations": "Published positron markers only; USSC500GeV configuration and E>5MeV. No event identities, weights or total-normalisation inference. Original small-angle convention preserved; theta_near equals theta in visible hemisphere but folding of backward hemisphere undocumented.",
+      "file": "ilc_pairs_cain_visible_markers.csv"
+    },
+    {
+      "rows": 48,
+      "columns": [
+        "sample",
+        "quantity",
+        "stage",
+        "laser_sigma_mm",
+        "polarisation",
+        "relative_loss_from_nominal_0p8_percent",
+        "approx_P_halfwidth",
+        "pdf_x_pt",
+        "pdf_y_pt"
+      ],
+      "source_key": "Beckmann2014",
+      "source_locator": "Fig.11(a), PDF page26 (printed25)",
+      "data_kind": "digitised_markers",
+      "extraction_method": "Rotated-PDF coloured marker batches. Convert y via P=.8+(57.733-y)*.005/(120.518997-57.733); same linear axis for both panels. Separate legend markers by batch length.",
+      "estimated_digitisation_precision": "Conservative P half-width 0.0001; finite symbol shape and rendering determine this estimate.",
+      "limitations": "Electron 500GeV collision case. RDR0/TDR0/TDRstar0 have no energy spread/loss; star changes initial spin alignment. These are STALC/Bmad/Guinea-Pig++ results, not CAIN.",
+      "file": "ilc_pol_longitudinal.csv"
+    },
+    {
+      "rows": 24,
+      "columns": [
+        "sample",
+        "quantity",
+        "stage",
+        "laser_sigma_mm",
+        "polarisation",
+        "relative_loss_from_nominal_0p8_percent",
+        "approx_P_halfwidth",
+        "pdf_x_pt",
+        "pdf_y_pt"
+      ],
+      "source_key": "Beckmann2014",
+      "source_locator": "Fig.11(b), PDF page26 (printed25)",
+      "data_kind": "digitised_markers",
+      "extraction_method": "Rotated-PDF coloured marker batches. Convert y via P=.8+(57.733-y)*.005/(120.518997-57.733); same linear axis for both panels. Separate legend markers by batch length.",
+      "estimated_digitisation_precision": "Conservative P half-width 0.0001; finite symbol shape and rendering determine this estimate.",
+      "limitations": "Electron 500GeV collision case. RDR0/TDR0/TDRstar0 have no energy spread/loss; star changes initial spin alignment. These are STALC/Bmad/Guinea-Pig++ results, not CAIN.",
+      "file": "ilc_pol_magnitude.csv"
+    },
+    {
+      "rows": 6,
+      "columns": [
+        "sample",
+        "P_before",
+        "P_lumi",
+        "absolute_loss_percentage_points",
+        "relative_loss_percent",
+        "derived_from",
+        "approx_absolute_loss_halfwidth_percentage_points"
+      ],
+      "source_key": "Beckmann2014",
+      "source_locator": "Derived from Fig.11(a)",
+      "data_kind": "derived_from_digitised_markers",
+      "extraction_method": "Subtract matched incoming and luminosity-weighted Pz per scenario; store percentage points and relative percent separately.",
+      "estimated_digitisation_precision": "Conservative difference half-width0.02 percentage points from two0.0001 P uncertainties.",
+      "limitations": "Derived graphic values only, not a new simulation. Error bound excludes original Monte Carlo and physics uncertainties.",
+      "file": "ilc_pol_luminosity_weighted_loss.csv"
+    },
+    {
+      "rows": 373,
+      "columns": [
+        "energy_GeV",
+        "Pz",
+        "downstream_bunch_average_Pz",
+        "approx_energy_halfwidth_GeV",
+        "approx_P_halfwidth"
+      ],
+      "source_key": "Beckmann2014",
+      "source_locator": "Fig.9(d), PDF page24 (printed23)",
+      "data_kind": "digitised_profile_and_reference_line",
+      "extraction_method": "Red filled-circle vector centres; E=160+(x-70.03689575)*90/(550.41900635-70.03689575); P=.8+(19.196-y)*.14/(212.3991089-19.196). Blue horizontal mean independently extracted.",
+      "estimated_digitisation_precision": "Conservative energy half-width0.1GeV and P half-width0.0005.",
+      "limitations": "Mean profile; original error bars and event sample not reconstructed. Excludes legend and out-of-frame boundary markers. Spent single-electron energy, not collision energy.",
+      "file": "ilc_pol_vs_energy.csv"
+    },
+    {
+      "rows": 1241,
+      "columns": [
+        "collider",
+        "nominal_sqrt_s_GeV",
+        "x_low",
+        "x_high",
+        "sqrt_s_low_GeV",
+        "sqrt_s_high_GeV",
+        "density_dNdx_over_N",
+        "density_per_GeV",
+        "display_floor_or_baseline",
+        "approx_x_halfwidth",
+        "approx_y_halfwidth_units",
+        "approx_y_halfwidth"
+      ],
+      "source_key": "FCAL2014",
+      "source_locator": "Fig.49 right, PDF/printed page44",
+      "data_kind": "digitised_histogram_step_segments",
+      "extraction_method": "Vector horizontal step intervals, both ILC red and CLIC black. Full x=(X-96.5)/(483-96.5); log-density affine fit to y=[85,162,239,316,392.75], logf=[2,1,0,-1,-2]. Peak x=.98+(X-96.5)*.03/425; f=200+(284-Y)*400/218. Convert GeV axes using nominal energies1000/3000.",
+      "estimated_digitisation_precision": "Full: x half-width0.0007, log-density half-width0.008dex. Peak: x half-width0.00002, density half-width0.6.",
+      "limitations": "Display-floor/baseline rows explicitly flagged. Normalised density, not raw counts. Only plotted horizontal segments, not an original histogram; sparse clipped tail and coalesced equal bins possible. Peak and full plots have different binning; do not splice directly.",
+      "file": "ilc_lumi_full_steps.csv"
+    },
+    {
+      "rows": 258,
+      "columns": [
+        "collider",
+        "nominal_sqrt_s_GeV",
+        "x_low",
+        "x_high",
+        "sqrt_s_low_GeV",
+        "sqrt_s_high_GeV",
+        "density_dNdx_over_N",
+        "density_per_GeV",
+        "display_floor_or_baseline",
+        "approx_x_halfwidth",
+        "approx_y_halfwidth_units",
+        "approx_y_halfwidth"
+      ],
+      "source_key": "FCAL2014",
+      "source_locator": "Fig.49 left, PDF/printed page44",
+      "data_kind": "digitised_histogram_step_segments",
+      "extraction_method": "Vector horizontal step intervals, both ILC red and CLIC black. Full x=(X-96.5)/(483-96.5); log-density affine fit to y=[85,162,239,316,392.75], logf=[2,1,0,-1,-2]. Peak x=.98+(X-96.5)*.03/425; f=200+(284-Y)*400/218. Convert GeV axes using nominal energies1000/3000.",
+      "estimated_digitisation_precision": "Full: x half-width0.0007, log-density half-width0.008dex. Peak: x half-width0.00002, density half-width0.6.",
+      "limitations": "Display-floor/baseline rows explicitly flagged. Normalised density, not raw counts. Only plotted horizontal segments, not an original histogram; sparse clipped tail and coalesced equal bins possible. Peak and full plots have different binning; do not splice directly.",
+      "file": "ilc_lumi_peak_steps.csv"
+    },
+    {
+      "rows": 5,
+      "columns": [
+        "sample",
+        "sqrt_s_GeV",
+        "initial_polarisation",
+        "BMT_loss_percentage_points",
+        "ST_loss_percentage_points",
+        "total_loss_percentage_points",
+        "source"
+      ],
+      "source_key": "MoortgatPick2006",
+      "source_locator": "Table2, p2456",
+      "data_kind": "transcribed_table",
+      "extraction_method": "Manual exact transcription of five historical CAIN parameter sets.",
+      "estimated_digitisation_precision": "Printed rounding0.01 percentage points; no added uncertainty assigned.",
+      "limitations": "Fully polarised incident beams, head-on collisions; values are not ILC250 predictions.",
+      "file": "ilc_depol_cain_2006_table.csv"
+    },
+    {
+      "rows": 3,
+      "columns": [
+        "sample",
+        "initial_polarisation",
+        "BMT_loss_percentage_points",
+        "ST_loss_percentage_points",
+        "incoherent_percentage_points",
+        "coherent_percentage_points",
+        "total_loss_percentage_points",
+        "source_quoted_absolute_stat_uncertainty_percentage_points",
+        "source"
+      ],
+      "source_key": "Bailey2011",
+      "source_locator": "Table2, p1733",
+      "data_kind": "transcribed_table",
+      "extraction_method": "Manual exact transcription, retaining CLIC comparisons and each contribution.",
+      "estimated_digitisation_precision": "Source quotes approximately0.10 percentage-point absolute statistical uncertainty; printed rounding is finer.",
+      "limitations": "Fully polarised incident beams. Coherent and incoherent secondary-particle terms affect population definition; no apples-to-apples uncertainty claim across distinct parameter sets.",
+      "file": "ilc_depol_cain_2011_table.csv"
+    },
+    {
+      "rows": 8,
+      "columns": [
+        "code",
+        "process",
+        "effective_cross_section_mb",
+        "secondary_electrons_plus_positrons_per_BX",
+        "luminosity_per_BX_inverse_microbarn",
+        "parameter_set",
+        "source"
+      ],
+      "source_key": "Rimbault2006",
+      "source_locator": "TableII, p034402-4",
+      "data_kind": "transcribed_table",
+      "extraction_method": "Manual exact transcription.",
+      "estimated_digitisation_precision": "Printed rounding only.",
+      "limitations": "Counts are number of secondary electrons plus positrons per BX, not number of pairs; effective cross sections include finite beam-size suppression.",
+      "file": "ilc_pair_yields_table.csv"
+    },
+    {
+      "rows": 4,
+      "columns": [
+        "parameter_set",
+        "sqrt_s_GeV",
+        "particles_per_bunch",
+        "sigma_x_nm",
+        "sigma_y_nm",
+        "sigma_z_um",
+        "mean_Upsilon",
+        "source",
+        "value_type"
+      ],
+      "source_key": "Esberg2014",
+      "source_locator": "TableI, p051003-2",
+      "data_kind": "transcribed_table",
+      "extraction_method": "Manual exact transcription of N, sigma_x/y/z and mean Upsilon for four historical ILC/CLIC cases.",
+      "estimated_digitisation_precision": "Printed rounding only.",
+      "limitations": "Characteristic average Upsilon; not chi_max or a photon chi mean. No chi_gamma distribution inferred; no extrapolation to ILC250/LCF.",
+      "file": "ilc_strongfield_parameters_table.csv"
+    },
+    {
+      "source": "https://arxiv.org/abs/1908.01704v4",
+      "source_figure": "Fig. 3 left",
+      "source_pdf_pages_1based": [
+        8
+      ],
+      "method": "vector_marker_centres",
+      "calibration": "Rotated PDF x: phi=(x-240.236)/52.1075 rad; ticks -2,0,+2. y: frame bottom/top 351.762/20.599 pt = 4/18 microrad.",
+      "digitisation_uncertainty": "Conservative graphical reading scale: 0.02 rad and 0.3 microrad (FCC) or 0.1 microrad (LEP).",
+      "notes": "Only Guinea-Pig marker centres; independent black numerical-integration curve is retained in source asset, not treated as a second dataset. Legend marker excluded by y range.",
+      "rows": 48,
+      "file": "lep_final_focusing_vs_phi.csv"
+    },
+    {
+      "source": "https://arxiv.org/abs/1908.01704v4",
+      "source_figure": "Fig. 3 left",
+      "source_pdf_pages_1based": [
+        8
+      ],
+      "method": "vector_histogram_segments",
+      "calibration": "Rotated PDF x: phi=(x-240.236)/52.1075 rad; ticks -2,0,+2. y frame 4..18 microrad.",
+      "digitisation_uncertainty": "Conservative graphical reading 0.02 rad and 0.3 microrad (FCC) or 0.1 microrad (LEP).",
+      "notes": "Independent numerical-integration black stepped curve in original figure; these are binwise means, not particle events.",
+      "rows": 48,
+      "file": "lep_final_focusing_numerical_vs_phi.csv"
+    },
+    {
+      "source": "https://arxiv.org/abs/1908.01704v4",
+      "source_figure": "Fig. 2 left",
+      "source_pdf_pages_1based": [
+        7
+      ],
+      "method": "vector_histogram_segments",
+      "calibration": "Rotated frame x=76.5354..403.937 pt maps to -20..30 microrad; y=351.762..20.599 maps to 0..100000 a.u.",
+      "digitisation_uncertainty": "Conservative ordinate precision about 1% of peak; horizontal bin edges within 0.1 microrad.",
+      "notes": "Bin segments retain source arbitrary ordinate units; no event count or luminosity normalisation is inferred. Negative/zero bins are retained; unequal merged zero segments may occur.",
+      "rows": 300,
+      "file": "lep_final_focusing_distribution.csv"
+    },
+    {
+      "source": "https://arxiv.org/abs/2411.04210v3",
+      "source_figure": "Fig. 11 top",
+      "source_pdf_pages_1based": [
+        15
+      ],
+      "method": "vector_histogram_top_edges",
+      "calibration": "x: 60.1875..543.1875 pt -> 124.7..125.3 GeV. log10(ordinate)=(178.5625-y)/46.59027. Source bins about 0.005 GeV.",
+      "digitisation_uncertainty": "Conservative 0.5 MeV bin-edge precision and 2% ordinate digitisation; Monte Carlo fluctuations remain and are not digitisation uncertainty.",
+      "notes": "Source calls ordinate Distribution. Values are plotted histogram heights, not absolute luminosity. Log floor is 1; missing subthreshold/empty bins not invented. Source describes CM energy using Eplus+Eminus, so crossing-angle invariant-mass corrections are not recoverable from this figure alone. Recovered ZHV RMS=24.77 MeV differs from Table 3 value21.52 MeV; preserved unaltered and independently checked with lower-panel markers (24.74 MeV).",
+      "rows": 136,
+      "file": "fcc_monochrom_luminosity_spectrum.csv"
+    },
+    {
+      "source": "https://arxiv.org/abs/2411.04210v3",
+      "source_figure": "Fig. 11 bottom",
+      "source_pdf_pages_1based": [
+        15
+      ],
+      "method": "vector_marker_centres",
+      "calibration": "x=60.1875..543.1875 pt -> z=-10000..10000 micrometres; y=406.5625..244.5625 -> 124.7..125.3 GeV.",
+      "digitisation_uncertainty": "Conservative 40 micrometres and 2 MeV graphical precision.",
+      "notes": "Each row is a plotted vector marker, not a recovered complete collision event. Hidden/overplotted markers can be present in vector PDF; no event identity, weights, momenta or ISR information exists. Legend markers excluded.",
+      "rows": 14160,
+      "file": "fcc_monochrom_energy_z_scatter.csv"
+    },
+    {
+      "source": "https://arxiv.org/abs/1908.01704v4",
+      "source_figure": "Table 2 and Section 3",
+      "source_pdf_pages_1based": [
+        4,
+        6
+      ],
+      "method": "table_transcription",
+      "calibration": "Published units retained.",
+      "digitisation_uncertainty": "Vertical size is explicitly approximate (~4 micrometres); other entries retain source rounding.",
+      "notes": "Instantaneous-luminosity-weighted annual averages at the Z pole; not a time-resolved machine record.",
+      "rows": 3,
+      "file": "lep_beam_parameters.csv"
+    },
+    {
+      "source": "https://arxiv.org/abs/2411.04210v3",
+      "source_figure": "Tables 3 and 4",
+      "source_pdf_pages_1based": [
+        16
+      ],
+      "method": "table_transcription",
+      "calibration": "Published decimal values copied; ratio computed from corresponding zero-dispersion baseline.",
+      "digitisation_uncertainty": "Published rounding, not digitisation error. No statistical uncertainties supplied.",
+      "notes": "NIMA 2025 / arXiv v3 results; distinct from later IPAC2025 re-optimization. 2IP labels describe two monochromatised IPs in a four-IP machine.",
+      "rows": 10,
+      "file": "fcc_monochrom_2025_nima_simulated.csv"
+    },
+    {
+      "source": "https://arxiv.org/abs/2411.04210v3",
+      "source_figure": "Tables 1 and 2; Eq. (3)",
+      "source_pdf_pages_1based": [
+        13,
+        14
+      ],
+      "method": "table_transcription_and_derived_formula",
+      "calibration": "lambda uses source Eq.(3) with BS equilibrium emittances, energy spread, beta, dispersion and tabulated Piwinski angle.",
+      "digitisation_uncertainty": "Rounded source values; derived lambda should be used only to about 2 significant figures.",
+      "notes": "lambda is not identical to ratio of complete source baseline and monochromatised RMS spreads, because equilibrium emittances and energy spreads change.",
+      "rows": 10,
+      "file": "fcc_monochrom_optical_factors.csv"
+    },
+    {
+      "source": "https://doi.org/10.18429/JACoW-IPAC2025-MOPM040",
+      "source_figure": "Tables 1 and 2",
+      "source_pdf_pages_1based": [
+        3
+      ],
+      "method": "table_transcription",
+      "calibration": "Published decimal entries.",
+      "digitisation_uncertainty": "Published rounding only; no uncertainties supplied.",
+      "notes": "Re-optimised beta_y with hourglass effects; single-pass Gaussian-input approximation, not multi-turn validation. Four monochromatised IPs.",
+      "rows": 8,
+      "file": "fcc_monochrom_ipac2025.csv"
+    },
+    {
+      "source": "https://indico.jacow.org/event/95/contributions/12724/attachments/1845/7219/MOP1074_edited_version.pdf",
+      "source_figure": "Table 1",
+      "source_pdf_pages_1based": [
+        3
+      ],
+      "method": "table_transcription_and_derived_ratios",
+      "calibration": "Published decimal entries; ratios use baseline 63.03 MeV and 25.28e34 cm^-2s^-1.",
+      "digitisation_uncertainty": "Published rounding only; no error bars. Preliminary analytical optimization, not measured performance.",
+      "notes": "Edited IPAC26 preprint; four-IP LCC v105 study. Beta_x entries in mm. Dedicated beam-beam simulation and coherent instability studies identified as future work.",
+      "rows": 8,
+      "file": "fcc_monochrom_ipac2026_lcc.csv"
+    },
+    {
+      "data_kind": "transcribed_table",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "Table 2 (PDF page 4)",
+      "method": "Manual transcription of explicitly tabulated design parameters.",
+      "rows": 3,
+      "columns": [
+        "nominal_sqrts_GeV",
+        "electron_energy_GeV",
+        "positron_energy_GeV",
+        "electron_bunch_population",
+        "positron_bunch_population",
+        "sigma_z_IP_um",
+        "relative_energy_spread_rms",
+        "sigma_x_IP_nm",
+        "sigma_y_IP_nm",
+        "beta_x_IP_mm",
+        "beta_y_IP_mm",
+        "luminosity_cm_minus2_s_minus1",
+        "luminosity_fraction_top1percent",
+        "source"
+      ],
+      "column_units": {
+        "nominal_sqrts_GeV": "GeV",
+        "electron_energy_GeV": "GeV",
+        "positron_energy_GeV": "GeV",
+        "electron_bunch_population": "dimensionless",
+        "positron_bunch_population": "dimensionless",
+        "sigma_z_IP_um": "um",
+        "relative_energy_spread_rms": "dimensionless",
+        "sigma_x_IP_nm": "nm",
+        "sigma_y_IP_nm": "nm",
+        "beta_x_IP_mm": "mm",
+        "beta_y_IP_mm": "mm",
+        "luminosity_cm_minus2_s_minus1": "cm^-2 s^-1",
+        "luminosity_fraction_top1percent": "dimensionless"
+      },
+      "limitations": [
+        "Design projection, not an operating collider measurement.",
+        "Rounding retained; nominal energies need not exactly equal 2 sqrt(E- E+) after rounding."
+      ],
+      "sha256": "86e8af73a8cbbb4d032ea5a5665684908b69cc5b1527746e0188d10cb7aab15c",
+      "file": "halhf_baseline_parameters.csv"
+    },
+    {
+      "data_kind": "digitised_vector_curve",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "7b",
+      "method": "Decode exact PDF line vertices; transform calibrated PDF coordinates.",
+      "rows": 338,
+      "columns": [
+        "nominal_sqrts_GeV",
+        "vertex_index",
+        "time_ps",
+        "chi",
+        "pdf_x_pt",
+        "pdf_y_pt"
+      ],
+      "column_units": {
+        "time_ps": "ps",
+        "chi": "dimensionless",
+        "pdf_x_pt": "PDF points",
+        "pdf_y_pt": "PDF points"
+      },
+      "limitations": [
+        "PDF polyline vertices; source simulation statistical errors and covariance unavailable.",
+        "Graphical read-off uncertainty conservatively about 1% of the panel full-scale, time about 0.01 ps; numerical coordinate recovery is finer."
+      ],
+      "sha256": "b98f04a36bce1c10d6d6cd93cb5ee491572e8d3fd494099b41ccdb3b1acc074d",
+      "file": "halhf_chi_electron_max.csv"
+    },
+    {
+      "data_kind": "digitised_vector_curve",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "7a",
+      "method": "Decode exact PDF line vertices; transform calibrated PDF coordinates.",
+      "rows": 154,
+      "columns": [
+        "nominal_sqrts_GeV",
+        "vertex_index",
+        "time_ps",
+        "chi",
+        "pdf_x_pt",
+        "pdf_y_pt"
+      ],
+      "column_units": {
+        "time_ps": "ps",
+        "chi": "dimensionless",
+        "pdf_x_pt": "PDF points",
+        "pdf_y_pt": "PDF points"
+      },
+      "limitations": [
+        "PDF polyline vertices; source simulation statistical errors and covariance unavailable.",
+        "Graphical read-off uncertainty conservatively about 1% of the panel full-scale, time about 0.01 ps; numerical coordinate recovery is finer."
+      ],
+      "sha256": "dffda39e23e79a3e1fe95a6c353741f1693c4f6050d3c02ac1711ded03c60607",
+      "file": "halhf_chi_electron_mean.csv"
+    },
+    {
+      "data_kind": "derived_summary",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "7a-d",
+      "method": "Maximise each digitised chi(t) polyline; calculate alpha*chi^(2/3) using alpha=1/137.035999084.",
+      "rows": 12,
+      "columns": [
+        "nominal_sqrts_GeV",
+        "statistic",
+        "peak_over_time_chi",
+        "time_of_peak_ps",
+        "alpha_chi_two_thirds",
+        "method"
+      ],
+      "column_units": {
+        "peak_over_time_chi": "dimensionless",
+        "time_of_peak_ps": "ps",
+        "alpha_chi_two_thirds": "dimensionless"
+      },
+      "limitations": [
+        "Not a time-averaged or luminosity-weighted chi."
+      ],
+      "sha256": "3afb8b414eb98f3bcff389904239088960004444f56295e7013e5a3d397dca89",
+      "file": "halhf_chi_peak_summary.csv"
+    },
+    {
+      "data_kind": "digitised_vector_curve",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "7d",
+      "method": "Decode exact PDF line vertices; transform calibrated PDF coordinates.",
+      "rows": 464,
+      "columns": [
+        "nominal_sqrts_GeV",
+        "vertex_index",
+        "time_ps",
+        "chi",
+        "pdf_x_pt",
+        "pdf_y_pt"
+      ],
+      "column_units": {
+        "time_ps": "ps",
+        "chi": "dimensionless",
+        "pdf_x_pt": "PDF points",
+        "pdf_y_pt": "PDF points"
+      },
+      "limitations": [
+        "PDF polyline vertices; source simulation statistical errors and covariance unavailable.",
+        "Graphical read-off uncertainty conservatively about 1% of the panel full-scale, time about 0.01 ps; numerical coordinate recovery is finer."
+      ],
+      "sha256": "1e373f655401c61a34e3059a78b65a4a60fcf2df43d2887302cd7057fec1fdd2",
+      "file": "halhf_chi_positron_max.csv"
+    },
+    {
+      "data_kind": "digitised_vector_curve",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "7c",
+      "method": "Decode exact PDF line vertices; transform calibrated PDF coordinates.",
+      "rows": 164,
+      "columns": [
+        "nominal_sqrts_GeV",
+        "vertex_index",
+        "time_ps",
+        "chi",
+        "pdf_x_pt",
+        "pdf_y_pt"
+      ],
+      "column_units": {
+        "time_ps": "ps",
+        "chi": "dimensionless",
+        "pdf_x_pt": "PDF points",
+        "pdf_y_pt": "PDF points"
+      },
+      "limitations": [
+        "PDF polyline vertices; source simulation statistical errors and covariance unavailable.",
+        "Graphical read-off uncertainty conservatively about 1% of the panel full-scale, time about 0.01 ps; numerical coordinate recovery is finer."
+      ],
+      "sha256": "6aea60986b93b38060b43ec4fc76a5e843ceb32344e39855475184041752e0fd",
+      "file": "halhf_chi_positron_mean.csv"
+    },
+    {
+      "data_kind": "rescaled_digitised_histogram",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "8a,b",
+      "method": "Normalise each source histogram over its non-censored extracted bins and multiply by Nref=1000000.",
+      "rows": 336,
+      "columns": [
+        "source_csv",
+        "machine",
+        "range",
+        "reference_sample_size",
+        "energy_low_GeV",
+        "energy_high_GeV",
+        "reference_count",
+        "normalisation"
+      ],
+      "column_units": {
+        "reference_count": "reference entries per source bin",
+        "reference_sample_size": "reference entries",
+        "energy_low_GeV": "GeV",
+        "energy_high_GeV": "GeV"
+      },
+      "limitations": [
+        "Reference count is NOT original simulation count.",
+        "No Poisson uncertainty should be assigned to these deterministic rescaled values.",
+        "This numerical reconstruction independently rescales each extracted peak and broad histogram to the declared reference sample size."
+      ],
+      "sha256": "4389d625a0713dec2a3a58f8573d8abd3de10f2a807e0182b8acf9243f1702b0",
+      "file": "halhf_ilc250_reference_counts.csv"
+    },
+    {
+      "data_kind": "digitised_vector_curve",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "8a,b",
+      "method": "Decode exact PDF line vertices; transform calibrated PDF coordinates.",
+      "rows": 68,
+      "columns": [
+        "machine",
+        "nominal_sqrts_GeV",
+        "energy_low_GeV",
+        "energy_high_GeV",
+        "energy_centre_GeV",
+        "source_ordinate",
+        "log10_source_ordinate",
+        "lower_boundary_censored",
+        "pdf_y_pt",
+        "source_y_label",
+        "source_figure"
+      ],
+      "column_units": {
+        "energy_low_GeV": "GeV",
+        "energy_high_GeV": "GeV",
+        "energy_centre_GeV": "GeV",
+        "source_ordinate": "dimensionless source ordinate; fractional-bin interpretation inferred from recovered sums despite the source percent label"
+      },
+      "limitations": [
+        "Source y label is % collisions but recovered bins sum to unity; numerical scale preserved as source_ordinate.",
+        "Recovered bin sums are numerically consistent with separately unit-normalised displayed histograms; this is an inference, not verified from the original histogramming code. No global spectral fraction is inferred from the zoom.",
+        "Error bars are not digitised. Axis-floor segments are censored, not zero.",
+        "Approximate graphical uncertainty: ordinate 3%, energy 0.1 GeV for zoom and up to 0.5 GeV for broad 550 GeV histogram."
+      ],
+      "sha256": "12608c81cd1f66fbefe135662fa74b4818b8b7902c55b38b31900bc3ae092168",
+      "file": "halhf_lumi_full_halhf250.csv"
+    },
+    {
+      "data_kind": "digitised_vector_curve",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "9a",
+      "method": "Decode exact PDF line vertices; transform calibrated PDF coordinates.",
+      "rows": 50,
+      "columns": [
+        "machine",
+        "nominal_sqrts_GeV",
+        "energy_low_GeV",
+        "energy_high_GeV",
+        "energy_centre_GeV",
+        "source_ordinate",
+        "log10_source_ordinate",
+        "lower_boundary_censored",
+        "pdf_y_pt",
+        "source_y_label",
+        "source_figure"
+      ],
+      "column_units": {
+        "energy_low_GeV": "GeV",
+        "energy_high_GeV": "GeV",
+        "energy_centre_GeV": "GeV",
+        "source_ordinate": "dimensionless source ordinate; fractional-bin interpretation inferred from recovered sums despite the source percent label"
+      },
+      "limitations": [
+        "Source y label is % collisions but recovered bins sum to unity; numerical scale preserved as source_ordinate.",
+        "Recovered bin sums are numerically consistent with separately unit-normalised displayed histograms; this is an inference, not verified from the original histogramming code. No global spectral fraction is inferred from the zoom.",
+        "Error bars are not digitised. Axis-floor segments are censored, not zero.",
+        "Approximate graphical uncertainty: ordinate 3%, energy 0.1 GeV for zoom and up to 0.5 GeV for broad 550 GeV histogram."
+      ],
+      "sha256": "e4f5cd46c544e6bae92033d64bcc01a8ce01ff961dc0452291101e9efa6acb87",
+      "file": "halhf_lumi_full_halhf380.csv"
+    },
+    {
+      "data_kind": "digitised_vector_curve",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "10a",
+      "method": "Decode exact PDF line vertices; transform calibrated PDF coordinates.",
+      "rows": 68,
+      "columns": [
+        "machine",
+        "nominal_sqrts_GeV",
+        "energy_low_GeV",
+        "energy_high_GeV",
+        "energy_centre_GeV",
+        "source_ordinate",
+        "log10_source_ordinate",
+        "lower_boundary_censored",
+        "pdf_y_pt",
+        "source_y_label",
+        "source_figure"
+      ],
+      "column_units": {
+        "energy_low_GeV": "GeV",
+        "energy_high_GeV": "GeV",
+        "energy_centre_GeV": "GeV",
+        "source_ordinate": "dimensionless source ordinate; fractional-bin interpretation inferred from recovered sums despite the source percent label"
+      },
+      "limitations": [
+        "Source y label is % collisions but recovered bins sum to unity; numerical scale preserved as source_ordinate.",
+        "Recovered bin sums are numerically consistent with separately unit-normalised displayed histograms; this is an inference, not verified from the original histogramming code. No global spectral fraction is inferred from the zoom.",
+        "Error bars are not digitised. Axis-floor segments are censored, not zero.",
+        "Approximate graphical uncertainty: ordinate 3%, energy 0.1 GeV for zoom and up to 0.5 GeV for broad 550 GeV histogram."
+      ],
+      "sha256": "6e25ba610bcf69185686eb30838c3f1df153ad71940eacfe98b9417f4866639f",
+      "file": "halhf_lumi_full_halhf550.csv"
+    },
+    {
+      "data_kind": "digitised_vector_curve",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "8a,b",
+      "method": "Decode exact PDF line vertices; transform calibrated PDF coordinates.",
+      "rows": 68,
+      "columns": [
+        "machine",
+        "nominal_sqrts_GeV",
+        "energy_low_GeV",
+        "energy_high_GeV",
+        "energy_centre_GeV",
+        "source_ordinate",
+        "log10_source_ordinate",
+        "lower_boundary_censored",
+        "pdf_y_pt",
+        "source_y_label",
+        "source_figure"
+      ],
+      "column_units": {
+        "energy_low_GeV": "GeV",
+        "energy_high_GeV": "GeV",
+        "energy_centre_GeV": "GeV",
+        "source_ordinate": "dimensionless source ordinate; fractional-bin interpretation inferred from recovered sums despite the source percent label"
+      },
+      "limitations": [
+        "Source y label is % collisions but recovered bins sum to unity; numerical scale preserved as source_ordinate.",
+        "Recovered bin sums are numerically consistent with separately unit-normalised displayed histograms; this is an inference, not verified from the original histogramming code. No global spectral fraction is inferred from the zoom.",
+        "Error bars are not digitised. Axis-floor segments are censored, not zero.",
+        "Approximate graphical uncertainty: ordinate 3%, energy 0.1 GeV for zoom and up to 0.5 GeV for broad 550 GeV histogram."
+      ],
+      "sha256": "e4a07befe3244d8be62bb06fc6a56b7285d7e1bd8f3c0d9017d9becfa803f004",
+      "file": "halhf_lumi_full_ilc250.csv"
+    },
+    {
+      "data_kind": "digitised_vector_curve",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "11a,c,e",
+      "method": "Decode exact PDF line vertices; transform calibrated PDF coordinates.",
+      "rows": 100,
+      "columns": [
+        "machine",
+        "nominal_sqrts_GeV",
+        "energy_low_GeV",
+        "energy_high_GeV",
+        "energy_centre_GeV",
+        "source_ordinate",
+        "log10_source_ordinate",
+        "lower_boundary_censored",
+        "pdf_y_pt",
+        "source_y_label",
+        "source_figure"
+      ],
+      "column_units": {
+        "energy_low_GeV": "GeV",
+        "energy_high_GeV": "GeV",
+        "energy_centre_GeV": "GeV",
+        "source_ordinate": "dimensionless source ordinate; fractional-bin interpretation inferred from recovered sums despite the source percent label"
+      },
+      "limitations": [
+        "Source y label is % collisions but recovered bins sum to unity; numerical scale preserved as source_ordinate.",
+        "Recovered bin sums are numerically consistent with separately unit-normalised displayed histograms; this is an inference, not verified from the original histogramming code. No global spectral fraction is inferred from the zoom.",
+        "Error bars are not digitised. Axis-floor segments are censored, not zero.",
+        "Approximate graphical uncertainty: ordinate 3%, energy 0.1 GeV for zoom and up to 0.5 GeV for broad 550 GeV histogram."
+      ],
+      "sha256": "67d54bf612754537ac725f9c2024d5e6e19194b1b6dc2ed0fd956230badfda01",
+      "file": "halhf_lumi_peak_halhf250.csv"
+    },
+    {
+      "data_kind": "digitised_vector_curve",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "8a,b",
+      "method": "Decode exact PDF line vertices; transform calibrated PDF coordinates.",
+      "rows": 100,
+      "columns": [
+        "machine",
+        "nominal_sqrts_GeV",
+        "energy_low_GeV",
+        "energy_high_GeV",
+        "energy_centre_GeV",
+        "source_ordinate",
+        "log10_source_ordinate",
+        "lower_boundary_censored",
+        "pdf_y_pt",
+        "source_y_label",
+        "source_figure"
+      ],
+      "column_units": {
+        "energy_low_GeV": "GeV",
+        "energy_high_GeV": "GeV",
+        "energy_centre_GeV": "GeV",
+        "source_ordinate": "dimensionless source ordinate; fractional-bin interpretation inferred from recovered sums despite the source percent label"
+      },
+      "limitations": [
+        "Source y label is % collisions but recovered bins sum to unity; numerical scale preserved as source_ordinate.",
+        "Recovered bin sums are numerically consistent with separately unit-normalised displayed histograms; this is an inference, not verified from the original histogramming code. No global spectral fraction is inferred from the zoom.",
+        "Error bars are not digitised. Axis-floor segments are censored, not zero.",
+        "Approximate graphical uncertainty: ordinate 3%, energy 0.1 GeV for zoom and up to 0.5 GeV for broad 550 GeV histogram."
+      ],
+      "sha256": "7b74752e4f1ab6f826f93ab45dc299a50ce71ca04d425a1c87adc2583d10bd23",
+      "file": "halhf_lumi_peak_halhf250_comparison.csv"
+    },
+    {
+      "data_kind": "digitised_vector_curve",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "11a,c,e",
+      "method": "Decode exact PDF line vertices; transform calibrated PDF coordinates.",
+      "rows": 100,
+      "columns": [
+        "machine",
+        "nominal_sqrts_GeV",
+        "energy_low_GeV",
+        "energy_high_GeV",
+        "energy_centre_GeV",
+        "source_ordinate",
+        "log10_source_ordinate",
+        "lower_boundary_censored",
+        "pdf_y_pt",
+        "source_y_label",
+        "source_figure"
+      ],
+      "column_units": {
+        "energy_low_GeV": "GeV",
+        "energy_high_GeV": "GeV",
+        "energy_centre_GeV": "GeV",
+        "source_ordinate": "dimensionless source ordinate; fractional-bin interpretation inferred from recovered sums despite the source percent label"
+      },
+      "limitations": [
+        "Source y label is % collisions but recovered bins sum to unity; numerical scale preserved as source_ordinate.",
+        "Recovered bin sums are numerically consistent with separately unit-normalised displayed histograms; this is an inference, not verified from the original histogramming code. No global spectral fraction is inferred from the zoom.",
+        "Error bars are not digitised. Axis-floor segments are censored, not zero.",
+        "Approximate graphical uncertainty: ordinate 3%, energy 0.1 GeV for zoom and up to 0.5 GeV for broad 550 GeV histogram."
+      ],
+      "sha256": "6dc7afa5da322153bbd11e48a7497043fff97c274c53ca9c51dc69548505eab8",
+      "file": "halhf_lumi_peak_halhf380.csv"
+    },
+    {
+      "data_kind": "digitised_vector_curve",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "11a,c,e",
+      "method": "Decode exact PDF line vertices; transform calibrated PDF coordinates.",
+      "rows": 100,
+      "columns": [
+        "machine",
+        "nominal_sqrts_GeV",
+        "energy_low_GeV",
+        "energy_high_GeV",
+        "energy_centre_GeV",
+        "source_ordinate",
+        "log10_source_ordinate",
+        "lower_boundary_censored",
+        "pdf_y_pt",
+        "source_y_label",
+        "source_figure"
+      ],
+      "column_units": {
+        "energy_low_GeV": "GeV",
+        "energy_high_GeV": "GeV",
+        "energy_centre_GeV": "GeV",
+        "source_ordinate": "dimensionless source ordinate; fractional-bin interpretation inferred from recovered sums despite the source percent label"
+      },
+      "limitations": [
+        "Source y label is % collisions but recovered bins sum to unity; numerical scale preserved as source_ordinate.",
+        "Recovered bin sums are numerically consistent with separately unit-normalised displayed histograms; this is an inference, not verified from the original histogramming code. No global spectral fraction is inferred from the zoom.",
+        "Error bars are not digitised. Axis-floor segments are censored, not zero.",
+        "Approximate graphical uncertainty: ordinate 3%, energy 0.1 GeV for zoom and up to 0.5 GeV for broad 550 GeV histogram."
+      ],
+      "sha256": "62797fb53eaa6cd7795d815a2b03bc80e0799d40f36d43d24f2c74b612840107",
+      "file": "halhf_lumi_peak_halhf550.csv"
+    },
+    {
+      "data_kind": "digitised_vector_curve",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "8a,b",
+      "method": "Decode exact PDF line vertices; transform calibrated PDF coordinates.",
+      "rows": 100,
+      "columns": [
+        "machine",
+        "nominal_sqrts_GeV",
+        "energy_low_GeV",
+        "energy_high_GeV",
+        "energy_centre_GeV",
+        "source_ordinate",
+        "log10_source_ordinate",
+        "lower_boundary_censored",
+        "pdf_y_pt",
+        "source_y_label",
+        "source_figure"
+      ],
+      "column_units": {
+        "energy_low_GeV": "GeV",
+        "energy_high_GeV": "GeV",
+        "energy_centre_GeV": "GeV",
+        "source_ordinate": "dimensionless source ordinate; fractional-bin interpretation inferred from recovered sums despite the source percent label"
+      },
+      "limitations": [
+        "Source y label is % collisions but recovered bins sum to unity; numerical scale preserved as source_ordinate.",
+        "Recovered bin sums are numerically consistent with separately unit-normalised displayed histograms; this is an inference, not verified from the original histogramming code. No global spectral fraction is inferred from the zoom.",
+        "Error bars are not digitised. Axis-floor segments are censored, not zero.",
+        "Approximate graphical uncertainty: ordinate 3%, energy 0.1 GeV for zoom and up to 0.5 GeV for broad 550 GeV histogram."
+      ],
+      "sha256": "d753a95d6ca651373c68a3bd42b9ff06cf87e14e20a4020c891422ed1c409fab",
+      "file": "halhf_lumi_peak_ilc250.csv"
+    },
+    {
+      "data_kind": "digitised_vector_curve",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "4 top-left",
+      "method": "Decode exact PDF line vertices; transform calibrated PDF coordinates.",
+      "rows": 917,
+      "columns": [
+        "code",
+        "nominal_sqrts_GeV",
+        "vertex_index",
+        "energy_GeV",
+        "dL_dE_m_minus2_GeV_minus1",
+        "log10_dL_dE",
+        "lower_boundary_censored",
+        "pdf_x_pt",
+        "pdf_y_pt"
+      ],
+      "column_units": {
+        "energy_GeV": "GeV",
+        "dL_dE_m_minus2_GeV_minus1": "m^-2 GeV^-1",
+        "log10_dL_dE": "log10 of source ordinate in stated units"
+      },
+      "limitations": [
+        "Ordinate is the original absolute simulation spectrum, not a luminosity rate in seconds.",
+        "Lower-axis clipping is flagged; blank ordinate is missing/censored, not zero.",
+        "Polyline vertices are not independent events.",
+        "Conservative graphical uncertainty approximately 0.05 decades in ordinate and 0.5 GeV in energy; underlying Monte Carlo uncertainty is separate."
+      ],
+      "sha256": "0b014776d15c1e50ea219b6bca46940cf5b2426516d0fd35037fecb883303f07",
+      "file": "halhf_luminosity_absolute_250.csv"
+    },
+    {
+      "data_kind": "digitised_vector_curve",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "5 top-left",
+      "method": "Decode exact PDF line vertices; transform calibrated PDF coordinates.",
+      "rows": 1187,
+      "columns": [
+        "code",
+        "nominal_sqrts_GeV",
+        "vertex_index",
+        "energy_GeV",
+        "dL_dE_m_minus2_GeV_minus1",
+        "log10_dL_dE",
+        "lower_boundary_censored",
+        "pdf_x_pt",
+        "pdf_y_pt"
+      ],
+      "column_units": {
+        "energy_GeV": "GeV",
+        "dL_dE_m_minus2_GeV_minus1": "m^-2 GeV^-1",
+        "log10_dL_dE": "log10 of source ordinate in stated units"
+      },
+      "limitations": [
+        "Ordinate is the original absolute simulation spectrum, not a luminosity rate in seconds.",
+        "Lower-axis clipping is flagged; blank ordinate is missing/censored, not zero.",
+        "Polyline vertices are not independent events.",
+        "Conservative graphical uncertainty approximately 0.05 decades in ordinate and 0.5 GeV in energy; underlying Monte Carlo uncertainty is separate."
+      ],
+      "sha256": "7ddb2a7940c1da7cfc9827d8283fd482e887d4976db1113f7d4964eccc4feb19",
+      "file": "halhf_luminosity_absolute_380.csv"
+    },
+    {
+      "data_kind": "digitised_vector_curve",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "6 top-left",
+      "method": "Decode exact PDF line vertices; transform calibrated PDF coordinates.",
+      "rows": 1470,
+      "columns": [
+        "code",
+        "nominal_sqrts_GeV",
+        "vertex_index",
+        "energy_GeV",
+        "dL_dE_m_minus2_GeV_minus1",
+        "log10_dL_dE",
+        "lower_boundary_censored",
+        "pdf_x_pt",
+        "pdf_y_pt"
+      ],
+      "column_units": {
+        "energy_GeV": "GeV",
+        "dL_dE_m_minus2_GeV_minus1": "m^-2 GeV^-1",
+        "log10_dL_dE": "log10 of source ordinate in stated units"
+      },
+      "limitations": [
+        "Ordinate is the original absolute simulation spectrum, not a luminosity rate in seconds.",
+        "Lower-axis clipping is flagged; blank ordinate is missing/censored, not zero.",
+        "Polyline vertices are not independent events.",
+        "Conservative graphical uncertainty approximately 0.05 decades in ordinate and 0.5 GeV in energy; underlying Monte Carlo uncertainty is separate."
+      ],
+      "sha256": "636fa807b37410bed69f0b27e63f7a4cdf4f1f58b29b9bdcbe33ffdcb823522c",
+      "file": "halhf_luminosity_absolute_550.csv"
+    },
+    {
+      "data_kind": "digitised_raster_ink_grid",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "13b",
+      "method": "Calibrated 0.1-dex cells; mean positive R-B and B-R channel excess; neutral pixels and legend masked.",
+      "rows": 2561,
+      "columns": [
+        "nominal_sqrts_GeV",
+        "direction",
+        "log10_theta_low",
+        "log10_theta_high",
+        "log10_pT_low",
+        "log10_pT_high",
+        "theta_centre_rad",
+        "pT_centre_GeV",
+        "electron_red_ink_fraction",
+        "positron_blue_ink_fraction",
+        "electron_coloured_pixels",
+        "positron_coloured_pixels",
+        "valid_image_pixels",
+        "masked_fraction"
+      ],
+      "column_units": {
+        "log10_theta_low": "log10(source small polar angle/radian); nearest-z interpretation inferred",
+        "log10_theta_high": "log10(source small polar angle/radian); nearest-z interpretation inferred",
+        "log10_pT_low": "log10(pT/(GeV/c))",
+        "log10_pT_high": "log10(pT/(GeV/c))",
+        "theta_centre_rad": "radian",
+        "pT_centre_GeV": "GeV/c",
+        "electron_red_ink_fraction": "dimensionless mean channel excess",
+        "positron_blue_ink_fraction": "dimensionless mean channel excess",
+        "electron_coloured_pixels": "image pixels, NOT particles",
+        "positron_coloured_pixels": "image pixels, NOT particles",
+        "valid_image_pixels": "image pixels"
+      },
+      "limitations": [
+        "Not a particle list, event count, probability density or detector-hit prediction.",
+        "Saturation, opacity and overplotting cannot be inverted; legend-covered regions missing.",
+        "Approximate coordinate calibration 0.01 dex; coarse cell width 0.1 dex.",
+        "pT unit GeV/c inferred from accompanying discussion; raw logarithmic coordinates retained.",
+        "Nearest-global-z interpretation is inferred from forward/backward small-angle panels; source does not fully specify detector versus beam-axis frame. Preserve source coordinates."
+      ],
+      "sha256": "337551d2df622519ca99d0366d3d4409ebdff79ea7a09a634510dfa91aa26d14",
+      "file": "halhf_pairs_250_backward_ink.csv"
+    },
+    {
+      "data_kind": "digitised_raster_ink_grid",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "13a",
+      "method": "Calibrated 0.1-dex cells; mean positive R-B and B-R channel excess; neutral pixels and legend masked.",
+      "rows": 3196,
+      "columns": [
+        "nominal_sqrts_GeV",
+        "direction",
+        "log10_theta_low",
+        "log10_theta_high",
+        "log10_pT_low",
+        "log10_pT_high",
+        "theta_centre_rad",
+        "pT_centre_GeV",
+        "electron_red_ink_fraction",
+        "positron_blue_ink_fraction",
+        "electron_coloured_pixels",
+        "positron_coloured_pixels",
+        "valid_image_pixels",
+        "masked_fraction"
+      ],
+      "column_units": {
+        "log10_theta_low": "log10(source small polar angle/radian); nearest-z interpretation inferred",
+        "log10_theta_high": "log10(source small polar angle/radian); nearest-z interpretation inferred",
+        "log10_pT_low": "log10(pT/(GeV/c))",
+        "log10_pT_high": "log10(pT/(GeV/c))",
+        "theta_centre_rad": "radian",
+        "pT_centre_GeV": "GeV/c",
+        "electron_red_ink_fraction": "dimensionless mean channel excess",
+        "positron_blue_ink_fraction": "dimensionless mean channel excess",
+        "electron_coloured_pixels": "image pixels, NOT particles",
+        "positron_coloured_pixels": "image pixels, NOT particles",
+        "valid_image_pixels": "image pixels"
+      },
+      "limitations": [
+        "Not a particle list, event count, probability density or detector-hit prediction.",
+        "Saturation, opacity and overplotting cannot be inverted; legend-covered regions missing.",
+        "Approximate coordinate calibration 0.01 dex; coarse cell width 0.1 dex.",
+        "pT unit GeV/c inferred from accompanying discussion; raw logarithmic coordinates retained.",
+        "Nearest-global-z interpretation is inferred from forward/backward small-angle panels; source does not fully specify detector versus beam-axis frame. Preserve source coordinates."
+      ],
+      "sha256": "8b54dc4ac07621f282d136473ac04a474d55c1786dbeea2562a2e6380cdb58f5",
+      "file": "halhf_pairs_250_forward_ink.csv"
+    },
+    {
+      "data_kind": "digitised_raster_ink_grid",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "13d",
+      "method": "Calibrated 0.1-dex cells; mean positive R-B and B-R channel excess; neutral pixels and legend masked.",
+      "rows": 2827,
+      "columns": [
+        "nominal_sqrts_GeV",
+        "direction",
+        "log10_theta_low",
+        "log10_theta_high",
+        "log10_pT_low",
+        "log10_pT_high",
+        "theta_centre_rad",
+        "pT_centre_GeV",
+        "electron_red_ink_fraction",
+        "positron_blue_ink_fraction",
+        "electron_coloured_pixels",
+        "positron_coloured_pixels",
+        "valid_image_pixels",
+        "masked_fraction"
+      ],
+      "column_units": {
+        "log10_theta_low": "log10(source small polar angle/radian); nearest-z interpretation inferred",
+        "log10_theta_high": "log10(source small polar angle/radian); nearest-z interpretation inferred",
+        "log10_pT_low": "log10(pT/(GeV/c))",
+        "log10_pT_high": "log10(pT/(GeV/c))",
+        "theta_centre_rad": "radian",
+        "pT_centre_GeV": "GeV/c",
+        "electron_red_ink_fraction": "dimensionless mean channel excess",
+        "positron_blue_ink_fraction": "dimensionless mean channel excess",
+        "electron_coloured_pixels": "image pixels, NOT particles",
+        "positron_coloured_pixels": "image pixels, NOT particles",
+        "valid_image_pixels": "image pixels"
+      },
+      "limitations": [
+        "Not a particle list, event count, probability density or detector-hit prediction.",
+        "Saturation, opacity and overplotting cannot be inverted; legend-covered regions missing.",
+        "Approximate coordinate calibration 0.01 dex; coarse cell width 0.1 dex.",
+        "pT unit GeV/c inferred from accompanying discussion; raw logarithmic coordinates retained.",
+        "Nearest-global-z interpretation is inferred from forward/backward small-angle panels; source does not fully specify detector versus beam-axis frame. Preserve source coordinates."
+      ],
+      "sha256": "202183d43cd8954c2424f302a121ac49068223db78d32a595374be776d1680c7",
+      "file": "halhf_pairs_380_backward_ink.csv"
+    },
+    {
+      "data_kind": "digitised_raster_ink_grid",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "13c",
+      "method": "Calibrated 0.1-dex cells; mean positive R-B and B-R channel excess; neutral pixels and legend masked.",
+      "rows": 4260,
+      "columns": [
+        "nominal_sqrts_GeV",
+        "direction",
+        "log10_theta_low",
+        "log10_theta_high",
+        "log10_pT_low",
+        "log10_pT_high",
+        "theta_centre_rad",
+        "pT_centre_GeV",
+        "electron_red_ink_fraction",
+        "positron_blue_ink_fraction",
+        "electron_coloured_pixels",
+        "positron_coloured_pixels",
+        "valid_image_pixels",
+        "masked_fraction"
+      ],
+      "column_units": {
+        "log10_theta_low": "log10(source small polar angle/radian); nearest-z interpretation inferred",
+        "log10_theta_high": "log10(source small polar angle/radian); nearest-z interpretation inferred",
+        "log10_pT_low": "log10(pT/(GeV/c))",
+        "log10_pT_high": "log10(pT/(GeV/c))",
+        "theta_centre_rad": "radian",
+        "pT_centre_GeV": "GeV/c",
+        "electron_red_ink_fraction": "dimensionless mean channel excess",
+        "positron_blue_ink_fraction": "dimensionless mean channel excess",
+        "electron_coloured_pixels": "image pixels, NOT particles",
+        "positron_coloured_pixels": "image pixels, NOT particles",
+        "valid_image_pixels": "image pixels"
+      },
+      "limitations": [
+        "Not a particle list, event count, probability density or detector-hit prediction.",
+        "Saturation, opacity and overplotting cannot be inverted; legend-covered regions missing.",
+        "Approximate coordinate calibration 0.01 dex; coarse cell width 0.1 dex.",
+        "pT unit GeV/c inferred from accompanying discussion; raw logarithmic coordinates retained.",
+        "Nearest-global-z interpretation is inferred from forward/backward small-angle panels; source does not fully specify detector versus beam-axis frame. Preserve source coordinates."
+      ],
+      "sha256": "4fdcb51d366e8f2fe42a0da41a9eb40a33f319d054e37afb6d308f2cfe70c67e",
+      "file": "halhf_pairs_380_forward_ink.csv"
+    },
+    {
+      "data_kind": "digitised_raster_ink_grid",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "13f",
+      "method": "Calibrated 0.1-dex cells; mean positive R-B and B-R channel excess; neutral pixels and legend masked.",
+      "rows": 2967,
+      "columns": [
+        "nominal_sqrts_GeV",
+        "direction",
+        "log10_theta_low",
+        "log10_theta_high",
+        "log10_pT_low",
+        "log10_pT_high",
+        "theta_centre_rad",
+        "pT_centre_GeV",
+        "electron_red_ink_fraction",
+        "positron_blue_ink_fraction",
+        "electron_coloured_pixels",
+        "positron_coloured_pixels",
+        "valid_image_pixels",
+        "masked_fraction"
+      ],
+      "column_units": {
+        "log10_theta_low": "log10(source small polar angle/radian); nearest-z interpretation inferred",
+        "log10_theta_high": "log10(source small polar angle/radian); nearest-z interpretation inferred",
+        "log10_pT_low": "log10(pT/(GeV/c))",
+        "log10_pT_high": "log10(pT/(GeV/c))",
+        "theta_centre_rad": "radian",
+        "pT_centre_GeV": "GeV/c",
+        "electron_red_ink_fraction": "dimensionless mean channel excess",
+        "positron_blue_ink_fraction": "dimensionless mean channel excess",
+        "electron_coloured_pixels": "image pixels, NOT particles",
+        "positron_coloured_pixels": "image pixels, NOT particles",
+        "valid_image_pixels": "image pixels"
+      },
+      "limitations": [
+        "Not a particle list, event count, probability density or detector-hit prediction.",
+        "Saturation, opacity and overplotting cannot be inverted; legend-covered regions missing.",
+        "Approximate coordinate calibration 0.01 dex; coarse cell width 0.1 dex.",
+        "pT unit GeV/c inferred from accompanying discussion; raw logarithmic coordinates retained.",
+        "Nearest-global-z interpretation is inferred from forward/backward small-angle panels; source does not fully specify detector versus beam-axis frame. Preserve source coordinates."
+      ],
+      "sha256": "233db5902f0f3a276d23ef6fc248c1eb66dbbb72359e215adac1e7710272e35a",
+      "file": "halhf_pairs_550_backward_ink.csv"
+    },
+    {
+      "data_kind": "digitised_raster_ink_grid",
+      "source_key": "halhf2026preCDR",
+      "source_figure_or_table": "13e",
+      "method": "Calibrated 0.1-dex cells; mean positive R-B and B-R channel excess; neutral pixels and legend masked.",
+      "rows": 3822,
+      "columns": [
+        "nominal_sqrts_GeV",
+        "direction",
+        "log10_theta_low",
+        "log10_theta_high",
+        "log10_pT_low",
+        "log10_pT_high",
+        "theta_centre_rad",
+        "pT_centre_GeV",
+        "electron_red_ink_fraction",
+        "positron_blue_ink_fraction",
+        "electron_coloured_pixels",
+        "positron_coloured_pixels",
+        "valid_image_pixels",
+        "masked_fraction"
+      ],
+      "column_units": {
+        "log10_theta_low": "log10(source small polar angle/radian); nearest-z interpretation inferred",
+        "log10_theta_high": "log10(source small polar angle/radian); nearest-z interpretation inferred",
+        "log10_pT_low": "log10(pT/(GeV/c))",
+        "log10_pT_high": "log10(pT/(GeV/c))",
+        "theta_centre_rad": "radian",
+        "pT_centre_GeV": "GeV/c",
+        "electron_red_ink_fraction": "dimensionless mean channel excess",
+        "positron_blue_ink_fraction": "dimensionless mean channel excess",
+        "electron_coloured_pixels": "image pixels, NOT particles",
+        "positron_coloured_pixels": "image pixels, NOT particles",
+        "valid_image_pixels": "image pixels"
+      },
+      "limitations": [
+        "Not a particle list, event count, probability density or detector-hit prediction.",
+        "Saturation, opacity and overplotting cannot be inverted; legend-covered regions missing.",
+        "Approximate coordinate calibration 0.01 dex; coarse cell width 0.1 dex.",
+        "pT unit GeV/c inferred from accompanying discussion; raw logarithmic coordinates retained.",
+        "Nearest-global-z interpretation is inferred from forward/backward small-angle panels; source does not fully specify detector versus beam-axis frame. Preserve source coordinates."
+      ],
+      "sha256": "55a43a78fe7ea141bec81e1ba1d587bec6e461d848175f25ea38bef4152b7814",
+      "file": "halhf_pairs_550_forward_ink.csv"
+    },
+    {
+      "data_kind": "transcribed_table",
+      "source_key": "lcf2025",
+      "source_figure_or_table": "Appendix A Table 2 (PDF page 22)",
+      "method": "Manual transcription of explicitly tabulated design parameters.",
+      "rows": 4,
+      "columns": [
+        "scenario",
+        "nominal_sqrts_GeV",
+        "luminosity_cm_minus2_s_minus1",
+        "electron_polarisation_magnitude",
+        "positron_polarisation_magnitude",
+        "repetition_Hz",
+        "bunches_per_pulse",
+        "bunch_population",
+        "norm_horizontal_emittance_um",
+        "norm_vertical_emittance_nm",
+        "sigma_x_IP_nm",
+        "sigma_y_IP_nm",
+        "luminosity_fraction_top1percent",
+        "source"
+      ],
+      "column_units": {
+        "scenario": "dimensionless",
+        "nominal_sqrts_GeV": "GeV",
+        "luminosity_cm_minus2_s_minus1": "cm^-2 s^-1",
+        "electron_polarisation_magnitude": "dimensionless",
+        "positron_polarisation_magnitude": "dimensionless",
+        "repetition_Hz": "Hz",
+        "bunches_per_pulse": "dimensionless",
+        "bunch_population": "dimensionless",
+        "norm_horizontal_emittance_um": "um",
+        "norm_vertical_emittance_nm": "nm",
+        "sigma_x_IP_nm": "nm",
+        "sigma_y_IP_nm": "nm",
+        "luminosity_fraction_top1percent": "dimensionless"
+      },
+      "limitations": [
+        "Design projection, not an operating collider measurement.",
+        "Rounding retained; nominal energies need not exactly equal 2 sqrt(E- E+) after rounding."
+      ],
+      "sha256": "730b9d08f1d0d3d9b35a00a57710b4785d824afc5957ab5f7878cb7b48247278",
+      "file": "lcf_baseline_parameters.csv"
+    }
+  ],
+  "scope": "Numerical reconstructions and table facts only; no original papers or graphics. Digitization does not recover independent events or published Monte Carlo covariance."
+}

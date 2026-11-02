@@ -1,0 +1,54 @@
+{
+  "case": "ilc500_combined",
+  "card_sha256": "c4449bdf76b9d0b0fb46e4741b7bb9cc4272abcfcd9495829e42d8a2aef9005c",
+  "argv": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/data/dust/user/bmadison/feebl-publication-20261029/runs/qed-validation-25502351/cases/ilc500_combined/resources.txt",
+    "/data/dust/user/bmadison/feebl-publication-20261029/builds/qed-validation-25502093/src/feebl",
+    "--make_gui_files",
+    "ilc500",
+    "diagnostic",
+    "out.dat"
+  ],
+  "status": "PASSED_OUTPUT_CONTRACT",
+  "returncode": 0,
+  "elapsed_seconds": 73.91315330285579,
+  "output_check": {
+    "process_particle_expectations": {
+      "BW": 2870.91,
+      "BH": 74800.8,
+      "LL": 49325.5
+    },
+    "saved_secondary_rows": 102778,
+    "exact_kernel_diagnostics": {
+      "pairs_1": {
+        "population": "pairs",
+        "process": 1,
+        "kernel_evaluations": 272600,
+        "sum_contributions": 37400.41207831534,
+        "sum_squared_contributions": 16277.110744672877,
+        "max_contribution": 0.8157124304921054,
+        "accepted_chunks": 37641,
+        "stored_records": 67592
+      },
+      "pairs_2": {
+        "population": "pairs",
+        "process": 2,
+        "kernel_evaluations": 600962,
+        "sum_contributions": 24662.75853897934,
+        "sum_squared_contributions": 10699.907475572581,
+        "max_contribution": 1.6460674231693877,
+        "accepted_chunks": 24482,
+        "stored_records": 32947
+      }
+    },
+    "maximum_exact_contribution": 1000000,
+    "statistics_warning": "Rows may share a kernel contribution and fields; use collision-seed covariance",
+    "output_sha256": {
+      "out.dat": "ef3ccb982e971b1f43253d008897976736d97f4848b2f43ec9d094912b13b5ff",
+      "pairs.dat": "c06875f3f4c7aaefecd21ca8815fb92918b7885475f554a19698c580b7725562"
+    }
+  }
+}

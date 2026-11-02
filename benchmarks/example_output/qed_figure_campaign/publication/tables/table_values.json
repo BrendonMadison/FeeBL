@@ -1,0 +1,99 @@
+{
+  "lep": [
+    {
+      "observable": "inner_electron_mean_urad",
+      "mean": 13.123272754611452,
+      "standard_uncertainty": 0.07926477961318812,
+      "reference": 12.81,
+      "relative_difference_percent": 2.445532822884089
+    },
+    {
+      "observable": "outer_electron_mean_urad",
+      "mean": 11.489594999691231,
+      "standard_uncertainty": 0.06233297288520136,
+      "reference": 11.19,
+      "relative_difference_percent": 2.677345841744705
+    },
+    {
+      "observable": "electron_boundary_bias_percent",
+      "mean": -0.1067459371936767,
+      "standard_uncertainty": 0.0006647002941591072,
+      "reference": -0.10425488091085032,
+      "relative_difference_percent": 2.389390560003135
+    }
+  ],
+  "ilc": [
+    {
+      "observable": "Breit--Wheeler",
+      "units": "mb",
+      "reference_gp": 1.05,
+      "reference_cain": 1.04,
+      "model1": {
+        "mean": 1.1625074998546865,
+        "standard_uncertainty": 0.010457550157167506
+      },
+      "model2": {
+        "mean": 1.1250791855095534,
+        "standard_uncertainty": 0.01907804230890375
+      }
+    },
+    {
+      "observable": "Bethe--Heitler",
+      "units": "mb",
+      "reference_gp": 37.7,
+      "reference_cain": 34.5,
+      "model1": {
+        "mean": 38.870455832641184,
+        "standard_uncertainty": 0.16130845313747033
+      },
+      "model2": {
+        "mean": 39.18710520708623,
+        "standard_uncertainty": 0.27212990289508804
+      }
+    },
+    {
+      "observable": "Landau--Lifshitz",
+      "units": "mb",
+      "reference_gp": 19.2,
+      "reference_cain": 15.2,
+      "model1": {
+        "mean": 18.168310910228957,
+        "standard_uncertainty": 0.048457511146395835
+      },
+      "model2": {
+        "mean": 18.838889616116294,
+        "standard_uncertainty": 0.04617348241730168
+      }
+    },
+    {
+      "observable": "Total",
+      "units": "mb",
+      "reference_gp": 57.95,
+      "reference_cain": 50.74,
+      "model1": {
+        "mean": 58.20127424272482,
+        "standard_uncertainty": 0.1976981203028099
+      },
+      "model2": {
+        "mean": 59.15107400871209,
+        "standard_uncertainty": 0.27583132242967234
+      }
+    },
+    {
+      "observable": "luminosity_per_crossing",
+      "units": "inverse microbarn",
+      "reference_gp": 1.82,
+      "reference_cain": 1.82,
+      "model1": {
+        "mean": 1.7347558333333333,
+        "standard_uncertainty": 0.011575352109202554
+      },
+      "model2": {
+        "mean": 1.7443216666666665,
+        "standard_uncertainty": 0.00950085903877894
+      }
+    }
+  ],
+  "uncertainty": "Complete-collision joint count/luminosity covariance; shared normalization and interchannel correlations retained",
+  "qualification": "Numerical export only; source-model and convergence interpretation is separate"
+}

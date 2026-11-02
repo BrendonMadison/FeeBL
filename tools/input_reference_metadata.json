@@ -1,0 +1,2749 @@
+{
+  "energy": {
+    "meaning": "Absolute incoming beam energy, including rest energy.",
+    "conditions": "Use a positive physical beam energy; it is not kinetic energy.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "particles": {
+    "meaning": "Physical bunch population; sets the charge represented by the macroparticles.",
+    "conditions": "The card value is in units of 10^10; n_m independently sets numerical sampling.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "sigma_x": {
+    "meaning": "Incoming transverse RMS size at the waist.",
+    "conditions": "The negative default requests derivation from normalized emittance and beta. Supply two consistent quantities among size, emittance and beta.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "sigma_y": {
+    "meaning": "Incoming transverse RMS size at the waist.",
+    "conditions": "The negative default requests derivation from normalized emittance and beta. Supply two consistent quantities among size, emittance and beta.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "sigma_z": {
+    "meaning": "Incoming longitudinal RMS bunch length, including for the uniform longitudinal distribution.",
+    "conditions": "Generated bunches use dist_z; finite cut_z truncates the admitted sample.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "emitt_x": {
+    "meaning": "Normalized transverse emittance used to derive beam size and angular divergence.",
+    "conditions": "The negative default is an unset sentinel; supply a consistent size/emittance/beta pair.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "emitt_y": {
+    "meaning": "Normalized transverse emittance used to derive beam size and angular divergence.",
+    "conditions": "The negative default is an unset sentinel; supply a consistent size/emittance/beta pair.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "beta_x": {
+    "meaning": "Transverse beta function at the incoming waist.",
+    "conditions": "The negative default is an unset sentinel; it does not represent negative physical beta.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "beta_y": {
+    "meaning": "Transverse beta function at the incoming waist.",
+    "conditions": "The negative default is an unset sentinel; it does not represent negative physical beta.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "angle_x": {
+    "meaning": "Crossing geometry implemented as a slice-position shear in the selected plane.",
+    "conditions": "Stored native momenta do not include this crossing angle; laboratory angular observables require the documented design-axis transformation.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "angle_y": {
+    "meaning": "Crossing geometry implemented as a slice-position shear in the selected plane.",
+    "conditions": "Stored native momenta do not include this crossing angle; laboratory angular observables require the documented design-axis transformation.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "angle_phi": {
+    "meaning": "Roll of the transverse incoming coordinates about the longitudinal axis.",
+    "conditions": "Applied before incoming offsets/maps unless the loaded beam is declared pretransformed.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "offset_x": {
+    "meaning": "Incoming bunch displacement in the named coordinate.",
+    "conditions": "An unsuffixed mirrored assignment gives opposite beam offsets; explicit .1/.2 assignments use the supplied signs.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "offset_y": {
+    "meaning": "Incoming bunch displacement in the named coordinate.",
+    "conditions": "An unsuffixed mirrored assignment gives opposite beam offsets; explicit .1/.2 assignments use the supplied signs.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "offset_z": {
+    "meaning": "Incoming bunch displacement in the named coordinate.",
+    "conditions": "An unsuffixed mirrored assignment gives opposite beam offsets; explicit .1/.2 assignments use the supplied signs.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "waist_x": {
+    "meaning": "Longitudinal displacement of the transverse waist used in initial backtracking.",
+    "conditions": "These are longitudinal distances, not transverse beam offsets or crab-waist fractions.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "waist_y": {
+    "meaning": "Longitudinal displacement of the transverse waist used in initial backtracking.",
+    "conditions": "These are longitudinal distances, not transverse beam offsets or crab-waist fractions.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "dist_x": {
+    "meaning": "Generated transverse distribution selector.",
+    "conditions": "Only 0 (Gaussian) is implemented; nonzero values are rejected.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "dist_z": {
+    "meaning": "Generated longitudinal distribution selector.",
+    "conditions": "0 Gaussian; 1 uniform over \u00b1sqrt(3)*sigma_z. Other values stop generation.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "trav_focus": {
+    "meaning": "Use the longitudinal particle position in initial waist backtracking (traveling-focus prescription).",
+    "conditions": "0 ordinary bunch initialization; nonzero enables the inherited traveling-focus branch. It is not a transported focusing-system model.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "polar_x": {
+    "meaning": "Initial rest-frame polarization-vector component on fixed native axes.",
+    "conditions": "A physical polarization vector has norm\u22641. Local helicity is its projection onto the actual momentum; beam 2's reference direction is \u2212z.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "polar_y": {
+    "meaning": "Initial rest-frame polarization-vector component on fixed native axes.",
+    "conditions": "A physical polarization vector has norm\u22641. Local helicity is its projection onto the actual momentum; beam 2's reference direction is \u2212z.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "polar_z": {
+    "meaning": "Initial rest-frame polarization-vector component on fixed native axes.",
+    "conditions": "A physical polarization vector has norm\u22641. Local helicity is its projection onto the actual momentum; beam 2's reference direction is \u2212z.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "charge_sign": {
+    "meaning": "Relative interaction-charge sign: negative for opposite-charge beams, positive for like-charge beams.",
+    "conditions": "Magnitude also enters native charge scaling; use \u22121 for the standard electron\u2013positron cards. Do not infer species from a nonstandard value.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "f_rep": {
+    "meaning": "Train repetition frequency; per-IP crossing frequency is f_rep*n_b.",
+    "conditions": "Used to convert single-crossing luminosity to a rate, not to change a collision trajectory.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "n_b": {
+    "meaning": "Number of bunch crossings per train at one interaction point.",
+    "conditions": "Together with f_rep determines rate normalization; the native simulation still describes one crossing.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "scale_step": {
+    "meaning": "Per-beam multiplier of position drift, leaving the momentum-kick interval unchanged.",
+    "conditions": "Use 1 for physical drift/kick consistency. Nonunit values are refused with spin and warned about otherwise.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "espread": {
+    "meaning": "Relative energy-spread scale applied to generated/loaded primaries before incoming maps when do_espread is enabled.",
+    "conditions": "Its interpretation depends on which_espread; the uniform law has RMS 0.9815*espread.",
+    "sources": [
+      "src/energySpreadCPP.h",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "which_espread": {
+    "meaning": "Initial energy distribution applied by do_espread.",
+    "conditions": "0 unchanged; 1 uniform relative offset in[\u22121.7,+1.7]*espread; 2 equal mixture at\u00b1espread; 3 Gaussian RMS espread. Other integers fall through to unchanged energy; use only 0\u20133.",
+    "sources": [
+      "src/energySpreadCPP.h"
+    ],
+    "unit": null
+  },
+  "couple_xy": {
+    "meaning": "Registered inherited parameter with no implemented physics effect.",
+    "conditions": "A nonzero value produces a warning. Remove it; no replacement implementing this legacy control is supplied.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "xi_x": {
+    "meaning": "Registered inherited parameter with no implemented physics effect.",
+    "conditions": "A nonzero value produces a warning. Remove it; no replacement implementing this legacy control is supplied.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "xi_y": {
+    "meaning": "Registered inherited parameter with no implemented physics effect.",
+    "conditions": "A nonzero value produces a warning. Remove it; no replacement implementing this legacy control is supplied.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "n_x": {
+    "meaning": "Number of cells across the main transverse mesh in the named direction.",
+    "conditions": "Must support the selected solver. The internal FFT fallback requires powers of two; FFTW and adaptive routes impose their own preflight constraints.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": "cells"
+  },
+  "n_y": {
+    "meaning": "Number of cells across the main transverse mesh in the named direction.",
+    "conditions": "Must support the selected solver. The internal FFT fallback requires powers of two; FFTW and adaptive routes impose their own preflight constraints.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": "cells"
+  },
+  "n_z": {
+    "meaning": "Number of longitudinal slices per bunch.",
+    "conditions": "Positive resolved slice count; incoming maps additionally bound their transverse displacement per slice. Independent slice refinement is required.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": "slices"
+  },
+  "n_t": {
+    "meaning": "Integration subdivisions per slice encounter.",
+    "conditions": "Positive count. Increasing it refines primary and secondary field evolution but does not increase initial macroparticle statistics.",
+    "sources": [
+      "src/gridCPP.cc"
+    ],
+    "unit": "substeps"
+  },
+  "n_m": {
+    "meaning": "Generated primary macroparticles per beam.",
+    "conditions": "Positive count for generated beams; loaded records determine the loaded population. It is not the physical bunch charge.",
+    "sources": [
+      "src/beamParametersCPP.cc",
+      "src/particleBeamCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": "macroparticles"
+  },
+  "cut_x": {
+    "meaning": "Main-mesh transverse half-extent.",
+    "conditions": "A negative default delegates to the sizing path. Check actual printed extent and lost/deposited charge; extra grids do not recover missing central deposition.",
+    "sources": [
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "cut_y": {
+    "meaning": "Main-mesh transverse half-extent.",
+    "conditions": "A negative default delegates to the sizing path. Check actual printed extent and lost/deposited charge; extra grids do not recover missing central deposition.",
+    "sources": [
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "cut_z": {
+    "meaning": "Longitudinal bunch-admission half-extent.",
+    "conditions": "The negative default delegates to the setup path; admitted Gaussian charge depends on this cut.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "cut_x_factor": {
+    "meaning": "Width multiplier used by the corresponding beam-based cut selection.",
+    "conditions": "Negative is an unset sentinel. Meaning depends on generated versus loaded/sized setup; inspect evaluated cuts rather than assuming a universal default multiple.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "cut_y_factor": {
+    "meaning": "Width multiplier used by the corresponding beam-based cut selection.",
+    "conditions": "Negative is an unset sentinel. Meaning depends on generated versus loaded/sized setup; inspect evaluated cuts rather than assuming a universal default multiple.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "cut_z_factor": {
+    "meaning": "Width multiplier used by the corresponding beam-based cut selection.",
+    "conditions": "Negative is an unset sentinel. Meaning depends on generated versus loaded/sized setup; inspect evaluated cuts rather than assuming a universal default multiple.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "grids": {
+    "meaning": "Total nested transverse field grids, including the main mesh.",
+    "conditions": "Values\u22641 select no extra grid; larger values add outer field-gather meshes. Many parallel/adaptive modes require exactly 1.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": "grids"
+  },
+  "integration_method": {
+    "meaning": "Transverse potential-solver selector.",
+    "conditions": "2 is the FFT convolution used by supplied benchmarks and accelerated routes; 1/3 select inherited alternative field paths. Do not change this as a mere performance switch without validation.",
+    "sources": [
+      "src/fieldCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "electron_distribution_rho": {
+    "meaning": "Primary charge assignment to transverse mesh cells.",
+    "conditions": "1 nearest-cell assignment; 2 cloud-in-cell assignment. Accelerated/adaptive contracts require 2. The mover's interpolation is an internal setting, not a separate registered interpolation keyword.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "automatic_grid_sizing": {
+    "meaning": "Estimate transverse mesh cuts and resolution from beam moments.",
+    "conditions": "0 off; 1 on. Nonzero crossing angle is refused because this sizing path double counts the spatial shear; use explicit cuts or optimize_grids.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "optimize_grids": {
+    "meaning": "Derive grid settings from beam widths and crossing geometry.",
+    "conditions": "0 off; 1 on. This is a setup heuristic, not an observable-convergence certificate.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "cuts_from_loaded_beam": {
+    "meaning": "Derive admission/mesh cuts using loaded beam coordinates.",
+    "conditions": "Has no effect for program-generated beams and warns in that case.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "charge_symmetric": {
+    "meaning": "Generate reflection-related macroparticles to impose initial charge symmetry.",
+    "conditions": "0 independent generation; nonzero uses the inherited symmetric generator. Reflected samples are not independent random draws.",
+    "sources": [
+      "src/particleBeamCPP.cc"
+    ],
+    "unit": null
+  },
+  "force_symmetric": {
+    "meaning": "Impose the inherited field-symmetry option.",
+    "conditions": "0 ordinary solver; nonzero symmetry path. Parallel/adaptive qualified envelopes require 0.",
+    "sources": [
+      "src/fieldCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_eloss": {
+    "meaning": "Primary beamstrahlung radiation and associated energy loss.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_photons": {
+    "meaning": "Materialize beamstrahlung macro-photons for the selected beam.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_photon_lumi": {
+    "meaning": "Accumulate real/virtual photon luminosity channels.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_coherent": {
+    "meaning": "Coherent electron\u2013positron conversion from photons in the beam field.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_trident": {
+    "meaning": "Inherited trident production path.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_pairs": {
+    "meaning": "Incoherent electron\u2013positron production from real/virtual photon collisions.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_muons": {
+    "meaning": "Muon-pair production from photon collisions.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_hadrons": {
+    "meaning": "Hadronic production in photon collisions.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_compt": {
+    "meaning": "Compton secondary production.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_compt_phot": {
+    "meaning": "Retain Compton-generated photons in the background path.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_isr": {
+    "meaning": "Initial-state radiation in sampled electron collision kinematics.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_espread": {
+    "meaning": "Apply the incoming beam energy-spread distribution.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "bmt_precession": {
+    "meaning": "Primary Thomas\u2013BMT spin precession in gathered beam fields.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "ST_spin_flip": {
+    "meaning": "Spin-dependent radiation transitions and conditional spin evolution.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_bds_spin_rotation": {
+    "meaning": "Rotate initial spin using the inherited beam-delivery angular prescription.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "track_pairs": {
+    "meaning": "Transport electron/positron secondaries or imported events through the beam fields.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "track_muons": {
+    "meaning": "Transport produced muons through the beam fields.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_tertphot": {
+    "meaning": "Secondary-track radiation photons in the inherited tertiary-photon path.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "beam_pair": {
+    "meaning": "Store/track the associated scattered beam-particle contribution during pair production.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "store_beam": {
+    "meaning": "Write final primary-beam records.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "store_photons": {
+    "meaning": "Write stored photons after the collision.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "store_hadrons": {
+    "meaning": "Write sampled hadron-event records.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "store_muons": {
+    "meaning": "Write muon secondary records.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "store_jets": {
+    "meaning": "Write sampled jet records.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "store_native": {
+    "meaning": "Write self-describing native collision/spectrum files.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_cross": {
+    "meaning": "Accumulate the inherited electron cross-section/event diagnostic.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_size_log": {
+    "meaning": "Log evolving beam-size diagnostics.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_dump": {
+    "meaning": "Write inherited per-step particle dumps.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_edm4hep": {
+    "meaning": "Write EDM4hep output when that optional build support is available.",
+    "conditions": "Use 0 off or 1 on. Legacy boolean branches may accept other nonzero integers; coupled process/backend constraints still apply.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "store_pairs": {
+    "meaning": "Write incoherent/imported electron\u2013positron records.",
+    "conditions": "0 none; 1 final pairs.dat; values>1 also initial pairs0.dat. Column 8 is a process code, not a weight.",
+    "sources": [
+      "src/feeblCPP.cc",
+      "src/particlesCPP.h"
+    ],
+    "unit": null
+  },
+  "do_lumi": {
+    "meaning": "Bit mask selecting sampled luminosity event outputs.",
+    "conditions": "Bit 1 e\u2212e+; bit 2 both e\u03b3/\u03b3e; bit 4 \u03b3\u03b3. Combine by addition; 0 disables event storage, not every integrated luminosity accumulator.",
+    "sources": [
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "load_beam": {
+    "meaning": "Choose generated primaries or legacy beam-file import.",
+    "conditions": "0 generate; 3 load both beams.1/2 are explicitly unimplemented. Use loaded_beam_is_pretransformed to avoid applying maps twice.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "load_photons": {
+    "meaning": "Load initial photons from the native photon input path.",
+    "conditions": "0 off; nonzero loads. Supply the expected file and check beam/source sign conventions.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "load_events": {
+    "meaning": "Read event.ini secondary tracks at their explicit native admission counters.",
+    "conditions": "0 off; 1 on. Requires track_pairs for deflection; eight columns in mode 0 and eleven in imported_spin_mode1.",
+    "sources": [
+      "src/pairsCPP.cc"
+    ],
+    "unit": null
+  },
+  "loaded_beam_is_pretransformed": {
+    "meaning": "Declare loaded coordinates already contain incoming transforms.",
+    "conditions": "0 applies roll, crossing shear, offsets and maps; 1 skips them. A true pretransformed beam cannot also request incoming-map reslicing.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "imported_spin_mode": {
+    "meaning": "Spin transport for explicitly supplied imported electron/positron tracks.",
+    "conditions": "0 legacy unpolarized format; 1 BMT with eleven-column spin input and imported radiation off. Other modes, including radiative spin flips, are rejected; pure imported population required.",
+    "sources": [
+      "src/pairsCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_bhabhas": {
+    "meaning": "Enable the inherited Bhabha event-input/reweighting path.",
+    "conditions": "Distinct from a manufactured event.ini fixture; inspect the required Bhabha input and normalization before interpreting rates.",
+    "sources": [
+      "src/bhabhaSamplesCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_jets": {
+    "meaning": "Select the inherited photon-collision minijet model.",
+    "conditions": "0 off; 1 uses Lambda4=0.4 GeV and 2 uses 0.2 GeV. Other nonzero values have no defined initialization branch. This optional model is not qualified by beam-spectrum benchmarks.",
+    "sources": [
+      "src/gridCPP.h",
+      "src/jetParameterCPP.cc"
+    ],
+    "unit": null
+  },
+  "jet_pythia": {
+    "meaning": "Select PYTHIA-backed rather than internal minijet initialization.",
+    "conditions": "0 internal; nonzero PYTHIA path, requiring its external inputs/build support.",
+    "sources": [
+      "src/gridCPP.h"
+    ],
+    "unit": null
+  },
+  "jet_log": {
+    "meaning": "Select the inherited minijet sampling parameterization.",
+    "conditions": "Forwarded to the jet model; retain the value of a validated jet card. It is not a general logging verbosity switch.",
+    "sources": [
+      "src/jetParameterCPP.cc"
+    ],
+    "unit": null
+  },
+  "jet_ptmin": {
+    "meaning": "Minimum transverse momentum used to initialize the minijet model.",
+    "conditions": "Positive physical threshold for an enabled jet model.",
+    "sources": [
+      "src/gridCPP.h",
+      "src/jetParameterCPP.cc"
+    ],
+    "unit": null
+  },
+  "do_prod": {
+    "meaning": "Reserved inherited production path that is incomplete.",
+    "conditions": "do_prod must remain 0; a nonzero request is rejected. prod_e/prod_scal have no active replacement in supported runs.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "prod_e": {
+    "meaning": "Reserved inherited production path that is incomplete.",
+    "conditions": "do_prod must remain 0; a nonzero request is rejected. prod_e/prod_scal have no active replacement in supported runs.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "prod_scal": {
+    "meaning": "Reserved inherited production path that is incomplete.",
+    "conditions": "do_prod must remain 0; a nonzero request is rejected. prod_e/prod_scal have no active replacement in supported runs.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "pair_model": {
+    "meaning": "Incoherent-pair production model.",
+    "conditions": "0 existing FeeBL EPA with corrected BW normalization; 1 corrected transverse EPA; 2 massive tree-level BH/LL kernels. Mode 2 requires extended long-double precision. Internal exact amplitudes do not remove the approximate beam-direction mapping.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/pairsCPP.cc"
+    ],
+    "unit": null
+  },
+  "pair_exact_rr": {
+    "meaning": "Roulette scale for exact BH/LL kernel evaluation.",
+    "conditions": "Finite and nonnegative; 0 disables roulette. Evaluated proposals include inverse-probability compensation, with a 5% minimum evaluation probability. This changes sampling cost and variance, not the physical cross section.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/pairsCPP.cc"
+    ],
+    "unit": null
+  },
+  "photon_timing": {
+    "meaning": "Position, birth-step exposure and direction model for emitted photons.",
+    "conditions": "0 legacy; 1 synchronized position and half birth-step exposure; 2 diagnostic synchronized position with full birth-step exposure; 3 synchronized with time-centered direction. Modes 1/3 require coherent_model=1 when coherent conversion is enabled.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "photon_angle": {
+    "meaning": "Out-of-orbit-plane beamstrahlung emission-angle model.",
+    "conditions": "0 collinear; 1 LCFA angle; 2 apply that angle only when the formation length is below half the opposing bunch length. Samples outside the small-angle domain (|angle|>0.1 rad or transverse beta squared>=1) stop the run; they are not clipped or resampled.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/qedbg_photon_domain.h",
+      "src/qedbg_photon_angle.h"
+    ],
+    "unit": null
+  },
+  "photon_polarisation": {
+    "meaning": "Track beamstrahlung photon Stokes parameters and polarization-dependent pair production.",
+    "conditions": "0 unpolarized; 1 enabled, requiring pair_model=1 or 2. Coherent conversion additionally requires coherent_model=1. This is distinct from primary-lepton spin tracking.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/switchesCPP.cc",
+      "src/qedbg_photon_polarisation.h"
+    ],
+    "unit": null
+  },
+  "coherent_model": {
+    "meaning": "Coherent pair-conversion probability model.",
+    "conditions": "0 inherited sampling; 1 corrected substepping without applying the intermediate conversion probability twice. Mode 1 is required with polarized photons or synchronized half-exposure photon timing when coherent conversion is active.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "pair_q2": {
+    "meaning": "Virtual-photon virtuality veto in EPA pair production.",
+    "conditions": "0 veto above lepton mass squared; 1 above pT\u00b2+mass\u00b2; 2 above E_gamma1*E_gamma2 (s/4 in the head-on photon approximation). Enabled pair/muon production requires 0\u20132. This does not replace mode 2 exact kinematics.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/pairsCPP.cc"
+    ],
+    "unit": null
+  },
+  "pair_ecut": {
+    "meaning": "Minimum daughter total energy at admission for the named secondary species.",
+    "conditions": "Not a continuously applied transport cut. Generation/storage acceptance depends on the process as well as tracking; report this threshold with yields. Pair creation requires invariant mass above twice the daughter mass; each individual daughter instead requires E>=mass.",
+    "sources": [
+      "src/pairsCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "muon_ecut": {
+    "meaning": "Minimum daughter total energy at admission for the named secondary species.",
+    "conditions": "Not a continuously applied transport cut. Generation/storage acceptance depends on the process as well as tracking; report this threshold with yields. Pair creation requires invariant mass above twice the daughter mass; each individual daughter instead requires E>=mass.",
+    "sources": [
+      "src/pairsCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "pair_step": {
+    "meaning": "Secondary step-refinement multiplier used to limit the bend per tracking substep.",
+    "conditions": "Larger positive values generally produce smaller tracking steps. It also applies to muon transport.",
+    "sources": [
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "pair_ratio": {
+    "meaning": "Sampling enhancement/thinning factor for the named stored/generated population.",
+    "conditions": "Not a physical cross-section multiplier to be applied again in analysis; track each process's weight convention. Row counts alone are generally not physical yields.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/pairsCPP.cc",
+      "src/backgroundCPP.cc"
+    ],
+    "unit": null
+  },
+  "muon_ratio": {
+    "meaning": "Sampling enhancement/thinning factor for the named stored/generated population.",
+    "conditions": "Not a physical cross-section multiplier to be applied again in analysis; track each process's weight convention. Row counts alone are generally not physical yields.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/pairsCPP.cc",
+      "src/backgroundCPP.cc"
+    ],
+    "unit": null
+  },
+  "photon_ratio": {
+    "meaning": "Sampling enhancement/thinning factor for the named stored/generated population.",
+    "conditions": "Not a physical cross-section multiplier to be applied again in analysis; track each process's weight convention. Row counts alone are generally not physical yields.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/pairsCPP.cc",
+      "src/backgroundCPP.cc"
+    ],
+    "unit": null
+  },
+  "bhabha_ratio": {
+    "meaning": "Sampling enhancement/thinning factor for the named stored/generated population.",
+    "conditions": "Not a physical cross-section multiplier to be applied again in analysis; track each process's weight convention. Row counts alone are generally not physical yields.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/pairsCPP.cc",
+      "src/backgroundCPP.cc"
+    ],
+    "unit": null
+  },
+  "hadron_ratio": {
+    "meaning": "Sampling enhancement/thinning factor for the named stored/generated population.",
+    "conditions": "Not a physical cross-section multiplier to be applied again in analysis; track each process's weight convention. Row counts alone are generally not physical yields.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/pairsCPP.cc",
+      "src/backgroundCPP.cc"
+    ],
+    "unit": null
+  },
+  "jet_ratio": {
+    "meaning": "Sampling enhancement/thinning factor for the named stored/generated population.",
+    "conditions": "Not a physical cross-section multiplier to be applied again in analysis; track each process's weight convention. Row counts alone are generally not physical yields.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/pairsCPP.cc",
+      "src/backgroundCPP.cc"
+    ],
+    "unit": null
+  },
+  "muon_scale": {
+    "meaning": "Sampling enhancement passed to the muon production weight.",
+    "conditions": "Must be finite and positive when muon production is enabled. Its enhancement is removed from physical yield counters; record the value when interpreting stored rows.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/pairsCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "electron_ratio": {
+    "meaning": "Sampling factor for electron collision pairs/records.",
+    "conditions": "The default 0 is not a declaration of zero physical beam charge. Optimized luminosity contracts may require exactly 1.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "ecm_min": {
+    "meaning": "Threshold used by the electron collision/cross-section path.",
+    "conditions": "Does not replace the W\u22650.98W0 selection in peak diagnostics.",
+    "sources": [
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "ecm_min_gg": {
+    "meaning": "Photon-channel threshold parameter converted internally to gg_smin=4*ecm_min_gg\u00b2.",
+    "conditions": "The factor 4 is part of the implemented convention; do not treat this input as an arbitrary histogram lower edge.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "emin": {
+    "meaning": "Inherited low-energy threshold passed to primary/secondary movement and beam import interfaces.",
+    "conditions": "Some loaded-particle interfaces explicitly ignore it. It is not a universal cut on every stored particle; prefer process-specific pair_ecut/muon_ecut for those populations.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/particleBeamCPP.cc"
+    ],
+    "unit": null
+  },
+  "bhabha_ecmload": {
+    "meaning": "Centre-of-mass energy used to normalize the imported Bhabha sample.",
+    "conditions": "Must describe the actual external sample; independent of the manufactured event.ini fixture energy.",
+    "sources": [
+      "src/feeblCPP.cc"
+    ],
+    "unit": null
+  },
+  "bhabha_scal": {
+    "meaning": "Bhabha event sampling normalization area.",
+    "conditions": "Use the normalization matching the external sample and report it with bhabha_ratio.",
+    "sources": [
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "compt_x_min": {
+    "meaning": "Minimum Compton invariant scale relative to 4*m_e\u00b2.",
+    "conditions": "The code requires s\u22654*m_e\u00b2*compt_x_min; dimensionless, not an energy in GeV.",
+    "sources": [
+      "src/backgroundCPP.cc"
+    ],
+    "unit": null
+  },
+  "compt_emax": {
+    "meaning": "Maximum selected Compton-electron energy.",
+    "conditions": "Applied inside the Compton background path.",
+    "sources": [
+      "src/backgroundCPP.cc"
+    ],
+    "unit": null
+  },
+  "compt_scale": {
+    "meaning": "Compton sampling/production scale.",
+    "conditions": "Keep the physical weight convention in the background model; raw rows are not automatically event yields.",
+    "sources": [
+      "src/backgroundCPP.cc"
+    ],
+    "unit": null
+  },
+  "beam_size": {
+    "meaning": "Finite transverse beam-size correction in virtual-photon generation.",
+    "conditions": "0 photon at parent position; 1 random azimuth at the virtual-photon radius; 2 Gaussian transverse displacement with that radius; 3 finite-mass impact-parameter profile with helicity-conserving and helicity-flip terms. This does not set sigma_x/y.",
+    "sources": [
+      "src/gridCPP.cc",
+      "src/qedbg_impact_parameter.h"
+    ],
+    "unit": null
+  },
+  "beam_size_scale": {
+    "meaning": "Scale of the finite-beam-size virtual-photon correction.",
+    "conditions": "Dimensionless multiplier used with beam_size; changing it changes the background model.",
+    "sources": [
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "ext_field": {
+    "meaning": "Apply the inherited strong-field suppression criterion to virtual-photon emission.",
+    "conditions": "0 off; nonzero criterion. This does not import an external laser or arbitrary external electromagnetic field.",
+    "sources": [
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "num_lumi": {
+    "meaning": "Capacity of the corresponding electron, electron-photon or photon luminosity event heap.",
+    "conditions": "Sampling capacity is distinct from total luminosity; optimized append mode uses max(100,num_lumi).",
+    "sources": [
+      "src/gridCPP.cc"
+    ],
+    "unit": "records"
+  },
+  "num_lumi_eg": {
+    "meaning": "Capacity of the corresponding electron, electron-photon or photon luminosity event heap.",
+    "conditions": "Sampling capacity is distinct from total luminosity; optimized append mode uses max(100,num_lumi).",
+    "sources": [
+      "src/gridCPP.cc"
+    ],
+    "unit": "records"
+  },
+  "num_lumi_gg": {
+    "meaning": "Capacity of the corresponding electron, electron-photon or photon luminosity event heap.",
+    "conditions": "Sampling capacity is distinct from total luminosity; optimized append mode uses max(100,num_lumi).",
+    "sources": [
+      "src/gridCPP.cc"
+    ],
+    "unit": "records"
+  },
+  "lumi_p": {
+    "meaning": "Area scale converting collision luminosity weight to event-sampling probability for the corresponding heap.",
+    "conditions": "It controls stored-event sampling, not the total physical luminosity normalization.",
+    "sources": [
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "lumi_p_eg": {
+    "meaning": "Area scale converting collision luminosity weight to event-sampling probability for the corresponding heap.",
+    "conditions": "It controls stored-event sampling, not the total physical luminosity normalization.",
+    "sources": [
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "lumi_p_gg": {
+    "meaning": "Area scale converting collision luminosity weight to event-sampling probability for the corresponding heap.",
+    "conditions": "It controls stored-event sampling, not the total physical luminosity normalization.",
+    "sources": [
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "dump_step": {
+    "meaning": "Stride in collision steps or particles for inherited dump output.",
+    "conditions": "Values\u22640 are replaced by 1. These controls do not set the deterministic modern GUI frame/sample limits.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": "stride"
+  },
+  "dump_particle": {
+    "meaning": "Stride in collision steps or particles for inherited dump output.",
+    "conditions": "Values\u22640 are replaced by 1. These controls do not set the deterministic modern GUI frame/sample limits.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/feeblCPP.cc"
+    ],
+    "unit": "stride"
+  },
+  "hist_ee_bins": {
+    "meaning": "Registered inherited histogram setting with no active control of the native spectrum.",
+    "conditions": "Use spectrum_w_min, spectrum_w_max and spectrum_w_bins instead. hist_ee_bins/max are read for diagnostics only; the other legacy histogram keys have no active consumer.",
+    "sources": [
+      "src/readData.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "hist_ee_min": {
+    "meaning": "Registered inherited histogram setting with no active control of the native spectrum.",
+    "conditions": "Use spectrum_w_min, spectrum_w_max and spectrum_w_bins instead. hist_ee_bins/max are read for diagnostics only; the other legacy histogram keys have no active consumer.",
+    "sources": [
+      "src/readData.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "hist_ee_max": {
+    "meaning": "Registered inherited histogram setting with no active control of the native spectrum.",
+    "conditions": "Use spectrum_w_min, spectrum_w_max and spectrum_w_bins instead. hist_ee_bins/max are read for diagnostics only; the other legacy histogram keys have no active consumer.",
+    "sources": [
+      "src/readData.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "hist_espec_bins": {
+    "meaning": "Registered inherited histogram setting with no active control of the native spectrum.",
+    "conditions": "Use spectrum_w_min, spectrum_w_max and spectrum_w_bins instead. hist_ee_bins/max are read for diagnostics only; the other legacy histogram keys have no active consumer.",
+    "sources": [
+      "src/readData.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "hist_espec_min": {
+    "meaning": "Registered inherited histogram setting with no active control of the native spectrum.",
+    "conditions": "Use spectrum_w_min, spectrum_w_max and spectrum_w_bins instead. hist_ee_bins/max are read for diagnostics only; the other legacy histogram keys have no active consumer.",
+    "sources": [
+      "src/readData.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "hist_espec_max": {
+    "meaning": "Registered inherited histogram setting with no active control of the native spectrum.",
+    "conditions": "Use spectrum_w_min, spectrum_w_max and spectrum_w_bins instead. hist_ee_bins/max are read for diagnostics only; the other legacy histogram keys have no active consumer.",
+    "sources": [
+      "src/readData.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "spectrum_w_bins": {
+    "meaning": "Number of uniform native collision-energy bins.",
+    "conditions": "Values\u22640 fall back to 200. Choose a positive resolved count; display grouping is separate. Inspect underflow/overflow and fit identifiability.",
+    "sources": [
+      "src/feeblCPP.cc",
+      "src/pairMomentsCPP.h"
+    ],
+    "unit": "bins"
+  },
+  "spectrum_w_min": {
+    "meaning": "Native collision-energy histogram bounds.",
+    "conditions": "max>min selects an explicit range; otherwise range is[0,1.1*(E1+E2)]. Tail flows remain separate from retained bins.",
+    "sources": [
+      "src/feeblCPP.cc",
+      "src/pairMomentsCPP.h"
+    ],
+    "unit": null
+  },
+  "spectrum_w_max": {
+    "meaning": "Native collision-energy histogram bounds.",
+    "conditions": "max>min selects an explicit range; otherwise range is[0,1.1*(E1+E2)]. Tail flows remain separate from retained bins.",
+    "sources": [
+      "src/feeblCPP.cc",
+      "src/pairMomentsCPP.h"
+    ],
+    "unit": null
+  },
+  "design_axis_spectrum": {
+    "meaning": "Write a separate output-only spectrum after rotating momenta to declared beam design axes.",
+    "conditions": "0 off; 1 on. Retains native collision weights, requires supported serial legacy full-pair output, and is not an independent finite-angle flux calculation.",
+    "sources": [
+      "src/feeblCPP.cc",
+      "src/designAxisSpectrumCPP.h"
+    ],
+    "unit": null
+  },
+  "design_axis_peak_bins": {
+    "meaning": "Fine-bin count between 0.96 and 1.04 times nominal design-axis collision energy.",
+    "conditions": "Integer 100\u201350000 when enabled. This fine region differs from the 98%diagnostic selection; qualify its bin resolution independently.",
+    "sources": [
+      "src/designAxisSpectrumCPP.h",
+      "src/feeblCPP.cc"
+    ],
+    "unit": "bins"
+  },
+  "rndm_seed": {
+    "meaning": "Seed for a fresh simulation random stream.",
+    "conditions": "Used when rndm_load=0. A requested complete checkpoint takes precedence.",
+    "sources": [
+      "src/rndmCPP.cc"
+    ],
+    "unit": null
+  },
+  "rndm_load": {
+    "meaning": "Restore or save the complete checksummed rndm.save state, including Gaussian cache.",
+    "conditions": "0 off; 1 on. Explicit failed loads stop the run; saves use checked replacement. Defaults are 0, so ordinary repeated cards use their declared seed.",
+    "sources": [
+      "src/rndmCPP.cc"
+    ],
+    "unit": null
+  },
+  "rndm_save": {
+    "meaning": "Restore or save the complete checksummed rndm.save state, including Gaussian cache.",
+    "conditions": "0 off; 1 on. Explicit failed loads stop the run; saves use checked replacement. Defaults are 0, so ordinary repeated cards use their declared seed.",
+    "sources": [
+      "src/rndmCPP.cc"
+    ],
+    "unit": null
+  },
+  "ip_dispersion": {
+    "meaning": "Canonical horizontal position\u2013energy correlation x+=D*delta, including its longitudinal companion.",
+    "conditions": "Finite signed metres; active independently of crab/waist. Active incoming maps require an explicit longitudinal sign.",
+    "sources": [
+      "src/incomingMapsCPP.cc",
+      "src/feeblCPP.cc",
+      "examples/monochromatization/README.md"
+    ],
+    "unit": null
+  },
+  "crab_mode": {
+    "meaning": "Incoming compensation-map selector.",
+    "conditions": "0 off; 1 ideal linear IP tilt; 2 two-harmonic RF map. Other values rejected. Neither mode is by itself a validated transported RF system.",
+    "sources": [
+      "src/incomingMapsCPP.cc",
+      "src/feeblCPP.cc",
+      "examples/monochromatization/README.md"
+    ],
+    "unit": null
+  },
+  "crab_plane": {
+    "meaning": "Plane of the incoming crab map.",
+    "conditions": "0 horizontal; 1 vertical; other values rejected for an active map.",
+    "sources": [
+      "src/incomingMapsCPP.cc",
+      "src/feeblCPP.cc",
+      "examples/monochromatization/README.md"
+    ],
+    "unit": null
+  },
+  "crab_longitudinal_sign": {
+    "meaning": "Sign relating native longitudinal position to the canonical bunch coordinate.",
+    "conditions": "Exactly +1 or \u22121 for an active incoming map; default 0 is undeclared and not an automatic beam sign.",
+    "sources": [
+      "src/incomingMapsCPP.cc",
+      "src/feeblCPP.cc",
+      "examples/monochromatization/README.md"
+    ],
+    "unit": null
+  },
+  "crab_target_tilt": {
+    "meaning": "Requested linear crab slope.",
+    "conditions": "Exactly \u22121 derives \u2212longitudinal_sign*full_crossing_angle/2; other finite signed values are explicit. Negative slopes other than \u22121 are not sentinels.",
+    "sources": [
+      "src/incomingMapsCPP.cc",
+      "src/feeblCPP.cc",
+      "examples/monochromatization/README.md"
+    ],
+    "unit": null
+  },
+  "crab_frequency": {
+    "meaning": "Fundamental RF frequency for crab_mode2.",
+    "conditions": "Must be positive in RF mode; no RF frequency is needed for a direct linear tilt.",
+    "sources": [
+      "src/incomingMapsCPP.cc",
+      "src/feeblCPP.cc",
+      "examples/monochromatization/README.md"
+    ],
+    "unit": null
+  },
+  "crab_phase": {
+    "meaning": "Common RF phase of the crab harmonics.",
+    "conditions": "RF mode requires |cos(phase)|\u22650.1 to avoid a divergent slope correction.",
+    "sources": [
+      "src/incomingMapsCPP.cc",
+      "src/feeblCPP.cc",
+      "examples/monochromatization/README.md"
+    ],
+    "unit": null
+  },
+  "crab_harmonic_n": {
+    "meaning": "Higher harmonic used with the fundamental to cancel the leading cubic RF term.",
+    "conditions": "Integer\u22652 in RF mode.",
+    "sources": [
+      "src/incomingMapsCPP.cc",
+      "src/feeblCPP.cc",
+      "examples/monochromatization/README.md"
+    ],
+    "unit": null
+  },
+  "crab_include_panofsky_wenzel": {
+    "meaning": "Include the longitudinal kick required by the canonical crab map.",
+    "conditions": "Must remain enabled for an active crab physics run; 0 is rejected.",
+    "sources": [
+      "src/incomingMapsCPP.cc",
+      "src/feeblCPP.cc",
+      "examples/monochromatization/README.md"
+    ],
+    "unit": null
+  },
+  "crab_full_crossing_angle": {
+    "meaning": "Full crossing angle supplied explicitly to the incoming map configuration.",
+    "conditions": "Positive angle required when deriving crab tilt or applying an ideal waist; it is not automatically copied from angle_x. Active compensation also checks consistency with the declared beam crossing geometry.",
+    "sources": [
+      "src/incomingMapsCPP.cc",
+      "src/feeblCPP.cc",
+      "examples/monochromatization/README.md"
+    ],
+    "unit": null
+  },
+  "waist_mode": {
+    "meaning": "Incoming crab-waist map selector.",
+    "conditions": "0 off; 1 ideal local waist map. Other values rejected; requires nonzero full crossing angle.",
+    "sources": [
+      "src/incomingMapsCPP.cc",
+      "src/feeblCPP.cc",
+      "examples/monochromatization/README.md"
+    ],
+    "unit": null
+  },
+  "waist_fraction": {
+    "meaning": "Fraction multiplying the ideal local waist shift.",
+    "conditions": "Finite and\u22650; 1 gives the full ideal map. This is not the bunch-tilt compensation fraction.",
+    "sources": [
+      "src/incomingMapsCPP.cc",
+      "src/feeblCPP.cc",
+      "examples/monochromatization/README.md"
+    ],
+    "unit": null
+  },
+  "waist_symplecticity_tolerance": {
+    "meaning": "Tolerance for numerical symplectic-map checks.",
+    "conditions": "A checking tolerance, not a predicted collision-observable error.",
+    "sources": [
+      "src/incomingMapsCPP.cc",
+      "src/feeblCPP.cc",
+      "examples/monochromatization/README.md"
+    ],
+    "unit": null
+  },
+  "incoming_map_reslice": {
+    "meaning": "Reassign particles to longitudinal slices after canonical incoming maps.",
+    "conditions": "0 retain existing slices; 1 rebuild. Incompatible with loaded_beam_is_pretransformed=1.",
+    "sources": [
+      "src/incomingMapsCPP.cc",
+      "src/feeblCPP.cc",
+      "examples/monochromatization/README.md"
+    ],
+    "unit": null
+  },
+  "compute_backend": {
+    "meaning": "Select the execution backend for the legacy engine.",
+    "conditions": "serial, cpu, gpu or auto. Explicit unavailable requests fail unless the particular route allows declared fallback; experimental adaptive routes forbid fallback.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "collision_schedule": {
+    "meaning": "Order and concurrency of slice encounters.",
+    "conditions": "legacy; wavefront_strict preserves encounter order without a speedup claim; wavefront_parallel stages concurrent fields with ordered publication. Each has process restrictions.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "cpu_threads": {
+    "meaning": "Requested CPU worker count.",
+    "conditions": "Nonnegative integer; 0 chooses detected physical cores where possible. Runtime capacity/useful wave width can reduce the admitted team.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": "workers"
+  },
+  "cpu_variant": {
+    "meaning": "CPU deposition/reduction implementation.",
+    "conditions": "auto, pool_dual, pool_private or omp_atomic. OpenMP needs an enabled build; strict/deterministic reduction and physics constraints select the allowed combinations.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "cpu_primary_move": {
+    "meaning": "Enable the restricted parallel primary mover.",
+    "conditions": "0 off; 1 on. Requires its exact supported feature envelope; wavefront adaptive routes require 0.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "gpu_device": {
+    "meaning": "CUDA device ordinal requested by the GPU backend.",
+    "conditions": "Nonnegative integer; the selected device must exist and satisfy kernel capability requirements.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": "device index"
+  },
+  "gpu_min_particles": {
+    "meaning": "Per-slice population threshold for automatic GPU dispatch.",
+    "conditions": "Nonnegative count; automatic dispatch does not authorize unsupported physics or an unrequested fallback.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": "particles per slice"
+  },
+  "gpu_variant": {
+    "meaning": "GPU deposition implementation selector.",
+    "conditions": "auto, atomic, shared/tiled or sorted. Individual production modes narrow this grammar; names do not imply every kernel is routed.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "gpu_mode": {
+    "meaning": "GPU execution pipeline selector.",
+    "conditions": "1 legacy deposition; 2 resident fields; 3 modern primary-resident; 4 fixed-grid wave batching; 5 adaptive-grid Mode 1 batching. Each requires its full documented selector/physics bundle.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "gpu2_scope": {
+    "meaning": "Which resident GPU state is retained.",
+    "conditions": "auto, fields or primary are routed as allowed by the mode; full is refused.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "gpu2_deposition": {
+    "meaning": "Resident charge-deposition kernel.",
+    "conditions": "auto or atomic in supported production paths; shared_tile and sort_reduce are parsed but unrouted and rejected.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "gpu2_fft": {
+    "meaning": "Resident GPU field transform library.",
+    "conditions": "Only cufft is implemented.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "gpu2_streams": {
+    "meaning": "Requested CUDA stream count for the resident path.",
+    "conditions": "Nonnegative; 0 is deferred selection. Supported production modes generally require exactly 1; inspect their selector bundle.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": "streams"
+  },
+  "gpu2_graphs": {
+    "meaning": "CUDA graph execution policy.",
+    "conditions": "auto, off or on. Production modes constrain the choice; modes 4/5 use off.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "gpu2_fusion": {
+    "meaning": "Resident kernel-fusion policy.",
+    "conditions": "auto, off or on; modes 4/5 require on.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "gpu2_batch_slices": {
+    "meaning": "Resident slice-batch width.",
+    "conditions": "Nonnegative; modes 4/5 require 1\u2013256.0 is not unlimited batching.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": "slices"
+  },
+  "gpu2_pinned_io": {
+    "meaning": "Pinned host-memory staging policy.",
+    "conditions": "auto, off or on; supported modes may require on.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "gpu2_host_threads": {
+    "meaning": "Host workers serving the resident GPU path.",
+    "conditions": "Nonnegative; Mode 5 requires at least 2.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": "workers"
+  },
+  "gpu2_primary_mover": {
+    "meaning": "Host primary-move implementation used with the resident pipeline.",
+    "conditions": "serial, openmp, pool or auto; supported production bundles narrow these choices.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "gpu2_memory_fraction": {
+    "meaning": "Fraction of device memory admitted by resident preflight.",
+    "conditions": "Finite in(0,1]. This reservation is not a guarantee about total device memory used by other processes.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "gpu2_profile": {
+    "meaning": "Resident GPU timing/annotation verbosity.",
+    "conditions": "off, summary or nvtx; the selected mode can require summary.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "allow_backend_fallback": {
+    "meaning": "Allow supported automatic fallback from an unavailable acceleration route.",
+    "conditions": "0 fail explicit unavailable requests; 1 permits only documented fallback. Adaptive/certified routes still reject fallback.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "reduction_mode": {
+    "meaning": "Floating-point accumulation ordering for the legacy engine.",
+    "conditions": "strict, deterministic or fast. Fast atomic accumulation is not bitwise reproducible; each backend admits only its supported combinations.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "rng_backend": {
+    "meaning": "Random-stream implementation selector.",
+    "conditions": "legacy is the runnable simulation stream. counter remains a reference/KAT implementation and an unsupported production request fails; checkpoint support alone does not make it a routed physics stream.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "sparse_cells": {
+    "meaning": "Restrict cell work to sorted touched-cell unions/intersections while retaining legacy particle insertion order.",
+    "conditions": "0 dense traversal; 1 sparse active-cell bookkeeping. It changes work scheduling, not physical mesh extent.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "sparse_direct_interaction_limit": {
+    "meaning": "Maximum direct sparse field-interaction work before the solver chooses its permitted alternative.",
+    "conditions": "Positive integer work bound used with the selected wavefront solver; inspect solver telemetry rather than treating this as a particle cap.",
+    "sources": [
+      "src/feeblCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": "interaction pairs"
+  },
+  "wavefront_field_solver": {
+    "meaning": "Field solver used by wavefront staging.",
+    "conditions": "fft, direct or auto are parsed by the wavefront contract; accelerated/adaptive production envelopes require fft.",
+    "sources": [
+      "src/feeblCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "wavefront_workspace_max_bytes": {
+    "meaning": "Total host wavefront workspace reservation cap in bytes, including any adaptive workspace allowance.",
+    "conditions": "0 retains the automatic cap; positive exact integers up to 2^53-1 override it and require wavefront_parallel. Preflight also checks size_t bounds and per-lane capacity before allocation. This is neither an RSS limit nor a device-memory budget.",
+    "sources": [
+      "src/feeblCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": "bytes"
+  },
+  "wavefront_parallel_physics": {
+    "meaning": "Enable the restricted concurrent full primary/photon/luminosity encounter path.",
+    "conditions": "0 ordered physics publication; 1 requires the documented precompute/sampling Mode 3 feature bundle. It does not enable arbitrary parallel secondary tracking.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "electron_lumi_precompute": {
+    "meaning": "Electron luminosity kernel and invariant-staging selector.",
+    "conditions": "0 historical; 1 hoisted invariants; 2 blocked aligned SIMD-oriented evaluator; 3 parallel blocked evaluator with separately selected event sampling. Unsupported physics combinations fail.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "electron_lumi_sampling": {
+    "meaning": "Stored electron-luminosity event selection policy.",
+    "conditions": "0 legacy heap; 1 deterministic weighted top-K; 2 keyed Bernoulli multiplicity; 3 geometric-gap Bernoulli with exact fallback for ineligible rows. Nonzero policies require the matching precompute contract.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "photon_lumi_factorized": {
+    "meaning": "Factorize photon-luminosity evaluation in the supported collision kernel.",
+    "conditions": "0 historical pair loop; 1 factorized route. Coupled exclusions in check_consistency still apply.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "electron_lumi_spatial_kernel": {
+    "meaning": "Independent restricted spatial luminosity integration kernel.",
+    "conditions": "0 off; 1 aggregate-only path. Requires electron_ratio=1, explicit spatial bounds/capacity, no electron event heap or background processes, and grids=1.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "electron_lumi_spatial_nx": {
+    "meaning": "Spatial luminosity quadrature dimensions, independent of the field-grid dimensions.",
+    "conditions": "Each\u22652 when the spatial kernel is enabled.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": "cells"
+  },
+  "electron_lumi_spatial_ny": {
+    "meaning": "Spatial luminosity quadrature dimensions, independent of the field-grid dimensions.",
+    "conditions": "Each\u22652 when the spatial kernel is enabled.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": "cells"
+  },
+  "electron_lumi_spatial_x_min": {
+    "meaning": "Explicit spatial support of the luminosity kernel.",
+    "conditions": "Finite bounds with max>min on each axis when enabled.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "electron_lumi_spatial_x_max": {
+    "meaning": "Explicit spatial support of the luminosity kernel.",
+    "conditions": "Finite bounds with max>min on each axis when enabled.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "electron_lumi_spatial_y_min": {
+    "meaning": "Explicit spatial support of the luminosity kernel.",
+    "conditions": "Finite bounds with max>min on each axis when enabled.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "electron_lumi_spatial_y_max": {
+    "meaning": "Explicit spatial support of the luminosity kernel.",
+    "conditions": "Finite bounds with max>min on each axis when enabled.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "electron_lumi_spatial_max_pairs": {
+    "meaning": "Hard capacity of the spatial luminosity pair enumeration.",
+    "conditions": "Enabled kernel requires a positive exact integer\u22642^53\u22121 that also fits host size_t; exceeding capacity does not authorize truncation.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": "pairs"
+  },
+  "electron_lumi_spatial_closure_tolerance": {
+    "meaning": "Relative closure tolerance for the spatial luminosity kernel.",
+    "conditions": "Finite in(0,1) when enabled; this algebraic closure is not collider numerical accuracy.",
+    "sources": [
+      "src/switchesCPP.cc",
+      "src/gridCPP.cc"
+    ],
+    "unit": null
+  },
+  "engine": {
+    "meaning": "Physics-engine family, independent of the legacy compute_backend selector.",
+    "conditions": "legacy is default; modern_ref_cpu and modern_cpu are reserved/unavailable; modern_gpu admits only the narrow gpu_mode3 contract.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "algorithm": {
+    "meaning": "Algorithm declaration for a modern engine.",
+    "conditions": "exact, factored_exact, sampled_validated or adaptive_validated are declared names; current production modern_gpu requires exact. Nondefault values require a nonlegacy engine and separate support.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "precision": {
+    "meaning": "Modern-engine phase-state/field precision policy.",
+    "conditions": "fp64 or mixed_qualified; the narrow modern_gpu route uses FP32 phase state with FP64 fields. A selector name is not broad numerical qualification.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "modern_reduction": {
+    "meaning": "Modern-engine accumulation policy.",
+    "conditions": "deterministic or fast_qualified; the narrow GPU route requires fast_qualified unordered FP64 atomic CIC.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "modern_batch_width": {
+    "meaning": "Requested modern-engine batch width.",
+    "conditions": "Nonnegative; 0 is the reserved engine-selected sentinel. Current production bundle requires 0.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": "batch entries"
+  },
+  "modern_cpu_workers": {
+    "meaning": "Requested workers for a modern CPU engine.",
+    "conditions": "Nonnegative; 0 is reserved engine selection. Modern CPU engines are unavailable; current GPU bundle retains 0.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": "workers"
+  },
+  "modern_cpu_runtime": {
+    "meaning": "Modern CPU worker runtime.",
+    "conditions": "auto, pool or openmp grammar; current production GPU bundle retains auto and does not activate a modern CPU engine.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "modern_cpu_affinity": {
+    "meaning": "Modern CPU placement policy.",
+    "conditions": "auto, none, compact or scatter grammar; current production GPU bundle retains auto.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "modern_gpu_streams": {
+    "meaning": "Modern-engine CUDA stream count.",
+    "conditions": "Nonnegative; current primary-resident production bundle uses 1.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": "streams"
+  },
+  "modern_gpu_graphs": {
+    "meaning": "Modern-engine CUDA graph policy.",
+    "conditions": "auto, off or on grammar; current primary-resident production bundle requires off.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "modern_trace": {
+    "meaning": "Modern-engine telemetry verbosity.",
+    "conditions": "off, summary or full grammar; supported production bundle uses summary.",
+    "sources": [
+      "src/parallelBackendCPP.cc",
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_error_reference_field": {
+    "meaning": "Prospectively fixed E_ref used by the mixed absolute/relative field-error metric.",
+    "conditions": "Finite>0 for vector_mixed_rms_quantile_v2; exactly 0 under other policies. Bind its external budget by error_budget_sha256.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_error_absolute_floor_fraction": {
+    "meaning": "Fraction of E_ref setting the mixed metric denominator floor.",
+    "conditions": "Finite in(0,1] for V2; exactly 0 under other policies.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_error_catastrophe_absolute_fraction": {
+    "meaning": "Fraction of E_ref required in addition to the relative catastrophe bound.",
+    "conditions": "Finite in(0,2] for V2; exactly 0 under other policies.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_error_exposure_limit": {
+    "meaning": "Maximum accepted-target fraction exceeding the declared V2 field-error target.",
+    "conditions": "Finite in(0,1) for V2; exactly 0 under other policies.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_mode": {
+    "meaning": "`0..3`; see Section 2. Any other value fails during card parsing.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_domain": {
+    "meaning": "The enum is `field_source` or `full_physics`; an active `full_physics` request fails because variable-weight physics is not qualified.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_source_evolution": {
+    "meaning": "The enum also reserves `persistent_replayed_roots`, which fails for an active mode. A standalone ordinary-MC replay planner/executor exists under `scripts/adaptive_particles/replay/`, but FeeBL does not consume its policy as persistent adaptive state and the required evolution contract is not implemented.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_decision_scope": {
+    "meaning": "Exactly `encounter`. Decisions are prepared from an immutable encounter view.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_commit_scope": {
+    "meaning": "Exactly `wave`. Activation cannot occur during an in-flight parallel encounter.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_strategy": {
+    "meaning": "Exactly this versioned identifier. A deterministic conservative-sum controller observes frozen diagnostics only after the canonical wave publication barrier. It keeps mesh, source, resampling, pair, stochastic-physics, solver, floating-point, and reference errors distinct; unavailable source-sampling uncertainty cannot be cleared by descendants. A fresh-root recommendation becomes a process-level signal only; the standalone replay driver is not invoked and no live roots are inserted.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_split": {
+    "meaning": "Exactly this versioned CIC-assignment split.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_merge": {
+    "meaning": "Required as versioned provenance in every active mode; Mode 3 executes it, while Modes 1/2 retain the identifier without merging. This is not the future general `mpcr_v1` algorithm.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_root_source": {
+    "meaning": "Exactly this identifier in the current implementation. Roots are the already-generated authoritative FeeBL primaries. `pilot_replay_rqmc_v1` and every other generator request fail closed because no replay/RQMC root generator is active.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_root_seed": {
+    "meaning": "Must remain zero with `physical_primary_roots_v1`; the adaptive-source path draws no root RNG values. The standalone ordinary-MC replay driver changes the legacy `rndm_seed` in fresh cards, not this field. A future in-process/RQMC namespace requires a separate generator and schema.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_scramble_id": {
+    "meaning": "Must remain zero. The current run has no adaptive RQMC scramble, and descendants are not independent replications.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_error_target": {
+    "meaning": "Modes 2/3 require a value strictly between zero and one; supplied active cards use `0.01`. It is a declared coupled-controller target, but the exact-projection transaction does not yet turn it into a collider observable error certificate.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_resample_bias_target": {
+    "meaning": "Modes 2/3 require a value below one. For exact projection it is the explicit relative-L1 budget for differences between independently accumulated legacy-oracle and weighted-source density/S1/S2 arrays. Active smoke cards use `1e-8`; the observed residual remains logged. This is not a general resampling algorithm or physics-error budget.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_min_root_support": {
+    "meaning": "Controller threshold for distinct-root and protected-tail support. Never compared to representative count.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "effective count"
+  },
+  "adaptive_macroparticle_min_clone_support": {
+    "meaning": "Controller threshold for the conservative root-grouped clone-support proxy, which splitting cannot inflate.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "effective count"
+  },
+  "adaptive_macroparticle_statistical_cohorts": {
+    "meaning": "Must be exactly `1` for `projected_current_state` in this implementation. Zero is always invalid.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "count"
+  },
+  "adaptive_macroparticle_refine_threshold": {
+    "meaning": "Must be at least the coarsen threshold. Applied to normalized mesh and independently estimated source errors.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_coarsen_threshold": {
+    "meaning": "Must not exceed the refine threshold. Both errors and resampling risk must remain below it before dwell can permit a Mode-3 merge recommendation.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_update_interval": {
+    "meaning": "Must be nonzero and, in this implementation, exactly `1`.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_cooldown": {
+    "meaning": "Must be exactly `0` until persistent controller state is implemented.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_dwell": {
+    "meaning": "Must be nonzero and, in this implementation, exactly `2`.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_max_change_factor": {
+    "meaning": "Must be at least one. A committed proposal cannot contain more than `ceil(factor * accepted_roots)` representatives. Four is the natural maximum for exact 2D CIC splitting.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_max_generation": {
+    "meaning": "Must be nonzero and fit `uint32_t`; every split/merge generation is checked. The current projection uses generation 1 for splits and 2 after Mode-3 merge.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "count"
+  },
+  "adaptive_macroparticle_max_count": {
+    "meaning": "Zero means no user-imposed small count ceiling. A positive value rejects a proposal above it; real host/address-space limits still apply.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "count"
+  },
+  "adaptive_macroparticle_max_bytes": {
+    "meaning": "Zero selects automatic resource preflight. A positive value is a source-container admission guard, not a process RSS or GPU-memory promise.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "bytes"
+  },
+  "adaptive_macroparticle_max_weight_ratio": {
+    "meaning": "Must be at least one. For exact CIC field-source projection it bounds the accepted authoritative **root** weight ratio, not the ratio of arbitrarily small nonzero CIC atom coefficients. The representative atom range remains telemetry.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_policy_save": {
+    "meaning": "Any nonempty value fails closed. The in-process card/runtime policy schema is not implemented; the standalone replay driver's canonical JSON policy is a separate artifact and is not accepted here.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_policy_load": {
+    "meaning": "Any nonempty value fails closed.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_trace_save": {
+    "meaning": "Any nonempty value fails closed. The in-process realization-specific trace schema is not implemented; the standalone replay execution manifest is separate.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_trace_load": {
+    "meaning": "Any nonempty value fails closed.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_profile": {
+    "meaning": "`off`, `summary`, or `detail`. This selects particle-source telemetry verbosity, not scientific qualification.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_fail_on_unmet_error": {
+    "meaning": "Exactly `0` or `1`. Transaction failures remain hard errors. For Mode 2/3, `1` emits the versioned replay signal and returns status 75 before final output publication when the end-to-end bound is unavailable/unmet. Value `0` emits the same signal with an exploratory exit-0 disposition and then permits unqualified pilot outputs; it does not relabel the run as converged.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_macroparticle_determinism": {
+    "meaning": "The grammar recognizes `strict` or `fast_qualified`, but every active mode in this implementation requires `strict`. `fast_qualified` is reserved until a separate numerical qualification exists.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_mode": {
+    "meaning": "Grid topology:0 fixed,1 exact-discretization active window,2 error-controlled uniform refinement,3 experimental composite patch. `0`, `1`, `2`, or `3`; this contract covers `2` and `3`.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_scope": {
+    "meaning": "Scope at which an adaptive field decision is made. The parser recognizes `\"encounter\"` and diagnostic `\"wave\"`, but executable Modes 2/3 require `\"encounter\"`; `\"wave\"` is refused rather than substituted.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_size_classes_x": {
+    "meaning": "Paired, strictly increasing lists of positive even window dimensions. Required if full-window selection is disabled.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_size_classes_y": {
+    "meaning": "Paired, strictly increasing lists of positive even window dimensions. Required if full-window selection is disabled.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_min_nx": {
+    "meaning": "Zero means derive an executable minimum of four later; otherwise an even dimension at least four.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "cells"
+  },
+  "adaptive_grid_min_ny": {
+    "meaning": "Zero means derive an executable minimum of four later; otherwise an even dimension at least four.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "cells"
+  },
+  "adaptive_grid_max_nx": {
+    "meaning": "Zero means derive later; otherwise even, at least four, and no smaller than the matching minimum.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "cells"
+  },
+  "adaptive_grid_max_ny": {
+    "meaning": "Zero means derive later; otherwise even, at least four, and no smaller than the matching minimum.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "cells"
+  },
+  "adaptive_grid_extra_guard_cells": {
+    "meaning": "Nonnegative extra cells around exact stencil support. An explicit maximum must leave at least a two-cell physical interior.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "cells"
+  },
+  "adaptive_grid_allow_full_window": {
+    "meaning": "Boolean. A full canonical window is a selected class, not fallback.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_max_cells": {
+    "meaning": "Exact nonnegative integer represented in binary64. Required positive capacity in Modes 2/3 and must contain explicit minima.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "cells"
+  },
+  "adaptive_grid_max_bytes": {
+    "meaning": "Exact nonnegative integer represented in binary64. Required positive total adaptive CPU reservation in Modes 2/3. Preflight divides it across admitted lanes, reserves transient controller high-water, and uses only the remainder for retained contexts. It is not an RSS limit.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "bytes"
+  },
+  "adaptive_grid_schedule_save": {
+    "meaning": "Path for writing an adaptive schedule. Both must remain empty in executable Modes 2/3 until schedule format v2 exists.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_schedule_load": {
+    "meaning": "Path for loading a prescribed adaptive schedule. Both must remain empty in executable Modes 2/3 until schedule format v2 exists.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_profile": {
+    "meaning": "Adaptive-grid telemetry verbosity. `off`, `summary`, or `encounter`; Modes 2/3 require `summary` or `encounter`.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_pilot_diagnostics": {
+    "meaning": "Explicitly authorizes an **unqualified diagnostic pilot** only when set to `1` together with `adaptive_grid_fail_on_unmet_error=0` and `adaptive_grid_profile=\"encounter\"`. It is rejected in Modes 0/1 and when the other two settings do not match.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_source_model": {
+    "meaning": "Field-source representation: reference_cic_v1 uses a registered CIC source lattice; fixed_width_bspline1_v1 uses continuous tents of fixed physical width. Required exact versioned name in Modes 2/3.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_source_reference_nx": {
+    "meaning": "Reference-source lattice cells in x, held fixed when refining the field grid. Positive for `reference_cic_v1`; exactly zero for the fixed-width model.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "cells"
+  },
+  "adaptive_grid_source_reference_ny": {
+    "meaning": "Reference-source lattice cells in y, held fixed when refining the field grid. Positive for `reference_cic_v1`; exactly zero for the fixed-width model.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "cells"
+  },
+  "adaptive_grid_source_width_x": {
+    "meaning": "Physical tent support half-widths in nm.  Finite and positive for `fixed_width_bspline1_v1`; exactly zero for `reference_cic_v1`.  Never scale them with grid factor.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_source_width_y": {
+    "meaning": "Physical tent support half-widths in nm.  Finite and positive for `fixed_width_bspline1_v1`; exactly zero for `reference_cic_v1`.  Never scale them with grid factor.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_source_error_target": {
+    "meaning": "Relative source-representation error budget. Required finite value in `(0,1)` for either audited source; bounds uniform source-luminosity error against its source oracle.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_solver_error_target": {
+    "meaning": "Relative field solve/gather error budget. Required finite value in `(0,1)` for either audited source; bounds the uniform field-solve/gather estimate together with the overall/Richardson targets.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_lumi_error_target": {
+    "meaning": "Relative luminosity error budget for composite versus uniform-fine overlap. Required finite value in `(0,1)` for either audited source; bounds Mode-3 hybrid luminosity against complete uniform-fine luminosity.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_lumi_floor": {
+    "meaning": "Required finite positive normalization floor for audited luminosity comparisons.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_field_spacing_classes": {
+    "meaning": "Bootstrap physical refinement factors; not a list of allowed final window dimensions. Required bootstrap list of at least three consecutive ratio-two classes beginning at factor 1.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_max_refinement_factor": {
+    "meaning": "`0` removes a user-imposed factor ceiling; otherwise a power of two no smaller than the last bootstrap class. Resource and representability limits always remain active.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "resolution ratio"
+  },
+  "adaptive_grid_field_operator": {
+    "meaning": "`legacy_cic12_v1` or `fd4_lagrange4_v1`. The latter is the qualification candidate and affects only CPU Modes 2/3.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_anchor_x": {
+    "meaning": "Physical x anchor of the adaptive lattice. Must be finite at parse time; executable v1 currently requires both exactly zero and fails closed otherwise.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_anchor_y": {
+    "meaning": "Physical y anchor of the adaptive lattice. Must be finite at parse time; executable v1 currently requires both exactly zero and fails closed otherwise.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_monitor": {
+    "meaning": "Indicator construction, currently charge_curvature_field_richardson_overlap. Exact v1 monitor identifier.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_error_target": {
+    "meaning": "Requested overall normalized field-error target. Required finite value in `(0,1)`.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_error_norm_policy": {
+    "meaning": "The default preserves the established componentwise RMS-and-maximum acceptance exactly. The opt-in `vector_rms_quantile_v1` policy uses the no-floor same-particle vector audit below; `vector_mixed_rms_quantile_v2` uses the separately documented mixed absolute/relative audit. Both vector policies require measured `three_level` order.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_error_budget_sha256": {
+    "meaning": "Mandatory only for `vector_mixed_rms_quantile_v2`: exactly 64 lowercase hexadecimal characters identifying the immutable prospectively approved kick/error-budget document. It must be empty for every other policy. It is part of the adaptive schedule/run identity and receipts; campaign validation must authenticate the referenced document bytes.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_error_quantile": {
+    "meaning": "Empirical upper quantile used by `vector_rms_quantile_v1`; must be finite in `[0.95,1)`. The default is p99.9.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_error_catastrophe_limit": {
+    "meaning": "Hard per-particle symmetric-vector change bound for `vector_rms_quantile_v1`; finite in `(0,2]`, where two is the exact mathematical maximum. This guard is separate from the quantile so a small hidden tail cannot pass.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_noise_aware_stop": {
+    "meaning": "Optional pilot-only fail-closed early stop. Value `1` requires `vector_rms_quantile_v1`, `pilot_diagnostics=1`, `fail_on_unmet_error=0`, and replay-capable adaptive macroparticle mode 2 or 3. It never creates a convergence result.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_tau_curvature": {
+    "meaning": "Normalized charge-curvature indicator tolerance. Required finite normalized tolerance in `(0,1)`.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_tau_field_gradient": {
+    "meaning": "Normalized field-gradient indicator tolerance. Required finite normalized tolerance in `(0,1)`.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_tau_richardson": {
+    "meaning": "Normalized same-particle Richardson field-difference tolerance. Required finite normalized tolerance in `(0,1)`.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_encounter_tail_fraction": {
+    "meaning": "Finite eligibility-mass control in `[0,1)`. Zero is a compatibility sentinel that inherits `adaptive_grid_tau_tail`; a positive value explicitly bounds the whole slice-pair population fraction eligible for the longitudinal treatment below.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_tau_tail": {
+    "meaning": "Required finite normalized tolerance in `(0,1)`. It independently bounds (a) each cumulative exposure-weighted longitudinal error and (b) Mode-3 patch-excluded source charge. It no longer controls eligible longitudinal mass when `adaptive_grid_encounter_tail_fraction` is positive.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_rho_floor": {
+    "meaning": "Charge-density normalization floor for controller indicators. Required finite positive, calibrated noise/scale floors.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_field_floor": {
+    "meaning": "Field normalization floor for controller indicators. Required finite positive, calibrated noise/scale floors.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_indicator_smoothing_passes": {
+    "meaning": "`0`, `1`, or `2`; applies to indicators, never the physics source.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_indicator_reduction": {
+    "meaning": "Spatial indicator grouping, currently connected_max. Exact v1 reduction identifier.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_refine_threshold": {
+    "meaning": "Normalized indicator threshold for requesting refinement. Finite and positive.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_coarsen_threshold": {
+    "meaning": "Finite overlap fraction in `[0,1]`, and strictly below the refine threshold. Mode 3 uses it directly as its connected-overlap patch threshold.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_shrink_dwell": {
+    "meaning": "Reserved number of accepted updates before shrinking a grid. Must be explicitly set to `1`; stateful hysteresis is not implemented.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_update_interval": {
+    "meaning": "Encounter interval between controller updates. Must equal `1`; deferred encounter updates are not implemented.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_richardson_interval": {
+    "meaning": "Encounter interval between same-particle Richardson audits. Must be explicitly set to `1`; skipped Richardson audits are not implemented.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_richardson_order_source": {
+    "meaning": "Choose tabulated or measured three-level convergence order. `calibrated_table` or `three_level`.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_richardson_order_table": {
+    "meaning": "For `calibrated_table`, required pair entries for every pair that execution may reach, including dynamically appended factors, for example `\"1:2=2.0,2:4=2.0,4:8=2.0\"`; alternatively use a nonzero maximum factor to bound the calibrated table. Must be empty for `three_level`.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_min_neff": {
+    "meaning": "Minimum weighted Kish effective occupancy required by sampling gates. Required finite value at least one.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "effective count"
+  },
+  "adaptive_grid_fail_on_unmet_error": {
+    "meaning": "Production-safe default. A value of `0` is accepted only for the explicitly gated unqualified diagnostic pilot described below.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_max_levels": {
+    "meaning": "Maximum nested fine-patch depth. Exactly one nested fine level in v1.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_max_patches": {
+    "meaning": "Maximum simultaneously admitted fine rectangles. Exactly one fine rectangle in v1.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_refinement_ratio": {
+    "meaning": "Fine/coarse spatial resolution ratio of a patch. Exactly `2` in executable contract v1.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "resolution ratio"
+  },
+  "adaptive_grid_blocking_factor": {
+    "meaning": "Cell-alignment block size for patch geometry. Required positive power of two, divisible by the refinement ratio; every explicit window class must be divisible by it.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_error_buffer_cells": {
+    "meaning": "Cells added around the indicator-selected patch support. Required positive calibrated buffer.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "cells"
+  },
+  "adaptive_grid_transition_cells": {
+    "meaning": "Width of the C1 potential blend at patch boundaries. Required positive and even in v1.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": "cells"
+  },
+  "adaptive_grid_fine_residual_tolerance": {
+    "meaning": "Normalized harmonic fine-patch residual acceptance threshold. Required finite value in `(0,1)`.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  },
+  "adaptive_grid_terminal_patch_certification": {
+    "meaning": "Experimental, default-off terminal recovery proof. Value `1` requires Mode 3, `fixed_width_bspline1_v1`, `fd4_lagrange4_v1`, `vector_rms_quantile_v1`, rolling `three_level` order, adaptive macroparticles off, and encounter telemetry. It never weakens any ordinary Mode-3 path.",
+    "conditions": "Active-mode and coupled constraints in the native input checks also apply.",
+    "sources": [
+      "src/switchesCPP.cc"
+    ],
+    "unit": null
+  }
+}

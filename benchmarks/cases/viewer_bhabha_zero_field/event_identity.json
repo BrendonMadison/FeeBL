@@ -1,0 +1,2211 @@
+{
+  "schema_version": "feebl.collider.manufactured-events/1",
+  "coordinate_frame": "native_pair_tracking",
+  "source_artifact": {
+    "path": "event.ini",
+    "bytes": 20410,
+    "sha256": "d684b9f914cd094480b45094c0be089f74c5771a49d35385445d52aa1a938755"
+  },
+  "events": [
+    {
+      "event_id": 0,
+      "particles": [
+        {
+          "source_record": 1,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 2,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 1,
+      "particles": [
+        {
+          "source_record": 3,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 4,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 2,
+      "particles": [
+        {
+          "source_record": 5,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 6,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 3,
+      "particles": [
+        {
+          "source_record": 7,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 8,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 4,
+      "particles": [
+        {
+          "source_record": 9,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 10,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 5,
+      "particles": [
+        {
+          "source_record": 11,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 12,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 6,
+      "particles": [
+        {
+          "source_record": 13,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 14,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 7,
+      "particles": [
+        {
+          "source_record": 15,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 16,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 8,
+      "particles": [
+        {
+          "source_record": 17,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 18,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 9,
+      "particles": [
+        {
+          "source_record": 19,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 20,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 10,
+      "particles": [
+        {
+          "source_record": 21,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 22,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 11,
+      "particles": [
+        {
+          "source_record": 23,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 24,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 12,
+      "particles": [
+        {
+          "source_record": 25,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 26,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 13,
+      "particles": [
+        {
+          "source_record": 27,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 28,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 14,
+      "particles": [
+        {
+          "source_record": 29,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 30,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 15,
+      "particles": [
+        {
+          "source_record": 31,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 32,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 16,
+      "particles": [
+        {
+          "source_record": 33,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 34,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 17,
+      "particles": [
+        {
+          "source_record": 35,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 36,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 18,
+      "particles": [
+        {
+          "source_record": 37,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 38,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 19,
+      "particles": [
+        {
+          "source_record": 39,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 40,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 20,
+      "particles": [
+        {
+          "source_record": 41,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 42,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 21,
+      "particles": [
+        {
+          "source_record": 43,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 44,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 22,
+      "particles": [
+        {
+          "source_record": 45,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 46,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 23,
+      "particles": [
+        {
+          "source_record": 47,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 48,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 24,
+      "particles": [
+        {
+          "source_record": 49,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 50,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 25,
+      "particles": [
+        {
+          "source_record": 51,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 52,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 26,
+      "particles": [
+        {
+          "source_record": 53,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 54,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 27,
+      "particles": [
+        {
+          "source_record": 55,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 56,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 28,
+      "particles": [
+        {
+          "source_record": 57,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 58,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 29,
+      "particles": [
+        {
+          "source_record": 59,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 60,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 30,
+      "particles": [
+        {
+          "source_record": 61,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 62,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 31,
+      "particles": [
+        {
+          "source_record": 63,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 64,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 32,
+      "particles": [
+        {
+          "source_record": 65,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 66,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 33,
+      "particles": [
+        {
+          "source_record": 67,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 68,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 34,
+      "particles": [
+        {
+          "source_record": 69,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 70,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 35,
+      "particles": [
+        {
+          "source_record": 71,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 72,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 36,
+      "particles": [
+        {
+          "source_record": 73,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 74,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 37,
+      "particles": [
+        {
+          "source_record": 75,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 76,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 38,
+      "particles": [
+        {
+          "source_record": 77,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 78,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 39,
+      "particles": [
+        {
+          "source_record": 79,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 80,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 40,
+      "particles": [
+        {
+          "source_record": 81,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 82,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 41,
+      "particles": [
+        {
+          "source_record": 83,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 84,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 42,
+      "particles": [
+        {
+          "source_record": 85,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 86,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 43,
+      "particles": [
+        {
+          "source_record": 87,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 88,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 44,
+      "particles": [
+        {
+          "source_record": 89,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 90,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 45,
+      "particles": [
+        {
+          "source_record": 91,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 92,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 46,
+      "particles": [
+        {
+          "source_record": 93,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 94,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 47,
+      "particles": [
+        {
+          "source_record": 95,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 96,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 48,
+      "particles": [
+        {
+          "source_record": 97,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 98,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 49,
+      "particles": [
+        {
+          "source_record": 99,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 100,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 50,
+      "particles": [
+        {
+          "source_record": 101,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 102,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 51,
+      "particles": [
+        {
+          "source_record": 103,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 104,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 52,
+      "particles": [
+        {
+          "source_record": 105,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 106,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 53,
+      "particles": [
+        {
+          "source_record": 107,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 108,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 54,
+      "particles": [
+        {
+          "source_record": 109,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 110,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 55,
+      "particles": [
+        {
+          "source_record": 111,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 112,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 56,
+      "particles": [
+        {
+          "source_record": 113,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 114,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 57,
+      "particles": [
+        {
+          "source_record": 115,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 116,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 58,
+      "particles": [
+        {
+          "source_record": 117,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 118,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 59,
+      "particles": [
+        {
+          "source_record": 119,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 120,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 60,
+      "particles": [
+        {
+          "source_record": 121,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 122,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 61,
+      "particles": [
+        {
+          "source_record": 123,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 124,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 62,
+      "particles": [
+        {
+          "source_record": 125,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 126,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 63,
+      "particles": [
+        {
+          "source_record": 127,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 128,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 64,
+      "particles": [
+        {
+          "source_record": 129,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 130,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 65,
+      "particles": [
+        {
+          "source_record": 131,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 132,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 66,
+      "particles": [
+        {
+          "source_record": 133,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 134,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 67,
+      "particles": [
+        {
+          "source_record": 135,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 136,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 68,
+      "particles": [
+        {
+          "source_record": 137,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 138,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 69,
+      "particles": [
+        {
+          "source_record": 139,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 140,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 70,
+      "particles": [
+        {
+          "source_record": 141,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 142,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 71,
+      "particles": [
+        {
+          "source_record": 143,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 144,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 72,
+      "particles": [
+        {
+          "source_record": 145,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 146,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 73,
+      "particles": [
+        {
+          "source_record": 147,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 148,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 74,
+      "particles": [
+        {
+          "source_record": 149,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 150,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 75,
+      "particles": [
+        {
+          "source_record": 151,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 152,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 76,
+      "particles": [
+        {
+          "source_record": 153,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 154,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 77,
+      "particles": [
+        {
+          "source_record": 155,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 156,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 78,
+      "particles": [
+        {
+          "source_record": 157,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 158,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 79,
+      "particles": [
+        {
+          "source_record": 159,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 160,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 80,
+      "particles": [
+        {
+          "source_record": 161,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 162,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 81,
+      "particles": [
+        {
+          "source_record": 163,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 164,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 82,
+      "particles": [
+        {
+          "source_record": 165,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 166,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 83,
+      "particles": [
+        {
+          "source_record": 167,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 168,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 84,
+      "particles": [
+        {
+          "source_record": 169,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 170,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 85,
+      "particles": [
+        {
+          "source_record": 171,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 172,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 86,
+      "particles": [
+        {
+          "source_record": 173,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 174,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 87,
+      "particles": [
+        {
+          "source_record": 175,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 176,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 88,
+      "particles": [
+        {
+          "source_record": 177,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 178,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 89,
+      "particles": [
+        {
+          "source_record": 179,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 180,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 90,
+      "particles": [
+        {
+          "source_record": 181,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 182,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 91,
+      "particles": [
+        {
+          "source_record": 183,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 184,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 92,
+      "particles": [
+        {
+          "source_record": 185,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 186,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 93,
+      "particles": [
+        {
+          "source_record": 187,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 188,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 94,
+      "particles": [
+        {
+          "source_record": 189,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 190,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 95,
+      "particles": [
+        {
+          "source_record": 191,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 192,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 96,
+      "particles": [
+        {
+          "source_record": 193,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 194,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 97,
+      "particles": [
+        {
+          "source_record": 195,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 196,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 98,
+      "particles": [
+        {
+          "source_record": 197,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 198,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 99,
+      "particles": [
+        {
+          "source_record": 199,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 200,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 100,
+      "particles": [
+        {
+          "source_record": 201,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 202,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 101,
+      "particles": [
+        {
+          "source_record": 203,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 204,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 102,
+      "particles": [
+        {
+          "source_record": 205,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 206,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 103,
+      "particles": [
+        {
+          "source_record": 207,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 208,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 104,
+      "particles": [
+        {
+          "source_record": 209,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 210,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 105,
+      "particles": [
+        {
+          "source_record": 211,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 212,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 106,
+      "particles": [
+        {
+          "source_record": 213,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 214,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 107,
+      "particles": [
+        {
+          "source_record": 215,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 216,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 108,
+      "particles": [
+        {
+          "source_record": 217,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 218,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 109,
+      "particles": [
+        {
+          "source_record": 219,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 220,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 110,
+      "particles": [
+        {
+          "source_record": 221,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 222,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 111,
+      "particles": [
+        {
+          "source_record": 223,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 224,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 112,
+      "particles": [
+        {
+          "source_record": 225,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 226,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 113,
+      "particles": [
+        {
+          "source_record": 227,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 228,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 114,
+      "particles": [
+        {
+          "source_record": 229,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 230,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 115,
+      "particles": [
+        {
+          "source_record": 231,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 232,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 116,
+      "particles": [
+        {
+          "source_record": 233,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 234,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 117,
+      "particles": [
+        {
+          "source_record": 235,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 236,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 118,
+      "particles": [
+        {
+          "source_record": 237,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 238,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 119,
+      "particles": [
+        {
+          "source_record": 239,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 240,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 120,
+      "particles": [
+        {
+          "source_record": 241,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 242,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 121,
+      "particles": [
+        {
+          "source_record": 243,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 244,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 122,
+      "particles": [
+        {
+          "source_record": 245,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 246,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 123,
+      "particles": [
+        {
+          "source_record": 247,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 248,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 124,
+      "particles": [
+        {
+          "source_record": 249,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 250,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 125,
+      "particles": [
+        {
+          "source_record": 251,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 252,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 126,
+      "particles": [
+        {
+          "source_record": 253,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 254,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    },
+    {
+      "event_id": 127,
+      "particles": [
+        {
+          "source_record": 255,
+          "role": "electron",
+          "event_slot": "electron",
+          "pdg_id": 11
+        },
+        {
+          "source_record": 256,
+          "role": "positron",
+          "event_slot": "positron",
+          "pdg_id": -11
+        }
+      ]
+    }
+  ],
+  "generation": {
+    "kind": "manufactured back-to-back transport fixture; no cross-section claim",
+    "events": 128,
+    "tracks": 256,
+    "energy_GeV_per_particle": 125,
+    "electron_mass_GeV": 0.00051099895,
+    "electron_theta_from_positive_z_deg": 1,
+    "positron_theta_from_positive_z_deg": 179,
+    "azimuth_seed": 6102701,
+    "azimuth_rng": "Python random.Random, MT19937",
+    "azimuth": "uniform [0,2pi), opposite vectors",
+    "vertex_nm": [
+      0,
+      0,
+      0
+    ],
+    "injection_diagonal": 15,
+    "injection_time_counter": 240,
+    "n_z": 16,
+    "n_t": 2,
+    "native_seed": 6102711,
+    "selection": "all records",
+    "signed_energy_convention": "native +125 electron; -125 positron"
+  }
+}

@@ -1,0 +1,549 @@
+{
+  "cases": [
+    {
+      "case": "lep_zero01",
+      "group": "lep_zero",
+      "pair_model": null,
+      "wall_seconds": 14.920082279946655,
+      "user_cpu_seconds": 11.36,
+      "system_cpu_seconds": 2.64,
+      "max_rss_KiB": 119012
+    },
+    {
+      "case": "ilc_m1_seed01",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "wall_seconds": 54.30366890504956,
+      "user_cpu_seconds": 51.35,
+      "system_cpu_seconds": 1.48,
+      "max_rss_KiB": 705856
+    },
+    {
+      "case": "ilc_m2_seed01",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "wall_seconds": 59.60164497606456,
+      "user_cpu_seconds": 56.69,
+      "system_cpu_seconds": 1.53,
+      "max_rss_KiB": 660100
+    },
+    {
+      "case": "halhf_m1_seed01",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "wall_seconds": 70.61819884181023,
+      "user_cpu_seconds": 68.78,
+      "system_cpu_seconds": 1.37,
+      "max_rss_KiB": 2214420
+    },
+    {
+      "case": "halhf_m2_seed01",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "wall_seconds": 71.65294822794385,
+      "user_cpu_seconds": 69.76,
+      "system_cpu_seconds": 1.36,
+      "max_rss_KiB": 2121000
+    },
+    {
+      "case": "lep_field01",
+      "group": "lep_on",
+      "pair_model": null,
+      "wall_seconds": 592.1734103420749,
+      "user_cpu_seconds": 582.59,
+      "system_cpu_seconds": 5.62,
+      "max_rss_KiB": 3424008
+    },
+    {
+      "case": "lep_zero02",
+      "group": "lep_zero",
+      "pair_model": null,
+      "wall_seconds": 14.952828594017774,
+      "user_cpu_seconds": 11.28,
+      "system_cpu_seconds": 2.78,
+      "max_rss_KiB": 117264
+    },
+    {
+      "case": "ilc_m1_seed02",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "wall_seconds": 55.29500432009809,
+      "user_cpu_seconds": 52.06,
+      "system_cpu_seconds": 1.55,
+      "max_rss_KiB": 710592
+    },
+    {
+      "case": "ilc_m1_seed03",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "wall_seconds": 56.03194720786996,
+      "user_cpu_seconds": 52.69,
+      "system_cpu_seconds": 1.57,
+      "max_rss_KiB": 696252
+    },
+    {
+      "case": "ilc_m1_seed04",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "wall_seconds": 54.701967941829935,
+      "user_cpu_seconds": 51.73,
+      "system_cpu_seconds": 1.5,
+      "max_rss_KiB": 655192
+    },
+    {
+      "case": "ilc_m1_seed05",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "wall_seconds": 54.94736238080077,
+      "user_cpu_seconds": 52.04,
+      "system_cpu_seconds": 1.46,
+      "max_rss_KiB": 684688
+    },
+    {
+      "case": "ilc_m1_seed06",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "wall_seconds": 55.219918033108115,
+      "user_cpu_seconds": 52.25,
+      "system_cpu_seconds": 1.56,
+      "max_rss_KiB": 702180
+    },
+    {
+      "case": "ilc_m1_seed07",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "wall_seconds": 54.216285195201635,
+      "user_cpu_seconds": 51.33,
+      "system_cpu_seconds": 1.51,
+      "max_rss_KiB": 691008
+    },
+    {
+      "case": "ilc_m1_seed08",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "wall_seconds": 54.15334137598984,
+      "user_cpu_seconds": 51.27,
+      "system_cpu_seconds": 1.46,
+      "max_rss_KiB": 675892
+    },
+    {
+      "case": "ilc_m1_seed09",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "wall_seconds": 54.511498464038596,
+      "user_cpu_seconds": 51.62,
+      "system_cpu_seconds": 1.53,
+      "max_rss_KiB": 729400
+    },
+    {
+      "case": "ilc_m1_seed10",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "wall_seconds": 54.51977960416116,
+      "user_cpu_seconds": 51.57,
+      "system_cpu_seconds": 1.54,
+      "max_rss_KiB": 680176
+    },
+    {
+      "case": "ilc_m1_seed12",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "wall_seconds": 55.50903959595598,
+      "user_cpu_seconds": 52.46,
+      "system_cpu_seconds": 1.6,
+      "max_rss_KiB": 725676
+    },
+    {
+      "case": "ilc_m1_seed11",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "wall_seconds": 58.81837767898105,
+      "user_cpu_seconds": 55.89,
+      "system_cpu_seconds": 1.46,
+      "max_rss_KiB": 699868
+    },
+    {
+      "case": "ilc_m2_seed02",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "wall_seconds": 59.79496945394203,
+      "user_cpu_seconds": 56.69,
+      "system_cpu_seconds": 1.6,
+      "max_rss_KiB": 711980
+    },
+    {
+      "case": "ilc_m2_seed03",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "wall_seconds": 59.151395933004096,
+      "user_cpu_seconds": 56.18,
+      "system_cpu_seconds": 1.48,
+      "max_rss_KiB": 657448
+    },
+    {
+      "case": "ilc_m2_seed04",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "wall_seconds": 60.159814764978364,
+      "user_cpu_seconds": 57.12,
+      "system_cpu_seconds": 1.57,
+      "max_rss_KiB": 717812
+    },
+    {
+      "case": "ilc_m2_seed05",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "wall_seconds": 56.962287249974906,
+      "user_cpu_seconds": 54.12,
+      "system_cpu_seconds": 1.46,
+      "max_rss_KiB": 697540
+    },
+    {
+      "case": "ilc_m2_seed06",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "wall_seconds": 60.657412067987025,
+      "user_cpu_seconds": 57.77,
+      "system_cpu_seconds": 1.45,
+      "max_rss_KiB": 650884
+    },
+    {
+      "case": "ilc_m2_seed07",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "wall_seconds": 60.499999419087544,
+      "user_cpu_seconds": 57.56,
+      "system_cpu_seconds": 1.53,
+      "max_rss_KiB": 676540
+    },
+    {
+      "case": "ilc_m2_seed08",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "wall_seconds": 58.343734527006745,
+      "user_cpu_seconds": 55.3,
+      "system_cpu_seconds": 1.55,
+      "max_rss_KiB": 706944
+    },
+    {
+      "case": "ilc_m2_seed10",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "wall_seconds": 59.78366552689113,
+      "user_cpu_seconds": 56.76,
+      "system_cpu_seconds": 1.56,
+      "max_rss_KiB": 690128
+    },
+    {
+      "case": "ilc_m2_seed11",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "wall_seconds": 58.533484257990494,
+      "user_cpu_seconds": 54.78,
+      "system_cpu_seconds": 1.54,
+      "max_rss_KiB": 697536
+    },
+    {
+      "case": "ilc_m2_seed09",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "wall_seconds": 71.31127272802405,
+      "user_cpu_seconds": 67.35,
+      "system_cpu_seconds": 1.56,
+      "max_rss_KiB": 692088
+    },
+    {
+      "case": "ilc_m2_seed12",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "wall_seconds": 59.01288700196892,
+      "user_cpu_seconds": 56.07,
+      "system_cpu_seconds": 1.52,
+      "max_rss_KiB": 695992
+    },
+    {
+      "case": "halhf_m1_seed02",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "wall_seconds": 72.99509563203901,
+      "user_cpu_seconds": 71.02,
+      "system_cpu_seconds": 1.43,
+      "max_rss_KiB": 2179932
+    },
+    {
+      "case": "halhf_m1_seed03",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "wall_seconds": 77.73557715700008,
+      "user_cpu_seconds": 75.88,
+      "system_cpu_seconds": 1.27,
+      "max_rss_KiB": 2109820
+    },
+    {
+      "case": "halhf_m1_seed04",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "wall_seconds": 73.97034758492373,
+      "user_cpu_seconds": 72.08,
+      "system_cpu_seconds": 1.32,
+      "max_rss_KiB": 2158548
+    },
+    {
+      "case": "halhf_m1_seed05",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "wall_seconds": 70.06376358610578,
+      "user_cpu_seconds": 68.17,
+      "system_cpu_seconds": 1.37,
+      "max_rss_KiB": 2158400
+    },
+    {
+      "case": "halhf_m1_seed06",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "wall_seconds": 71.76597291696817,
+      "user_cpu_seconds": 69.9,
+      "system_cpu_seconds": 1.31,
+      "max_rss_KiB": 2121108
+    },
+    {
+      "case": "lep_field05",
+      "group": "lep_on",
+      "pair_model": null,
+      "wall_seconds": 602.9582999811973,
+      "user_cpu_seconds": 592.75,
+      "system_cpu_seconds": 5.48,
+      "max_rss_KiB": 3403908
+    },
+    {
+      "case": "halhf_m1_seed07",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "wall_seconds": 73.69539366988465,
+      "user_cpu_seconds": 71.76,
+      "system_cpu_seconds": 1.34,
+      "max_rss_KiB": 2151964
+    },
+    {
+      "case": "lep_field03",
+      "group": "lep_on",
+      "pair_model": null,
+      "wall_seconds": 611.6369959739968,
+      "user_cpu_seconds": 602.32,
+      "system_cpu_seconds": 5.08,
+      "max_rss_KiB": 3508492
+    },
+    {
+      "case": "lep_field10",
+      "group": "lep_on",
+      "pair_model": null,
+      "wall_seconds": 617.4635735538322,
+      "user_cpu_seconds": 607.16,
+      "system_cpu_seconds": 5.48,
+      "max_rss_KiB": 3558996
+    },
+    {
+      "case": "lep_field02",
+      "group": "lep_on",
+      "pair_model": null,
+      "wall_seconds": 619.0832336209714,
+      "user_cpu_seconds": 607.39,
+      "system_cpu_seconds": 5.0,
+      "max_rss_KiB": 3393804
+    },
+    {
+      "case": "lep_field08",
+      "group": "lep_on",
+      "pair_model": null,
+      "wall_seconds": 619.9706967829261,
+      "user_cpu_seconds": 609.19,
+      "system_cpu_seconds": 5.73,
+      "max_rss_KiB": 3516784
+    },
+    {
+      "case": "halhf_m1_seed08",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "wall_seconds": 70.15005196398124,
+      "user_cpu_seconds": 68.21,
+      "system_cpu_seconds": 1.36,
+      "max_rss_KiB": 2123812
+    },
+    {
+      "case": "lep_field04",
+      "group": "lep_on",
+      "pair_model": null,
+      "wall_seconds": 627.6250212308951,
+      "user_cpu_seconds": 617.89,
+      "system_cpu_seconds": 5.18,
+      "max_rss_KiB": 3423332
+    },
+    {
+      "case": "halhf_m1_seed09",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "wall_seconds": 74.50160767999478,
+      "user_cpu_seconds": 72.51,
+      "system_cpu_seconds": 1.36,
+      "max_rss_KiB": 2112712
+    },
+    {
+      "case": "lep_field07",
+      "group": "lep_on",
+      "pair_model": null,
+      "wall_seconds": 646.3316127848811,
+      "user_cpu_seconds": 635.82,
+      "system_cpu_seconds": 5.59,
+      "max_rss_KiB": 3405128
+    },
+    {
+      "case": "lep_field09",
+      "group": "lep_on",
+      "pair_model": null,
+      "wall_seconds": 660.8453812000807,
+      "user_cpu_seconds": 649.77,
+      "system_cpu_seconds": 5.7,
+      "max_rss_KiB": 3452312
+    },
+    {
+      "case": "lep_field06",
+      "group": "lep_on",
+      "pair_model": null,
+      "wall_seconds": 667.9630270409398,
+      "user_cpu_seconds": 657.55,
+      "system_cpu_seconds": 5.09,
+      "max_rss_KiB": 3448196
+    },
+    {
+      "case": "halhf_m1_seed10",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "wall_seconds": 73.08856544806622,
+      "user_cpu_seconds": 71.06,
+      "system_cpu_seconds": 1.46,
+      "max_rss_KiB": 2146776
+    },
+    {
+      "case": "halhf_m1_seed12",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "wall_seconds": 72.54808044992387,
+      "user_cpu_seconds": 70.66,
+      "system_cpu_seconds": 1.37,
+      "max_rss_KiB": 2108108
+    },
+    {
+      "case": "halhf_m2_seed02",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "wall_seconds": 75.48858329607174,
+      "user_cpu_seconds": 73.47,
+      "system_cpu_seconds": 1.43,
+      "max_rss_KiB": 2177024
+    },
+    {
+      "case": "halhf_m2_seed03",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "wall_seconds": 73.97134382091463,
+      "user_cpu_seconds": 71.64,
+      "system_cpu_seconds": 1.44,
+      "max_rss_KiB": 2225476
+    },
+    {
+      "case": "halhf_m2_seed04",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "wall_seconds": 75.06656636297703,
+      "user_cpu_seconds": 73.11,
+      "system_cpu_seconds": 1.39,
+      "max_rss_KiB": 2179476
+    },
+    {
+      "case": "halhf_m1_seed11",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "wall_seconds": 86.19360985886306,
+      "user_cpu_seconds": 84.19,
+      "system_cpu_seconds": 1.38,
+      "max_rss_KiB": 2100312
+    },
+    {
+      "case": "halhf_m2_seed05",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "wall_seconds": 75.96927062585019,
+      "user_cpu_seconds": 74.02,
+      "system_cpu_seconds": 1.35,
+      "max_rss_KiB": 2060608
+    },
+    {
+      "case": "halhf_m2_seed06",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "wall_seconds": 77.68031951412559,
+      "user_cpu_seconds": 75.68,
+      "system_cpu_seconds": 1.38,
+      "max_rss_KiB": 2126740
+    },
+    {
+      "case": "halhf_m2_seed07",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "wall_seconds": 71.94630394503474,
+      "user_cpu_seconds": 70.06,
+      "system_cpu_seconds": 1.25,
+      "max_rss_KiB": 1993732
+    },
+    {
+      "case": "halhf_m2_seed08",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "wall_seconds": 75.3205802210141,
+      "user_cpu_seconds": 73.39,
+      "system_cpu_seconds": 1.41,
+      "max_rss_KiB": 2252392
+    },
+    {
+      "case": "halhf_m2_seed09",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "wall_seconds": 72.9283019581344,
+      "user_cpu_seconds": 71.06,
+      "system_cpu_seconds": 1.34,
+      "max_rss_KiB": 2104308
+    },
+    {
+      "case": "halhf_m2_seed11",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "wall_seconds": 71.38296521198936,
+      "user_cpu_seconds": 69.49,
+      "system_cpu_seconds": 1.41,
+      "max_rss_KiB": 2084924
+    },
+    {
+      "case": "halhf_m2_seed12",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "wall_seconds": 78.73460076609626,
+      "user_cpu_seconds": 76.78,
+      "system_cpu_seconds": 1.44,
+      "max_rss_KiB": 2174560
+    },
+    {
+      "case": "halhf_m2_seed10",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "wall_seconds": 124.50043148896657,
+      "user_cpu_seconds": 122.21,
+      "system_cpu_seconds": 1.51,
+      "max_rss_KiB": 2131428
+    }
+  ],
+  "sum_user_cpu_seconds": 9282.61,
+  "sum_system_cpu_seconds": 128.99,
+  "sum_case_wall_seconds": 9513.933402224444,
+  "maximum_case_rss_KiB": 3558996,
+  "interpretation": "Sums cover sixty serial collision processes; they are not Slurm allocation time. Peak RSS is the largest individual collision, not simultaneous node memory."
+}

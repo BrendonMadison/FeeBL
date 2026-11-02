@@ -1,0 +1,107 @@
+{
+  "backend": "gpu",
+  "seed": 72942006,
+  "status": "EXECUTED",
+  "returncode": 0,
+  "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+  "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+  "physics_input_sha256": "cecdafaf8234aafaf489a51d6f453ed01178e19f4f712b7d256cccd2e9b572c4",
+  "elapsed_seconds": 65.2268788269721,
+  "assigned_cpu_ids": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "cpu_threads": 16,
+  "gpu_count": 1,
+  "resources": {
+    "user_cpu_seconds": 235.47,
+    "system_cpu_seconds": 2.36,
+    "max_rss_KiB": 4132236.0
+  },
+  "native_runtime": {
+    "active_workers": 16,
+    "schedule": "gpu_mode4_wave_batched_fields_parallel_host_physics",
+    "complete_collision_counts": {
+      "diagonals": 127,
+      "waves": 254,
+      "encounters": 8192,
+      "full_parallel_make_step_encounters": 8192
+    },
+    "gpu4": {
+      "implementation": "encounter-dag-wave-batched-planmany-fields-v1",
+      "batch_width": "16",
+      "batch_calls": "632",
+      "encounters": "8192",
+      "padded_fft_slots": "1920",
+      "synchronizations": "632",
+      "per_encounter_synchronizations": "0",
+      "h2d_operations": "1896",
+      "d2h_operations": "1896",
+      "h2d_bytes": "4928600064",
+      "d2h_bytes": "4929028096",
+      "kernel_launches": "5056",
+      "cufft_executes": "1264",
+      "setup_h2d_operations": "1",
+      "setup_h2d_bytes": "33554432",
+      "setup_synchronizations": "1",
+      "plan_creations": "1",
+      "device_allocations": "12",
+      "pinned_host_allocations": "6",
+      "setup_ms": "168.59638000000001",
+      "host_pack_ms": "391.6298920000001",
+      "h2d_ms": "415.59779221564531",
+      "kernel_ms": "6427.6183309555054",
+      "d2h_ms": "381.95081638172269",
+      "host_unpack_ms": "321.22383600000018",
+      "boundary_ms": "8440.3253480000003",
+      "resident_bytes": "858113920",
+      "cufft_workspace_bytes": "0",
+      "deposit_beam1_in": "127665024",
+      "deposit_beam1_out": "0",
+      "deposit_beam2_in": "127662848",
+      "deposit_beam2_out": "0",
+      "gather_beam1_in": "127665024",
+      "gather_beam1_out": "0",
+      "gather_beam2_in": "127662848",
+      "gather_beam2_out": "0",
+      "host_phi_materialized": "0",
+      "host_physics": "legacy_complete_ordered",
+      "rng": "legacy_host_ordered",
+      "device": "\"Tesla",
+      "memory_budget_bytes": "27258047692"
+    }
+  },
+  "schema": "feebl.backend-comparison.execution/1",
+  "gpu_uuid": "V100-1",
+  "original_execution_sha256": "f7a4af6a0dd354c07c33db360d7b0f3e22ccdbcaa1184b86fd32628463c09798",
+  "original_input_sha256": "d0363c3f34789fec5b7e1458e8b0e6344e055cb5d916f9448b3124bf2b9ad30c",
+  "outputs": {
+    "lumi.ee.out.dLdW.fne": {
+      "sha256": "5395cea86be2d004c03ec6bd747f06b19d907d0778c64dd0790f61d048dca269",
+      "bytes": 19307
+    },
+    "stderr.txt": {
+      "sha256": "9c32fd1a13d4c7e25be217c79505ca50d0888e45529683efcfbe5146ff857dbd",
+      "bytes": 30081
+    },
+    "acc.dat": {
+      "sha256": "5793c37141026307d0947aa52126707d7c11173dfa9ba27a34f7766f497ebe7b",
+      "bytes": 2878
+    }
+  },
+  "input_sha256": "5793c37141026307d0947aa52126707d7c11173dfa9ba27a34f7766f497ebe7b"
+}

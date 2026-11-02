@@ -1,0 +1,5 @@
+parameter_set,sqrt_s_GeV,particles_per_bunch,sigma_x_nm,sigma_y_nm,sigma_z_um,mean_Upsilon,source,value_type
+ILC_500_2014,500,20000000000.0,474,5.9,300,0.062,Esberg2014 Table I,published_characteristic_mean_not_peak
+ILC_1000_2014,1000,17400000000.0,335,2.7,225,0.2,Esberg2014 Table I,published_characteristic_mean_not_peak
+CLIC_500_2014,500,6800000000.0,202,2.3,72,0.21,Esberg2014 Table I,published_characteristic_mean_not_peak
+CLIC_3000_2014,3000,3720000000.0,45,1,44,4.9,Esberg2014 Table I,published_characteristic_mean_not_peak

@@ -1,0 +1,28 @@
+label,arm,baseline,channel,change_mb,sem_mb,definition
+EPA refinements,finite_mass_epa_ring,legacy_epa_ring,BW,-0.009607587525032102,0.0892367273115564,"Finite-mass flux, alpha-constant adjustment and stable angular sampler together; the Born normalization is already corrected in both arms."
+EPA refinements,finite_mass_epa_ring,legacy_epa_ring,BH,0.12791409030739231,0.3948593761705094,"Finite-mass flux, alpha-constant adjustment and stable angular sampler together; the Born normalization is already corrected in both arms."
+EPA refinements,finite_mass_epa_ring,legacy_epa_ring,LL,-1.3210634903735787,0.08904598688714932,"Finite-mass flux, alpha-constant adjustment and stable angular sampler together; the Born normalization is already corrected in both arms."
+EPA spatial profile,finite_mass_epa_profile,finite_mass_epa_ring,BW,0.005838009951090406,0.05804970375032787,Change the transverse placement prescription at fixed finite-mass EPA treatment.
+EPA spatial profile,finite_mass_epa_profile,finite_mass_epa_ring,BH,-0.48722062779770425,0.12570407129525804,Change the transverse placement prescription at fixed finite-mass EPA treatment.
+EPA spatial profile,finite_mass_epa_profile,finite_mass_epa_ring,LL,-0.450222967418874,0.08050657704993076,Change the transverse placement prescription at fixed finite-mass EPA treatment.
+"Full treatment, ring",exact_ring,finite_mass_epa_ring,BW,-0.07878385241415153,0.07434039729297855,"Change hard amplitudes, proposal support, exact kinematics, virtuality and identical-lepton treatment together; the common placement rule does not imply an identical sampled spatial distribution."
+"Full treatment, ring",exact_ring,finite_mass_epa_ring,BH,0.7732350785247633,0.19885184640006387,"Change hard amplitudes, proposal support, exact kinematics, virtuality and identical-lepton treatment together; the common placement rule does not imply an identical sampled spatial distribution."
+"Full treatment, ring",exact_ring,finite_mass_epa_ring,LL,0.568747386933655,0.06355688333850512,"Change hard amplitudes, proposal support, exact kinematics, virtuality and identical-lepton treatment together; the common placement rule does not imply an identical sampled spatial distribution."
+"Full treatment, profile",exact_profile,finite_mass_epa_profile,BW,-0.012641293502979378,0.02926487620163433,Change the full hard-process and phase-space treatment while retaining the profile placement rule.
+"Full treatment, profile",exact_profile,finite_mass_epa_profile,BH,1.0198304576708566,0.14772573362268496,Change the full hard-process and phase-space treatment while retaining the profile placement rule.
+"Full treatment, profile",exact_profile,finite_mass_epa_profile,LL,0.851747324901023,0.0456022349968231,Change the full hard-process and phase-space treatment while retaining the profile placement rule.
+Full-QED spatial profile,exact_profile,exact_ring,BW,0.07198056886226256,0.05657109017584663,Change the placement prescription within the full-QED calculation.
+Full-QED spatial profile,exact_profile,exact_ring,BH,-0.24062524865161095,0.27930492639309046,Change the placement prescription within the full-QED calculation.
+Full-QED spatial profile,exact_profile,exact_ring,LL,-0.16722302945150602,0.0819845007803312,Change the placement prescription within the full-QED calculation.
+Electron-mass cutoff,finite_mass_epa_cain_qmax,finite_mass_epa_ring,BW,-0.0667638900504055,0.03867613449256421,Apply Q squared no greater than electron mass squared within EPA; this does not implement the complete CAIN spatial model.
+Electron-mass cutoff,finite_mass_epa_cain_qmax,finite_mass_epa_ring,BH,-2.9149670426386933,0.1981585829885595,Apply Q squared no greater than electron mass squared within EPA; this does not implement the complete CAIN spatial model.
+Electron-mass cutoff,finite_mass_epa_cain_qmax,finite_mass_epa_ring,LL,-4.062547678034338,0.09339974127881073,Apply Q squared no greater than electron mass squared within EPA; this does not implement the complete CAIN spatial model.
+"Remove suppression, EPA",finite_mass_epa_no_beam_size,finite_mass_epa_ring,BW,0.010907360705899372,0.05550706701294863,Disable finite transverse beam-size suppression within EPA.
+"Remove suppression, EPA",finite_mass_epa_no_beam_size,finite_mass_epa_ring,BH,27.86267786475736,0.3154671615889408,Disable finite transverse beam-size suppression within EPA.
+"Remove suppression, EPA",finite_mass_epa_no_beam_size,finite_mass_epa_ring,LL,11.796794504977736,0.19479189099828068,Disable finite transverse beam-size suppression within EPA.
+"Remove suppression, full",exact_no_beam_size,exact_ring,BW,0.07619661946897516,0.03498063764581254,Disable finite transverse beam-size suppression within full QED.
+"Remove suppression, full",exact_no_beam_size,exact_ring,BH,27.323138161163328,0.10320336167567215,Disable finite transverse beam-size suppression within full QED.
+"Remove suppression, full",exact_no_beam_size,exact_ring,LL,12.414623545056909,0.1299084752949023,Disable finite transverse beam-size suppression within full QED.
+Expand domain,exact_profile_expanded_domain,exact_profile,BW,0.009514118073268074,0.03857028474146555,Double both transverse extents and cell counts while keeping cell spacing fixed.
+Expand domain,exact_profile_expanded_domain,exact_profile,BH,-0.05659900482253022,0.25168999580039225,Double both transverse extents and cell counts while keeping cell spacing fixed.
+Expand domain,exact_profile_expanded_domain,exact_profile,LL,-0.12320647430807341,0.08116845621989374,Double both transverse extents and cell counts while keeping cell spacing fixed.

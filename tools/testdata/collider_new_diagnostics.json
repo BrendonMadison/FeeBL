@@ -1,0 +1,555 @@
+{
+  "description": "Synthetic contract/UI fixture, not a physics result",
+  "mono": {
+    "schema_version": "feebl.collider.monochromatization/1",
+    "inputs": {
+      "energy_GeV": [
+        125.0,
+        125.0
+      ],
+      "sigma_beta_x_m": [
+        5.154800000000001e-07,
+        5.154800000000001e-07
+      ],
+      "sigma_delta": [
+        0.001,
+        0.001
+      ],
+      "requested_espread": [
+        0.001,
+        0.001
+      ],
+      "ip_dispersion_m": [
+        0,
+        0
+      ],
+      "do_espread": 1,
+      "which_espread": [
+        3,
+        3
+      ],
+      "dist_x": [
+        0.0,
+        0.0
+      ],
+      "native_beam_angles_x_rad": [
+        0,
+        0
+      ],
+      "native_beam_angles_y_rad": [
+        0.0,
+        0.0
+      ],
+      "crab_mode": [
+        0,
+        0
+      ],
+      "waist_mode": [
+        0,
+        0
+      ]
+    },
+    "native_manifest_parameters": {
+      "energy_GeV": [
+        125,
+        125
+      ],
+      "espread": [
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "ip_dispersion_m": [
+        0,
+        0
+      ],
+      "native_beam_angles_x_rad": [
+        0,
+        0
+      ],
+      "native_beam_angles_y_rad": [
+        0,
+        0
+      ],
+      "crab_mode": [
+        0,
+        0
+      ],
+      "waist_mode": [
+        0,
+        0
+      ]
+    },
+    "ideal": {
+      "available": true,
+      "value": 1.0,
+      "reason": null,
+      "label": "Ideal Gaussian head-on monochromatization factor",
+      "unit": "1",
+      "scope": "static evaluated-optics reference; not a frame or luminosity-weighted measurement"
+    },
+    "definition": {
+      "model": "independent Gaussian input energies and horizontal betatron coordinates; head-on spatial overlap; first-order invariant-mass width",
+      "formula": "V=s1^2+s2^2; B=b1^2+b2^2; Vcoll=(V*B+s1^2*s2^2*(D1+D2)^2)/(B+D1^2*s1^2+D2^2*s2^2); ideal=sqrt(V/Vcoll)",
+      "meaning": "Ideal 1 means no dispersion-selection narrowing. Measured width ratio >1 means narrower than the nominal input reference; <1 means broader.",
+      "frame_resolution_rule": "Positive luminosity, zero under/overflow, at least two positive-weight bins, and estimated RMS at least the widest positive-weight bin width.",
+      "limitations": [
+        "Evaluated out.dat parameters retain native printed rounding; sigma_x is interpreted as the configured pre-dispersion betatron size, not a measurement of loaded particles.",
+        "The ideal factor omits crossing, hourglass, collective fields, beamstrahlung, angular spread and equilibrium changes; zero dispersion returns reference1 even for a non-head-on actual run.",
+        "Input-width reference is an independent head-on first-order approximation. The observed spectrum includes native collision effects; this ratio does not isolate dispersion gain.",
+        "Full RMS is tail-sensitive and is not a Gaussian core fit. Frame bin-center estimates omit within-bin variance and require the stated resolution rule.",
+        "Total is formed from the integrated spectrum; it is not an average of frame ratios. No independent-seed uncertainty is inferred."
+      ]
+    },
+    "source_artifacts": {
+      "native_summary": {
+        "path": "fixture_out.dat",
+        "bytes": 10,
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "analysis": {
+        "path": "fixture_analysis.json",
+        "bytes": 20,
+        "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "diagnostics": {
+        "path": "fixture_diagnostics.json",
+        "bytes": 30,
+        "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      }
+    },
+    "adapter_sha256": "e5a536709759fcf0cd432cec4bd2eecddea5d347dcaedabd47032b0256dcfe98",
+    "references": [
+      {
+        "title": "Valdivia Garcia and Zimmermann, The challenge of monochromatization (2021)",
+        "url": "https://link.springer.com/article/10.1140/epjp/s13360-021-02151-y"
+      },
+      {
+        "title": "Monochromatization optics for FCC-ee, IPAC2022 Eq. (3)",
+        "url": "https://proceedings.jacow.org/ipac2022/papers/wepopt017.pdf"
+      }
+    ],
+    "measured": {
+      "label": "Measured width ratio to input reference",
+      "definition": "sigma_W,input / observed full-spectrum RMS",
+      "reference_sigma_W_GeV": 0.17677669529663687,
+      "reference_scope": "independent head-on input energies; first-order approximation; not a matched collision control",
+      "total": {
+        "available": true,
+        "value": 0.35355339059327373,
+        "reason": null,
+        "sigma_W_GeV": 0.5,
+        "estimator": "native unbinned centered full-spectrum RMS; printed native precision"
+      },
+      "frames": [
+        {
+          "available": false,
+          "value": null,
+          "reason": "Frame needs positive luminosity in at least two distinct bins.",
+          "sigma_W_GeV": null,
+          "estimator": "luminosity-weighted bin-center population RMS; not a core fit",
+          "id": 0,
+          "diagonal_start": 0,
+          "diagonal_end": 0
+        },
+        {
+          "available": true,
+          "value": 0.35355339059327373,
+          "reason": null,
+          "sigma_W_GeV": 0.5,
+          "estimator": "luminosity-weighted bin-center population RMS; not a core fit",
+          "id": 1,
+          "diagonal_start": 1,
+          "diagonal_end": 1
+        }
+      ]
+    },
+    "matched_control": {
+      "available": false,
+      "value": null,
+      "reason": "No authenticated matched reference run and frozen width estimator supplied."
+    }
+  },
+  "secondary": {
+    "schema_version": "feebl.collider.secondary-kinematics/1",
+    "phase": "final",
+    "coordinate_frame": "native_pair_tracking",
+    "frame_availability": false,
+    "evaluated_flags": {
+      "do_pairs": 1,
+      "load_events": 0,
+      "track_pairs": 1,
+      "store_pairs": 1,
+      "pair_ratio": 1.0,
+      "pair_ecut": 0.0005,
+      "beam_pair": 0,
+      "do_comp": 0,
+      "do_prod": 0,
+      "do_bhabhas": null
+    },
+    "source_artifacts": {
+      "summary": {
+        "path": "fixture_out.dat",
+        "bytes": 10,
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "pairs": {
+        "path": "fixture_pairs.dat",
+        "bytes": 40,
+        "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+      }
+    },
+    "definitions": {
+      "theta": "atan2(hypot(vx,vy),vz), relative to native +z; not a reconciled detector arm",
+      "theta_folded": "atan2(hypot(vx,vy),abs(vz)), relative to the nearer native +z or -z axis",
+      "pT": "abs(signed_energy_GeV)*hypot(vx,vy), with stored vx,vy=p/E; GeV/c",
+      "population": "final stored tracked secondary particles; one record is one particle, not one pair",
+      "time": "final tracking output only; no per-frame tracking history is exported",
+      "joint": "logarithmic axes; nonpositive theta/pT retained in explicit exclusion counts",
+      "signed_energy": "native charge encoding retained as sign counts; no detector-arm or species inference",
+      "limitations": "native serialization precision; no row-level physical weights or separable recoil-origin tag"
+    },
+    "record_count_verification": {
+      "available": true,
+      "expected_records": 8,
+      "actual_records": 8,
+      "reason": "Unmixed generated pairs; pair_ratio=1 and pair_ecut no greater than rest mass; matches native n_pairs"
+    },
+    "populations": {
+      "pairs": {
+        "label": "Produced pairs after beam-field tracking",
+        "available": true,
+        "reason": null,
+        "nrecords": 8,
+        "joint": {
+          "theta_edges_rad": [
+            0.01,
+            0.1,
+            1
+          ],
+          "pT_edges_GeV": [
+            0.001,
+            0.1,
+            10
+          ],
+          "storage_order": "row-major-pT-theta",
+          "counts": [
+            0,
+            4,
+            0,
+            4
+          ],
+          "samples": 8,
+          "in_range_records": 8,
+          "excluded": {
+            "theta_nonpositive": 0,
+            "pT_nonpositive": 0,
+            "both_nonpositive": 0,
+            "nonpositive_records": 0,
+            "underflow_records": 0,
+            "overflow_records": 0
+          }
+        },
+        "joint_folded": {
+          "theta_edges_rad": [
+            0.01,
+            0.1,
+            1
+          ],
+          "pT_edges_GeV": [
+            0.001,
+            0.1,
+            10
+          ],
+          "storage_order": "row-major-pT-theta",
+          "counts": [
+            0,
+            4,
+            0,
+            4
+          ],
+          "samples": 8,
+          "in_range_records": 8,
+          "excluded": {
+            "theta_nonpositive": 0,
+            "pT_nonpositive": 0,
+            "both_nonpositive": 0,
+            "nonpositive_records": 0,
+            "underflow_records": 0,
+            "overflow_records": 0
+          }
+        },
+        "distributions": {
+          "theta": {
+            "quantity": "native polar angle from +z",
+            "unit": "rad",
+            "weight_unit": "stored particle records",
+            "weighting": "one per final stored tracked secondary record; no luminosity or pair-ratio reweighting",
+            "normalization": "bin-integrated",
+            "bins": [
+              {
+                "low": 0,
+                "high": 0.5,
+                "weight": 4
+              },
+              {
+                "low": 0.5,
+                "high": 1,
+                "weight": 4
+              }
+            ],
+            "samples": 8,
+            "underflow": 0,
+            "overflow": 0,
+            "total_weight": 8,
+            "statistics": {
+              "mean": 0.45,
+              "variance": 0.0525,
+              "min": 0.1,
+              "max": 0.8,
+              "mode": 0.25,
+              "mode_method": "centre of highest count-density histogram bin; approximate"
+            }
+          },
+          "theta_folded": {
+            "quantity": "native polar angle from nearer +z or -z axis",
+            "unit": "rad",
+            "weight_unit": "stored particle records",
+            "weighting": "one per final stored tracked secondary record; no luminosity or pair-ratio reweighting",
+            "normalization": "bin-integrated",
+            "bins": [
+              {
+                "low": 0,
+                "high": 0.5,
+                "weight": 4
+              },
+              {
+                "low": 0.5,
+                "high": 1,
+                "weight": 4
+              }
+            ],
+            "samples": 8,
+            "underflow": 0,
+            "overflow": 0,
+            "total_weight": 8,
+            "statistics": {
+              "mean": 0.45,
+              "variance": 0.0525,
+              "min": 0.1,
+              "max": 0.8,
+              "mode": 0.25,
+              "mode_method": "centre of highest count-density histogram bin; approximate"
+            }
+          },
+          "pT": {
+            "quantity": "transverse momentum",
+            "unit": "GeV/c",
+            "weight_unit": "stored particle records",
+            "weighting": "one per final stored tracked secondary record; no luminosity or pair-ratio reweighting",
+            "normalization": "bin-integrated",
+            "bins": [
+              {
+                "low": 0,
+                "high": 0.1,
+                "weight": 4
+              },
+              {
+                "low": 0.1,
+                "high": 2,
+                "weight": 4
+              }
+            ],
+            "samples": 8,
+            "underflow": 0,
+            "overflow": 0,
+            "total_weight": 8,
+            "statistics": {
+              "mean": 0.31875000000000003,
+              "variance": 0.1714609375,
+              "min": 0.01,
+              "max": 1.28,
+              "mode": 0.05,
+              "mode_method": "centre of highest count-density histogram bin; approximate"
+            }
+          }
+        },
+        "selection": {
+          "process_counts": {
+            "0": 8
+          },
+          "signed_energy_counts": {
+            "positive_energy": 4,
+            "negative_energy": 4
+          },
+          "pair_ratio": 1.0,
+          "pair_ecut_GeV": 0.0005,
+          "origin_separation": false
+        },
+        "normalization": {
+          "kind": "stored-record counts",
+          "weight_unit": "stored particle records",
+          "weighting": "one per final stored tracked secondary record; no luminosity or pair-ratio reweighting",
+          "physical_weight_available": false,
+          "completeness_verified": true
+        }
+      },
+      "deflected": {
+        "label": "Deflected particles",
+        "available": false,
+        "reason": "This population is not separately identified in the native output",
+        "nrecords": 0,
+        "joint": null,
+        "joint_folded": null,
+        "distributions": {
+          "theta": null,
+          "pT": null,
+          "theta_folded": null
+        },
+        "selection": null,
+        "normalization": null
+      },
+      "combined": {
+        "label": "Combined tracked population",
+        "available": false,
+        "reason": "This population is not separately identified in the native output",
+        "nrecords": 0,
+        "joint": null,
+        "joint_folded": null,
+        "distributions": {
+          "theta": null,
+          "pT": null,
+          "theta_folded": null
+        },
+        "selection": null,
+        "normalization": null
+      }
+    }
+  },
+  "refs": [
+    {
+      "path": "fixture_out.dat",
+      "bytes": 10,
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "path": "fixture_analysis.json",
+      "bytes": 20,
+      "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    {
+      "path": "fixture_diagnostics.json",
+      "bytes": 30,
+      "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    {
+      "path": "fixture_pairs.dat",
+      "bytes": 40,
+      "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+    }
+  ],
+  "context": {
+    "manifest": {
+      "energy_GeV": [
+        125,
+        125
+      ],
+      "espread": [
+        0.0010000000474974513,
+        0.0010000000474974513
+      ],
+      "ip_dispersion_m": [
+        0,
+        0
+      ],
+      "native_beam_angles_x_rad": [
+        0,
+        0
+      ],
+      "native_beam_angles_y_rad": [
+        0,
+        0
+      ],
+      "crab_mode": [
+        0,
+        0
+      ],
+      "waist_mode": [
+        0,
+        0
+      ],
+      "analysis": {
+        "path": "fixture_analysis.json",
+        "bytes": 20,
+        "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "diagnostics": {
+        "path": "fixture_diagnostics.json",
+        "bytes": 30,
+        "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      },
+      "frames": [
+        {
+          "id": 0,
+          "diagonal": 0
+        },
+        {
+          "id": 1,
+          "diagonal": 1
+        }
+      ]
+    },
+    "analysis": {
+      "native_statistics": {
+        "full_RMS_W_GeV": 0.5
+      }
+    },
+    "diagnostics": {
+      "frames": [
+        {
+          "id": 0,
+          "diagonal_start": 0,
+          "diagonal_end": 0,
+          "luminosity_spectrum": {
+            "bins": [
+              {
+                "low": 249,
+                "high": 249.01,
+                "weight": 0
+              },
+              {
+                "low": 250,
+                "high": 250.01,
+                "weight": 0
+              }
+            ],
+            "underflow": 0,
+            "overflow": 0,
+            "total_weight": 0
+          }
+        },
+        {
+          "id": 1,
+          "diagonal_start": 1,
+          "diagonal_end": 1,
+          "luminosity_spectrum": {
+            "bins": [
+              {
+                "low": 249,
+                "high": 249.01,
+                "weight": 4
+              },
+              {
+                "low": 250,
+                "high": 250.01,
+                "weight": 4
+              }
+            ],
+            "underflow": 0,
+            "overflow": 0,
+            "total_weight": 8
+          }
+        }
+      ]
+    }
+  }
+}

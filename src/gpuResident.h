@@ -1,0 +1,328 @@
+#ifndef FEEBL_GPU_RESIDENT_SEEN
+#define FEEBL_GPU_RESIDENT_SEEN
+
+#include <cstddef>
+#include <cstdint>
+#include <string>
+
+namespace feebl {
+namespace gpu {
+
+// Intended safe domain for the historical main-grid CIC field stencil.
+// Physical membership remains strictly inside the exact grid bounds.  The
+// additional normalized-coordinate test repairs a legacy one-ULP boundary
+// layer where the physical predicate could pass after which float
+// localization rounded to nx-1/ny-1 and ElectricFieldCIC accessed a +1
+// stencil element outside phi.  ax==1/ay==1 are safe; the upper edge is not.
+// Volatile stores make the legacy float multiply-then-add rounding explicit
+// in host builds that otherwise inherit FeeBL's project-wide fast-math flags.
+inline float resident_field_normalized_coordinate(float coordinate,
+                                                  float inverse_spacing,
+                                                  float offset)
+{
+  volatile float scaled = coordinate * inverse_spacing;
+  volatile float normalized = scaled + offset;
+  return normalized;
+}
+
+inline bool resident_field_point_in_intended_domain(
+    float x,
+    float y,
+    float physical_min_x,
+    float physical_max_x,
+    float physical_min_y,
+    float physical_max_y,
+    float delta_x_inverse,
+    float delta_y_inverse,
+    float offset_x,
+    float offset_y,
+    int nx,
+    int ny)
+{
+  if (!(x > physical_min_x && x < physical_max_x &&
+        y > physical_min_y && y < physical_max_y))
+    return false;
+  const float ax = resident_field_normalized_coordinate(
+      x, delta_x_inverse, offset_x);
+  const float ay = resident_field_normalized_coordinate(
+      y, delta_y_inverse, offset_y);
+  return ax >= 1.0f && ax < static_cast<float>(nx - 1) &&
+         ay >= 1.0f && ay < static_cast<float>(ny - 1);
+}
+
+// CUDA-free configuration for the first, deliberately limited GPU2 scope.
+// The solver keeps the padded field arrays, Green-function spectrum, cuFFT
+// plan, work area, stream, and events alive between calls.  Its public API is
+// synchronous because the current FeeBL particle pusher still consumes phi on
+// the host immediately after every field solve.
+struct ResidentFieldOptions
+{
+  int device;
+  bool pinned_io;
+  // Maximum fraction of total device memory admitted for one context during
+  // local preflight.  The FeeBL integration must additionally sum every main
+  // and extra-grid context and enforce the same budget globally.
+  double memory_fraction;
+
+  ResidentFieldOptions();
+};
+
+// Timings and traffic are cumulative over successful execution APIs (solve,
+// deposit, solve_deposited, compact gather, or a combined path).  The last_*
+// members
+// describe only the most recent successful call.  setup_ms and setup_* account
+// for initialize(), including the one-time Green-spectrum upload; they are
+// intentionally kept separate from steady-state traffic.
+struct ResidentFieldStats
+{
+  std::uint64_t calls;
+  // Successful APIs that actually enqueued and synchronized device work.
+  // This excludes host-only zero-field shortcuts, so whole-program
+  // provenance cannot confuse a no-op with collision-loop GPU execution.
+  std::uint64_t device_work_calls;
+  std::uint64_t deposition_calls;
+  std::uint64_t field_solve_calls;
+  std::uint64_t field_gather_calls;
+  std::uint64_t failed_device_calls;
+  std::uint64_t failure_drains;
+  std::uint64_t failure_drain_failures;
+
+  double setup_ms;
+  double h2d_ms;
+  double kernel_ms;
+  double d2h_ms;
+  double total_ms;
+
+  double last_h2d_ms;
+  double last_kernel_ms;
+  double last_d2h_ms;
+  double last_total_ms;
+  bool last_device_work;
+
+  std::uint64_t setup_h2d_bytes;
+  std::uint64_t h2d_bytes;
+  std::uint64_t d2h_bytes;
+  std::uint64_t last_h2d_bytes;
+  std::uint64_t last_d2h_bytes;
+
+  std::uint64_t setup_h2d_operations;
+  std::uint64_t h2d_operations;
+  std::uint64_t d2h_operations;
+  std::uint64_t last_h2d_operations;
+  std::uint64_t last_d2h_operations;
+
+  std::uint64_t setup_synchronizations;
+  std::uint64_t synchronizations;
+  std::uint64_t last_synchronizations;
+  std::uint64_t device_allocations;
+  std::uint64_t pinned_host_allocations;
+  std::uint64_t plan_creations;
+
+  std::size_t resident_bytes;
+  std::size_t field_required_bytes;
+  std::size_t cufft_workspace_bytes;
+  std::size_t device_free_bytes_at_init;
+  std::size_t device_total_bytes;
+  std::size_t memory_budget_bytes;
+  std::size_t particle_capacity1;
+  std::size_t particle_capacity2;
+  int nx;
+  int ny;
+  int padded_nx;
+  int padded_ny;
+  int cuda_runtime_version;
+  int cuda_driver_version;
+  int cufft_runtime_version;
+  bool pinned_io;
+  bool context_poisoned;
+  double memory_fraction;
+
+  ResidentFieldStats();
+};
+
+struct ResidentDepositResult
+{
+  std::size_t beam1_in;
+  std::size_t beam1_out;
+  std::size_t beam2_in;
+  std::size_t beam2_out;
+  double fine_lumi_dot;
+
+  ResidentDepositResult();
+};
+
+// Compact result for the resident-field path.  beam1 samples the potential
+// generated by beam2 and conversely.  Counts use the strict main-grid field
+// domain; particles outside it receive an exactly zero field.  The returned
+// field arrays are interleaved [Ex0,Ey0,Ex1,Ey1,...] floats, matching the
+// two float components ultimately returned by GENERAL_GRID::ElectricFieldCIC.
+struct ResidentFieldGatherResult
+{
+  std::size_t beam1_in;
+  std::size_t beam1_out;
+  std::size_t beam2_in;
+  std::size_t beam2_out;
+
+  ResidentFieldGatherResult();
+};
+
+class ResidentFieldSolver
+{
+ public:
+  ResidentFieldSolver();
+  ~ResidentFieldSolver();
+
+  ResidentFieldSolver(const ResidentFieldSolver&) = delete;
+  ResidentFieldSolver& operator=(const ResidentFieldSolver&) = delete;
+
+  // dist_interleaved is the exact FeeBL host spectrum produced by
+  // FIELD::dist_init: padded_nx*padded_ny complex values represented as
+  // [real0,imag0,real1,imag1,...].  It already contains FeeBL's 1/N factor;
+  // this solver deliberately applies no additional normalization.
+  bool initialize(const ResidentFieldOptions& options,
+                  int nx,
+                  int ny,
+                  const double* dist_interleaved,
+                  std::string& error);
+
+  bool initialize(int device,
+                  int nx,
+                  int ny,
+                  const double* dist_interleaved,
+                  bool pinned_io,
+                  std::string& error);
+
+  bool is_available() const;
+  std::string device_description() const;
+  std::string runtime_description() const;
+  ResidentFieldStats stats() const;
+
+  // Reserve both beam-position and compact-field output buffers before the
+  // first solve/deposition.  Runtime calls never allocate: a later request
+  // above either capacity fails with an actionable error.  The caller can
+  // determine maxima by scanning the selected beam slices during GPU2
+  // preflight.
+  bool reserve_particle_capacity(std::size_t maximum_particles1,
+                                 std::size_t maximum_particles2,
+                                 std::string& error);
+
+  // rho1/rho2 and phi1/phi2 each contain nx*ny FP64 values in FeeBL's
+  // ix*ny+iy order.  Inputs and outputs may not be null or overlap.  The
+  // operation packs rho1+i*rho2 into the upper-left of the 2nx-by-2ny array,
+  // performs forward FFT, multiplication by the resident spectrum, inverse
+  // FFT, and materializes the upper-left phi arrays on the host.  Like the
+  // legacy FIELD::fold_fft, charge_sign is only a zero-field gate because its
+  // physical sign is already included when dist_interleaved is constructed.
+  bool solve(const double* rho1,
+             const double* rho2,
+             float charge_sign,
+             double* phi1,
+             double* phi2,
+             ResidentFieldStats& statistics,
+             std::string& error);
+
+  // Fields-scope GPU2 fast path.  Particle positions are interleaved
+  // [x0,y0,x1,y1,...] floats using the same localization arithmetic and CIC
+  // weights as FeeBL's existing CUDA depositor.  The two resident rho arrays
+  // are overwritten, optionally four-way symmetrized exactly like
+  // SLICE_ON_GRID::symmetrizeCharges, and used directly by cuFFT.  Only phi,
+  // exact in/out counts, and the compact FP64 sum(rho1*rho2) return to the
+  // host.  This excludes coherent/trident charge additions; callers must use
+  // solve() or reject the GPU2 fields scope when those sources are enabled.
+  bool deposit_and_solve(const float* xy1,
+                         std::size_t particle_count1,
+                         double charge1,
+                         const float* xy2,
+                         std::size_t particle_count2,
+                         double charge2,
+                         float delta_x_inverse,
+                         float delta_y_inverse,
+                         float offset_x,
+                         float offset_y,
+                         bool four_way_symmetry,
+                         float charge_sign,
+                         double* phi1,
+                         double* phi2,
+                         ResidentDepositResult& result,
+                         ResidentFieldStats& statistics,
+                         std::string& error);
+
+  // Split form used to preserve FeeBL's causal schedule:
+  //   deposit -> host collide_ee/update_slice_charge -> solve_deposited.
+  // deposit() leaves rho1/rho2 resident and returns only exact population
+  // counts plus the compact fine-luminosity dot product.
+  bool deposit(const float* xy1,
+               std::size_t particle_count1,
+               double charge1,
+               const float* xy2,
+               std::size_t particle_count2,
+               double charge2,
+               float delta_x_inverse,
+               float delta_y_inverse,
+               float offset_x,
+               float offset_y,
+               bool four_way_symmetry,
+               ResidentDepositResult& result,
+               ResidentFieldStats& statistics,
+               std::string& error);
+
+  bool solve_deposited(float charge_sign,
+                       double* phi1,
+                       double* phi2,
+                       ResidentFieldStats& statistics,
+                       std::string& error);
+
+  // Compact alternative to solve_deposited().  It solves the already
+  // resident rho arrays, then applies GENERAL_GRID::ElectricFieldCIC's
+  // historical float/double narrowing sequence directly on the device at
+  // the particle positions retained by the preceding deposit.  It returns
+  // O(Nparticles) fields instead of O(Ngrid) potentials.  All device and
+  // optional pinned-host buffers must have been allocated by
+  // reserve_particle_capacity(); this call never allocates them.
+  //
+  // output_capacity* is measured in particles (two floats per particle).
+  // A null output is accepted only for a zero-particle beam.  The no-extra-
+  // grid scope deliberately returns zero outside the strict main-grid field
+  // domain.  Exact physical bounds are required in addition to the normalized
+  // stencil check; they must be the values held by GENERAL_GRID, not values
+  // reconstructed from inverse spacing and offsets.  charge_sign retains
+  // FIELD::fold_fft's historical 1e-5 zero gate.
+  //
+  // A validation failure leaves outputs, result, and statistics unchanged.
+  // If a CUDA/cuFFT failure occurs after work is enqueued, outputs are
+  // undefined, the stream is best-effort drained, and the solver is
+  // permanently poisoned: is_available() becomes false and retry or CPU
+  // fallback through this context is forbidden.
+  bool solve_deposited_and_gather(
+      float charge_sign,
+      float physical_min_x,
+      float physical_max_x,
+      float physical_min_y,
+      float physical_max_y,
+      float* field_xy1_interleaved,
+      std::size_t output_capacity1,
+      float* field_xy2_interleaved,
+      std::size_t output_capacity2,
+      ResidentFieldGatherResult& result,
+      ResidentFieldStats& statistics,
+      std::string& error);
+
+#if defined(FEEBL_GPU_RESIDENT_TEST_HOOKS)
+  // Test-only deterministic replacement for invalidating live CUDA handles
+  // with cudaDeviceReset().  It queues valid stream work, then exercises the
+  // same failure guard, drain, poison, and retry prohibition used by compact
+  // gather without invoking undefined stale-handle behavior in WSL/WDDM.
+  bool inject_compact_gather_failure_for_test(
+      ResidentFieldStats& statistics,
+      std::string& error);
+#endif
+
+ private:
+  struct Impl;
+  Impl* impl_;
+};
+
+}  // namespace gpu
+}  // namespace feebl
+
+#endif

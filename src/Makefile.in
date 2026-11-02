@@ -1,0 +1,228 @@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+bindir = @bindir@
+libdir = @libdir@
+
+CC = @CC@
+CXX = @CXX@
+CXXFLAGS = @CXXFLAGS@
+CPPFLAGS = @CPPFLAGS@
+FFTW_CFLAGS = @FFTW_CFLAGS@
+ROOT_CFLAGS = @ROOT_CFLAGS@
+FFTW_LDFLAGS = @FFTW_LDFLAGS@
+ROOT_LDFLAGS = @ROOT_LDFLAGS@
+OPENMP_CXXFLAGS = @OPENMP_CXXFLAGS@
+CFLAGS = -I. $(CPPFLAGS) $(FFTW_CFLAGS) $(ROOT_CFLAGS) @CFLAGS@
+LDFLAGS = @LIBS@ @LDFLAGS@ 
+
+MODULES=besselCPP.o beamParametersCPP.o beamCPP.o backgroundCPP.o pairsCPP.o minijetsCPP.o \
+	mathematicalTools.o lumiCPP.o jetParameterCPP.o feeblCPP.o grvCPP.o gridCPP.o fourierCPP.o \
+	fieldCPP.o bhabhaSamplesCPP.o timerCPP.o switchesCPP.o splineCPP.o rndmCPP.o resultsCPP.o principal.o \
+	physicalTools.o particlesCPP.o particleBeamCPP.o readData.o memory.o tridentCPP.o option_args.o \
+	incomingMapsCPP.o gpgeomMaps.o parallelBackendCPP.o legacyPhotonLumiFastCPP.o gpuCicStub.o \
+	gpuResidentStub.o legacyElectronLumiBlockedCPP.o
+
+all: feebl feeblroot
+
+# These shared state/validation headers enter several public particle headers.
+# Conservatively rebuild native objects when their contracts change.
+$(MODULES): secondaryMomentumCPP.h qedbg_sampling_guard.h
+
+feebl: $(MODULES) 
+	$(CXX) $(CFLAGS) $(CXXFLAGS) $(OPENMP_CXXFLAGS) $(MODULES) $(LDFLAGS) $(FFTW_LDFLAGS) -pthread -o feebl
+
+feeblroot: $(MODULES) 
+	$(CXX) $(CFLAGS) $(CXXFLAGS) $(OPENMP_CXXFLAGS) $(MODULES) $(LDFLAGS) $(FFTW_LDFLAGS) $(ROOT_LDFLAGS) -pthread -o feeblroot
+
+.cc.o: 
+	$(CXX) $(CFLAGS) $(CXXFLAGS) $(OPENMP_CXXFLAGS) $< -c -o $@
+
+.c.o:
+	$(CC) $(CFLAGS) $< -c -o $@
+
+
+dep:
+	g++ -M -MM -E -MD *.cc
+
+
+besselCPP.o: config.h besselCPP.cc besselCPP.h splineCPP.h
+
+beamParametersCPP.o: config.h beamParametersCPP.cc beamParametersCPP.h \
+  abstractParticle.h typeDefs.h mathematicalEntities.h \
+  mathematicalTools.h besselCPP.h splineCPP.h rndmCPP.h define.h \
+  physconst.h abstractIOclass.h parametersCPP.h readData.h memory.h \
+  option_args.h
+
+beamCPP.o: config.h beamCPP.cc beamCPP.h beamParametersCPP.h abstractParticle.h \
+  typeDefs.h mathematicalEntities.h mathematicalTools.h besselCPP.h \
+  splineCPP.h rndmCPP.h define.h physconst.h abstractIOclass.h \
+  parametersCPP.h readData.h memory.h particleBeamCPP.h \
+  particlesCPP.h physicalTools.h mathconst.h fileInputOutput.h \
+  fileInputOutputAscii.h IfileInputOutput.h \
+  option_args.h tridentCPP.h
+
+backgroundCPP.o: config.h backgroundCPP.cc backgroundCPP.h typeDefs.h \
+  fileInputOutput.h abstractParticle.h mathematicalEntities.h \
+  mathematicalTools.h besselCPP.h splineCPP.h rndmCPP.h define.h \
+  physconst.h abstractIOclass.h fileInputOutputAscii.h IfileInputOutput.h \
+  meshCPP.h pairsCPP.h resultsCPP.h mathconst.h beamCPP.h \
+  beamParametersCPP.h parametersCPP.h readData.h memory.h \
+  particleBeamCPP.h particlesCPP.h physicalTools.h switchesCPP.h \
+  jetParameterCPP.h minijetsCPP.h grvCPP.h \
+  option_args.h tridentCPP.h
+
+pairsCPP.o: config.h pairsCPP.cc pairsCPP.h qedbg_real.h qedbg_tree.h qedbg_pair_kernels.h qedbg_photon_polarisation.h qedbg_photon_stokes.h resultsCPP.h define.h physconst.h \
+  mathconst.h beamCPP.h beamParametersCPP.h abstractParticle.h typeDefs.h \
+  mathematicalEntities.h mathematicalTools.h besselCPP.h splineCPP.h \
+  rndmCPP.h abstractIOclass.h parametersCPP.h readData.h memory.h \
+  particleBeamCPP.h particlesCPP.h physicalTools.h fileInputOutput.h \
+  fileInputOutputAscii.h IfileInputOutput.h switchesCPP.h meshCPP.h \
+  option_args.h tridentCPP.h
+
+minijetsCPP.o: config.h minijetsCPP.cc minijetsCPP.h typeDefs.h fileInputOutput.h \
+  abstractParticle.h mathematicalEntities.h mathematicalTools.h \
+  besselCPP.h splineCPP.h rndmCPP.h define.h physconst.h \
+  abstractIOclass.h fileInputOutputAscii.h IfileInputOutput.h \
+  resultsCPP.h mathconst.h beamCPP.h beamParametersCPP.h parametersCPP.h \
+  readData.h memory.h particleBeamCPP.h particlesCPP.h \
+  physicalTools.h switchesCPP.h jetParameterCPP.h grvCPP.h pairsCPP.h \
+  meshCPP.h \
+  option_args.h tridentCPP.h
+
+mathematicalTools.o: config.h mathematicalTools.cc mathematicalTools.h besselCPP.h \
+  splineCPP.h typeDefs.h rndmCPP.h define.h physconst.h
+
+lumiCPP.o: config.h lumiCPP.cc lumiCPP.h rndmCPP.h define.h meshCPP.h \
+  abstractParticle.h typeDefs.h mathematicalEntities.h \
+  mathematicalTools.h besselCPP.h splineCPP.h physconst.h \
+  abstractIOclass.h fileInputOutput.h fileInputOutputAscii.h \
+  IfileInputOutput.h \
+  nativeOutputCPP.h
+
+jetParameterCPP.o: config.h jetParameterCPP.cc jetParameterCPP.h typeDefs.h \
+  define.h physconst.h
+
+feeblCPP.o: config.h feeblCPP.cc feeblCPP.h rndmCPP.h define.h \
+  beamParametersCPP.h abstractParticle.h typeDefs.h \
+  mathematicalEntities.h mathematicalTools.h besselCPP.h splineCPP.h \
+  physconst.h abstractIOclass.h parametersCPP.h readData.h memory.h \
+  gridCPP.h meshCPP.h beamCPP.h particleBeamCPP.h \
+  particlesCPP.h physicalTools.h mathconst.h fileInputOutput.h \
+  fileInputOutputAscii.h IfileInputOutput.h extraPhotonCPP.h \
+  switchesCPP.h resultsCPP.h pairsCPP.h lumiCPP.h jetParameterCPP.h \
+  backgroundCPP.h minijetsCPP.h grvCPP.h bhabhaSamplesCPP.h fourierCPP.h \
+  fieldCPP.h timerCPP.h \
+  canonicalBunchCPP.h incomingMapsCPP.h nativeOutputCPP.h option_args.h \
+  polarizationCPP.h tridentCPP.h gpuResident.h parallelBackendCPP.h
+
+grvCPP.o: config.h grvCPP.cc grvCPP.h
+
+gridCPP.o: config.h gridCPP.cc gridCPP.h qedbg_impact_parameter.h qedbg_photon_angle.h qedbg_photon_domain.h qedbg_photon_stokes.h typeDefs.h meshCPP.h rndmCPP.h \
+  define.h beamCPP.h beamParametersCPP.h abstractParticle.h \
+  mathematicalEntities.h mathematicalTools.h besselCPP.h splineCPP.h \
+  physconst.h abstractIOclass.h parametersCPP.h readData.h memory.h \
+  particleBeamCPP.h particlesCPP.h physicalTools.h mathconst.h \
+  fileInputOutput.h fileInputOutputAscii.h IfileInputOutput.h \
+  extraPhotonCPP.h switchesCPP.h resultsCPP.h pairsCPP.h lumiCPP.h \
+  jetParameterCPP.h backgroundCPP.h minijetsCPP.h grvCPP.h \
+  bhabhaSamplesCPP.h fourierCPP.h fieldCPP.h gpuCic.h parallelBackendCPP.h \
+  legacyPhotonLumiFastCPP.h legacyElectronLumiBlockedCPP.h \
+  nativeOutputCPP.h option_args.h tridentCPP.h
+
+gpuCicStub.o: gpuCicStub.cc gpuCic.h
+
+gpuResidentStub.o: gpuResidentStub.cc gpuResident.h
+
+parallelBackendCPP.o: parallelBackendCPP.cc parallelBackendCPP.h
+
+legacyPhotonLumiFastCPP.o: legacyPhotonLumiFastCPP.cc legacyPhotonLumiFastCPP.h
+	$(CXX) $(CFLAGS) $(CXXFLAGS) $(OPENMP_CXXFLAGS) -fno-fast-math $< -c -o $@
+
+legacyElectronLumiBlockedCPP.o: legacyElectronLumiBlockedCPP.cc \
+  legacyElectronLumiBlockedCPP.h
+	$(CXX) $(CFLAGS) $(CXXFLAGS) $(OPENMP_CXXFLAGS) $< -c -o $@
+
+fourierCPP.o: config.h fourierCPP.cc fourierCPP.h
+
+fieldCPP.o: config.h fieldCPP.cc fieldCPP.h typeDefs.h define.h mathconst.h \
+  fourierCPP.h
+
+bhabhaSamplesCPP.o: config.h bhabhaSamplesCPP.cc bhabhaSamplesCPP.h particlesCPP.h \
+  define.h typeDefs.h abstractParticle.h mathematicalEntities.h \
+  mathematicalTools.h besselCPP.h splineCPP.h rndmCPP.h physconst.h \
+  abstractIOclass.h physicalTools.h pairsCPP.h resultsCPP.h mathconst.h \
+  beamCPP.h beamParametersCPP.h parametersCPP.h readData.h memory.h \
+  particleBeamCPP.h fileInputOutput.h fileInputOutputAscii.h \
+  IfileInputOutput.h switchesCPP.h meshCPP.h \
+  option_args.h tridentCPP.h
+
+timerCPP.o: config.h timerCPP.cc timerCPP.h define.h
+
+switchesCPP.o: config.h switchesCPP.cc switchesCPP.h typeDefs.h define.h \
+  abstractParticle.h mathematicalEntities.h mathematicalTools.h \
+  besselCPP.h splineCPP.h rndmCPP.h physconst.h abstractIOclass.h \
+  parametersCPP.h readData.h memory.h \
+  option_args.h legacyPhotonLumiFastCPP.h
+
+splineCPP.o: config.h splineCPP.cc splineCPP.h fileInputOutput.h \
+  abstractParticle.h typeDefs.h mathematicalEntities.h \
+  mathematicalTools.h besselCPP.h rndmCPP.h define.h physconst.h \
+  abstractIOclass.h fileInputOutputAscii.h IfileInputOutput.h
+
+rndmCPP.o: config.h rndmCPP.cc rndmCPP.h define.h mathconst.h
+
+resultsCPP.o: config.h resultsCPP.cc resultsCPP.h define.h physconst.h \
+  mathconst.h beamCPP.h beamParametersCPP.h abstractParticle.h typeDefs.h \
+  mathematicalEntities.h mathematicalTools.h besselCPP.h splineCPP.h \
+  rndmCPP.h abstractIOclass.h parametersCPP.h readData.h memory.h \
+  particleBeamCPP.h particlesCPP.h physicalTools.h fileInputOutput.h \
+  fileInputOutputAscii.h IfileInputOutput.h switchesCPP.h \
+  option_args.h tridentCPP.h
+
+option_args.o: config.h option_args.cc option_args.h
+	$(CXX) $(CFLAGS) $(CXXFLAGS) option_args.cc -c -o option_args.o
+
+principal.o: config.h principal.cc feeblCPP.h rndmCPP.h define.h \
+  beamParametersCPP.h abstractParticle.h typeDefs.h \
+  mathematicalEntities.h mathematicalTools.h besselCPP.h splineCPP.h \
+  physconst.h abstractIOclass.h parametersCPP.h readData.h memory.h \
+  gridCPP.h meshCPP.h beamCPP.h particleBeamCPP.h \
+  particlesCPP.h physicalTools.h mathconst.h fileInputOutput.h \
+  fileInputOutputAscii.h IfileInputOutput.h extraPhotonCPP.h \
+  switchesCPP.h resultsCPP.h pairsCPP.h lumiCPP.h jetParameterCPP.h \
+  backgroundCPP.h minijetsCPP.h grvCPP.h bhabhaSamplesCPP.h fourierCPP.h \
+  fieldCPP.h timerCPP.h \
+  nativeOutputCPP.h option_args.h polarizationCPP.h tridentCPP.h
+
+physicalTools.o: config.h physicalTools.cc physicalTools.h besselCPP.h splineCPP.h \
+  typeDefs.h rndmCPP.h define.h physconst.h mathematicalEntities.h \
+  mathematicalTools.h abstractIOclass.h qedbg_photon_stokes.h
+
+particlesCPP.o: config.h particlesCPP.cc particlesCPP.h define.h typeDefs.h \
+  abstractParticle.h mathematicalEntities.h mathematicalTools.h \
+  besselCPP.h splineCPP.h rndmCPP.h physconst.h abstractIOclass.h \
+  physicalTools.h tridentCPP.h
+
+particleBeamCPP.o: config.h particleBeamCPP.cc particleBeamCPP.h particlesCPP.h \
+  define.h typeDefs.h abstractParticle.h mathematicalEntities.h \
+  mathematicalTools.h besselCPP.h splineCPP.h rndmCPP.h physconst.h \
+  abstractIOclass.h physicalTools.h mathconst.h fileInputOutput.h \
+  fileInputOutputAscii.h IfileInputOutput.h \
+  tridentCPP.h
+
+readData.o: config.h readData.cc readData.h \
+  memory.h
+
+memory.o: config.h memory.cc memory.h
+
+tridentCPP.o: config.h tridentCPP.cc tridentCPP.h physicalTools.h rndmCPP.h \
+  gridCPP.h \
+ \
+  abstractIOclass.h besselCPP.h define.h mathematicalEntities.h \
+  mathematicalTools.h physconst.h splineCPP.h typeDefs.h
+clean :
+
+	rm -f $(MODULES) feebl feeblroot
+
+incomingMapsCPP.o: incomingMapsCPP.cc incomingMapsCPP.h canonicalBunchCPP.h 	gpgeom/maps.hpp gpgeom/phase_space.hpp
+gpgeomMaps.o: gpgeomMaps.cc gpgeom/maps.hpp gpgeom/phase_space.hpp

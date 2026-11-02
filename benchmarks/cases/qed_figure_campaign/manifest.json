@@ -1,0 +1,4268 @@
+{
+  "schema": "feebl.figure-campaign-inputs/1",
+  "status": "PREPARED_NOT_EXECUTED",
+  "native_runs": 60,
+  "parent_source_label": "qedintegration01",
+  "parent_source_native_identity": "sha256:f72b86ce541a9049e457a1b999924240cca957d05b46d8fbd575904eee6b0df4",
+  "parent_archive_sha256": "75d2de4109b3fd19d62bcffb49b09b08937ffa3f48b6566e289e8338c8ca638c",
+  "parent_manifest_sha256": "226d5583fab5704eb01d947bfe79e7cd77d1a6043dcb0243e7d35e69ed164dfa",
+  "execution_binding": "Separate qualified source/binary and approved finite resources required",
+  "pilots": [
+    "lep_field01",
+    "lep_zero01",
+    "ilc_m1_seed01",
+    "ilc_m2_seed01",
+    "halhf_m1_seed01",
+    "halhf_m2_seed01"
+  ],
+  "figures": {
+    "2": {
+      "groups": [
+        "lep_on",
+        "lep_zero"
+      ],
+      "independent_fields": 10,
+      "variance_degrees_of_freedom": 9,
+      "field_on_tracks": 40960,
+      "previous_plot_tracks": 4096,
+      "azimuth_strata": 48,
+      "reference_panels": [
+        "lep_final_focusing_vs_phi_pull",
+        "lep_final_focusing_numerical_vs_phi_pull",
+        "lep_focusing_distribution_pull"
+      ]
+    },
+    "3": {
+      "group": "ilc_pairs",
+      "seeds_per_model": 12,
+      "estimator": "Final admitted daughter spectra and counts; 5 MeV birth cut; no final recut",
+      "reference": "Rimbault et al., PRSTAB9(2006)034402"
+    },
+    "6": {
+      "group": "halhf_pairs",
+      "seeds_per_model": 12,
+      "hemisphere_coordinate": "final_position_z",
+      "angular_convention": "nearest_beam_axis",
+      "birth_energy_cut_GeV": 0.0005,
+      "final_energy_recut": false,
+      "reference": "HALHF Pre-CDR2026 Figure13; digitized support only"
+    }
+  },
+  "statistical_design": {
+    "arms": "Disjoint native seeds across pair-model arms",
+    "pair_model_common_options": {
+      "beam_size": 3,
+      "photon_timing": 3,
+      "photon_angle": 2,
+      "photon_polarisation": 1,
+      "coherent_model": 1,
+      "do_photon_lumi": 1,
+      "electron_ratio": 1,
+      "do_photons": 1,
+      "do_pairs": 1,
+      "track_pairs": 1,
+      "do_compt": 0,
+      "do_coherent": 0,
+      "beam_pair": 0,
+      "do_trident": 0,
+      "store_pairs": 2,
+      "store_photons": 0,
+      "load_events": 0,
+      "do_bhabhas": 0
+    },
+    "normalization": "Per complete collision, with declared storage thinning",
+    "covariance": "Independent-collision covariance of the mean; normalize each seed before shape covariance",
+    "reference_uncertainty": {
+      "figure2": "Declared local-fluctuation and digitization estimate",
+      "figure3": "Explicit 2Y exposure scenario, with Y and 4Y sensitivity; not a measured publication error",
+      "figure6": "Digitized occupied support only; no density errors inferred from raster ink"
+    },
+    "forbidden": [
+      "Treating repeated kernel chunks as independent events",
+      "Pooling incomplete seed groups",
+      "Automatic sample extension"
+    ]
+  },
+  "cases": [
+    {
+      "name": "lep_field01",
+      "family": "lep",
+      "kind": "lep_on",
+      "group": "lep_on",
+      "pair_model": null,
+      "replica_index": 0,
+      "native_seed": 73031001,
+      "sampler_seed": 73032001,
+      "accelerator": "lep1994",
+      "parameters": "diagnostic",
+      "options": [
+        "--make_gui_files"
+      ],
+      "argv": [
+        "--make_gui_files",
+        "lep1994",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/lep1994_focusing_transverse_refined/acc.dat",
+      "parent_card_sha256": "ca3999dcedd0cb5d77c6011ee20796748f63e3d8ba0102f2387511e95ea94eb8",
+      "changes": {
+        "rndm_seed": 73031001,
+        "rndm_load": 0,
+        "rndm_save": 0
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 0,
+        "independent_unit": "complete_collision_seed",
+        "field_index": 0,
+        "chunk_index": 0,
+        "vertices_per_boundary": 1024,
+        "tracks": 4096,
+        "azimuth_strata": 48,
+        "paired_legs": true,
+        "sampler_seed": 73032001,
+        "zero_field": false
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "gui_imported_trajectories.json"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "37c97d8fc470eab8c3cc63ad906313076dd1c8357b8019045e35da4fcb37047c",
+          "bytes": 1429
+        },
+        "event.ini": {
+          "sha256": "ba8558b0b92f60742fb47de6730c907f3b9981d7395e6c78c7f14246a6a50de8",
+          "bytes": 599190
+        },
+        "event_identity.json": {
+          "sha256": "1ca6c0223c6d06aae7982af52ad9ae1406aa71b020846d5042c8b0baec926598",
+          "bytes": 719560
+        },
+        "event_sampling.csv": {
+          "sha256": "e53791faf381edd2ba06fb4a7f55aed42af32e157231c36fd48f99d311f6d10b",
+          "bytes": 286556
+        }
+      }
+    },
+    {
+      "name": "lep_field02",
+      "family": "lep",
+      "kind": "lep_on",
+      "group": "lep_on",
+      "pair_model": null,
+      "replica_index": 1,
+      "native_seed": 73031002,
+      "sampler_seed": 73032002,
+      "accelerator": "lep1994",
+      "parameters": "diagnostic",
+      "options": [
+        "--make_gui_files"
+      ],
+      "argv": [
+        "--make_gui_files",
+        "lep1994",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/lep1994_focusing_transverse_refined/acc.dat",
+      "parent_card_sha256": "ca3999dcedd0cb5d77c6011ee20796748f63e3d8ba0102f2387511e95ea94eb8",
+      "changes": {
+        "rndm_seed": 73031002,
+        "rndm_load": 0,
+        "rndm_save": 0
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 1,
+        "independent_unit": "complete_collision_seed",
+        "field_index": 1,
+        "chunk_index": 0,
+        "vertices_per_boundary": 1024,
+        "tracks": 4096,
+        "azimuth_strata": 48,
+        "paired_legs": true,
+        "sampler_seed": 73032002,
+        "zero_field": false
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "gui_imported_trajectories.json"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "b2a6c14fdf5dce7dfe794d14c5c34b1657c26cba84cb6900f4c5e4aaf1f0cdd4",
+          "bytes": 1429
+        },
+        "event.ini": {
+          "sha256": "5aadc8cb3a8b7899e109f54b69361daec3a68560b9fa55fd420e2d86cb35366f",
+          "bytes": 598974
+        },
+        "event_identity.json": {
+          "sha256": "502dbd280a270581a5ad0f7b37ed9043be3edf100c2a97b19f9a96920bde4cc9",
+          "bytes": 719560
+        },
+        "event_sampling.csv": {
+          "sha256": "c18e2e7c8d55ad5d05d48b3d3a15619d251197d6a19fa726e3c3a1a94db1e654",
+          "bytes": 286822
+        }
+      }
+    },
+    {
+      "name": "lep_field03",
+      "family": "lep",
+      "kind": "lep_on",
+      "group": "lep_on",
+      "pair_model": null,
+      "replica_index": 2,
+      "native_seed": 73031003,
+      "sampler_seed": 73032003,
+      "accelerator": "lep1994",
+      "parameters": "diagnostic",
+      "options": [
+        "--make_gui_files"
+      ],
+      "argv": [
+        "--make_gui_files",
+        "lep1994",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/lep1994_focusing_transverse_refined/acc.dat",
+      "parent_card_sha256": "ca3999dcedd0cb5d77c6011ee20796748f63e3d8ba0102f2387511e95ea94eb8",
+      "changes": {
+        "rndm_seed": 73031003,
+        "rndm_load": 0,
+        "rndm_save": 0
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 2,
+        "independent_unit": "complete_collision_seed",
+        "field_index": 2,
+        "chunk_index": 0,
+        "vertices_per_boundary": 1024,
+        "tracks": 4096,
+        "azimuth_strata": 48,
+        "paired_legs": true,
+        "sampler_seed": 73032003,
+        "zero_field": false
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "gui_imported_trajectories.json"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "48233306f1f2344427c0fff8b159c73a38abe63698792bbfb2bf85553315075d",
+          "bytes": 1429
+        },
+        "event.ini": {
+          "sha256": "76337761bcd83624bc71e3191bf270956d40aab899379e4ffbb90ef6c5a12571",
+          "bytes": 599208
+        },
+        "event_identity.json": {
+          "sha256": "b8829569a20dc16d5187237918cfaa1d884f4be964b6aeb904c4b8e215421121",
+          "bytes": 719560
+        },
+        "event_sampling.csv": {
+          "sha256": "3ee3c0baf3ebb3516aacbe6ade9140708ac0bea5cf1c024c6b63ac445e9c730d",
+          "bytes": 287064
+        }
+      }
+    },
+    {
+      "name": "lep_field04",
+      "family": "lep",
+      "kind": "lep_on",
+      "group": "lep_on",
+      "pair_model": null,
+      "replica_index": 3,
+      "native_seed": 73031004,
+      "sampler_seed": 73032004,
+      "accelerator": "lep1994",
+      "parameters": "diagnostic",
+      "options": [
+        "--make_gui_files"
+      ],
+      "argv": [
+        "--make_gui_files",
+        "lep1994",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/lep1994_focusing_transverse_refined/acc.dat",
+      "parent_card_sha256": "ca3999dcedd0cb5d77c6011ee20796748f63e3d8ba0102f2387511e95ea94eb8",
+      "changes": {
+        "rndm_seed": 73031004,
+        "rndm_load": 0,
+        "rndm_save": 0
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 3,
+        "independent_unit": "complete_collision_seed",
+        "field_index": 3,
+        "chunk_index": 0,
+        "vertices_per_boundary": 1024,
+        "tracks": 4096,
+        "azimuth_strata": 48,
+        "paired_legs": true,
+        "sampler_seed": 73032004,
+        "zero_field": false
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "gui_imported_trajectories.json"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "de086cc9542fc56b1430fc5ef1256d99993683cb12ea2fa1adf24d9eacff1903",
+          "bytes": 1429
+        },
+        "event.ini": {
+          "sha256": "95036e548c41e4083a50872a55064396bb8b5961eb0afb0f59c698983bfd6fd7",
+          "bytes": 598938
+        },
+        "event_identity.json": {
+          "sha256": "e63c6b85ad4cd7759822de446fc0890dbe5b66efe3fba70afa9e5f5db9045810",
+          "bytes": 719560
+        },
+        "event_sampling.csv": {
+          "sha256": "8b6a4836a40f47cc2eecbab1de58f16f496aa7ab2e66956e15d2bc6427055a45",
+          "bytes": 287046
+        }
+      }
+    },
+    {
+      "name": "lep_field05",
+      "family": "lep",
+      "kind": "lep_on",
+      "group": "lep_on",
+      "pair_model": null,
+      "replica_index": 4,
+      "native_seed": 73031005,
+      "sampler_seed": 73032005,
+      "accelerator": "lep1994",
+      "parameters": "diagnostic",
+      "options": [
+        "--make_gui_files"
+      ],
+      "argv": [
+        "--make_gui_files",
+        "lep1994",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/lep1994_focusing_transverse_refined/acc.dat",
+      "parent_card_sha256": "ca3999dcedd0cb5d77c6011ee20796748f63e3d8ba0102f2387511e95ea94eb8",
+      "changes": {
+        "rndm_seed": 73031005,
+        "rndm_load": 0,
+        "rndm_save": 0
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 4,
+        "independent_unit": "complete_collision_seed",
+        "field_index": 4,
+        "chunk_index": 0,
+        "vertices_per_boundary": 1024,
+        "tracks": 4096,
+        "azimuth_strata": 48,
+        "paired_legs": true,
+        "sampler_seed": 73032005,
+        "zero_field": false
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "gui_imported_trajectories.json"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "81e685677d1a82ba7b1f943cd557f9b98cb91227991ed473335a562cc519f769",
+          "bytes": 1429
+        },
+        "event.ini": {
+          "sha256": "a090205534652ce7977326fdee70ef6ca6a4e4390630249a7b9423be04294b15",
+          "bytes": 599060
+        },
+        "event_identity.json": {
+          "sha256": "08eed2e16251de381d5caefb887e406f3ed508c7366e01fb048fba74d1ec4196",
+          "bytes": 719560
+        },
+        "event_sampling.csv": {
+          "sha256": "a71fcd521ee91f781d317ecbb398fbd0442911c976f7341f234b7e1ea53394b7",
+          "bytes": 286726
+        }
+      }
+    },
+    {
+      "name": "lep_field06",
+      "family": "lep",
+      "kind": "lep_on",
+      "group": "lep_on",
+      "pair_model": null,
+      "replica_index": 5,
+      "native_seed": 73031006,
+      "sampler_seed": 73032006,
+      "accelerator": "lep1994",
+      "parameters": "diagnostic",
+      "options": [
+        "--make_gui_files"
+      ],
+      "argv": [
+        "--make_gui_files",
+        "lep1994",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/lep1994_focusing_transverse_refined/acc.dat",
+      "parent_card_sha256": "ca3999dcedd0cb5d77c6011ee20796748f63e3d8ba0102f2387511e95ea94eb8",
+      "changes": {
+        "rndm_seed": 73031006,
+        "rndm_load": 0,
+        "rndm_save": 0
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 5,
+        "independent_unit": "complete_collision_seed",
+        "field_index": 5,
+        "chunk_index": 0,
+        "vertices_per_boundary": 1024,
+        "tracks": 4096,
+        "azimuth_strata": 48,
+        "paired_legs": true,
+        "sampler_seed": 73032006,
+        "zero_field": false
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "gui_imported_trajectories.json"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "94411ebfca942ce88eed53aea31a0c0c1d8146020c97c4dce1718cc48094c475",
+          "bytes": 1429
+        },
+        "event.ini": {
+          "sha256": "290bdc02b6c1591744a3e38a67f82f3afda55b07297dfd659e4631e72656a531",
+          "bytes": 599348
+        },
+        "event_identity.json": {
+          "sha256": "d72759e80c7df80c022c615ece89107ba5513af1948ec717ad7bfff76ce8794a",
+          "bytes": 719560
+        },
+        "event_sampling.csv": {
+          "sha256": "09e4ef822c73138dfc2807648dd39c4610172ceb5117323401c4c36e7babd56f",
+          "bytes": 286978
+        }
+      }
+    },
+    {
+      "name": "lep_field07",
+      "family": "lep",
+      "kind": "lep_on",
+      "group": "lep_on",
+      "pair_model": null,
+      "replica_index": 6,
+      "native_seed": 73031007,
+      "sampler_seed": 73032007,
+      "accelerator": "lep1994",
+      "parameters": "diagnostic",
+      "options": [
+        "--make_gui_files"
+      ],
+      "argv": [
+        "--make_gui_files",
+        "lep1994",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/lep1994_focusing_transverse_refined/acc.dat",
+      "parent_card_sha256": "ca3999dcedd0cb5d77c6011ee20796748f63e3d8ba0102f2387511e95ea94eb8",
+      "changes": {
+        "rndm_seed": 73031007,
+        "rndm_load": 0,
+        "rndm_save": 0
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 6,
+        "independent_unit": "complete_collision_seed",
+        "field_index": 6,
+        "chunk_index": 0,
+        "vertices_per_boundary": 1024,
+        "tracks": 4096,
+        "azimuth_strata": 48,
+        "paired_legs": true,
+        "sampler_seed": 73032007,
+        "zero_field": false
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "gui_imported_trajectories.json"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "dbb849dcf1641a60b2923042fc50bf9f26ab308921fe0dbdf889f83d9a1a20b6",
+          "bytes": 1429
+        },
+        "event.ini": {
+          "sha256": "b2567153a2f12fb69e116fb7a00d0003d9d3d773d3ccb26927b8709ff617f8eb",
+          "bytes": 599004
+        },
+        "event_identity.json": {
+          "sha256": "720595a7ae509672aac84bf637375233ed404f3a82c03f6af8a9ac0a41fbe47a",
+          "bytes": 719560
+        },
+        "event_sampling.csv": {
+          "sha256": "5873b450c747cd7ca28328cf5b23a0b26bc24e34649bca2925087e4c25f49945",
+          "bytes": 286704
+        }
+      }
+    },
+    {
+      "name": "lep_field08",
+      "family": "lep",
+      "kind": "lep_on",
+      "group": "lep_on",
+      "pair_model": null,
+      "replica_index": 7,
+      "native_seed": 73031008,
+      "sampler_seed": 73032008,
+      "accelerator": "lep1994",
+      "parameters": "diagnostic",
+      "options": [
+        "--make_gui_files"
+      ],
+      "argv": [
+        "--make_gui_files",
+        "lep1994",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/lep1994_focusing_transverse_refined/acc.dat",
+      "parent_card_sha256": "ca3999dcedd0cb5d77c6011ee20796748f63e3d8ba0102f2387511e95ea94eb8",
+      "changes": {
+        "rndm_seed": 73031008,
+        "rndm_load": 0,
+        "rndm_save": 0
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 7,
+        "independent_unit": "complete_collision_seed",
+        "field_index": 7,
+        "chunk_index": 0,
+        "vertices_per_boundary": 1024,
+        "tracks": 4096,
+        "azimuth_strata": 48,
+        "paired_legs": true,
+        "sampler_seed": 73032008,
+        "zero_field": false
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "gui_imported_trajectories.json"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "5326f22356dd0ebd40f547a1679b2da6e842b87491424dd80cad1471c6b3e2dd",
+          "bytes": 1429
+        },
+        "event.ini": {
+          "sha256": "21ba6779ce27732b3367bbda973a05b7fe0c4935b12e45dd0eac9b16f6296210",
+          "bytes": 599312
+        },
+        "event_identity.json": {
+          "sha256": "45573cda598b488bddce0f35afdfb53ba4961651cc638cd8002f80b714734ca7",
+          "bytes": 719560
+        },
+        "event_sampling.csv": {
+          "sha256": "bda612db6e07925ec5d1ed50ac3796c9c6a80ac742063de1ccdd7d73e4cfb61b",
+          "bytes": 287086
+        }
+      }
+    },
+    {
+      "name": "lep_field09",
+      "family": "lep",
+      "kind": "lep_on",
+      "group": "lep_on",
+      "pair_model": null,
+      "replica_index": 8,
+      "native_seed": 73031009,
+      "sampler_seed": 73032009,
+      "accelerator": "lep1994",
+      "parameters": "diagnostic",
+      "options": [
+        "--make_gui_files"
+      ],
+      "argv": [
+        "--make_gui_files",
+        "lep1994",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/lep1994_focusing_transverse_refined/acc.dat",
+      "parent_card_sha256": "ca3999dcedd0cb5d77c6011ee20796748f63e3d8ba0102f2387511e95ea94eb8",
+      "changes": {
+        "rndm_seed": 73031009,
+        "rndm_load": 0,
+        "rndm_save": 0
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 8,
+        "independent_unit": "complete_collision_seed",
+        "field_index": 8,
+        "chunk_index": 0,
+        "vertices_per_boundary": 1024,
+        "tracks": 4096,
+        "azimuth_strata": 48,
+        "paired_legs": true,
+        "sampler_seed": 73032009,
+        "zero_field": false
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "gui_imported_trajectories.json"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "ec9ef76e8fb9f94f1d3ed87cd6a43b7b41d32c7e824bb4fe78cb3dee23fca58a",
+          "bytes": 1429
+        },
+        "event.ini": {
+          "sha256": "80a0478b96edf628a766d0a650814636a90d3db4cf7d1aa9e1b688022f53e1b6",
+          "bytes": 599152
+        },
+        "event_identity.json": {
+          "sha256": "bd3c91eda3ca51728f440fb528be96e6b12ad6c7a0b393b67a3175b681fdd95b",
+          "bytes": 719560
+        },
+        "event_sampling.csv": {
+          "sha256": "268ec6f7fac0748775f0ea053c0308f03a36bc441e981351ffd587cf313aaf04",
+          "bytes": 286638
+        }
+      }
+    },
+    {
+      "name": "lep_field10",
+      "family": "lep",
+      "kind": "lep_on",
+      "group": "lep_on",
+      "pair_model": null,
+      "replica_index": 9,
+      "native_seed": 73031010,
+      "sampler_seed": 73032010,
+      "accelerator": "lep1994",
+      "parameters": "diagnostic",
+      "options": [
+        "--make_gui_files"
+      ],
+      "argv": [
+        "--make_gui_files",
+        "lep1994",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/lep1994_focusing_transverse_refined/acc.dat",
+      "parent_card_sha256": "ca3999dcedd0cb5d77c6011ee20796748f63e3d8ba0102f2387511e95ea94eb8",
+      "changes": {
+        "rndm_seed": 73031010,
+        "rndm_load": 0,
+        "rndm_save": 0
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 9,
+        "independent_unit": "complete_collision_seed",
+        "field_index": 9,
+        "chunk_index": 0,
+        "vertices_per_boundary": 1024,
+        "tracks": 4096,
+        "azimuth_strata": 48,
+        "paired_legs": true,
+        "sampler_seed": 73032010,
+        "zero_field": false
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "gui_imported_trajectories.json"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "51aab1c805813e197f4c55dba9c6be557849ae6073bd4003044848c9abeaa17a",
+          "bytes": 1429
+        },
+        "event.ini": {
+          "sha256": "3d6c1d8ff4e4537afc8ed9d7fb4700b8ba55c3c2560d95be2e6ac601d738d140",
+          "bytes": 599182
+        },
+        "event_identity.json": {
+          "sha256": "a6a3b17a038d71e345d7f2cdf0930e8e051d51a3e762ab2512f3415f7660e26f",
+          "bytes": 719560
+        },
+        "event_sampling.csv": {
+          "sha256": "8a4b7bc4172352ec61d634533ad824cfb7e61bc8fe6acdfa990d3c7e7a126d09",
+          "bytes": 286628
+        }
+      }
+    },
+    {
+      "name": "lep_zero01",
+      "family": "lep",
+      "kind": "lep_zero",
+      "group": "lep_zero",
+      "pair_model": null,
+      "replica_index": 0,
+      "native_seed": 73031001,
+      "sampler_seed": 73032001,
+      "accelerator": "lep1994",
+      "parameters": "diagnostic",
+      "options": [
+        "--make_gui_files"
+      ],
+      "argv": [
+        "--make_gui_files",
+        "lep1994",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/lep1994_focusing_transverse_refined/acc.dat",
+      "parent_card_sha256": "ca3999dcedd0cb5d77c6011ee20796748f63e3d8ba0102f2387511e95ea94eb8",
+      "changes": {
+        "rndm_seed": 73031001,
+        "rndm_load": 0,
+        "rndm_save": 0
+      },
+      "accelerator_changes": {
+        "charge_sign": 0
+      },
+      "metadata": {
+        "replica_index": 0,
+        "independent_unit": "complete_collision_seed",
+        "field_index": 0,
+        "chunk_index": 0,
+        "vertices_per_boundary": 1024,
+        "tracks": 4096,
+        "azimuth_strata": 48,
+        "paired_legs": true,
+        "sampler_seed": 73032001,
+        "zero_field": true
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "gui_imported_trajectories.json"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "254e40398dcc7d8ec15cff525cf1e2c90d210415e5c818db3f7617b3a003f1b8",
+          "bytes": 1428
+        },
+        "event.ini": {
+          "sha256": "ba8558b0b92f60742fb47de6730c907f3b9981d7395e6c78c7f14246a6a50de8",
+          "bytes": 599190
+        },
+        "event_identity.json": {
+          "sha256": "1ca6c0223c6d06aae7982af52ad9ae1406aa71b020846d5042c8b0baec926598",
+          "bytes": 719560
+        },
+        "event_sampling.csv": {
+          "sha256": "e53791faf381edd2ba06fb4a7f55aed42af32e157231c36fd48f99d311f6d10b",
+          "bytes": 286556
+        }
+      }
+    },
+    {
+      "name": "lep_zero02",
+      "family": "lep",
+      "kind": "lep_zero",
+      "group": "lep_zero",
+      "pair_model": null,
+      "replica_index": 1,
+      "native_seed": 73031002,
+      "sampler_seed": 73032002,
+      "accelerator": "lep1994",
+      "parameters": "diagnostic",
+      "options": [
+        "--make_gui_files"
+      ],
+      "argv": [
+        "--make_gui_files",
+        "lep1994",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/lep1994_focusing_transverse_refined/acc.dat",
+      "parent_card_sha256": "ca3999dcedd0cb5d77c6011ee20796748f63e3d8ba0102f2387511e95ea94eb8",
+      "changes": {
+        "rndm_seed": 73031002,
+        "rndm_load": 0,
+        "rndm_save": 0
+      },
+      "accelerator_changes": {
+        "charge_sign": 0
+      },
+      "metadata": {
+        "replica_index": 1,
+        "independent_unit": "complete_collision_seed",
+        "field_index": 1,
+        "chunk_index": 0,
+        "vertices_per_boundary": 1024,
+        "tracks": 4096,
+        "azimuth_strata": 48,
+        "paired_legs": true,
+        "sampler_seed": 73032002,
+        "zero_field": true
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "gui_imported_trajectories.json"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "3735c4058075bebe853238c760d8134a79decdc470eac40e343dac2cb4d9f06c",
+          "bytes": 1428
+        },
+        "event.ini": {
+          "sha256": "5aadc8cb3a8b7899e109f54b69361daec3a68560b9fa55fd420e2d86cb35366f",
+          "bytes": 598974
+        },
+        "event_identity.json": {
+          "sha256": "502dbd280a270581a5ad0f7b37ed9043be3edf100c2a97b19f9a96920bde4cc9",
+          "bytes": 719560
+        },
+        "event_sampling.csv": {
+          "sha256": "c18e2e7c8d55ad5d05d48b3d3a15619d251197d6a19fa726e3c3a1a94db1e654",
+          "bytes": 286822
+        }
+      }
+    },
+    {
+      "name": "ilc_m1_seed01",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "replica_index": 0,
+      "native_seed": 73041001,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73041001,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 0,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "00f09f4ff1d076e8cc114886052646f78e7a7762378afe9e705c5a948f12c073",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m1_seed02",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "replica_index": 1,
+      "native_seed": 73041002,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73041002,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 1,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "686939975f4a39409ca6573454e5b619d4ece24b0c54131806f0a0a510f6ff0f",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m1_seed03",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "replica_index": 2,
+      "native_seed": 73041003,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73041003,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 2,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "96ee8d747bf5c21264abfb8c3771d4cf9919b39e8f09c198e333f0201737e9f9",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m1_seed04",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "replica_index": 3,
+      "native_seed": 73041004,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73041004,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 3,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "e776d64aaae685e5b50d481b9c16aa1525ec74f95bc801fc782873209056a67b",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m1_seed05",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "replica_index": 4,
+      "native_seed": 73041005,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73041005,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 4,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "1a8dad206dde510a895a1b8cc9c7d836b3862e3a1783f2f193194dfb9b9f4622",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m1_seed06",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "replica_index": 5,
+      "native_seed": 73041006,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73041006,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 5,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "08499b21bdf3248d95fdd00291d49df40e091c81145f524d86d994d3125a7a00",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m1_seed07",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "replica_index": 6,
+      "native_seed": 73041007,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73041007,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 6,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "de05616a6ccfc75319afd113e7525132883a0291e5e35d326e93e312a991eafa",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m1_seed08",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "replica_index": 7,
+      "native_seed": 73041008,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73041008,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 7,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "a2d075dd0742e6214f59ee9b979c65d8cc3fb06eff69ecffb0afb38451abdbf8",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m1_seed09",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "replica_index": 8,
+      "native_seed": 73041009,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73041009,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 8,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "04a05a5a4934b6c283f2b9e5d46aaf0754a6c9f192a58c150bdae5e51c49f0ad",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m1_seed10",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "replica_index": 9,
+      "native_seed": 73041010,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73041010,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 9,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "6e6e0776bee87c82c7b7d2445db3a13c4157790df5461655ea5c7308f929309d",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m1_seed11",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "replica_index": 10,
+      "native_seed": 73041011,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73041011,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 10,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "793ca364065b3f3ead5195ec174604448479e332c97b0518c74a7fd19d339f93",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m1_seed12",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 1,
+      "replica_index": 11,
+      "native_seed": 73041012,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73041012,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 11,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "46c30a0b37431469d3ba0200524344cfbb5658eaab1240e559807f16e5ea334b",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m2_seed01",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "replica_index": 0,
+      "native_seed": 73042001,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73042001,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 0,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "2a00c8c15b9e3ab8cd37eae726d0811e9e294609301e421a78b52618a1735432",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m2_seed02",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "replica_index": 1,
+      "native_seed": 73042002,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73042002,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 1,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "b8b240bbcffd4738a9bb666a34286fa75d588f8f1e33f1133f593d5b532d49d8",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m2_seed03",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "replica_index": 2,
+      "native_seed": 73042003,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73042003,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 2,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "d97b1366b34899e8b26ab5372f07127961f15cc50403d221cf1997a7a04c7cde",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m2_seed04",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "replica_index": 3,
+      "native_seed": 73042004,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73042004,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 3,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "bae4d433d862dc88e7f284875e90a50ee0da528e19eebebdd05bc5ec09ff1569",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m2_seed05",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "replica_index": 4,
+      "native_seed": 73042005,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73042005,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 4,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "3ea46482b47fc7286826f9b46643b098e457a6c6a47798515ba2a78f66ede8d9",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m2_seed06",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "replica_index": 5,
+      "native_seed": 73042006,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73042006,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 5,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "defa648b234c4af1b42b2101aa452cbd4881f1da86c9a8d17c103b87219159fc",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m2_seed07",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "replica_index": 6,
+      "native_seed": 73042007,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73042007,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 6,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "dc8ee36a8d53f4daeab2f5127505f042c00b19e9b2ff101c566f83efc760686e",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m2_seed08",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "replica_index": 7,
+      "native_seed": 73042008,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73042008,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 7,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "807303894f85faee81c4506a907bee6fd27120ec69577a89f8f8d1eeb304bb5d",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m2_seed09",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "replica_index": 8,
+      "native_seed": 73042009,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73042009,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 8,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "eced39ddc66b289686da21e9f799b6defbd975abcf3a6eee5c3bb59d656a060f",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m2_seed10",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "replica_index": 9,
+      "native_seed": 73042010,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73042010,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 9,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "ae076abd9942e49c93bff97679664ad5218c7867ce15ed6a9872b87b8d05b450",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m2_seed11",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "replica_index": 10,
+      "native_seed": 73042011,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73042011,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 10,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "19ba7ade0a8f8deb264c9d6c4a8b923de026c79efe2b0a12273c16b9f9214feb",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "ilc_m2_seed12",
+      "family": "ilc",
+      "kind": "ilc_pairs",
+      "group": "ilc_pairs",
+      "pair_model": 2,
+      "replica_index": 11,
+      "native_seed": 73042012,
+      "sampler_seed": null,
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/ilc500_ussc_pairs_2006/acc.dat",
+      "parent_card_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "changes": {
+        "rndm_seed": 73042012,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 1,
+        "pair_ecut": 0.005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 11,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.005,
+        "final_energy_recut": false,
+        "pair_ratio": 1.0,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": null,
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "e31339495d54f8c2d6d4ab2c2ebf7d099296f58e14c514d6b270c501479afc14",
+          "bytes": 1501
+        }
+      }
+    },
+    {
+      "name": "halhf_m1_seed01",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "replica_index": 0,
+      "native_seed": 73051001,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73051001,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 0,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "072aed7641b87d5a65718fa9f8e1dfee2bbe07c3fadc8b75912a50344b0ac3bc",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m1_seed02",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "replica_index": 1,
+      "native_seed": 73051002,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73051002,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 1,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "554550ac6b6928644677a9c78b3ceb1769476ce1a125be7602f8ae47b1f40ad3",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m1_seed03",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "replica_index": 2,
+      "native_seed": 73051003,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73051003,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 2,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "8c2efa0657a34444796edac6beb309ebe6be4e9aea1494cdf23b65b4740f22b8",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m1_seed04",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "replica_index": 3,
+      "native_seed": 73051004,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73051004,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 3,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "0a0e58e10f7fa2f96ef49d896d3bbb38ac2fe8ff46063c0ae86f14f56b38199b",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m1_seed05",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "replica_index": 4,
+      "native_seed": 73051005,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73051005,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 4,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "28f4c1ce83adc5bcb88905b081397a257d6657a85c80193fe4ff66162829727f",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m1_seed06",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "replica_index": 5,
+      "native_seed": 73051006,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73051006,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 5,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "1245d2c94800ea7bf82a05aabd46cd6688fc55774b9656551a2861feac683ebd",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m1_seed07",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "replica_index": 6,
+      "native_seed": 73051007,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73051007,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 6,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "9c4af2da314a3210e706db58f7f58feb69805bd84b0cbbb5e3328ae9bcc11564",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m1_seed08",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "replica_index": 7,
+      "native_seed": 73051008,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73051008,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 7,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "caa88da699f7b8cdd1f8082dd04f9f6e7bf3c7b61df5a7b903e0fe0462ea0651",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m1_seed09",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "replica_index": 8,
+      "native_seed": 73051009,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73051009,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 8,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "933f23c9b7854fe7a672760e314b1e9b0a3f7e83542ff5eeaea9b320ed95169c",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m1_seed10",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "replica_index": 9,
+      "native_seed": 73051010,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73051010,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 9,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "a7bf08087fcc93dbddb2be1e731c322738cb8a1f334d50560a2cb5f5c023539f",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m1_seed11",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "replica_index": 10,
+      "native_seed": 73051011,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73051011,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 10,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "3d0f5c50db8a89835dbc32e5dac9620d3182b61a252ad2057789fddf15152ebd",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m1_seed12",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 1,
+      "replica_index": 11,
+      "native_seed": 73051012,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73051012,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 1,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 11,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 1,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "184f4b29e91a3102ad1ac511e5a423f20621bb7f853486d9f1a91b377288f51a",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m2_seed01",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "replica_index": 0,
+      "native_seed": 73052001,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73052001,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 0,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "34f5fc45a06e26710790dbe11ab685d986938524b53e13288f524878febaff1f",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m2_seed02",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "replica_index": 1,
+      "native_seed": 73052002,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73052002,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 1,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "98b28700e4d628779870c4242a14a06062ad3e1a08e8c8d722fad224c4140e0e",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m2_seed03",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "replica_index": 2,
+      "native_seed": 73052003,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73052003,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 2,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "ff22b7b726a6c077bd2ddd649c280f7c59e30b6a28f466ff27e92662a8b23959",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m2_seed04",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "replica_index": 3,
+      "native_seed": 73052004,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73052004,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 3,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "763a564e7592e49e96d744849e1a3db897ddf7c1ccf889fccd8f452fd2398a61",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m2_seed05",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "replica_index": 4,
+      "native_seed": 73052005,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73052005,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 4,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "6ad2db1b52ad433382bd5ecbbbd603ae8d2a1095f3677a4e4886d788f4192073",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m2_seed06",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "replica_index": 5,
+      "native_seed": 73052006,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73052006,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 5,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "8f9deefd320de0054a23cc2dcbf13e7de2e0ec39d98dd54740aeddcd54bf5a1a",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m2_seed07",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "replica_index": 6,
+      "native_seed": 73052007,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73052007,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 6,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "d7bd7e31c1e786c2b4aa7fdfb714a3a69421310990434301a0bc282619079c64",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m2_seed08",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "replica_index": 7,
+      "native_seed": 73052008,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73052008,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 7,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "9619936f15e6e3ac589a241e5357e30cc3d38306f260adcae6e35574a1881a3f",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m2_seed09",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "replica_index": 8,
+      "native_seed": 73052009,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73052009,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 8,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "01c1424ce5ef3f9519bbb18daac097c82d126cca15efabd288c2be4bce9248cd",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m2_seed10",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "replica_index": 9,
+      "native_seed": 73052010,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73052010,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 9,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "7912c9687d2eae72d1be91e45514f8edb9934e7c52f9abcfae2bfad149037314",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m2_seed11",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "replica_index": 10,
+      "native_seed": 73052011,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73052011,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 10,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "b2e78e1bbc80c799ff1403cab26109759703e2e446e1bc434723ab6657bacef9",
+          "bytes": 1423
+        }
+      }
+    },
+    {
+      "name": "halhf_m2_seed12",
+      "family": "halhf",
+      "kind": "halhf_pairs",
+      "group": "halhf_pairs",
+      "pair_model": 2,
+      "replica_index": 11,
+      "native_seed": 73052012,
+      "sampler_seed": null,
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "options": [],
+      "argv": [
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "parent_card_path": "benchmarks/cases/halhf250_ipc_control/acc.dat",
+      "parent_card_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "changes": {
+        "rndm_seed": 73052012,
+        "rndm_load": 0,
+        "rndm_save": 0,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1,
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_pairs": 1,
+        "track_pairs": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "do_trident": 0,
+        "store_pairs": 2,
+        "store_photons": 0,
+        "load_events": 0,
+        "do_bhabhas": 0,
+        "pair_model": 2,
+        "pair_ratio": 0.1,
+        "pair_ecut": 0.0005
+      },
+      "accelerator_changes": {},
+      "metadata": {
+        "replica_index": 11,
+        "independent_unit": "complete_collision_seed",
+        "pair_model": 2,
+        "birth_energy_cut_GeV": 0.0005,
+        "final_energy_recut": false,
+        "pair_ratio": 0.1,
+        "population": "incoherent_produced_electron_positron_daughters",
+        "hemisphere_coordinate": "final_position_z",
+        "angular_convention": "nearest_beam_axis",
+        "process_estimator": "final_admitted_daughter_records",
+        "expectation_counters": "uncut production diagnostics only"
+      },
+      "expected_outputs": [
+        "out.dat",
+        "pairs.dat",
+        "pairs0.dat"
+      ],
+      "files": {
+        "acc.dat": {
+          "sha256": "b0778809ef5bc88b804c9e4c83299be9c32b24694b43eedd8c411ebc57f9df81",
+          "bytes": 1423
+        }
+      }
+    }
+  ]
+}

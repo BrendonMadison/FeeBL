@@ -1,0 +1,54 @@
+{
+  "status": "ANALYSIS_OF_COMPLETED_ENSEMBLES",
+  "native_source_identity": "sha256:238eda4954de06bada9c27a56436281d0ddac7137712e8e4bf07be37358f2598",
+  "qualified_binary_sha256": "cf872ffbfb2d91dfd8286c9f0282329040de8b0899e1cd7133e4c2fd27924d8b",
+  "ensemble_job_id": "25503758",
+  "independent_collisions_per_model": 12,
+  "proposed_diagnostic_campaign_status": "PREPARED_NOT_EXECUTED",
+  "files": [
+    {
+      "path": "benchmarks/example_output/ll_normalization_audit/ALL_PROCESS_LUMINOSITY_COMPARISON.json",
+      "sha256": "fb90c4f199f252ff7e8a5f925a85f00a890c0ed46e2c5d1c4430318669f4f803"
+    },
+    {
+      "path": "benchmarks/example_output/ll_normalization_audit/LL_LUMINOSITY_COMPARISON.json",
+      "sha256": "bd79ceff645da0de4c92b1921eee31e2150b83190e41305e274eafdaa004d674"
+    },
+    {
+      "path": "benchmarks/example_output/ll_normalization_audit/EPA_SCALAR_CHECKS.json",
+      "sha256": "96613c5a536acf755c926cc29aa4808048780e4932fc4bc908f94ddb2e25af9b"
+    },
+    {
+      "path": "benchmarks/example_output/ll_normalization_audit/check.py",
+      "sha256": "b45c007bb19a1d7d0e3c66a8d6ac4eebf2f7f8b32753ba485fbec53dcce6f4f8"
+    },
+    {
+      "path": "benchmarks/example_output/ll_normalization_audit/README.md",
+      "sha256": "3b3a586653ffa04822f4018db47f34edb7666056d1a8b4bf8722f56b33d1f172"
+    },
+    {
+      "path": "benchmarks/example_output/qed_figure_campaign/reduction/ilc_model1_joint_yield_luminosity.npz",
+      "sha256": "fb76c8ac591cfe9e63fd51b2f80a7c0289273476afc256bb627beed9993f2648"
+    },
+    {
+      "path": "benchmarks/example_output/qed_figure_campaign/reduction/ilc_model2_joint_yield_luminosity.npz",
+      "sha256": "4720c715b7533dd456435f3d7e1d1feb8b579151640d8cdcea4f46516661eda3"
+    }
+  ],
+  "primary_reference": {
+    "doi": "https://doi.org/10.1103/PhysRevSTAB.9.034402",
+    "location": "Table II and footnote 3",
+    "observable": "Admitted individual daughter counts divided by common electron-positron luminosity",
+    "reference_luminosity_inverse_microbarn": 1.82
+  },
+  "cain_manual": {
+    "title": "User's Manual of CAIN",
+    "version": "2.44",
+    "date": "2017-01-06",
+    "sections": "3.12,5.11.2,5.11.3",
+    "inspected_pdf_sha256": "6b73d9f60fdad4829ec6e1e13febb77ebb83cbbde7b95dd61dd7859f4d0c8a93",
+    "redistributed": false
+  },
+  "scope": "No new native simulation. The reference-error scenarios are assumptions; the four-fraction EPA checks do not predict collider-rate shifts.",
+  "diagnostic_status_context": "The proposed_diagnostic_campaign_status records the earlier normalization-audit snapshot. The separate 36-case diagnostic subsequently completed as job 25507226; see benchmarks/example_output/ll_diagnosis/reduction/analysis_receipt.json."
+}

@@ -1,0 +1,32 @@
+{
+  "source_csv_sha256": "c37f6f44654e9b85962fcd3c1558f0fc49430d8bb3b09cf303ee3cee937b73fa",
+  "source_covariance_sha256": "002236bdd5338d30708c44450a40e650d520c5f588e07664d4691d409938ae09",
+  "source_bins": 126,
+  "display_bins": 40,
+  "view_limits_GeV": [
+    990.0,
+    1010.0
+  ],
+  "exclude_first_coarse_bin": false,
+  "display_upper_limit_GeV": null,
+  "method": "Linear bin-overlap transfer A; C_display=A C_source A^T; pulls recomputed from transferred central values and covariance.",
+  "normalization": "Original panel normalization retained; display clipping does not renormalize.",
+  "support": "Connected input support only; gaps preserved; no reference extrapolation.",
+  "source_simulation_method": "mean and full sample covariance of independent native collisions",
+  "display_pull_rms": 1.3088087946124407,
+  "source_mass_sums": {
+    "simulation": 1.0,
+    "reference": 1.0
+  },
+  "display_retained_mass_sums": {
+    "simulation": 0.8444570399039336,
+    "reference": 0.8519529465093959
+  },
+  "source_bins_without_display_overlap": 55,
+  "source_bins_with_fractional_display_overlap": 1,
+  "view_limits_role": "Requested rebin/crop window; the displayed axis ends at retained support.",
+  "display_axis_limits_GeV": [
+    990.0,
+    1001.6
+  ]
+}

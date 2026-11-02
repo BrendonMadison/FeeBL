@@ -1,0 +1,46 @@
+{
+  "status": "PASS_DECLARED_SCALAR_FORMULAE_ONLY",
+  "born_new_over_old": 1.0133697338154133,
+  "born_deficit_old_relative_new_percent": 1.3193342340189318,
+  "epa_alpha_ratio_per_virtual_photon": 0.9992297485478077,
+  "epa_alpha_ratio_two_virtual_photons": 0.9984600903829149,
+  "fixed_fraction_examples": [
+    {
+      "x": 0.0001,
+      "q2min_GeV2": 2.611461539362773e-15,
+      "q2max_GeV2": 0.0006250000000000001,
+      "finite_mass_integrated_one_photon_ratio": 0.9618336745085045,
+      "quadrature_ratio": 0.9618336745085045,
+      "two_virtual_photon_flux_ratio": 0.9236994100471126,
+      "including_BW_normalization_ratio": 0.9360490252848969
+    },
+    {
+      "x": 0.001,
+      "q2min_GeV2": 2.613814207416253e-13,
+      "q2max_GeV2": 0.0625,
+      "finite_mass_integrated_one_photon_ratio": 0.9618323816523716,
+      "quadrature_ratio": 0.9618323816523716,
+      "two_virtual_photon_flux_ratio": 0.9236969268534456,
+      "including_BW_normalization_ratio": 0.9360465088915915
+    },
+    {
+      "x": 0.01,
+      "q2min_GeV2": 2.6375761547564003e-11,
+      "q2max_GeV2": 6.25,
+      "finite_mass_integrated_one_photon_ratio": 0.9618211027055393,
+      "quadrature_ratio": 0.9618211027055392,
+      "two_virtual_photon_flux_ratio": 0.9236752634791602,
+      "including_BW_normalization_ratio": 0.9360245558837583
+    },
+    {
+      "x": 0.1,
+      "q2min_GeV2": 2.9013337702320407e-09,
+      "q2max_GeV2": 625.0,
+      "finite_mass_integrated_one_photon_ratio": 0.9618914404040132,
+      "quadrature_ratio": 0.9618914404040132,
+      "two_virtual_photon_flux_ratio": 0.9238103646275477,
+      "including_BW_normalization_ratio": 0.9361614632985379
+    }
+  ],
+  "scope": "At fixed equal photon fractions x and 250GeV emitters, integrate only the declared EPA Q2 density to Qmax2=(250x)^2. These examples exclude the beam profile, collision kernels, energy cuts and phase-space correlations; they are not predicted collider shifts. No native simulation or matrix-element integration was run."
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "feebl.regression-reference.v2",
+  "date": "2026-10-29",
+  "source_release": "FeeBL publication source distribution 2026-10-28",
+  "reference_binary_sha256": "563d7d84424a5d8a073ccdd8078353c608248488af1ddfe4a6407f2352226781",
+  "reference_compiler": "GCC 12.2 (Maxwell gcc/12.2 module)",
+  "build_type": "Release",
+  "cuda": false,
+  "build_job": 25485500,
+  "execution_job": 25485717,
+  "command": "feebl --pos_file=electron.ini default default out.dat",
+  "reason": "The retained 2026-10-28 output did not match its source distribution; a separately rebuilt baseline and the parser/RNG revision agreed under the unchanged whole-file comparator.",
+  "comparison_policy": "All whitespace-delimited fields; nonnumeric fields exact; finite real abs(a-b)<=1e-6*min(abs(a),abs(b)); zero absolute tolerance.",
+  "controls": {
+    "baseline_vs_parser_rng_revision": "PASS: all lines and fields agree",
+    "baseline_vs_secondary_physics_revision": "Only line63 differs: six vs nine fields from imported_spin_mode=0 metadata; every other line/field agrees. Default-mode metadata was subsequently suppressed.",
+    "final_refactored_binary": "Pending final regression execution; no new pass inferred from source equivalence.",
+    "baseline_vs_former_reference": "86 differing line/field checks, reproduced with unchanged comparator and tolerance."
+  },
+  "scope": "Stored software regression, not independent physics validation.",
+  "files": {
+    "acc.dat": "e3404d360651232c52cf52dee3b8e64fdb039511af8b290f000b68ea0a46913c",
+    "electron.ini.gz": "71868e72aada9ada8eb2c6b463d9ed2644060eee2290616a3c858d6ba308c951",
+    "result.ref": "565ebda67d96510e735ae3be923539c11cbb06710ef99f7bccb34c9f607190da",
+    "result.cfg": "21af58daa8029c063b725255e1976b65c15abf2665c50243d743624656b58bfd",
+    "reference_history/result_20261028.ref": "24a52f7d9494526cc3bd6a09956af2127551a463e609d16378da4608b683273c",
+    "reference_history/provenance_20261028.json": "0ed28772c19078db2eed2072a72f80c7abd3f0f5c265c70523b233c1285adf6c",
+    "reference_history/result_legacy.ref": "dc9cf13c1b2cf0e92848acd7d635362aa944dbc3ca64933bed42b31daf5f758f",
+    "reference_history/result_legacy.cfg": "21af58daa8029c063b725255e1976b65c15abf2665c50243d743624656b58bfd",
+    "reference_history/baseline-vs-parser-rng-revision.log": "5bb298d5b7fe7e9c6526aa189e939db902d654146d3ef20dd25eb281462859f6",
+    "reference_history/baseline-vs-secondary-physics-revision.log": "d974f9b60bd9a5a9b81d0a43e30c6821e3454205f17bfbda82bcd0e9a4ba242b",
+    "reference_history/baseline-vs-20261028-reference.log": "c6405171c22cfb230a8f4b87aceea011473a5c947cfb847922f212b7103637e1"
+  }
+}

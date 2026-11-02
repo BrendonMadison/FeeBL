@@ -1,0 +1,32 @@
+{
+  "verified_source_files": 1497,
+  "coverage": {
+    "proposal_support": [
+      "feebl-qed-integration-reference",
+      "feebl-qed-integration-production"
+    ],
+    "weight_limit": [
+      "feebl-qed-integration-reference",
+      "feebl-qed-integration-production"
+    ],
+    "coherent_timing_admission": [
+      "feebl-qed-input-contracts"
+    ],
+    "polarized_sampler_limit": [
+      "feebl-qed-integration-reference",
+      "feebl-qed-integration-production"
+    ],
+    "near_rest_transport": [
+      "feebl-secondary-transport-reference",
+      "feebl-secondary-transport-production",
+      "feebl-secondary-momentum-reference",
+      "feebl-secondary-momentum-production"
+    ],
+    "qed_kernel_oracles": [
+      "feebl-qed-tree-oracle",
+      "feebl-qed-bh-bw-oracle",
+      "feebl-qed-photon-domain-reference",
+      "feebl-qed-photon-domain-production"
+    ]
+  }
+}

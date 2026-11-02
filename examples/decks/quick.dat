@@ -1,0 +1,109 @@
+$ACCELERATOR:: c_nt1
+{energy=125.0;particles=2.0000;
+beta_x=13.0;beta_y=0.41;
+emitt_x=5.0;emitt_y=0.035;
+sigma_z=300.0000;espread=0.00188;dist_z=0;
+f_rep=5.0;n_b=1312;waist_y=0;
+angle_x.1=0.00000000;angle_x.2=0.00000000;angle_phi.1=0.00000000;angle_phi.2=0.00000000;}
+
+$PARAMETERS:: p_c_nt1
+{n_x=256;n_y=256;n_z=16;
+n_t=1;n_m=50000;
+cut_x=3092.9;cut_y=459.55;cut_z=3.0*sigma_z.1;
+force_symmetric=0;electron_ratio=1.0;
+do_photons=1;store_photons=0;photon_ratio=1.0;
+ecm_min=1.98*energy.1;
+do_hadrons=0;store_hadrons=0;do_coherent=0;do_trident=0;
+do_pairs=0;track_pairs=0;store_pairs=0;do_compt=0;do_muons=0;
+grids=1;rndm_load=0;rndm_save=0;
+load_beam=0;charge_sign=-1.0;
+do_lumi=0;num_lumi=100000;
+hist_ee_bins=1010;hist_ee_max=2.02*energy.1;}
+
+$ACCELERATOR:: c_nt2
+{energy=125.0;particles=2.0000;
+beta_x=13.0;beta_y=0.41;
+emitt_x=5.0;emitt_y=0.035;
+sigma_z=300.0000;espread=0.00188;dist_z=0;
+f_rep=5.0;n_b=1312;waist_y=0;
+angle_x.1=0.00000000;angle_x.2=0.00000000;angle_phi.1=0.00000000;angle_phi.2=0.00000000;}
+
+$PARAMETERS:: p_c_nt2
+{n_x=256;n_y=256;n_z=16;
+n_t=2;n_m=50000;
+cut_x=3092.9;cut_y=459.55;cut_z=3.0*sigma_z.1;
+force_symmetric=0;electron_ratio=1.0;
+do_photons=1;store_photons=0;photon_ratio=1.0;
+ecm_min=1.98*energy.1;
+do_hadrons=0;store_hadrons=0;do_coherent=0;do_trident=0;
+do_pairs=0;track_pairs=0;store_pairs=0;do_compt=0;do_muons=0;
+grids=1;rndm_load=0;rndm_save=0;
+load_beam=0;charge_sign=-1.0;
+do_lumi=0;num_lumi=100000;
+hist_ee_bins=1010;hist_ee_max=2.02*energy.1;}
+
+$ACCELERATOR:: c_nt5
+{energy=125.0;particles=2.0000;
+beta_x=13.0;beta_y=0.41;
+emitt_x=5.0;emitt_y=0.035;
+sigma_z=300.0000;espread=0.00188;dist_z=0;
+f_rep=5.0;n_b=1312;waist_y=0;
+angle_x.1=0.00000000;angle_x.2=0.00000000;angle_phi.1=0.00000000;angle_phi.2=0.00000000;}
+
+$PARAMETERS:: p_c_nt5
+{n_x=256;n_y=256;n_z=16;
+n_t=5;n_m=50000;
+cut_x=3092.9;cut_y=459.55;cut_z=3.0*sigma_z.1;
+force_symmetric=0;electron_ratio=1.0;
+do_photons=1;store_photons=0;photon_ratio=1.0;
+ecm_min=1.98*energy.1;
+do_hadrons=0;store_hadrons=0;do_coherent=0;do_trident=0;
+do_pairs=0;track_pairs=0;store_pairs=0;do_compt=0;do_muons=0;
+grids=1;rndm_load=0;rndm_save=0;
+load_beam=0;charge_sign=-1.0;
+do_lumi=0;num_lumi=100000;
+hist_ee_bins=1010;hist_ee_max=2.02*energy.1;}
+
+$ACCELERATOR:: c_nt10
+{energy=125.0;particles=2.0000;
+beta_x=13.0;beta_y=0.41;
+emitt_x=5.0;emitt_y=0.035;
+sigma_z=300.0000;espread=0.00188;dist_z=0;
+f_rep=5.0;n_b=1312;waist_y=0;
+angle_x.1=0.00000000;angle_x.2=0.00000000;angle_phi.1=0.00000000;angle_phi.2=0.00000000;}
+
+$PARAMETERS:: p_c_nt10
+{n_x=256;n_y=256;n_z=16;
+n_t=10;n_m=50000;
+cut_x=3092.9;cut_y=459.55;cut_z=3.0*sigma_z.1;
+force_symmetric=0;electron_ratio=1.0;
+do_photons=1;store_photons=0;photon_ratio=1.0;
+ecm_min=1.98*energy.1;
+do_hadrons=0;store_hadrons=0;do_coherent=0;do_trident=0;
+do_pairs=0;track_pairs=0;store_pairs=0;do_compt=0;do_muons=0;
+grids=1;rndm_load=0;rndm_save=0;
+load_beam=0;charge_sign=-1.0;
+do_lumi=0;num_lumi=100000;
+hist_ee_bins=1010;hist_ee_max=2.02*energy.1;}
+
+$ACCELERATOR:: c_nt20
+{energy=125.0;particles=2.0000;
+beta_x=13.0;beta_y=0.41;
+emitt_x=5.0;emitt_y=0.035;
+sigma_z=300.0000;espread=0.00188;dist_z=0;
+f_rep=5.0;n_b=1312;waist_y=0;
+angle_x.1=0.00000000;angle_x.2=0.00000000;angle_phi.1=0.00000000;angle_phi.2=0.00000000;}
+
+$PARAMETERS:: p_c_nt20
+{n_x=256;n_y=256;n_z=16;
+n_t=20;n_m=50000;
+cut_x=3092.9;cut_y=459.55;cut_z=3.0*sigma_z.1;
+force_symmetric=0;electron_ratio=1.0;
+do_photons=1;store_photons=0;photon_ratio=1.0;
+ecm_min=1.98*energy.1;
+do_hadrons=0;store_hadrons=0;do_coherent=0;do_trident=0;
+do_pairs=0;track_pairs=0;store_pairs=0;do_compt=0;do_muons=0;
+grids=1;rndm_load=0;rndm_save=0;
+load_beam=0;charge_sign=-1.0;
+do_lumi=0;num_lumi=100000;
+hist_ee_bins=1010;hist_ee_max=2.02*energy.1;}

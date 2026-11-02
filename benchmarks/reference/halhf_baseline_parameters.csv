@@ -1,0 +1,4 @@
+nominal_sqrts_GeV,electron_energy_GeV,positron_energy_GeV,electron_bunch_population,positron_bunch_population,sigma_z_IP_um,relative_energy_spread_rms,sigma_x_IP_nm,sigma_y_IP_nm,beta_x_IP_mm,beta_y_IP_mm,luminosity_cm_minus2_s_minus1,luminosity_fraction_top1percent,source
+250,375,41.7,10000000000.0,30000000000.0,150,0.0015,636,6.6,3.3,0.1,1.14e+34,0.66,pre-CDR September 2026 Table 2
+380,570,63.3,10000000000.0,30000000000.0,150,0.0015,519,5.2,3.3,0.1,1.75e+34,0.57,pre-CDR September 2026 Table 2
+550,825,91.7,10000000000.0,30000000000.0,150,0.0015,429,4.4,3.3,0.1,2.55e+34,0.5,pre-CDR September 2026 Table 2

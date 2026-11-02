@@ -1,0 +1,7 @@
+S2_equals_Sy,observable,independent_streams,mean_pull,empirical_SEM_of_mean_pull,unit_variance_SEM,pull_RMS,interpretation
+-1,pull_p,40,0.05284612581099117,0.17606483991027094,0.15811388300841897,1.1007938041548813,"Descriptive mean across fixed chi/exposure settings; S2 is the transverse radiation-basis spin, equal to Sy in this fixture, not beam helicity."
+-1,pull_x,40,0.16051540503625333,0.16771356558054124,0.15811388300841897,1.0595994329763274,"Descriptive mean across fixed chi/exposure settings; S2 is the transverse radiation-basis spin, equal to Sy in this fixture, not beam helicity."
+0,pull_p,40,0.08390111695518301,0.13230493433911963,0.15811388300841897,0.8304930028573383,"Descriptive mean across fixed chi/exposure settings; S2 is the transverse radiation-basis spin, equal to Sy in this fixture, not beam helicity."
+0,pull_x,40,-0.16457061043206117,0.1624533464485972,0.15811388300841897,1.0277820717153765,"Descriptive mean across fixed chi/exposure settings; S2 is the transverse radiation-basis spin, equal to Sy in this fixture, not beam helicity."
+1,pull_p,40,-0.11596375383272024,0.16922559230587783,0.15811388300841897,1.0631567780730682,"Descriptive mean across fixed chi/exposure settings; S2 is the transverse radiation-basis spin, equal to Sy in this fixture, not beam helicity."
+1,pull_x,40,-0.23249409370063812,0.14086252795137855,0.15811388300841897,0.909890830297209,"Descriptive mean across fixed chi/exposure settings; S2 is the transverse radiation-basis spin, equal to Sy in this fixture, not beam helicity."

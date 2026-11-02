@@ -1,0 +1,5 @@
+scenario,nominal_sqrts_GeV,luminosity_cm_minus2_s_minus1,electron_polarisation_magnitude,positron_polarisation_magnitude,repetition_Hz,bunches_per_pulse,bunch_population,norm_horizontal_emittance_um,norm_vertical_emittance_nm,sigma_x_IP_nm,sigma_y_IP_nm,luminosity_fraction_top1percent,source
+250_LP,250,2.7e+34,0.8,0.3,10,1312,20000000000.0,5,35,516,7.7,0.73,arXiv:2503.24049v2 Appendix A Table 2 (PDF page 22)
+250_FP,250,5.4e+34,0.8,0.3,10,2625,20000000000.0,5,35,516,7.7,0.73,arXiv:2503.24049v2 Appendix A Table 2 (PDF page 22)
+550_FP,550,7.7e+34,0.8,0.6,10,2625,20000000000.0,10,35,452,5.6,0.58,arXiv:2503.24049v2 Appendix A Table 2 (PDF page 22)
+550_LP,550,3.8999999999999997e+34,0.8,0.3,10,1312,20000000000.0,10,35,452,5.6,0.58,arXiv:2503.24049v2 Appendix A Table 2 (PDF page 22)

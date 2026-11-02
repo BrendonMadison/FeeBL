@@ -1,0 +1,7 @@
+compute_backend="gpu";
+gpu_mode=1;
+gpu_variant="atomic";
+gpu_device=0;
+gpu_min_particles=0;
+reduction_mode="fast";
+allow_backend_fallback=0;

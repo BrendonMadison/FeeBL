@@ -1,0 +1,61 @@
+{
+  "schema": "feebl.campaign-provenance/1",
+  "files": {
+    "provenance/binary-integrity.log": {
+      "sha256": "39502e39d6e5109b11dc41dd19374f940700477d0a5cece29a159d6434397726",
+      "bytes": 97
+    },
+    "provenance/bundle-integrity.log": {
+      "sha256": "8e297c877c3ab848648328829855c8ac8b2e400380303e41990fc618bea2a6db",
+      "bytes": 3642
+    },
+    "provenance/case_resources.json": {
+      "sha256": "d94994104057302b3c29d1c03a984967f9a6837f2defd3e2e6b99f8ad7372f7e",
+      "bytes": 14885
+    },
+    "provenance/cases.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "provenance/completion.json": {
+      "sha256": "3cc8f05c19144d6fc3243d3ef8de0c71502bb306ab6771ed4457192f150d0a93",
+      "bytes": 644
+    },
+    "provenance/execution_identity.json": {
+      "sha256": "f1ad5c5a7bb6760b5eeef312ef1e86b0bc4758b4e000efed2b7bba3bbb80f3be",
+      "bytes": 1624
+    },
+    "provenance/feebl-qed-figures01-25503758.out": {
+      "sha256": "7f00c2f71969262f8b139b331ef5cbfc3bc4a60f71c3792c21a7ba3f494c2768",
+      "bytes": 206
+    },
+    "provenance/input-integrity.log": {
+      "sha256": "f0861d25e94d56da34e47390289ac6e48f4c7158f2d1d5cfb00899fe1b30365d",
+      "bytes": 150
+    },
+    "provenance/job_exit.tsv": {
+      "sha256": "fcb2be9314b3d4e52c6fd85d8bd4af9011e89ec5e3d98bad237437ff52d1081a",
+      "bytes": 46
+    },
+    "provenance/native_inventory.json": {
+      "sha256": "7eb46f4e5ae3136a9e915251c8778ba8f0e46577075653b047c05f8e012671d0",
+      "bytes": 239788
+    },
+    "provenance/publication_assembly.json": {
+      "sha256": "c0cbf7beb6deb847fbf73db571cb2dcbfc77fc18cfb2c829ee818223ea683f26",
+      "bytes": 8460
+    },
+    "README.md": {
+      "sha256": "5569458eb77f419b4bdc6c715d9046c61b5f9ee943d1823541db0a621883a1f2",
+      "bytes": 3212
+    },
+    "RESULTS.md": {
+      "sha256": "b83f2b3c98bcdb07c87aa2716fd155fcba8e17e5a47b22d6be166cdeb0b9537e",
+      "bytes": 6181
+    },
+    "summary.json": {
+      "sha256": "79531feec706e1ef59742f036fc67d942e00d733584076ecea1574bbb9d579e2",
+      "bytes": 13056
+    }
+  }
+}

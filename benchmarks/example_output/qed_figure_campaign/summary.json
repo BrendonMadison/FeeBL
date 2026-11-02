@@ -1,0 +1,1611 @@
+{
+  "schema": "feebl.publication-summary/1",
+  "campaign_status": "COMPLETE_EXECUTION_ONLY",
+  "completed_native_cases": 60,
+  "adaptive_mode4_qualified": false,
+  "assessment": "Fixed-grid software and output contracts passed. Luminosity-normalized ILC comparisons and matched LL controls support the overall physical scale, with model-dependent residuals. LEP endpoint disagreement and field-domain/statistical convergence remain open. Revised peak-width analysis resolves histogram advisories without qualifying fitted response widths or accelerator convergence.",
+  "limitations": [
+    "LEP azimuth-bin FeeBL SEM remains about 7.9 times the estimated reference uncertainty at the median. The endpoint excess persists after independent primary-vector digitization and bin-map checks.",
+    "ILC production comparisons use effective daughter cross sections N/L_ee with full joint covariance. BW/BH and LL residuals remain; GP and CAIN use different virtuality prescriptions.",
+    "Published pair Monte Carlo errors and luminosity uncertainty are unspecified. The fixed-luminosity Var(N)=2N reference scenario, with N and 4N variants, does not establish calibrated significance.",
+    "HALHF reference pixels describe occupied support, not normalized density or yield. Support overlap is not a calibrated significance.",
+    "Main-grid visit/stencil rejection maxima are not lost charge. Particle, mesh, slice, time and field-domain convergence remain separate requirements.",
+    "The LL controls have four matched seeds and three variance degrees of freedom. EPA-ring LL SEM is 0.0961 mb, with leave-one-out range 0.0214-0.1333 mb; exact-local SEM is 0.1085 mb, with range 0.0479-0.1542 mb.",
+    "The fixed-resolution FWHM analysis reuses saved spectra. Bin-alignment envelopes are numerical sensitivities, not statistical confidence intervals; FCC-ee scan points still have one seed each.",
+    "Adaptive mode 4 remains unqualified after strict exit code 8. Native studies retained fixed-grid scalar settings."
+  ],
+  "validation": {
+    "native_non_strict_tests_passed": 105,
+    "required_tests_included_in_105": 11,
+    "python_tests_passed": 297,
+    "analysis_tests_passed": 34,
+    "javascript_suites_passed": 15,
+    "javascript_syntax_scripts_passed": 12,
+    "visual_browser_QA_claimed": false,
+    "collision_controls_passed": 7,
+    "adaptive_strict_exit_code": 8
+  },
+  "execution": {
+    "job_id": 25503758,
+    "job_name": "feebl-qed-figures01",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed_seconds": 1390,
+    "elapsed": "00:23:10",
+    "finished_utc": "2026-10-30T13:29:55Z",
+    "nodes": 1,
+    "allocated_cpus_reported_by_slurm": 96,
+    "requested_cpu_slots": 32,
+    "maximum_concurrent_collisions": 12,
+    "completed_cases": 60,
+    "failed_cases": 0,
+    "execution_status": "COMPLETE_EXECUTION_ONLY",
+    "scientific_qualification": "Output contracts passed. Ensemble analysis, numerical convergence and reference agreement are separate assessments.",
+    "selected_transfer_files": 537,
+    "selected_transfer_bytes": 542925616,
+    "sum_user_cpu_seconds": 9282.61,
+    "sum_system_cpu_seconds": 128.99,
+    "sum_case_wall_seconds": 9513.933402224444,
+    "maximum_case_rss_KiB": 3558996
+  },
+  "lep": {
+    "scalar_results": [
+      {
+        "observable": "inner_electron_mean_urad",
+        "mean": 13.123272754611452,
+        "standard_uncertainty": 0.07926477961318812,
+        "reference": 12.81,
+        "relative_difference_percent": 2.445532822884089
+      },
+      {
+        "observable": "outer_electron_mean_urad",
+        "mean": 11.489594999691231,
+        "standard_uncertainty": 0.06233297288520136,
+        "reference": 11.19,
+        "relative_difference_percent": 2.677345841744705
+      },
+      {
+        "observable": "electron_boundary_bias_percent",
+        "mean": -0.1067459371936767,
+        "standard_uncertainty": 0.0006647002941591072,
+        "reference": -0.10425488091085032,
+        "relative_difference_percent": 2.389390560003135
+      }
+    ],
+    "comparisons": {
+      "lep_final_focusing_vs_phi_pull": {
+        "covariance_subspace_distance_squared": 4813.671742268773,
+        "covariance_rank": 48,
+        "residual_norm_outside_supported_subspace": 0.0,
+        "pull_rms": 1.388085132327442,
+        "max_absolute_pull": 3.1555938123605105,
+        "simulation_to_reference_sem_ratio_min": 4.134947224884808,
+        "simulation_to_reference_sem_ratio_median": 7.8849076364012305,
+        "simulation_to_reference_sem_ratio_max": 11.844307116425009,
+        "interpretation": "Descriptive distance with estimated reference covariance; no calibrated p-value"
+      },
+      "lep_final_focusing_numerical_vs_phi_pull": {
+        "covariance_subspace_distance_squared": 3317.689667281804,
+        "covariance_rank": 48,
+        "residual_norm_outside_supported_subspace": 0.0,
+        "pull_rms": 1.3470716729819818,
+        "max_absolute_pull": 2.7498269930309953,
+        "simulation_to_reference_sem_ratio_min": 3.698930117893896,
+        "simulation_to_reference_sem_ratio_median": 6.5125292719244126,
+        "simulation_to_reference_sem_ratio_max": 10.577920121010331,
+        "interpretation": "Descriptive distance with estimated reference covariance; no calibrated p-value"
+      },
+      "lep_focusing_distribution_pull": {
+        "covariance_subspace_distance_squared": 11536.499738206092,
+        "covariance_rank": 99,
+        "residual_norm_outside_supported_subspace": 1.7493553373474565e-16,
+        "pull_rms": 1.3497694601760737,
+        "max_absolute_pull": 9.633984865029694,
+        "simulation_to_reference_sem_ratio_min": 0.0,
+        "simulation_to_reference_sem_ratio_median": 4.823585308718556,
+        "simulation_to_reference_sem_ratio_max": 13.581701235260859,
+        "interpretation": "Descriptive distance with estimated reference covariance; no calibrated p-value"
+      }
+    },
+    "independent_fields": 10,
+    "field_on_tracks": 40960,
+    "zero_field_controls": 2,
+    "zero_control_maximum_focus_urad": 0.0,
+    "assessment": "Plausible mean scale; distribution refinement required"
+  },
+  "ilc": {
+    "results": [
+      {
+        "observable": "Breit--Wheeler",
+        "units": "mb",
+        "reference_gp": 1.05,
+        "reference_cain": 1.04,
+        "model1": {
+          "mean": 1.1625074998546865,
+          "standard_uncertainty": 0.010457550157167506
+        },
+        "model2": {
+          "mean": 1.1250791855095534,
+          "standard_uncertainty": 0.01907804230890375
+        }
+      },
+      {
+        "observable": "Bethe--Heitler",
+        "units": "mb",
+        "reference_gp": 37.7,
+        "reference_cain": 34.5,
+        "model1": {
+          "mean": 38.870455832641184,
+          "standard_uncertainty": 0.16130845313747033
+        },
+        "model2": {
+          "mean": 39.18710520708623,
+          "standard_uncertainty": 0.27212990289508804
+        }
+      },
+      {
+        "observable": "Landau--Lifshitz",
+        "units": "mb",
+        "reference_gp": 19.2,
+        "reference_cain": 15.2,
+        "model1": {
+          "mean": 18.168310910228957,
+          "standard_uncertainty": 0.048457511146395835
+        },
+        "model2": {
+          "mean": 18.838889616116294,
+          "standard_uncertainty": 0.04617348241730168
+        }
+      },
+      {
+        "observable": "Total",
+        "units": "mb",
+        "reference_gp": 57.95,
+        "reference_cain": 50.74,
+        "model1": {
+          "mean": 58.20127424272482,
+          "standard_uncertainty": 0.1976981203028099
+        },
+        "model2": {
+          "mean": 59.15107400871209,
+          "standard_uncertainty": 0.27583132242967234
+        }
+      },
+      {
+        "observable": "luminosity_per_crossing",
+        "units": "inverse microbarn",
+        "reference_gp": 1.82,
+        "reference_cain": 1.82,
+        "model1": {
+          "mean": 1.7347558333333333,
+          "standard_uncertainty": 0.011575352109202554
+        },
+        "model2": {
+          "mean": 1.7443216666666665,
+          "standard_uncertainty": 0.00950085903877894
+        }
+      }
+    ],
+    "independent_seeds_per_model": 12,
+    "observable": "Effective individual-daughter production cross section in mb",
+    "normalization": "For every BW/BH/LL channel, sum of admitted electron and positron counts divided by sum of inclusive electron-positron luminosity; 1 mb=1e-31 m^2.",
+    "selection": "5 MeV production cut per daughter; pair_ratio=1; no final-energy recut, scattered spectators or other secondary populations.",
+    "uncertainty": "Full joint count/luminosity covariance of the mean; all interchannel terms retained; delete-one-collision jackknife; no added row-Poisson term.",
+    "reference_error_scenario": "Var(N)=2N at one equivalent crossing and fixed published L_ee=1.82 inverse microbarn, not source-certified historical errors.",
+    "process_pulls_var_reference_2Y": {
+      "model1_gp": {
+        "Breit-Wheeler": 3.1655144216844624,
+        "Bethe-Heitler": 4.506789871765016,
+        "Landau-Lifshitz": -6.737595042792972
+      },
+      "model1_cain": {
+        "Breit-Wheeler": 3.4619659551771913,
+        "Bethe-Heitler": 17.284860352211872,
+        "Landau-Lifshitz": 21.505306263182636
+      },
+      "model2_gp": {
+        "Breit-Wheeler": 1.9271242849751404,
+        "Bethe-Heitler": 4.376049090079548,
+        "Landau-Lifshitz": -2.369228989647527
+      },
+      "model2_cain": {
+        "Breit-Wheeler": 2.1917517477129698,
+        "Bethe-Heitler": 14.00748361281548,
+        "Landau-Lifshitz": 26.514458287112873
+      }
+    },
+    "process_pull_sensitivity": {
+      "model1_gp": {
+        "Breit-Wheeler": {
+          "variance_N": 4.29466919001205,
+          "variance_4N": 2.288434136009424
+        },
+        "Bethe-Heitler": {
+          "variance_N": 5.414212381570464,
+          "variance_4N": 3.54720134600094
+        },
+        "Landau-Lifshitz": {
+          "variance_N": -9.084367751342072,
+          "variance_4N": -4.8881532158915615
+        }
+      },
+      "model1_cain": {
+        "Breit-Wheeler": {
+          "variance_N": 4.695225284377754,
+          "variance_4N": 2.5032438081080035
+        },
+        "Bethe-Heitler": {
+          "variance_N": 20.60791696326137,
+          "variance_4N": 13.694864747176224
+        },
+        "Landau-Lifshitz": {
+          "variance_N": 28.696041377132325,
+          "variance_4N": 15.697940355305896
+        }
+      },
+      "model2_gp": {
+        "Breit-Wheeler": {
+          "variance_N": 2.447648353330512,
+          "variance_4N": 1.4525417793843993
+        },
+        "Bethe-Heitler": {
+          "variance_N": 4.830683840100501,
+          "variance_4N": 3.7541693083674867
+        },
+        "Landau-Lifshitz": {
+          "variance_N": -3.2066803735226705,
+          "variance_4N": -1.7151105834304108
+        }
+      },
+      "model2_cain": {
+        "Breit-Wheeler": {
+          "variance_N": 2.7817915155764847,
+          "variance_4N": 1.652822131114737
+        },
+        "Bethe-Heitler": {
+          "variance_N": 15.36873704521996,
+          "variance_4N": 12.10694338225238
+        },
+        "Landau-Lifshitz": {
+          "variance_N": 35.53962625387888,
+          "variance_4N": 19.30273384636339
+        }
+      }
+    },
+    "normalized_models": {
+      "model1": {
+        "mean_mb": [
+          1.1625074998546865,
+          38.870455832641184,
+          18.168310910228957
+        ],
+        "covariance_of_mean_mb2": [
+          [
+            0.00010936035528967412,
+            0.0008560145401637744,
+            0.0002643876240929211
+          ],
+          [
+            0.0008560145401637743,
+            0.02602041705360346,
+            0.004182917323677347
+          ],
+          [
+            0.0002643876240929211,
+            0.0041829173236773475,
+            0.002348130386503077
+          ]
+        ],
+        "sem_mb": [
+          0.010457550157167506,
+          0.16130845313747033,
+          0.048457511146395835
+        ],
+        "jackknife_covariance_mb2": [
+          [
+            0.0001090114730532826,
+            0.0008533677713827859,
+            0.0002635987250225294
+          ],
+          [
+            0.0008533677713827859,
+            0.026022957083309897,
+            0.004179919075442668
+          ],
+          [
+            0.0002635987250225294,
+            0.004179919075442668,
+            0.002347786434490465
+          ]
+        ],
+        "jackknife_sem_mb": [
+          0.010440855954052934,
+          0.16131632615240746,
+          0.048453962010247056
+        ],
+        "leave_one_out_mean_mb": [
+          [
+            1.1570149453425675,
+            38.84095722107357,
+            18.140487056359134
+          ],
+          [
+            1.1601658549178753,
+            38.85805257949313,
+            18.157251535081503
+          ],
+          [
+            1.1575046337798893,
+            38.79487243783838,
+            18.155222745329123
+          ],
+          [
+            1.1623456226948925,
+            38.80319508719165,
+            18.175387929181227
+          ],
+          [
+            1.1653715478391873,
+            38.858377383066596,
+            18.164688896851697
+          ],
+          [
+            1.1638506253506167,
+            38.97330511432006,
+            18.189088729834783
+          ],
+          [
+            1.1613419718817553,
+            38.87168653930989,
+            18.154783423292013
+          ],
+          [
+            1.1687509916318055,
+            38.90893534220264,
+            18.163291060363996
+          ],
+          [
+            1.1636757623892515,
+            38.92502774281127,
+            18.19209259012345
+          ],
+          [
+            1.1650115892989428,
+            38.85594928705232,
+            18.17278619748836
+          ],
+          [
+            1.1622003027593815,
+            38.90625556158096,
+            18.173100478008067
+          ],
+          [
+            1.1628806680102808,
+            38.84920449024686,
+            18.181794256496953
+          ]
+        ],
+        "leave_one_out_sem_mb": [
+          [
+            0.00970705041547908,
+            0.1731929971969705,
+            0.04317185151894577
+          ],
+          [
+            0.011173586346315604,
+            0.17638260263577085,
+            0.051691068494587454
+          ],
+          [
+            0.010014985730217028,
+            0.15543405596998192,
+            0.05088171800926206
+          ],
+          [
+            0.011460244056024214,
+            0.16053852028296722,
+            0.05257858723161969
+          ],
+          [
+            0.01100491784344476,
+            0.17586569426068718,
+            0.052820648369533894
+          ],
+          [
+            0.01137986057123358,
+            0.13661130910475236,
+            0.04813862274480497
+          ],
+          [
+            0.011379014018459744,
+            0.17666297174923049,
+            0.0508897552933252
+          ],
+          [
+            0.00920117636317308,
+            0.17155497910468442,
+            0.05273000239549464
+          ],
+          [
+            0.011406068510701724,
+            0.16669443216669513,
+            0.04646697536008899
+          ],
+          [
+            0.011133572450274878,
+            0.1760369816492174,
+            0.05290247981148264
+          ],
+          [
+            0.011436838114481302,
+            0.17217980369497818,
+            0.05278618967733111
+          ],
+          [
+            0.011499761835006204,
+            0.17589021016051412,
+            0.05128246201181955
+          ]
+        ],
+        "luminosity_mean_inverse_mb": 1734.7558333333336,
+        "estimator": "Ratio of summed daughter counts to summed electron-positron luminosity",
+        "covariance": "Jacobian of the complete joint seed covariance of the mean"
+      },
+      "model2": {
+        "mean_mb": [
+          1.1250791855095534,
+          39.18710520708623,
+          18.838889616116294
+        ],
+        "covariance_of_mean_mb2": [
+          [
+            0.0003639716983403215,
+            -0.00031225390408642315,
+            -0.00025702315779131744
+          ],
+          [
+            -0.0003122539040864231,
+            0.07405468404969004,
+            0.00033541316524304246
+          ],
+          [
+            -0.0002570231577913174,
+            0.0003354131652430419,
+            0.0021319904785408674
+          ]
+        ],
+        "sem_mb": [
+          0.01907804230890375,
+          0.27212990289508804,
+          0.04617348241730168
+        ],
+        "jackknife_covariance_mb2": [
+          [
+            0.00036409035114811516,
+            -0.0003079700672729603,
+            -0.00025597627345317193
+          ],
+          [
+            -0.0003079700672729603,
+            0.07427275688717783,
+            0.0003392339149020572
+          ],
+          [
+            -0.00025597627345317193,
+            0.0003392339149020572,
+            0.002129550767311368
+          ]
+        ],
+        "jackknife_sem_mb": [
+          0.019081151724885875,
+          0.27253028618334846,
+          0.04614705588996299
+        ],
+        "leave_one_out_mean_mb": [
+          [
+            1.1303314915974711,
+            39.21343486866942,
+            18.838945100419448
+          ],
+          [
+            1.1228817429930813,
+            39.09535777762118,
+            18.85091489911446
+          ],
+          [
+            1.1278563044563708,
+            39.37740993540393,
+            18.851439491178493
+          ],
+          [
+            1.130609909910379,
+            39.11592759724053,
+            18.823561868879445
+          ],
+          [
+            1.1302890548879505,
+            39.24297499188048,
+            18.835569990256577
+          ],
+          [
+            1.1323457732884377,
+            39.11378649705755,
+            18.81791382665559
+          ],
+          [
+            1.1218588421424542,
+            39.16026301774191,
+            18.852210418362464
+          ],
+          [
+            1.1243263720778234,
+            39.15165032336221,
+            18.864495931693245
+          ],
+          [
+            1.112891440501044,
+            39.24979123173278,
+            18.833194154488517
+          ],
+          [
+            1.1198091419423315,
+            39.081599959924816,
+            18.848068094414625
+          ],
+          [
+            1.1291543954208427,
+            39.18513889808164,
+            18.822783840365314
+          ],
+          [
+            1.1185471340453712,
+            39.25846687085045,
+            18.827669647444278
+          ]
+        ],
+        "leave_one_out_sem_mb": [
+          [
+            0.02008780519528594,
+            0.29691170614945156,
+            0.050606907721993354
+          ],
+          [
+            0.020797706298103937,
+            0.2808918594984921,
+            0.048935647922595756
+          ],
+          [
+            0.020735062016896018,
+            0.2142999604367881,
+            0.048857749339201825
+          ],
+          [
+            0.01996242123515444,
+            0.28723044176209916,
+            0.04762200714084731
+          ],
+          [
+            0.020032049391756714,
+            0.29101404702350786,
+            0.05029563980680512
+          ],
+          [
+            0.019267089700858015,
+            0.28638772078454094,
+            0.04492827166549486
+          ],
+          [
+            0.020605248748599897,
+            0.2965646100413045,
+            0.04845257870695338
+          ],
+          [
+            0.02085275794060803,
+            0.2950409945171369,
+            0.042087383582077996
+          ],
+          [
+            0.016142334001606546,
+            0.2906316602172934,
+            0.05025493066576539
+          ],
+          [
+            0.02012454761709145,
+            0.2748981955860969,
+            0.04965079332299269
+          ],
+          [
+            0.020405624228732072,
+            0.2980874684738877,
+            0.04736884078528638
+          ],
+          [
+            0.01964922623396434,
+            0.28775326550566527,
+            0.04903039180238924
+          ]
+        ],
+        "luminosity_mean_inverse_mb": 1744.3216666666667,
+        "estimator": "Ratio of summed daughter counts to summed electron-positron luminosity",
+        "covariance": "Jacobian of the complete joint seed covariance of the mean"
+      }
+    },
+    "reference_total_convention": "Totals sum printed channel cross sections (57.95 and 50.74 mb); independently rounded source totals are 58.0 and 50.7 mb.",
+    "raw_counts_role": "Per-crossing detector-background diagnostics remain in the native/reduction products; they are not the current source comparison.",
+    "mode2_LL_relative_difference_gp_percent": -1.8807832493943022,
+    "assessment": "Normalized LL is 1.88% below GP; BW/BH are 7.15%/3.94% above GP. Plausible scale with explicit model and convergence limitations; precision reproduction is not established."
+  },
+  "halhf": {
+    "support_metrics": {
+      "model1": {
+        "forward_electron": {
+          "occupied_support_jaccard": 0.7703379224030038,
+          "reference_support_coverage": 0.8374149659863945,
+          "simulated_count_fraction_in_reference_support": 0.9916346681294569,
+          "interpretation": "Descriptive support comparison; raster occupancy is not event count or probability"
+        },
+        "forward_positron": {
+          "occupied_support_jaccard": 0.7510121457489879,
+          "reference_support_coverage": 0.8548387096774194,
+          "simulated_count_fraction_in_reference_support": 0.9908930058284764,
+          "interpretation": "Descriptive support comparison; raster occupancy is not event count or probability"
+        },
+        "backward_electron": {
+          "occupied_support_jaccard": 0.6350877192982456,
+          "reference_support_coverage": 0.7377717391304348,
+          "simulated_count_fraction_in_reference_support": 0.9786447638603696,
+          "interpretation": "Descriptive support comparison; raster occupancy is not event count or probability"
+        },
+        "backward_positron": {
+          "occupied_support_jaccard": 0.7007943512797882,
+          "reference_support_coverage": 0.7963891675025075,
+          "simulated_count_fraction_in_reference_support": 0.9800120530333466,
+          "interpretation": "Descriptive support comparison; raster occupancy is not event count or probability"
+        }
+      },
+      "model2": {
+        "forward_electron": {
+          "occupied_support_jaccard": 0.7658385093167702,
+          "reference_support_coverage": 0.8387755102040816,
+          "simulated_count_fraction_in_reference_support": 0.9906343317346846,
+          "interpretation": "Descriptive support comparison; raster occupancy is not event count or probability"
+        },
+        "forward_positron": {
+          "occupied_support_jaccard": 0.7527527527527528,
+          "reference_support_coverage": 0.8663594470046083,
+          "simulated_count_fraction_in_reference_support": 0.9903016691337859,
+          "interpretation": "Descriptive support comparison; raster occupancy is not event count or probability"
+        },
+        "backward_electron": {
+          "occupied_support_jaccard": 0.6366822429906542,
+          "reference_support_coverage": 0.7404891304347826,
+          "simulated_count_fraction_in_reference_support": 0.9782838983050847,
+          "interpretation": "Descriptive support comparison; raster occupancy is not event count or probability"
+        },
+        "backward_positron": {
+          "occupied_support_jaccard": 0.7221727515583259,
+          "reference_support_coverage": 0.8134403209628887,
+          "simulated_count_fraction_in_reference_support": 0.9816559743384125,
+          "interpretation": "Descriptive support comparison; raster occupancy is not event count or probability"
+        }
+      }
+    },
+    "independent_seeds_per_model": 12,
+    "hemisphere_selection": "final_position_z",
+    "polar_angle": "nearest_beam_axis",
+    "assessment": "Plausible major occupied bands; normalized-density reproduction not established"
+  },
+  "maximum_main_grid_visit_stencil_rejection_fractions_beam1_beam2": {
+    "LEP": [
+      0.0555556,
+      0.04
+    ],
+    "ILC": [
+      0.111111,
+      0.333333
+    ],
+    "HALHF": [
+      0.538462,
+      0.411765
+    ]
+  },
+  "grid_metric_interpretation": "Maxima across recorded visits/stencils in each campaign family, not integrated lost-charge fractions",
+  "primary_references": {
+    "LEP": "https://arxiv.org/abs/1908.01704v4",
+    "ILC_pairs": "https://doi.org/10.1103/PhysRevSTAB.9.034402",
+    "HALHF": "https://indico.desy.de/event/55312/contributions/212416/attachments/106566/149673/PreCDR_final_LDG.pdf",
+    "CAIN_manual_244": "https://indico.cern.ch/event/1100734/contributions/4663580/attachments/2371403/4050070/Cain244manual.pdf"
+  },
+  "evidence_sha256": {
+    "analysis_receipt": "e42d6907c82efe82c50508b0cce7616c346e7e5d26235ab222c4ecda81ce5635",
+    "native_execution_inventory": "c3223609a2c4c8803059df4e1b06df94833d0b6f11bb122879d388ea3f98f72c",
+    "native_audit": "038090c87f0d4cf10a4c85cbac8fad8f70c0726e7cb80303e3642c0db0319707",
+    "independent_native_to_production_comparison": "fc89dcb406272d92bac0f722a64f370bc1b243e99b82ce5391ad8476d1da28ab",
+    "table_values": "e0e2fc4361486b293827d9f88ae89d902cef1554751f06725e17b1cdd55ca92c",
+    "figure_generation": "3dea86f5b3ec95b028671834f71b000ffbb14e06e92eaf24540d207a2fae7dbe",
+    "LL_controls_analysis_receipt": "4a1a9e61ee73e2ab3ca712395a1ad3d6e7cfc5fde764f7c4dcf4d4e1a405dc60",
+    "LL_controls_summary": "6b627e4ad6d599ec4366dfea12471bb9f973f714e55e77638841685b04494e31",
+    "LEP_digitization_audit": "af3d76f00e7bf62eb57c81e484097e0f25eac4bb14a327b51b98f33f06e746f4",
+    "CPU_GPU_display_check": "a4ef57f0aaa1f6837d3d5510d451745e110bfa7183a2d63b274beda4f28c5fd7",
+    "peak_resolution_receipt": "927b8e175ae9edea9df45b909b93039da1981b31a98d5879c38b81d0aa37d38d",
+    "preceding_study_summary": "79531feec706e1ef59742f036fc67d942e00d733584076ecea1574bbb9d579e2"
+  },
+  "ll_controls": {
+    "completed_native_cases": 36,
+    "failed_native_cases": 0,
+    "campaign_status": "COMPLETE_EXECUTION_ONLY",
+    "reduction_status": "COMPLETE_VERIFIED_REDUCTION",
+    "execution": {
+      "job_id": 25507226,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_seconds": 428,
+      "elapsed": "00:07:08",
+      "finished_utc": "2026-10-30T14:59:57Z"
+    },
+    "source_native_identity": "sha256:238eda4954de06bada9c27a56436281d0ddac7137712e8e4bf07be37358f2598",
+    "binary_sha256": "cf872ffbfb2d91dfd8286c9f0282329040de8b0899e1cd7133e4c2fd27924d8b",
+    "independent_seeds_per_arm": 4,
+    "variance_degrees_of_freedom": 3,
+    "normalization": "Ratio of summed admitted daughter counts to summed inclusive electron-positron luminosity",
+    "model_scope": "All arms use unpolarized real photons. Legacy EPA already has corrected Born normalization. Full-QED BH/LL do not use the EPA hard pair_q2 veto.",
+    "population_scope": "Admitted electron/positron daughters only; 5 MeV production cut, pair_ratio=1, no final recut and no scattered spectators. Exact daughter assignment follows the minimum-virtuality spectator rule.",
+    "domain_scope": "Expanded extents change field/source coverage and virtual-photon acceptance together, at fixed transverse cell spacing. beam_size=0 places photons locally; it does not model infinite beams.",
+    "results": [
+      {
+        "arm": "exact_no_beam_size",
+        "label": "Full QED, no beam-size suppression",
+        "channel": "BW",
+        "cross_section_mb": 1.1580440842593165,
+        "sem_mb": 0.03663554896124879,
+        "jackknife_sem_mb": 0.036408692650171035,
+        "leave_one_out_sem_min_mb": 0.03008537214304232,
+        "leave_one_out_sem_max_mb": 0.04961879842771879
+      },
+      {
+        "arm": "exact_no_beam_size",
+        "label": "Full QED, no beam-size suppression",
+        "channel": "BH",
+        "cross_section_mb": 66.60575207140583,
+        "sem_mb": 0.27508975970057165,
+        "jackknife_sem_mb": 0.2724936673371349,
+        "leave_one_out_sem_min_mb": 0.18775318333844396,
+        "leave_one_out_sem_max_mb": 0.3903699876716231
+      },
+      {
+        "arm": "exact_no_beam_size",
+        "label": "Full QED, no beam-size suppression",
+        "channel": "LL",
+        "cross_section_mb": 31.501799576217312,
+        "sem_mb": 0.10848315454233037,
+        "jackknife_sem_mb": 0.10894406851161559,
+        "leave_one_out_sem_min_mb": 0.047861320580191484,
+        "leave_one_out_sem_max_mb": 0.15419736108220877
+      },
+      {
+        "arm": "exact_profile",
+        "label": "Full QED, profile",
+        "channel": "BW",
+        "cross_section_mb": 1.153828033652604,
+        "sem_mb": 0.02897878430748891,
+        "jackknife_sem_mb": 0.02911114802576189,
+        "leave_one_out_sem_min_mb": 0.022353761060190682,
+        "leave_one_out_sem_max_mb": 0.04028388152287183
+      },
+      {
+        "arm": "exact_profile",
+        "label": "Full QED, profile",
+        "channel": "BH",
+        "cross_section_mb": 39.04198866159089,
+        "sem_mb": 0.35513898917216763,
+        "jackknife_sem_mb": 0.3518809390391423,
+        "leave_one_out_sem_min_mb": 0.22257746952735763,
+        "leave_one_out_sem_max_mb": 0.5041438611871294
+      },
+      {
+        "arm": "exact_profile",
+        "label": "Full QED, profile",
+        "channel": "LL",
+        "cross_section_mb": 18.919953001708897,
+        "sem_mb": 0.031472108321282645,
+        "jackknife_sem_mb": 0.031334759186307286,
+        "leave_one_out_sem_min_mb": 0.03022082532540479,
+        "leave_one_out_sem_max_mb": 0.04111670558961298
+      },
+      {
+        "arm": "exact_profile_expanded_domain",
+        "label": "Full QED, expanded domain",
+        "channel": "BW",
+        "cross_section_mb": 1.163342151725872,
+        "sem_mb": 0.03362380877985534,
+        "jackknife_sem_mb": 0.033791564376947344,
+        "leave_one_out_sem_min_mb": 0.02379849183653585,
+        "leave_one_out_sem_max_mb": 0.046871347466166544
+      },
+      {
+        "arm": "exact_profile_expanded_domain",
+        "label": "Full QED, expanded domain",
+        "channel": "BH",
+        "cross_section_mb": 38.98538965676836,
+        "sem_mb": 0.32040294329821056,
+        "jackknife_sem_mb": 0.3166869673675791,
+        "leave_one_out_sem_min_mb": 0.12634487100734287,
+        "leave_one_out_sem_max_mb": 0.4556895342674785
+      },
+      {
+        "arm": "exact_profile_expanded_domain",
+        "label": "Full QED, expanded domain",
+        "channel": "LL",
+        "cross_section_mb": 18.796746527400824,
+        "sem_mb": 0.07418214363274986,
+        "jackknife_sem_mb": 0.07454073478312166,
+        "leave_one_out_sem_min_mb": 0.06757043959280704,
+        "leave_one_out_sem_max_mb": 0.09631286400170778
+      },
+      {
+        "arm": "exact_ring",
+        "label": "Full QED, ring",
+        "channel": "BW",
+        "cross_section_mb": 1.0818474647903413,
+        "sem_mb": 0.05160029904972162,
+        "jackknife_sem_mb": 0.051172127712058146,
+        "leave_one_out_sem_min_mb": 0.030054970745405602,
+        "leave_one_out_sem_max_mb": 0.07319308669817182
+      },
+      {
+        "arm": "exact_ring",
+        "label": "Full QED, ring",
+        "channel": "BH",
+        "cross_section_mb": 39.2826139102425,
+        "sem_mb": 0.1963020759524668,
+        "jackknife_sem_mb": 0.19443314185576321,
+        "leave_one_out_sem_min_mb": 0.1313284033333305,
+        "leave_one_out_sem_max_mb": 0.27933899398141815
+      },
+      {
+        "arm": "exact_ring",
+        "label": "Full QED, ring",
+        "channel": "LL",
+        "cross_section_mb": 19.087176031160404,
+        "sem_mb": 0.10310662624238026,
+        "jackknife_sem_mb": 0.10214260073550926,
+        "leave_one_out_sem_min_mb": 0.0685669672280635,
+        "leave_one_out_sem_max_mb": 0.14622304481629644
+      },
+      {
+        "arm": "finite_mass_epa_cain_qmax",
+        "label": "EPA, electron-mass cutoff",
+        "channel": "BW",
+        "cross_section_mb": 1.0938674271540874,
+        "sem_mb": 0.02392355250116493,
+        "jackknife_sem_mb": 0.023881098286313213,
+        "leave_one_out_sem_min_mb": 0.016231000684379094,
+        "leave_one_out_sem_max_mb": 0.033842695433962997
+      },
+      {
+        "arm": "finite_mass_epa_cain_qmax",
+        "label": "EPA, electron-mass cutoff",
+        "channel": "BH",
+        "cross_section_mb": 35.59441178907905,
+        "sem_mb": 0.23749662317318207,
+        "jackknife_sem_mb": 0.23478531238019715,
+        "leave_one_out_sem_min_mb": 0.1078841961295771,
+        "leave_one_out_sem_max_mb": 0.3388791646068262
+      },
+      {
+        "arm": "finite_mass_epa_cain_qmax",
+        "label": "EPA, electron-mass cutoff",
+        "channel": "LL",
+        "cross_section_mb": 14.45588096619241,
+        "sem_mb": 0.1252927673521445,
+        "jackknife_sem_mb": 0.12512165275263942,
+        "leave_one_out_sem_min_mb": 0.08254849144159314,
+        "leave_one_out_sem_max_mb": 0.17777565315940216
+      },
+      {
+        "arm": "finite_mass_epa_no_beam_size",
+        "label": "EPA, no beam-size suppression",
+        "channel": "BW",
+        "cross_section_mb": 1.1715386779103922,
+        "sem_mb": 0.02396324679144754,
+        "jackknife_sem_mb": 0.023905208560788704,
+        "leave_one_out_sem_min_mb": 0.01727742590352574,
+        "leave_one_out_sem_max_mb": 0.03398651286984244
+      },
+      {
+        "arm": "finite_mass_epa_no_beam_size",
+        "label": "EPA, no beam-size suppression",
+        "channel": "BH",
+        "cross_section_mb": 66.3720566964751,
+        "sem_mb": 0.278780074598768,
+        "jackknife_sem_mb": 0.2811437357155611,
+        "leave_one_out_sem_min_mb": 0.1382801326947698,
+        "leave_one_out_sem_max_mb": 0.3865386288813786
+      },
+      {
+        "arm": "finite_mass_epa_no_beam_size",
+        "label": "EPA, no beam-size suppression",
+        "channel": "LL",
+        "cross_section_mb": 30.315223149204485,
+        "sem_mb": 0.1164782287558626,
+        "jackknife_sem_mb": 0.11579993650690658,
+        "leave_one_out_sem_min_mb": 0.08376748221723064,
+        "leave_one_out_sem_max_mb": 0.16558403610378705
+      },
+      {
+        "arm": "finite_mass_epa_profile",
+        "label": "Finite-mass EPA, profile",
+        "channel": "BW",
+        "cross_section_mb": 1.1664693271555833,
+        "sem_mb": 0.025312594543139263,
+        "jackknife_sem_mb": 0.025090379813866276,
+        "leave_one_out_sem_min_mb": 0.018896216289279257,
+        "leave_one_out_sem_max_mb": 0.03614662258680509
+      },
+      {
+        "arm": "finite_mass_epa_profile",
+        "label": "Finite-mass EPA, profile",
+        "channel": "BH",
+        "cross_section_mb": 38.022158203920036,
+        "sem_mb": 0.25994227350868643,
+        "jackknife_sem_mb": 0.2574371124932468,
+        "leave_one_out_sem_min_mb": 0.13718774596924854,
+        "leave_one_out_sem_max_mb": 0.3680992962956187
+      },
+      {
+        "arm": "finite_mass_epa_profile",
+        "label": "Finite-mass EPA, profile",
+        "channel": "LL",
+        "cross_section_mb": 18.068205676807874,
+        "sem_mb": 0.03562687775681344,
+        "jackknife_sem_mb": 0.03561179503414122,
+        "leave_one_out_sem_min_mb": 0.02598438563653058,
+        "leave_one_out_sem_max_mb": 0.05021716400140587
+      },
+      {
+        "arm": "finite_mass_epa_ring",
+        "label": "Finite-mass EPA, ring",
+        "channel": "BW",
+        "cross_section_mb": 1.1606313172044929,
+        "sem_mb": 0.03876555682687627,
+        "jackknife_sem_mb": 0.038864845813895016,
+        "leave_one_out_sem_min_mb": 0.03850846662890065,
+        "leave_one_out_sem_max_mb": 0.050192007461457404
+      },
+      {
+        "arm": "finite_mass_epa_ring",
+        "label": "Finite-mass EPA, ring",
+        "channel": "BH",
+        "cross_section_mb": 38.50937883171774,
+        "sem_mb": 0.29919707752792263,
+        "jackknife_sem_mb": 0.29660495929932024,
+        "leave_one_out_sem_min_mb": 0.16654440155386724,
+        "leave_one_out_sem_max_mb": 0.42544873842734876
+      },
+      {
+        "arm": "finite_mass_epa_ring",
+        "label": "Finite-mass EPA, ring",
+        "channel": "LL",
+        "cross_section_mb": 18.51842864422675,
+        "sem_mb": 0.09606034499874289,
+        "jackknife_sem_mb": 0.09486129148355209,
+        "leave_one_out_sem_min_mb": 0.021397451900618793,
+        "leave_one_out_sem_max_mb": 0.13326856797359019
+      },
+      {
+        "arm": "legacy_epa_ring",
+        "label": "Legacy EPA, ring",
+        "channel": "BW",
+        "cross_section_mb": 1.170238904729525,
+        "sem_mb": 0.06901515869648825,
+        "jackknife_sem_mb": 0.06901259404297491,
+        "leave_one_out_sem_min_mb": 0.05394700466293093,
+        "leave_one_out_sem_max_mb": 0.09573196988585211
+      },
+      {
+        "arm": "legacy_epa_ring",
+        "label": "Legacy EPA, ring",
+        "channel": "BH",
+        "cross_section_mb": 38.38146474141035,
+        "sem_mb": 0.19168461438608128,
+        "jackknife_sem_mb": 0.19313363333055017,
+        "leave_one_out_sem_min_mb": 0.09561969354195178,
+        "leave_one_out_sem_max_mb": 0.26603644327151926
+      },
+      {
+        "arm": "legacy_epa_ring",
+        "label": "Legacy EPA, ring",
+        "channel": "LL",
+        "cross_section_mb": 19.839492134600327,
+        "sem_mb": 0.053744182161823376,
+        "jackknife_sem_mb": 0.053885203199465596,
+        "leave_one_out_sem_min_mb": 0.041623125037848666,
+        "leave_one_out_sem_max_mb": 0.07476823253425267
+      }
+    ],
+    "paired_changes": [
+      {
+        "label": "EPA refinements",
+        "arm": "finite_mass_epa_ring",
+        "baseline": "legacy_epa_ring",
+        "definition": "Finite-mass flux, alpha-constant adjustment and stable angular sampler together; the Born normalization is already corrected in both arms.",
+        "change_mb": [
+          -0.009607587525032102,
+          0.12791409030739231,
+          -1.3210634903735787
+        ],
+        "sem_mb": [
+          0.0892367273115564,
+          0.3948593761705094,
+          0.08904598688714932
+        ],
+        "covariance_mb2": [
+          [
+            0.007963193501277076,
+            -0.01266942613168952,
+            -0.00025592436044675343
+          ],
+          [
+            -0.01266942613168952,
+            0.1559139269497639,
+            0.02326350111863398
+          ],
+          [
+            -0.00025592436044675354,
+            0.023263501118633984,
+            0.007929187780706368
+          ]
+        ],
+        "jackknife_covariance_mb2": [
+          [
+            0.007925603298107185,
+            -0.012221566920902247,
+            -0.00010931687819803852
+          ],
+          [
+            -0.01222156692090225,
+            0.15587991169933313,
+            0.022955053770061195
+          ],
+          [
+            -0.00010931687819803809,
+            0.02295505377006119,
+            0.007848162735643146
+          ]
+        ]
+      },
+      {
+        "label": "EPA spatial profile",
+        "arm": "finite_mass_epa_profile",
+        "baseline": "finite_mass_epa_ring",
+        "definition": "Change the transverse placement prescription at fixed finite-mass EPA treatment.",
+        "change_mb": [
+          0.005838009951090406,
+          -0.48722062779770425,
+          -0.450222967418874
+        ],
+        "sem_mb": [
+          0.05804970375032787,
+          0.12570407129525804,
+          0.08050657704993076
+        ],
+        "covariance_mb2": [
+          [
+            0.00336976810550083,
+            -0.006016678563883943,
+            -0.0014585151560330572
+          ],
+          [
+            -0.006016678563883942,
+            0.015801513540203316,
+            -0.002057555020556592
+          ],
+          [
+            -0.0014585151560330574,
+            -0.002057555020556592,
+            0.006481308948296438
+          ]
+        ],
+        "jackknife_covariance_mb2": [
+          [
+            0.003350780734530416,
+            -0.006040563247204431,
+            -0.0013703890220220906
+          ],
+          [
+            -0.006040563247204431,
+            0.01597256554348099,
+            -0.0021790602189390943
+          ],
+          [
+            -0.0013703890220220906,
+            -0.002179060218939096,
+            0.006369632488091435
+          ]
+        ]
+      },
+      {
+        "label": "Full treatment, ring",
+        "arm": "exact_ring",
+        "baseline": "finite_mass_epa_ring",
+        "definition": "Change hard amplitudes, proposal support, exact kinematics, virtuality and identical-lepton treatment together; the common placement rule does not imply an identical sampled spatial distribution.",
+        "change_mb": [
+          -0.07878385241415153,
+          0.7732350785247633,
+          0.568747386933655
+        ],
+        "sem_mb": [
+          0.07434039729297855,
+          0.19885184640006387,
+          0.06355688333850512
+        ],
+        "covariance_mb2": [
+          [
+            0.005526494669677892,
+            -0.009723674532161254,
+            0.0012184482359644888
+          ],
+          [
+            -0.009723674532161254,
+            0.0395420568167146,
+            0.0048746562850684235
+          ],
+          [
+            0.0012184482359644893,
+            0.0048746562850684235,
+            0.004039477419704349
+          ]
+        ],
+        "jackknife_covariance_mb2": [
+          [
+            0.005455755058925164,
+            -0.0096596641244128,
+            0.0012394219915749585
+          ],
+          [
+            -0.009659664124412798,
+            0.03979173537384993,
+            0.004903368309061603
+          ],
+          [
+            0.0012394219915749585,
+            0.004903368309061603,
+            0.004080565482534758
+          ]
+        ]
+      },
+      {
+        "label": "Full treatment, profile",
+        "arm": "exact_profile",
+        "baseline": "finite_mass_epa_profile",
+        "definition": "Change the full hard-process and phase-space treatment while retaining the profile placement rule.",
+        "change_mb": [
+          -0.012641293502979378,
+          1.0198304576708566,
+          0.851747324901023
+        ],
+        "sem_mb": [
+          0.02926487620163433,
+          0.14772573362268496,
+          0.0456022349968231
+        ],
+        "covariance_mb2": [
+          [
+            0.0008564329790969832,
+            0.0024593414457214757,
+            0.0008547196995533189
+          ],
+          [
+            0.0024593414457214752,
+            0.02182289237436047,
+            0.005038917035317538
+          ],
+          [
+            0.000854719699553319,
+            0.005038917035317538,
+            0.002079563836705478
+          ]
+        ],
+        "jackknife_covariance_mb2": [
+          [
+            0.0008645397112539885,
+            0.002527916125603564,
+            0.0008707242224687723
+          ],
+          [
+            0.002527916125603564,
+            0.021890386828419997,
+            0.0051223254421910065
+          ],
+          [
+            0.0008707242224687722,
+            0.0051223254421910065,
+            0.0021157428366307207
+          ]
+        ]
+      },
+      {
+        "label": "Full-QED spatial profile",
+        "arm": "exact_profile",
+        "baseline": "exact_ring",
+        "definition": "Change the placement prescription within the full-QED calculation.",
+        "change_mb": [
+          0.07198056886226256,
+          -0.24062524865161095,
+          -0.16722302945150602
+        ],
+        "sem_mb": [
+          0.05657109017584663,
+          0.27930492639309046,
+          0.0819845007803312
+        ],
+        "covariance_mb2": [
+          [
+            0.003200288243683772,
+            -0.0040546330185446885,
+            0.0031440961131953436
+          ],
+          [
+            -0.004054633018544689,
+            0.0780112419074497,
+            0.0008304981572631659
+          ],
+          [
+            0.003144096113195344,
+            0.0008304981572631667,
+            0.006721458368200127
+          ]
+        ],
+        "jackknife_covariance_mb2": [
+          [
+            0.0032087895382584934,
+            -0.003915742420495482,
+            0.0031041535084200453
+          ],
+          [
+            -0.003915742420495482,
+            0.07809091518316041,
+            0.0011851130455357737
+          ],
+          [
+            0.0031041535084200458,
+            0.0011851130455357746,
+            0.006628339100753347
+          ]
+        ]
+      },
+      {
+        "label": "Electron-mass cutoff",
+        "arm": "finite_mass_epa_cain_qmax",
+        "baseline": "finite_mass_epa_ring",
+        "definition": "Apply Q squared no greater than electron mass squared within EPA; this does not implement the complete CAIN spatial model.",
+        "change_mb": [
+          -0.0667638900504055,
+          -2.9149670426386933,
+          -4.062547678034338
+        ],
+        "sem_mb": [
+          0.03867613449256421,
+          0.1981585829885595,
+          0.09339974127881073
+        ],
+        "covariance_mb2": [
+          [
+            0.0014958433792869152,
+            -0.0027143198620965276,
+            -8.15355236430935e-05
+          ],
+          [
+            -0.002714319862096527,
+            0.03926682401203383,
+            -0.01715057298071627
+          ],
+          [
+            -8.15355236430935e-05,
+            -0.017150572980716275,
+            0.008723511670948782
+          ]
+        ],
+        "jackknife_covariance_mb2": [
+          [
+            0.0014715521246160149,
+            -0.0027006620953092574,
+            -6.951358165428051e-05
+          ],
+          [
+            -0.002700662095309257,
+            0.03988491945829674,
+            -0.0174719727549627
+          ],
+          [
+            -6.951358165428073e-05,
+            -0.0174719727549627,
+            0.008876584057179816
+          ]
+        ]
+      },
+      {
+        "label": "Remove suppression, EPA",
+        "arm": "finite_mass_epa_no_beam_size",
+        "baseline": "finite_mass_epa_ring",
+        "definition": "Disable finite transverse beam-size suppression within EPA.",
+        "change_mb": [
+          0.010907360705899372,
+          27.86267786475736,
+          11.796794504977736
+        ],
+        "sem_mb": [
+          0.05550706701294863,
+          0.3154671615889408,
+          0.19479189099828068
+        ],
+        "covariance_mb2": [
+          [
+            0.00308103448837997,
+            -0.004192696517819635,
+            -0.006641920217847017
+          ],
+          [
+            -0.0041926965178196345,
+            0.09951953004098286,
+            0.05584892006646236
+          ],
+          [
+            -0.006641920217847017,
+            0.05584892006646236,
+            0.03794388079868606
+          ]
+        ],
+        "jackknife_covariance_mb2": [
+          [
+            0.003080191485035679,
+            -0.0038597426511107237,
+            -0.006476612025257997
+          ],
+          [
+            -0.0038597426511107237,
+            0.09781997904476074,
+            0.05456090725989081
+          ],
+          [
+            -0.006476612025257997,
+            0.05456090725989081,
+            0.03708838850090893
+          ]
+        ]
+      },
+      {
+        "label": "Remove suppression, full",
+        "arm": "exact_no_beam_size",
+        "baseline": "exact_ring",
+        "definition": "Disable finite transverse beam-size suppression within full QED.",
+        "change_mb": [
+          0.07619661946897516,
+          27.323138161163328,
+          12.414623545056909
+        ],
+        "sem_mb": [
+          0.03498063764581254,
+          0.10320336167567215,
+          0.1299084752949023
+        ],
+        "covariance_mb2": [
+          [
+            0.0012236450101076374,
+            -0.0008256879170821085,
+            -0.0024881885923899857
+          ],
+          [
+            -0.0008256879170821085,
+            0.010650933861159596,
+            -0.009011305209466424
+          ],
+          [
+            -0.0024881885923899857,
+            -0.009011305209466424,
+            0.01687621195344624
+          ]
+        ],
+        "jackknife_covariance_mb2": [
+          [
+            0.0012272751923997824,
+            -0.0007898288101922304,
+            -0.0025419628168709164
+          ],
+          [
+            -0.0007898288101922304,
+            0.010606760749362926,
+            -0.009024866321052365
+          ],
+          [
+            -0.0025419628168709164,
+            -0.009024866321052365,
+            0.017015369551102482
+          ]
+        ]
+      },
+      {
+        "label": "Expand domain",
+        "arm": "exact_profile_expanded_domain",
+        "baseline": "exact_profile",
+        "definition": "Double both transverse extents and cell counts while keeping cell spacing fixed.",
+        "change_mb": [
+          0.009514118073268074,
+          -0.05659900482253022,
+          -0.12320647430807341
+        ],
+        "sem_mb": [
+          0.03857028474146555,
+          0.25168999580039225,
+          0.08116845621989374
+        ],
+        "covariance_mb2": [
+          [
+            0.0014876668650377304,
+            -0.002702647322732098,
+            0.0009248790838571236
+          ],
+          [
+            -0.002702647322732098,
+            0.06334785398600147,
+            0.016647271567736457
+          ],
+          [
+            0.0009248790838571237,
+            0.016647271567736457,
+            0.006588318285120808
+          ]
+        ],
+        "jackknife_covariance_mb2": [
+          [
+            0.0015038471365283652,
+            -0.002712000212490821,
+            0.0009479251295624517
+          ],
+          [
+            -0.002712000212490821,
+            0.06405929043941586,
+            0.016872346905534526
+          ],
+          [
+            0.0009479251295624518,
+            0.016872346905534526,
+            0.006692356852610874
+          ]
+        ]
+      }
+    ],
+    "model_profile_interaction": {
+      "label": "Model/profile interaction",
+      "definition": "(full profile - full ring) - (EPA profile - EPA ring)",
+      "change_mb": [
+        0.06614255891117216,
+        0.2465953791460933,
+        0.282999937967368
+      ],
+      "covariance_mb2": [
+        [
+          0.009740387986589171,
+          -0.009171962148738631,
+          0.005049542654299942
+        ],
+        [
+          -0.009171962148738635,
+          0.052943372986373874,
+          0.007571483845956482
+        ],
+        [
+          0.005049542654299941,
+          0.007571483845956477,
+          0.006640168925639066
+        ]
+      ],
+      "sem_mb": [
+        0.09869340396697832,
+        0.23009426978170028,
+        0.0814872316724471
+      ],
+      "qualification": "Difference-in-differences with measured paired covariance; controls need not be additive."
+    },
+    "population_closure": {
+      "all36_passed": true,
+      "final_stored_daughters": 4205468,
+      "birth_final_process_species_closed": true,
+      "all_exact_BH_LL_storage_counters_closed": true
+    },
+    "maximum_main_grid_visit_stencil_rejection_fractions_beam1_beam2": [
+      0.142857,
+      0.25
+    ],
+    "exact_local_vs_BDK_LL_relative_difference_percent": -0.9377371817065661,
+    "qualification": "All controls retained. Changes are conditional and non-additive; the model/profile interaction is 0.2830 +/- 0.0815 mb for LL. No new LL kernel defect is established. Four seeds and one domain enlargement do not certify precision convergence."
+  },
+  "figure_feedback": {
+    "figure2_LEP_digitization": {
+      "status": "PASS_NO_SIGNIFICANT_DIGITIZATION_OR_BIN_MAPPING_ERROR_FOUND",
+      "source": "https://arxiv.org/abs/1908.01704v4",
+      "maximum_coordinate_difference_urad": 6.30869817435098e-05,
+      "maximum_ordinate_difference_au": 0.006590298431547126,
+      "endpoint_pull": 9.633984865029694,
+      "interpretation": "No significant digitization or bin-mapping error explains the 25.5-26 microradian excess. Further physical/numerical investigation and independent-field precision are needed."
+    },
+    "figure7_CPU_GPU": {
+      "status": "INDEPENDENT_FOUR_PLUS_FOUR_COMPARISON_RETAINED",
+      "selection": {
+        "cpu_seeds": [
+          72942001,
+          72942003,
+          72942005,
+          72942007
+        ],
+        "gpu_seeds": [
+          72942002,
+          72942004,
+          72942006,
+          72942008
+        ],
+        "rule": "Odd seeds for CPU, even seeds for GPU; fixed without selecting on outcomes."
+      },
+      "matched_seed_closure": "Eight CPU/GPU matched spectra agree at six-significant-digit output precision; separate from displayed independent-seed comparison.",
+      "observable": "Absolute differential luminosity per crossing",
+      "bins": 40,
+      "bin_width_MeV": 66,
+      "displayed_pull": "(CPU-GPU)/sqrt(Var(meanCPU)+Var(meanGPU))",
+      "pull_bar_standard_uncertainty": 1,
+      "error_bar_endcaps": true,
+      "maximum_absolute_pull": 1.6613380940620055,
+      "covariance_rank_upper_bound": 6,
+      "full_bin_p_value_assigned": false,
+      "hardware": "16-thread CPU versus one V100 with 16 host threads; one GPU per collision is supported."
+    },
+    "figure12_histogram_resolution": {
+      "status": "ALL24_SAVED_SPECTRA_PASS_DECLARED_RESOLUTION_CHECK",
+      "native_runs_added": 0,
+      "policy": {
+        "schema": "feebl.observed-peak-resolution/2",
+        "primary_groups": {
+          "broad": 32,
+          "sigma4": 4,
+          "sigma2": 2,
+          "sigma1": 1
+        },
+        "native_bin_width_MeV": 0.2,
+        "comparison": "All phases at the primary and twice-primary group sizes",
+        "maximum_resolution_relative_change": 0.05,
+        "single_component_required": true,
+        "choice": "Fixed per predefined optics target, not optimized per simulated histogram",
+        "uncertainty": "Alignment/resolution envelopes are not confidence intervals or seed SEM",
+        "physical_scope": "Histogram resolution only; particle, mesh, slice and time convergence remain separate"
+      },
+      "maximum_observed_resolution_relative_change": 0.04306806127585827,
+      "fcc_fwhm_MeV_at_dispersion_mm": {
+        "0": 130.92686193606085,
+        "100": 81.1429094716658
+      },
+      "ilc_endpoint_FWHM_MeV": 2.511772231732342,
+      "halhf_endpoint_FWHM_MeV": 2.4328311639247127,
+      "interpretation": "Broad-peak noisy maxima and narrow-peak bin broadening were distinct analysis effects. Fixed resolutions and all alignments resolve the histogram advisories; envelopes are numerical sensitivities, not statistical errors. FCC-ee remains far above 1-4 MeV; response fits and simulation convergence remain separate."
+    }
+  },
+  "additional_analysis_tests": {
+    "LL_control_tests": 7,
+    "LEP_vector_audit_tests": 4,
+    "peak_resolution_tests": 9,
+    "CPU_GPU_statistics_tests": 4,
+    "scope": "Separate focused checks; these counts do not modify the historical native-validation totals."
+  },
+  "analysis_revision": {
+    "date": "2026-10-30",
+    "current_ILC_comparison": "Luminosity-normalized; previous raw-yield pulls superseded",
+    "native_case_accounting": "Top-level 60 refers to the original figure campaign. The separate ll_controls object records the additional 36 cases."
+  },
+  "figure4_presentation": {
+    "central_values_only": true,
+    "uncertainty_tables_retained": true,
+    "native_records_discarded": 0,
+    "numerical_values_changed": false,
+    "independent_collision_runs_per_configuration": 4,
+    "reference_symbols": "Asterisk: documented GUINEA-PIG prescription or option; dagger: CAIN. Not identical complete configurations or claims of priority.",
+    "display_receipt_sha256": "3b68b5dbade756b228d9bfae869ed1ca510e427f763ccfe224a77bbc93c45bbf"
+  }
+}

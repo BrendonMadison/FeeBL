@@ -1,0 +1,471 @@
+{
+  "schema": "feebl.gpu-cpu-stress-analysis/1",
+  "scenario_label": "FCC-ee, 240 GeV",
+  "seeds": [
+    72942001,
+    72942002,
+    72942003,
+    72942004,
+    72942005,
+    72942006,
+    72942007,
+    72942008
+  ],
+  "variants": [
+    "cpu",
+    "gpu"
+  ],
+  "comparisons": [
+    {
+      "id": "gpu_cpu",
+      "cpu": "cpu",
+      "gpu": "gpu"
+    }
+  ],
+  "panels": {
+    "full": {
+      "edges_GeV": [
+        0.0,
+        6.6,
+        13.2,
+        19.8,
+        26.4,
+        33.0,
+        39.6,
+        46.2,
+        52.8,
+        59.4,
+        66.0,
+        72.6,
+        79.2,
+        85.8,
+        92.4,
+        99.0,
+        105.6,
+        112.2,
+        118.8,
+        125.4,
+        132.0,
+        138.6,
+        145.2,
+        151.8,
+        158.4,
+        165.0,
+        171.6,
+        178.2,
+        184.8,
+        191.4,
+        198.0,
+        204.6,
+        211.2,
+        217.8,
+        224.4,
+        231.0,
+        237.6,
+        244.2,
+        250.8,
+        257.4,
+        264.0
+      ]
+    },
+    "peak": {
+      "edges_GeV": [
+        238.656,
+        238.722,
+        238.788,
+        238.854,
+        238.92000000000002,
+        238.986,
+        239.052,
+        239.118,
+        239.184,
+        239.25,
+        239.316,
+        239.382,
+        239.448,
+        239.514,
+        239.58,
+        239.64600000000002,
+        239.712,
+        239.778,
+        239.844,
+        239.91,
+        239.976,
+        240.042,
+        240.108,
+        240.174,
+        240.24,
+        240.30599999999998,
+        240.37199999999999,
+        240.438,
+        240.504,
+        240.57,
+        240.636,
+        240.702,
+        240.768,
+        240.834,
+        240.9,
+        240.966,
+        241.03199999999998,
+        241.09799999999998,
+        241.164,
+        241.23,
+        241.296
+      ]
+    }
+  },
+  "runs": [
+    {
+      "seed": 72942001,
+      "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+      "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+      "physics_input_sha256": "fc6cc108d709eb131cc246feaa02592d8e7957320bda5112609199fed05e4b77",
+      "cpu_threads": 16,
+      "gpu_count": 0,
+      "gpu_uuid": null,
+      "variant": "cpu",
+      "spectrum": {
+        "path": "runs/cpu/72942001/lumi.ee.out.dLdW.fne",
+        "sha256": "288f543ecaa9bee3f70124ab66fa3cb096c299d222f7e5a3a1063b56626317f0"
+      },
+      "receipt": {
+        "path": "runs/cpu/72942001/execution.json",
+        "sha256": "954f93dbede45629730c13a66cc2ea3861f615b84cec4233463fc16e840e4bfd"
+      },
+      "stderr": {
+        "path": "runs/cpu/72942001/stderr.txt",
+        "sha256": "0a112051bed5603204558234b36c4d098e0be95bdcc87d7b2a096eb9c70e8596"
+      }
+    },
+    {
+      "seed": 72942002,
+      "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+      "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+      "physics_input_sha256": "a86ea1b21eeb8fec46b64b239e87db5d2c7946bfd69cc661212e130063409f9e",
+      "cpu_threads": 16,
+      "gpu_count": 0,
+      "gpu_uuid": null,
+      "variant": "cpu",
+      "spectrum": {
+        "path": "runs/cpu/72942002/lumi.ee.out.dLdW.fne",
+        "sha256": "fb38f63780b5110f1708e8030145669eeeb4aff79451585450d450ef50de8448"
+      },
+      "receipt": {
+        "path": "runs/cpu/72942002/execution.json",
+        "sha256": "46154c4ac23b6473cdf59b81aed8603e3366b87fc972edb172f50578678bcd42"
+      },
+      "stderr": {
+        "path": "runs/cpu/72942002/stderr.txt",
+        "sha256": "14a0aa55169389fc1d6afde532eb2d4ef93bf5d1b3dbdb716892175498d88a95"
+      }
+    },
+    {
+      "seed": 72942001,
+      "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+      "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+      "physics_input_sha256": "fc6cc108d709eb131cc246feaa02592d8e7957320bda5112609199fed05e4b77",
+      "cpu_threads": 16,
+      "gpu_count": 1,
+      "gpu_uuid": "V100-0",
+      "variant": "gpu",
+      "spectrum": {
+        "path": "runs/gpu/72942001/lumi.ee.out.dLdW.fne",
+        "sha256": "288f543ecaa9bee3f70124ab66fa3cb096c299d222f7e5a3a1063b56626317f0"
+      },
+      "receipt": {
+        "path": "runs/gpu/72942001/execution.json",
+        "sha256": "78833a5b25712b80f6ffae4f4ae4a53547d3ceb94a3b76b819d2bc3af56dfc23"
+      },
+      "stderr": {
+        "path": "runs/gpu/72942001/stderr.txt",
+        "sha256": "28189cbd08891d18ce7ae619d066b9f9e09e3ad8e5e697990fd200f7c079e4b1"
+      }
+    },
+    {
+      "seed": 72942002,
+      "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+      "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+      "physics_input_sha256": "a86ea1b21eeb8fec46b64b239e87db5d2c7946bfd69cc661212e130063409f9e",
+      "cpu_threads": 16,
+      "gpu_count": 1,
+      "gpu_uuid": "V100-1",
+      "variant": "gpu",
+      "spectrum": {
+        "path": "runs/gpu/72942002/lumi.ee.out.dLdW.fne",
+        "sha256": "fb38f63780b5110f1708e8030145669eeeb4aff79451585450d450ef50de8448"
+      },
+      "receipt": {
+        "path": "runs/gpu/72942002/execution.json",
+        "sha256": "d053139e5088a66382a18158e14c2c82763d380e1916d929a1350e43ac04bf14"
+      },
+      "stderr": {
+        "path": "runs/gpu/72942002/stderr.txt",
+        "sha256": "35cc95953e0a55a9feea0625b683b3402c8967716a5b35f7f8ffc9ce83f5217d"
+      }
+    },
+    {
+      "seed": 72942003,
+      "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+      "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+      "physics_input_sha256": "f85c16f57afc7e3f29648a956d25a707cecf1ade4dcedb6a76818cd15a410c5b",
+      "cpu_threads": 16,
+      "gpu_count": 1,
+      "gpu_uuid": "V100-0",
+      "variant": "gpu",
+      "spectrum": {
+        "path": "runs/gpu/72942003/lumi.ee.out.dLdW.fne",
+        "sha256": "4c0f0fc179158fa941f2def6816839df571b658fdce010768d713758ada1e611"
+      },
+      "receipt": {
+        "path": "runs/gpu/72942003/execution.json",
+        "sha256": "ab142b1d59bd9597dcf11525125ea3dd1868a42094fda0e5f2ed5da691ba07bc"
+      },
+      "stderr": {
+        "path": "runs/gpu/72942003/stderr.txt",
+        "sha256": "670c52a752386fbc430250215fe9882f5949e259c6462c400302c2f3246683f5"
+      }
+    },
+    {
+      "seed": 72942004,
+      "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+      "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+      "physics_input_sha256": "12d9fe4370bb5f5aebaa93914bda17d3e1d09e1832bea524c0395e400963e69e",
+      "cpu_threads": 16,
+      "gpu_count": 1,
+      "gpu_uuid": "V100-1",
+      "variant": "gpu",
+      "spectrum": {
+        "path": "runs/gpu/72942004/lumi.ee.out.dLdW.fne",
+        "sha256": "cf94c317b624c0964d434f3770a64ee4cf99764f917bac8e5559993236f82d55"
+      },
+      "receipt": {
+        "path": "runs/gpu/72942004/execution.json",
+        "sha256": "5c7b8d92107f6e6844825d506636bd5ae64215ec5a66629156a0eb66563c20cd"
+      },
+      "stderr": {
+        "path": "runs/gpu/72942004/stderr.txt",
+        "sha256": "14a28ab3c619496e3470b0891b8a85bab955af2b0d24101b393bd3aedc138c20"
+      }
+    },
+    {
+      "seed": 72942003,
+      "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+      "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+      "physics_input_sha256": "f85c16f57afc7e3f29648a956d25a707cecf1ade4dcedb6a76818cd15a410c5b",
+      "cpu_threads": 16,
+      "gpu_count": 0,
+      "gpu_uuid": null,
+      "variant": "cpu",
+      "spectrum": {
+        "path": "runs/cpu/72942003/lumi.ee.out.dLdW.fne",
+        "sha256": "4c0f0fc179158fa941f2def6816839df571b658fdce010768d713758ada1e611"
+      },
+      "receipt": {
+        "path": "runs/cpu/72942003/execution.json",
+        "sha256": "504fd075c5b2d67815fa8de28554e9742368ed0e70db6be5d6accc9407fc9974"
+      },
+      "stderr": {
+        "path": "runs/cpu/72942003/stderr.txt",
+        "sha256": "d8a45832230072053255dc3598693302063f41c00cc4fd095e8d3ed1d8aad93e"
+      }
+    },
+    {
+      "seed": 72942004,
+      "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+      "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+      "physics_input_sha256": "12d9fe4370bb5f5aebaa93914bda17d3e1d09e1832bea524c0395e400963e69e",
+      "cpu_threads": 16,
+      "gpu_count": 0,
+      "gpu_uuid": null,
+      "variant": "cpu",
+      "spectrum": {
+        "path": "runs/cpu/72942004/lumi.ee.out.dLdW.fne",
+        "sha256": "cf94c317b624c0964d434f3770a64ee4cf99764f917bac8e5559993236f82d55"
+      },
+      "receipt": {
+        "path": "runs/cpu/72942004/execution.json",
+        "sha256": "a5d4f30cd25ea292963bfe84ec9a6df03abd43855f068c9957891c9aed3d21ce"
+      },
+      "stderr": {
+        "path": "runs/cpu/72942004/stderr.txt",
+        "sha256": "59c0e71f99f0dcc55c32e01d8139721532553ed0d85030e5607868efdc3742ae"
+      }
+    },
+    {
+      "seed": 72942005,
+      "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+      "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+      "physics_input_sha256": "8a367171af5be8a53c1516042fc696cc3ccd1c22cc49c3914c23fc2f604011e1",
+      "cpu_threads": 16,
+      "gpu_count": 0,
+      "gpu_uuid": null,
+      "variant": "cpu",
+      "spectrum": {
+        "path": "runs/cpu/72942005/lumi.ee.out.dLdW.fne",
+        "sha256": "62fb0c408326368ed0934fd12d2431d5ebb4e5ddc2ec1b66fec2224fa90c0d4b"
+      },
+      "receipt": {
+        "path": "runs/cpu/72942005/execution.json",
+        "sha256": "2c37ec65603245657df06d50bfb43b6f0244735cdd29fc51077a8de3542695f0"
+      },
+      "stderr": {
+        "path": "runs/cpu/72942005/stderr.txt",
+        "sha256": "502b32d8ebc79508fbc52120adec649f0a082249122bf139be8b35631d0727f1"
+      }
+    },
+    {
+      "seed": 72942006,
+      "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+      "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+      "physics_input_sha256": "cecdafaf8234aafaf489a51d6f453ed01178e19f4f712b7d256cccd2e9b572c4",
+      "cpu_threads": 16,
+      "gpu_count": 0,
+      "gpu_uuid": null,
+      "variant": "cpu",
+      "spectrum": {
+        "path": "runs/cpu/72942006/lumi.ee.out.dLdW.fne",
+        "sha256": "5395cea86be2d004c03ec6bd747f06b19d907d0778c64dd0790f61d048dca269"
+      },
+      "receipt": {
+        "path": "runs/cpu/72942006/execution.json",
+        "sha256": "d759513784d4ce5d7a6e7db05f4cc29efd0378aa0e1704a5267340790e9fc5e4"
+      },
+      "stderr": {
+        "path": "runs/cpu/72942006/stderr.txt",
+        "sha256": "74e45d0983062eea620304866fd75e795ce7f5fc1ccb6c1702d0a98654229bd7"
+      }
+    },
+    {
+      "seed": 72942005,
+      "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+      "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+      "physics_input_sha256": "8a367171af5be8a53c1516042fc696cc3ccd1c22cc49c3914c23fc2f604011e1",
+      "cpu_threads": 16,
+      "gpu_count": 1,
+      "gpu_uuid": "V100-0",
+      "variant": "gpu",
+      "spectrum": {
+        "path": "runs/gpu/72942005/lumi.ee.out.dLdW.fne",
+        "sha256": "62fb0c408326368ed0934fd12d2431d5ebb4e5ddc2ec1b66fec2224fa90c0d4b"
+      },
+      "receipt": {
+        "path": "runs/gpu/72942005/execution.json",
+        "sha256": "e8e5d937cfbb40a6e19a01c4d06d5dd89b029a1a36fc1ef33e0b5fa49064cc74"
+      },
+      "stderr": {
+        "path": "runs/gpu/72942005/stderr.txt",
+        "sha256": "f4a986ebea08219bdb18144d6bce35a9a83e8b697b0f6785d8415286eac284a6"
+      }
+    },
+    {
+      "seed": 72942006,
+      "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+      "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+      "physics_input_sha256": "cecdafaf8234aafaf489a51d6f453ed01178e19f4f712b7d256cccd2e9b572c4",
+      "cpu_threads": 16,
+      "gpu_count": 1,
+      "gpu_uuid": "V100-1",
+      "variant": "gpu",
+      "spectrum": {
+        "path": "runs/gpu/72942006/lumi.ee.out.dLdW.fne",
+        "sha256": "5395cea86be2d004c03ec6bd747f06b19d907d0778c64dd0790f61d048dca269"
+      },
+      "receipt": {
+        "path": "runs/gpu/72942006/execution.json",
+        "sha256": "6ff843fc4ba2e522619c18a151ca4b107f7539095eaeef8f9a71b679de30606c"
+      },
+      "stderr": {
+        "path": "runs/gpu/72942006/stderr.txt",
+        "sha256": "9c32fd1a13d4c7e25be217c79505ca50d0888e45529683efcfbe5146ff857dbd"
+      }
+    },
+    {
+      "seed": 72942007,
+      "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+      "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+      "physics_input_sha256": "70896891f8463a632444b6373d49c84e1adaad189f702182232b3c81991b2172",
+      "cpu_threads": 16,
+      "gpu_count": 1,
+      "gpu_uuid": "V100-0",
+      "variant": "gpu",
+      "spectrum": {
+        "path": "runs/gpu/72942007/lumi.ee.out.dLdW.fne",
+        "sha256": "acee8e9611d6ef72f27117a8019b6f5b8aca8fd2f5a9f09e2c6084e7078803c0"
+      },
+      "receipt": {
+        "path": "runs/gpu/72942007/execution.json",
+        "sha256": "4bbe8f23e937ab15d1e5c76a1a5b90edbae6d7478f30b1f32c538db543fa3ae6"
+      },
+      "stderr": {
+        "path": "runs/gpu/72942007/stderr.txt",
+        "sha256": "4ee30f20b575e377790e4646df5d85fc8f91783c83fa5825c777b81c9c60a519"
+      }
+    },
+    {
+      "seed": 72942008,
+      "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+      "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+      "physics_input_sha256": "1553cb33c2c647e119dedf29d48493c788c01ada9a2df8706adb2a397cdf51f9",
+      "cpu_threads": 16,
+      "gpu_count": 1,
+      "gpu_uuid": "V100-1",
+      "variant": "gpu",
+      "spectrum": {
+        "path": "runs/gpu/72942008/lumi.ee.out.dLdW.fne",
+        "sha256": "a0be3567a454e0182498af483f0f6301cdf38709843637786b03b7f8e4babed1"
+      },
+      "receipt": {
+        "path": "runs/gpu/72942008/execution.json",
+        "sha256": "e9a1924fe31828be0efbffcc056dced3933415ba247aaf7fdbf5ff6bc2a5ee3c"
+      },
+      "stderr": {
+        "path": "runs/gpu/72942008/stderr.txt",
+        "sha256": "8ca8401e6618dc5b87b57db245e32ee02ec2fcbac11fd0f2f3fb4f830541aa1b"
+      }
+    },
+    {
+      "seed": 72942007,
+      "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+      "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+      "physics_input_sha256": "70896891f8463a632444b6373d49c84e1adaad189f702182232b3c81991b2172",
+      "cpu_threads": 16,
+      "gpu_count": 0,
+      "gpu_uuid": null,
+      "variant": "cpu",
+      "spectrum": {
+        "path": "runs/cpu/72942007/lumi.ee.out.dLdW.fne",
+        "sha256": "acee8e9611d6ef72f27117a8019b6f5b8aca8fd2f5a9f09e2c6084e7078803c0"
+      },
+      "receipt": {
+        "path": "runs/cpu/72942007/execution.json",
+        "sha256": "0bb6274cc65dcfbaf13fd530e68191e90bc6494cb4b1eaf325429c6f6aba53a2"
+      },
+      "stderr": {
+        "path": "runs/cpu/72942007/stderr.txt",
+        "sha256": "b86daecce043dd7d180800b84a415ff290512a146caf934baef8e9eb93d08230"
+      }
+    },
+    {
+      "seed": 72942008,
+      "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+      "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+      "physics_input_sha256": "1553cb33c2c647e119dedf29d48493c788c01ada9a2df8706adb2a397cdf51f9",
+      "cpu_threads": 16,
+      "gpu_count": 0,
+      "gpu_uuid": null,
+      "variant": "cpu",
+      "spectrum": {
+        "path": "runs/cpu/72942008/lumi.ee.out.dLdW.fne",
+        "sha256": "a0be3567a454e0182498af483f0f6301cdf38709843637786b03b7f8e4babed1"
+      },
+      "receipt": {
+        "path": "runs/cpu/72942008/execution.json",
+        "sha256": "da9f842d7f29ea33af8431e211e52fc6642231d19932eedc1f114a869d80c503"
+      },
+      "stderr": {
+        "path": "runs/cpu/72942008/stderr.txt",
+        "sha256": "2421491100759ca58ac742a0ac57d7e63bbb5f4e66844d505f5752c0dadbcd16"
+      }
+    }
+  ]
+}

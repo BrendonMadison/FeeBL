@@ -1,0 +1,6 @@
+# Fast regression -- ILC 250 on a deliberately cheap grid (n_z=16, n_m=5e4).
+# Runs in well under a minute; use for every commit.
+# tag	scenario	L_m2s	tol
+c_nt1	ILC250_cheap_nt1	8.82774e+37	0.016
+c_nt2	ILC250_cheap_nt2	1.07601e+38	0.016
+c_nt5	ILC250_cheap_nt5	1.13031e+38	0.016

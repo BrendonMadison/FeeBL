@@ -1,0 +1,358 @@
+Internal ctest changing into directory: /data/dust/user/bmadison/feebl-publication-20261029/builds/qed-validation-25502093
+Test project /data/dust/user/bmadison/feebl-publication-20261029/builds/qed-validation-25502093
+        Start   6: feebl-uniform-window-plan-unit
+        Start   9: feebl-adaptive-composite-poisson-unit
+        Start  10: feebl-adaptive-composite-coupling-unit
+        Start   7: feebl-electron-lumi-spatial-unit
+        Start  15: feebl-adaptive-macroparticle-core-unit
+        Start  16: feebl-adaptive-macroparticle-controller-unit
+        Start  24: feebl-adaptive-grid-schedule-unit
+        Start  62: CLIC-default_GNU_Release
+  1/105 Test   #6: feebl-uniform-window-plan-unit ..........................   Passed    0.01 sec
+  2/105 Test  #10: feebl-adaptive-composite-coupling-unit ..................   Passed    0.01 sec
+  3/105 Test  #15: feebl-adaptive-macroparticle-core-unit ..................   Passed    0.01 sec
+  4/105 Test  #16: feebl-adaptive-macroparticle-controller-unit ............   Passed    0.01 sec
+        Start 102: feebl-qed-input-contracts
+        Start 100: feebl-qed-tree-oracle
+        Start 101: feebl-qed-bh-bw-oracle
+        Start  98: feebl-qed-integration-production
+  5/105 Test   #9: feebl-adaptive-composite-poisson-unit ...................   Passed    0.02 sec
+        Start  96: feebl-qed-integration-reference
+  6/105 Test  #98: feebl-qed-integration-production ........................   Passed    0.00 sec
+        Start  97: feebl-qed-photon-domain-reference
+  7/105 Test  #96: feebl-qed-integration-reference .........................   Passed    0.00 sec
+        Start  99: feebl-qed-photon-domain-production
+  8/105 Test   #7: feebl-electron-lumi-spatial-unit ........................   Passed    0.03 sec
+  9/105 Test  #24: feebl-adaptive-grid-schedule-unit .......................   Passed    0.02 sec
+ 10/105 Test #101: feebl-qed-bh-bw-oracle ..................................   Passed    0.01 sec
+ 11/105 Test  #97: feebl-qed-photon-domain-reference .......................   Passed    0.01 sec
+        Start 103: feebl-secondary-transport-reference
+        Start 105: feebl-secondary-transport-production
+        Start 106: feebl-secondary-momentum-production
+        Start 104: feebl-secondary-momentum-reference
+ 12/105 Test #100: feebl-qed-tree-oracle ...................................   Passed    0.02 sec
+ 13/105 Test  #99: feebl-qed-photon-domain-production ......................   Passed    0.01 sec
+ 14/105 Test #103: feebl-secondary-transport-reference .....................   Passed    0.01 sec
+        Start   1: feebl-source-identity
+        Start   2: feebl-rng-checkpoint-unit
+        Start   3: feebl-collider-moment-contract
+ 15/105 Test #105: feebl-secondary-transport-production ....................   Passed    0.06 sec
+ 16/105 Test #106: feebl-secondary-momentum-production .....................   Passed    0.06 sec
+ 17/105 Test #104: feebl-secondary-momentum-reference ......................   Passed    0.06 sec
+        Start   4: feebl-cpu-backend-unit
+        Start   5: feebl-gpu5-backend-unit
+        Start  13: feebl-adaptive-resolution-controller-unit
+ 18/105 Test   #3: feebl-collider-moment-contract ..........................   Passed    0.01 sec
+        Start  14: feebl-adaptive-terminal-patch-unit
+ 19/105 Test   #5: feebl-gpu5-backend-unit .................................   Passed    0.01 sec
+        Start  19: feebl-adaptive-root-replay-unit
+ 20/105 Test   #4: feebl-cpu-backend-unit ..................................   Passed    0.01 sec
+        Start  21: feebl-adaptive-resampling-prototypes-unit
+ 21/105 Test  #14: feebl-adaptive-terminal-patch-unit ......................   Passed    0.01 sec
+        Start  23: feebl-adaptive-runtime-safety-unit
+ 22/105 Test  #23: feebl-adaptive-runtime-safety-unit ......................   Passed    0.00 sec
+        Start  30: feebl-grid-field-contract-unit
+ 23/105 Test  #13: feebl-adaptive-resolution-controller-unit ...............   Passed    0.02 sec
+        Start  31: feebl-modern-core-unit
+ 24/105 Test  #30: feebl-grid-field-contract-unit ..........................   Passed    0.01 sec
+        Start  32: feebl-modern-physics-plan-unit
+ 25/105 Test  #31: feebl-modern-core-unit ..................................   Passed    0.00 sec
+        Start  33: feebl-modern-photon-lumi-unit
+ 26/105 Test  #32: feebl-modern-physics-plan-unit ..........................   Passed    0.00 sec
+        Start  34: feebl-legacy-photon-lumi-fast-unit
+ 27/105 Test  #33: feebl-modern-photon-lumi-unit ...........................   Passed    0.01 sec
+        Start  35: feebl-legacy-photon-threshold-production-unit
+ 28/105 Test  #34: feebl-legacy-photon-lumi-fast-unit ......................   Passed    0.01 sec
+        Start  38: feebl-electron-lumi-sampler-unit
+ 29/105 Test  #35: feebl-legacy-photon-threshold-production-unit ...........   Passed    0.00 sec
+        Start  39: feebl-electron-lumi-sampling2-unit
+ 30/105 Test   #2: feebl-rng-checkpoint-unit ...............................   Passed    0.05 sec
+        Start  40: feebl-electron-lumi-bernoulli-skip-unit
+ 31/105 Test  #40: feebl-electron-lumi-bernoulli-skip-unit .................   Passed    0.04 sec
+        Start  42: feebl-photon-accounting-unit
+ 32/105 Test  #42: feebl-photon-accounting-unit ............................   Passed    0.01 sec
+        Start  45: feebl-modern-legacy-adapter-unit
+ 33/105 Test  #39: feebl-electron-lumi-sampling2-unit ......................   Passed    0.06 sec
+        Start  46: feebl-modern-legacy-writeback-unit
+ 34/105 Test  #45: feebl-modern-legacy-adapter-unit ........................   Passed    0.01 sec
+        Start  47: feebl-modern-collision-unit
+ 35/105 Test  #46: feebl-modern-legacy-writeback-unit ......................   Passed    0.01 sec
+        Start  48: feebl-modern-cpu-executor-unit
+ 36/105 Test  #47: feebl-modern-collision-unit .............................   Passed    0.04 sec
+        Start  49: feebl-legacy-host-wave-concurrency-unit
+ 37/105 Test  #49: feebl-legacy-host-wave-concurrency-unit .................   Passed    0.01 sec
+        Start  50: feebl-legacy-wavefront-scheduler-unit
+ 38/105 Test  #50: feebl-legacy-wavefront-scheduler-unit ...................   Passed    0.01 sec
+        Start  53: feebl-sparse-direct-field-unit
+ 39/105 Test  #53: feebl-sparse-direct-field-unit ..........................   Passed    0.00 sec
+        Start  55: feebl-modern-photon-soa-unit
+ 40/105 Test  #38: feebl-electron-lumi-sampler-unit ........................   Passed    0.12 sec
+        Start  56: feebl-counter-rng-v2-unit
+ 41/105 Test #102: feebl-qed-input-contracts ...............................   Passed    0.24 sec
+        Start  57: feebl-reduction-rng-unit
+ 42/105 Test  #57: feebl-reduction-rng-unit ................................   Passed    0.01 sec
+        Start  58: feebl-gpu2-backend-unit
+ 43/105 Test  #58: feebl-gpu2-backend-unit .................................   Passed    0.02 sec
+        Start  59: feebl-cpu-backends-end-to-end
+ 44/105 Test  #55: feebl-modern-photon-soa-unit ............................   Passed    0.06 sec
+        Start  61: feebl-backend-interface
+ 45/105 Test  #48: feebl-modern-cpu-executor-unit ..........................   Passed    0.12 sec
+        Start  64: feebl-numeric-comparison-unit
+ 46/105 Test  #56: feebl-counter-rng-v2-unit ...............................   Passed    0.08 sec
+        Start  66: feebl-version_identity
+ 47/105 Test  #66: feebl-version_identity ..................................   Passed    0.05 sec
+        Start  67: feebl-negative_checks
+ 48/105 Test  #64: feebl-numeric-comparison-unit ...........................   Passed    0.07 sec
+        Start  68: feebl-native_output
+ 49/105 Test   #1: feebl-source-identity ...................................   Passed    0.41 sec
+        Start  69: feebl-native_roundtrip
+ 50/105 Test  #19: feebl-adaptive-root-replay-unit .........................   Passed    0.87 sec
+        Start  70: feebl-conventions-run
+ 51/105 Test  #21: feebl-adaptive-resampling-prototypes-unit ...............   Passed    1.75 sec
+        Start  71: feebl-canonical-run
+ 52/105 Test  #71: feebl-canonical-run .....................................   Passed    3.38 sec
+        Start  72: feebl-maps-run
+ 53/105 Test  #70: feebl-conventions-run ...................................   Passed    6.73 sec
+        Start  73: feebl-geometry-run
+ 54/105 Test  #69: feebl-native_roundtrip ..................................   Passed   12.51 sec
+        Start  74: feebl-rng-run
+ 55/105 Test  #74: feebl-rng-run ...........................................   Passed    1.79 sec
+        Start  75: feebl-pairs-run
+ 56/105 Test  #62: CLIC-default_GNU_Release ................................   Passed   18.41 sec
+        Start  63: CLIC-default-compare_GNU_Release
+ 57/105 Test  #63: CLIC-default-compare_GNU_Release ........................   Passed    0.05 sec
+        Start  76: feebl-spin-run
+ 58/105 Test  #68: feebl-native_output .....................................   Passed   20.51 sec
+        Start  77: feebl-grouped-events-unit
+ 59/105 Test  #77: feebl-grouped-events-unit ...............................   Passed    0.03 sec
+        Start  78: feebl-legacy-event-adapter-unit
+ 60/105 Test  #78: feebl-legacy-event-adapter-unit .........................   Passed    0.00 sec
+        Start  79: feebl-collider-fields-unit
+ 61/105 Test  #79: feebl-collider-fields-unit ..............................   Passed    0.00 sec
+        Start  80: feebl-gui-spectrum-binning-unit
+ 62/105 Test  #80: feebl-gui-spectrum-binning-unit .........................   Passed    0.01 sec
+        Start  81: feebl-primary-chi-unit
+ 63/105 Test  #81: feebl-primary-chi-unit ..................................   Passed    0.00 sec
+        Start  82: feebl-snapshot-fields-unit
+ 64/105 Test  #82: feebl-snapshot-fields-unit ..............................   Passed    0.01 sec
+        Start  83: feebl-mesh-coverage-unit
+ 65/105 Test  #83: feebl-mesh-coverage-unit ................................   Passed    0.01 sec
+        Start  84: feebl-secondary-frames-unit
+ 66/105 Test  #84: feebl-secondary-frames-unit .............................   Passed    0.02 sec
+        Start  85: feebl-peak-diagnostics-unit
+ 67/105 Test  #85: feebl-peak-diagnostics-unit .............................   Passed    0.01 sec
+        Start  86: feebl-imported-trajectories-unit
+ 68/105 Test  #86: feebl-imported-trajectories-unit ........................   Passed    0.01 sec
+        Start  87: feebl-spin-correlation-unit
+ 69/105 Test  #87: feebl-spin-correlation-unit .............................   Passed    0.00 sec
+        Start  88: feebl-spin-physics-unit
+ 70/105 Test  #75: feebl-pairs-run .........................................   Passed    7.66 sec
+        Start  89: feebl-spin-physics-production
+ 71/105 Test  #88: feebl-spin-physics-unit .................................   Passed    2.43 sec
+        Start  90: feebl-compton-kinematics-production
+ 72/105 Test  #90: feebl-compton-kinematics-production .....................   Passed    0.00 sec
+        Start  91: feebl-pair-cross-section-production
+ 73/105 Test  #91: feebl-pair-cross-section-production .....................   Passed    0.00 sec
+        Start  92: feebl-imported-spin-production
+ 74/105 Test  #92: feebl-imported-spin-production ..........................   Passed    0.00 sec
+        Start  93: feebl-compton-kinematics-strict
+ 75/105 Test  #93: feebl-compton-kinematics-strict .........................   Passed    0.00 sec
+        Start  94: feebl-pair-cross-section-strict
+ 76/105 Test  #94: feebl-pair-cross-section-strict .........................   Passed    0.00 sec
+        Start  95: feebl-imported-spin-strict
+ 77/105 Test  #95: feebl-imported-spin-strict ..............................   Passed    0.00 sec
+ 78/105 Test  #89: feebl-spin-physics-production ...........................   Passed    2.40 sec
+ 79/105 Test  #59: feebl-cpu-backends-end-to-end ...........................   Passed   27.30 sec
+ 80/105 Test  #61: feebl-backend-interface .................................   Passed   31.52 sec
+ 81/105 Test  #67: feebl-negative_checks ...................................   Passed   40.21 sec
+ 82/105 Test  #73: feebl-geometry-run ......................................   Passed  200.78 sec
+ 83/105 Test  #76: feebl-spin-run ..........................................   Passed  206.20 sec
+ 84/105 Test  #72: feebl-maps-run ..........................................   Passed  848.64 sec
+        Start  11: feebl-adaptive-composite-physics-validation
+ 85/105 Test  #11: feebl-adaptive-composite-physics-validation .............   Passed    2.19 sec
+        Start  25: feebl-mode1-field-equivalence
+ 86/105 Test  #25: feebl-mode1-field-equivalence ...........................   Passed   27.97 sec
+        Start  27: feebl-mode23-card-contract-validation
+ 87/105 Test  #27: feebl-mode23-card-contract-validation ...................   Passed  224.91 sec
+        Start   8: feebl-electron-lumi-spatial-process-validation
+ 88/105 Test   #8: feebl-electron-lumi-spatial-process-validation ..........   Passed    0.71 sec
+        Start  17: feebl-production-input-admission
+ 89/105 Test  #17: feebl-production-input-admission ........................   Passed    0.31 sec
+        Start  18: feebl-adaptive-v3-g0-baseline-blocker-audit
+ 90/105 Test  #18: feebl-adaptive-v3-g0-baseline-blocker-audit .............   Passed    4.39 sec
+        Start  20: feebl-coupled-grid-root-campaign-unit
+ 91/105 Test  #20: feebl-coupled-grid-root-campaign-unit ...................   Passed   82.59 sec
+        Start  22: feebl-adaptive-macroparticle-card-contract-validation
+ 92/105 Test  #22: feebl-adaptive-macroparticle-card-contract-validation ...   Passed   52.30 sec
+        Start  26: feebl-mode1-process-validation
+ 93/105 Test  #26: feebl-mode1-process-validation ..........................   Passed    0.38 sec
+        Start  28: feebl-mode23-pilot-diagnostics-validation
+ 94/105 Test  #28: feebl-mode23-pilot-diagnostics-validation ...............   Passed    0.63 sec
+        Start  29: feebl-mode23-physics-validation
+ 95/105 Test  #29: feebl-mode23-physics-validation .........................   Passed   67.75 sec
+        Start  36: feebl-legacy-photon-lumi-fast-e2e
+ 96/105 Test  #36: feebl-legacy-photon-lumi-fast-e2e .......................   Passed    0.24 sec
+        Start  37: feebl-legacy-electron-lumi-precompute-e2e
+ 97/105 Test  #37: feebl-legacy-electron-lumi-precompute-e2e ...............   Passed    0.40 sec
+        Start  41: feebl-lumi-direct-stream-unit
+ 98/105 Test  #41: feebl-lumi-direct-stream-unit ...........................   Passed    1.17 sec
+        Start  43: feebl-legacy-electron-lumi-precompute-oracle
+ 99/105 Test  #43: feebl-legacy-electron-lumi-precompute-oracle ............   Passed    9.50 sec
+        Start  44: feebl-legacy-electron-lumi-blocked-oracle
+100/105 Test  #44: feebl-legacy-electron-lumi-blocked-oracle ...............   Passed   17.75 sec
+        Start  51: feebl-legacy-wavefront-scheduler-e2e
+101/105 Test  #51: feebl-legacy-wavefront-scheduler-e2e ....................   Passed   12.40 sec
+        Start  52: feebl-sparse-cells-unit
+102/105 Test  #52: feebl-sparse-cells-unit .................................   Passed    5.72 sec
+        Start  54: feebl-sparse-direct-field-e2e
+103/105 Test  #54: feebl-sparse-direct-field-e2e ...........................   Passed    1.77 sec
+        Start  60: feebl-cpu-primary-move-e2e
+104/105 Test  #60: feebl-cpu-primary-move-e2e ..............................   Passed    1.38 sec
+        Start  65: feebl-meta-dead_binary
+105/105 Test  #65: feebl-meta-dead_binary ..................................   Passed  127.56 sec
+
+100% tests passed, 0 tests failed out of 105
+
+Label Time Summary:
+adapter                =   0.00 sec*proc (1 test)
+adaptive-grid          = 328.33 sec*proc (15 tests)
+adaptive-particles     = 137.53 sec*proc (6 tests)
+adjoint                =   0.01 sec*proc (1 test)
+amr                    =   0.02 sec*proc (1 test)
+ancestry               =   0.01 sec*proc (1 test)
+audit                  =   4.39 sec*proc (1 test)
+backend                =   0.01 sec*proc (1 test)
+baseline               =   4.39 sec*proc (1 test)
+bernoulli              =   0.06 sec*proc (1 test)
+binary128              =   0.03 sec*proc (2 tests)
+binding                =  27.97 sec*proc (1 test)
+blocked                =  17.75 sec*proc (1 test)
+campaign               =  82.59 sec*proc (1 test)
+capability             =  53.01 sec*proc (2 tests)
+checkpoint             =   0.05 sec*proc (1 test)
+cic                    =   0.03 sec*proc (1 test)
+closure                =   0.74 sec*proc (2 tests)
+collision              =   0.04 sec*proc (1 test)
+collision-plan         =   0.03 sec*proc (1 test)
+collision-reduction    =   0.01 sec*proc (1 test)
+comparator             =   0.07 sec*proc (1 test)
+composite              =   2.23 sec*proc (3 tests)
+compton                =   0.01 sec*proc (2 tests)
+configuration          = 224.91 sec*proc (1 test)
+conservation           =   1.75 sec*proc (1 test)
+controller             =   0.03 sec*proc (2 tests)
+correlation            =   0.00 sec*proc (1 test)
+counter-rng            =   0.22 sec*proc (4 tests)
+cpu                    =  29.48 sec*proc (3 tests)
+deposit                =   0.01 sec*proc (1 test)
+determinism            =   0.79 sec*proc (6 tests)
+diagnostic             =   2.19 sec*proc (1 test)
+diagnostics            =   0.64 sec*proc (4 tests)
+electron-luminosity    =  29.76 sec*proc (9 tests)
+encounter-dag          =  12.40 sec*proc (2 tests)
+error-budget           =   0.01 sec*proc (1 test)
+event-transport        =   0.03 sec*proc (2 tests)
+executor               =   0.12 sec*proc (1 test)
+failure                = 368.54 sec*proc (11 tests)
+field                  =   1.80 sec*proc (6 tests)
+field-source           =   0.01 sec*proc (1 test)
+flux                   =   0.02 sec*proc (1 test)
+g0                     =   4.39 sec*proc (1 test)
+gather                 =   0.01 sec*proc (1 test)
+gaussian               =   2.19 sec*proc (1 test)
+geometric-skip         =   0.04 sec*proc (1 test)
+gpu                    =   0.01 sec*proc (1 test)
+gpu2                   =   0.01 sec*proc (1 test)
+grid                   =  82.60 sec*proc (2 tests)
+grid-invariance        =   0.71 sec*proc (1 test)
+gui                    =   0.07 sec*proc (9 tests)
+host-physics           =   0.01 sec*proc (1 test)
+identity               =   0.01 sec*proc (1 test)
+imported               =   0.02 sec*proc (3 tests)
+input                  =   0.24 sec*proc (1 test)
+integration            = 362.23 sec*proc (10 tests)
+interface              =   2.19 sec*proc (1 test)
+legacy                 =  49.20 sec*proc (15 tests)
+legacy-adapter         =   0.01 sec*proc (2 tests)
+legacy-rng             =   0.01 sec*proc (1 test)
+lhe                    =   0.03 sec*proc (1 test)
+luminosity             =   0.04 sec*proc (1 test)
+manufactured           =  28.01 sec*proc (4 tests)
+manufactured-fields    =   0.03 sec*proc (1 test)
+mechanism              =  67.75 sec*proc (1 test)
+mesh-coverage          =   0.01 sec*proc (1 test)
+mode0                  =   0.38 sec*proc (1 test)
+mode1                  =  28.39 sec*proc (4 tests)
+mode2                  = 293.31 sec*proc (5 tests)
+mode3                  = 295.54 sec*proc (9 tests)
+mode5                  =   0.01 sec*proc (1 test)
+modern-core            =   0.33 sec*proc (9 tests)
+moments                =   0.01 sec*proc (1 test)
+native-deposition      =   0.01 sec*proc (1 test)
+native-fft             =   0.01 sec*proc (1 test)
+native-output          =   1.17 sec*proc (1 test)
+no-fallback            = 283.32 sec*proc (7 tests)
+nonfinite              =   0.31 sec*proc (1 test)
+noninterference        =   0.05 sec*proc (5 tests)
+openmp                 =   0.01 sec*proc (1 test)
+operator               =  67.75 sec*proc (1 test)
+oracle                 =  55.25 sec*proc (5 tests)
+pair-spectrum          =   0.01 sec*proc (1 test)
+pairs                  =   0.50 sec*proc (13 tests)
+parser                 = 278.60 sec*proc (5 tests)
+partition              =   0.01 sec*proc (1 test)
+peak                   =   0.01 sec*proc (1 test)
+photon                 =   0.07 sec*proc (2 tests)
+photon-luminosity      =   0.26 sec*proc (4 tests)
+physics                =   5.11 sec*proc (18 tests)
+physics-plan           =   0.00 sec*proc (1 test)
+physics-validation     =   2.19 sec*proc (1 test)
+pilot                  =   0.63 sec*proc (1 test)
+planner                =   0.01 sec*proc (1 test)
+poisson                =   0.02 sec*proc (1 test)
+primary-movement       =   1.38 sec*proc (1 test)
+primary-species        =   0.00 sec*proc (1 test)
+production             =   2.78 sec*proc (6 tests)
+production-flags       =   0.37 sec*proc (4 tests)
+production-oracle      =   0.01 sec*proc (1 test)
+production-sampler     =   0.00 sec*proc (1 test)
+property               =  27.97 sec*proc (1 test)
+prototype              =   1.75 sec*proc (1 test)
+provenance             =   0.41 sec*proc (1 test)
+qed                    =   0.30 sec*proc (7 tests)
+qualification          =   0.03 sec*proc (1 test)
+reference              =  67.83 sec*proc (5 tests)
+regression             =   0.07 sec*proc (2 tests)
+replay                 =   0.87 sec*proc (1 test)
+reproducibility        = 159.64 sec*proc (12 tests)
+resampling             =   1.75 sec*proc (1 test)
+richardson             =   0.02 sec*proc (1 test)
+rng                    =   0.45 sec*proc (3 tests)
+roots                  =  83.46 sec*proc (2 tests)
+runtime-safety         =   0.00 sec*proc (1 test)
+sanitizer              =  32.97 sec*proc (3 tests)
+schedule               =   0.40 sec*proc (2 tests)
+secondary              =   0.02 sec*proc (1 test)
+self-force             =   0.01 sec*proc (1 test)
+serialization          =   1.17 sec*proc (1 test)
+simd                   =  17.75 sec*proc (1 test)
+snapshot               =   0.03 sec*proc (2 tests)
+soa                    =   0.06 sec*proc (1 test)
+sparse-cells           =   5.72 sec*proc (1 test)
+sparse-direct          =   1.78 sec*proc (2 tests)
+spatial-kernel         =   0.74 sec*proc (2 tests)
+spectrum               =   0.01 sec*proc (1 test)
+spin                   =   4.84 sec*proc (5 tests)
+stability              =   0.01 sec*proc (1 test)
+statistics             =  83.49 sec*proc (3 tests)
+terminal-patch         =   0.01 sec*proc (1 test)
+transaction            =   0.06 sec*proc (3 tests)
+transport              =   0.19 sec*proc (4 tests)
+unit                   = 107.98 sec*proc (64 tests)
+unqualified            =   0.63 sec*proc (1 test)
+v3                     =   4.39 sec*proc (1 test)
+wavefront              =  14.19 sec*proc (5 tests)
+weighted-reservoir     =   0.12 sec*proc (1 test)
+weights                =   0.01 sec*proc (1 test)
+
+Total Test time (real) = 1495.92 sec

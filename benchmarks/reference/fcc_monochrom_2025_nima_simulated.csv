@@ -1,0 +1,11 @@
+mode,sigma_W_MeV,luminosity_1e34_cm2s,annual_lumi_ab,baseline_sigmaW_ratio,maturity,source_table
+Standard ZES,69.15,44.6,5.35,1,single_pass_GuineaPig_Gaussian_input,3
+ZH4IP,27.29,15,1.8,2.5338952,single_pass_GuineaPig_Gaussian_input,3
+ZH2IP,24.12,18.4,2.21,2.8669154,single_pass_GuineaPig_Gaussian_input,3
+ZV,25.82,1.46,0.18,2.6781565,single_pass_GuineaPig_Gaussian_input,3
+ZHV,21.52,1.42,0.17,3.21329,single_pass_GuineaPig_Gaussian_input,3
+Standard TES,67.51,71.2,8.54,1,single_pass_GuineaPig_Gaussian_input,4
+TH4IP,26.32,17.8,2.14,2.5649696,single_pass_GuineaPig_Gaussian_input,4
+TH2IP,23.68,24.5,2.94,2.8509291,single_pass_GuineaPig_Gaussian_input,4
+TV,19.52,1.37,0.16,3.4585041,single_pass_GuineaPig_Gaussian_input,4
+THV,20.44,1.42,0.17,3.3028376,single_pass_GuineaPig_Gaussian_input,4

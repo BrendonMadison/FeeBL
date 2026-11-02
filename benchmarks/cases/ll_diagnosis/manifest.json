@@ -1,0 +1,823 @@
+{
+  "status": "PROPOSED_INPUTS_ONLY_NOT_APPROVED_OR_SUBMITTED",
+  "source_native_identity": "sha256:238eda4954de06bada9c27a56436281d0ddac7137712e8e4bf07be37358f2598",
+  "template_sha256": "00f09f4ff1d076e8cc114886052646f78e7a7762378afe9e705c5a948f12c073",
+  "case_count": 36,
+  "seed_design": "Four native seeds reused across every arm. Compare paired whole-collision estimates and preserve their empirical covariance; shared seeds do not imply identical later random streams.",
+  "reference_observable": "Admitted produced daughters, E_birth>=5MeV, no final recut, pair_ratio1, no spectator or other secondary populations. Main reference comparisons use N/L_ee effective daughter-production cross sections with full correlated uncertainty. Raw per-crossing counts and separate subprocess-flux normalizations remain explicitly labelled diagnostics.",
+  "common_changes_from_template": {
+    "photon_polarisation": 0
+  },
+  "polarisation_scope": "All nine arms use unpolarized real photons because the legacy pair model rejects polarized-photon mode. LL has no direct real-photon Stokes factor, but changed random streams remain part of the measured paired covariance. BW/BH outputs have this unpolarized diagnostic scope and are not a replay of the preceding polarized-photon campaign.",
+  "unchanged_settings": "Incoming optics, macroparticles, longitudinal resolution, photon timing/angle, beam spin flags, loss/ISR policy and coherent-model setting match the completed sixty-case inputs. The common photon-polarization change, declared arm changes and seed are explicit.",
+  "cases": [
+    {
+      "case": "legacy_epa_ring_seed01",
+      "arm": "legacy_epa_ring",
+      "seed": 73111001,
+      "changes": {
+        "pair_model": 0,
+        "beam_size": 1,
+        "pair_q2": 2
+      },
+      "question": "Corrected-normalization legacy EPA baseline; it does not restore historical source defects.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "29cdbdd91a7d5778baccba5bd1f4c70db39792d67991b7430422c09776c94f1a",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "legacy_epa_ring_seed02",
+      "arm": "legacy_epa_ring",
+      "seed": 73111002,
+      "changes": {
+        "pair_model": 0,
+        "beam_size": 1,
+        "pair_q2": 2
+      },
+      "question": "Corrected-normalization legacy EPA baseline; it does not restore historical source defects.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "1d6c2149a778d252de990a644c37fd761f9292a92ffccfd87006a17585c6a671",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "legacy_epa_ring_seed03",
+      "arm": "legacy_epa_ring",
+      "seed": 73111003,
+      "changes": {
+        "pair_model": 0,
+        "beam_size": 1,
+        "pair_q2": 2
+      },
+      "question": "Corrected-normalization legacy EPA baseline; it does not restore historical source defects.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "09e01d2dac74fef6f170e475f979ca4be9264ad612b93f54b23dc6023146470e",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "legacy_epa_ring_seed04",
+      "arm": "legacy_epa_ring",
+      "seed": 73111004,
+      "changes": {
+        "pair_model": 0,
+        "beam_size": 1,
+        "pair_q2": 2
+      },
+      "question": "Corrected-normalization legacy EPA baseline; it does not restore historical source defects.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "350528e3441e989b8a05b0c092141da59a7cf76b95f7c609be837a9423e94a48",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "finite_mass_epa_ring_seed01",
+      "arm": "finite_mass_epa_ring",
+      "seed": 73111001,
+      "changes": {
+        "pair_model": 1,
+        "beam_size": 1,
+        "pair_q2": 2
+      },
+      "question": "Compare with legacy_epa_ring to isolate finite-mass flux and stable angular sampling together.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "bb462ea5b89caea5047733b018695036a0013bfcf3439491a8f1dcbd97cce9db",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "finite_mass_epa_ring_seed02",
+      "arm": "finite_mass_epa_ring",
+      "seed": 73111002,
+      "changes": {
+        "pair_model": 1,
+        "beam_size": 1,
+        "pair_q2": 2
+      },
+      "question": "Compare with legacy_epa_ring to isolate finite-mass flux and stable angular sampling together.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "d63b15e9160a51a105b4b19a949766acd23351640e47cd94f46095c61f776699",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "finite_mass_epa_ring_seed03",
+      "arm": "finite_mass_epa_ring",
+      "seed": 73111003,
+      "changes": {
+        "pair_model": 1,
+        "beam_size": 1,
+        "pair_q2": 2
+      },
+      "question": "Compare with legacy_epa_ring to isolate finite-mass flux and stable angular sampling together.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "b21fe0061ebd712f8b37178fca8b867fe586c9d7eb13f68f8f3bccdcd5c23155",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "finite_mass_epa_ring_seed04",
+      "arm": "finite_mass_epa_ring",
+      "seed": 73111004,
+      "changes": {
+        "pair_model": 1,
+        "beam_size": 1,
+        "pair_q2": 2
+      },
+      "question": "Compare with legacy_epa_ring to isolate finite-mass flux and stable angular sampling together.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "600350e42509dc9fe51da864927873a0632bd96d8006047d2b225d74bd423490",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "finite_mass_epa_profile_seed01",
+      "arm": "finite_mass_epa_profile",
+      "seed": 73111001,
+      "changes": {
+        "pair_model": 1,
+        "beam_size": 3,
+        "pair_q2": 2
+      },
+      "question": "Compare with finite_mass_epa_ring to isolate the new impact-parameter profile.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "88f836fbd9cf2a2e29163cd4aba7fb37b032f5712ab61c6284f9c2808c3954e4",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "finite_mass_epa_profile_seed02",
+      "arm": "finite_mass_epa_profile",
+      "seed": 73111002,
+      "changes": {
+        "pair_model": 1,
+        "beam_size": 3,
+        "pair_q2": 2
+      },
+      "question": "Compare with finite_mass_epa_ring to isolate the new impact-parameter profile.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "9d01bb85ed0506e860fa532cca8edf0a051aef3ab96190faae8b0ad860113d18",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "finite_mass_epa_profile_seed03",
+      "arm": "finite_mass_epa_profile",
+      "seed": 73111003,
+      "changes": {
+        "pair_model": 1,
+        "beam_size": 3,
+        "pair_q2": 2
+      },
+      "question": "Compare with finite_mass_epa_ring to isolate the new impact-parameter profile.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "16452795d575737c5d3196b055bb2db33d9ace8b27405f17f6587c471a0b6211",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "finite_mass_epa_profile_seed04",
+      "arm": "finite_mass_epa_profile",
+      "seed": 73111004,
+      "changes": {
+        "pair_model": 1,
+        "beam_size": 3,
+        "pair_q2": 2
+      },
+      "question": "Compare with finite_mass_epa_ring to isolate the new impact-parameter profile.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "2b5bdcfc9f65fa116be62082eb775e5e3cf48b321b6b8dc04bf896dc735f16ab",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "exact_ring_seed01",
+      "arm": "exact_ring",
+      "seed": 73111001,
+      "changes": {
+        "pair_model": 2,
+        "beam_size": 1,
+        "pair_q2": 2
+      },
+      "question": "Compare with finite_mass_epa_ring to change the hard-process treatment at fixed placement.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "79f82b59c26c2f48fc1da945b736f7c639640a4b119a00c156a6aa8cde19d714",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "exact_ring_seed02",
+      "arm": "exact_ring",
+      "seed": 73111002,
+      "changes": {
+        "pair_model": 2,
+        "beam_size": 1,
+        "pair_q2": 2
+      },
+      "question": "Compare with finite_mass_epa_ring to change the hard-process treatment at fixed placement.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "625e22caa0c4d88f31233a584c48320584bd9db410fcda23bc5af2ffd37d4cc4",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "exact_ring_seed03",
+      "arm": "exact_ring",
+      "seed": 73111003,
+      "changes": {
+        "pair_model": 2,
+        "beam_size": 1,
+        "pair_q2": 2
+      },
+      "question": "Compare with finite_mass_epa_ring to change the hard-process treatment at fixed placement.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "a32d5a2552d09dfb734610678e2c1704210ab80b19b725fa946c67e2272a6e02",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "exact_ring_seed04",
+      "arm": "exact_ring",
+      "seed": 73111004,
+      "changes": {
+        "pair_model": 2,
+        "beam_size": 1,
+        "pair_q2": 2
+      },
+      "question": "Compare with finite_mass_epa_ring to change the hard-process treatment at fixed placement.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "32a68e07ebc9cd3f75797cc770702073980ba747b45c361e44dd3b2e193ef381",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "exact_profile_seed01",
+      "arm": "exact_profile",
+      "seed": 73111001,
+      "changes": {
+        "pair_model": 2,
+        "beam_size": 3,
+        "pair_q2": 2
+      },
+      "question": "Current exact-model setup; paired-seed anchor for model and domain changes.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "f773d47b77c6424981c9f04beeed265c69e50ad474c8d892162aa00c1ccd94a2",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "exact_profile_seed02",
+      "arm": "exact_profile",
+      "seed": 73111002,
+      "changes": {
+        "pair_model": 2,
+        "beam_size": 3,
+        "pair_q2": 2
+      },
+      "question": "Current exact-model setup; paired-seed anchor for model and domain changes.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "ac976f80b0e8904969a317ce744b0eac5da3c14ce500b27928ad0aa5df27f34a",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "exact_profile_seed03",
+      "arm": "exact_profile",
+      "seed": 73111003,
+      "changes": {
+        "pair_model": 2,
+        "beam_size": 3,
+        "pair_q2": 2
+      },
+      "question": "Current exact-model setup; paired-seed anchor for model and domain changes.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "1039872458a35a30cb6b5d6c08ea822e1f93b8b9459538465b7c9abf21ef70a1",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "exact_profile_seed04",
+      "arm": "exact_profile",
+      "seed": 73111004,
+      "changes": {
+        "pair_model": 2,
+        "beam_size": 3,
+        "pair_q2": 2
+      },
+      "question": "Current exact-model setup; paired-seed anchor for model and domain changes.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "ca3e24c55b8de00ae1fb121c5d3b917df0f75c0a32ba2fef575061eecf958558",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "finite_mass_epa_cain_qmax_seed01",
+      "arm": "finite_mass_epa_cain_qmax",
+      "seed": 73111001,
+      "changes": {
+        "pair_model": 1,
+        "beam_size": 1,
+        "pair_q2": 0
+      },
+      "question": "Compare with finite_mass_epa_ring for the reference virtuality-policy change; target TableV GP15.6mb, not blindly TableII GP19.2mb.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "037663a13e1406ecffaa270012e7807611bcbc889a331beafd5954032aaa7ef6",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "finite_mass_epa_cain_qmax_seed02",
+      "arm": "finite_mass_epa_cain_qmax",
+      "seed": 73111002,
+      "changes": {
+        "pair_model": 1,
+        "beam_size": 1,
+        "pair_q2": 0
+      },
+      "question": "Compare with finite_mass_epa_ring for the reference virtuality-policy change; target TableV GP15.6mb, not blindly TableII GP19.2mb.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "1681ac566cd9fd9434379988f6b0fd409dd0dd0714b9a8046095d389db1722d4",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "finite_mass_epa_cain_qmax_seed03",
+      "arm": "finite_mass_epa_cain_qmax",
+      "seed": 73111003,
+      "changes": {
+        "pair_model": 1,
+        "beam_size": 1,
+        "pair_q2": 0
+      },
+      "question": "Compare with finite_mass_epa_ring for the reference virtuality-policy change; target TableV GP15.6mb, not blindly TableII GP19.2mb.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "2690abc9476f0acf8461c5327f0eb5bf1d40da70eb0994d89a853466f7bf103a",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "finite_mass_epa_cain_qmax_seed04",
+      "arm": "finite_mass_epa_cain_qmax",
+      "seed": 73111004,
+      "changes": {
+        "pair_model": 1,
+        "beam_size": 1,
+        "pair_q2": 0
+      },
+      "question": "Compare with finite_mass_epa_ring for the reference virtuality-policy change; target TableV GP15.6mb, not blindly TableII GP19.2mb.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "bb2382331ce971c73e0789bdba73a186e15d8d9f664ff816145699716e429314",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "finite_mass_epa_no_beam_size_seed01",
+      "arm": "finite_mass_epa_no_beam_size",
+      "seed": 73111001,
+      "changes": {
+        "pair_model": 1,
+        "beam_size": 0,
+        "pair_q2": 2
+      },
+      "question": "Remove spatial suppression at fixed EPA model; compare with TableIII GP33.9mb, retaining model corrections.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "ccb523eb2b5a17cbbe865f998c2b7e12da9b0012ba484a7efdbb34002594d46d",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "finite_mass_epa_no_beam_size_seed02",
+      "arm": "finite_mass_epa_no_beam_size",
+      "seed": 73111002,
+      "changes": {
+        "pair_model": 1,
+        "beam_size": 0,
+        "pair_q2": 2
+      },
+      "question": "Remove spatial suppression at fixed EPA model; compare with TableIII GP33.9mb, retaining model corrections.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "7422a061d0a922a36218c321919cb6e87e14c9f04adb8a0fa84cad786a4053be",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "finite_mass_epa_no_beam_size_seed03",
+      "arm": "finite_mass_epa_no_beam_size",
+      "seed": 73111003,
+      "changes": {
+        "pair_model": 1,
+        "beam_size": 0,
+        "pair_q2": 2
+      },
+      "question": "Remove spatial suppression at fixed EPA model; compare with TableIII GP33.9mb, retaining model corrections.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "7db24e684b5d7c6ddbe766d5f4395bc203a3e5f891895bd87861daccb8f1b9e6",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "finite_mass_epa_no_beam_size_seed04",
+      "arm": "finite_mass_epa_no_beam_size",
+      "seed": 73111004,
+      "changes": {
+        "pair_model": 1,
+        "beam_size": 0,
+        "pair_q2": 2
+      },
+      "question": "Remove spatial suppression at fixed EPA model; compare with TableIII GP33.9mb, retaining model corrections.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "0502038129bae9dbbbfd48cc6dfdec6bef4861241c1d8863cfbeed257234f5b2",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "exact_no_beam_size_seed01",
+      "arm": "exact_no_beam_size",
+      "seed": 73111001,
+      "changes": {
+        "pair_model": 2,
+        "beam_size": 0,
+        "pair_q2": 2
+      },
+      "question": "Remove spatial suppression for comparison with TableIII BDK31.8mb; full-ME and event/cut definitions remain explicit.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "f7253d4c1cd39ce2074183008a1a236b4b3af2645888e6df8b307b080d9c398e",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "exact_no_beam_size_seed02",
+      "arm": "exact_no_beam_size",
+      "seed": 73111002,
+      "changes": {
+        "pair_model": 2,
+        "beam_size": 0,
+        "pair_q2": 2
+      },
+      "question": "Remove spatial suppression for comparison with TableIII BDK31.8mb; full-ME and event/cut definitions remain explicit.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "b42ebcd851b540cb26e4bb8c738cc69279023b78ccd474d72931da49b97383c7",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "exact_no_beam_size_seed03",
+      "arm": "exact_no_beam_size",
+      "seed": 73111003,
+      "changes": {
+        "pair_model": 2,
+        "beam_size": 0,
+        "pair_q2": 2
+      },
+      "question": "Remove spatial suppression for comparison with TableIII BDK31.8mb; full-ME and event/cut definitions remain explicit.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "336bae3403f5ae5cc9d0d41d07e8bbac4d1e966e7b8f1a069b227f44bb3e86b8",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "exact_no_beam_size_seed04",
+      "arm": "exact_no_beam_size",
+      "seed": 73111004,
+      "changes": {
+        "pair_model": 2,
+        "beam_size": 0,
+        "pair_q2": 2
+      },
+      "question": "Remove spatial suppression for comparison with TableIII BDK31.8mb; full-ME and event/cut definitions remain explicit.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "a6d0cfbc49f4f12180f4bc274c5789959423b4460a95996724c8729b29b36938",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "exact_profile_expanded_domain_seed01",
+      "arm": "exact_profile_expanded_domain",
+      "seed": 73111001,
+      "changes": {
+        "pair_model": 2,
+        "beam_size": 3,
+        "pair_q2": 2,
+        "n_x": 256,
+        "n_y": 256,
+        "cut_x": 6510.32233524,
+        "cut_y": 137.249645875
+      },
+      "question": "Double both transverse extents and cell counts, preserving cell spacing; compare with exact_profile.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "bd424ed7709d79d2399b1f16f379dbcc987e5c46f2c89d955ea8f0c2449f1623",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "exact_profile_expanded_domain_seed02",
+      "arm": "exact_profile_expanded_domain",
+      "seed": 73111002,
+      "changes": {
+        "pair_model": 2,
+        "beam_size": 3,
+        "pair_q2": 2,
+        "n_x": 256,
+        "n_y": 256,
+        "cut_x": 6510.32233524,
+        "cut_y": 137.249645875
+      },
+      "question": "Double both transverse extents and cell counts, preserving cell spacing; compare with exact_profile.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "9674b69dfa1858c746f192a2648049892496910beb7be705d78212c3ec624f25",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "exact_profile_expanded_domain_seed03",
+      "arm": "exact_profile_expanded_domain",
+      "seed": 73111003,
+      "changes": {
+        "pair_model": 2,
+        "beam_size": 3,
+        "pair_q2": 2,
+        "n_x": 256,
+        "n_y": 256,
+        "cut_x": 6510.32233524,
+        "cut_y": 137.249645875
+      },
+      "question": "Double both transverse extents and cell counts, preserving cell spacing; compare with exact_profile.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "598d1adc36df8043b8f657506cbc63d579682ca89246a98b82d0fe0a55007aba",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    },
+    {
+      "case": "exact_profile_expanded_domain_seed04",
+      "arm": "exact_profile_expanded_domain",
+      "seed": 73111004,
+      "changes": {
+        "pair_model": 2,
+        "beam_size": 3,
+        "pair_q2": 2,
+        "n_x": 256,
+        "n_y": 256,
+        "cut_x": 6510.32233524,
+        "cut_y": 137.249645875
+      },
+      "question": "Double both transverse extents and cell counts, preserving cell spacing; compare with exact_profile.",
+      "argv": [
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "input_sha256": "a543069c9a18a22a25b630365c9405517cb2696fc94ce28a1c8638306319c21b",
+      "expected_outputs": [
+        "out.dat",
+        "pairs0.dat",
+        "pairs.dat"
+      ]
+    }
+  ]
+}

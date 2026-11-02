@@ -1,0 +1,11 @@
+quantity,scenario,beam,selection,mean_pp,seed_sem_pp,seeds,definition
+per_beam_local_helicity_loss_pp,ILC500 beta_x21mm,1,all,0.22279019793437124,0.0018107130176472134,3,"100*(1-<h_i>_L), initially h_i=1; independent complete-run SEM"
+per_beam_local_helicity_loss_pp,ILC500 beta_x21mm,1,W_ge_0p98_W0,0.15337698330457616,0.0014666496148501814,3,"100*(1-<h_i>_L), initially h_i=1; independent complete-run SEM"
+per_beam_local_helicity_loss_pp,ILC500 beta_x21mm,1,W_ge_0p99_W0,0.14419362360843144,0.0016104248428943592,3,"100*(1-<h_i>_L), initially h_i=1; independent complete-run SEM"
+per_beam_local_helicity_loss_pp,ILC500 beta_x21mm,2,all,0.22184757852982498,0.003682477527094185,3,"100*(1-<h_i>_L), initially h_i=1; independent complete-run SEM"
+per_beam_local_helicity_loss_pp,ILC500 beta_x21mm,2,W_ge_0p98_W0,0.15357150301006373,0.0021931079070326618,3,"100*(1-<h_i>_L), initially h_i=1; independent complete-run SEM"
+per_beam_local_helicity_loss_pp,ILC500 beta_x21mm,2,W_ge_0p99_W0,0.14429594219434647,0.0020938424546616758,3,"100*(1-<h_i>_L), initially h_i=1; independent complete-run SEM"
+correlated_fixed_axis_loss_pp,ILC500 nominal,combined,inclusive,0.22984515658831528,,1,"100*(1-sqrt(-<s_z1*s_z2>_L)), initially s_z1=+1,s_z2=-1; no seed SEM for singleton"
+correlated_fixed_axis_loss_pp,ILC500 low_n,combined,inclusive,0.12196410004837732,,1,"100*(1-sqrt(-<s_z1*s_z2>_L)), initially s_z1=+1,s_z2=-1; no seed SEM for singleton"
+correlated_fixed_axis_loss_pp,ILC500 large_y,combined,inclusive,0.5073187541685191,,1,"100*(1-sqrt(-<s_z1*s_z2>_L)), initially s_z1=+1,s_z2=-1; no seed SEM for singleton"
+correlated_fixed_axis_loss_pp,ILC500 low_p,combined,inclusive,0.4897011682292024,,1,"100*(1-sqrt(-<s_z1*s_z2>_L)), initially s_z1=+1,s_z2=-1; no seed SEM for singleton"

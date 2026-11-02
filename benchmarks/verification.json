@@ -1,0 +1,42 @@
+{
+  "schema": "feebl.benchmark-verification/1",
+  "date": "2026-10-28",
+  "checks": {
+    "native_cards_executable_statements_unchanged": 63,
+    "new_setup_card": 1,
+    "reference_datasets": 49,
+    "finite_combined_uncertainty_pulls_recomputed": 2356,
+    "comparison_panels": 16,
+    "new_native_collisions_executed_by_replot": 0,
+    "pull_uncertainty_regression_tests_passed": 5,
+    "figure_categories_visually_checked": [
+      "pair yields",
+      "luminosity spectrum",
+      "LEP focusing",
+      "native horizontal dispersion",
+      "analytic forecast"
+    ]
+  },
+  "environment": {
+    "python": "3.13.0",
+    "numpy": "2.1.3",
+    "matplotlib": "3.10.0"
+  },
+  "scope": "Input preservation, packaged data integrity and plot reanalysis. Native solver execution and physical convergence are separate checks.",
+  "native_smoke": {
+    "status": "EXECUTED_AND_GUI_DATASET_VERIFIED",
+    "case": "smoke",
+    "elapsed_seconds": 5.588518946024124,
+    "binary_sha256": "9567e7d52447f4ec286ff80c04ce2136a72a66573a5c0346bc34f43d731389be",
+    "input_sha256": {
+      "acc.dat": "709ce71118fb696085c8a7b7a55bac34506f122b00e9dfdd20465c2b834a751c"
+    },
+    "source_revision": "f819b996b0dd99313b2decb15f5c9dd84feb989d-dirty",
+    "manifest_sha256": "bbb05499e255f533ad51137ef1a96b66ccdbf777745c48a38a8e751992779cae",
+    "frames": 15,
+    "native_and_derived_dataset_bytes": 4352630,
+    "scope": "Setup, native completion, dataset contracts and frame-total closure; not physics convergence.",
+    "completion_log_preserves_both_streams": true,
+    "copied_dataset_verification": "PASS_FOR_STATED_TARGET"
+  }
+}

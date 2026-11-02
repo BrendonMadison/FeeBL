@@ -1,0 +1,15 @@
+test,reference_pp,computed_axis_loss_pp,computed_helicity_loss_pp,relative_difference_percent,assessment,numerical_qualification,source_url
+baseline,0.1,0.2190659170894227,0.21846390220303658,119.0659170894227,NOT_REPRODUCED,Requires convergence and seed checks; no reference covariance,https://proceedings.jacow.org/e06/PAPERS/WEPLS032.PDF
+baseline_st_off,0.08,0.16445034568256522,0.1638484485394498,105.5629321032065,NOT_REPRODUCED,Requires convergence and seed checks; no reference covariance,https://proceedings.jacow.org/e06/PAPERS/WEPLS032.PDF
+particles_20k,0.1,0.22244583323998146,0.2218424589751522,122.44583323998145,NOT_REPRODUCED,Requires convergence and seed checks; no reference covariance,https://proceedings.jacow.org/e06/PAPERS/WEPLS032.PDF
+particles_40k_seed1_st1,0.1,0.2194815222746893,0.21887923123650177,119.48152227468931,NOT_REPRODUCED,Requires convergence and seed checks; no reference covariance,https://proceedings.jacow.org/e06/PAPERS/WEPLS032.PDF
+particles_40k_seed1_st0,0.08,0.165595239262728,0.16499119003624552,106.99404907840999,NOT_REPRODUCED,Requires convergence and seed checks; no reference covariance,https://proceedings.jacow.org/e06/PAPERS/WEPLS032.PDF
+particles_40k_seed2_st1,0.1,0.225805922602329,0.22518917116983728,125.80592260232902,NOT_REPRODUCED,Requires convergence and seed checks; no reference covariance,https://proceedings.jacow.org/e06/PAPERS/WEPLS032.PDF
+particles_40k_seed2_st0,0.08,0.16920356846681361,0.16858579767043969,111.50446058351702,NOT_REPRODUCED,Requires convergence and seed checks; no reference covariance,https://proceedings.jacow.org/e06/PAPERS/WEPLS032.PDF
+particles_40k_seed3_st1,0.1,0.22316002085943643,0.22254882153245337,123.16002085943643,NOT_REPRODUCED,Requires convergence and seed checks; no reference covariance,https://proceedings.jacow.org/e06/PAPERS/WEPLS032.PDF
+particles_40k_seed3_st0,0.08,0.1677491326982694,0.16713636220295758,109.68641587283673,NOT_REPRODUCED,Requires convergence and seed checks; no reference covariance,https://proceedings.jacow.org/e06/PAPERS/WEPLS032.PDF
+mesh_256,0.1,0.22571209199566677,0.2251023672358632,125.71209199566678,NOT_REPRODUCED,Requires convergence and seed checks; no reference covariance,https://proceedings.jacow.org/e06/PAPERS/WEPLS032.PDF
+slices_64,0.1,0.22457416728470792,0.22395869906000065,124.57416728470791,NOT_REPRODUCED,Requires convergence and seed checks; no reference covariance,https://proceedings.jacow.org/e06/PAPERS/WEPLS032.PDF
+substeps_4,0.1,0.22475796752707833,0.22414107421058205,124.75796752707834,NOT_REPRODUCED,Requires convergence and seed checks; no reference covariance,https://proceedings.jacow.org/e06/PAPERS/WEPLS032.PDF
+joint_refined,0.1,0.23518228352129578,0.2345519190374845,135.18228352129577,NOT_REPRODUCED,Requires convergence and seed checks; no reference covariance,https://proceedings.jacow.org/e06/PAPERS/WEPLS032.PDF
+beta20_40k,0.22,0.22984515658831528,0.22921235474212542,4.4750711765069395,WITHIN_PUBLISHED_APPROXIMATE_BAND,Requires convergence and seed checks; no reference covariance,https://proceedings.jacow.org/PAC2011/papers/wep134.pdf

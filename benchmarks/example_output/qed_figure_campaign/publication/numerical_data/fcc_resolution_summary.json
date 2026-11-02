@@ -1,0 +1,4811 @@
+{
+  "policy": {
+    "schema": "feebl.observed-peak-resolution/2",
+    "primary_groups": {
+      "broad": 32,
+      "sigma4": 4,
+      "sigma2": 2,
+      "sigma1": 1
+    },
+    "native_bin_width_MeV": 0.2,
+    "comparison": "All phases at the primary and twice-primary group sizes",
+    "maximum_resolution_relative_change": 0.05,
+    "single_component_required": true,
+    "choice": "Fixed per predefined optics target, not optimized per simulated histogram",
+    "uncertainty": "Alignment/resolution envelopes are not confidence intervals or seed SEM",
+    "physical_scope": "Histogram resolution only; particle, mesh, slice and time convergence remain separate"
+  },
+  "cases": [
+    {
+      "case": "fcc_cw_d000_pilot_s1",
+      "compressed_file": "fcc_cw_d000_pilot_s1.fne.gz",
+      "compressed_sha256": "7d4c9669593f75fd8ceef11f14136ddaa1f310c9bd0cb9106aebcb642019118f",
+      "native_sha256": "88a49479613fbf451b228e092070ebca2071f7d06f74be6c11ef9a6b3de935dc",
+      "native_bytes": 2374880,
+      "resolution": {
+        "regime": "broad",
+        "primary_group": 32,
+        "primary_phase": 0,
+        "primary_bin_width_MeV": 6.399999854238558,
+        "fwhm_MeV": 130.92686193606085,
+        "alignment_low_MeV": 129.998501716031,
+        "alignment_high_MeV": 132.86320685412534,
+        "resolution_low_MeV": 129.998501716031,
+        "resolution_high_MeV": 132.92952131790514,
+        "maximum_resolution_relative_change": 0.015296016052246841,
+        "phases": [
+          {
+            "group_size": 32,
+            "phase": 0,
+            "fwhm_MeV": 130.92686193606085,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 1,
+            "fwhm_MeV": 130.87311530249224,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 2,
+            "fwhm_MeV": 131.66561776091612,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 3,
+            "fwhm_MeV": 132.16290038590728,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 4,
+            "fwhm_MeV": 132.36363335275314,
+            "components": 1,
+            "flags": [
+              "EXACT_HALF_HEIGHT_SAMPLES_OR_PLATEAUS"
+            ],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 5,
+            "fwhm_MeV": 132.20489572763938,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 6,
+            "fwhm_MeV": 131.53447543291463,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 7,
+            "fwhm_MeV": 131.9949721653444,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 8,
+            "fwhm_MeV": 132.62394739174965,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 9,
+            "fwhm_MeV": 132.78752134600325,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 10,
+            "fwhm_MeV": 132.263183190247,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 11,
+            "fwhm_MeV": 132.32280221458836,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 12,
+            "fwhm_MeV": 132.13099114632598,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 13,
+            "fwhm_MeV": 131.31944818323404,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 14,
+            "fwhm_MeV": 131.03051635143004,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 15,
+            "fwhm_MeV": 130.47331889079317,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 16,
+            "fwhm_MeV": 130.64592330761116,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 17,
+            "fwhm_MeV": 131.30393441215915,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 18,
+            "fwhm_MeV": 132.86320685412534,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 19,
+            "fwhm_MeV": 131.43552687552074,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 20,
+            "fwhm_MeV": 131.8101601716677,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 21,
+            "fwhm_MeV": 131.24189486252646,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 22,
+            "fwhm_MeV": 130.66879702773804,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 23,
+            "fwhm_MeV": 130.9008100302833,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 24,
+            "fwhm_MeV": 129.998501716031,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 25,
+            "fwhm_MeV": 132.5920825451874,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 26,
+            "fwhm_MeV": 132.4231630106425,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 27,
+            "fwhm_MeV": 131.64074420360805,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 28,
+            "fwhm_MeV": 132.19346104511942,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 29,
+            "fwhm_MeV": 132.4528380325063,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 30,
+            "fwhm_MeV": 131.46044325718265,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 31,
+            "fwhm_MeV": 131.597690540886,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 0,
+            "fwhm_MeV": 132.6071042159498,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 1,
+            "fwhm_MeV": 132.68325490037114,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 2,
+            "fwhm_MeV": 132.85030029949496,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 3,
+            "fwhm_MeV": 132.62258035895513,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 4,
+            "fwhm_MeV": 132.48027063271195,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 5,
+            "fwhm_MeV": 132.23709381395565,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 6,
+            "fwhm_MeV": 131.99677885420158,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 7,
+            "fwhm_MeV": 131.9097458287075,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 8,
+            "fwhm_MeV": 132.2470304363179,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 9,
+            "fwhm_MeV": 132.34547894391824,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 10,
+            "fwhm_MeV": 131.9203755783036,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 11,
+            "fwhm_MeV": 131.87395190496431,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 12,
+            "fwhm_MeV": 131.78260123501673,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 13,
+            "fwhm_MeV": 131.0337511361439,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 14,
+            "fwhm_MeV": 131.49183275864118,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 15,
+            "fwhm_MeV": 131.53541272789937,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 16,
+            "fwhm_MeV": 131.57701923034892,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 17,
+            "fwhm_MeV": 131.64767114686526,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 18,
+            "fwhm_MeV": 132.5759552633201,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 19,
+            "fwhm_MeV": 132.4734719436833,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 20,
+            "fwhm_MeV": 132.70181556760008,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 21,
+            "fwhm_MeV": 132.87708298464906,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 22,
+            "fwhm_MeV": 132.17410146503994,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 23,
+            "fwhm_MeV": 132.4562113344001,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 24,
+            "fwhm_MeV": 132.88173482708032,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 25,
+            "fwhm_MeV": 132.8904916854441,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 26,
+            "fwhm_MeV": 132.40991301941563,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 27,
+            "fwhm_MeV": 132.14734097080338,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 28,
+            "fwhm_MeV": 131.8591292974105,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 29,
+            "fwhm_MeV": 132.29174527356236,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 30,
+            "fwhm_MeV": 132.44742751442118,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 31,
+            "fwhm_MeV": 132.45594288444806,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 32,
+            "fwhm_MeV": 132.39944281444593,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 33,
+            "fwhm_MeV": 132.53465132697784,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 34,
+            "fwhm_MeV": 132.25064930061592,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 35,
+            "fwhm_MeV": 132.0271618391331,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 36,
+            "fwhm_MeV": 132.27693780494576,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 37,
+            "fwhm_MeV": 132.17156210696146,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 38,
+            "fwhm_MeV": 132.21543684881,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 39,
+            "fwhm_MeV": 132.2857081565445,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 40,
+            "fwhm_MeV": 132.92952131790514,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 41,
+            "fwhm_MeV": 132.4516226028294,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 42,
+            "fwhm_MeV": 132.44189230496772,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 43,
+            "fwhm_MeV": 132.2396773678065,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 44,
+            "fwhm_MeV": 132.374477275647,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 45,
+            "fwhm_MeV": 132.59678037201184,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 46,
+            "fwhm_MeV": 132.15231897527246,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 47,
+            "fwhm_MeV": 132.02513346789146,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 48,
+            "fwhm_MeV": 132.1597145577158,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 49,
+            "fwhm_MeV": 132.2746956537486,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 50,
+            "fwhm_MeV": 132.50466291543717,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 51,
+            "fwhm_MeV": 132.3033362950241,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 52,
+            "fwhm_MeV": 132.53943362676068,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 53,
+            "fwhm_MeV": 132.2009270625415,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 54,
+            "fwhm_MeV": 132.1367217876741,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 55,
+            "fwhm_MeV": 132.13935393619636,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 56,
+            "fwhm_MeV": 131.89820165528943,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 57,
+            "fwhm_MeV": 132.84597398958908,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 58,
+            "fwhm_MeV": 132.71944638724165,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 59,
+            "fwhm_MeV": 132.3778653638783,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 60,
+            "fwhm_MeV": 132.3571522149649,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 61,
+            "fwhm_MeV": 132.63826531039058,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 62,
+            "fwhm_MeV": 132.31988249854965,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 63,
+            "fwhm_MeV": 132.8749720522353,
+            "components": 1,
+            "flags": [],
+            "available": true
+          }
+        ],
+        "gaussian_control": {
+          "truth_fwhm_MeV": 130.92686193606085,
+          "sub_bin_offsets": 4,
+          "primary_maximum_absolute_relative_bias": 0.0020425574345461772,
+          "all_representations_maximum_absolute_relative_bias": 0.008437661720109846,
+          "interpretation": "Smooth Gaussian numerical response only; no model-based correction to the observed peak"
+        },
+        "flags": [],
+        "status": "BINNING_STABLE_AT_FIVE_PERCENT_TARGET"
+      }
+    },
+    {
+      "case": "fcc_cw_d025_pilot_s1",
+      "compressed_file": "fcc_cw_d025_pilot_s1.fne.gz",
+      "compressed_sha256": "27d4ab942d8fe55d2e98d21fa92aca9ff2b5a3ee4968d7c48df8d4bff86f3e51",
+      "native_sha256": "43d84a616872ff027325bb2cdce02af199aa87c21889410f8c4eea391e3991ef",
+      "native_bytes": 2372951,
+      "resolution": {
+        "regime": "broad",
+        "primary_group": 32,
+        "primary_phase": 0,
+        "primary_bin_width_MeV": 6.399999854238558,
+        "fwhm_MeV": 128.5605799824907,
+        "alignment_low_MeV": 127.22277118247405,
+        "alignment_high_MeV": 129.31553613790925,
+        "resolution_low_MeV": 127.22277118247405,
+        "resolution_high_MeV": 130.8957493081806,
+        "maximum_resolution_relative_change": 0.018163960725814388,
+        "phases": [
+          {
+            "group_size": 32,
+            "phase": 0,
+            "fwhm_MeV": 128.5605799824907,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 1,
+            "fwhm_MeV": 128.08875563966637,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 2,
+            "fwhm_MeV": 128.46140226112368,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 3,
+            "fwhm_MeV": 129.31553613790925,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 4,
+            "fwhm_MeV": 128.92932479621777,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 5,
+            "fwhm_MeV": 128.52459307660524,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 6,
+            "fwhm_MeV": 128.81481188473742,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 7,
+            "fwhm_MeV": 127.85833406540803,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 8,
+            "fwhm_MeV": 128.9446860620842,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 9,
+            "fwhm_MeV": 128.33422622723845,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 10,
+            "fwhm_MeV": 127.42856852982243,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 11,
+            "fwhm_MeV": 128.19749833329297,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 12,
+            "fwhm_MeV": 127.63757899259076,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 13,
+            "fwhm_MeV": 127.55693048772798,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 14,
+            "fwhm_MeV": 127.73538946763097,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 15,
+            "fwhm_MeV": 127.53512147685342,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 16,
+            "fwhm_MeV": 127.22277118247405,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 17,
+            "fwhm_MeV": 128.48686576396062,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 18,
+            "fwhm_MeV": 128.36235752669722,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 19,
+            "fwhm_MeV": 128.03025886796604,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 20,
+            "fwhm_MeV": 128.17407762017297,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 21,
+            "fwhm_MeV": 128.17591885000468,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 22,
+            "fwhm_MeV": 128.56601211315422,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 23,
+            "fwhm_MeV": 129.09807925503003,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 24,
+            "fwhm_MeV": 128.38863201065465,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 25,
+            "fwhm_MeV": 128.4800821385801,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 26,
+            "fwhm_MeV": 127.86501184078247,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 27,
+            "fwhm_MeV": 128.13359901555543,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 28,
+            "fwhm_MeV": 127.94509269687637,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 29,
+            "fwhm_MeV": 128.03470990874644,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 30,
+            "fwhm_MeV": 128.2209689501883,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 31,
+            "fwhm_MeV": 128.17292756840004,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 0,
+            "fwhm_MeV": 130.8957493081806,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 1,
+            "fwhm_MeV": 130.09018188441246,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 2,
+            "fwhm_MeV": 130.05517599896166,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 3,
+            "fwhm_MeV": 130.23999703749212,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 4,
+            "fwhm_MeV": 130.13531660295996,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 5,
+            "fwhm_MeV": 130.10633291823126,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 6,
+            "fwhm_MeV": 129.75041156316536,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 7,
+            "fwhm_MeV": 129.39674445429716,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 8,
+            "fwhm_MeV": 129.48027240352644,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 9,
+            "fwhm_MeV": 129.3204315217764,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 10,
+            "fwhm_MeV": 128.66750980528252,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 11,
+            "fwhm_MeV": 128.97964249060578,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 12,
+            "fwhm_MeV": 129.02012440488875,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 13,
+            "fwhm_MeV": 129.2554081183539,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 14,
+            "fwhm_MeV": 129.1594761114112,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 15,
+            "fwhm_MeV": 129.06474003895596,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 16,
+            "fwhm_MeV": 128.75517320691188,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 17,
+            "fwhm_MeV": 128.91286528464718,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 18,
+            "fwhm_MeV": 129.0426359891228,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 19,
+            "fwhm_MeV": 128.86807540454015,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 20,
+            "fwhm_MeV": 129.06633602979412,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 21,
+            "fwhm_MeV": 128.70230720899656,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 22,
+            "fwhm_MeV": 128.520540865523,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 23,
+            "fwhm_MeV": 128.60967225701359,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 24,
+            "fwhm_MeV": 128.20477090819793,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 25,
+            "fwhm_MeV": 127.97056337095114,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 26,
+            "fwhm_MeV": 128.38651891512143,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 27,
+            "fwhm_MeV": 128.41242782728557,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 28,
+            "fwhm_MeV": 128.52590764786953,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 29,
+            "fwhm_MeV": 128.71241482136497,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 30,
+            "fwhm_MeV": 128.94699107339136,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 31,
+            "fwhm_MeV": 128.80208481598743,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 32,
+            "fwhm_MeV": 129.1321751122041,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 33,
+            "fwhm_MeV": 129.3602999569714,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 34,
+            "fwhm_MeV": 129.50755987880314,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 35,
+            "fwhm_MeV": 129.44814108392677,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 36,
+            "fwhm_MeV": 129.16446592289788,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 37,
+            "fwhm_MeV": 129.37191803420944,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 38,
+            "fwhm_MeV": 129.53348590252745,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 39,
+            "fwhm_MeV": 129.45614981104825,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 40,
+            "fwhm_MeV": 129.77963755892574,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 41,
+            "fwhm_MeV": 129.7574838777109,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 42,
+            "fwhm_MeV": 129.4566295494377,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 43,
+            "fwhm_MeV": 129.67616787108227,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 44,
+            "fwhm_MeV": 129.69123745595823,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 45,
+            "fwhm_MeV": 129.59705732615134,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 46,
+            "fwhm_MeV": 130.03896717953012,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 47,
+            "fwhm_MeV": 129.93121698066545,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 48,
+            "fwhm_MeV": 130.0323381632893,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 49,
+            "fwhm_MeV": 130.2609421343277,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 50,
+            "fwhm_MeV": 130.36248462275069,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 51,
+            "fwhm_MeV": 129.81263950607058,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 52,
+            "fwhm_MeV": 129.5938768334679,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 53,
+            "fwhm_MeV": 129.65645716393226,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 54,
+            "fwhm_MeV": 129.1857312050979,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 55,
+            "fwhm_MeV": 129.496721013183,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 56,
+            "fwhm_MeV": 129.55783684675737,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 57,
+            "fwhm_MeV": 129.6842297728773,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 58,
+            "fwhm_MeV": 130.0784240490458,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 59,
+            "fwhm_MeV": 130.58647204321971,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 60,
+            "fwhm_MeV": 130.75754991200483,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 61,
+            "fwhm_MeV": 130.5571796221443,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 62,
+            "fwhm_MeV": 130.13568259366082,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 63,
+            "fwhm_MeV": 130.5737735009842,
+            "components": 1,
+            "flags": [],
+            "available": true
+          }
+        ],
+        "gaussian_control": {
+          "truth_fwhm_MeV": 128.5605799824907,
+          "sub_bin_offsets": 4,
+          "primary_maximum_absolute_relative_bias": 0.002252687043155399,
+          "all_representations_maximum_absolute_relative_bias": 0.009024530424986521,
+          "interpretation": "Smooth Gaussian numerical response only; no model-based correction to the observed peak"
+        },
+        "flags": [],
+        "status": "BINNING_STABLE_AT_FIVE_PERCENT_TARGET"
+      }
+    },
+    {
+      "case": "fcc_cw_d050_pilot_s1",
+      "compressed_file": "fcc_cw_d050_pilot_s1.fne.gz",
+      "compressed_sha256": "a7e6b76d49f541f7b4016baa18f529a37fad0389f517187b4ba481883a3ac37e",
+      "native_sha256": "90380c7d6c77c26b68350932040caea01226cd5d3e037393faebd4f2431fe0ec",
+      "native_bytes": 2366523,
+      "resolution": {
+        "regime": "broad",
+        "primary_group": 32,
+        "primary_phase": 0,
+        "primary_bin_width_MeV": 6.399999854238558,
+        "fwhm_MeV": 109.83571367152933,
+        "alignment_low_MeV": 108.32145872305432,
+        "alignment_high_MeV": 110.19877695302682,
+        "resolution_low_MeV": 108.32145872305432,
+        "resolution_high_MeV": 111.93117483470871,
+        "maximum_resolution_relative_change": 0.019078140371045382,
+        "phases": [
+          {
+            "group_size": 32,
+            "phase": 0,
+            "fwhm_MeV": 109.83571367152933,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 1,
+            "fwhm_MeV": 110.19877695302682,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 2,
+            "fwhm_MeV": 109.67359593415438,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 3,
+            "fwhm_MeV": 109.86502538308685,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 4,
+            "fwhm_MeV": 109.57509910315366,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 5,
+            "fwhm_MeV": 109.93328304289207,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 6,
+            "fwhm_MeV": 110.08607344507482,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 7,
+            "fwhm_MeV": 109.28934005548285,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 8,
+            "fwhm_MeV": 109.55625109670564,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 9,
+            "fwhm_MeV": 109.56669108381334,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 10,
+            "fwhm_MeV": 108.32145872305432,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 11,
+            "fwhm_MeV": 108.83575337443574,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 12,
+            "fwhm_MeV": 109.68201431177249,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 13,
+            "fwhm_MeV": 109.45021740576522,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 14,
+            "fwhm_MeV": 109.12792112988257,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 15,
+            "fwhm_MeV": 108.80680603546011,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 16,
+            "fwhm_MeV": 108.79821752253349,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 17,
+            "fwhm_MeV": 108.89157647041259,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 18,
+            "fwhm_MeV": 109.14577230444422,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 19,
+            "fwhm_MeV": 109.08956273566162,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 20,
+            "fwhm_MeV": 109.41544724637708,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 21,
+            "fwhm_MeV": 108.92355307800017,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 22,
+            "fwhm_MeV": 108.9641805277779,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 23,
+            "fwhm_MeV": 109.10069133434774,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 24,
+            "fwhm_MeV": 108.97266062258382,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 25,
+            "fwhm_MeV": 109.19313807077913,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 26,
+            "fwhm_MeV": 108.57894059954276,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 27,
+            "fwhm_MeV": 108.59803243904764,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 28,
+            "fwhm_MeV": 108.99366764454044,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 29,
+            "fwhm_MeV": 108.9474807830868,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 30,
+            "fwhm_MeV": 109.41999936827074,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 31,
+            "fwhm_MeV": 110.06860748264558,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 0,
+            "fwhm_MeV": 111.65710497476766,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 1,
+            "fwhm_MeV": 111.93117483470871,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 2,
+            "fwhm_MeV": 111.70145026581224,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 3,
+            "fwhm_MeV": 111.76876169510308,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 4,
+            "fwhm_MeV": 111.66772725509588,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 5,
+            "fwhm_MeV": 111.66028045848009,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 6,
+            "fwhm_MeV": 111.75385023871343,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 7,
+            "fwhm_MeV": 111.57746826090431,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 8,
+            "fwhm_MeV": 111.69946139152387,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 9,
+            "fwhm_MeV": 111.79920607787608,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 10,
+            "fwhm_MeV": 111.40354493289806,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 11,
+            "fwhm_MeV": 111.51629831199728,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 12,
+            "fwhm_MeV": 111.1064556936725,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 13,
+            "fwhm_MeV": 110.96934077620801,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 14,
+            "fwhm_MeV": 110.67540708869217,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 15,
+            "fwhm_MeV": 110.88339549407067,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 16,
+            "fwhm_MeV": 110.91090417876615,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 17,
+            "fwhm_MeV": 111.05548683636357,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 18,
+            "fwhm_MeV": 111.14262662789542,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 19,
+            "fwhm_MeV": 111.06287811898596,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 20,
+            "fwhm_MeV": 111.07139384427,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 21,
+            "fwhm_MeV": 110.81759868622498,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 22,
+            "fwhm_MeV": 111.0745892278544,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 23,
+            "fwhm_MeV": 111.3826780422329,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 24,
+            "fwhm_MeV": 111.17097627904116,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 25,
+            "fwhm_MeV": 111.2775324827453,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 26,
+            "fwhm_MeV": 110.88749765434613,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 27,
+            "fwhm_MeV": 110.66529476295273,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 28,
+            "fwhm_MeV": 110.78000429441204,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 29,
+            "fwhm_MeV": 110.79287006104721,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 30,
+            "fwhm_MeV": 110.6277936372635,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 31,
+            "fwhm_MeV": 111.12480710006878,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 32,
+            "fwhm_MeV": 110.89143095814791,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 33,
+            "fwhm_MeV": 110.76834263933222,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 34,
+            "fwhm_MeV": 110.92580976526278,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 35,
+            "fwhm_MeV": 110.96883843769945,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 36,
+            "fwhm_MeV": 110.95561409389632,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 37,
+            "fwhm_MeV": 110.59125796894875,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 38,
+            "fwhm_MeV": 110.32997362035246,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 39,
+            "fwhm_MeV": 109.96240713726024,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 40,
+            "fwhm_MeV": 110.2840719710656,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 41,
+            "fwhm_MeV": 110.26448157656432,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 42,
+            "fwhm_MeV": 110.06643822571505,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 43,
+            "fwhm_MeV": 110.17817373894445,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 44,
+            "fwhm_MeV": 110.22347225689089,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 45,
+            "fwhm_MeV": 110.08152030927931,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 46,
+            "fwhm_MeV": 110.15648510768017,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 47,
+            "fwhm_MeV": 110.25192058882283,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 48,
+            "fwhm_MeV": 110.16602414336774,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 49,
+            "fwhm_MeV": 110.14218322289082,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 50,
+            "fwhm_MeV": 109.91531558703116,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 51,
+            "fwhm_MeV": 110.17158230004043,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 52,
+            "fwhm_MeV": 110.18673706973914,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 53,
+            "fwhm_MeV": 110.61342467475299,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 54,
+            "fwhm_MeV": 110.77388450995329,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 55,
+            "fwhm_MeV": 110.41312013426818,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 56,
+            "fwhm_MeV": 110.50244338956361,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 57,
+            "fwhm_MeV": 110.46648643257129,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 58,
+            "fwhm_MeV": 110.23991992439619,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 59,
+            "fwhm_MeV": 110.1240393069105,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 60,
+            "fwhm_MeV": 110.33736975286956,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 61,
+            "fwhm_MeV": 110.8006898161733,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 62,
+            "fwhm_MeV": 111.17290827128556,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 63,
+            "fwhm_MeV": 111.29357237722104,
+            "components": 1,
+            "flags": [],
+            "available": true
+          }
+        ],
+        "gaussian_control": {
+          "truth_fwhm_MeV": 109.83571367152933,
+          "sub_bin_offsets": 4,
+          "primary_maximum_absolute_relative_bias": 0.00274224526381861,
+          "all_representations_maximum_absolute_relative_bias": 0.01086027973407555,
+          "interpretation": "Smooth Gaussian numerical response only; no model-based correction to the observed peak"
+        },
+        "flags": [],
+        "status": "BINNING_STABLE_AT_FIVE_PERCENT_TARGET"
+      }
+    },
+    {
+      "case": "fcc_cw_d075_pilot_s1",
+      "compressed_file": "fcc_cw_d075_pilot_s1.fne.gz",
+      "compressed_sha256": "f5d9c9f09cb4c865d3d81297e61f21fd7fcd8715ee7e2b63ce202e4332cdd6fa",
+      "native_sha256": "d39a80426fe90387caba4c55e1c8f33ad03fd772d9b6bea0d24a7280a93ba358",
+      "native_bytes": 2360009,
+      "resolution": {
+        "regime": "broad",
+        "primary_group": 32,
+        "primary_phase": 0,
+        "primary_bin_width_MeV": 6.399999854238558,
+        "fwhm_MeV": 94.28248824195862,
+        "alignment_low_MeV": 93.40552544242087,
+        "alignment_high_MeV": 95.5785986488138,
+        "resolution_low_MeV": 93.40552544242087,
+        "resolution_high_MeV": 97.08270977510836,
+        "maximum_resolution_relative_change": 0.029700335506244624,
+        "phases": [
+          {
+            "group_size": 32,
+            "phase": 0,
+            "fwhm_MeV": 94.28248824195862,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 1,
+            "fwhm_MeV": 94.06462380920289,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 2,
+            "fwhm_MeV": 94.46106683016353,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 3,
+            "fwhm_MeV": 94.77679728492205,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 4,
+            "fwhm_MeV": 94.04266263430827,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 5,
+            "fwhm_MeV": 93.8945119339536,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 6,
+            "fwhm_MeV": 93.7623951456601,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 7,
+            "fwhm_MeV": 93.62649120173216,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 8,
+            "fwhm_MeV": 93.71997899131657,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 9,
+            "fwhm_MeV": 93.40552544242087,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 10,
+            "fwhm_MeV": 93.73576429118202,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 11,
+            "fwhm_MeV": 93.70843196896317,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 12,
+            "fwhm_MeV": 93.67691064043981,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 13,
+            "fwhm_MeV": 94.49720757142188,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 14,
+            "fwhm_MeV": 94.45955277887208,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 15,
+            "fwhm_MeV": 94.38305328342267,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 16,
+            "fwhm_MeV": 94.7226005732773,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 17,
+            "fwhm_MeV": 94.95210992061232,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 18,
+            "fwhm_MeV": 94.70713137540088,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 19,
+            "fwhm_MeV": 94.10848647223702,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 20,
+            "fwhm_MeV": 93.52001925719833,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 21,
+            "fwhm_MeV": 93.87557971500371,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 22,
+            "fwhm_MeV": 94.04326255946671,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 23,
+            "fwhm_MeV": 94.73829334278605,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 24,
+            "fwhm_MeV": 95.43131327474441,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 25,
+            "fwhm_MeV": 95.44695332547803,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 26,
+            "fwhm_MeV": 95.30482165952492,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 27,
+            "fwhm_MeV": 95.5785986488138,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 28,
+            "fwhm_MeV": 95.28715974134627,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 29,
+            "fwhm_MeV": 94.91382783522795,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 30,
+            "fwhm_MeV": 94.8588543780744,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 31,
+            "fwhm_MeV": 95.0247597433247,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 0,
+            "fwhm_MeV": 96.43077610503781,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 1,
+            "fwhm_MeV": 96.20376817913723,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 2,
+            "fwhm_MeV": 95.93686389929701,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 3,
+            "fwhm_MeV": 95.59001448981519,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 4,
+            "fwhm_MeV": 95.73140259992385,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 5,
+            "fwhm_MeV": 95.86145571321936,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 6,
+            "fwhm_MeV": 95.78629227068802,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 7,
+            "fwhm_MeV": 95.3711869278493,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 8,
+            "fwhm_MeV": 95.2858307160227,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 9,
+            "fwhm_MeV": 95.16114145041854,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 10,
+            "fwhm_MeV": 95.10747762186611,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 11,
+            "fwhm_MeV": 95.20979527516715,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 12,
+            "fwhm_MeV": 95.14715775107163,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 13,
+            "fwhm_MeV": 95.44603194862589,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 14,
+            "fwhm_MeV": 95.41799772073034,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 15,
+            "fwhm_MeV": 95.49600866387209,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 16,
+            "fwhm_MeV": 95.72003239877347,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 17,
+            "fwhm_MeV": 95.57487651068186,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 18,
+            "fwhm_MeV": 95.08767934957518,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 19,
+            "fwhm_MeV": 95.18031824333661,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 20,
+            "fwhm_MeV": 94.9199106466807,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 21,
+            "fwhm_MeV": 95.01460906940906,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 22,
+            "fwhm_MeV": 95.03397152803927,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 23,
+            "fwhm_MeV": 95.24226789218915,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 24,
+            "fwhm_MeV": 95.40160980925805,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 25,
+            "fwhm_MeV": 95.62441097031638,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 26,
+            "fwhm_MeV": 95.65491443223095,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 27,
+            "fwhm_MeV": 95.7767986670035,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 28,
+            "fwhm_MeV": 96.00266181887207,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 29,
+            "fwhm_MeV": 95.88905785795987,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 30,
+            "fwhm_MeV": 96.13540645696617,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 31,
+            "fwhm_MeV": 96.2887463827542,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 32,
+            "fwhm_MeV": 96.08149886202,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 33,
+            "fwhm_MeV": 95.68848006229302,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 34,
+            "fwhm_MeV": 96.01934575012194,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 35,
+            "fwhm_MeV": 95.99199960757687,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 36,
+            "fwhm_MeV": 95.84005676632046,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 37,
+            "fwhm_MeV": 96.13146226558911,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 38,
+            "fwhm_MeV": 96.33932588023697,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 39,
+            "fwhm_MeV": 96.49693495327938,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 40,
+            "fwhm_MeV": 96.67979813545458,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 41,
+            "fwhm_MeV": 96.548252559856,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 42,
+            "fwhm_MeV": 96.5611263379742,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 43,
+            "fwhm_MeV": 96.79721409510478,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 44,
+            "fwhm_MeV": 97.08270977510836,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 45,
+            "fwhm_MeV": 96.70753609178462,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 46,
+            "fwhm_MeV": 96.76910670974337,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 47,
+            "fwhm_MeV": 96.76262427313986,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 48,
+            "fwhm_MeV": 96.8177224630864,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 49,
+            "fwhm_MeV": 96.94878381847616,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 50,
+            "fwhm_MeV": 96.75083624496494,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 51,
+            "fwhm_MeV": 96.2498488937058,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 52,
+            "fwhm_MeV": 95.97574983847323,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 53,
+            "fwhm_MeV": 96.05264943176905,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 54,
+            "fwhm_MeV": 96.0508720876021,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 55,
+            "fwhm_MeV": 96.43874109605122,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 56,
+            "fwhm_MeV": 96.12206614067986,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 57,
+            "fwhm_MeV": 96.04545076776105,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 58,
+            "fwhm_MeV": 96.54121689298734,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 59,
+            "fwhm_MeV": 96.88612379284223,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 60,
+            "fwhm_MeV": 96.57534145601687,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 61,
+            "fwhm_MeV": 96.69608227848414,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 62,
+            "fwhm_MeV": 96.49248285271028,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 63,
+            "fwhm_MeV": 96.59850549769544,
+            "components": 1,
+            "flags": [],
+            "available": true
+          }
+        ],
+        "gaussian_control": {
+          "truth_fwhm_MeV": 94.28248824195862,
+          "sub_bin_offsets": 4,
+          "primary_maximum_absolute_relative_bias": 0.0036008640868590014,
+          "all_representations_maximum_absolute_relative_bias": 0.016739241384333914,
+          "interpretation": "Smooth Gaussian numerical response only; no model-based correction to the observed peak"
+        },
+        "flags": [],
+        "status": "BINNING_STABLE_AT_FIVE_PERCENT_TARGET"
+      }
+    },
+    {
+      "case": "fcc_cw_d100_nz64_s1",
+      "compressed_file": "fcc_cw_d100_nz64_s1.fne.gz",
+      "compressed_sha256": "a958f7989dc371e5dc5d0eac5bd3ff5a736b26840de8bcf2d93d73dbd9d45d12",
+      "native_sha256": "d085557a5b215472bb62c5c5566ad5fbe0bd063b70da1189b8fa4f80d9b9e982",
+      "native_bytes": 2354820,
+      "resolution": {
+        "regime": "broad",
+        "primary_group": 32,
+        "primary_phase": 0,
+        "primary_bin_width_MeV": 6.399999854238558,
+        "fwhm_MeV": 82.8786032179778,
+        "alignment_low_MeV": 81.10325462391188,
+        "alignment_high_MeV": 83.14344925203443,
+        "resolution_low_MeV": 81.10325462391188,
+        "resolution_high_MeV": 84.58911982754103,
+        "maximum_resolution_relative_change": 0.021421072811719566,
+        "phases": [
+          {
+            "group_size": 32,
+            "phase": 0,
+            "fwhm_MeV": 82.8786032179778,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 1,
+            "fwhm_MeV": 82.96993402974806,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 2,
+            "fwhm_MeV": 83.14344925203443,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 3,
+            "fwhm_MeV": 82.79647080492225,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 4,
+            "fwhm_MeV": 82.22028318721186,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 5,
+            "fwhm_MeV": 82.74274623748568,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 6,
+            "fwhm_MeV": 82.4205308129109,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 7,
+            "fwhm_MeV": 82.02574979230803,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 8,
+            "fwhm_MeV": 82.6289705515677,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 9,
+            "fwhm_MeV": 82.08834830102774,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 10,
+            "fwhm_MeV": 82.08893398001749,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 11,
+            "fwhm_MeV": 82.70045623498845,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 12,
+            "fwhm_MeV": 82.88387690235766,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 13,
+            "fwhm_MeV": 82.5786498793093,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 14,
+            "fwhm_MeV": 83.10121282008254,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 15,
+            "fwhm_MeV": 82.98665540337424,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 16,
+            "fwhm_MeV": 82.51745362275642,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 17,
+            "fwhm_MeV": 81.73803833645366,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 18,
+            "fwhm_MeV": 81.71662341811725,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 19,
+            "fwhm_MeV": 81.7274507153769,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 20,
+            "fwhm_MeV": 81.46954518521454,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 21,
+            "fwhm_MeV": 81.1437976265239,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 22,
+            "fwhm_MeV": 81.10325462391188,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 23,
+            "fwhm_MeV": 81.37236477018917,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 24,
+            "fwhm_MeV": 81.48972067674265,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 25,
+            "fwhm_MeV": 81.59777043232452,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 26,
+            "fwhm_MeV": 81.42232090747825,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 27,
+            "fwhm_MeV": 81.44046735569077,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 28,
+            "fwhm_MeV": 82.46440490394491,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 29,
+            "fwhm_MeV": 82.45409164820217,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 30,
+            "fwhm_MeV": 81.73281080583195,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 31,
+            "fwhm_MeV": 82.3804192985449,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 0,
+            "fwhm_MeV": 83.9078431037592,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 1,
+            "fwhm_MeV": 83.83065861532657,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 2,
+            "fwhm_MeV": 83.84308721130651,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 3,
+            "fwhm_MeV": 83.61941323093447,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 4,
+            "fwhm_MeV": 83.3893701805124,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 5,
+            "fwhm_MeV": 83.34036084691832,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 6,
+            "fwhm_MeV": 83.19343770497767,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 7,
+            "fwhm_MeV": 82.93116413402402,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 8,
+            "fwhm_MeV": 83.16676192966099,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 9,
+            "fwhm_MeV": 82.90403391536927,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 10,
+            "fwhm_MeV": 83.06796257197391,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 11,
+            "fwhm_MeV": 83.53294228827224,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 12,
+            "fwhm_MeV": 83.34758510875417,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 13,
+            "fwhm_MeV": 83.28517876536523,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 14,
+            "fwhm_MeV": 83.38709496706542,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 15,
+            "fwhm_MeV": 83.15238065611652,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 16,
+            "fwhm_MeV": 83.15175544919384,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 17,
+            "fwhm_MeV": 82.84582184562339,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 18,
+            "fwhm_MeV": 82.92541097546291,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 19,
+            "fwhm_MeV": 82.65037127785035,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 20,
+            "fwhm_MeV": 82.5653130838333,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 21,
+            "fwhm_MeV": 82.47366930541489,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 22,
+            "fwhm_MeV": 82.67874617631321,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 23,
+            "fwhm_MeV": 82.85310466588669,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 24,
+            "fwhm_MeV": 82.996905765782,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 25,
+            "fwhm_MeV": 83.26085758176305,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 26,
+            "fwhm_MeV": 83.16498424964891,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 27,
+            "fwhm_MeV": 83.2834668077993,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 28,
+            "fwhm_MeV": 83.79556639037844,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 29,
+            "fwhm_MeV": 83.71215412572042,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 30,
+            "fwhm_MeV": 83.56926494153072,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 31,
+            "fwhm_MeV": 83.75834227902601,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 32,
+            "fwhm_MeV": 83.88363389141773,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 33,
+            "fwhm_MeV": 83.8091469164084,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 34,
+            "fwhm_MeV": 84.02943052949752,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 35,
+            "fwhm_MeV": 83.89684940155462,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 36,
+            "fwhm_MeV": 84.19373764571958,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 37,
+            "fwhm_MeV": 84.58911982754103,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 38,
+            "fwhm_MeV": 84.21621492320241,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 39,
+            "fwhm_MeV": 84.0787243147787,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 40,
+            "fwhm_MeV": 84.31050675271479,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 41,
+            "fwhm_MeV": 83.99452316645295,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 42,
+            "fwhm_MeV": 84.02134437773157,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 43,
+            "fwhm_MeV": 84.12318990392009,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 44,
+            "fwhm_MeV": 84.07084566850642,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 45,
+            "fwhm_MeV": 84.1997140359041,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 46,
+            "fwhm_MeV": 83.94573047397103,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 47,
+            "fwhm_MeV": 83.82501829858313,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 48,
+            "fwhm_MeV": 83.2705769625477,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 49,
+            "fwhm_MeV": 83.1927552435161,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 50,
+            "fwhm_MeV": 83.47918990317282,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 51,
+            "fwhm_MeV": 83.68042017333721,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 52,
+            "fwhm_MeV": 83.64541531996394,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 53,
+            "fwhm_MeV": 83.48618466705204,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 54,
+            "fwhm_MeV": 83.5909338341736,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 55,
+            "fwhm_MeV": 83.57440556690676,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 56,
+            "fwhm_MeV": 83.70479736983327,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 57,
+            "fwhm_MeV": 83.29782363311722,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 58,
+            "fwhm_MeV": 83.55488442715853,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 59,
+            "fwhm_MeV": 83.67989310036705,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 60,
+            "fwhm_MeV": 83.79840363397761,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 61,
+            "fwhm_MeV": 83.72476336067791,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 62,
+            "fwhm_MeV": 83.53785821286408,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 63,
+            "fwhm_MeV": 83.78829457333836,
+            "components": 1,
+            "flags": [],
+            "available": true
+          }
+        ],
+        "gaussian_control": {
+          "truth_fwhm_MeV": 82.8786032179778,
+          "sub_bin_offsets": 4,
+          "primary_maximum_absolute_relative_bias": 0.004327593450865086,
+          "all_representations_maximum_absolute_relative_bias": 0.019246007357548223,
+          "interpretation": "Smooth Gaussian numerical response only; no model-based correction to the observed peak"
+        },
+        "flags": [],
+        "status": "BINNING_STABLE_AT_FIVE_PERCENT_TARGET"
+      }
+    },
+    {
+      "case": "fcc_cw_d100_pilot_s1",
+      "compressed_file": "fcc_cw_d100_pilot_s1.fne.gz",
+      "compressed_sha256": "11753cf5a3169ecc28abe8828e814f16d3a043242274bd09957c4a0f4a2aef15",
+      "native_sha256": "d1969d94e76b883ac5ac1654252b37ece85801b2198f573635bb709dd46b29b5",
+      "native_bytes": 2354239,
+      "resolution": {
+        "regime": "broad",
+        "primary_group": 32,
+        "primary_phase": 0,
+        "primary_bin_width_MeV": 6.399999854238558,
+        "fwhm_MeV": 81.1429094716658,
+        "alignment_low_MeV": 79.66153346178828,
+        "alignment_high_MeV": 82.24127567127937,
+        "resolution_low_MeV": 79.66153346178828,
+        "resolution_high_MeV": 83.98651578615102,
+        "maximum_resolution_relative_change": 0.03504442141649067,
+        "phases": [
+          {
+            "group_size": 32,
+            "phase": 0,
+            "fwhm_MeV": 81.1429094716658,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 1,
+            "fwhm_MeV": 81.1108332135575,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 2,
+            "fwhm_MeV": 81.38699711685149,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 3,
+            "fwhm_MeV": 81.06329080415264,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 4,
+            "fwhm_MeV": 81.06315605066072,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 5,
+            "fwhm_MeV": 81.55298981803583,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 6,
+            "fwhm_MeV": 81.81130860135966,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 7,
+            "fwhm_MeV": 80.9501076222574,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 8,
+            "fwhm_MeV": 80.2044800743289,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 9,
+            "fwhm_MeV": 80.37319916422803,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 10,
+            "fwhm_MeV": 80.67195090131918,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 11,
+            "fwhm_MeV": 79.96928661123093,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 12,
+            "fwhm_MeV": 79.8294427569175,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 13,
+            "fwhm_MeV": 79.93307751468137,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 14,
+            "fwhm_MeV": 79.66153346178828,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 15,
+            "fwhm_MeV": 80.01016026074126,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 16,
+            "fwhm_MeV": 80.36328646015534,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 17,
+            "fwhm_MeV": 80.95015200476041,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 18,
+            "fwhm_MeV": 81.66697408370283,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 19,
+            "fwhm_MeV": 81.83975212222094,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 20,
+            "fwhm_MeV": 82.24127567127937,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 21,
+            "fwhm_MeV": 81.83277550617163,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 22,
+            "fwhm_MeV": 82.01164614054335,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 23,
+            "fwhm_MeV": 81.8449348743826,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 24,
+            "fwhm_MeV": 81.94418295251182,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 25,
+            "fwhm_MeV": 81.82303777371658,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 26,
+            "fwhm_MeV": 81.23677057108125,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 27,
+            "fwhm_MeV": 81.63584434345239,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 28,
+            "fwhm_MeV": 81.71410299874537,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 29,
+            "fwhm_MeV": 82.06236664857158,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 30,
+            "fwhm_MeV": 81.6768110321533,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 32,
+            "phase": 31,
+            "fwhm_MeV": 81.5431059547791,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 0,
+            "fwhm_MeV": 81.5562678628794,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 1,
+            "fwhm_MeV": 81.22156509931244,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 2,
+            "fwhm_MeV": 81.40158388233942,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 3,
+            "fwhm_MeV": 81.62333508714426,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 4,
+            "fwhm_MeV": 81.50093021669136,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 5,
+            "fwhm_MeV": 81.80443248977554,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 6,
+            "fwhm_MeV": 81.7578980798288,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 7,
+            "fwhm_MeV": 81.76096079598949,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 8,
+            "fwhm_MeV": 81.57850023806645,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 9,
+            "fwhm_MeV": 81.62318577313954,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 10,
+            "fwhm_MeV": 82.01330395135642,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 11,
+            "fwhm_MeV": 82.17305358141402,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 12,
+            "fwhm_MeV": 82.48564204093611,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 13,
+            "fwhm_MeV": 82.21783326702337,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 14,
+            "fwhm_MeV": 82.19631296101682,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 15,
+            "fwhm_MeV": 82.67769614847964,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 16,
+            "fwhm_MeV": 82.82823404809392,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 17,
+            "fwhm_MeV": 83.08133516295868,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 18,
+            "fwhm_MeV": 83.25151416593712,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 19,
+            "fwhm_MeV": 83.10960895992991,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 20,
+            "fwhm_MeV": 83.37945374860567,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 21,
+            "fwhm_MeV": 83.59647280410343,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 22,
+            "fwhm_MeV": 83.28644148657816,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 23,
+            "fwhm_MeV": 83.1158943905308,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 24,
+            "fwhm_MeV": 83.04101106924122,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 25,
+            "fwhm_MeV": 83.2086267396761,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 26,
+            "fwhm_MeV": 83.79661407158778,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 27,
+            "fwhm_MeV": 83.2469939129794,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 28,
+            "fwhm_MeV": 83.34955268452404,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 29,
+            "fwhm_MeV": 83.62055106462662,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 30,
+            "fwhm_MeV": 83.98651578615102,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 31,
+            "fwhm_MeV": 83.84833361836286,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 32,
+            "fwhm_MeV": 83.84030593312275,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 33,
+            "fwhm_MeV": 83.85036467404916,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 34,
+            "fwhm_MeV": 83.80407360048991,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 35,
+            "fwhm_MeV": 83.51546075058991,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 36,
+            "fwhm_MeV": 83.39577008433707,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 37,
+            "fwhm_MeV": 83.31444113552777,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 38,
+            "fwhm_MeV": 83.11303502667045,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 39,
+            "fwhm_MeV": 82.89443157457299,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 40,
+            "fwhm_MeV": 82.79749693151928,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 41,
+            "fwhm_MeV": 82.69521286835868,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 42,
+            "fwhm_MeV": 82.56289024609487,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 43,
+            "fwhm_MeV": 82.01103241135854,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 44,
+            "fwhm_MeV": 81.88416426300194,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 45,
+            "fwhm_MeV": 82.10146160735121,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 46,
+            "fwhm_MeV": 81.96278494914111,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 47,
+            "fwhm_MeV": 81.71843811291524,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 48,
+            "fwhm_MeV": 81.53678011238696,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 49,
+            "fwhm_MeV": 81.71377341824382,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 50,
+            "fwhm_MeV": 81.96544032109898,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 51,
+            "fwhm_MeV": 82.19936515730808,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 52,
+            "fwhm_MeV": 82.36816167656968,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 53,
+            "fwhm_MeV": 82.17487217342523,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 54,
+            "fwhm_MeV": 82.28143170497049,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 55,
+            "fwhm_MeV": 82.11491479528377,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 56,
+            "fwhm_MeV": 81.79365295427488,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 57,
+            "fwhm_MeV": 81.60274944697221,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 58,
+            "fwhm_MeV": 81.55051557719162,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 59,
+            "fwhm_MeV": 81.78917162291555,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 60,
+            "fwhm_MeV": 81.74681173875342,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 61,
+            "fwhm_MeV": 81.62522658946614,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 62,
+            "fwhm_MeV": 81.22090526937598,
+            "components": 1,
+            "flags": [],
+            "available": true
+          },
+          {
+            "group_size": 64,
+            "phase": 63,
+            "fwhm_MeV": 81.23349325978779,
+            "components": 1,
+            "flags": [],
+            "available": true
+          }
+        ],
+        "gaussian_control": {
+          "truth_fwhm_MeV": 81.1429094716658,
+          "sub_bin_offsets": 4,
+          "primary_maximum_absolute_relative_bias": 0.004914081216779609,
+          "all_representations_maximum_absolute_relative_bias": 0.02083772664510053,
+          "interpretation": "Smooth Gaussian numerical response only; no model-based correction to the observed peak"
+        },
+        "flags": [],
+        "status": "BINNING_STABLE_AT_FIVE_PERCENT_TARGET"
+      }
+    }
+  ],
+  "scope": "Single-seed observed widths; all alignment ranges are numerical diagnostics, not statistical errors"
+}

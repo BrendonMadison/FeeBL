@@ -1,0 +1,214 @@
+{
+  "schema": "feebl.qed-validation-inputs/1",
+  "status": "PREPARED_NOT_EXECUTED",
+  "native_runs": 7,
+  "execution_order": "sequential; first failure stops the job",
+  "cases": [
+    {
+      "name": "halhf550_original_failure",
+      "purpose": "Exact input replay of job25491535 seed729060808; no threshold, seed or physics changes",
+      "accelerator": "halhf550",
+      "parameters": "diagnostic",
+      "argv": [
+        "--make_gui_files",
+        "halhf550",
+        "diagnostic",
+        "out.dat"
+      ],
+      "timeout_seconds": 600,
+      "parent_sha256": "930be0b7a0db66e275a79ba7c66b06144ba19de54bb6eec124b89fc274a6330a",
+      "card_sha256": "930be0b7a0db66e275a79ba7c66b06144ba19de54bb6eec124b89fc274a6330a",
+      "changes": {},
+      "expected_files": [
+        "out.dat",
+        "pairs.dat"
+      ],
+      "scientific_use": "Regression and resource pilot only; not a publication ensemble"
+    },
+    {
+      "name": "ilc500_pair_model0",
+      "purpose": "Process counts, finite tracked outputs and resource cost for one declared pair model",
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "argv": [
+        "--make_gui_files",
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "timeout_seconds": 600,
+      "parent_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "card_sha256": "b198926c6a993eb202c503574596433550203c82113a22a835212b3fe83ab61d",
+      "changes": {
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "pair_model": 0
+      },
+      "expected_files": [
+        "out.dat",
+        "pairs.dat"
+      ],
+      "scientific_use": "Regression and resource pilot only; not a publication ensemble"
+    },
+    {
+      "name": "ilc500_pair_model1",
+      "purpose": "Process counts, finite tracked outputs and resource cost for one declared pair model",
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "argv": [
+        "--make_gui_files",
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "timeout_seconds": 600,
+      "parent_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "card_sha256": "2d3c0019494b23dab68b04ae967007a5762bc51e2fa37661eadd5673565a8e13",
+      "changes": {
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "pair_model": 1
+      },
+      "expected_files": [
+        "out.dat",
+        "pairs.dat"
+      ],
+      "scientific_use": "Regression and resource pilot only; not a publication ensemble"
+    },
+    {
+      "name": "ilc500_pair_model2",
+      "purpose": "Process counts, finite tracked outputs and resource cost for one declared pair model",
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "argv": [
+        "--make_gui_files",
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "timeout_seconds": 600,
+      "parent_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "card_sha256": "b7383ed5c256e73d53bf123a7f78f4c3aecbb794a2461be5e4c8e489c6a8be09",
+      "changes": {
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "pair_model": 2
+      },
+      "expected_files": [
+        "out.dat",
+        "pairs.dat"
+      ],
+      "scientific_use": "Regression and resource pilot only; not a publication ensemble"
+    },
+    {
+      "name": "ilc500_combined",
+      "purpose": "Combined exact-kernel, finite-beam-size and photon upgrades",
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "argv": [
+        "--make_gui_files",
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "timeout_seconds": 600,
+      "parent_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "card_sha256": "c4449bdf76b9d0b0fb46e4741b7bb9cc4272abcfcd9495829e42d8a2aef9005c",
+      "changes": {
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "pair_model": 2,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1
+      },
+      "expected_files": [
+        "out.dat",
+        "pairs.dat"
+      ],
+      "scientific_use": "Regression and resource pilot only; not a publication ensemble"
+    },
+    {
+      "name": "halhf250_incoherent",
+      "purpose": "Pure incoherent pair population for Figure6 output and runtime checks",
+      "accelerator": "halhf250",
+      "parameters": "diagnostic",
+      "argv": [
+        "--make_gui_files",
+        "halhf250",
+        "diagnostic",
+        "out.dat"
+      ],
+      "timeout_seconds": 600,
+      "parent_sha256": "57851a2819f4c8933ee88e84cd72f07625357bfcc595e7d899a19b3a769515cd",
+      "card_sha256": "bd2f273a01c753dd3fabaab71ec01ab5bada823fcf2e288982e309d4c7cbe024",
+      "changes": {
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "pair_model": 2,
+        "beam_size": 3,
+        "photon_timing": 3,
+        "photon_angle": 2,
+        "photon_polarisation": 1,
+        "coherent_model": 1
+      },
+      "expected_files": [
+        "out.dat",
+        "pairs.dat"
+      ],
+      "scientific_use": "Regression and resource pilot only; not a publication ensemble"
+    },
+    {
+      "name": "ilc500_proposal_edge",
+      "purpose": "End-to-end proposal-edge stress; deterministic support-boundary unit test is separately required",
+      "accelerator": "ilc500",
+      "parameters": "diagnostic",
+      "argv": [
+        "--make_gui_files",
+        "ilc500",
+        "diagnostic",
+        "out.dat"
+      ],
+      "timeout_seconds": 600,
+      "parent_sha256": "da3da031ea0d8f17ff51d194716e1eece3075f2b5789967257a0c7af7ff7fe8c",
+      "card_sha256": "99cb5445259354b83e5059eb1ac39efcd66dae1ba35444994dc61d17bd17e7eb",
+      "changes": {
+        "do_photon_lumi": 1,
+        "electron_ratio": 1,
+        "do_photons": 1,
+        "do_compt": 0,
+        "do_coherent": 0,
+        "beam_pair": 0,
+        "pair_model": 2,
+        "compt_x_min": 4
+      },
+      "expected_files": [
+        "out.dat",
+        "pairs.dat"
+      ],
+      "scientific_use": "Regression and resource pilot only; not a publication ensemble"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+sample,P_before,P_lumi,absolute_loss_percentage_points,relative_loss_percent,derived_from,approx_absolute_loss_halfwidth_percentage_points
+RDR0,0.7998723,0.7985252,0.13470999999999345,0.1684143831459015,ilc_pol_longitudinal.csv,0.02
+TDR0,0.7997407,0.7974455,0.22951999999999417,0.28699302161312307,ilc_pol_longitudinal.csv,0.02
+TDRstar0,0.8,0.7976934,0.23066000000000475,0.28832500000000594,ilc_pol_longitudinal.csv,0.02
+RDR,0.7998112,0.7980711,0.17401000000000222,0.21756384506743867,ilc_pol_longitudinal.csv,0.02
+TDR,0.7997407,0.79646,0.3280700000000025,0.41022046270747825,ilc_pol_longitudinal.csv,0.02
+TDRstar,0.8,0.796708,0.32920000000000726,0.4115000000000091,ilc_pol_longitudinal.csv,0.02

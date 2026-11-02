@@ -1,0 +1,636 @@
+{
+  "comparisons": {
+    "model1_luminosity": {
+      "columns": [
+        "lumi_ee",
+        "lumi_fine",
+        "lumi_eg",
+        "lumi_ge",
+        "lumi_gg"
+      ],
+      "mean": [
+        1.7347558333333334e+34,
+        1.7176825e+34,
+        9.2977725e+33,
+        9.326450833333334e+33,
+        6.486934166666666e+33
+      ],
+      "standard_uncertainty": [
+        1.1575352109202555e+32,
+        1.0513132128870572e+32,
+        6.6935584085418e+31,
+        6.115202892466892e+31,
+        5.964116267765858e+31
+      ],
+      "units": "m^-2 per crossing; native printed precision retained",
+      "role": "Electron-positron luminosity is the common denominator of all three effective cross sections"
+    },
+    "model1_seed_diagnostics": {
+      "minimum_seed_value": [
+        1880.0,
+        65893.0,
+        30683.0
+      ],
+      "maximum_seed_value": [
+        2107.0,
+        71092.0,
+        32784.0
+      ],
+      "leave_one_out_mean_min": [
+        2008.4545454545455,
+        67097.90909090909,
+        31402.454545454544
+      ],
+      "leave_one_out_mean_max": [
+        2029.090909090909,
+        67570.54545454546,
+        31593.454545454544
+      ],
+      "leave_one_out_sem_min": [
+        15.419854111710858,
+        337.54602257376973,
+        127.68187481794273
+      ],
+      "leave_one_out_sem_max": [
+        20.560252112806122,
+        496.5152715436183,
+        179.3785415177211
+      ],
+      "full_sample_sem": [
+        18.775117855956335,
+        453.5756113673582,
+        163.82975542503343
+      ],
+      "first_half": {
+        "n": 6,
+        "mean": [
+          2028.5,
+          67189.16666666667,
+          31353.0
+        ],
+        "sem": [
+          23.460250069710117,
+          542.8521233059495,
+          219.7339300153711
+        ]
+      },
+      "second_half": {
+        "n": 6,
+        "mean": [
+          2004.8333333333333,
+          67672.33333333333,
+          31682.166666666668
+        ],
+        "sem": [
+          30.734797506698783,
+          766.2781769334453,
+          242.85543253366006
+        ]
+      },
+      "maximum_leave_one_out_shift_in_full_sem": [
+        0.6617397834496533,
+        0.733815709551761,
+        0.7027342962217237
+      ],
+      "approximate_relative_sem_estimation_error_if_gaussian": 0.21320071635561041,
+      "qualification": "All seeds retained; Gaussian SEM-estimation estimate is descriptive and may fail for heavy weights"
+    },
+    "model1_effective_cross_section": {
+      "mean_mb": [
+        1.1625074998546865,
+        38.870455832641184,
+        18.168310910228957
+      ],
+      "covariance_of_mean_mb2": [
+        [
+          0.00010936035528967412,
+          0.0008560145401637744,
+          0.0002643876240929211
+        ],
+        [
+          0.0008560145401637743,
+          0.02602041705360346,
+          0.004182917323677347
+        ],
+        [
+          0.0002643876240929211,
+          0.0041829173236773475,
+          0.002348130386503077
+        ]
+      ],
+      "sem_mb": [
+        0.010457550157167506,
+        0.16130845313747033,
+        0.048457511146395835
+      ],
+      "jackknife_covariance_mb2": [
+        [
+          0.0001090114730532826,
+          0.0008533677713827859,
+          0.0002635987250225294
+        ],
+        [
+          0.0008533677713827859,
+          0.026022957083309897,
+          0.004179919075442668
+        ],
+        [
+          0.0002635987250225294,
+          0.004179919075442668,
+          0.002347786434490465
+        ]
+      ],
+      "jackknife_sem_mb": [
+        0.010440855954052934,
+        0.16131632615240746,
+        0.048453962010247056
+      ],
+      "leave_one_out_mean_mb": [
+        [
+          1.1570149453425675,
+          38.84095722107357,
+          18.140487056359134
+        ],
+        [
+          1.1601658549178753,
+          38.85805257949313,
+          18.157251535081503
+        ],
+        [
+          1.1575046337798893,
+          38.79487243783838,
+          18.155222745329123
+        ],
+        [
+          1.1623456226948925,
+          38.80319508719165,
+          18.175387929181227
+        ],
+        [
+          1.1653715478391873,
+          38.858377383066596,
+          18.164688896851697
+        ],
+        [
+          1.1638506253506167,
+          38.97330511432006,
+          18.189088729834783
+        ],
+        [
+          1.1613419718817553,
+          38.87168653930989,
+          18.154783423292013
+        ],
+        [
+          1.1687509916318055,
+          38.90893534220264,
+          18.163291060363996
+        ],
+        [
+          1.1636757623892515,
+          38.92502774281127,
+          18.19209259012345
+        ],
+        [
+          1.1650115892989428,
+          38.85594928705232,
+          18.17278619748836
+        ],
+        [
+          1.1622003027593815,
+          38.90625556158096,
+          18.173100478008067
+        ],
+        [
+          1.1628806680102808,
+          38.84920449024686,
+          18.181794256496953
+        ]
+      ],
+      "leave_one_out_sem_mb": [
+        [
+          0.00970705041547908,
+          0.1731929971969705,
+          0.04317185151894577
+        ],
+        [
+          0.011173586346315604,
+          0.17638260263577085,
+          0.051691068494587454
+        ],
+        [
+          0.010014985730217028,
+          0.15543405596998192,
+          0.05088171800926206
+        ],
+        [
+          0.011460244056024214,
+          0.16053852028296722,
+          0.05257858723161969
+        ],
+        [
+          0.01100491784344476,
+          0.17586569426068718,
+          0.052820648369533894
+        ],
+        [
+          0.01137986057123358,
+          0.13661130910475236,
+          0.04813862274480497
+        ],
+        [
+          0.011379014018459744,
+          0.17666297174923049,
+          0.0508897552933252
+        ],
+        [
+          0.00920117636317308,
+          0.17155497910468442,
+          0.05273000239549464
+        ],
+        [
+          0.011406068510701724,
+          0.16669443216669513,
+          0.04646697536008899
+        ],
+        [
+          0.011133572450274878,
+          0.1760369816492174,
+          0.05290247981148264
+        ],
+        [
+          0.011436838114481302,
+          0.17217980369497818,
+          0.05278618967733111
+        ],
+        [
+          0.011499761835006204,
+          0.17589021016051412,
+          0.05128246201181955
+        ]
+      ],
+      "luminosity_mean_inverse_mb": 1734.7558333333336,
+      "estimator": "Ratio of summed daughter counts to summed electron-positron luminosity",
+      "covariance": "Jacobian of the complete joint seed covariance of the mean"
+    },
+    "model1_gp": {
+      "reference_model": {
+        "method": "ASSUMED_ONE_CROSSING_PAIRED_DAUGHTER_COUNT_PROXY",
+        "source": "C. Rimbault et al., Phys. Rev. ST Accel. Beams 9, 034402 (2006), Table II and footnote 3",
+        "normalization": "Common electron-positron luminosity",
+        "units": "mb",
+        "luminosity_uncertainty": "Not supplied by the reference; fixed denominator scenario",
+        "reference_count_variance": "2N; N and 4N sensitivity retained",
+        "printed_rounding": "Primary printed cross sections used; rounded counts are not substituted"
+      },
+      "covariance_subspace_distance_squared": 82.1797213722234,
+      "covariance_rank": 3,
+      "residual_norm_outside_supported_subspace": 0.0,
+      "pull_rms": 5.0241690345371035,
+      "max_absolute_pull": 6.737595042792972,
+      "simulation_to_reference_sem_ratio_min": 0.30786194078577533,
+      "simulation_to_reference_sem_ratio_median": 0.33360395148084715,
+      "simulation_to_reference_sem_ratio_max": 0.7925143735783973,
+      "interpretation": "Descriptive distance with estimated reference covariance; no calibrated p-value"
+    },
+    "model1_cain": {
+      "reference_model": {
+        "method": "ASSUMED_ONE_CROSSING_PAIRED_DAUGHTER_COUNT_PROXY",
+        "source": "C. Rimbault et al., Phys. Rev. ST Accel. Beams 9, 034402 (2006), Table II and footnote 3",
+        "normalization": "Common electron-positron luminosity",
+        "units": "mb",
+        "luminosity_uncertainty": "Not supplied by the reference; fixed denominator scenario",
+        "reference_count_variance": "2N; N and 4N sensitivity retained",
+        "printed_rounding": "Primary printed cross sections used; rounded counts are not substituted"
+      },
+      "covariance_subspace_distance_squared": 682.882635040198,
+      "covariance_rank": 3,
+      "residual_norm_outside_supported_subspace": 0.0,
+      "pull_rms": 16.054384688131712,
+      "max_absolute_pull": 21.505306263182636,
+      "simulation_to_reference_sem_ratio_min": 0.30933850532784446,
+      "simulation_to_reference_sem_ratio_median": 0.3749384731734591,
+      "simulation_to_reference_sem_ratio_max": 0.8284537634807887,
+      "interpretation": "Descriptive distance with estimated reference covariance; no calibrated p-value"
+    },
+    "model2_luminosity": {
+      "columns": [
+        "lumi_ee",
+        "lumi_fine",
+        "lumi_eg",
+        "lumi_ge",
+        "lumi_gg"
+      ],
+      "mean": [
+        1.7443216666666668e+34,
+        1.7254391666666666e+34,
+        9.33674e+33,
+        9.287808333333334e+33,
+        6.441579166666666e+33
+      ],
+      "standard_uncertainty": [
+        9.500859038778942e+31,
+        9.08042520516334e+31,
+        4.878949978626485e+31,
+        7.981944547229739e+31,
+        6.752959612058697e+31
+      ],
+      "units": "m^-2 per crossing; native printed precision retained",
+      "role": "Electron-positron luminosity is the common denominator of all three effective cross sections"
+    },
+    "model2_seed_diagnostics": {
+      "minimum_seed_value": [
+        1782.0,
+        65077.0,
+        31817.0
+      ],
+      "maximum_seed_value": [
+        2227.0,
+        71300.0,
+        33770.0
+      ],
+      "leave_one_out_mean_min": [
+        1938.4545454545455,
+        68087.18181818182,
+        32778.454545454544
+      ],
+      "leave_one_out_mean_max": [
+        1978.909090909091,
+        68652.90909090909,
+        32956.0
+      ],
+      "leave_one_out_sem_min": [
+        33.74782515184258,
+        434.85958976423336,
+        154.41037412157138
+      ],
+      "leave_one_out_sem_max": [
+        42.782633380944006,
+        543.7470334297341,
+        185.67637802200878
+      ],
+      "full_sample_sem": [
+        39.08043376205416,
+        496.37204183368493,
+        169.9352130707881
+      ],
+      "first_half": {
+        "n": 6,
+        "mean": [
+          1883.3333333333333,
+          68141.66666666667,
+          32861.833333333336
+        ],
+        "sem": [
+          42.11703271177167,
+          832.3722591351648,
+          261.975624396198
+        ]
+      },
+      "second_half": {
+        "n": 6,
+        "mean": [
+          2041.6666666666667,
+          68568.16666666667,
+          32860.333333333336
+        ],
+        "sem": [
+          49.38870766120981,
+          610.7872742980526,
+          241.7263834264776
+        ]
+      },
+      "maximum_leave_one_out_shift_in_full_sem": [
+        0.6152811581329444,
+        0.6003408716203691,
+        0.5585461950556758
+      ],
+      "approximate_relative_sem_estimation_error_if_gaussian": 0.21320071635561041,
+      "qualification": "All seeds retained; Gaussian SEM-estimation estimate is descriptive and may fail for heavy weights"
+    },
+    "model2_effective_cross_section": {
+      "mean_mb": [
+        1.1250791855095534,
+        39.18710520708623,
+        18.838889616116294
+      ],
+      "covariance_of_mean_mb2": [
+        [
+          0.0003639716983403215,
+          -0.00031225390408642315,
+          -0.00025702315779131744
+        ],
+        [
+          -0.0003122539040864231,
+          0.07405468404969004,
+          0.00033541316524304246
+        ],
+        [
+          -0.0002570231577913174,
+          0.0003354131652430419,
+          0.0021319904785408674
+        ]
+      ],
+      "sem_mb": [
+        0.01907804230890375,
+        0.27212990289508804,
+        0.04617348241730168
+      ],
+      "jackknife_covariance_mb2": [
+        [
+          0.00036409035114811516,
+          -0.0003079700672729603,
+          -0.00025597627345317193
+        ],
+        [
+          -0.0003079700672729603,
+          0.07427275688717783,
+          0.0003392339149020572
+        ],
+        [
+          -0.00025597627345317193,
+          0.0003392339149020572,
+          0.002129550767311368
+        ]
+      ],
+      "jackknife_sem_mb": [
+        0.019081151724885875,
+        0.27253028618334846,
+        0.04614705588996299
+      ],
+      "leave_one_out_mean_mb": [
+        [
+          1.1303314915974711,
+          39.21343486866942,
+          18.838945100419448
+        ],
+        [
+          1.1228817429930813,
+          39.09535777762118,
+          18.85091489911446
+        ],
+        [
+          1.1278563044563708,
+          39.37740993540393,
+          18.851439491178493
+        ],
+        [
+          1.130609909910379,
+          39.11592759724053,
+          18.823561868879445
+        ],
+        [
+          1.1302890548879505,
+          39.24297499188048,
+          18.835569990256577
+        ],
+        [
+          1.1323457732884377,
+          39.11378649705755,
+          18.81791382665559
+        ],
+        [
+          1.1218588421424542,
+          39.16026301774191,
+          18.852210418362464
+        ],
+        [
+          1.1243263720778234,
+          39.15165032336221,
+          18.864495931693245
+        ],
+        [
+          1.112891440501044,
+          39.24979123173278,
+          18.833194154488517
+        ],
+        [
+          1.1198091419423315,
+          39.081599959924816,
+          18.848068094414625
+        ],
+        [
+          1.1291543954208427,
+          39.18513889808164,
+          18.822783840365314
+        ],
+        [
+          1.1185471340453712,
+          39.25846687085045,
+          18.827669647444278
+        ]
+      ],
+      "leave_one_out_sem_mb": [
+        [
+          0.02008780519528594,
+          0.29691170614945156,
+          0.050606907721993354
+        ],
+        [
+          0.020797706298103937,
+          0.2808918594984921,
+          0.048935647922595756
+        ],
+        [
+          0.020735062016896018,
+          0.2142999604367881,
+          0.048857749339201825
+        ],
+        [
+          0.01996242123515444,
+          0.28723044176209916,
+          0.04762200714084731
+        ],
+        [
+          0.020032049391756714,
+          0.29101404702350786,
+          0.05029563980680512
+        ],
+        [
+          0.019267089700858015,
+          0.28638772078454094,
+          0.04492827166549486
+        ],
+        [
+          0.020605248748599897,
+          0.2965646100413045,
+          0.04845257870695338
+        ],
+        [
+          0.02085275794060803,
+          0.2950409945171369,
+          0.042087383582077996
+        ],
+        [
+          0.016142334001606546,
+          0.2906316602172934,
+          0.05025493066576539
+        ],
+        [
+          0.02012454761709145,
+          0.2748981955860969,
+          0.04965079332299269
+        ],
+        [
+          0.020405624228732072,
+          0.2980874684738877,
+          0.04736884078528638
+        ],
+        [
+          0.01964922623396434,
+          0.28775326550566527,
+          0.04903039180238924
+        ]
+      ],
+      "luminosity_mean_inverse_mb": 1744.3216666666667,
+      "estimator": "Ratio of summed daughter counts to summed electron-positron luminosity",
+      "covariance": "Jacobian of the complete joint seed covariance of the mean"
+    },
+    "model2_gp": {
+      "reference_model": {
+        "method": "ASSUMED_ONE_CROSSING_PAIRED_DAUGHTER_COUNT_PROXY",
+        "source": "C. Rimbault et al., Phys. Rev. ST Accel. Beams 9, 034402 (2006), Table II and footnote 3",
+        "normalization": "Common electron-positron luminosity",
+        "units": "mb",
+        "luminosity_uncertainty": "Not supplied by the reference; fixed denominator scenario",
+        "reference_count_variance": "2N; N and 4N sensitivity retained",
+        "printed_rounding": "Primary printed cross sections used; rounded counts are not substituted"
+      },
+      "covariance_subspace_distance_squared": 28.620386386879012,
+      "covariance_rank": 3,
+      "residual_norm_outside_supported_subspace": 0.0,
+      "pull_rms": 3.080955460779076,
+      "max_absolute_pull": 4.376049090079548,
+      "simulation_to_reference_sem_ratio_min": 0.3178796397839543,
+      "simulation_to_reference_sem_ratio_median": 0.561642358233077,
+      "simulation_to_reference_sem_ratio_max": 1.33698423938797,
+      "interpretation": "Descriptive distance with estimated reference covariance; no calibrated p-value"
+    },
+    "model2_cain": {
+      "reference_model": {
+        "method": "ASSUMED_ONE_CROSSING_PAIRED_DAUGHTER_COUNT_PROXY",
+        "source": "C. Rimbault et al., Phys. Rev. ST Accel. Beams 9, 034402 (2006), Table II and footnote 3",
+        "normalization": "Common electron-positron luminosity",
+        "units": "mb",
+        "luminosity_uncertainty": "Not supplied by the reference; fixed denominator scenario",
+        "reference_count_variance": "2N; N and 4N sensitivity retained",
+        "printed_rounding": "Primary printed cross sections used; rounded counts are not substituted"
+      },
+      "covariance_subspace_distance_squared": 908.3164552335955,
+      "covariance_rank": 3,
+      "residual_norm_outside_supported_subspace": 0.0,
+      "pull_rms": 17.359242217965097,
+      "max_absolute_pull": 26.514458287112873,
+      "simulation_to_reference_sem_ratio_min": 0.3572658724948216,
+      "simulation_to_reference_sem_ratio_median": 0.564336102024123,
+      "simulation_to_reference_sem_ratio_max": 1.3976145566095457,
+      "interpretation": "Descriptive distance with estimated reference covariance; no calibrated p-value"
+    }
+  },
+  "observable": "Effective individual-daughter production cross sections in mb: admitted electrons plus positrons divided by common electron-positron luminosity",
+  "selection": "5 MeV production admission per daughter; no final-energy recut; pair_ratio=1; beam_pair=0; pure incoherent channels",
+  "simulation_uncertainty": "Complete joint count/luminosity covariance of the mean, including field, event and split-copy fluctuations; no additional Poisson variance",
+  "reference_uncertainty": "Explicit Var(N)=2N equivalent-crossing scenario at fixed published luminosity; N and 4N sensitivity; not source-certified statistics",
+  "raw_count_products": "Preserved separately as per-crossing detector-background diagnostics",
+  "model_comparison": "Disjoint seed banks; no assumed inter-model covariance"
+}

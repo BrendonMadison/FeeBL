@@ -1,0 +1,301 @@
+{
+  "manifest": {
+    "frames": [
+      {
+        "id": 0,
+        "diagonal": 0
+      },
+      {
+        "id": 1,
+        "diagonal": 1
+      }
+    ]
+  },
+  "diagnostics": {
+    "schema_version": "feebl.collider.diagnostics/1",
+    "primary_species": {
+      "supported": true,
+      "charge_sign": -1,
+      "beam1_pdg": 11,
+      "beam2_pdg": -11,
+      "basis": "canonical e+e- primary beam assignment; not per-particle species measurement"
+    },
+    "nominal_polarization": {
+      "enabled": false,
+      "convention": "configured native spin; transport disabled",
+      "beam1": [
+        0,
+        0,
+        0
+      ],
+      "beam2": [
+        0,
+        0,
+        0
+      ],
+      "reference_helicity": [
+        0,
+        0
+      ]
+    },
+    "unavailable_reasons": {
+      "chi_e": "not computed in this fixture",
+      "chi_e_electron": "not computed in this fixture",
+      "chi_e_positron": "not computed in this fixture",
+      "chi_gamma": "not computed in this fixture",
+      "photon_energy": "not computed in this fixture",
+      "pair_energy": "not computed in this fixture"
+    },
+    "frames": [
+      {
+        "id": 0,
+        "diagonal_start": 0,
+        "diagonal_end": 0,
+        "luminosity_spectrum": null,
+        "polarization": null,
+        "beam_moments": null,
+        "bunch_moments": null,
+        "distributions": {
+          "chi_e": {
+            "quantity": "native primary kick chi_e",
+            "unit": "1",
+            "weight_unit": "macroparticle-kick evaluations",
+            "weighting": "one per actual primary field kick; repeated across substeps; before radiation",
+            "normalization": "bin-integrated",
+            "bins": [
+              {
+                "low": 1,
+                "high": 2,
+                "weight": 2
+              },
+              {
+                "low": 2,
+                "high": 4,
+                "weight": 3
+              }
+            ],
+            "underflow": 1,
+            "overflow": 1,
+            "total_weight": 7,
+            "samples": 7
+          },
+          "chi_e_electron": {
+            "quantity": "native primary electron kick chi_e",
+            "unit": "1",
+            "weight_unit": "macroparticle-kick evaluations",
+            "weighting": "one per actual primary field kick; repeated across substeps; before radiation",
+            "normalization": "bin-integrated",
+            "bins": [
+              {
+                "low": 1,
+                "high": 2,
+                "weight": 2
+              },
+              {
+                "low": 2,
+                "high": 4,
+                "weight": 0
+              }
+            ],
+            "underflow": 1,
+            "overflow": 0,
+            "total_weight": 3,
+            "samples": 3
+          },
+          "chi_e_positron": {
+            "quantity": "native primary positron kick chi_e",
+            "unit": "1",
+            "weight_unit": "macroparticle-kick evaluations",
+            "weighting": "one per actual primary field kick; repeated across substeps; before radiation",
+            "normalization": "bin-integrated",
+            "bins": [
+              {
+                "low": 1,
+                "high": 2,
+                "weight": 0
+              },
+              {
+                "low": 2,
+                "high": 4,
+                "weight": 3
+              }
+            ],
+            "underflow": 0,
+            "overflow": 1,
+            "total_weight": 4,
+            "samples": 4
+          },
+          "chi_gamma": null,
+          "photon_energy": null,
+          "pair_energy": null
+        }
+      },
+      {
+        "id": 1,
+        "diagonal_start": 1,
+        "diagonal_end": 1,
+        "luminosity_spectrum": null,
+        "polarization": null,
+        "beam_moments": null,
+        "bunch_moments": null,
+        "distributions": {
+          "chi_e": {
+            "quantity": "native primary kick chi_e",
+            "unit": "1",
+            "weight_unit": "macroparticle-kick evaluations",
+            "weighting": "one per actual primary field kick; repeated across substeps; before radiation",
+            "normalization": "bin-integrated",
+            "bins": [
+              {
+                "low": 1,
+                "high": 2,
+                "weight": 5
+              },
+              {
+                "low": 2,
+                "high": 4,
+                "weight": 4
+              }
+            ],
+            "underflow": 2,
+            "overflow": 1,
+            "total_weight": 12,
+            "samples": 12
+          },
+          "chi_e_electron": {
+            "quantity": "native primary electron kick chi_e",
+            "unit": "1",
+            "weight_unit": "macroparticle-kick evaluations",
+            "weighting": "one per actual primary field kick; repeated across substeps; before radiation",
+            "normalization": "bin-integrated",
+            "bins": [
+              {
+                "low": 1,
+                "high": 2,
+                "weight": 0
+              },
+              {
+                "low": 2,
+                "high": 4,
+                "weight": 4
+              }
+            ],
+            "underflow": 0,
+            "overflow": 1,
+            "total_weight": 5,
+            "samples": 5
+          },
+          "chi_e_positron": {
+            "quantity": "native primary positron kick chi_e",
+            "unit": "1",
+            "weight_unit": "macroparticle-kick evaluations",
+            "weighting": "one per actual primary field kick; repeated across substeps; before radiation",
+            "normalization": "bin-integrated",
+            "bins": [
+              {
+                "low": 1,
+                "high": 2,
+                "weight": 5
+              },
+              {
+                "low": 2,
+                "high": 4,
+                "weight": 0
+              }
+            ],
+            "underflow": 2,
+            "overflow": 0,
+            "total_weight": 7,
+            "samples": 7
+          },
+          "chi_gamma": null,
+          "photon_energy": null,
+          "pair_energy": null
+        }
+      }
+    ],
+    "total": {
+      "id": 0,
+      "diagonal_start": 0,
+      "diagonal_end": 1,
+      "luminosity_spectrum": null,
+      "polarization": null,
+      "beam_moments": null,
+      "bunch_moments": null,
+      "distributions": {
+        "chi_e": {
+          "quantity": "native primary kick chi_e",
+          "unit": "1",
+          "weight_unit": "macroparticle-kick evaluations",
+          "weighting": "one per actual primary field kick; repeated across substeps; before radiation",
+          "normalization": "bin-integrated",
+          "bins": [
+            {
+              "low": 1,
+              "high": 2,
+              "weight": 7
+            },
+            {
+              "low": 2,
+              "high": 4,
+              "weight": 7
+            }
+          ],
+          "underflow": 3,
+          "overflow": 2,
+          "total_weight": 19,
+          "samples": 19
+        },
+        "chi_e_electron": {
+          "quantity": "native primary electron kick chi_e",
+          "unit": "1",
+          "weight_unit": "macroparticle-kick evaluations",
+          "weighting": "one per actual primary field kick; repeated across substeps; before radiation",
+          "normalization": "bin-integrated",
+          "bins": [
+            {
+              "low": 1,
+              "high": 2,
+              "weight": 2
+            },
+            {
+              "low": 2,
+              "high": 4,
+              "weight": 4
+            }
+          ],
+          "underflow": 1,
+          "overflow": 1,
+          "total_weight": 8,
+          "samples": 8
+        },
+        "chi_e_positron": {
+          "quantity": "native primary positron kick chi_e",
+          "unit": "1",
+          "weight_unit": "macroparticle-kick evaluations",
+          "weighting": "one per actual primary field kick; repeated across substeps; before radiation",
+          "normalization": "bin-integrated",
+          "bins": [
+            {
+              "low": 1,
+              "high": 2,
+              "weight": 5
+            },
+            {
+              "low": 2,
+              "high": 4,
+              "weight": 3
+            }
+          ],
+          "underflow": 2,
+          "overflow": 1,
+          "total_weight": 11,
+          "samples": 11
+        },
+        "chi_gamma": null,
+        "photon_energy": null,
+        "pair_energy": null
+      }
+    }
+  }
+}

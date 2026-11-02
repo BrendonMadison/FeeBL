@@ -1,0 +1,104 @@
+{
+  "source_native_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+  "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+  "original_analysis_manifest_sha256": "d352a7cc012bc6a5351a969a5b23485ac3ac4ed07e53377134a4f20389a956ae",
+  "record_transformations": "Site-specific command paths and job identifiers omitted from execution summaries; devices relabelled consistently. Native spectra and stderr bytes unchanged.",
+  "records": {
+    "cpu/72942001": {
+      "original_card_sha256": "8da654ed967cb88c3c1b3fc6a70dacc4edd14c97c995037322fcc2c981143a51",
+      "original_execution_sha256": "405a7511bae0789ab3a75a524ca23105fe9744f575d53793963b11f1ebc7d3d1",
+      "packaged_card_sha256": "43432bfbc2bf510449a50806ceecea744c166becbe621d3a14dc19a3fc8f6526",
+      "card_change": "Description comments only; executable statements unchanged."
+    },
+    "cpu/72942002": {
+      "original_card_sha256": "baf90eb878e9a69e9bf7845b82663ff179ef1c0320a8d69859eeea8de4b8c3d9",
+      "original_execution_sha256": "1060589753b630dacc5c8f3b05643fd00fe08666b2a2acb63ed20077da05457c",
+      "packaged_card_sha256": "b2203907728e8b846fb2622343e391b4b4c920d01bc1a59e9cd8bf79adb16602",
+      "card_change": "Description comments only; executable statements unchanged."
+    },
+    "gpu/72942001": {
+      "original_card_sha256": "cffbf0f7213ce78433d79a0e2b9fe44585eb4ced018dd4186f0319c1c57d5db8",
+      "original_execution_sha256": "e6d6e0c9cc74f6e54d818f47e950745ffdf2ae2df02b14463db6e1b66cce5cf4",
+      "packaged_card_sha256": "d519f04768ca17504170fc329ac90551e8849a710ef738d99ef71661606f0526",
+      "card_change": "Description comments only; executable statements unchanged."
+    },
+    "gpu/72942002": {
+      "original_card_sha256": "4747b6542431d1040107bcb95f2bc7bd58563f45d3169fa311f9335c3f528237",
+      "original_execution_sha256": "7f26e6ceaa2a689c9bdc89b16edea2331390e921500923f97a1c585f3fbe8254",
+      "packaged_card_sha256": "62267e21ff65af7a482c4b4c974d0ccddc52574179a427b29377eb07c7ed622f",
+      "card_change": "Description comments only; executable statements unchanged."
+    },
+    "gpu/72942003": {
+      "original_card_sha256": "34a8bb82bbbfbd5b84bdc9a07e23a625b1de05a4e1daed9477a9245a1f986b02",
+      "original_execution_sha256": "b087f0d05196de2f1fdbf27da2a92205e54abacabf5daf9f7c669bb8ca90f873",
+      "packaged_card_sha256": "dca2f81d240e894ec1bf9aca2d3eaabf2d0ced00290f0557068242e601c5241c",
+      "card_change": "Description comments only; executable statements unchanged."
+    },
+    "gpu/72942004": {
+      "original_card_sha256": "9523b057ae2916c660b5013c759f8dd6b21028a792ef3e8d16251a350734ff18",
+      "original_execution_sha256": "a90dc549e0d675b39e87b1644a584887904a1d485256881caaff101d2fbc5d0c",
+      "packaged_card_sha256": "f074730a756b262e6d11f7031731052eb325697836b78f330afc0d14721a833e",
+      "card_change": "Description comments only; executable statements unchanged."
+    },
+    "cpu/72942003": {
+      "original_card_sha256": "d1eaf3b9874515941aec602ecf74369ba427cffd5b7f34097989f496ff13f9b3",
+      "original_execution_sha256": "012b8cf9649d4ee6ea5ec4210a9c913dcd1540fa60e1bd2fa1a958e07ae7a0c4",
+      "packaged_card_sha256": "de7babc4b797e83da07a9359155cedb0605a2cc2fa94ab2ba7d1824d385a8b3d",
+      "card_change": "Description comments only; executable statements unchanged."
+    },
+    "cpu/72942004": {
+      "original_card_sha256": "08cd900c3409f0b793a470f661d593583f0074d5eb1d64ebb3956d95e72250a2",
+      "original_execution_sha256": "b22c0146080c1ea6b94ef827634dc1c2b4fdfdc90f92df6bc7be4fa58c7a394a",
+      "packaged_card_sha256": "de4a4731353d5c13c832d1b4b60c60024653f2cbd85c406875c53c0073911687",
+      "card_change": "Description comments only; executable statements unchanged."
+    },
+    "cpu/72942005": {
+      "original_card_sha256": "12fe987748841f3c64f5237b532fc45f3382d6d1e6d4edc1fde9e2756416a64b",
+      "original_execution_sha256": "8d33c4e7962fc7498c1e73d92ee3769bdc0630f20d0a5757c3ff60d7220df9e4",
+      "packaged_card_sha256": "2878dd6fa0eef2e46679a583600ee5c72a2d1d24fe63c57ac400078f1b270bd6",
+      "card_change": "Description comments only; executable statements unchanged."
+    },
+    "cpu/72942006": {
+      "original_card_sha256": "112187b7655e409a41d0f88040a8ba254167fed242ee8cca30abe13ccf96c234",
+      "original_execution_sha256": "4f2962344e4dfadaf4870d25f76bd3529c759d990a253ce8a98a6b614198375b",
+      "packaged_card_sha256": "97b09d3ec5eb0a7f489b3bc07f73fb197cccec86881045ac06987c63424e3bb4",
+      "card_change": "Description comments only; executable statements unchanged."
+    },
+    "gpu/72942005": {
+      "original_card_sha256": "d996afcb57dd537e44463e7496ed9576984144e08de2f44b50ade74444606d6e",
+      "original_execution_sha256": "6bbac12a41a10eb3fe02f82a00a36ef3c235934163d44740206526f55f56d95f",
+      "packaged_card_sha256": "6df64efa11a00a8e8c53840da38bc5a897be6d1199b3633da67a3c120f88e5aa",
+      "card_change": "Description comments only; executable statements unchanged."
+    },
+    "gpu/72942006": {
+      "original_card_sha256": "d0363c3f34789fec5b7e1458e8b0e6344e055cb5d916f9448b3124bf2b9ad30c",
+      "original_execution_sha256": "f7a4af6a0dd354c07c33db360d7b0f3e22ccdbcaa1184b86fd32628463c09798",
+      "packaged_card_sha256": "5793c37141026307d0947aa52126707d7c11173dfa9ba27a34f7766f497ebe7b",
+      "card_change": "Description comments only; executable statements unchanged."
+    },
+    "gpu/72942007": {
+      "original_card_sha256": "9387fb7bdb566bef269e0221e5d55efca4607945f12c9f2fc54fe3fd59383c69",
+      "original_execution_sha256": "0e3fbe334de81a6ced0f47431498b70cd510ed60a1e287656b9909490c2c9460",
+      "packaged_card_sha256": "858a6d3915408e148c0a1e1b9f30e5646a7117ae183149a72076087cabb6c99c",
+      "card_change": "Description comments only; executable statements unchanged."
+    },
+    "gpu/72942008": {
+      "original_card_sha256": "d091f7639806b3159853879fac88c0cc2047e16d51d36d7316bee7685523e036",
+      "original_execution_sha256": "57aa9b8ad445fb2bccfc885632350d8566604ed99f25177b0dc56655ddd658c8",
+      "packaged_card_sha256": "50852f420e1dfe7c866f3813ab3b791e83ca8a82659c8a034350a71287f9e923",
+      "card_change": "Description comments only; executable statements unchanged."
+    },
+    "cpu/72942007": {
+      "original_card_sha256": "ad26cf302acda0bf056bc1fcfe3730c2bbdc6ab1fb5c2967b356bd17b8676e10",
+      "original_execution_sha256": "7e8d103736e506047808bccb423326cc6126a1e03f6470a4c40e7600e1989311",
+      "packaged_card_sha256": "72c73e83c59229690b351e61f1566c5ba12dccb2e307e97aaa3e0a4b971a3368",
+      "card_change": "Description comments only; executable statements unchanged."
+    },
+    "cpu/72942008": {
+      "original_card_sha256": "f25403629b033ce3ec30c814299d088815d3be9fa00b4ebfd41915499f52fb70",
+      "original_execution_sha256": "0c337bc64f8334952935e8193f4427fffa85cafaf9c1276a34ffa45fb6afb110",
+      "packaged_card_sha256": "a5b79738a546c1001703af1f05645092ca2d6b1e1e9d52db9fea9e95f0495fda",
+      "card_change": "Description comments only; executable statements unchanged."
+    }
+  }
+}

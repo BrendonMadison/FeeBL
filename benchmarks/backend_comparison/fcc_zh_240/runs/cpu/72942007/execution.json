@@ -1,0 +1,65 @@
+{
+  "backend": "cpu",
+  "seed": 72942007,
+  "status": "EXECUTED",
+  "returncode": 0,
+  "source_identity": "sha256:8d12797ca5aec8f486852f235a5bbd223470907595436bd6e6aa0eb706adfff6",
+  "binary_sha256": "e459d088ad44fb65c5e8e4c71016e9a64fc2b7f9be6be8f0c21ba660eed2394c",
+  "physics_input_sha256": "70896891f8463a632444b6373d49c84e1adaad189f702182232b3c81991b2172",
+  "elapsed_seconds": 118.0865114738699,
+  "assigned_cpu_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "cpu_threads": 16,
+  "gpu_count": 0,
+  "resources": {
+    "user_cpu_seconds": 1038.67,
+    "system_cpu_seconds": 3.75,
+    "max_rss_KiB": 6639052.0
+  },
+  "native_runtime": {
+    "active_workers": 16,
+    "schedule": "wavefront_parallel_full_host_physics",
+    "complete_collision_counts": {
+      "diagonals": 127,
+      "waves": 254,
+      "encounters": 8192,
+      "full_parallel_make_step_encounters": 8192
+    },
+    "gpu4": {}
+  },
+  "schema": "feebl.backend-comparison.execution/1",
+  "gpu_uuid": null,
+  "original_execution_sha256": "7e8d103736e506047808bccb423326cc6126a1e03f6470a4c40e7600e1989311",
+  "original_input_sha256": "ad26cf302acda0bf056bc1fcfe3730c2bbdc6ab1fb5c2967b356bd17b8676e10",
+  "outputs": {
+    "lumi.ee.out.dLdW.fne": {
+      "sha256": "acee8e9611d6ef72f27117a8019b6f5b8aca8fd2f5a9f09e2c6084e7078803c0",
+      "bytes": 19742
+    },
+    "stderr.txt": {
+      "sha256": "b86daecce043dd7d180800b84a415ff290512a146caf934baef8e9eb93d08230",
+      "bytes": 28622
+    },
+    "acc.dat": {
+      "sha256": "72c73e83c59229690b351e61f1566c5ba12dccb2e307e97aaa3e0a4b971a3368",
+      "bytes": 2594
+    }
+  },
+  "input_sha256": "72c73e83c59229690b351e61f1566c5ba12dccb2e307e97aaa3e0a4b971a3368"
+}

@@ -1,0 +1,26 @@
+# Viewer demonstration: reduced resolution; no precision benchmark claim.
+# Native spectrum: 240--252 GeV in 1 MeV bins; lower-energy tail is underflow.
+# Manufactured back-to-back 125 GeV electron/positron events at 1/179 degrees, random azimuth.
+$ACCELERATOR:: ilc250
+{energy.1=125;energy.2=125;
+particles.1=2;particles.2=2;charge_sign=-1;
+beta_x=13;beta_y=0.41;
+emitt_x.1=5;emitt_y.1=0.035;emitt_x.2=5;emitt_y.2=0.035;
+sigma_z=300;espread=0.001;which_espread=3;dist_z=0;
+f_rep=5;n_b=1312;waist_x=0;waist_y=0;
+polar_x.1=0;polar_y.1=0;polar_z.1=0.8;polar_x.2=0;polar_y.2=0;polar_z.2=-0.3;angle_x.1=0;angle_x.2=0;angle_y=0;angle_phi=0;}
+$PARAMETERS:: diagnostic
+{compute_backend="serial";allow_backend_fallback=0;collision_schedule="legacy";
+wavefront_field_solver="fft";n_x=128;n_y=256;n_z=16;n_t=4;n_m=5000;
+cut_x=8361.91931559;cut_y=735.2790313232;cut_z=3*sigma_z.1;
+integration_method=2;force_symmetric=0;electron_ratio=1;
+rndm_seed=6102711;rndm_load=0;rndm_save=0;
+load_beam=0;store_beam=0;bmt_precession=1;ST_spin_flip=0;do_lumi=1;num_lumi=10000;lumi_p=1e-29;
+ecm_min=247.5;do_eloss=0;do_espread=1;do_isr=0;
+do_photons=0;store_photons=0;photon_ratio=1;
+do_pairs=0;load_events=1;imported_spin_mode=1;beam_pair=0;do_bhabhas=0;store_pairs=1;pair_ratio=1;pair_q2=2;track_pairs=1;pair_ecut=0.0005;
+do_coherent=0;do_trident=0;do_compt=0;compt_emax=137.5;compt_x_min=0.01;
+do_hadrons=0;store_hadrons=0;do_jets=0;store_jets=0;do_muons=0;
+grids=3;beam_size=1;crab_mode=0;crab_full_crossing_angle=0;crab_longitudinal_sign.1=1;crab_longitudinal_sign.2=-1;waist_mode=0;
+store_native=1;spectrum_w_min=240;spectrum_w_max=252;spectrum_w_bins=12000;
+hist_ee_bins=1020;hist_ee_max=255;}

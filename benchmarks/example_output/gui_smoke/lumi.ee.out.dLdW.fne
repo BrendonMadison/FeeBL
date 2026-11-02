@@ -1,0 +1,32 @@
+#FEEBL-NATIVE 1.0
+#feebl_version 0.6.0-dev
+#accelerator 
+#parameters 
+#rndm_seed 6102721
+#
+# units
+#length_unit nm
+#z_unit um
+#energy_unit GeV
+#angle_unit rad
+#
+# frame and conventions -- read these before using the numbers
+#frame lab
+#beam1_direction +z
+#beam2_direction -z
+#transverse_momenta_are slopes_vx_vy
+#vz_sign_convention beam1_positive_beam2_negative
+#half_crossing_angle_rad 0
+#momenta_carry_crossing_angle no
+#spin_present no
+#
+#BLOCK pair_spectrum
+#COLUMNS W_low W_high dL_dW weight h1 h1_err h2 h2_err h1h2 cov n_eff
+499.95 500 1.32379e+35 6.61896e+33 0 0 0 0 0 0 0
+500 500.05 5.44715e+34 2.72358e+33 0 0 0 0 0 0 0
+#underflow 0
+#overflow 0
+#mean_W 500 +- 0
+#rms_W 0
+#n_eff_total 24612
+#END pair_spectrum records 2

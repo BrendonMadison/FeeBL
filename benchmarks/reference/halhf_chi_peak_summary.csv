@@ -1,0 +1,13 @@
+nominal_sqrts_GeV,statistic,peak_over_time_chi,time_of_peak_ps,alpha_chi_two_thirds,method
+250,electron_mean,0.2228578,-0.007817684,0.002682361,peak of digitised PDF polyline; not a time average
+380,electron_mean,0.4022424,2.983028e-08,0.003976405,peak of digitised PDF polyline; not a time average
+550,electron_mean,0.6778451,-0.01563591,0.005631002,peak of digitised PDF polyline; not a time average
+250,electron_max,0.8327028,1.024147,0.006458902,peak of digitised PDF polyline; not a time average
+380,electron_max,1.553441,1.024147,0.009788028,peak of digitised PDF polyline; not a time average
+550,electron_max,2.67705,1.071054,0.01406921,peak of digitised PDF polyline; not a time average
+250,positron_mean,0.007214704,0.01563597,0.0002724652,peak of digitised PDF polyline; not a time average
+380,positron_mean,0.01342165,2.983028e-08,0.0004121317,peak of digitised PDF polyline; not a time average
+550,positron_mean,0.02357444,0.007818253,0.0005999654,peak of digitised PDF polyline; not a time average
+250,positron_max,0.02099099,0.9850569,0.0005552909,peak of digitised PDF polyline; not a time average
+380,positron_max,0.03967403,1.039782,0.0008488602,peak of digitised PDF polyline; not a time average
+550,positron_max,0.06905211,0.8677877,0.00122824,peak of digitised PDF polyline; not a time average

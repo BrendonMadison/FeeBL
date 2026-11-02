@@ -1,0 +1,62 @@
+{
+  "status": "PASS_WITHIN_VECTOR_COORDINATE_TOLERANCES",
+  "primary_source": "https://arxiv.org/abs/1908.01704v4",
+  "doi": "10.1016/j.physletb.2019.135068",
+  "source_figure": "Figure 2 left, article PDF page 7",
+  "original_vector_sha256": "0cc1263aade2f9574b5213f7b473d2f37eb65c4a129bbfc368268f28cd65769e",
+  "reference_csv_sha256": "cfd3d752467f13ace0b561f96f9a6a91444a2ee74270327c117d3bad4d5924d2",
+  "reduction_csv_sha256": "014fae9b28fadd43738f806be12703a4238950d7a38daecc16feee3cc472f2d7",
+  "audit_script_sha256": "3043de1cdedf21af66cc8dbf3163e9d57739f2e0a3d43da1c5cac9cceed305e3",
+  "source_paths": 3,
+  "bins_per_series": 100,
+  "calibration": {
+    "frame_local_pdf_points": [
+      76.5354,
+      57.238,
+      327.402,
+      331.163
+    ],
+    "x_range_urad": [
+      -20,
+      30
+    ],
+    "ordinate_range": [
+      0,
+      100000
+    ]
+  },
+  "numerical_tolerances": {
+    "coordinate_urad": 0.0002,
+    "ordinate_au": 0.05,
+    "display_density": 1e-12
+  },
+  "max_absolute_csv_minus_pdf": {
+    "theta_lo_urad": 6.097828357098933e-05,
+    "theta_hi_urad": 6.30869817435098e-05,
+    "theta_centre_urad": 6.15598072002399e-05,
+    "ordinate_au": 0.006590298431547126
+  },
+  "max_absolute_normalized_density_difference": 6.413260254800601e-08,
+  "display_reference_matches_original_csv": true,
+  "replacement_recommended": false,
+  "largest_observed_pull_bin": {
+    "bin_low": "25.500023",
+    "bin_high": "26.000019",
+    "simulation": "0.021162518037518036",
+    "reference": "0.006353484003639182",
+    "simulation_variance": "2.341678501528488e-06",
+    "reference_variance": "2.1200827527878493e-08",
+    "simulation_reference_covariance": "0.0",
+    "combined_standard_uncertainty": "0.0015371660056924129",
+    "pull": "9.633984865029694",
+    "pull_standard_uncertainty": "1.0",
+    "independent_seeds": "10",
+    "variance_degrees_of_freedom": "9",
+    "zero_empirical_variance": "False"
+  },
+  "interpretation": "The sharp published edge is present in the primary vector histogram. The endpoint excess in the simulation is not explained by this digitization or bin-mapping check; its physical or numerical cause remains separate.",
+  "output_sha256": {
+    "independent_vector_histogram.csv": "37c373efd814ad442b86b29b5a8eb9cf2f1e3599dc0eff9d2e27f3a781e98725",
+    "edge_bins.csv": "25694738482b8e3f65129991e06968799569a6d2ea08f8c3cad2b1e9c89c023b"
+  }
+}

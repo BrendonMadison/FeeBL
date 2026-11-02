@@ -1,0 +1,1679 @@
+{
+  "acc_file": "input.card",
+  "backend_requested": "serial",
+  "backend_actual_receipt": "FEEBL: final compute_backend requested=serial actual=serial cpu_variant requested=auto actual=serial cpu_threads requested=0 actual=1 reduction_mode=strict rng_backend=legacy gpu_variant requested=auto actual=serial gpu_device=0 gpu_min_particles=262144 gpu_calls=0 gpu_mode requested=1 actual=0 gpu2_scope requested=auto actual=inactive gpu2_deposition requested=auto actual=inactive gpu2_fft requested=cufft actual=inactive gpu2_streams requested=0 actual=0 gpu2_graphs requested=auto actual=inactive gpu2_fusion requested=auto actual=inactive gpu2_batch_slices requested=0 actual=0 gpu2_pinned_io requested=auto actual=inactive gpu2_host_threads requested=0 actual=0 gpu2_primary_mover requested=serial actual=inactive gpu2_memory_fraction=0.8 gpu2_profile requested=summary actual=inactive gpu2_plan=uncommitted gpu2_calls=0 gpu3_calls=0 gpu4_calls=0 gpu5_calls=0 gpu2_host_boundary=inactive gpu2_primary_update=inactive gpu2_spin_transport=inactive gpu2_beamstrahlung=inactive gpu2_rng=inactive gpu2_host_phi_materialized=-1 gpu2_primary_mover_calls=0 gpu2_primary_mover_particles=0 gpu2_primary_mover_ranges=0 gpu2_primary_mover_observed_threads=0 initialization_rng=as_rng_backend mode3_collision_rng=inactive gpu_device_description=\"not-initialized\" openmp=disabled cuda=disabled cuda_toolkit=none affinity=0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 cxx=201703 compiler=\"13.3.0\" source=f819b996b0dd99313b2decb15f5c9dd84feb989d-dirty",
+  "gpu_mode": 1,
+  "n_cell_z": 8,
+  "mesh_coverage_file": "gui_mesh_coverage.json",
+  "secondary_frames_file": "gui_secondary_frames.json",
+  "imported_trajectories_file": "gui_imported_trajectories.json",
+  "energy_GeV": [
+    250,
+    250
+  ],
+  "native_beam_angles_x_rad": [
+    0,
+    0
+  ],
+  "native_beam_angles_y_rad": [
+    0,
+    0
+  ],
+  "espread": [
+    0,
+    0
+  ],
+  "ip_dispersion_m": [
+    0,
+    0
+  ],
+  "crab_mode": [
+    0,
+    0
+  ],
+  "waist_mode": [
+    0,
+    0
+  ],
+  "field_overlay_availability": {
+    "computed": true,
+    "file": "gui_fields.json",
+    "reason": null
+  },
+  "frames": [
+    {
+      "id": 0,
+      "diagonal": 0,
+      "elapsed_s": 0,
+      "beam1": {
+        "path": "gui_b1.0",
+        "sha256": "4cd974cacd86b666cdf4d9b9ca03ce25303c4233201186e429fd93d1d2578dc9",
+        "bytes": 24607,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -1.95336,
+            1.93303
+          ],
+          [
+            -0.0515695,
+            0.0428465
+          ],
+          [
+            285.796,
+            2141.15
+          ],
+          [
+            -82.4508,
+            127.817
+          ],
+          [
+            -35.3295,
+            39.7893
+          ]
+        ]
+      },
+      "beam2": {
+        "path": "gui_b2.0",
+        "sha256": "f9b0262b66188c5b34246a729b0dd60801751c6b2746300ddc6906e501b6d010",
+        "bytes": 25047,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -2.25838,
+            1.96152
+          ],
+          [
+            -0.059957,
+            0.0714844
+          ],
+          [
+            -2155.95,
+            -223.47
+          ],
+          [
+            -93.6785,
+            102.215
+          ],
+          [
+            -45.7899,
+            38.8054
+          ]
+        ]
+      },
+      "sample_stride": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 1,
+      "diagonal": 1,
+      "elapsed_s": 4.378028749475746e-13,
+      "beam1": {
+        "path": "gui_b1.1",
+        "sha256": "0ad3f9f33fce3dd883ed83cb9a43f9082b762ed0d5dd0fc43470e247c59b9afa",
+        "bytes": 24633,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -1.95257,
+            1.92758
+          ],
+          [
+            -0.0469057,
+            0.0385168
+          ],
+          [
+            154.546,
+            2009.9
+          ],
+          [
+            -82.4508,
+            127.817
+          ],
+          [
+            -35.3295,
+            39.7893
+          ]
+        ]
+      },
+      "beam2": {
+        "path": "gui_b2.1",
+        "sha256": "473ec058ac4eedadaae0090156a21c9269d02fb9d5d5eee4201bf323af942d5e",
+        "bytes": 25087,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -2.26309,
+            1.9616
+          ],
+          [
+            -0.0557496,
+            0.0666838
+          ],
+          [
+            -2024.7,
+            -92.2201
+          ],
+          [
+            -93.6785,
+            102.215
+          ],
+          [
+            -45.7899,
+            38.8054
+          ]
+        ]
+      },
+      "sample_stride": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "diagonal": 2,
+      "elapsed_s": 8.756057498951492e-13,
+      "beam1": {
+        "path": "gui_b1.2",
+        "sha256": "64a4871505f300e7a0d0c1df4a274d1670948e632d1c8d8984c81fe3f775566d",
+        "bytes": 24666,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -1.95144,
+            1.93209
+          ],
+          [
+            -0.0422419,
+            0.0353355
+          ],
+          [
+            23.2964,
+            1878.65
+          ],
+          [
+            -82.2607,
+            127.817
+          ],
+          [
+            -39.4686,
+            60.7736
+          ]
+        ]
+      },
+      "beam2": {
+        "path": "gui_b2.2",
+        "sha256": "f9049565d07165aeb20948be2c58cf8c10a7d599c53a735c149e43fc83e7a3cc",
+        "bytes": 25113,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -2.26731,
+            1.96159
+          ],
+          [
+            -0.0515421,
+            0.0618831
+          ],
+          [
+            -1893.45,
+            39.0299
+          ],
+          [
+            -93.6785,
+            102.215
+          ],
+          [
+            -48.5126,
+            38.8054
+          ]
+        ]
+      },
+      "sample_stride": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 3,
+      "diagonal": 3,
+      "elapsed_s": 1.3134086248427238e-12,
+      "beam1": {
+        "path": "gui_b1.3",
+        "sha256": "64de2316be421feec631fba288043c646246c9d12e4910f777a90076588911eb",
+        "bytes": 24727,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -1.9471,
+            1.94042
+          ],
+          [
+            -0.037578,
+            0.0322222
+          ],
+          [
+            -107.954,
+            1747.4
+          ],
+          [
+            -98.2854,
+            128.261
+          ],
+          [
+            -83.8981,
+            71.0726
+          ]
+        ]
+      },
+      "beam2": {
+        "path": "gui_b2.3",
+        "sha256": "d817d0aa651393932d8315c3b688c34e7a8a2942c3c22b23067a6e3e903a18b0",
+        "bytes": 25161,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -2.2688,
+            1.96108
+          ],
+          [
+            -0.0473347,
+            0.0570824
+          ],
+          [
+            -1762.2,
+            170.28
+          ],
+          [
+            -94.2958,
+            112.827
+          ],
+          [
+            -47.96,
+            44.7511
+          ]
+        ]
+      },
+      "sample_stride": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 4,
+      "diagonal": 4,
+      "elapsed_s": 1.7512114997902984e-12,
+      "beam1": {
+        "path": "gui_b1.4",
+        "sha256": "9db48625820333c675e5bb1238126b93173ea5899fc60451384905eef4b36887",
+        "bytes": 24762,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -1.93714,
+            1.94823
+          ],
+          [
+            -0.0329142,
+            0.029109
+          ],
+          [
+            -239.204,
+            1616.15
+          ],
+          [
+            -168.052,
+            143.483
+          ],
+          [
+            -85.4446,
+            92.2951
+          ]
+        ]
+      },
+      "beam2": {
+        "path": "gui_b2.4",
+        "sha256": "e81361469c5231b1dc0912cf068d084d667894505d6db6b2d4c237033077f671",
+        "bytes": 25179,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -2.26539,
+            1.95775
+          ],
+          [
+            -0.0431273,
+            0.0522818
+          ],
+          [
+            -1630.95,
+            301.53
+          ],
+          [
+            -167.176,
+            198.625
+          ],
+          [
+            -93.3749,
+            99.7195
+          ]
+        ]
+      },
+      "sample_stride": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 5,
+      "diagonal": 5,
+      "elapsed_s": 2.1890143747378733e-12,
+      "beam1": {
+        "path": "gui_b1.5",
+        "sha256": "9a29c3c3d7958cbc9788d832d27e7c941474d469c6316c38e4498434e1c01fe1",
+        "bytes": 24841,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -1.92089,
+            1.95297
+          ],
+          [
+            -0.0282368,
+            0.0258154
+          ],
+          [
+            -370.454,
+            1484.9
+          ],
+          [
+            -251.759,
+            225.445
+          ],
+          [
+            -114.307,
+            105.842
+          ]
+        ]
+      },
+      "beam2": {
+        "path": "gui_b2.5",
+        "sha256": "9b6ca5a098f7200b74aa718d7241f42d82f947888758df8eb29848079fe37724",
+        "bytes": 25247,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -2.25719,
+            1.9484
+          ],
+          [
+            -0.0388336,
+            0.0474811
+          ],
+          [
+            -1499.7,
+            432.78
+          ],
+          [
+            -239.432,
+            253.904
+          ],
+          [
+            -114.957,
+            119.993
+          ]
+        ]
+      },
+      "sample_stride": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 6,
+      "diagonal": 6,
+      "elapsed_s": 2.6268172496854475e-12,
+      "beam1": {
+        "path": "gui_b1.6",
+        "sha256": "0e608ac73c40d82d8f7908d583f6d248460cf642eeed66a180c3a6d216c1123d",
+        "bytes": 24843,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -1.90191,
+            1.95186
+          ],
+          [
+            -0.0223732,
+            0.0210571
+          ],
+          [
+            -501.704,
+            1353.65
+          ],
+          [
+            -290.151,
+            263.745
+          ],
+          [
+            -110.981,
+            159.565
+          ]
+        ]
+      },
+      "beam2": {
+        "path": "gui_b2.6",
+        "sha256": "3898fa7d8484eed85cb770e42abfa127349fb80c8e1ab9df7bcb5f38da323ccd",
+        "bytes": 25298,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -2.24663,
+            1.93372
+          ],
+          [
+            -0.0331751,
+            0.0426804
+          ],
+          [
+            -1368.45,
+            564.03
+          ],
+          [
+            -273.894,
+            288.002
+          ],
+          [
+            -207.06,
+            118.988
+          ]
+        ]
+      },
+      "sample_stride": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 7,
+      "diagonal": 7,
+      "elapsed_s": 3.0646201246330222e-12,
+      "beam1": {
+        "path": "gui_b1.7",
+        "sha256": "d08a94271095a64fa2a4ad4dfc96b4abd35fd549fd310e2694b4f50bb582ca25",
+        "bytes": 24875,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -1.88239,
+            1.94503
+          ],
+          [
+            -0.0262196,
+            0.0211595
+          ],
+          [
+            -632.954,
+            1222.4
+          ],
+          [
+            -296.125,
+            322.681
+          ],
+          [
+            -180.808,
+            126.284
+          ]
+        ]
+      },
+      "beam2": {
+        "path": "gui_b2.7",
+        "sha256": "83f6deea67cc1a9e9c0deddf8a3653a89d98322075d2415375e0c9239db274ce",
+        "bytes": 25193,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -2.23556,
+            1.91659
+          ],
+          [
+            -0.0335011,
+            0.037774
+          ],
+          [
+            -1237.2,
+            695.28
+          ],
+          [
+            -285.242,
+            293.958
+          ],
+          [
+            -181.994,
+            170.661
+          ]
+        ]
+      },
+      "sample_stride": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 8,
+      "diagonal": 8,
+      "elapsed_s": 3.502422999580597e-12,
+      "beam1": {
+        "path": "gui_b1.8",
+        "sha256": "95dadfa5ab5ac84a883b95507bbe69c621117d748763e3b7b8a94e9b18c969b0",
+        "bytes": 24925,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -1.86278,
+            1.9352
+          ],
+          [
+            -0.0303138,
+            0.0209947
+          ],
+          [
+            -764.204,
+            1091.15
+          ],
+          [
+            -298.615,
+            362.899
+          ],
+          [
+            -173.463,
+            210.244
+          ]
+        ]
+      },
+      "beam2": {
+        "path": "gui_b2.8",
+        "sha256": "ad7f127b70a77788bf921ac248f4f508597e28e19c904c709cc3ae129f98c43d",
+        "bytes": 25100,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -2.22444,
+            1.89886
+          ],
+          [
+            -0.0395544,
+            0.0314083
+          ],
+          [
+            -1105.95,
+            826.53
+          ],
+          [
+            -297.426,
+            305.864
+          ],
+          [
+            -226.491,
+            205.545
+          ]
+        ]
+      },
+      "sample_stride": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 9,
+      "diagonal": 9,
+      "elapsed_s": 3.940225874528171e-12,
+      "beam1": {
+        "path": "gui_b1.9",
+        "sha256": "d1161b3803c2e58debb41f8b58a749ad674f12a26d464965ddecf1ef4e75a635",
+        "bytes": 24955,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -1.84318,
+            1.92472
+          ],
+          [
+            -0.0344081,
+            0.0310388
+          ],
+          [
+            -895.454,
+            959.903
+          ],
+          [
+            -298.615,
+            368.904
+          ],
+          [
+            -130.578,
+            161.121
+          ]
+        ]
+      },
+      "beam2": {
+        "path": "gui_b2.9",
+        "sha256": "54e5b9c32d6491fbdbfb6a920868ac63f469f9f782c1fac424291aa1d18aeef0",
+        "bytes": 24949,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -2.21331,
+            1.88107
+          ],
+          [
+            -0.0439364,
+            0.0258613
+          ],
+          [
+            -974.697,
+            957.78
+          ],
+          [
+            -309.228,
+            317.645
+          ],
+          [
+            -121.372,
+            116.273
+          ]
+        ]
+      },
+      "sample_stride": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 10,
+      "diagonal": 10,
+      "elapsed_s": 4.3780287494757466e-12,
+      "beam1": {
+        "path": "gui_b1.10",
+        "sha256": "2edd5490fd0c64e764638f4148d3897cf0e59d9d69cacf21f7a526d33642617c",
+        "bytes": 24952,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -1.82357,
+            1.91415
+          ],
+          [
+            -0.0386746,
+            0.0362494
+          ],
+          [
+            -1026.7,
+            828.653
+          ],
+          [
+            -302.562,
+            372.466
+          ],
+          [
+            -114.911,
+            110.558
+          ]
+        ]
+      },
+      "beam2": {
+        "path": "gui_b2.10",
+        "sha256": "569d638c974050ca3f95b321781f6454825034834b0270bd14517e43606331c0",
+        "bytes": 24820,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -2.20218,
+            1.86329
+          ],
+          [
+            -0.0482266,
+            0.033394
+          ],
+          [
+            -843.447,
+            1089.03
+          ],
+          [
+            -315.477,
+            330.026
+          ],
+          [
+            -211.459,
+            85.5249
+          ]
+        ]
+      },
+      "sample_stride": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 11,
+      "diagonal": 11,
+      "elapsed_s": 4.8158316244233204e-12,
+      "beam1": {
+        "path": "gui_b1.11",
+        "sha256": "ee36f2dda20d253f5e51801cac2d2688fa4e6014224de63471b1faa36c6c1422",
+        "bytes": 25009,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -1.80397,
+            1.90359
+          ],
+          [
+            -0.0464182,
+            0.044033
+          ],
+          [
+            -1157.95,
+            697.403
+          ],
+          [
+            -305.572,
+            372.466
+          ],
+          [
+            -113.998,
+            81.118
+          ]
+        ]
+      },
+      "beam2": {
+        "path": "gui_b2.11",
+        "sha256": "01823ad150b106b2e46b55435cce0ed0f1fb5e5d7de8cb70be4d7c23393737d3",
+        "bytes": 24676,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -2.19106,
+            1.8455
+          ],
+          [
+            -0.0525168,
+            0.0433744
+          ],
+          [
+            -712.197,
+            1220.28
+          ],
+          [
+            -316.795,
+            332.444
+          ],
+          [
+            -116.346,
+            97.2487
+          ]
+        ]
+      },
+      "sample_stride": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 12,
+      "diagonal": 12,
+      "elapsed_s": 5.253634499370895e-12,
+      "beam1": {
+        "path": "gui_b1.12",
+        "sha256": "32c499d7451aa70a9f28d9e230ea456e87eed7ef3ac8e22991c3e746fb58245d",
+        "bytes": 25015,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -1.78436,
+            1.89302
+          ],
+          [
+            -0.0541618,
+            0.0518166
+          ],
+          [
+            -1289.2,
+            566.153
+          ],
+          [
+            -305.572,
+            372.466
+          ],
+          [
+            -109.595,
+            81.118
+          ]
+        ]
+      },
+      "beam2": {
+        "path": "gui_b2.12",
+        "sha256": "0b5aac2f3d47d986515df29103525f5faf1e7b837ddd67730e1cbf70a6449a1c",
+        "bytes": 24589,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -2.17993,
+            1.82771
+          ],
+          [
+            -0.056807,
+            0.0538479
+          ],
+          [
+            -580.947,
+            1351.53
+          ],
+          [
+            -316.795,
+            335.004
+          ],
+          [
+            -89.4642,
+            96.8129
+          ]
+        ]
+      },
+      "sample_stride": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 13,
+      "diagonal": 13,
+      "elapsed_s": 5.69143737431847e-12,
+      "beam1": {
+        "path": "gui_b1.13",
+        "sha256": "756a8d912681cec61e696b7d2481fd2fda08787033d15b7281c858ebd1b2f7f5",
+        "bytes": 25020,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -1.76476,
+            1.88245
+          ],
+          [
+            -0.0619054,
+            0.0596001
+          ],
+          [
+            -1420.45,
+            434.903
+          ],
+          [
+            -305.572,
+            372.466
+          ],
+          [
+            -108.983,
+            81.118
+          ]
+        ]
+      },
+      "beam2": {
+        "path": "gui_b2.13",
+        "sha256": "39d801471bdbf367dd9b3223f71ca2cad8c53992c0b5ca35246e3ff6d1728d8c",
+        "bytes": 24570,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -2.1688,
+            1.80993
+          ],
+          [
+            -0.0632556,
+            0.0643214
+          ],
+          [
+            -449.697,
+            1482.78
+          ],
+          [
+            -316.795,
+            337.401
+          ],
+          [
+            -88.8115,
+            96.8129
+          ]
+        ]
+      },
+      "sample_stride": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 14,
+      "diagonal": 14,
+      "elapsed_s": 6.1292402492660444e-12,
+      "beam1": {
+        "path": "gui_b1.14",
+        "sha256": "9d9458e646c254ca1767105565fea4dd25230c5af78829ae648c5d2c59d67909",
+        "bytes": 25037,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -1.74515,
+            1.87189
+          ],
+          [
+            -0.069649,
+            0.0673837
+          ],
+          [
+            -1551.7,
+            303.653
+          ],
+          [
+            -305.572,
+            372.466
+          ],
+          [
+            -108.983,
+            81.118
+          ]
+        ]
+      },
+      "beam2": {
+        "path": "gui_b2.14",
+        "sha256": "d872c94cf57037592d376521a2285d9c7eff524b12a6f577711f17be8c517d21",
+        "bytes": 24561,
+        "rows": 500,
+        "columns": 6,
+        "bounds": [
+          [
+            250.0,
+            250.0
+          ],
+          [
+            -2.15768,
+            1.79214
+          ],
+          [
+            -0.0731461,
+            0.0747949
+          ],
+          [
+            -318.447,
+            1614.03
+          ],
+          [
+            -316.795,
+            337.401
+          ],
+          [
+            -88.8115,
+            96.8129
+          ]
+        ]
+      },
+      "sample_stride": [
+        2,
+        2
+      ]
+    }
+  ],
+  "schema_version": "feebl.collider/2",
+  "run_id": "gui-smoke-run2",
+  "created_utc": "2026-10-28T20:45:05.947308+00:00",
+  "units": {
+    "energy": "GeV",
+    "position": "um",
+    "angle": "urad",
+    "time": "s"
+  },
+  "coordinates": {
+    "frame": "legacy_collider_dump",
+    "origin": "native dump reconstruction",
+    "time_origin": "first committed diagonal",
+    "beam_z_dump_sign": [
+      1,
+      -1
+    ],
+    "beam_centroid_motion_sign": [
+      -1,
+      1
+    ],
+    "qualification": "Native legacy dump convention; canonical lab-axis reconciliation is unresolved."
+  },
+  "coverage": {
+    "pre_collision_initial": false,
+    "first_frame_phase": "after_diagonal_0",
+    "final_committed_diagonal": true,
+    "limitation": "No independently reconciled pre-collision initial dump; sampled branch uses stride >= 2."
+  },
+  "normalization": {
+    "kind": "display_sample",
+    "weights": "not exported; never use for luminosity",
+    "luminosity": {
+      "crossing_frequency_hz": 14100.0,
+      "conversion_m2_to_cm2_s": 1.4100000000000001,
+      "allocation_scope": "per_ip",
+      "scope": "per IP; explicitly supplied per-IP collision frequency",
+      "bin_sum_m2_per_crossing": 9.34254e+33,
+      "underflow_m2_per_crossing": 0.0,
+      "overflow_m2_per_crossing": 0.0,
+      "total_spectrum_m2_per_crossing": 9.34254e+33,
+      "total_summary_m2_per_crossing": 9.34253e+33,
+      "total_L_cm2_s": 1.3172967300000003e+34,
+      "comparison_status": "MATCH_WITHIN_NATIVE_TEXT_ROUNDING",
+      "relative_spectrum_minus_summary": 1.0703738709036736e-06
+    }
+  },
+  "source": {
+    "commit": "f819b996b0dd99313b2decb15f5c9dd84feb989d",
+    "dirty": true,
+    "untracked_sha256": {},
+    "identity_method": "source_export",
+    "source_files_sha256": {
+      ".gitattributes": "188df879d31995ddc1f1c4238ef612c7b65302c1d6ce37b303ef0dd626c911e4",
+      ".gitignore": "7780a10f3bf175f338d277700d20c4c700f6630bf6deca13d21355b293ba9ada",
+      "aclocal.m4": "ba80976d554f87a70b1e64f913152bf7b36da1d08849a7e58e457bd393c4d20e",
+      "CHANGELOG.md": "c3ff24cf0bbb79d33481133632a018cead7fef9d8170d3e13d1c891a225d5790",
+      "CHARGE_SIGN_DERIVATION.md": "798367256504e66a8930a7dcbe5ad9435b36f3ce40087ac70c613019756478c8",
+      "cmake/Modules/compilers.cmake": "836e52f9715ee2978828d2e2e83db5042dd4491203e48dba2cc6f0e1e26c6a7b",
+      "cmake/Modules/feebl_config.cmake": "a92832e6b94cfb347082f9adb29a689bd55e17dae8bf8d7dcde52e47433c59f6",
+      "cmake/Modules/feebl_definitions.cmake": "4abbdee9d158eb1c847ff4258d6bfad77279065906443a825a0471502b464904",
+      "cmake/Modules/FindFFTW.cmake": "ac1caa93a45a45d1c2e77e2083a2b6596d24eb134cad7289e609d9b77d628289",
+      "cmake/Modules/FindFFTW2.cmake": "0f8602a36710d2a01a241ff47f0c90d0d7766a20992fdaa529af4451c3623ceb",
+      "CMakeLists.txt": "b1d3a413a4a9716775aaf5e27d3743124787ec7cb623dbefccf635f96dc69f21",
+      "CMakePresets.json": "aad67b7de48329697740bc05a7257f3258a675f9aa9b2b7f94870bbe0850a29e",
+      "compile": "c207b390aac6323062b982214a6c63448e53e6911107993abe96f35fe7a30a18",
+      "config.guess": "acc9aea1730bb09ff7249b23c27b1b4c2d1ef57cd679559539de97947b39f2d1",
+      "config.sub": "57efd3d21204c37c93f3189a54b24652690a240bed5e4b237cdbafb67c25dc02",
+      "configure": "d529a603b30e6db84098474663f05cb161ebda8a981c36bb35c51078a4e9fe0d",
+      "configure.ac": "6494bfa0f1420948218f4cb9745d568329c44240d9771797cc2f3872146a012a",
+      "CONTRIBUTING.md": "f892620252285ea7980246a53c95589c40081d129e9f75475c589a24f6266b67",
+      "CTestConfig.cmake": "36d19d1f493e590ee647accc411a1a47b4e2b760dfa5ce873c86fb6b80fa6bfe",
+      "Doxyfile": "0ef988ebd31dfefb5d9504c96e47bed5b4cae2d8044ff307db1caaeb7779fb1e",
+      "FEATURES.md": "d77b69ffbd463c3afa508f199f294892bef0971598cc9d052e0f2a9ba14dd3b3",
+      "install-sh": "d44b15ef8ea0d7c71bfb68306679192acf2c0003b6ac309df51cad361e923245",
+      "Makefile.in": "e8d871c944850b11d938726cd8ff4206d778397f8ead849b8beeb79d27e7a86d",
+      "missing": "a9865db4f39574ff128c0312c367f070d20f81847817021ecce95fd70a610c9d",
+      "MONOCHROMATIZATION.md": "81c94f65c362cfd265ab486b7bb0046e6739ce9dcaf51d76856ed82e896a0371",
+      "NOTICE.md": "64701de321834cbd39a9428dd8761dbe449d9fab5b041fd3dcca2da688710315",
+      "ORIGIN.md": "e77623e677df9d92c94875c8d082882f4f7bf7c10e7f671c06e6f48f15330418",
+      "OUTPUT_FILES": "f3a30570487d1678dd1891b392b3b6a8b25251a223fffaaa5aedcf04cb8eb801",
+      "README.md": "51d20d97d681425785a08217606d1939c1a012eb402c68a9320a2972c5dd7b40",
+      "requirements-analysis.txt": "f985d6849854abe39a2a44e56bf36346ddbb8045586a199c5472dc2733c796fa",
+      "scripts/adaptive_convergence_v3/qualification_contracts.py": "7fd4c94121678ba5a085c15f1967a85206b6d627f7567e899952d07e39f8de81",
+      "scripts/adaptive_grid/build_and_run_cpu_mode1_oracle.sh": "27a493d19f4fa4c1240d8534d603af72c70a86d1fed98d9ae1af8247b6178ec9",
+      "scripts/adaptive_grid/capture_v2_binary_dependencies.sh": "6b4f5a5097d7d9f49c824832acb7093d47f9e455355eb8b2dacd9291084c5a3f",
+      "scripts/adaptive_grid/compare_modes23_physics.py": "51edabf5996cf39e75b88057d1e03566f8dd06dd60ca08b7c7ad1eda8e471f08",
+      "scripts/adaptive_grid/run_mode1_process_validation.sh": "a70cd6db212d635ea4da4c30c20dceee021396e0b5879c4f5210aea5957636d4",
+      "scripts/adaptive_grid/run_modes23_card_contract_validation.sh": "0c2e76580ab18e8c4ca4c1f6610356920a820254f7b77730019a3f46c4d1abf5",
+      "scripts/adaptive_grid/run_modes23_physics_validation.sh": "b47a3d4496944e07a4eefc03d4b9f6ec27c9d5201f6350756e4a4cd346067ae7",
+      "scripts/adaptive_grid/run_modes23_pilot_diagnostics_validation.sh": "933eeb60f30b8a3472741bb4a59871dcf059afa2d8b522ea69f457225038f3a7",
+      "scripts/adaptive_grid/verify_v3_prelaunch_run_root.sh": "d8fd00e05c557bb09caccaf27a3bb8abe2b55b6d58a073933aedf8eb38e4538b",
+      "scripts/adaptive_particles/analysis/gaussian_core_spectrum.py": "7e8ec320dfd3e44ddb3bd872344afc89722742a249ce6e1c2aee11aca26b92b2",
+      "scripts/adaptive_particles/campaign/coupled_grid_root_campaign.py": "b3006094b53e64b998f118f4b1fd86246fe3aa5bca3428c973f6820c273e6e93",
+      "scripts/adaptive_particles/campaign/coupled_grid_root_campaign_v2.py": "ff9126784a65559a99bbd12d5ad2f7b5790903ede315a767711ee596160243b0",
+      "scripts/adaptive_particles/campaign/frozen_eight_campaign.py": "73274c3645f817a2870b22b783754d2e709cafe42f030d2a10366457c52183f1",
+      "scripts/adaptive_particles/replay/adaptive_root_replay.py": "c2f306f06528e43cdc3158c3fe90069d6641bd6db3e15571251f7015c88ee4b5",
+      "scripts/adaptive_particles/replay/physical_root_pool_v3.py": "d565bffd581baf756ad9c38800abbb25a94f6f5048fef9efefdecd6c2e2f0c6f",
+      "scripts/adaptive_particles/run_card_contract_validation.sh": "5e7db235fba3c77bfe314def5586751e0ec5c8e11f464b82b7581043efb74c6e",
+      "scripts/adaptive_particles/run_mode0_matched_regression.sh": "6f12b6f8aaa80d648941ab275cb1f78ba8bf41dfa89b263f889af6c81bcaa691",
+      "SOURCE_REVISION": "66c398850ce2efeaad35bb6144a97004b31cafc519b078676c130f2bf8052f5f",
+      "src/abstractIOclass.h": "f35b9ddf257f4ef518944d920ed7ab0b3d5a6603c25afea520ba2efbb0608f4c",
+      "src/abstractParticle.h": "589686fd4c33da190fc271a4bf22f0080da9e74a316b1d355f75db16dfd087a1",
+      "src/adaptiveCompositeCouplingCPP.cc": "7c68278e1ede81ade1d2026a6eabe2931c5d676b59f6e4f850e249b2dfc817aa",
+      "src/adaptiveCompositeCouplingCPP.h": "3fc1c91726c61b0babb3a2375605e26b9a7b755aadc81a481a54db266bbb4852",
+      "src/adaptiveCompositePoissonCPP.cc": "31536cb5ebd3dccb4d86e8581301b7d8cefc8e34ff82e20383c100b7c589e7f5",
+      "src/adaptiveCompositePoissonCPP.h": "cb82a1d47370c639ed44acb365e7e729d98d76ae70103ef55027a555e1d26701",
+      "src/adaptiveGridScheduleCPP.cc": "7d56aa42b0b48dce1f225551542bec58481b9a9c5bcb0500c415f2d71194568e",
+      "src/adaptiveGridScheduleCPP.h": "e67f95d4df06676a3d5bc115ed8f1d487c8899a25650c051fc2e668e221ca224",
+      "src/adaptiveMacroparticleControllerCPP.cc": "cc06c09eaa168532d1ec4ce8d6ec87765ec2421748645da7982a6a4b40ea39cd",
+      "src/adaptiveMacroparticleControllerCPP.h": "1328726986f12437f393146939c0469eb3f280f47139302aa890d185b7bc2725",
+      "src/adaptiveMacroparticleCPP.cc": "85986c9f08d75fd6fc1cfd1b2241b03212f124576f10283bdc7c3e9c03306056",
+      "src/adaptiveMacroparticleCPP.h": "db3ce4730cf484823d4fc76ff6b42b6c6125d717cdd44bb9b9eaf4374bf02e24",
+      "src/adaptiveResolutionControllerCPP.cc": "07251f27b1fbc6dc402e00278b7b13247771a68f7688e8cd89e06dc56d490273",
+      "src/adaptiveResolutionControllerCPP.h": "f169f5f329f1a687379e915dd3e65944091a68fe43c0b5cb6b73a57a6b22dd1c",
+      "src/adaptiveRootReplaySignalCPP.h": "8499453eee02b20a5269ef45ef1a57b4dd0c6d64ab5b34bda6b921afe8ad2572",
+      "src/adaptiveTerminalPatchCPP.cc": "d57af6b1a68933caad0c1512355ae4242d9fb94bece0477949dabcd0f46791a8",
+      "src/adaptiveTerminalPatchCPP.h": "efc23d178f98819ebf38e4dbb3ff0e047ebbbe1bd966134c3bca06350acd2bc1",
+      "src/backgroundCPP.cc": "ef002769ae56844cb9ef2ae7b7fb4575d60810f4867127241003a0c259a6320f",
+      "src/backgroundCPP.h": "3071911fcf0b768b0073cd500b3777e6845c11ad1042295b60fa9f14295be0b4",
+      "src/beamCPP.cc": "d6b520e1e2de446a7cb3658a01c2af9e09e6b8692edb803105934b8c100a793c",
+      "src/beamCPP.h": "4120e7a7baf57219acb461fe8116495f878cb3f7cf620451bdf4962906622e94",
+      "src/beamParametersCPP.cc": "d15e987b0c9589b0b909d7476b58913f79d8b402b106ec38a526297260b88ca4",
+      "src/beamParametersCPP.h": "e727abdc1c7f59a19768582a1b7931f705cef6082e8e4d1f6eaeb22cf688e336",
+      "src/beamSoACPP.cc": "3ec51e961165105ede23f8c01b3a0ea59bf3d40fe25a1753db7ccddc1c4f5f08",
+      "src/beamSoACPP.h": "8891560dad1d40711bcb1d44972acd92fd4b76ec78b65406a68ea8b6818fce81",
+      "src/besselCPP.cc": "fdbc8ceda759d665ac0a3eaa10e3b4fa7297d834da6b663138b0786a5070cf80",
+      "src/besselCPP.h": "8097b0141c5c24665b41268f9eb3374d37e16234a1197a0c23b2830ae8457514",
+      "src/bhabhaSamplesCPP.cc": "a7c291aca27f26b990d626cfbdb64dd4b25530bada0ccc168a3886f674bd3700",
+      "src/bhabhaSamplesCPP.h": "28e63a2b6395a4cdcfab5f06765423be5aa37648322fd6544cd714c384c1333a",
+      "src/bunchReaderCPP.cc": "010e6b00faa47843109770020367b0a2dc4860edc552f2583919d4772c5b7b71",
+      "src/bunchReaderCPP.h": "28ed6748c66ecb06b3cd73d724e3d6b3ab52e322b15ed30a7f59f3040d3905c4",
+      "src/canonicalBunchCPP.h": "d1a3efc760217c73334abdf562a3a3dd4ba31c615b4eaa22dd7f44c03637993d",
+      "src/cellCSRCPP.cc": "de7be5e73dd478b342e58dfc84cf80435661d74fdc0eae36fa3e6ee66a6a14f0",
+      "src/cellCSRCPP.h": "f3c03cdd29c3d2b89e1d7729e01f504eb931a6b374ce55d06e343d56e79f9986",
+      "src/CMakeLists.txt": "54bb724068e8260b628b35fa4e0aca518403680dd443e252b27314d51ca15771",
+      "src/colliderDiagnosticsCPP.h": "14257b63ed9063c8cb51c22a48e9d5cdc86b93ac05bc6fa40fd90d04bdd73662",
+      "src/colliderFieldsCPP.h": "5060570ccfe54a7ab12bd1cbf9d016a54af93a7fa4381406d6f5d4ec0a97253f",
+      "src/colliderImportedTrajectoriesCPP.h": "35715c6d19bd1f0d9a3b1111d9db6de55d04abac55c3c6ce59a130c164b74d6b",
+      "src/colliderMeshCoverageCPP.h": "1176e43719ccc6a64fbaf6eebfba439419f55025891c31d5b1e9bd9b0cc84529",
+      "src/colliderPeakDiagnosticsCPP.h": "48875f19c62df32bea119dcd945660ba4d90f417f5d3f716cf8b73277702e10e",
+      "src/colliderSecondaryFramesCPP.h": "0e579f59df9062895f49a79077118a246b11f72a314c49cf15073d165712c1c7",
+      "src/colliderSnapshotFieldsCPP.h": "a9819eb6e1a14c15bea929f108bc627c556f3734f8b63e24b7291389f09c5e29",
+      "src/collisionGeometryCPP.h": "2789bb1950de9f9b19e7205b4d99a2859d3550db8481d1aa8e028e5f76f6f8ab",
+      "src/config.h.cmake.in": "9106e745cfd9212b0e25cfa75608a5d98013b9c367ab90f3bec6de729296ecd0",
+      "src/config.h.in": "38042ae8bed81ce55267c1be2104d1b30ee876341cc5cd7e3ee032c71fcd99a6",
+      "src/counterRngCPP.h": "0181979207b9077954fb470dd5f3f3a1eef5181259aaf2def8494fe623f3f432",
+      "src/define.h": "ef2adf5993ac759e06929932bcf86af436a222f94d371903b45fc58e3e2ba333",
+      "src/designAxisSpectrumCPP.h": "ecdd94737370597c921f86f0e927ff4376b5d9523890c8f7319f239a20ce75c5",
+      "src/electronLumiBernoulliSkipCPP.cc": "d84fd81d645211679616f11031cdbc3c23ee4a40a9ec690c2957cfa4867542dc",
+      "src/electronLumiBernoulliSkipCPP.h": "6f01f6f487ca4fb9edb28e3620548a06dce2c03042ef61b80d6e477cabe18e39",
+      "src/electronLumiSamplerCPP.cc": "e516922867a1c50a532b0a5540adb52f5ae88a7808e2c41a5f893bb9bda1a656",
+      "src/electronLumiSamplerCPP.h": "fdd96f2c17063bd2f6cfdf0dd9d00521c6b475cb477fdf780848b26317b16b02",
+      "src/electronLumiSpatialCPP.cc": "57ddb6b6fb51e8b7fbe77b2e5a9ec084da2703a526d7546190d10ec34b9db538",
+      "src/electronLumiSpatialCPP.h": "3379c46000971e92c003d2eb5dc820c57761f5274c4738da4b6267d337d35564",
+      "src/encounterDAGCPP.cc": "f2e9362cd032d192f63ebbe32844410fd8d95dc1b3023d2de23f6c2eb48a0459",
+      "src/encounterDAGCPP.h": "c85b5168fddcc9b80e8ede2ec6f3b62f415c8c8a4b231443b186bea6eac748e2",
+      "src/energySpreadCPP.h": "3f875ffc45028114f240ebea1c9d1a268972e18219f0f33d9c6c51a4f881a29d",
+      "src/extraPhotonCPP.h": "1b4ef486132bf6c27523357bf232d5c2124d0da61090c62618ab271854f76ce2",
+      "src/feeblCPP.cc": "68fd6e3a37db2f809c4b2235098f224182deeb400357e7c3a0605d4a0d883474",
+      "src/feeblCPP.h": "cf61a989f29eb6d24818ec487ce17bf9e7785a55c415d6aab3aaf51a95fc7bc7",
+      "src/fftwPlannerMutexCPP.h": "78e522d8fe6f04e17172f28636b7313fb15b565be7ba26986054a6f3b07c0840",
+      "src/fieldCPP.cc": "0f44beb2f403b7b82e9b1e8adad40041e4d04f602a47912cedf992d1c00436b2",
+      "src/fieldCPP.h": "640f45804727921602c3cdda5e247e90557601b2eb17b4b06c82d34107217b2e",
+      "src/fileInputOutput.h": "ec0c23d1a021cfb5122ef78f6729bfcc07d2dab130ece5ab77c9ceee17ce6a3c",
+      "src/fileInputOutputAscii.h": "104294d8f1d94bb293890eed05aefe2dcd08b39ad14884e298564508e9ae3e60",
+      "src/fourierCPP.cc": "0576607cdb4083ed5a6880fcf5324d383c18583039bbbfc5b4177deb91a155d1",
+      "src/fourierCPP.h": "1a3666f3a36b260da946505d01ffbf733b9006cb0b1057043afecda13e87451e",
+      "src/gpgeom/maps.hpp": "9e5a11571261e90f42e7273eaf33848fa94d11bbc9bcc5a263a21a7caf4021b4",
+      "src/gpgeom/phase_space.hpp": "0a8d42aeca5e3c6a93366d985e8c4886a673140425b40d2fb16ea3dc5a7df2c3",
+      "src/gpgeomMaps.cc": "891062844e3e9c6c9efc0c991606eb90a862d2a418526dbe7eac7c922f9d949d",
+      "src/gpuAdaptiveWaveBatch.cu": "c5a73cdc7bed86589ac86f26e2bf9a41641b7af5ba39db3ae02d403d11f572ae",
+      "src/gpuAdaptiveWaveBatch.h": "d7b8e2e5e9bbc966f9a40221603683ce8b16edfc03c713d62acf369cbc699c74",
+      "src/gpuCic.cu": "d46923b9afc7baa9ffbbf6f1f93167a7ffba58dc70edc5994916b2dec081ab2d",
+      "src/gpuCic.h": "e3639181db58f4d2f189664f5424c0a5b1fff30a12c65b4a68e0a449becb08eb",
+      "src/gpuCicStub.cc": "e06e7b8b224a3730d12f1e0d353bdc3eca4b6961c7f84a0bff3ba63a4a4840be",
+      "src/gpuMode3ProductionCPP.cc": "0a591ab87c42157af3386b222450ca18a9e7da2908182ac434dab899a0da91f8",
+      "src/gpuMode3ProductionCPP.h": "176c5d75569963d73dce493345f24f32a6086005996a03582e93724517d735c8",
+      "src/gpuPrimaryModernAdapter.cc": "2408180db3ee0c56266bc04ce4e04ed5e0735fbe1d5c90e40186f2f7d3ea38b6",
+      "src/gpuPrimaryModernAdapter.h": "84b0216af25f79b32d7e303879db49e5f8656f4f6e0e4c3a8bc5456582563db3",
+      "src/gpuPrimaryResident.cu": "af314ec06716ab0a7b2e4827c4a225f13ba060a17335a049cc0af7471c65f972",
+      "src/gpuPrimaryResident.h": "37ace237e67d02cc8e26304d285e2e3346d72bafeff7e745ead0d6fdc7790385",
+      "src/gpuPrimaryResidentStub.cc": "c6cd038f723138b0b052f0752debe42b3442628d65e883dfafcd71ae01074a9e",
+      "src/gpuResident.cu": "45c63df36f51cf5eed1820ac738e7b656330c301a1a77c65c1d28c7f1748292a",
+      "src/gpuResident.h": "45ca74b68d597457c89cafc258a66883fc63e081d6fb66bde176aba4fcdcb556",
+      "src/gpuResidentStub.cc": "792058d5957e2866fa222c3c4332397012fed2bf2e37f21471ce3981aea293be",
+      "src/gpuWaveBatch.cu": "6b6566a6e23565fd847f45232eff3752cc3cf287d006b95f1f5edf88d408d102",
+      "src/gpuWaveBatch.h": "0a1f48d34a4e97596d0c25a050ca76422ca29bbd192af0dec526a1e728b48893",
+      "src/gpuWaveBatchStub.cc": "03ccb7f37f5e06a359f6021f6c76fd4b02fbbc4224e1207eb5ad82b55b47e278",
+      "src/gridCPP.cc": "be6e9ccc4135b5ac8a6357c278a5f70007d19e4bf1489a6d807641570950f34d",
+      "src/gridCPP.h": "b9c3d81669448922185d4fe20b94e82c861324cc1e65e23bbd2d94adfa123ed6",
+      "src/groupedEventsCPP.cc": "cd3c9d895eb1df13d0337bae58d3e7c403c9d623c31912d19c17285be595e76f",
+      "src/groupedEventsCPP.h": "6ee55b2db8a4199c8919fa947b689c945a03c829c25a40389ce39bf39a27fa1a",
+      "src/grvCPP.cc": "ba6ffa05799594a6ea746200bbba87733095e8afacdf50309de562f89e54c668",
+      "src/grvCPP.h": "21fc17c418f3823a5496d54c58cb94ba36ba259952b7555b1c82f61ac215c017",
+      "src/guiSpectrumBinningCPP.h": "63f86e40e50a6bbb86ca06e7be79f777dddbbaeee66eb5f83d40d66a14306f0a",
+      "src/headOnFrameCPP.h": "a2c2d5cc99d96854858e4c015233e74939da154281243214a1fd772baf60452c",
+      "src/IfileInputOutput.h": "b1a6b1b65f4379c6cefd487df68a17eda51fc0f38d5d33c1edacb02e39dc3167",
+      "src/incomingMapsCPP.cc": "55384ada0ab65c5b2ed740ddd15efa073ae58fe68197b5ceedec8f4fd8884377",
+      "src/incomingMapsCPP.h": "ec9c83825ee0be3d00c2a47843aaecfebe5cf132ffc28d66b4f219de3aba55b8",
+      "src/jetParameterCPP.cc": "3256f3f1ba65adea06fe359b9b12eb199e5e1fe6c00bed0d148dc2ab4143339e",
+      "src/jetParameterCPP.h": "fb7b11b1770fc8fea346c4649cae9db5eb40f3d5837b7d8c98fafce1669b644c",
+      "src/legacyElectronLumiBlockedCPP.cc": "8b15f4155f2f48db0359e0ac7ab7f5af3f1175d98cd40d93fabdf015c3d30ef3",
+      "src/legacyElectronLumiBlockedCPP.h": "9477541cefe250f0a6d57b9195d98e9685396ee073de1c425900713a2596df76",
+      "src/legacyElectronLumiPrecomputeCPP.cc": "221d142050e9875c52064bed7dd5c154dc95484628eebf2adacd88d250c848a3",
+      "src/legacyElectronLumiPrecomputeCPP.h": "56f2d61a449d722a5626133ac30ee3cf329331a59a07badbef7eafebc190eec2",
+      "src/legacyHostWaveConcurrencyCPP.cc": "266c951e0941a18b25d23a206de76ed3bbe7115faec78170309e389396e1f684",
+      "src/legacyHostWaveConcurrencyCPP.h": "05fe0e665ae163f1299b529e7525cc38aa270d778385944a133938eda3b62d6f",
+      "src/legacyPhotonLumiFastCPP.cc": "9af1f40f8a9b0cc3e9825822d274d90e8719f0a7b455f705d08e56759cae0c49",
+      "src/legacyPhotonLumiFastCPP.h": "ff2e1fceda3f205e5feca0b494ef71f99f78a582d158f17d3e24b02ec7af02e3",
+      "src/legacyWavefrontSchedulerCPP.cc": "6c99678c8b87570b5ec8858d22c9592f510b0b2c2264e0cf8c5876c043122e39",
+      "src/legacyWavefrontSchedulerCPP.h": "ffc7051a5b4d2e3fd73d82d740534153330553d5f0dee505e94a5b05eb49e05a",
+      "src/lumiCPP.cc": "fa9b1cceb1a31574c96fc9a4c7b1c293d63b73e284a063addc30c33c06b67cba",
+      "src/lumiCPP.h": "df747887413763c47a5387b4b70b2634172a2629a8d1309260aa5245dc06679b",
+      "src/Makefile.in": "c6fc6a93576062aeb68c00d3607ddd44fda1a42f2cc939da1e53739474bb4f86",
+      "src/mathconst.h": "03a246c60c153422c2115722046d177fa98cfb4644c397a9be67fd195d66f783",
+      "src/mathematicalEntities.h": "21c506397824bbcd87b36aa85546d7e42a696aa20d6d79740fcfeb500b9e4219",
+      "src/mathematicalTools.cc": "255f6939f25578f97d97e5566fb86640a70aab138ad607af510ba9c07ba6c26b",
+      "src/mathematicalTools.h": "c923eeb7701e2983eab3d8bdd81ca39fd9c8048b36a721b0e56e57cf01d7a0ed",
+      "src/memory.cc": "ad1a7dcb716b0d260a160e1cc275d1a1b3c4a0ac93dc38d9611d3b1cce8ee148",
+      "src/memory.h": "fe71ebf4cf37a2d14c6728673f9cf5874707bb742e082bb7fa0503d6c46dd83e",
+      "src/meshCPP.h": "d90359d6daeb35e1d9354b6d955bc2dd1571ca58b8c407edbaa4686856f4bdc3",
+      "src/minijetsCPP.cc": "6782f39730a27d36166da79299e7211d7fc134ac09fdc0890808364daabe6149",
+      "src/minijetsCPP.h": "54ebd21c5dc5c26d988e4dd27123d0692f14f502a2eba8fa3bf19ccb13e9c80b",
+      "src/modernCollisionCPP.cc": "a667f9436464e574821254d6a3fdefa8c2954d62a5e594c6d250f190e80a4ca5",
+      "src/modernCollisionCPP.h": "e31d7f17b6b5542fd7568fcbd8fec63b1b627f5043d5b6c0e2635594762d33ea",
+      "src/modernCpuExecutorCPP.cc": "ee712001a4fd5fa3c869d4364a4596e13290976eda595b7e6a3a08c5072dd814",
+      "src/modernCpuExecutorCPP.h": "f9bf6fb4973a152be8691c6a89e745ae1256c5d32aef52372b3f49949af0a094",
+      "src/modernLegacyAdapterCPP.cc": "9db042e1a5ae4ffed62c63e08147bc6790392507fe39976625d052a66ea61fa0",
+      "src/modernLegacyAdapterCPP.h": "54acf7e15531fc3bf65ca3703fe10ef89f2050e9620743b549a13d3b9a92ff86",
+      "src/modernLegacyWritebackCPP.cc": "cee576908904101e106a78c9aad0ccb1dbc49cfe87f68e82fb16669b8b043617",
+      "src/modernLegacyWritebackCPP.h": "1328eecb87296e202239a0eb420e54bff8940d9351a0a2f0cb1c5396b17ba8b4",
+      "src/modernPhotonLumiCPP.cc": "cc7303912a576dfa48eed81e9638b01c7c82e3a6432e3f8bd0972bf65f4d52a4",
+      "src/modernPhotonLumiCPP.h": "b78849d8a58ace990eaa91a96155a631d3b2958fd35135dfded49acec62b3a01",
+      "src/modernPhotonSoACPP.cc": "424be12ee88c4eab1c8f516eab1194b1df21cc611a466893a53e247f7b62f662",
+      "src/modernPhotonSoACPP.h": "8f7adf9058554d0286d02c592e705b444b5ae528c03664f8d97f822109004d9c",
+      "src/modernPhysicsPlanCPP.cc": "5cf569ae3279260a7bc7bed586d8a1c6fa270f8cf9d841d01da750429c8350ce",
+      "src/modernPhysicsPlanCPP.h": "7da568ae141db4d4f1701969f7f1d458cbe3fd2423694fc9f57dfc898b95d3e9",
+      "src/modernTypesCPP.h": "6a56d731a8d0ea1ddf8b61a567c3f0872584318972cba898377bd9337a4f5721",
+      "src/nativeOutputCPP.h": "e9e58ab46f62abe9913b6074755301163cf26ba58d65dc0257c21b0434ae7d71",
+      "src/option_args.cc": "49d97843219392d36d532aea416ef8b1f3b74055667c8b6266f761489098aae4",
+      "src/option_args.h": "e87967099a69756f8d57cea103a733e6ba2ac9dd32818f0e578c9083746d6e64",
+      "src/pairMomentsCPP.h": "6b04d23415fab8e27bf4dc7809dbe1c43802f8f70d1e8995dc2959325319e2be",
+      "src/pairsCPP.cc": "cfc74027a7bf56d1be165d0c6ef6b52d19e2ec8a73eb540cb31a507372cc4d7c",
+      "src/pairsCPP.h": "1dea6d9be0e840e4d69c8b63274017418aeaa8703236db10027f27e52933e418",
+      "src/parallelBackendCPP.cc": "3a1ec9d7ba116d98993cf695894320c71f24268328160ccb7838d56ecd91f993",
+      "src/parallelBackendCPP.h": "cd4c0fdff6cb396051fd463bdf500a4e2b19d9207340ec25b74b7a3262b67dc4",
+      "src/parametersCPP.h": "c56186ee35c9e0cc67f38171fb7bfeb4013dbb0b2552da639e33f911bebe859a",
+      "src/particleBeamCPP.cc": "30d6091a56be38f0f42d68783881d8d07c38aa2d39c2ae95d7be699e7059229c",
+      "src/particleBeamCPP.h": "db6ba2fecc689c78453c6ac1386c36701abe9368b8e0913b6fbfd7d63a20dddd",
+      "src/particlesCPP.cc": "9d5cbffadd9101f1f6af521c42a06ea71fa52598d8b6b30f5a839c7f2bf6f197",
+      "src/particlesCPP.h": "bafd5f62f543578d9e12ff7b8e0ebe3624f643aec032548a0a8706d87c24239f",
+      "src/physconst.h": "5857d84eff38cc5bb4053c3906495d520cb6158522860bd403a815b7631172ed",
+      "src/physicalTools.cc": "32c4c3813be538a9c2b759a9a8c9be1276d648971e18eac65f72224dcb459430",
+      "src/physicalTools.h": "6a292be112120f9099962ba8b92de0b544c832221f54663aab4196df0059f2c8",
+      "src/polarizationCPP.h": "79bd4e260392403b788d4400fc57e68b42bc0e07347b5f44f2dfde1354c65d58",
+      "src/primaryParticleIdCPP.h": "30840ed891dcd626b4ff106d8b62dff0993c77e2ed02830489d57cae4781f2ae",
+      "src/principal.cc": "b955af4481ef8b2797d64bd8e35da01ce575586d9c3d0d4048dbec59dba8e579",
+      "src/readData.cc": "7ed9a388fac54bc89738a68193e8c477d244cf997dff41149a8fff05776bba46",
+      "src/readData.h": "3be77a9095d7843a158fbbde9f23f3bce85f0381f7987665a0e851e2a2bf5ea3",
+      "src/resultsCPP.cc": "886a4c8c1fee34ec225ea5f2284e3e2ee99503842d421d76e11c17ccad641491",
+      "src/resultsCPP.h": "0e80d9d6b368eae04db9f4e7edd3aed1f2fefeef553e75501b083d48e2d0cc18",
+      "src/rndmCPP.cc": "2cbfc05982d96d868853a9504039d57be9709f87cbef877627327067d2dcae6e",
+      "src/rndmCPP.h": "7031f74853af8e71c0250cf42ac2414d9b4f0ccaa063bda53f822691380cf5e7",
+      "src/sparseDirectFieldCPP.cc": "979c24bc8d1f0dee3959fd47aafd5b002607c5a3bb38502cede98442aee04a12",
+      "src/sparseDirectFieldCPP.h": "f49c4b57c384ab49089df08ca13b50dcb75ab9cc9558ee778bab2ca0a8685277",
+      "src/splineCPP.cc": "0fa58afd3d11c0a39b03b0619de95534678ec6191b1c57f72cb9674a36b4bb1f",
+      "src/splineCPP.h": "008e870dc64633a90bedf6a2c185ab99db7862c22c75db016b755a9dabed735a",
+      "src/switchesCPP.cc": "0ea2bf0738deea1bc3927600b5b42c2b6a2f30b4958e0493516da00d4a229002",
+      "src/switchesCPP.h": "f1f66580d15af97cadb0a1b2aac6e78f7d1da057eb4229c82e1bd73e5789105f",
+      "src/timerCPP.cc": "4888f7b9288df3b249f77980c0d75da7e0e1e0fda2057f403fb36f2b5d5612a6",
+      "src/timerCPP.h": "a534ecf22e112f4ca61338286e0606f262c2897e34ba713e63281a86392ef24d",
+      "src/tridentCPP.cc": "466568fca8e2a90336589b33a90d9643806566d733a0bd2140a174bdfae84e50",
+      "src/tridentCPP.h": "d26382cf6ffe79a121ffcaafc8f7ebe6b2d75f23a4f89cc24cf7c24d62b169f1",
+      "src/typeDefs.h": "76a5bbb95dcf24df064dfd84c3b92ca84a8c390b5811cfff4e1b26698b712046",
+      "src/uniformWindowPlanCPP.cc": "3516e43141c277b5f8286fd53b9a0022a372fc7a0d51991d8b429160ec66987f",
+      "src/uniformWindowPlanCPP.h": "1cf9f05be9721b70c593747b781e4c61247f31d4539fbb6e5802818ad355e3da",
+      "src/wavefrontFieldValidationCPP.cc": "3600b95799095d646a31887c3f4d704404e6277ed50943781a7bfa2de705fccf",
+      "src/wavefrontFieldWorkspaceCPP.cc": "a4678a9659cbad1f63ce6460df42fda88e4842a41a49415c488e8b22378223aa",
+      "src/wavefrontFieldWorkspaceCPP.h": "ea56a36cdfb5578f53b8c78b2c16031d3b4697a9f8a1a6011ea2e307e387d02c",
+      "tools/audit_gpu2_primary_mover_benchmark.py": "641b54802ba6c6fc95f7b0bf20b74c5c0209adabb9b5a18014b6180f47343195",
+      "tools/benchmark_backends.py": "149e305793da86fdb9b32f461f113cbb1515083a4cea7c3c88a267492ca075ae",
+      "tools/benchmark_cpu_backends.sh": "4b15a1b7bb27ea38a5a59ac31e7fe3d9f6aa9b4175134ed0707dbe748a2c0047",
+      "tools/benchmark_cpu_primary_move.py": "96b6f968bfa7eb422ae22706b5183dbd47275ed0c6b08a2fb61289d8375aa45b",
+      "tools/benchmark_gpu2_primary_movers.py": "ea91b8f2ff568b644b19716b1da57423dad31663c5e70c7ba6e6b475236e6af4",
+      "tools/benchmark_modern_cpu_executor.cc": "4985b04127da7c688dc717355f023b90dc3f94d8957ea46d449c184323abda31",
+      "tools/benchmark_sparse_cells.py": "2647d31cbd212e6a63032e84900df46af54d81542e2acc6b736d4323f556d23b",
+      "tools/cachegrind.sh": "ef634a9a3b4a5ec070cc177017e09323721dbe2b715768d5206e2a71a0d03a73",
+      "tools/check_browser_modules.py": "24d7e045812d5bfd090bc4d1237a7f2a6e4543ab5e2177469c6ab6286ab7e4f1",
+      "tools/collider_analysis.py": "3c8b5192e4ff262b0034c2e2ee6bfd4236e0940901c267ba4ce719fea1d29460",
+      "tools/collider_beta_gaussian.js": "d83afd092d9227ba57dd4c3846bd4774eff5121806af304d2fc12b2ab6137e74",
+      "tools/collider_beta_peak_fit.py": "89350de4f85a4281e6a804b911493f28b520eac41d6b8ab06ac3e910cea18de6",
+      "tools/collider_contract.js": "238f438e8c596ceee4822b037ff2391b658841996d135dc9ef7977500bff1b23",
+      "tools/collider_diagnostics.py": "69866805a467062207f07f51692f48935860ffdd3206a20abf161038b0c2f7cf",
+      "tools/collider_event_deflections.js": "23f88474015bec9ef55807fc4c85e2fc3005e0e5dd35f5ac49d8102e10e70658",
+      "tools/collider_event_deflections.py": "151d886bfcdc79e171465c172eb6a603314f6252dc24ae14dba6b45c0730423b",
+      "tools/collider_fields.js": "f7d7fb85350b84750d58fc2733750f964ca1f14cfa2dc502621032a18cc34f15",
+      "tools/collider_fields.py": "e66e3f9490f751bc33542487387b7357ce339e374bee2dc6ad527cb73286660f",
+      "tools/collider_monochromatization.js": "568dee4043e5f28276cd1804b34d5edbc5b7cffa40f42d52c7aa636f704f8877",
+      "tools/collider_monochromatization.py": "0a0bf7ed226484627793cf44f2531bf8279914f655afacb7405ba5fbef62e6bf",
+      "tools/collider_peak_diagnostics.py": "a953fdb07736a6da77d3c37791d8cbc486c5e5ab398bd455959f55d20e34c6cf",
+      "tools/collider_peak_fit.py": "66a06a3454b193efab226bb7abae635ea00dce1291dadc2525bbdf4a03f049d6",
+      "tools/collider_secondary_frames.py": "de8a8797b8a81ffd1c248ecc7f5a9b509ebad9d82c5dcc22af5f82665bda090d",
+      "tools/collider_secondary_kinematics.js": "3a7ac51c0d698ac365b97a67adbfb178ad77d3065d05a9d1c3e924755861f19e",
+      "tools/collider_secondary_kinematics.py": "9f75f4dc3a857c5947599688206fe319c0a9c7c2177b70046959446a71e53c8d",
+      "tools/collider_secondary_positions.py": "18300f8452cab76a6da043986ecd98ca2e242f3ef4459bd89de919a1a4f95190",
+      "tools/collider_statistics.js": "f0cee972d0bf2dc768c7f12eca296523f788d0e50df970b715ead0f1947dab82",
+      "tools/conference_harness/harness/__init__.py": "388864a8d468b14ca987e757e69b734a7b40f2abd0dee737b54efab5f005497c",
+      "tools/conference_harness/harness/__main__.py": "2c0748b1fc66b10c899cb7c11e65b9bcc3482128a72142757d2c18d1bf1c70a1",
+      "tools/conference_harness/harness/common.py": "fa80d9da83c4a101dfb4e18a0fcfe7f3c8567e695a7a3649316bf3fd40e88fea",
+      "tools/conference_harness/harness/compare.py": "8509836de5352c35a92f04c6a576fe86e33104ab9fb37342f1627b6dd5f8a301",
+      "tools/conference_harness/harness/lhe.py": "75c42855a7b32dfc39a01dca266073aadd7023f82fbdbca5788c83af6215a532",
+      "tools/conference_harness/harness/runner.py": "6c9d0a7c81e4d11f03da749dcb7e624a1bc4138b41be16908dab0eb02b1fe423",
+      "tools/conference_harness/harness/toy.py": "31852d0555155d0c9888cbff3b922690c79b0e64dbb86177b34ccfce46c85da5",
+      "tools/conference_harness/README.md": "e13b94bc62967c2aaf2c8b07c2a57e87501944ff4bfdd3ed0bde20a3f17053f5",
+      "tools/conference_harness/tests/test_harness.py": "49791a756eb659a0d7d3b4cf8166f9ec23ddb4fb02817db77cabd386360d4eae",
+      "tools/feebl-optimize": "238e8d9dc7481d49e54f06f6b9d65cc247a5e7ccaded574e7a8c6a0223f11356",
+      "tools/feebl_gui.html": "e6702040390c96cf6236c1c64ff72a4204ec9a50a97ce7871ba62df01219295b",
+      "tools/feebl_native.py": "cfd85ecc0ad4ec2f1dd3654c400f6f078222ce329c2e26b8ce1610030f25be0a",
+      "tools/finalize_gui_dataset.py": "e4f61852739e5c3f4b4fcd53a1d1003008586eabc30e50e5b0a4b59eb5cc42ad",
+      "tools/hwcount.c": "d4f4d23ac2496a7568a22cfee0d7a132146ee4f82fefeacd0aeb50202056dcbc",
+      "tools/layout3.cc": "1653e0033dce48974462cfb7df940d80162e77c8b4144ae0afd2ec4685610e26",
+      "tools/layoutbench.cc": "a1dbba73d8a7b1492392556d05b7ae97db72918e017f2ab45d88c3e5380173f6",
+      "tools/modern_benchmark.py": "ac039608722c9267d52421d452db0d9298faea67d17639afcc962a790b2216df",
+      "tools/modern_cpu_executor_benchmark_support.py": "96e8a065089c4077383fb9ac95cda3bdc963002137f0f801009f2a2e58f7cb2e",
+      "tools/packtest.cc": "88f2d3673969c475513f7b551362ea9d6b45bb2a02f14239be7480516304649d",
+      "tools/paired_backend_equivalence.py": "76e84c1b748c233174ae3d6e51732a00177285ba7359fff74cf9911a6a4ff2d1",
+      "tools/perfrun.sh": "1a6038dc2000e8147ba81a373934783b00c2c7fe01de674c5f8a5d748d5f818f",
+      "tools/plot_spectra.C": "848f6517a325d842bfafa979eaa9646d1633ece1a3941ab0cce4a1e51ed2f579",
+      "tools/plot_spectra_standalone.C": "cc5d688c6d48798cba33755b0b874614ff8ced3f9201f307a84769c23a601f73",
+      "tools/render_parallel_results.py": "0d1c013bb5871067411f55d1dd52430afcd563b99ea3b547bf09b5c256b868d0",
+      "tools/reproduce_gpu2.sh": "ee8c54ead991d15292df66fef29a2b5f29abda1d05cceb219931f8460662a11e",
+      "tools/reproduce_parallel_backends.sh": "348cb6fd378d254603a9d1acee0f90387fc5e627cf17532bbe20e9fc5e3ccc0b",
+      "tools/run_modern_cpu_executor_benchmark.sh": "f3df71db030c117ad68de4e17c69c156faa98962a48059f20250bd30e5946153",
+      "tools/serve_viewer.py": "5979ee0edf399091b7c2345a1d729026f84abcdf2e9500df570dbb61a48b6d0b",
+      "tools/summarize_gpu2_stats.py": "4bad23e38d4c7ad9e7b3843d9a1ca2f97cfa9d8badc549d97f69912e4e307b2f",
+      "tools/test_collider_analysis.py": "1ee3cd02fe9da1236fb9bfda7609163ebfebadbd0f81a820b0ae7f8157279298",
+      "tools/test_collider_beta_gaussian.js": "257936d710dd5fb431c6fa8c06d0a6470f3acb7c0a19f1cac8104d4ab4fd32dd",
+      "tools/test_collider_beta_peak_fit.py": "10cfd68d797c7a0cb9d1b1a35fb0c9e0867a086f06c1bff816198cf2187c317d",
+      "tools/test_collider_contract.js": "256fed64a4765be71e665b4dea4ddf00da5e2915ba29db5f2b84461da71e0533",
+      "tools/test_collider_diagnostic_adapters.js": "41076927dac7ae47d05d7ca44cb95161269ee425d33e604cf3b8a97313ac9713",
+      "tools/test_collider_diagnostics.py": "6e9bfc8eaa86eb367c3b90c286decc3d7dfe2392f8231215e1da001aab57495b",
+      "tools/test_collider_draw_queue.js": "5b5a8ec6fb9c8648fec1e0ae5270124be4c0fdae1280ef72067a196eb2d6cf02",
+      "tools/test_collider_event_deflections.js": "3150c82873014ca4754ca6ee07f67cdb3b9308150fb7c648b2b493e6db919b7e",
+      "tools/test_collider_field_blend.js": "8f90362829a9c2ae59956a1a2e52e47c5a74810b67d347b53c0763fa45b27376",
+      "tools/test_collider_field_window.js": "86e4c24de5ec0fcd816d8e529f54c245aeb8901390b9bec67adef759dece5511",
+      "tools/test_collider_fields.js": "bdae4105de02d4a4a42750b085a042a690d25e2bdd8e3e6b070c2fa8d65d4ae1",
+      "tools/test_collider_fields.py": "27dee2aa8e9d2b7bf5c2b78aece13e19dda774f3788f3aa1549ad7f632090d55",
+      "tools/test_collider_longitudinal.js": "f0a354fdb961ea712684b351ab8f1bd6e007ef6af1a9dd2448ed8ed89843a95b",
+      "tools/test_collider_longitudinal.py": "c398e85d5bb4f2e3ea789af2b893d74b96468d9453fa384bc052334bb43640c4",
+      "tools/test_collider_monochromatization.py": "37ff1e3dcb6dd49a6310535e0984900fe5ac7070bbc823cb444e0369730105ec",
+      "tools/test_collider_peak_diagnostics.js": "201fca8ee6fe18f733475e1b0250b552ae666302612a8adbbbc2c3d3db9d110e",
+      "tools/test_collider_peak_fit.py": "edbdb6375feaf7feed730bd17ce2ce9e4f6bfef8213856be2ba54ac555e63983",
+      "tools/test_collider_position_z.js": "598a2cf515120a2dcd8cdcba5cfb0d9ee0f23242535f4d4807b40b76b2d37b28",
+      "tools/test_collider_secondary_frames.js": "e52b9a65a6f7035abd69d2000bb30cfba3c55976618eac67194def95fd5b6cab",
+      "tools/test_collider_secondary_frames.py": "0a0dd164fd14141a1a1a6c221a1c9597f078fab066f604bf1ebad85a9e12a53e",
+      "tools/test_collider_secondary_positions.py": "102d965e953e6c204b73e7fa260ca4fcee872dd2be3d3090b99cd59f715d5eb4",
+      "tools/test_collider_snapshot_fields.js": "b9ebd49f528cf0d249dc7f58ffab7fc4eda10a966d9c14075fbdbd61ec2223d1",
+      "tools/test_collider_snapshot_fields.py": "c6004df000925cd3745c3917a6f70fae89b9933e66d24906a3c2b21bb5c246d3",
+      "tools/test_collider_species.py": "ac5011663914b8b7d48dcdf7d2051b9079f42ab2d03d2b595557b09eea0741b8",
+      "tools/test_collider_statistics.js": "37adc3bdf9bab0eb83a11f0d64c2bb1761482f02d9e3254e6a4a9e0888cc788d",
+      "tools/test_diagnostic_analysis_binding.py": "092999f87c5a8e73e85e9176c37020eb0622ee6e952e0ad5c78b1857a874b962",
+      "tools/test_gui_contract.py": "2362a1b85d99931e4f317220d5e2813ac84fb0602a86e2df33aa99c16fa959f7",
+      "tools/test_modern_cpu_executor_benchmark_validator.py": "e1bc2f7c50d8ae2627da0bb59be8433ec7fa38776ff43f5c93057239ccbc60d3",
+      "tools/test_serve_viewer.py": "f1a1af2297c42fafeaec054663eacdeacd5ee0f1a8e55d7783cb6b923030b328",
+      "tools/test_source_identity.py": "aeaae3b9d425d3ce8804559c0ef36f0609b7c9478e86f3b479775fea68e7b367",
+      "tools/testdata/collider_beta_gaussian.json": "0d5a8be82903709923b1a5d4ddcb47265576a76be40104edf6061ebcf5f81fb8",
+      "tools/testdata/collider_event_deflections.json": "8e1fc378aae1b8a5d60a451cb886c21f9c17b34fccc16b6632a44b0cec1608a8",
+      "tools/testdata/collider_longitudinal.json": "b25ffd2dd558c07d00d2cb23402d2b0b1674d18e045aee8ec09631b63fe49fbd",
+      "tools/testdata/collider_new_diagnostics.json": "51e3ac3ebec2e765b9171aef74acea018dcdabca8c2abf6032fae430f9917ab3",
+      "tools/testdata/collider_peak_diagnostics.json": "500e6f2e3c2332664c43ca3676bcd40b58c26208edebfeb3e2938d9802d3d33e",
+      "tools/testdata/collider_peak_native_fixture.json": "c01bb15311d47d8ace3623b5440e1aafbb7408edb4a52a84a0ecc726aa2d5494",
+      "tools/testdata/collider_position_z_adapters.json": "ca9311ad07547ad1da6117e41c72a58f800fd1bee9f52e20ff3ba96fecec1e1b",
+      "tools/testdata/collider_position_z_native.json": "b2e4fd0e95433220b522938059116c8be5db7db59759b8c45bc038103fdd5159",
+      "tools/testdata/collider_secondary_frames.json": "f856986679b696662e511882e51c0996f0cc35b4c2d52e9a811220cbd875b841",
+      "tools/testdata/collider_snapshot_fields.json": "def703a77735687e1db3e13d27be950f11d58f632ab7d897d9add8dad103a72d",
+      "tools/testdata/collider_species_chi.json": "c4b825d394b860688ca17682d94ff26ac981375a76c576a8c54a4683996586cb"
+    }
+  },
+  "receipts": {
+    "binary": {
+      "sha256": "9567e7d52447f4ec286ff80c04ce2136a72a66573a5c0346bc34f43d731389be"
+    },
+    "card": {
+      "path": "input.card",
+      "sha256": "709ce71118fb696085c8a7b7a55bac34506f122b00e9dfdd20465c2b834a751c"
+    },
+    "source_patch": {
+      "path": "source.patch",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runtime_completion_log": {
+      "path": "log.txt",
+      "sha256": "78876f14110e64021fa99bc6371bf4519a12020575c4bb482a1186763ced7edb"
+    }
+  },
+  "validation": {
+    "status": "UNVALIDATED",
+    "scope": "collider snapshots only",
+    "uncertainties": null,
+    "unresolved": [
+      "1% physics equivalence not established",
+      "lab-axis reconciliation",
+      "display thinning omits particles and cannot estimate tails or weighted observables"
+    ]
+  },
+  "availability": {
+    "ee_spectrum": "AVAILABLE_NATIVE_UNVALIDATED: full/peak, original bin weights and flow weights",
+    "pair_positive_arm": "UNAVAILABLE: produced-pair adapter pending",
+    "pair_negative_arm": "UNAVAILABLE: produced-pair adapter pending",
+    "external_events": "UNAVAILABLE: event sidecar adapter pending",
+    "frame_diagnostics": "AVAILABLE_NATIVE_UNVALIDATED: native frame intervals and integrated observables",
+    "field_maps": "AVAILABLE_NATIVE_UNVALIDATED: CIC electric-equivalent field maps; central source-slice x-y; source-specific z-x/z-y cross-sections; gaps transparent; full primary-source snapshots synchronized with the particle display; z-x/z-y",
+    "mesh_coverage": "AUTHENTICATED_NATIVE_RECORDS: per-encounter primary deposition and gather coverage, plus saved snapshot source coverage; no physics qualification"
+  },
+  "backend_initialization_receipt": "compute_backend requested=serial actual=serial cpu_variant requested=auto actual=serial cpu_threads requested=0 actual=1 reduction_mode=strict rng_backend=legacy gpu_variant requested=auto actual=serial gpu_device=0 gpu_min_particles=262144 gpu_calls=0 gpu_mode requested=1 actual=0 gpu2_scope requested=auto actual=inactive gpu2_deposition requested=auto actual=inactive gpu2_fft requested=cufft actual=inactive gpu2_streams requested=0 actual=0 gpu2_graphs requested=auto actual=inactive gpu2_fusion requested=auto actual=inactive gpu2_batch_slices requested=0 actual=0 gpu2_pinned_io requested=auto actual=inactive gpu2_host_threads requested=0 actual=0 gpu2_primary_mover requested=serial actual=inactive gpu2_memory_fraction=0.8 gpu2_profile requested=summary actual=inactive gpu2_plan=uncommitted gpu2_calls=0 gpu3_calls=0 gpu4_calls=0 gpu5_calls=0 gpu2_host_boundary=inactive gpu2_primary_update=inactive gpu2_spin_transport=inactive gpu2_beamstrahlung=inactive gpu2_rng=inactive gpu2_host_phi_materialized=-1 gpu2_primary_mover_calls=0 gpu2_primary_mover_particles=0 gpu2_primary_mover_ranges=0 gpu2_primary_mover_observed_threads=0 initialization_rng=as_rng_backend mode3_collision_rng=inactive gpu_device_description=\"not-initialized\" openmp=disabled cuda=disabled cuda_toolkit=none affinity=0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 cxx=201703 compiler=\"13.3.0\" source=f819b996b0dd99313b2decb15f5c9dd84feb989d-dirty",
+  "analysis": {
+    "path": "collider_analysis.json",
+    "sha256": "6aef2cd2bada64494890ab2fe5f8d57fdfe1499a87ca445d4c9b54f8ce3bd8ec",
+    "bytes": 5335
+  },
+  "analysis_csv": {
+    "path": "ee_spectrum.csv",
+    "sha256": "0feee7dedd319a1b8e824ac9dc94e5852e12f862f5d3d6ba221b2bf55706484c",
+    "bytes": 257
+  },
+  "analysis_sources": [
+    {
+      "path": "lumi.ee.out.dLdW.fne",
+      "sha256": "6eb1009f8392f33b15612620c0bc1985bdd48ae3cfb6351ee3ba26581a483bdd",
+      "bytes": 729
+    },
+    {
+      "path": "out.dat",
+      "sha256": "a6de54641da70ec0592a5fea56dd9e084d9fa8fe2aebc832261d08243c7ff2f8",
+      "bytes": 7766
+    }
+  ],
+  "diagnostics": {
+    "path": "gui_diagnostics.json",
+    "sha256": "68e7f965850e78e051dea444759095ae1a61bf3c99345e234aff4d5dbd7834f4",
+    "bytes": 1994655
+  },
+  "fields": {
+    "path": "gui_fields.json",
+    "sha256": "f7923b69eddf56aecd22fb1a573690882499edc5d19acb60ccdce3e6dd621fc4",
+    "bytes": 1195949
+  },
+  "mesh_coverage": {
+    "path": "gui_mesh_coverage.json",
+    "sha256": "c7857257903efe2001a58692ae9c29154c3fdc54efb8c1323f7e833054fd547f",
+    "bytes": 71797
+  },
+  "monochromatization": {
+    "path": "collider_monochromatization.json",
+    "sha256": "12e197bf50a9054e26b59f02cd9fa274021bf0db7db79d6c936d689f5574090d",
+    "bytes": 26046
+  },
+  "secondary_kinematics": {
+    "path": "collider_secondary_kinematics.json",
+    "sha256": "16c0c5a26b9d88e371313efb8c60c68c385d8ed03e5b254778b03d09236f5a12",
+    "bytes": 40097
+  },
+  "event_deflections": {
+    "path": "collider_event_deflections.json",
+    "sha256": "10530c55fe27522b264838eb1e3f0a124b8985790103a7c0194ecd13b7cb70eb",
+    "bytes": 618
+  },
+  "diagnostic_analysis_sources": [
+    {
+      "path": "out.dat",
+      "bytes": 7766,
+      "sha256": "a6de54641da70ec0592a5fea56dd9e084d9fa8fe2aebc832261d08243c7ff2f8"
+    },
+    {
+      "path": "collider_analysis.json",
+      "bytes": 5335,
+      "sha256": "6aef2cd2bada64494890ab2fe5f8d57fdfe1499a87ca445d4c9b54f8ce3bd8ec"
+    },
+    {
+      "path": "gui_diagnostics.json",
+      "bytes": 1994655,
+      "sha256": "68e7f965850e78e051dea444759095ae1a61bf3c99345e234aff4d5dbd7834f4"
+    },
+    {
+      "path": "gui_secondary_frames.json",
+      "bytes": 22504,
+      "sha256": "7ea6921d5fc08f9bfbfaa63e5535289a9d264bf80f33ce8a73698909a1ea4a99"
+    },
+    {
+      "path": "gui_imported_trajectories.json",
+      "bytes": 1708,
+      "sha256": "391982080bdba646fbb51ccf3524e0714297842930f15ec617aa73164ab2fae4"
+    }
+  ],
+  "diagnostic_analysis_provenance": {
+    "created_utc": "2026-10-28T20:45:07.229109+00:00",
+    "adapter_sha256": {
+      "collider_monochromatization": "0a0bf7ed226484627793cf44f2531bf8279914f655afacb7405ba5fbef62e6bf",
+      "collider_peak_fit": "66a06a3454b193efab226bb7abae635ea00dce1291dadc2525bbdf4a03f049d6",
+      "collider_peak_diagnostics": "a953fdb07736a6da77d3c37791d8cbc486c5e5ab398bd455959f55d20e34c6cf",
+      "collider_beta_peak_fit": "89350de4f85a4281e6a804b911493f28b520eac41d6b8ab06ac3e910cea18de6",
+      "collider_secondary_kinematics": "9f75f4dc3a857c5947599688206fe319c0a9c7c2177b70046959446a71e53c8d",
+      "collider_secondary_frames": "de8a8797b8a81ffd1c248ecc7f5a9b509ebad9d82c5dcc22af5f82665bda090d",
+      "collider_secondary_positions": "18300f8452cab76a6da043986ecd98ca2e242f3ef4459bd89de919a1a4f95190",
+      "collider_event_deflections": "151d886bfcdc79e171465c172eb6a603314f6252dc24ae14dba6b45c0730423b"
+    },
+    "scope": "Derived analysis of authenticated native outputs; original simulation source and binary preserved"
+  }
+}

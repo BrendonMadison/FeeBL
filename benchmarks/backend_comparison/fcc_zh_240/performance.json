@@ -1,0 +1,228 @@
+{
+  "schema": "feebl.backend-performance/1",
+  "independent_seeds": 8,
+  "cpu_model": "Intel Xeon Silver 4216",
+  "sockets": 2,
+  "physical_cores_per_socket": 16,
+  "gpu_model": "NVIDIA V100 SXM2 32 GiB",
+  "gpu_count": 2,
+  "physical_host_cores_per_collision": 16,
+  "gpu_devices_per_gpu_collision": 1,
+  "compiler": "GCC 12.2.0",
+  "cuda_toolkit": "12.9.86",
+  "nvidia_driver": "580.178.04",
+  "per_replica": {
+    "cpu": {
+      "wall_seconds": {
+        "mean": 118.4586076651176,
+        "median": 118.46457012894098,
+        "minimum": 116.23413160513155,
+        "maximum": 120.88434091000818,
+        "total": 947.6688613209408
+      },
+      "host_core_seconds": {
+        "mean": 1045.11625,
+        "median": 1049.355,
+        "minimum": 1013.49,
+        "maximum": 1067.3799999999999,
+        "total": 8360.93
+      },
+      "average_active_host_cores": 8.822628178735165,
+      "rss_GiB": {
+        "mean": 6.012040615081787,
+        "median": 6.361053466796875,
+        "minimum": 4.951168060302734,
+        "maximum": 6.449920654296875
+      },
+      "eight_collision_batch_makespan_seconds": 477.574636220932,
+      "ensemble_collisions_per_hour": 60.304710124255344
+    },
+    "gpu": {
+      "wall_seconds": {
+        "mean": 65.10604070362751,
+        "median": 65.07830825750716,
+        "minimum": 64.924232626101,
+        "maximum": 65.36998349800706,
+        "total": 520.8483256290201
+      },
+      "host_core_seconds": {
+        "mean": 237.45875,
+        "median": 237.555,
+        "minimum": 236.16,
+        "maximum": 238.51,
+        "total": 1899.67
+      },
+      "average_active_host_cores": 3.647261412822628,
+      "rss_GiB": {
+        "mean": 3.9057769775390625,
+        "median": 3.903207778930664,
+        "minimum": 3.8854522705078125,
+        "maximum": 3.940807342529297
+      },
+      "eight_collision_batch_makespan_seconds": 262.61955666542053,
+      "ensemble_collisions_per_hour": 109.66433865658921
+    }
+  },
+  "gpu_measurement_metrics": {
+    "wall_seconds": {
+      "mean": 65.10604070362751,
+      "median": 65.07830825750716,
+      "minimum": 64.924232626101,
+      "maximum": 65.36998349800706,
+      "total": 520.8483256290201
+    },
+    "kernel_seconds": {
+      "mean": 6.426344967126846,
+      "median": 6.426364088535308,
+      "minimum": 6.42470796585083,
+      "maximum": 6.427998396873474,
+      "total": 51.41075973701477
+    },
+    "h2d_seconds": {
+      "mean": 0.4148968042097986,
+      "median": 0.41471792027354243,
+      "minimum": 0.41375635170191527,
+      "maximum": 0.41672323168814185,
+      "total": 3.3191744336783886
+    },
+    "d2h_seconds": {
+      "mean": 0.38105248805321756,
+      "median": 0.38132159998826687,
+      "minimum": 0.3791563836596906,
+      "maximum": 0.3828406726010144,
+      "total": 3.0484199044257405
+    },
+    "host_pack_seconds": {
+      "mean": 0.39047172862500007,
+      "median": 0.39081395250000006,
+      "minimum": 0.38800128900000064,
+      "maximum": 0.3927539809999999,
+      "total": 3.1237738290000006
+    },
+    "host_unpack_seconds": {
+      "mean": 0.31798381212500004,
+      "median": 0.3183460615000003,
+      "minimum": 0.31355429199999985,
+      "maximum": 0.3230236889999999,
+      "total": 2.5438704970000003
+    },
+    "boundary_seconds": {
+      "mean": 8.431739280124996,
+      "median": 8.431666348999993,
+      "minimum": 8.423422988999995,
+      "maximum": 8.440325348,
+      "total": 67.45391424099996
+    },
+    "field_prefetch_seconds": {
+      "mean": 8.870498750000001,
+      "median": 8.870190000000001,
+      "minimum": 8.860520000000001,
+      "maximum": 8.88081,
+      "total": 70.96399000000001
+    },
+    "parallel_physics_seconds": {
+      "mean": 44.4495625,
+      "median": 44.43535,
+      "minimum": 44.2813,
+      "maximum": 44.6361,
+      "total": 355.5965
+    },
+    "resident_bytes": {
+      "mean": 858072608,
+      "median": 858081024.0,
+      "minimum": 857981056,
+      "maximum": 858165120
+    }
+  },
+  "measurement_batches": [
+    {
+      "backend": "cpu",
+      "concurrency": 2,
+      "seeds": [
+        72942001,
+        72942002
+      ],
+      "started_seconds": 0.0,
+      "ended_seconds": 118.50919985771179,
+      "elapsed_seconds": 118.50919985771179
+    },
+    {
+      "backend": "gpu",
+      "concurrency": 2,
+      "seeds": [
+        72942001,
+        72942002
+      ],
+      "started_seconds": 118.51395153999329,
+      "ended_seconds": 184.66528224945068,
+      "elapsed_seconds": 66.1513307094574
+    },
+    {
+      "backend": "gpu",
+      "concurrency": 2,
+      "seeds": [
+        72942003,
+        72942004
+      ],
+      "started_seconds": 184.67076516151428,
+      "ended_seconds": 249.82673597335815,
+      "elapsed_seconds": 65.15597081184387
+    },
+    {
+      "backend": "cpu",
+      "concurrency": 2,
+      "seeds": [
+        72942003,
+        72942004
+      ],
+      "started_seconds": 249.83226084709167,
+      "ended_seconds": 370.73234152793884,
+      "elapsed_seconds": 120.90008068084717
+    },
+    {
+      "backend": "cpu",
+      "concurrency": 2,
+      "seeds": [
+        72942005,
+        72942006
+      ],
+      "started_seconds": 370.7390687465668,
+      "ended_seconds": 490.8021047115326,
+      "elapsed_seconds": 120.06303596496582
+    },
+    {
+      "backend": "gpu",
+      "concurrency": 2,
+      "seeds": [
+        72942005,
+        72942006
+      ],
+      "started_seconds": 490.8077187538147,
+      "ended_seconds": 556.9670839309692,
+      "elapsed_seconds": 66.15936517715454
+    },
+    {
+      "backend": "gpu",
+      "concurrency": 2,
+      "seeds": [
+        72942007,
+        72942008
+      ],
+      "started_seconds": 556.9738993644714,
+      "ended_seconds": 622.1267893314362,
+      "elapsed_seconds": 65.15288996696472
+    },
+    {
+      "backend": "cpu",
+      "concurrency": 2,
+      "seeds": [
+        72942007,
+        72942008
+      ],
+      "started_seconds": 622.1336362361908,
+      "ended_seconds": 740.235955953598,
+      "elapsed_seconds": 118.10231971740723
+    }
+  ],
+  "timing_scope": "Two independent concurrent collisions per batch; CPU and GPU batches alternate and do not overlap."
+}

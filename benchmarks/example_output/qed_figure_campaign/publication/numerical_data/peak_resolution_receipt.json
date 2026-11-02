@@ -1,0 +1,60 @@
+{
+  "status": "OBSERVED_WIDTHS_REGENERATED_FROM_NATIVE_BINS",
+  "policy": {
+    "schema": "feebl.observed-peak-resolution/2",
+    "primary_groups": {
+      "broad": 32,
+      "sigma4": 4,
+      "sigma2": 2,
+      "sigma1": 1
+    },
+    "native_bin_width_MeV": 0.2,
+    "comparison": "All phases at the primary and twice-primary group sizes",
+    "maximum_resolution_relative_change": 0.05,
+    "single_component_required": true,
+    "choice": "Fixed per predefined optics target, not optimized per simulated histogram",
+    "uncertainty": "Alignment/resolution envelopes are not confidence intervals or seed SEM",
+    "physical_scope": "Histogram resolution only; particle, mesh, slice and time convergence remain separate"
+  },
+  "input_manifest_sha256": {
+    "analysis_inputs/study_native/manifest.json": "cf14fcf2df8ebbbc1cd3daa2dace46cddbaace0f52acab76f1f8e0b1ceee04af",
+    "analysis_inputs/monochrom_resolution_native/manifest.json": "84ac64f197ecba8590db8239d44e7c9d8f47a167695945f7b11c32a37ea73a21"
+  },
+  "producer_sha256": {
+    "reduce_study_sources.py": "c5608ade53ed32db80fe7a80b024dffb0b541c04706f276d9600ec57733a36d2",
+    "peak_resolution.py": "271612bd1c4837a8afe552937d778910d4ad23071605e6d474084c080d284372",
+    "empirical_fwhm.py": "fe441b73a0df7d4e083fa819d1ecdba9b3ecfb813ccfcc7bcb20b93ce5184080"
+  },
+  "input_spectrum_sha256": {
+    "monochrom_resolution_native/fcc_cw_d000_pilot_s1.fne.gz": "7d4c9669593f75fd8ceef11f14136ddaa1f310c9bd0cb9106aebcb642019118f",
+    "monochrom_resolution_native/fcc_cw_d025_pilot_s1.fne.gz": "27d4ab942d8fe55d2e98d21fa92aca9ff2b5a3ee4968d7c48df8d4bff86f3e51",
+    "monochrom_resolution_native/fcc_cw_d050_pilot_s1.fne.gz": "a7e6b76d49f541f7b4016baa18f529a37fad0389f517187b4ba481883a3ac37e",
+    "monochrom_resolution_native/fcc_cw_d075_pilot_s1.fne.gz": "f5d9c9f09cb4c865d3d81297e61f21fd7fcd8715ee7e2b63ce202e4332cdd6fa",
+    "monochrom_resolution_native/fcc_cw_d100_nz64_s1.fne.gz": "a958f7989dc371e5dc5d0eac5bd3ff5a736b26840de8bcf2d93d73dbd9d45d12",
+    "monochrom_resolution_native/fcc_cw_d100_pilot_s1.fne.gz": "11753cf5a3169ecc28abe8828e814f16d3a043242274bd09957c4a0f4a2aef15",
+    "study_native/halhf_d0_s1_retry.fne.gz": "83ef467498692340944b38e8a2fd35c8f1382e812886848f60bc67847586fc7f",
+    "study_native/halhf_d0_s2_p4v2.fne.gz": "7378df0961b8cb9516a1c652457941d26316040ec3c507791c88314469babedb",
+    "study_native/halhf_d0_s3_p4v2.fne.gz": "07879b57c2db8ee717fd4ea0bbbc6a5cdbc074e6365713c8dc2749a9f081a7f9",
+    "study_native/halhf_sig1_s1.fne.gz": "99099e9f03972b49be5641168b8a811a04877ed968665a54db0cde307a0ca46f",
+    "study_native/halhf_sig1_s1_nx4096_p4v2.fne.gz": "c8ace44f8ae1016cb02b7f580cc080217903c018c28b4d0f83c3f5472a96595e",
+    "study_native/halhf_sig1_s2_p4v2.fne.gz": "27f73215f6cc73c001217d2e341e0b1aa7d9b19abee674941042203d6d41930f",
+    "study_native/halhf_sig1_s3_p4v2.fne.gz": "c683f2dfcb14cd3f782d945a83d3879d49fce7a33c3ae8008e6b6ecc1c6503d1",
+    "study_native/halhf_sig2_s1.fne.gz": "96cc60d42841f225db730443e3649955bbbad1cce82734e92fde609c3c8e8a6b",
+    "study_native/halhf_sig4_s1.fne.gz": "1848884da338d311e9f21d5e2d01552339832b43e6c0e0b866b15968f6442fd1",
+    "study_native/ilc_d0_s1_nz96.fne.gz": "d363202f50d614dd1ce73c5d3abb40647b47f97eba8f2c2c2859cbad0f42aafa",
+    "study_native/ilc_d0_s2_nz96_p4v2.fne.gz": "2a4751391c4e10fca7e8841426e8ac682224a6012f37dd025fd1e9d202e7ac3c",
+    "study_native/ilc_d0_s3_nz96_p4v2.fne.gz": "52febca51f65191b7e89b9dbf48b110215f6d4088ef831951d997161ee701d80",
+    "study_native/ilc_sig1_s1_nx4096_nz96_p4v2.fne.gz": "a21b7c7a21a866b9c221dad52bf2276e5688774636ddd01ce02e83fee773951e",
+    "study_native/ilc_sig1_s1_nz96.fne.gz": "72288701a644e90acc24c2958a392e29b91afdc683f11180afa8a9b93d5bdb3b",
+    "study_native/ilc_sig1_s2_nz96_p4v2.fne.gz": "3c167ca5762837600bae563bf65b7cd8737e147ba906e78b0d408f99185ef160",
+    "study_native/ilc_sig1_s3_nz96_p4v2.fne.gz": "0ec6ce95d907875e0dc79644dd0a01bfe6a2140e302f246fb478fa906b48a049",
+    "study_native/ilc_sig2_s1_nz96.fne.gz": "c31a16f3341a99f51129a3e8a7532bebaf096a8d076a36b1d0ea44c5d8bd7385",
+    "study_native/ilc_sig4_s1_nz96.fne.gz": "5b8d60cb1b7d65c9936bd6ec8eebc2e6839598eae7ae603edf93d75d124043a1"
+  },
+  "output_sha256": {
+    "empirical_fwhm_records.json": "f0c97b5b6a93248308de7bd3cb93d8f12aa8021247e3f63a5ab60258d0e3c877",
+    "empirical_fwhm_summary.csv": "73e809d9a2f98fb79e6fd238a682ce15feda6a0012852141fb8e99666b057d49",
+    "high_dispersion.csv": "408e3cc8042542e0e4e0cd7bc9ba5ccd6f74e9236d5467c8da34f51c9e574af2",
+    "fcc_resolution_summary.json": "d71b17be66470674223127710dac8f5ed07aafb3068a9de5373e8d2cbfac9930"
+  }
+}

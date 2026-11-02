@@ -1,0 +1,20 @@
+{
+  "source": "C. Rimbault et al., Phys. Rev. ST Accel. Beams 9, 034402 (2006), Table II and footnote 3",
+  "doi": "https://doi.org/10.1103/PhysRevSTAB.9.034402",
+  "processes": ["Breit-Wheeler", "Bethe-Heitler", "Landau-Lifshitz"],
+  "luminosity_per_crossing_inverse_microbarn": 1.82,
+  "normalization": "All channels use the common electron-positron luminosity. The source calls BW and BH cross sections effective. Their denominators are not the photon-photon or electron-photon luminosities.",
+  "particle_convention": "Individual electron plus positron daughters, not pair events",
+  "codes": {
+    "gp": {
+      "effective_cross_sections_mb": [1.05, 37.7, 19.2],
+      "rounded_daughter_counts_per_crossing": [1900, 68600, 35000]
+    },
+    "cain": {
+      "effective_cross_sections_mb": [1.04, 34.5, 15.2],
+      "rounded_daughter_counts_per_crossing": [1900, 62800, 27700]
+    }
+  },
+  "uncertainty": "The source does not give Monte Carlo errors for these entries. The comparison exports explicitly assumed equivalent-crossing count-variance scenarios, without treating them as source-certified errors.",
+  "rounding": "Use the printed cross sections directly. Dividing separately rounded counts by separately rounded luminosity need not reproduce their final digit."
+}

@@ -1,0 +1,12 @@
+test,elapsed_seconds,status
+feebl-qed-integration-reference,0.01,PASS
+feebl-qed-photon-domain-reference,0.01,PASS
+feebl-qed-integration-production,0.01,PASS
+feebl-qed-photon-domain-production,0.01,PASS
+feebl-secondary-transport-reference,0.01,PASS
+feebl-secondary-momentum-reference,0.0,PASS
+feebl-secondary-transport-production,0.01,PASS
+feebl-secondary-momentum-production,0.01,PASS
+feebl-qed-bh-bw-oracle,0.03,PASS
+feebl-qed-tree-oracle,0.04,PASS
+feebl-qed-input-contracts,0.32,PASS

@@ -1,0 +1,276 @@
+{
+  "schema": "feebl.refinement-plan/1",
+  "status": "PROPOSED_NOT_EXECUTED",
+  "scope": "Horizontal-dispersion study and current collider benchmarks; additional monochromatization mechanisms remain future work.",
+  "shared_policy": {
+    "retain_same_physical_domain_when_refining_cells": true,
+    "vary_one_numerical_setting_then_joint_check": true,
+    "report_all_seed_results": true,
+    "paired_controls": "Preserve seed labels; estimate covariance of paired observable differences. Different particle counts are not particle-by-particle paired.",
+    "covariance_rank": "A sample covariance from R independent runs has rank at most R-1. Increase independent runs beyond 40, use justified coarser bins, or validate a covariance model when the histogram dimension requires it.",
+    "independent_seed_counts": [
+      10,
+      20,
+      40
+    ]
+  },
+  "studies": [
+    {
+      "id": "LEP_FOCUSING",
+      "base_cases": [
+        "lep1994_focusing_transverse_refined",
+        "lep1994_focusing_zero"
+      ],
+      "particle_counts_per_beam": [
+        40000,
+        160000,
+        640000
+      ],
+      "probes_per_boundary": [
+        1024,
+        8192,
+        32768
+      ],
+      "substeps": [
+        2,
+        4,
+        8
+      ],
+      "observables": [
+        "inner/outer focusing",
+        "bias",
+        "time and azimuth distributions"
+      ],
+      "criterion": "Stabilize means and conditional/field-ensemble uncertainty separately; quantify nonzero zero-field residual.",
+      "transverse_x_cells": [
+        128,
+        256
+      ],
+      "transverse_y_cells": [
+        256,
+        512
+      ],
+      "longitudinal_slices": [
+        64,
+        128,
+        256
+      ],
+      "scan_policy": "Refine each dimension independently, then test the jointly refined setting."
+    },
+    {
+      "id": "ILC_PAIRS",
+      "base_cases": [
+        "ilc500_ussc_pairs_2006"
+      ],
+      "particle_counts_per_beam": [
+        10000,
+        40000,
+        160000
+      ],
+      "transverse_cells": [
+        128,
+        256,
+        512
+      ],
+      "longitudinal_slices": [
+        32,
+        64,
+        128
+      ],
+      "substeps": [
+        2,
+        4,
+        8
+      ],
+      "observables": [
+        "BW/BH/LL production yields",
+        "pair momentum-angle support"
+      ],
+      "criterion": "Resolve the 16.1% Breit-Wheeler difference with independent seeds; maintain production/final-state cuts and virtuality-model distinction.",
+      "conditional_particle_extension_per_beam": [
+        640000
+      ]
+    },
+    {
+      "id": "ILC_SPIN",
+      "base_cases": [
+        "ilc_depol_beta20_40k",
+        "ilc_depol_baseline",
+        "rimbault2009_low_n",
+        "rimbault2009_large_y_40k",
+        "rimbault2009_low_p_40k"
+      ],
+      "particle_counts_per_beam": [
+        40000,
+        160000,
+        640000
+      ],
+      "transverse_cells": [
+        128,
+        256,
+        512
+      ],
+      "longitudinal_slices": [
+        32,
+        64,
+        128
+      ],
+      "substeps": [
+        2,
+        4,
+        8
+      ],
+      "observables": [
+        "per-beam helicity",
+        "axis projection",
+        "correlated product",
+        "effective polarization for nonsingular input settings",
+        "W cuts 98% and 99%"
+      ],
+      "criterion": "Separate seed, mesh, time and frame-definition effects; run matched spin-flip on/off samples."
+    },
+    {
+      "id": "ILC_SPECTRUM",
+      "base_cases": [
+        "ilc1000_tdr_b1b_gaussian_proxy"
+      ],
+      "particle_counts_per_beam": [
+        10000,
+        40000,
+        160000
+      ],
+      "longitudinal_slices": [
+        32,
+        64,
+        128
+      ],
+      "substeps": [
+        2,
+        4,
+        8
+      ],
+      "observables": [
+        "full and peak spectrum covariance",
+        "chi_e by beam",
+        "chi_gamma",
+        "pair distributions"
+      ],
+      "criterion": "Track effective counts and collect seed covariance. Domain enlargement must preserve cell width; original non-Gaussian inputs remain a separate matching limitation."
+    },
+    {
+      "id": "HALHF_SPECTRA",
+      "base_cases": [
+        "halhf250_wide_domain",
+        "halhf380",
+        "halhf550"
+      ],
+      "particle_counts_per_beam": [
+        20000,
+        80000,
+        320000,
+        640000
+      ],
+      "longitudinal_slices": [
+        32,
+        64,
+        128
+      ],
+      "substeps": [
+        2,
+        4,
+        8,
+        10
+      ],
+      "observables": [
+        "full and peak spectrum covariance",
+        "chi_e by beam",
+        "chi_gamma",
+        "pair distributions"
+      ],
+      "criterion": "Track effective counts and collect seed covariance. Domain enlargement must preserve cell width; original non-Gaussian inputs remain a separate matching limitation."
+    },
+    {
+      "id": "HIGGS_HORIZONTAL",
+      "base_cases": [
+        "ilc_confirm_base_s1",
+        "ilc_confirm_selected_s1",
+        "halhf_confirm_base_s1",
+        "halhf_confirm_selected_s1",
+        "high_ilc_sig1_s1_nz96",
+        "high_halhf_sig1_s1"
+      ],
+      "particle_counts_per_beam": [
+        20000,
+        80000,
+        320000
+      ],
+      "transverse_x_cells": [
+        2048,
+        4096,
+        8192
+      ],
+      "substeps": [
+        2,
+        4,
+        8
+      ],
+      "observables": [
+        "observed peak FWHM",
+        "beta-convolved Gaussian response width",
+        "luminosity",
+        "matched retention",
+        "Higgs-weighted luminosity"
+      ],
+      "criterion": "Refine y/z separately from x; repeat 0.2/0.1/0.05 MeV peak bins and phase shifts; qualify fit normalization, bounds, covariance and convolution quadrature before interpreting sigma.",
+      "conditional_particle_extension_per_beam": [
+        1280000
+      ]
+    },
+    {
+      "id": "FCC_HORIZONTAL",
+      "base_cases": [
+        "fcc_cw_d000_pilot_s1",
+        "fcc_cw_d100_nz64_s1"
+      ],
+      "particle_counts_per_beam": [
+        10000,
+        40000,
+        160000
+      ],
+      "longitudinal_slices": [
+        32,
+        64,
+        128
+      ],
+      "substeps": [
+        2,
+        4,
+        8
+      ],
+      "transverse_grid_start": [
+        512,
+        4096
+      ],
+      "dispersion_mm": [
+        0,
+        25,
+        50,
+        75,
+        100
+      ],
+      "observables": [
+        "luminosity",
+        "peak shape and fit stability",
+        "deposition/luminosity domain coverage"
+      ],
+      "criterion": "Keep 30 mrad crossing and baseline crab waist with RF bunch tilt disabled. Refine longitudinal overlap and correlated event statistics; do not claim physical resolution from present jagged peak FWHM.",
+      "conditional_particle_extension_per_beam": [
+        640000
+      ],
+      "conditional_longitudinal_extension": [
+        256,
+        512
+      ]
+    }
+  ]
+}

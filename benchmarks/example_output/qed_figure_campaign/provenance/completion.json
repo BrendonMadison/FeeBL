@@ -1,0 +1,19 @@
+{
+  "job_id": 25503758,
+  "job_name": "feebl-qed-figures01",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed_seconds": 1390,
+  "elapsed": "00:23:10",
+  "finished_utc": "2026-10-30T13:29:55Z",
+  "nodes": 1,
+  "allocated_cpus_reported_by_slurm": 96,
+  "requested_cpu_slots": 32,
+  "maximum_concurrent_collisions": 12,
+  "completed_cases": 60,
+  "failed_cases": 0,
+  "execution_status": "COMPLETE_EXECUTION_ONLY",
+  "scientific_qualification": "Output contracts passed. Ensemble analysis, numerical convergence and reference agreement are separate assessments.",
+  "selected_transfer_files": 537,
+  "selected_transfer_bytes": 542925616
+}

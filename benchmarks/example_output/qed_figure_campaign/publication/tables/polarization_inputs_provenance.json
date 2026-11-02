@@ -1,0 +1,20 @@
+{
+  "source_url": "https://doi.org/10.1088/1742-6596/198/1/012006",
+  "source_locator": "Table 1 (printed page 2); Section 4 and Table 5 (printed page 5)",
+  "definitions": {
+    "N": "physical particles per bunch",
+    "epsilon_n": "normalized rms emittance in mm mrad",
+    "beta": "IP beta function in mm",
+    "sigma_xy": "evaluated rms transverse size in nm",
+    "sigma_z": "rms bunch length in micrometres",
+    "N_m": "simulation macroparticles per beam"
+  },
+  "evaluation": "sigma=sqrt(epsilon_n*beta/gamma); gamma=E/EMASS with native mass convention and explicit SI conversion",
+  "native_electron_mass_GeV": 0.00051099906,
+  "native_constants_sha256": "5857d84eff38cc5bb4053c3906495d520cb6158522860bd403a815b7631172ed",
+  "common_settings": "250 GeV per beam; head-on; zero incoming energy spread; fixed-axis spins +1 and -1; 128x128x32 cells and two substeps",
+  "nominal_scope": "2009 nominal beta_x=20 mm; the separate 2006 nominal card uses 21 mm and must retain its own label",
+  "name_scope": "Low N is the 2009 parameter set in Table 1. Equivalence with the earlier Low Q set is not established; the names are not substituted.",
+  "statistics_scope": "Low N has 10000 macroparticles; nominal, Large Y and Low P shown here use 40000. The Large Y/Low P sensitivity to 10000 particles remains separate.",
+  "producer_sha256": "20b23a62593a25104efc22f2428e90509c3249c0c5b0fa9cfcbfeecf5291b211"
+}

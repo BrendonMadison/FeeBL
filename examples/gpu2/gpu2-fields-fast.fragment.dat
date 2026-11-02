@@ -1,0 +1,17 @@
+compute_backend="gpu";
+gpu_mode=2;
+gpu2_scope="fields";
+gpu2_deposition="auto";
+gpu2_fft="cufft";
+gpu2_streams=0;
+gpu2_graphs="off";
+gpu2_fusion="off";
+gpu2_batch_slices=1;
+gpu2_pinned_io="on";
+gpu2_host_threads=0;
+gpu2_memory_fraction=0.80;
+gpu2_profile="summary";
+gpu_device=0;
+rng_backend="legacy";
+reduction_mode="fast";
+allow_backend_fallback=0;

@@ -1,0 +1,21 @@
+{
+  "source_native_identity": "sha256:238eda4954de06bada9c27a56436281d0ddac7137712e8e4bf07be37358f2598",
+  "native_build_input_files": 479,
+  "binary_sha256": "cf872ffbfb2d91dfd8286c9f0282329040de8b0899e1cd7133e4c2fd27924d8b",
+  "build_job_id": 25502093,
+  "validation_job_id": 25502351,
+  "execution_platform": "DESY Maxwell GNU/Linux x86-64",
+  "toolchain": {
+    "gcc": "12.2",
+    "python": "3.12",
+    "cmake": "3.31.6"
+  },
+  "configuration": {
+    "compute_backend": "serial",
+    "collision_schedule": "legacy",
+    "FFTW_planning": "FFTW_ESTIMATE",
+    "CUDA_enabled": false,
+    "OpenMP_enabled": false
+  },
+  "scope": "Fixed-grid scalar regressions and output contracts. Adaptive mode4 strict qualification failed with exit8."
+}

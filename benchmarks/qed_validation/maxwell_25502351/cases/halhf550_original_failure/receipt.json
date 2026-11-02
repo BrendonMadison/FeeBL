@@ -1,0 +1,33 @@
+{
+  "case": "halhf550_original_failure",
+  "card_sha256": "930be0b7a0db66e275a79ba7c66b06144ba19de54bb6eec124b89fc274a6330a",
+  "argv": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/data/dust/user/bmadison/feebl-publication-20261029/runs/qed-validation-25502351/cases/halhf550_original_failure/resources.txt",
+    "/data/dust/user/bmadison/feebl-publication-20261029/builds/qed-validation-25502093/src/feebl",
+    "--make_gui_files",
+    "halhf550",
+    "diagnostic",
+    "out.dat"
+  ],
+  "status": "PASSED_OUTPUT_CONTRACT",
+  "returncode": 0,
+  "elapsed_seconds": 82.0267762108706,
+  "output_check": {
+    "process_particle_expectations": {
+      "BW": 2293.11,
+      "BH": 93715.1,
+      "LL": 47325.9
+    },
+    "saved_secondary_rows": 49475,
+    "exact_kernel_diagnostics": {},
+    "maximum_exact_contribution": 1000000,
+    "statistics_warning": "Rows may share a kernel contribution and fields; use collision-seed covariance",
+    "output_sha256": {
+      "out.dat": "22d5f0e79cd201458cf94ca541d0a2cb1eafde3fa93ab1d2836c54fbc8b65ff0",
+      "pairs.dat": "6d20db3f5cb9d32daed00c684e71516cb3d5e785af49a36d9be876aad0981540"
+    }
+  }
+}

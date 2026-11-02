@@ -1,0 +1,189 @@
+{
+  "lep_focusing.pdf": {
+    "cases": [
+      "lep_field01",
+      "lep_field02",
+      "lep_field03",
+      "lep_field04",
+      "lep_field05",
+      "lep_field06",
+      "lep_field07",
+      "lep_field08",
+      "lep_field09",
+      "lep_field10"
+    ],
+    "controls": [
+      "lep_zero01",
+      "lep_zero02"
+    ],
+    "source": "verified QED ensemble reduction",
+    "analysis_receipt_sha256": "e42d6907c82efe82c50508b0cce7616c346e7e5d26235ab222c4ecda81ce5635",
+    "reproduction": "ten independent field realizations with paired event legs and azimuth strata"
+  },
+  "ilc_pair_yields.pdf": {
+    "cases": [
+      "ilc_m1_seed01",
+      "ilc_m1_seed02",
+      "ilc_m1_seed03",
+      "ilc_m1_seed04",
+      "ilc_m1_seed05",
+      "ilc_m1_seed06",
+      "ilc_m1_seed07",
+      "ilc_m1_seed08",
+      "ilc_m1_seed09",
+      "ilc_m1_seed10",
+      "ilc_m1_seed11",
+      "ilc_m1_seed12",
+      "ilc_m2_seed01",
+      "ilc_m2_seed02",
+      "ilc_m2_seed03",
+      "ilc_m2_seed04",
+      "ilc_m2_seed05",
+      "ilc_m2_seed06",
+      "ilc_m2_seed07",
+      "ilc_m2_seed08",
+      "ilc_m2_seed09",
+      "ilc_m2_seed10",
+      "ilc_m2_seed11",
+      "ilc_m2_seed12"
+    ],
+    "source": "verified QED ensemble reduction; pair models 1 and 2",
+    "analysis_receipt_sha256": "e42d6907c82efe82c50508b0cce7616c346e7e5d26235ab222c4ecda81ce5635",
+    "reproduction": "independent-seed statistical"
+  },
+  "ilc_spectrum.pdf": {
+    "cases": [
+      "ilc1000_tdr_b1b_gaussian_proxy"
+    ],
+    "source": "generated comparisons/ilc_1000_*",
+    "reproduction": "independent-seed statistical"
+  },
+  "halhf_spectra_250.pdf": {
+    "cases": [
+      "halhf250_wide_domain"
+    ],
+    "source": "generated comparisons/halhf_250_*",
+    "reproduction": "independent-seed statistical"
+  },
+  "halhf_pair_populations.pdf": {
+    "cases": [
+      "halhf_m1_seed01",
+      "halhf_m1_seed02",
+      "halhf_m1_seed03",
+      "halhf_m1_seed04",
+      "halhf_m1_seed05",
+      "halhf_m1_seed06",
+      "halhf_m1_seed07",
+      "halhf_m1_seed08",
+      "halhf_m1_seed09",
+      "halhf_m1_seed10",
+      "halhf_m1_seed11",
+      "halhf_m1_seed12",
+      "halhf_m2_seed01",
+      "halhf_m2_seed02",
+      "halhf_m2_seed03",
+      "halhf_m2_seed04",
+      "halhf_m2_seed05",
+      "halhf_m2_seed06",
+      "halhf_m2_seed07",
+      "halhf_m2_seed08",
+      "halhf_m2_seed09",
+      "halhf_m2_seed10",
+      "halhf_m2_seed11",
+      "halhf_m2_seed12"
+    ],
+    "source": "verified QED ensemble reduction; pair models 1 and 2",
+    "analysis_receipt_sha256": "e42d6907c82efe82c50508b0cce7616c346e7e5d26235ab222c4ecda81ce5635",
+    "reproduction": "independent-seed final pair density and occupied support; published raster is support only"
+  },
+  "sampler_pulls.pdf": {
+    "cases": [
+      "analysis/sampler_probe.cc"
+    ],
+    "source": "analysis_inputs/sampler_records",
+    "reproduction": "sampler_oracle.py regenerates exact-Bessel target and sampling errors; native trials statistical"
+  },
+  "higgs_ilc_selected_vs_baseline_peak_spectrum.pdf": {
+    "cases": [
+      "ilc_confirm_base_s1",
+      "ilc_confirm_base_s2",
+      "ilc_confirm_base_s3",
+      "ilc_confirm_selected_s1",
+      "ilc_confirm_selected_s2",
+      "ilc_confirm_selected_s3"
+    ],
+    "source": "scans/ilc_selected_vs_baseline_peak_spectrum.csv",
+    "reproduction": "paired independent-seed study"
+  },
+  "higgs_halhf_selected_vs_baseline_peak_spectrum.pdf": {
+    "cases": [
+      "halhf_confirm_base_s1",
+      "halhf_confirm_base_s2",
+      "halhf_confirm_base_s3",
+      "halhf_confirm_selected_s1",
+      "halhf_confirm_selected_s2",
+      "halhf_confirm_selected_s3"
+    ],
+    "source": "scans/halhf_selected_vs_baseline_peak_spectrum.csv",
+    "reproduction": "paired independent-seed study"
+  },
+  "three_collider_dispersion_summary.pdf": {
+    "cases": [
+      "fcc_cw_d000_pilot_s1",
+      "fcc_cw_d025_pilot_s1",
+      "fcc_cw_d050_pilot_s1",
+      "fcc_cw_d075_pilot_s1",
+      "fcc_cw_d100_nz64_s1",
+      "fcc_cw_d100_pilot_s1",
+      "high_halhf_d0_s1_retry",
+      "high_halhf_d0_s2_p4v2",
+      "high_halhf_d0_s3_p4v2",
+      "high_halhf_sig1_s1",
+      "high_halhf_sig1_s1_nx4096_p4v2",
+      "high_halhf_sig1_s2_p4v2",
+      "high_halhf_sig1_s3_p4v2",
+      "high_halhf_sig2_s1",
+      "high_halhf_sig4_s1",
+      "high_ilc_d0_s1_nz96",
+      "high_ilc_d0_s2_nz96_p4v2",
+      "high_ilc_d0_s3_nz96_p4v2",
+      "high_ilc_sig1_s1_nx4096_nz96_p4v2",
+      "high_ilc_sig1_s1_nz96",
+      "high_ilc_sig1_s2_nz96_p4v2",
+      "high_ilc_sig1_s3_nz96_p4v2",
+      "high_ilc_sig2_s1_nz96",
+      "high_ilc_sig4_s1_nz96"
+    ],
+    "source": "scans/high_dispersion.csv; scans/fcc_crabwaist.json",
+    "reproduction": "historical native extraction; mesh and representation sensitivities retained"
+  },
+  "fcc_peak_fragmentation.pdf": {
+    "cases": [
+      "fcc_cw_d000_pilot_s1",
+      "fcc_cw_d100_pilot_s1"
+    ],
+    "source": "analysis_inputs/native/fcc_cw_*.fne.gz",
+    "reproduction": "fixed-bin regrouping of retained native spectra"
+  },
+  "common_finite_angle_extrapolations.pdf": {
+    "cases": [
+      "analysis/gaussian_overlap.py"
+    ],
+    "source": "analysis_inputs/gaussian_overlap_inputs.json",
+    "reproduction": "deterministic model; no native continuation claim"
+  },
+  "halhf_spectra_380.pdf": {
+    "cases": [
+      "halhf380"
+    ],
+    "source": "generated comparisons/halhf_380_*",
+    "reproduction": "independent-seed statistical"
+  },
+  "halhf_spectra_550.pdf": {
+    "cases": [
+      "halhf550"
+    ],
+    "source": "generated comparisons/halhf_550_*",
+    "reproduction": "independent-seed statistical"
+  }
+}

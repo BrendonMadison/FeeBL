@@ -1,0 +1,33 @@
+{
+  "case": "ilc500_pair_model1",
+  "card_sha256": "2d3c0019494b23dab68b04ae967007a5762bc51e2fa37661eadd5673565a8e13",
+  "argv": [
+    "/usr/bin/time",
+    "-v",
+    "-o",
+    "/data/dust/user/bmadison/feebl-publication-20261029/runs/qed-validation-25502351/cases/ilc500_pair_model1/resources.txt",
+    "/data/dust/user/bmadison/feebl-publication-20261029/builds/qed-validation-25502093/src/feebl",
+    "--make_gui_files",
+    "ilc500",
+    "diagnostic",
+    "out.dat"
+  ],
+  "status": "PASSED_OUTPUT_CONTRACT",
+  "returncode": 0,
+  "elapsed_seconds": 66.50544312596321,
+  "output_check": {
+    "process_particle_expectations": {
+      "BW": 2830.11,
+      "BH": 77716.9,
+      "LL": 48263.7
+    },
+    "saved_secondary_rows": 103823,
+    "exact_kernel_diagnostics": {},
+    "maximum_exact_contribution": 1000000,
+    "statistics_warning": "Rows may share a kernel contribution and fields; use collision-seed covariance",
+    "output_sha256": {
+      "out.dat": "6bf7a4d25832f1c3c08f175627f186235cb1fb980fdef96c59052f1246ce82d4",
+      "pairs.dat": "eee78455cb786e8376afca364f0955e0f017307f460c50f07bc867b171605695"
+    }
+  }
+}

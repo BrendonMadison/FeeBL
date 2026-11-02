@@ -1,0 +1,199 @@
+#!/usr/bin/env python3
+"""feebl-optimize -- grid convergence probing for FEEBL.
+
+    feebl-optimize <deck> <accelerator_tag> [--tol 0.01] [--nm-probe 20000]
+                   [--binary PATH] [--jobs N]
+
+optimize_grids=1 inside FEEBL derives a grid from the beam parameters using
+heuristics calibrated on the FEEBL benchmark. That is fast and free, but it is
+not a convergence proof for YOUR configuration -- and the benchmark itself was
+once 4-12% wrong on the ILC points for exactly this reason.
+
+This tool does the proof: it starts from the heuristic and refines each
+direction until the answer stops moving, then reports the luminosity WITH a
+discretization uncertainty.
+
+Why it can afford to:
+
+  * n_m decouples from the grid. Statistics change the noise, not the
+    converged mean (measured: n_m 2e5 -> 1e6 moves L by 0.4%). So probes run at
+    reduced n_m and stay informative about grid convergence.
+  * Common random numbers. Every probe uses the SAME rndm_seed, so shot noise
+    largely cancels in the RATIO between two grid settings even though each
+    absolute value is noisy. Without this a 2e4-macroparticle probe carries
+    ~5% noise and would swamp the ~5% convergence signal being measured.
+
+Refinement is per-direction refine-until-flat, not gradient descent: the
+response is monotone in each direction (finer -> truer), so the task is to find
+the coarsest grid whose answer is stable, and a gradient walk would only be
+confounded by Monte Carlo noise. n_z is probed last because its cost goes as
+n_z^2 while n_x and n_y go as n_x*n_y.
+"""
+import argparse
+import os
+import re
+import shutil
+import subprocess
+import sys
+import tempfile
+
+SEED = 20260821          # fixed across every probe: common random numbers
+
+
+def read_block(deck, kind, tag):
+    m = re.search(r'(\$%s:: %s\n\{.*?\}\n)' % (kind, re.escape(tag)), deck, re.S)
+    return m.group(1) if m else None
+
+
+def set_param(par, key, value):
+    """Set key=value inside a $PARAMETERS block, replacing any existing entry."""
+    # Anchor on a token boundary. Without it, setting 'grids' also matched
+    # the 'grids=' inside 'optimize_grids=', splicing the deck into garbage
+    # such as 'optimize_force_symmetric' and killing the run.
+    par = re.sub(r'(?<![A-Za-z0-9_])%s\s*=\s*[^;]*;' % re.escape(key), '', par)
+    return par.replace("{", "{%s=%s;" % (key, value), 1)
+
+
+def run_once(binary, acc_block, par_block, acc_tag, par_tag, workdir):
+    d = tempfile.mkdtemp(dir=workdir)
+    with open(os.path.join(d, "acc.dat"), "w", newline="\n") as f:
+        f.write(acc_block + "\n" + par_block)
+    try:
+        subprocess.run([binary, acc_tag, par_tag, "out.dat"], cwd=d,
+                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                       timeout=36000, check=False)
+        out = os.path.join(d, "out.dat")
+        if not os.path.exists(out):
+            return None
+        txt = open(out, encoding="utf-8", errors="replace").read()
+        m = re.search(r'lumi\[0\]\[1\]\s*=\s*([-\d.eE+]+)', txt)
+        return float(m.group(1)) if m else None
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+
+
+def heuristic_settings(binary, acc_block, par_block, acc_tag, par_tag, workdir):
+    """Run FEEBL with optimize_grids=1 and scrape the settings it derived."""
+    p = set_param(par_block, "optimize_grids", 1)
+    d = tempfile.mkdtemp(dir=workdir)
+    with open(os.path.join(d, "acc.dat"), "w", newline="\n") as f:
+        f.write(acc_block + "\n" + p)
+    r = subprocess.run([binary, acc_tag, par_tag, "out.dat"], cwd=d,
+                       stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                       timeout=36000)
+    txt = r.stdout.decode("utf-8", "replace")
+    shutil.rmtree(d, ignore_errors=True)
+    g = {}
+    m = re.search(r'n_x=(\d+);n_y=(\d+);n_z=(\d+);n_t=(\d+);', txt)
+    if not m:
+        sys.exit("could not read the heuristic settings; is optimize_grids "
+                 "supported by this binary?\n" + txt[-1500:])
+    g["n_x"], g["n_y"], g["n_z"], g["n_t"] = (int(x) for x in m.groups())
+    m = re.search(r'cut_x=([\d.eE+-]+);cut_y=([\d.eE+-]+);cut_z=([\d.eE+-]+);grids=(\d+);', txt)
+    g["cut_x"], g["cut_y"], g["cut_z"] = m.group(1), m.group(2), m.group(3)
+    g["grids"] = int(m.group(4))
+    dy = re.search(r'D_y = ([\d.eE+-]+)', txt)
+    g["D_y"] = float(dy.group(1)) if dy else float("nan")
+    return g
+
+
+def build_par(par_block, g, nm):
+    p = par_block
+    p = set_param(p, "optimize_grids", 0)
+    for k in ("n_x", "n_y", "n_z", "n_t", "cut_x", "cut_y", "cut_z", "grids"):
+        p = set_param(p, k, g[k])
+    p = set_param(p, "n_m", nm)
+    p = set_param(p, "rndm_seed", SEED)
+    return p
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("deck")
+    ap.add_argument("tag", help="accelerator block tag; the parameter block is assumed to be p_<tag>")
+    ap.add_argument("--par-tag", default=None)
+    ap.add_argument("--binary", default=os.path.expanduser("~/feebl/src/feebl"))
+    ap.add_argument("--tol", type=float, default=0.01,
+                    help="a direction is converged when refining it moves L by less than this (default 1%%)")
+    ap.add_argument("--nm-probe", type=int, default=20000)
+    ap.add_argument("--max-refine", type=int, default=3)
+    args = ap.parse_args()
+
+    deck = open(args.deck, encoding="utf-8").read()
+    acc = read_block(deck, "ACCELERATOR", args.tag)
+    ptag = args.par_tag or ("p_" + args.tag)
+    par = read_block(deck, "PARAMETERS", ptag)
+    if not acc or not par:
+        sys.exit("could not find $ACCELERATOR:: %s and $PARAMETERS:: %s in %s"
+                 % (args.tag, ptag, args.deck))
+
+    work = tempfile.mkdtemp(prefix="feebl-opt-")
+    try:
+        print("feebl-optimize: %s  (%s)" % (args.tag, args.deck))
+        print("  probing at n_m=%d, seed=%d (common random numbers)"
+              % (args.nm_probe, SEED))
+        g = heuristic_settings(args.binary, acc, par, args.tag, ptag, work)
+        print("  heuristic start: n_x=%(n_x)d n_y=%(n_y)d n_z=%(n_z)d "
+              "n_t=%(n_t)d  (D_y=%(D_y).3g)" % g)
+        print()
+
+        base = run_once(args.binary, acc, build_par(par, g, args.nm_probe),
+                        args.tag, ptag, work)
+        if base is None:
+            sys.exit("the baseline probe produced no output")
+        print("  %-28s L = %.6g" % ("baseline", base))
+
+        history = []
+        # n_y and n_x first (cost ~ n_x*n_y), n_z last (cost ~ n_z^2)
+        for key in ("n_y", "n_x", "n_z"):
+            for step in range(args.max_refine):
+                trial = dict(g)
+                trial[key] = g[key] * 2
+                if key == "n_z":
+                    # n_z and n_t refine the same integration; hold the product
+                    trial["n_t"] = max(1, int(round(g["n_t"] / 2.0)))
+                L = run_once(args.binary, acc, build_par(par, trial, args.nm_probe),
+                             args.tag, ptag, work)
+                if L is None:
+                    print("  %-28s FAILED, stopping this direction"
+                          % ("%s -> %d" % (key, trial[key])))
+                    break
+                dev = (L - base) / base
+                history.append((key, g[key], trial[key], base, L, dev))
+                print("  %-28s L = %.6g   change %+.3f%%"
+                      % ("%s %d -> %d" % (key, g[key], trial[key]), L, 100 * dev))
+                if abs(dev) < args.tol:
+                    print("      converged in %s" % key)
+                    break
+                g = trial
+                base = L
+            else:
+                print("      WARNING: %s still moving after %d refinements"
+                      % (key, args.max_refine))
+
+        # Richardson-style estimate from the last accepted refinement in each
+        # direction: the remaining error is of the order of the last change.
+        last = {}
+        for key, old, new, l0, l1, dev in history:
+            last[key] = abs(dev)
+        err = sum(v * v for v in last.values()) ** 0.5
+
+        print()
+        print("  converged settings:")
+        print("    n_x=%(n_x)d;n_y=%(n_y)d;n_z=%(n_z)d;n_t=%(n_t)d;" % g)
+        print("    cut_x=%(cut_x)s;cut_y=%(cut_y)s;cut_z=%(cut_z)s;grids=%(grids)d;" % g)
+        print()
+        print("  estimated discretization uncertainty: %.2f%%" % (100 * err))
+        print("  (root-sum-square of the last refinement step in each direction;")
+        print("   it is an estimate of what is still missing, not a bound)")
+        print()
+        print("  NOTE: probes ran at n_m=%d. Rerun the production case at your"
+              % args.nm_probe)
+        print("  own n_m with the settings above; statistics do not change the")
+        print("  converged mean, only the noise on it.")
+    finally:
+        shutil.rmtree(work, ignore_errors=True)
+
+
+if __name__ == "__main__":
+    main()

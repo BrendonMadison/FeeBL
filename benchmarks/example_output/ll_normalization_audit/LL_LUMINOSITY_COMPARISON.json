@@ -1,0 +1,88 @@
+{
+  "scope": "Correlated luminosity-normalized comparison. Raw per-crossing counts remain diagnostics; the publication comparison should use the reference's common-ee effective cross section.",
+  "reference": {
+    "luminosity_per_crossing_ub_inverse": 1.82,
+    "GP": {
+      "LL_count": 35000,
+      "LL_cross_section_mb": 19.2
+    },
+    "CAIN": {
+      "LL_count": 27700,
+      "LL_cross_section_mb": 15.2
+    }
+  },
+  "models": {
+    "1": {
+      "source_sha256": "fb76c8ac591cfe9e63fd51b2f80a7c0289273476afc256bb627beed9993f2648",
+      "seeds": 12,
+      "LL_count": 31517.583333333332,
+      "LL_count_sem": 163.82975542503343,
+      "luminosity_ub_inverse": 1.734755833333333,
+      "luminosity_sem": 0.011575352109202568,
+      "count_luminosity_correlation": 0.9287966677991419,
+      "LL_effective_cross_section_mb": 18.168310910228964,
+      "LL_effective_cross_section_sem_mb": 0.048457511146395835,
+      "LL_effective_cross_section_jackknife_sem_mb": 0.04845396201024598,
+      "LL_cross_section_sem_without_covariance_mb": 0.15367362560666287,
+      "luminosity_ratio_to_reference": 0.9531625457875456,
+      "comparisons": {
+        "GP": {
+          "raw_count_ratio": 0.9005023809523809,
+          "effective_ratio_to_count_derived_reference": 0.9447521673319061,
+          "effective_ratio_to_printed_cross_section": 0.946266193241092,
+          "yield_at_this_luminosity_using_reference_count": 33360.689102564094,
+          "observed_minus_reference_yield": -3482.416666666668,
+          "luminosity_component_of_yield_difference": -1639.3108974359054,
+          "remaining_cross_section_component_of_yield_difference": -1843.1057692307622,
+          "decomposition": "N-Nref = Nref*(L/Lref-1) + [N-Nref*L/Lref]; this is an algebraic diagnostic, not causal proof."
+        },
+        "CAIN": {
+          "raw_count_ratio": 1.1378188929001203,
+          "effective_ratio_to_count_derived_reference": 1.1937301753291234,
+          "effective_ratio_to_printed_cross_section": 1.1952836125150634,
+          "yield_at_this_luminosity_using_reference_count": 26402.602518315012,
+          "observed_minus_reference_yield": 3817.583333333332,
+          "luminosity_component_of_yield_difference": -1297.3974816849882,
+          "remaining_cross_section_component_of_yield_difference": 5114.98081501832,
+          "decomposition": "N-Nref = Nref*(L/Lref-1) + [N-Nref*L/Lref]; this is an algebraic diagnostic, not causal proof."
+        }
+      }
+    },
+    "2": {
+      "source_sha256": "4720c715b7533dd456435f3d7e1d1feb8b579151640d8cdcea4f46516661eda3",
+      "seeds": 12,
+      "LL_count": 32861.083333333336,
+      "LL_count_sem": 169.93521307078808,
+      "luminosity_ub_inverse": 1.7443216666666663,
+      "luminosity_sem": 0.009500859038778947,
+      "count_luminosity_correlation": 0.8947097592288317,
+      "LL_effective_cross_section_mb": 18.838889616116298,
+      "LL_effective_cross_section_sem_mb": 0.04617348241730175,
+      "LL_effective_cross_section_jackknife_sem_mb": 0.04614705588996305,
+      "LL_cross_section_sem_without_covariance_mb": 0.14149183946031618,
+      "luminosity_ratio_to_reference": 0.958418498168498,
+      "comparisons": {
+        "GP": {
+          "raw_count_ratio": 0.9388880952380954,
+          "effective_ratio_to_count_derived_reference": 0.9796222600380475,
+          "effective_ratio_to_printed_cross_section": 0.9811921675060572,
+          "yield_at_this_luminosity_using_reference_count": 33544.64743589743,
+          "observed_minus_reference_yield": -2138.9166666666642,
+          "luminosity_component_of_yield_difference": -1455.3525641025699,
+          "remaining_cross_section_component_of_yield_difference": -683.5641025640944,
+          "decomposition": "N-Nref = Nref*(L/Lref-1) + [N-Nref*L/Lref]; this is an algebraic diagnostic, not causal proof."
+        },
+        "CAIN": {
+          "raw_count_ratio": 1.186320697954272,
+          "effective_ratio_to_count_derived_reference": 1.2377898592538505,
+          "effective_ratio_to_printed_cross_section": 1.2394006326392302,
+          "yield_at_this_luminosity_using_reference_count": 26548.192399267395,
+          "observed_minus_reference_yield": 5161.083333333336,
+          "luminosity_component_of_yield_difference": -1151.8076007326054,
+          "remaining_cross_section_component_of_yield_difference": 6312.890934065941,
+          "decomposition": "N-Nref = Nref*(L/Lref-1) + [N-Nref*L/Lref]; this is an algebraic diagnostic, not causal proof."
+        }
+      }
+    }
+  }
+}

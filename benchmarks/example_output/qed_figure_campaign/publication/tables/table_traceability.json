@@ -1,0 +1,62 @@
+{
+  "collider_inputs.tex": {
+    "producer": "benchmarks/analysis/paper_tables.py",
+    "source": "manifest.json and every cases/*/acc.dat; complete parameters in input_parameters.csv"
+  },
+  "polarization_inputs.tex": {
+    "producer": "benchmarks/analysis/paper_tables.py",
+    "source": "four exact depolarization cards; evaluated rms sizes using src/physconst.h; Rimbault2009 Table1 and Table5 definitions"
+  },
+  "confirmation.tex": {
+    "producer": "benchmarks/analysis/paper_tables.py",
+    "source": "regenerated numerical_data/confirmation_metrics.csv; retained native spectra and qualified fit records"
+  },
+  "confirmation_intervals.tex": {
+    "producer": "benchmarks/analysis/paper_tables.py",
+    "source": "regenerated numerical_data/confirmation_metrics.csv; paired-seed Student-t intervals"
+  },
+  "high_dispersion.tex": {
+    "producer": "benchmarks/analysis/paper_tables.py",
+    "source": "regenerated numerical_data/high_dispersion.csv; scale-specific observed FWHM and all-phase bin-resolution checks"
+  },
+  "fcc_luminosity.tex": {
+    "producer": "benchmarks/analysis/paper_tables.py",
+    "source": "example_output/scans/fcc_crabwaist.json and regenerated numerical_data/fcc_resolution_summary.json; luminosity, observed FWHM and numerical resolution envelope"
+  },
+  "intercode_depolarization.tex": {
+    "producer": "benchmarks/analysis/paper_tables.py",
+    "source": "example_output/intercode_comparison.csv; distinct published definitions retained"
+  },
+  "lep_focusing_ensemble.tex": {
+    "producer": "benchmarks/analysis/qed_figures/render_tables.py",
+    "source": "verified QED ensemble reduction",
+    "analysis_receipt_sha256": "e42d6907c82efe82c50508b0cce7616c346e7e5d26235ab222c4ecda81ce5635",
+    "table_receipt_sha256": "96c5ce78ac2db35dafcd16dfd0066fb9087e772ee0574226f1d0f3ad8e35d63c",
+    "output_sha256": "9e3a04970ab414aa4643fc4f94b2d22dae73d43d94fb8e0e49b217bcbf9c707a"
+  },
+  "ilc_pair_ensemble.tex": {
+    "producer": "benchmarks/analysis/qed_figures/render_tables.py",
+    "source": "verified QED ensemble reduction",
+    "analysis_receipt_sha256": "e42d6907c82efe82c50508b0cce7616c346e7e5d26235ab222c4ecda81ce5635",
+    "table_receipt_sha256": "96c5ce78ac2db35dafcd16dfd0066fb9087e772ee0574226f1d0f3ad8e35d63c",
+    "output_sha256": "6cc38ab1dcd05febafffddc305a2e8e91604b90383ca17ac9962795b8937ef2e"
+  },
+  "table_values.json": {
+    "producer": "benchmarks/analysis/qed_figures/render_tables.py",
+    "source": "verified QED ensemble reduction",
+    "analysis_receipt_sha256": "e42d6907c82efe82c50508b0cce7616c346e7e5d26235ab222c4ecda81ce5635",
+    "table_receipt_sha256": "96c5ce78ac2db35dafcd16dfd0066fb9087e772ee0574226f1d0f3ad8e35d63c",
+    "output_sha256": "e0e2fc4361486b293827d9f88ae89d902cef1554751f06725e17b1cdd55ca92c"
+  },
+  "table_receipt.json": {
+    "producer": "benchmarks/analysis/qed_figures/render_tables.py",
+    "source": "verified QED ensemble reduction",
+    "analysis_receipt_sha256": "e42d6907c82efe82c50508b0cce7616c346e7e5d26235ab222c4ecda81ce5635",
+    "table_receipt_sha256": "96c5ce78ac2db35dafcd16dfd0066fb9087e772ee0574226f1d0f3ad8e35d63c",
+    "output_sha256": "96c5ce78ac2db35dafcd16dfd0066fb9087e772ee0574226f1d0f3ad8e35d63c"
+  },
+  "spectrum_comparison_metrics.tex": {
+    "producer": "benchmarks/analysis/comparison_metrics.py",
+    "source": "supplied comparisons/*_pull.csv; exact conditional piecewise-density CDF distances"
+  }
+}
