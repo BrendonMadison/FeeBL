@@ -1,0 +1,80 @@
+name: CPU verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      strict_physics:
+        description: Run experimental adaptive physics qualification (currently failing)
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  software:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libfftw3-dev libhdf5-dev cmake
+          python -m pip install -r requirements-analysis.txt
+      - name: Build CPU executable and tests
+        run: |
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DFEEBL_ENABLE_CUDA=OFF
+          cmake --build build --parallel 2
+      - name: Software regressions
+        run: ctest --test-dir build -LE strict --output-on-failure -j 1
+      - name: Analysis and viewer checks
+        run: |
+          python -m unittest discover -s tools -p 'test_*.py'
+          python tools/check_browser_modules.py
+          python -m unittest discover -s benchmarks/analysis -p 'test_*.py'
+          python benchmarks/run.py verify
+      - name: Execute and finalize the smoke collision
+        run: |
+          python benchmarks/run.py run smoke --feebl build/src/feebl --output runs/smoke
+          python tools/finalize_gui_dataset.py runs/smoke --binary build/src/feebl --card runs/smoke/acc.dat --source . --full-crossing-angle-rad 0 --crossing-frequency-hz 14100
+          python tools/finalize_gui_dataset.py runs/smoke --verify
+      - name: Save test diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cpu-test-diagnostics
+          path: |
+            build/Testing/Temporary/
+            runs/smoke/
+
+  strict-physics:
+    if: github.event_name == 'workflow_dispatch' && inputs.strict_physics
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libfftw3-dev libhdf5-dev cmake
+      - name: Build and test the experimental solver
+        run: |
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DFEEBL_ENABLE_CUDA=OFF
+          cmake --build build --parallel 2
+          ctest --test-dir build -L strict --output-on-failure -j 1
+      - name: Save qualification diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: strict-physics-diagnostics
+          path: build/Testing/Temporary/
