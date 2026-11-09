@@ -105,7 +105,7 @@ results. The [input reference](docs/INPUT_REFERENCE.md) lists all native keys.
 
 ## AI Disclosure
 
-This work was done with a combination of agentic AI and human labor. No generative AI was used in any part.
+This work was developed with agentic AI assistance and human research, with scientific results reviewed and verified by the author. No AI-generated artwork or synthetic imagery was used.
 
 ## Acknowledgements
 
